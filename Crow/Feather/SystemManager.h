@@ -1,0 +1,82 @@
+//
+// Created by Igli milaqi on 16/02/2020.
+//
+
+#ifndef CROW_SYSTEMMANAGER_H
+#define CROW_SYSTEMMANAGER_H
+
+
+#include <typeinfo>
+#include "../Debug/Debug.h"
+#include "System.h"
+#include <unordered_map>
+
+class SystemManager {
+
+public:
+    template <typename T>
+    T* RegisterSystem();
+
+    template <typename T>
+    void SetSignature(EntitySignature signature);
+
+    void OnEntityDestroyed(Entity entity)
+    {
+        for (auto const& pair : m_systems)
+        {
+            auto const& system = pair.second;
+
+            system->m_entities.erase(entity);
+        }
+    }
+
+    void OnEntitySignatureChanged(Entity entity,EntitySignature signature)
+    {
+        for (auto const& pair : m_systems)
+        {
+            const char* typeName = pair.first;
+            System* system = pair.second;
+            EntitySignature systemSignature = m_signatures[typeName];
+
+            if((signature & systemSignature) == systemSignature)
+            {
+                system->m_entities.insert(entity);
+            }
+            else
+            {
+                system->m_entities.erase(entity);
+            }
+        }
+    }
+
+private:
+
+    //TODO more maps here = more cache misses
+    std::unordered_map<const char*,EntitySignature> m_signatures {};
+    std::unordered_map<const char*,System*> m_systems {};
+};
+
+template<typename T>
+T *SystemManager::RegisterSystem()
+{
+    const char* typeName = typeid(T).name();
+
+    Debug::Assert(m_systems.find(typeName) == m_systems.end(), "System is already Registered");
+
+    T* system = new T();
+    m_systems.insert({typeName,system});
+    return system;
+}
+
+template<typename T>
+void SystemManager::SetSignature(EntitySignature signature)
+{
+    const char* typeName = typeid(T).name();
+
+    Debug::Assert(m_systems.find(typeName) != m_systems.end(), "System is not Registered");
+
+    m_signatures.insert({typeName,signature});
+
+}
+
+#endif //CROW_SYSTEMMANAGER_H
