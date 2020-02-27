@@ -37,7 +37,5 @@ int main()
 
     Debug::Log("Closing Crow");
 
-    
-
     return 0;
 }

@@ -8,6 +8,7 @@
 #include <unordered_map>
 #include "Types.h"
 #include "ComponentArray.h"
+#include "ComponentHandle.h"
 
 class ComponentManager {
 

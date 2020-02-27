@@ -46,13 +46,23 @@ public:
 
     void UpdateSystem()
     {
+        ComponentHandle<ECSGravity> gravityHandle ;
+        ComponentHandle<ECSRigidBody> rigidbodyHandle;
+        ComponentHandle<ECSPlayer> playerHandle;
+
         for(Entity const& entity : m_entities)
         {
-            if(feather->GetComponent<ECSRigidBody>(entity).y > feather->GetComponent<ECSPlayer>(entity).maxY)
+            feather->PopulateHandles<ECSRigidBody,ECSGravity,ECSPlayer>(entity,rigidbodyHandle,gravityHandle,playerHandle);
+
+            if(rigidbodyHandle.component->y > playerHandle.component->maxY)
             {
-                feather->GetComponent<ECSGravity>(entity).gravityValue = 0;
+                gravityHandle.component->gravityValue = 0;
             };
+
+            rigidbodyHandle.component->y += 1;
+            std::cout<<rigidbodyHandle.component->y<<std::endl;
         }
+
     }
 };
 

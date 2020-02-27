@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/igli/Desktop/Crow Engine/Crow/Debug/Debug.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Debug/Debug.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentArray.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Feather/ComponentArray.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentHandle.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Feather/ComponentHandle.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentManager.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Feather/ComponentManager.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Feather/EntityHandle.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Feather/EntityHandle.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Feather/EntityManager.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Feather/EntityManager.cpp.o"

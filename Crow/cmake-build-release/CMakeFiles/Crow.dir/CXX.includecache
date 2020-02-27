@@ -22,6 +22,12 @@ unordered_map
 ../Debug/Debug.h
 /Users/igli/Desktop/Crow Engine/Crow/Debug/Debug.h
 
+/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentHandle.h
+Types.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/Types.h
+ComponentArray.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentArray.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentManager.h
 unordered_map
 -
@@ -29,6 +35,8 @@ Types.h
 /Users/igli/Desktop/Crow Engine/Crow/Feather/Types.h
 ComponentArray.h
 /Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentArray.h
+ComponentHandle.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentHandle.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Feather/EntityHandle.h
 Types.h

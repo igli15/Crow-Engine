@@ -81,6 +81,22 @@ public:
         m_systemManager->SetSignature<T>(signature);
     }
 
+    template <typename T,typename... Args>
+    void PopulateHandles(Entity e,ComponentHandle<T>& handle,ComponentHandle<Args> &... args)
+    {
+        ComponentArray<T>* array = m_componentManager->GetComponentArray<T>();
+        handle = ComponentHandle<T>{e,array};
+
+        PopulateHandles<Args...>(e,args...);
+    }
+
+    template <typename T>
+    void PopulateHandles(Entity e,ComponentHandle<T>& handle)
+    {
+        ComponentArray<T>* array = m_componentManager->GetComponentArray<T>();
+        handle = ComponentHandle<T>{e,array};
+    }
+
 private:
 
     ComponentManager* m_componentManager;

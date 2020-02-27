@@ -177,6 +177,33 @@ Feather/ComponentArray.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Feather/ComponentArray.cpp.s
 .PHONY : Feather/ComponentArray.cpp.s
 
+Feather/ComponentHandle.o: Feather/ComponentHandle.cpp.o
+
+.PHONY : Feather/ComponentHandle.o
+
+# target to build an object file
+Feather/ComponentHandle.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Feather/ComponentHandle.cpp.o
+.PHONY : Feather/ComponentHandle.cpp.o
+
+Feather/ComponentHandle.i: Feather/ComponentHandle.cpp.i
+
+.PHONY : Feather/ComponentHandle.i
+
+# target to preprocess a source file
+Feather/ComponentHandle.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Feather/ComponentHandle.cpp.i
+.PHONY : Feather/ComponentHandle.cpp.i
+
+Feather/ComponentHandle.s: Feather/ComponentHandle.cpp.s
+
+.PHONY : Feather/ComponentHandle.s
+
+# target to generate assembly for a file
+Feather/ComponentHandle.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Feather/ComponentHandle.cpp.s
+.PHONY : Feather/ComponentHandle.cpp.s
+
 Feather/ComponentManager.o: Feather/ComponentManager.cpp.o
 
 .PHONY : Feather/ComponentManager.o
@@ -462,6 +489,9 @@ help:
 	@echo "... Feather/ComponentArray.o"
 	@echo "... Feather/ComponentArray.i"
 	@echo "... Feather/ComponentArray.s"
+	@echo "... Feather/ComponentHandle.o"
+	@echo "... Feather/ComponentHandle.i"
+	@echo "... Feather/ComponentHandle.s"
 	@echo "... Feather/ComponentManager.o"
 	@echo "... Feather/ComponentManager.i"
 	@echo "... Feather/ComponentManager.s"

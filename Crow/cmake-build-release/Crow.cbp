@@ -92,6 +92,12 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentArray.h">
 			<Option target="Crow"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentHandle.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentHandle.h">
+			<Option target="Crow"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentManager.cpp">
 			<Option target="Crow"/>
 		</Unit>
