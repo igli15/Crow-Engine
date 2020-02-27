@@ -6,7 +6,7 @@
 #define CROW_FEATHERTEST_H
 
 #include "../Feather/Feather.h"
-
+#include "../Feather/EntityHandle.h"
 
 
 struct ECSRigidBody
@@ -93,10 +93,10 @@ public:
 
         for (int i = 0; i < 10000; i++)
         {
-            Entity e = feather->CreateEntity();
-            feather->AddComponent(e, ECSPlayer{500});
-            feather->AddComponent(e, ECSGravity{0.001});
-            feather->AddComponent(e, ECSRigidBody {0,0});
+            EntityHandle handle = feather->CreateEntity();
+            handle.AddComponent(ECSPlayer{500});
+            handle.AddComponent(ECSGravity{0.001});
+            handle.AddComponent(ECSRigidBody {0,0});
         }
 
         //feather->DestroyEntity(e);

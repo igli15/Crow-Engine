@@ -3,6 +3,7 @@
 //
 
 #include "Feather.h"
+#include "EntityHandle.h"
 
 void Feather::Init()
 {
@@ -11,9 +12,9 @@ void Feather::Init()
     m_systemManager = new SystemManager();
 }
 
-Entity Feather::CreateEntity()
+EntityHandle Feather::CreateEntity()
 {
-    return m_entityManager->CreateEntity();
+    return {m_entityManager->CreateEntity(),this};
 }
 
 void Feather::DestroyEntity(Entity entity)

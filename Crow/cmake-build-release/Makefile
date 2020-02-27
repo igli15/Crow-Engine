@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/igli/Desktop/Crow
+CMAKE_SOURCE_DIR = "/Users/igli/Desktop/Crow Engine/Crow"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/igli/Desktop/Crow/cmake-build-release
+CMAKE_BINARY_DIR = "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/igli/Desktop/Crow/cmake-build-release/CMakeFiles /Users/igli/Desktop/Crow/cmake-build-release/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/igli/Desktop/Crow/cmake-build-release/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -203,6 +203,33 @@ Feather/ComponentManager.s: Feather/ComponentManager.cpp.s
 Feather/ComponentManager.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Feather/ComponentManager.cpp.s
 .PHONY : Feather/ComponentManager.cpp.s
+
+Feather/EntityHandle.o: Feather/EntityHandle.cpp.o
+
+.PHONY : Feather/EntityHandle.o
+
+# target to build an object file
+Feather/EntityHandle.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Feather/EntityHandle.cpp.o
+.PHONY : Feather/EntityHandle.cpp.o
+
+Feather/EntityHandle.i: Feather/EntityHandle.cpp.i
+
+.PHONY : Feather/EntityHandle.i
+
+# target to preprocess a source file
+Feather/EntityHandle.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Feather/EntityHandle.cpp.i
+.PHONY : Feather/EntityHandle.cpp.i
+
+Feather/EntityHandle.s: Feather/EntityHandle.cpp.s
+
+.PHONY : Feather/EntityHandle.s
+
+# target to generate assembly for a file
+Feather/EntityHandle.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Feather/EntityHandle.cpp.s
+.PHONY : Feather/EntityHandle.cpp.s
 
 Feather/EntityManager.o: Feather/EntityManager.cpp.o
 
@@ -438,6 +465,9 @@ help:
 	@echo "... Feather/ComponentManager.o"
 	@echo "... Feather/ComponentManager.i"
 	@echo "... Feather/ComponentManager.s"
+	@echo "... Feather/EntityHandle.o"
+	@echo "... Feather/EntityHandle.i"
+	@echo "... Feather/EntityHandle.s"
 	@echo "... Feather/EntityManager.o"
 	@echo "... Feather/EntityManager.i"
 	@echo "... Feather/EntityManager.s"

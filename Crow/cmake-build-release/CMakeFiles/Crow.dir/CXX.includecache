@@ -6,109 +6,105 @@
 
 #IncludeRegexTransform: 
 
-/Users/igli/Desktop/Crow/Debug/Debug.h
+/Users/igli/Desktop/Crow Engine/Crow/Debug/Debug.h
 string
 -
 iostream
 -
 
-/Users/igli/Desktop/Crow/Feather/ComponentArray.cpp
-ComponentArray.h
-/Users/igli/Desktop/Crow/Feather/ComponentArray.h
-
-/Users/igli/Desktop/Crow/Feather/ComponentArray.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentArray.h
 Types.h
-/Users/igli/Desktop/Crow/Feather/Types.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/Types.h
 array
 -
 unordered_map
 -
 ../Debug/Debug.h
-/Users/igli/Desktop/Crow/Debug/Debug.h
+/Users/igli/Desktop/Crow Engine/Crow/Debug/Debug.h
 
-/Users/igli/Desktop/Crow/Feather/ComponentManager.cpp
-ComponentManager.h
-/Users/igli/Desktop/Crow/Feather/ComponentManager.h
-
-/Users/igli/Desktop/Crow/Feather/ComponentManager.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentManager.h
 unordered_map
 -
 Types.h
-/Users/igli/Desktop/Crow/Feather/Types.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/Types.h
 ComponentArray.h
-/Users/igli/Desktop/Crow/Feather/ComponentArray.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentArray.h
 
-/Users/igli/Desktop/Crow/Feather/EntityManager.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/EntityHandle.h
+Types.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/Types.h
+Feather.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/Feather.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Feather/EntityManager.h
 queue
 -
 array
 -
 Types.h
-/Users/igli/Desktop/Crow/Feather/Types.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/Types.h
 
-/Users/igli/Desktop/Crow/Feather/Feather.cpp
-Feather.h
-/Users/igli/Desktop/Crow/Feather/Feather.h
-
-/Users/igli/Desktop/Crow/Feather/Feather.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/Feather.h
 SystemManager.h
-/Users/igli/Desktop/Crow/Feather/SystemManager.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/SystemManager.h
 ComponentManager.h
-/Users/igli/Desktop/Crow/Feather/ComponentManager.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentManager.h
 EntityManager.h
-/Users/igli/Desktop/Crow/Feather/EntityManager.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/EntityManager.h
 
-/Users/igli/Desktop/Crow/Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/System.h
 set
 -
 Types.h
-/Users/igli/Desktop/Crow/Feather/Types.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/Types.h
 
-/Users/igli/Desktop/Crow/Feather/SystemManager.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/SystemManager.h
 typeinfo
 -
 ../Debug/Debug.h
-/Users/igli/Desktop/Crow/Debug/Debug.h
+/Users/igli/Desktop/Crow Engine/Crow/Debug/Debug.h
 System.h
-/Users/igli/Desktop/Crow/Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/System.h
 unordered_map
 -
 
-/Users/igli/Desktop/Crow/Feather/Types.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/Types.h
 bitset
 -
 
-/Users/igli/Desktop/Crow/OOP Engine/Component.h
+/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Component.h
 
-/Users/igli/Desktop/Crow/OOP Engine/Gameobject.h
+/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Gameobject.h
 vector
 -
 iostream
 -
 Component.h
-/Users/igli/Desktop/Crow/OOP Engine/Component.h
+/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Component.h
 
-/Users/igli/Desktop/Crow/OOP Engine/OOPEngine.h
+/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/OOPEngine.h
 vector
 -
 Gameobject.h
-/Users/igli/Desktop/Crow/OOP Engine/Gameobject.h
+/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Gameobject.h
 
-/Users/igli/Desktop/Crow/Tests/FeatherTest.h
+/Users/igli/Desktop/Crow Engine/Crow/Tests/FeatherTest.h
 ../Feather/Feather.h
-/Users/igli/Desktop/Crow/Feather/Feather.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/Feather.h
+../Feather/EntityHandle.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/EntityHandle.h
 
-/Users/igli/Desktop/Crow/Tests/OOPEngineTest.h
+/Users/igli/Desktop/Crow Engine/Crow/Tests/OOPEngineTest.h
 ../OOP Engine/OOPEngine.h
-/Users/igli/Desktop/Crow/OOP Engine/OOPEngine.h
+/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/OOPEngine.h
 ../OOP Engine/Component.h
-/Users/igli/Desktop/Crow/OOP Engine/Component.h
+/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Component.h
 
-/Users/igli/Desktop/Crow/main.cpp
+/Users/igli/Desktop/Crow Engine/Crow/main.cpp
 Debug/Debug.h
-/Users/igli/Desktop/Crow/Debug/Debug.h
+/Users/igli/Desktop/Crow Engine/Crow/Debug/Debug.h
 Tests/FeatherTest.h
-/Users/igli/Desktop/Crow/Tests/FeatherTest.h
+/Users/igli/Desktop/Crow Engine/Crow/Tests/FeatherTest.h
 Tests/OOPEngineTest.h
-/Users/igli/Desktop/Crow/Tests/OOPEngineTest.h
+/Users/igli/Desktop/Crow Engine/Crow/Tests/OOPEngineTest.h
 

@@ -10,12 +10,14 @@
 #include "EntityManager.h"
 
 
+struct EntityHandle;
+
 class Feather {
 
 public:
 
     void Init();
-    Entity CreateEntity();
+    EntityHandle CreateEntity();
     void DestroyEntity(Entity entity);
 
     template <typename T>

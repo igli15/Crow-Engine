@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Crow.dir/OOP_Engine/Gameobject.cpp.o"
   "CMakeFiles/Crow.dir/OOP_Engine/Component.cpp.o"
   "CMakeFiles/Crow.dir/OOP_Engine/OOPEngine.cpp.o"
+  "CMakeFiles/Crow.dir/Feather/EntityHandle.cpp.o"
   "Crow.pdb"
   "Crow"
 )

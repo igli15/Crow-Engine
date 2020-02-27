@@ -4,17 +4,18 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/igli/Desktop/Crow/Debug/Debug.cpp" "/Users/igli/Desktop/Crow/cmake-build-release/CMakeFiles/Crow.dir/Debug/Debug.cpp.o"
-  "/Users/igli/Desktop/Crow/Feather/ComponentArray.cpp" "/Users/igli/Desktop/Crow/cmake-build-release/CMakeFiles/Crow.dir/Feather/ComponentArray.cpp.o"
-  "/Users/igli/Desktop/Crow/Feather/ComponentManager.cpp" "/Users/igli/Desktop/Crow/cmake-build-release/CMakeFiles/Crow.dir/Feather/ComponentManager.cpp.o"
-  "/Users/igli/Desktop/Crow/Feather/EntityManager.cpp" "/Users/igli/Desktop/Crow/cmake-build-release/CMakeFiles/Crow.dir/Feather/EntityManager.cpp.o"
-  "/Users/igli/Desktop/Crow/Feather/Feather.cpp" "/Users/igli/Desktop/Crow/cmake-build-release/CMakeFiles/Crow.dir/Feather/Feather.cpp.o"
-  "/Users/igli/Desktop/Crow/Feather/System.cpp" "/Users/igli/Desktop/Crow/cmake-build-release/CMakeFiles/Crow.dir/Feather/System.cpp.o"
-  "/Users/igli/Desktop/Crow/Feather/SystemManager.cpp" "/Users/igli/Desktop/Crow/cmake-build-release/CMakeFiles/Crow.dir/Feather/SystemManager.cpp.o"
-  "/Users/igli/Desktop/Crow/OOP Engine/Component.cpp" "/Users/igli/Desktop/Crow/cmake-build-release/CMakeFiles/Crow.dir/OOP_Engine/Component.cpp.o"
-  "/Users/igli/Desktop/Crow/OOP Engine/Gameobject.cpp" "/Users/igli/Desktop/Crow/cmake-build-release/CMakeFiles/Crow.dir/OOP_Engine/Gameobject.cpp.o"
-  "/Users/igli/Desktop/Crow/OOP Engine/OOPEngine.cpp" "/Users/igli/Desktop/Crow/cmake-build-release/CMakeFiles/Crow.dir/OOP_Engine/OOPEngine.cpp.o"
-  "/Users/igli/Desktop/Crow/main.cpp" "/Users/igli/Desktop/Crow/cmake-build-release/CMakeFiles/Crow.dir/main.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/Debug/Debug.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Debug/Debug.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentArray.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Feather/ComponentArray.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentManager.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Feather/ComponentManager.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/Feather/EntityHandle.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Feather/EntityHandle.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/Feather/EntityManager.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Feather/EntityManager.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/Feather/Feather.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Feather/Feather.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/Feather/System.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Feather/System.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/Feather/SystemManager.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Feather/SystemManager.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Component.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/OOP_Engine/Component.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Gameobject.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/OOP_Engine/Gameobject.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/OOPEngine.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/OOP_Engine/OOPEngine.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/main.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
