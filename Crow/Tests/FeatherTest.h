@@ -15,91 +15,54 @@ struct ECSTransform
     float y = 0;
 };
 
-struct ECSFire
-{
-public:
-    float counter = 2000;
-    bool extinguished = false;
-};
-
-struct ECSFireBullet
-{
-public:
-    float damageOverTime = 2;
-    bool spawnedFire = false;
-};
-
-struct ECSFireGun
-{
-    float spawnTimer = 15;
-    float counter = 0;
-};
-
 struct ECSHealth
 {
 public:
-    float health = 200;
+    float hp;
+};
+
+struct ECSGravity
+{
+public:
+    float gravityPull = 9.8f;
+};
+
+struct ECSAutoDestroy
+{
+public:
+    float counter;
+    float timeToDestroy = 200;
+    bool isDestroyed = false;
 };
 
 
-class FireGunSystem : public System
+class AutoDestrouctionSystem : public System
 {
 public:
-
     void Update()
     {
-        ComponentHandle<ECSFireGun> fireGunHandle;
-
-        for (Entity const& entity : m_entities)
-        {
-            feather->PopulateHandles(entity,fireGunHandle);
-
-            fireGunHandle.component->counter += 10;
-
-            if(fireGunHandle.component->counter >= fireGunHandle.component->spawnTimer)
-            {
-                EntityHandle bullet = feather->CreateEntity();
-                bullet.AddComponent(ECSFireBullet{});
-                bullet.AddComponent(ECSHealth{});
-            }
-        }
-    }
-};
-
-class FireBulletSystem : public System
-{
-public:
-
-    void Update()
-    {
-        ComponentHandle<ECSFireBullet> fireBulletHandle;
         ComponentHandle<ECSHealth> healthHandle;
+        ComponentHandle<ECSAutoDestroy> autoDestroyHandle;
 
-        for (Entity const& entity : m_entities)
+        for (Entity const& entity: m_entities)
         {
-            feather->PopulateHandles(entity,fireBulletHandle,healthHandle);
+            feather->PopulateHandles(entity,healthHandle,autoDestroyHandle);
 
-            healthHandle.component->health -= fireBulletHandle.component->damageOverTime;
-
-            if(healthHandle.component->health <=0 && !fireBulletHandle.component->spawnedFire)
+            autoDestroyHandle.component->counter++;
+            if(autoDestroyHandle.component->counter++ >= autoDestroyHandle.component->timeToDestroy && !autoDestroyHandle.component->isDestroyed)
             {
-                EntityHandle fire = feather->CreateEntity();
-                fire.AddComponent(ECSTransform{});
-                fire.AddComponent(ECSFire{});
-                fireBulletHandle.component->spawnedFire = true;
+                autoDestroyHandle.component->isDestroyed =true;
             }
         }
     }
 };
-
 
 class FeatherTest {
 
 public:
 
     Feather* feather;
-    FireGunSystem* fireGunSystem;
-    FireBulletSystem* fireBulletSystem;
+    AutoDestrouctionSystem* autoDestrouctionSystem;
 
     void Init()
     {
@@ -108,35 +71,29 @@ public:
       feather->Init();
 
         feather->RegisterComponent<ECSTransform>();
-        feather->RegisterComponent<ECSFireGun>();
-        feather->RegisterComponent<ECSFireBullet>();
         feather->RegisterComponent<ECSHealth>();
-        feather->RegisterComponent<ECSFire>();
+        feather->RegisterComponent<ECSAutoDestroy>();
 
-        EntitySignature fireGunSign;
-        fireGunSign.set(feather->GetComponentType<ECSFireGun>());
+        autoDestrouctionSystem = feather->RegisterSystem<AutoDestrouctionSystem>();
+        EntitySignature signature;
+        signature.set(feather->GetComponentType<ECSAutoDestroy>());
+        signature.set(feather->GetComponentType<ECSHealth>());
 
-        EntitySignature fireBulletSign;
-        fireBulletSign.set(feather->GetComponentType<ECSHealth>());
-        fireBulletSign.set(feather->GetComponentType<ECSFireBullet>());
-
-        fireGunSystem = feather->RegisterSystem<FireGunSystem>();
-        fireBulletSystem = feather->RegisterSystem<FireBulletSystem>();
-
-        feather->SetSystemSignature<FireGunSystem>(fireGunSign);
-        feather->SetSystemSignature<FireBulletSystem>(fireBulletSign);
-
-        EntityHandle firePlayer = feather->CreateEntity();
-        firePlayer.AddComponent(ECSFireGun{});
-
+        feather->SetSystemSignature<AutoDestrouctionSystem>(signature);
         //feather->DestroyEntity(spaceShip.entity);
+
+        for (int i = 0; i < 5000; ++i)
+        {
+            EntityHandle entity = feather->CreateEntity();
+            entity.AddComponent(ECSHealth{});
+            entity.AddComponent(ECSAutoDestroy{});
+        }
 
     }
 
     void Update()
     {
-        fireGunSystem->Update();
-        fireBulletSystem->Update();
+        autoDestrouctionSystem->Update();
     }
 
 };

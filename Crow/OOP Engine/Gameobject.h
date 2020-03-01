@@ -25,6 +25,8 @@ public:
 
     }
 
+    virtual void AddComponents(){};
+
     template <typename T>
     T* AddComponent()
     {

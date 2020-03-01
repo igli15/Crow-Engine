@@ -28,10 +28,6 @@ Types.h
 ComponentArray.h
 /Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentArray.h
 
-/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentManager.cpp
-ComponentManager.h
-/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentManager.h
-
 /Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentManager.h
 unordered_map
 -

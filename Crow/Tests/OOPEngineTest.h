@@ -19,72 +19,69 @@ public:
     float y = 0;
 };
 
-
-class Health : public Component
+class Health: public Component
 {
+
 public:
-    float health = 200;
+    float hp =100;
 };
 
-
-
-class Fire : public Component
+class Gravity : public Component
 {
 public:
-    float counter = 2000;
-    bool extinguished = false;
+    float gravityPull = 9.8f;
+    Transform* t;
 
-    void Update () override
+    void Start()
     {
-       counter --;
-       if(counter <= 0)
-       {
-           extinguished = true;
-       }
+        t = parent->GetComponent<Transform>();
     }
-};
 
-class FireBullet : public Component
-{
-public:
-    float damageOverTime = 2;
-    bool spawnedFire = false;
-
-    void Update () override
+    void Update()
     {
-        Health* h = parent->GetComponent<Health>();
-        h->health -= damageOverTime;
-
-        if(h != nullptr && h->health <= 0 && !spawnedFire)
-        {
-            Gameobject* obj = engine->CreateGameobject<Gameobject>();
-            obj->AddComponent<Transform>();
-            obj->AddComponent<Fire>();
-            spawnedFire = true;
-        }
+        t->y += gravityPull;
     }
+
 };
 
-
-class FireGun : public Component
+class AutoDestroy : public Component
 {
 public:
-
-    float spawnTimer = 15;
+    float timeToDestroy = 200;
+    bool isDestroyed = false;
     float counter = 0;
-    void Update () override
+
+    void Update()
     {
-        counter += 10;
+        counter ++;
 
-        if(counter >= spawnTimer)
+        if(counter >= 200 && !isDestroyed)
         {
-            counter = 0;
-            Gameobject* obj = engine->CreateGameobject<Gameobject>();
-            obj->AddComponent<Transform>();
-            obj->AddComponent<Health>();
-            obj->AddComponent<FireBullet>();
+            isDestroyed = true;
+            parent->GetComponent<Health>()->hp = 0;
         }
+    }
 
+};
+
+class Ball : public Gameobject
+{
+public:
+    void AddComponents() override
+    {
+        AddComponent<Transform>();
+        AddComponent<Gravity>();
+    }
+};
+
+class Asteroid : public Gameobject
+{
+public:
+    void AddComponents() override
+    {
+        AddComponent<Transform>();
+        AddComponent<AutoDestroy>();
+        AddComponent<Health>();
     }
 };
 
@@ -99,15 +96,17 @@ public:
     {
         engine = new OOPEngine();
 
+        for (int i = 0; i < 5000; ++i)
+        {
+            Ball *ball = engine->CreateGameobject<Ball>();
+            Asteroid* asteroid = engine->CreateGameobject<Asteroid>();
+        }
     }
 
     void Init()
     {
         engine->StartAllGameObjects();
 
-        Gameobject* firePlayer = engine->CreateGameobject<Gameobject>();
-        firePlayer->AddComponent<Transform>();
-        firePlayer->AddComponent<FireGun>();
     }
 
     void Update()

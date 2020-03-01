@@ -21,6 +21,7 @@ public:
         T* gameobject = new T();
         m_allGameobjects.push_back(gameobject);
         gameobject->engine = this;
+        gameobject->AddComponents();
         return gameobject;
     }
 
