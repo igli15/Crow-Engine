@@ -72,7 +72,9 @@ public:
     template <typename T>
     T* RegisterSystem()
     {
-        return m_systemManager->RegisterSystem<T>();
+        T* system  =m_systemManager->RegisterSystem<T>();
+        system->feather = this;
+        return system;
     }
 
     template <typename T>
@@ -86,7 +88,6 @@ public:
     {
         ComponentArray<T>* array = m_componentManager->GetComponentArray<T>();
         handle = ComponentHandle<T>{e,array};
-
         PopulateHandles<Args...>(e,args...);
     }
 
@@ -96,7 +97,8 @@ public:
         ComponentArray<T>* array = m_componentManager->GetComponentArray<T>();
 
         handle = ComponentHandle<T>{e, array};
-        return true;
+
+        return array != nullptr;
 
     }
 

@@ -120,11 +120,11 @@ public:
         fireBulletSign.set(feather->GetComponentType<ECSHealth>());
         fireBulletSign.set(feather->GetComponentType<ECSFireBullet>());
 
-        fireGunSystem = feather->RegisterSystem<FireGunSystem,ECSFireGun>();
-        fireBulletSystem = feather->RegisterSystem<FireBulletSystem,ECSHealth,ECSFireBullet>();
+        fireGunSystem = feather->RegisterSystem<FireGunSystem>();
+        fireBulletSystem = feather->RegisterSystem<FireBulletSystem>();
 
-       // feather->SetSystemSignature<FireGunSystem>(fireGunSign);
-        //feather->SetSystemSignature<FireBulletSystem>(fireBulletSign);
+        feather->SetSystemSignature<FireGunSystem>(fireGunSign);
+        feather->SetSystemSignature<FireBulletSystem>(fireBulletSign);
 
         EntityHandle firePlayer = feather->CreateEntity();
         firePlayer.AddComponent(ECSFireGun{});
