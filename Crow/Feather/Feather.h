@@ -91,10 +91,13 @@ public:
     }
 
     template <typename T>
-    void PopulateHandles(Entity e,ComponentHandle<T>& handle)
+    bool PopulateHandles(Entity e,ComponentHandle<T>& handle)
     {
         ComponentArray<T>* array = m_componentManager->GetComponentArray<T>();
-        handle = ComponentHandle<T>{e,array};
+
+        handle = ComponentHandle<T>{e, array};
+        return true;
+
     }
 
 private:

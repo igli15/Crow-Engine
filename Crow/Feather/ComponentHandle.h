@@ -23,7 +23,15 @@ struct ComponentHandle {
     {
         owner = pE;
         manager = pManager;
-        component = &(manager->GetComponentData(owner));
+
+        if(manager != nullptr)
+        {
+            component = &(manager->GetComponentData(owner));
+        }
+        else
+        {
+            component = nullptr;
+        }
     }
 
 

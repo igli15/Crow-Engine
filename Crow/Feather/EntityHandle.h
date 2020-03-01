@@ -24,6 +24,15 @@ struct EntityHandle {
     {
         feather->RemoveComponent<T>(entity);
     }
+
+    template <typename T>
+    ComponentHandle<T> GetComponent()
+    {
+        ComponentHandle<T> componentHandle;
+        feather->PopulateHandles(entity,componentHandle);
+        return componentHandle;
+    }
+
 };
 
 

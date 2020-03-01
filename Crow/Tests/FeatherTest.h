@@ -9,70 +9,97 @@
 #include "../Feather/EntityHandle.h"
 
 
-struct ECSRigidBody
+struct ECSTransform
 {
     float x =0 ;
     float y = 0;
 };
 
-struct ECSGravity
-{
-    float gravityValue;
-};
-
-struct ECSPlayer
-{
-    float maxY;
-};
-
-class GravitySystem : public System
+struct ECSFire
 {
 public:
-    Feather* feather;
-
-    void UpdateSystem()
-    {
-        for(Entity const& entity : m_entities)
-        {
-            feather->GetComponent<ECSGravity>(entity).gravityValue += 1;
-        }
-    }
+    float counter = 2000;
+    bool extinguished = false;
 };
 
-class PlayerPhysicsSystem : public System
+struct ECSFireBullet
 {
 public:
-    Feather* feather;
+    float damageOverTime = 2;
+    bool spawnedFire = false;
+};
 
-    void UpdateSystem()
+struct ECSFireGun
+{
+    float spawnTimer = 15;
+    float counter = 0;
+};
+
+struct ECSHealth
+{
+public:
+    float health = 200;
+};
+
+
+class FireGunSystem : public System
+{
+public:
+
+    void Update()
     {
-        ComponentHandle<ECSGravity> gravityHandle ;
-        ComponentHandle<ECSRigidBody> rigidbodyHandle;
-        ComponentHandle<ECSPlayer> playerHandle;
+        ComponentHandle<ECSFireGun> fireGunHandle;
 
-        for(Entity const& entity : m_entities)
+        for (Entity const& entity : m_entities)
         {
-            feather->PopulateHandles<ECSRigidBody,ECSGravity,ECSPlayer>(entity,rigidbodyHandle,gravityHandle,playerHandle);
+            feather->PopulateHandles(entity,fireGunHandle);
 
-            if(rigidbodyHandle.component->y > playerHandle.component->maxY)
+            fireGunHandle.component->counter += 10;
+
+            if(fireGunHandle.component->counter >= fireGunHandle.component->spawnTimer)
             {
-                gravityHandle.component->gravityValue = 0;
-            };
-
-            rigidbodyHandle.component->y += 1;
-            std::cout<<rigidbodyHandle.component->y<<std::endl;
+                EntityHandle bullet = feather->CreateEntity();
+                bullet.AddComponent(ECSFireBullet{});
+                bullet.AddComponent(ECSHealth{});
+            }
         }
-
     }
 };
+
+class FireBulletSystem : public System
+{
+public:
+
+    void Update()
+    {
+        ComponentHandle<ECSFireBullet> fireBulletHandle;
+        ComponentHandle<ECSHealth> healthHandle;
+
+        for (Entity const& entity : m_entities)
+        {
+            feather->PopulateHandles(entity,fireBulletHandle,healthHandle);
+
+            healthHandle.component->health -= fireBulletHandle.component->damageOverTime;
+
+            if(healthHandle.component->health <=0 && !fireBulletHandle.component->spawnedFire)
+            {
+                EntityHandle fire = feather->CreateEntity();
+                fire.AddComponent(ECSTransform{});
+                fire.AddComponent(ECSFire{});
+                fireBulletHandle.component->spawnedFire = true;
+            }
+        }
+    }
+};
+
 
 class FeatherTest {
 
 public:
-    PlayerPhysicsSystem* testSystem;
-    GravitySystem* gravitySystem;
 
     Feather* feather;
+    FireGunSystem* fireGunSystem;
+    FireBulletSystem* fireBulletSystem;
 
     void Init()
     {
@@ -80,43 +107,36 @@ public:
 
       feather->Init();
 
-        feather->RegisterComponent<ECSPlayer>();
-        feather->RegisterComponent<ECSRigidBody>();
-        feather->RegisterComponent<ECSGravity>();
+        feather->RegisterComponent<ECSTransform>();
+        feather->RegisterComponent<ECSFireGun>();
+        feather->RegisterComponent<ECSFireBullet>();
+        feather->RegisterComponent<ECSHealth>();
+        feather->RegisterComponent<ECSFire>();
 
-        testSystem = feather->RegisterSystem<PlayerPhysicsSystem>();
-        gravitySystem =  feather->RegisterSystem<GravitySystem>();
+        EntitySignature fireGunSign;
+        fireGunSign.set(feather->GetComponentType<ECSFireGun>());
 
-        testSystem->feather = feather;
-        gravitySystem->feather = feather;
+        EntitySignature fireBulletSign;
+        fireBulletSign.set(feather->GetComponentType<ECSHealth>());
+        fireBulletSign.set(feather->GetComponentType<ECSFireBullet>());
 
-        EntitySignature signature;
-        signature.set(feather->GetComponentType<ECSRigidBody>());
-        signature.set(feather->GetComponentType<ECSPlayer>());
-        signature.set(feather->GetComponentType<ECSGravity>());
+        fireGunSystem = feather->RegisterSystem<FireGunSystem,ECSFireGun>();
+        fireBulletSystem = feather->RegisterSystem<FireBulletSystem,ECSHealth,ECSFireBullet>();
 
-        EntitySignature signature2;
-        signature2.set(feather->GetComponentType<ECSGravity>());
+       // feather->SetSystemSignature<FireGunSystem>(fireGunSign);
+        //feather->SetSystemSignature<FireBulletSystem>(fireBulletSign);
 
-        feather->SetSystemSignature<PlayerPhysicsSystem>(signature);
-        feather->SetSystemSignature<GravitySystem>(signature2);
+        EntityHandle firePlayer = feather->CreateEntity();
+        firePlayer.AddComponent(ECSFireGun{});
 
-        for (int i = 0; i < 10000; i++)
-        {
-            EntityHandle handle = feather->CreateEntity();
-            handle.AddComponent(ECSPlayer{500});
-            handle.AddComponent(ECSGravity{0.001});
-            handle.AddComponent(ECSRigidBody {0,0});
-        }
-
-        //feather->DestroyEntity(e);
+        //feather->DestroyEntity(spaceShip.entity);
 
     }
 
     void Update()
     {
-        testSystem->UpdateSystem();
-        gravitySystem->UpdateSystem();
+        fireGunSystem->Update();
+        fireBulletSystem->Update();
     }
 
 };

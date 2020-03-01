@@ -88,7 +88,10 @@ ComponentArray<T> *ComponentManager::GetComponentArray()
 
     //Debug::Log("hre");
 
-    return static_cast<ComponentArray<T>*> (m_componentArrays[typeName]);
+    //TODO Keep in mind that a nullptr has to be returned here if it cant get the array
+
+    return static_cast<ComponentArray<T> *> (m_componentArrays[typeName]);
+
 }
 
 template<typename T>

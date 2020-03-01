@@ -10,73 +10,81 @@
 #include "../OOP Engine/OOPEngine.h"
 #include "../OOP Engine/Component.h"
 
-class RigidBody: public Component
+class Transform: public Component
 {
 
 public:
 
     float x =0 ;
     float y = 0;
-
-
-};
-
-class Gravity: public Component
-{
-
-private:
-   RigidBody* rb;
-
-public:
-    float gravityValue = 10;
-
-    void Start() override
-    {
-       // rb = parent->GetComponent<RigidBody>();
-    }
-
-    void Update() override
-    {
-        parent->GetComponent<RigidBody>()->y += gravityValue;
-    }
 };
 
 
-class Player: public Component
+class Health : public Component
 {
-
 public:
-    //RigidBody* rb;
-    //Gravity* gravity;
+    float health = 200;
+};
 
-    void Start() override
+
+
+class Fire : public Component
+{
+public:
+    float counter = 2000;
+    bool extinguished = false;
+
+    void Update () override
     {
-        //rb = parent->GetComponent<RigidBody>();
-        //gravity = parent->GetComponent<Gravity>();
+       counter --;
+       if(counter <= 0)
+       {
+           extinguished = true;
+       }
     }
+};
 
-    void Update() override
+class FireBullet : public Component
+{
+public:
+    float damageOverTime = 2;
+    bool spawnedFire = false;
+
+    void Update () override
     {
-        RigidBody* rb = parent->GetComponent<RigidBody>();
-        Gravity* gravity = parent->GetComponent<Gravity>();
+        Health* h = parent->GetComponent<Health>();
+        h->health -= damageOverTime;
 
-        if(rb!= nullptr && rb->y >= 500)
+        if(h != nullptr && h->health <= 0 && !spawnedFire)
         {
-            if(gravity != nullptr)
-            gravity->gravityValue = 0;
+            Gameobject* obj = engine->CreateGameobject<Gameobject>();
+            obj->AddComponent<Transform>();
+            obj->AddComponent<Fire>();
+            spawnedFire = true;
         }
     }
 };
 
 
-
-class TestGameobject : public Gameobject
+class FireGun : public Component
 {
 public:
-    void AddComponents()
-    {   AddComponent<RigidBody>();
-        AddComponent<Player>();
-       AddComponent<Gravity>();
+
+    float spawnTimer = 15;
+    float counter = 0;
+    void Update () override
+    {
+        counter += 10;
+
+        if(counter >= spawnTimer)
+        {
+            counter = 0;
+            Gameobject* obj = engine->CreateGameobject<Gameobject>();
+            obj->AddComponent<Transform>();
+            obj->AddComponent<Health>();
+            obj->AddComponent<FireBullet>();
+        }
+
     }
 };
 
@@ -91,17 +99,15 @@ public:
     {
         engine = new OOPEngine();
 
-        for (int i = 0; i < 10000; ++i)
-        {
-            TestGameobject* gameobject = engine->CreateGameobject<TestGameobject>();
-            gameobject->AddComponents();
-        }
-
     }
 
     void Init()
     {
         engine->StartAllGameObjects();
+
+        Gameobject* firePlayer = engine->CreateGameobject<Gameobject>();
+        firePlayer->AddComponent<Transform>();
+        firePlayer->AddComponent<FireGun>();
     }
 
     void Update()

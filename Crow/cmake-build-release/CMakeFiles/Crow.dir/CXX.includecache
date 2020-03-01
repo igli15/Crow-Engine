@@ -28,6 +28,10 @@ Types.h
 ComponentArray.h
 /Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentArray.h
 
+/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentManager.cpp
+ComponentManager.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentManager.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentManager.h
 unordered_map
 -
@@ -37,6 +41,12 @@ ComponentArray.h
 /Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentArray.h
 ComponentHandle.h
 /Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentHandle.h
+vector
+-
+
+/Users/igli/Desktop/Crow Engine/Crow/Feather/EntityHandle.cpp
+EntityHandle.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/EntityHandle.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Feather/EntityHandle.h
 Types.h
@@ -51,6 +61,12 @@ array
 -
 Types.h
 /Users/igli/Desktop/Crow Engine/Crow/Feather/Types.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Feather/Feather.cpp
+Feather.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/Feather.h
+EntityHandle.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/EntityHandle.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Feather/Feather.h
 SystemManager.h

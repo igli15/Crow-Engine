@@ -9,9 +9,12 @@
 #include "Types.h"
 
 
+class Feather;
+
 class System {
 
 public:
+    Feather* feather;
     std::set<Entity> m_entities;
 
 };

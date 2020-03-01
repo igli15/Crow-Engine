@@ -6,13 +6,17 @@
 #define CROW_COMPONENT_H
 
 
+class OOPEngine;
+
 class Gameobject;
 
 class Component {
 
 
+
 public:
     Gameobject* parent;
+    OOPEngine* engine;
     virtual void Update(){};
     virtual void Start(){};
 
