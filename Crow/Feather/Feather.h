@@ -92,14 +92,29 @@ public:
     }
 
     template <typename T>
-    bool PopulateHandles(Entity e,ComponentHandle<T>& handle)
+    void PopulateHandles(Entity e,ComponentHandle<T>& handle)
     {
         ComponentArray<T>* array = m_componentManager->GetComponentArray<T>();
 
         handle = ComponentHandle<T>{e, array};
 
-        return array != nullptr;
+    }
 
+    template<typename T,typename T2,typename ...Arg>
+    void CreateSignature(EntitySignature& signature)
+    {
+        //https://stackoverflow.com/questions/27682042/why-is-this-variadic-function-call-ambiguous
+        //we need 2 typenames before the template pack since when the pack is empty it becomes ambiguous with the Base Case.
+
+        signature.set(GetComponentType<T>());
+        CreateSignature<T2,Arg...>(signature);
+    }
+
+    //Base Case
+    template <typename T>
+    void CreateSignature(EntitySignature& signature)
+    {
+        signature.set(GetComponentType<T>());
     }
 
 private:

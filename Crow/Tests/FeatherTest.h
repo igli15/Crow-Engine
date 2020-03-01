@@ -73,13 +73,17 @@ public:
         feather->RegisterComponent<ECSTransform>();
         feather->RegisterComponent<ECSHealth>();
         feather->RegisterComponent<ECSAutoDestroy>();
+        feather->RegisterComponent<ECSGravity>();
 
         autoDestrouctionSystem = feather->RegisterSystem<AutoDestrouctionSystem>();
+
         EntitySignature signature;
-        signature.set(feather->GetComponentType<ECSAutoDestroy>());
-        signature.set(feather->GetComponentType<ECSHealth>());
+        feather->CreateSignature<ECSHealth,ECSAutoDestroy>(signature);
+        //std::cout<<signature.count()<<std::endl;
 
         feather->SetSystemSignature<AutoDestrouctionSystem>(signature);
+
+        
         //feather->DestroyEntity(spaceShip.entity);
 
         for (int i = 0; i < 5000; ++i)
