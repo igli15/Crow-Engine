@@ -12,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Crow.dir/OOP_Engine/OOPEngine.cpp.o"
   "CMakeFiles/Crow.dir/Feather/EntityHandle.cpp.o"
   "CMakeFiles/Crow.dir/Feather/ComponentHandle.cpp.o"
+  "CMakeFiles/Crow.dir/Rendering/Window.cpp.o"
   "Crow.pdb"
   "Crow"
 )

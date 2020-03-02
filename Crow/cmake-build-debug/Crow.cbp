@@ -157,6 +157,12 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/OOPEngine.h">
 			<Option target="Crow"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Rendering/Window.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Rendering/Window.h">
+			<Option target="Crow"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Tests/FeatherTest.h">
 			<Option target="Crow"/>
 		</Unit>

@@ -447,6 +447,33 @@ OOP_Engine/OOPEngine.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/OOP_Engine/OOPEngine.cpp.s
 .PHONY : OOP_Engine/OOPEngine.cpp.s
 
+Rendering/Window.o: Rendering/Window.cpp.o
+
+.PHONY : Rendering/Window.o
+
+# target to build an object file
+Rendering/Window.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Rendering/Window.cpp.o
+.PHONY : Rendering/Window.cpp.o
+
+Rendering/Window.i: Rendering/Window.cpp.i
+
+.PHONY : Rendering/Window.i
+
+# target to preprocess a source file
+Rendering/Window.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Rendering/Window.cpp.i
+.PHONY : Rendering/Window.cpp.i
+
+Rendering/Window.s: Rendering/Window.cpp.s
+
+.PHONY : Rendering/Window.s
+
+# target to generate assembly for a file
+Rendering/Window.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Rendering/Window.cpp.s
+.PHONY : Rendering/Window.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -519,6 +546,9 @@ help:
 	@echo "... OOP_Engine/OOPEngine.o"
 	@echo "... OOP_Engine/OOPEngine.i"
 	@echo "... OOP_Engine/OOPEngine.s"
+	@echo "... Rendering/Window.o"
+	@echo "... Rendering/Window.i"
+	@echo "... Rendering/Window.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
