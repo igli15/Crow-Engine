@@ -83,7 +83,6 @@ public:
 
         feather->SetSystemSignature<AutoDestrouctionSystem>(signature);
 
-        
         //feather->DestroyEntity(spaceShip.entity);
 
         for (int i = 0; i < 5000; ++i)
