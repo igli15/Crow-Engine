@@ -77,7 +77,7 @@ void ComponentArray<T>::RemoveComponentData(Entity entity)
 template<typename T>
 T &ComponentArray<T>::GetComponentData(Entity entity)
 {
-    //Debug::Assert(m_entityToIndexMap.find(entity) != m_entityToIndexMap.end(),"Component is not added");
+    Debug::Assert(m_entityToIndexMap.find(entity) != m_entityToIndexMap.end(),"Component is not added");
 
     return m_componentsArray[m_entityToIndexMap[entity]];
 }

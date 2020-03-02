@@ -84,7 +84,7 @@ ComponentArray<T> *ComponentManager::GetComponentArray()
 {
     const char* typeName = typeid(T).name();
 
-    //Debug::Assert(m_componentTypes.find(typeName) != m_componentTypes.end(),"Component is not registered");
+    Debug::Assert(m_componentTypes.find(typeName) != m_componentTypes.end(),"Component is not registered");
 
     //Debug::Log("hre");
 

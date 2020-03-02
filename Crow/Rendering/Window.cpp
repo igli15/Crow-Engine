@@ -14,16 +14,21 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 
 int Window::CreateWindow(int windowWidth, int windowHeight, const char *windowName, int majorVersion, int minorVersion)
 {
+    //init glfw
     glfwInit();
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, majorVersion);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, minorVersion);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
+    //only for apple
 #ifdef __APPLE__
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 #endif
 
+    //crate the glfw window
     m_internalWindow = glfwCreateWindow(windowWidth, windowHeight, windowName, NULL, NULL);
+
+    //return 0 if the window failed to be created
     if (m_internalWindow == NULL)
     {
         std::cout << "Failed to create GLFW window" << std::endl;
@@ -31,9 +36,12 @@ int Window::CreateWindow(int windowWidth, int windowHeight, const char *windowNa
         return 0;
     }
 
+    //set the window as the current rendering context
     glfwMakeContextCurrent(m_internalWindow);
+    //assign the callback needed
     glfwSetFramebufferSizeCallback(m_internalWindow,framebuffer_size_callback);
 
+    //init GLEW
     InternalInitGLEW();
 
     return 1;
