@@ -24,4 +24,20 @@ void World::DestroyEntity(Entity entity)
     m_systemManager->OnEntityDestroyed(entity);
 }
 
+void World::InitAllSystems()
+{
+    for (int i = 0; i < m_allRegisteredSystems.size(); ++i)
+    {
+        m_allRegisteredSystems[i]->Init();
+    }
+}
+
+void World::UpdateAllSystems()
+{
+    for (int i = 0; i < m_allRegisteredSystems.size(); ++i)
+    {
+        m_allRegisteredSystems[i]->Update();
+    }
+}
+
 

@@ -38,10 +38,6 @@ ComponentArray.h
 ComponentHandle.h
 /Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentHandle.h
 
-/Users/igli/Desktop/Crow Engine/Crow/Feather/EntityHandle.cpp
-EntityHandle.h
-/Users/igli/Desktop/Crow Engine/Crow/Feather/EntityHandle.h
-
 /Users/igli/Desktop/Crow Engine/Crow/Feather/EntityHandle.h
 Types.h
 /Users/igli/Desktop/Crow Engine/Crow/Feather/Types.h
@@ -56,19 +52,11 @@ array
 Types.h
 /Users/igli/Desktop/Crow Engine/Crow/Feather/Types.h
 
-/Users/igli/Desktop/Crow Engine/Crow/Feather/System.cpp
-System.h
-/Users/igli/Desktop/Crow Engine/Crow/Feather/System.h
-
 /Users/igli/Desktop/Crow Engine/Crow/Feather/System.h
 set
 -
 Types.h
 /Users/igli/Desktop/Crow Engine/Crow/Feather/Types.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Feather/SystemManager.cpp
-SystemManager.h
-/Users/igli/Desktop/Crow Engine/Crow/Feather/SystemManager.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Feather/SystemManager.h
 typeinfo
@@ -83,12 +71,6 @@ unordered_map
 /Users/igli/Desktop/Crow Engine/Crow/Feather/Types.h
 bitset
 -
-
-/Users/igli/Desktop/Crow Engine/Crow/Feather/World.cpp
-World.h
-/Users/igli/Desktop/Crow Engine/Crow/Feather/World.h
-EntityHandle.h
-/Users/igli/Desktop/Crow Engine/Crow/Feather/EntityHandle.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Feather/World.h
 SystemManager.h

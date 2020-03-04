@@ -46,7 +46,7 @@ public:
 
     std::vector<ComponentHandle<ECSCreature>> handleCache;
 
-    void Init()
+    void Init()override
     {
         for (auto const& entity : m_entities)
         {
@@ -56,7 +56,7 @@ public:
         }
     }
 
-    void Update()
+    void Update()override
     {
         for (auto const& handle : handleCache)
         {
@@ -79,7 +79,7 @@ public:
     std::vector<ComponentHandle<ECSNoble>> nobleCache;
     std::vector<ComponentHandle<ECSCreature>> creatureCache;
 
-    void Init()
+    void Init() override
     {
         for (auto const& entity : m_entities)
         {
@@ -91,7 +91,7 @@ public:
         }
     }
 
-    void Update()
+    void Update()override
     {
         for (int i = 0; i< m_entities.size() ; i++)
         {
@@ -117,7 +117,7 @@ public:
     std::vector<ComponentHandle<ECSOrc>> orcCache;
     std::vector<ComponentHandle<ECSCreature>> creatureCache;
 
-    void Init()
+    void Init()override
     {
         for (auto const& entity : m_entities)
         {
@@ -129,7 +129,7 @@ public:
         }
     }
 
-    void Update()
+    void Update()override
     {
         for (int i = 0; i< m_entities.size() ; i++)
         {
@@ -196,30 +196,28 @@ public:
 
         creatureSystem->kingdom = kingdomEntity.GetComponent<ECSKingdom>().component;
         nobleSystem->kingdom = kingdomEntity.GetComponent<ECSKingdom>().component;
+        orcSystem->kingdom = kingdomEntity.GetComponent<ECSKingdom>().component;
 
-
-        for (int i = 0; i < 1000; ++i)
+        for (int i = 0; i < 100000; ++i)
         {
             EntityHandle entity = feather->CreateEntity();
             entity.AddComponent(ECSCreature{});
             entity.AddComponent(ECSNoble{});
         }
 
-        for (int i = 0; i < 1000; ++i)
+        for (int i = 0; i < 100000; ++i)
         {
             EntityHandle entity = feather->CreateEntity();
             entity.AddComponent(ECSCreature{});
             entity.AddComponent(ECSOrc{});
         }
 
-        creatureSystem->Init();
-        nobleSystem->Init();
+        feather->InitAllSystems();
     }
 
     void Update()
     {
-        creatureSystem->Update();
-        nobleSystem->Update();
+        feather->UpdateAllSystems();
     }
 
 };

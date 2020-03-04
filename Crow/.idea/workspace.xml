@@ -14,24 +14,12 @@
   <component name="ChangeListManager">
     <list default="true" id="cf22dce6-4d69-43d0-a044-a31c5cbccc70" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Feather/EntityHandle.h" beforeDir="false" afterPath="$PROJECT_DIR$/Feather/EntityHandle.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Feather/Feather.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Feather/World.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Feather/Feather.h" beforeDir="false" afterPath="$PROJECT_DIR$/Feather/World.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Feather/System.h" beforeDir="false" afterPath="$PROJECT_DIR$/Feather/System.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Feather/World.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Feather/World.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Feather/World.h" beforeDir="false" afterPath="$PROJECT_DIR$/Feather/World.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/FeatherTest.h" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/FeatherTest.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Crow.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Crow.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/Crow.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/Crow.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/OOPEngineTest.h" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/OOPEngineTest.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/Crow" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/Crow" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -89,29 +77,29 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="cmake" value="5" />
-          <entry key="cpp" value="27" />
-          <entry key="h" value="67" />
+          <entry key="cpp" value="28" />
+          <entry key="h" value="69" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="6" />
-          <entry key="ObjectiveC" value="94" />
+          <entry key="ObjectiveC" value="97" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cmake" value="1" />
-          <entry key="cpp" value="1139" />
-          <entry key="h" value="13079" />
+          <entry key="cpp" value="1187" />
+          <entry key="h" value="13318" />
           <entry key="txt" value="68" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="69" />
-          <entry key="ObjectiveC" value="14218" />
+          <entry key="ObjectiveC" value="14505" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -133,8 +121,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Feather/World.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2119">
-              <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+            <state relative-caret-position="1516">
+              <caret line="79" column="49" selection-start-line="79" selection-start-column="49" selection-end-line="79" selection-end-column="49" />
               <folding>
                 <element signature="e#95#121#0" expanded="true" />
                 <element signature="e#1560#1572#0" expanded="true" />
@@ -149,10 +137,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Rendering/Window.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OOP Engine/Component.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Feather/World.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tests/OOPEngineTest.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1865">
-              <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+            <state relative-caret-position="489">
+              <caret line="134" column="34" selection-start-line="134" selection-start-column="34" selection-end-line="134" selection-end-column="34" />
               <folding>
                 <element signature="e#144#180#0" expanded="true" />
               </folding>
@@ -160,11 +175,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tests/FeatherTest.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="188" column="23" selection-start-line="188" selection-start-column="17" selection-end-line="188" selection-end-column="35" />
+            <state relative-caret-position="168">
+              <caret line="200" column="34" selection-start-line="200" selection-start-column="28" selection-end-line="200" selection-end-column="34" />
               <folding>
                 <element signature="e#103#134#0" expanded="true" />
               </folding>
@@ -196,43 +211,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Feather/ComponentArray.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1738">
-              <caret line="79" column="4" selection-start-line="79" selection-start-column="4" selection-end-line="79" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Feather/Types.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="396">
               <caret line="18" selection-start-line="18" selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Feather/EntityHandle.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="19" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="29" />
-              <folding>
-                <element signature="e#105#123#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
-              <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
-              <folding>
-                <element signature="e#1#25#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -245,7 +227,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Feather/BaseType.cpp" />
         <option value="$PROJECT_DIR$/Feather/EntityArchetype.cpp" />
         <option value="$PROJECT_DIR$/Feather/BaseType.h" />
         <option value="$PROJECT_DIR$/Feather/ComponentType.h" />
@@ -291,11 +272,12 @@
         <option value="$PROJECT_DIR$/OOP Engine/Component.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/Feather/Types.h" />
-        <option value="$PROJECT_DIR$/Tests/OOPEngineTest.h" />
-        <option value="$PROJECT_DIR$/Tests/FeatherTest.h" />
         <option value="$PROJECT_DIR$/Feather/System.h" />
         <option value="$PROJECT_DIR$/Feather/Feather.h" />
         <option value="$PROJECT_DIR$/Feather/World.h" />
+        <option value="$PROJECT_DIR$/Feather/World.cpp" />
+        <option value="$PROJECT_DIR$/Tests/FeatherTest.h" />
+        <option value="$PROJECT_DIR$/Tests/OOPEngineTest.h" />
       </list>
     </option>
   </component>
@@ -440,12 +422,12 @@
       <workItem from="1583144125135" duration="7467000" />
       <workItem from="1583234742979" duration="12988000" />
       <workItem from="1583316031606" duration="1229000" />
-      <workItem from="1583317592837" duration="4683000" />
+      <workItem from="1583317592837" duration="5358000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209349000" />
+    <option name="totallyTimeSpent" value="210024000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -525,16 +507,6 @@
     <entry file="file://$PROJECT_DIR$/Feather/EntityHandle.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Feather/World.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding>
-            <element signature="e#48#68#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Feather/EntityManager.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -578,13 +550,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1760">
           <caret line="80" column="24" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rendering/Window.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -636,13 +601,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OOP Engine/Component.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OOP Engine/OOPEngine.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -687,16 +645,6 @@
     <entry file="file://$PROJECT_DIR$/Feather/SystemManager.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/OOPEngineTest.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1865">
-          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-          <folding>
-            <element signature="e#144#180#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Feather/SystemManager.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-205">
@@ -718,10 +666,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/OOP Engine/Component.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rendering/Window.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Feather/World.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2119">
-          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+        <state relative-caret-position="1516">
+          <caret line="79" column="49" selection-start-line="79" selection-start-column="49" selection-end-line="79" selection-end-column="49" />
           <folding>
             <element signature="e#95#121#0" expanded="true" />
             <element signature="e#1560#1572#0" expanded="true" />
@@ -734,12 +696,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Feather/World.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/FeatherTest.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="188" column="23" selection-start-line="188" selection-start-column="17" selection-end-line="188" selection-end-column="35" />
+        <state relative-caret-position="168">
+          <caret line="200" column="34" selection-start-line="200" selection-start-column="28" selection-end-line="200" selection-end-column="34" />
           <folding>
             <element signature="e#103#134#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/OOPEngineTest.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="134" column="34" selection-start-line="134" selection-start-column="34" selection-end-line="134" selection-end-column="34" />
+          <folding>
+            <element signature="e#144#180#0" expanded="true" />
           </folding>
         </state>
       </provider>

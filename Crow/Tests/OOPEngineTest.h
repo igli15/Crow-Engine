@@ -125,14 +125,14 @@ public:
         Gameobject* kingdomObject = engine->CreateGameobject<Gameobject>();
         Kingdom* kingdom = kingdomObject->AddComponent<Kingdom>();
 
-        for (int i = 0; i < 1000; ++i)
+        for (int i = 0; i < 100000; ++i)
         {
             Gameobject* orc = engine->CreateGameobject<Gameobject>();
             Orc* o = orc->AddComponent<Orc>();
             o->kingdom =kingdom;
         }
 
-        for (int i = 0; i < 1000; ++i)
+        for (int i = 0; i < 100000; ++i)
         {
             Gameobject* noble = engine->CreateGameobject<Gameobject>();
             Noble* n = noble->AddComponent<Noble>();

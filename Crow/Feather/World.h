@@ -20,6 +20,9 @@ public:
     EntityHandle CreateEntity();
     void DestroyEntity(Entity entity);
 
+    void InitAllSystems();
+    void UpdateAllSystems();
+
     template <typename T>
     void RegisterComponent()
     {
@@ -74,6 +77,7 @@ public:
     {
         T* system  =m_systemManager->RegisterSystem<T>();
         system->feather = this;
+        m_allRegisteredSystems.push_back(system);
         return system;
     }
 
@@ -130,7 +134,10 @@ private:
     ComponentManager* m_componentManager;
     EntityManager* m_entityManager;
     SystemManager* m_systemManager;
+
+    std::vector<System*> m_allRegisteredSystems;
 };
+
 
 
 #endif //CROW_FEATHER_H
