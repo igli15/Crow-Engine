@@ -100,7 +100,7 @@ public:
             kingdom->nobility += noble.component->nobilityIncrease;
             kingdom->money += noble.component->moneyIncrease;
             kingdom->humanity += noble.component->humanity;
-            
+
             if(!creature.component->isAlive)
             {
                 //OnDeath
@@ -169,17 +169,26 @@ public:
         nobleSystem = feather->RegisterSystem<NobleSystem>();
         orcSystem = feather->RegisterSystem<OrcSystem>();
 
+        /*
         EntitySignature signature;
         feather->CreateSignature<ECSCreature>(signature);
         feather->SetSystemSignature<CreatureSystem>(signature);
+         */
 
+        /*
         EntitySignature noblesignature;
         feather->CreateSignature<ECSCreature,ECSNoble>(signature);
         feather->SetSystemSignature<NobleSystem>(noblesignature);
-
+         */
+/*
         EntitySignature orcSignature;
         feather->CreateSignature<ECSCreature,ECSOrc>(orcSignature);
         feather->SetSystemSignature<OrcSystem>(orcSignature);
+        */
+
+        feather->SetSystemSignature<NobleSystem,ECSCreature,ECSNoble>();
+        feather->SetSystemSignature<CreatureSystem,ECSCreature>();
+        feather->SetSystemSignature<OrcSystem,ECSCreature,ECSOrc>();
 
         EntityHandle kingdomEntity = feather->CreateEntity();
 

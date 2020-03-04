@@ -77,10 +77,18 @@ public:
         return system;
     }
 
-    template <typename T>
+    template <typename SystemType>
     void SetSystemSignature(EntitySignature signature)
     {
-        m_systemManager->SetSignature<T>(signature);
+        m_systemManager->SetSignature<SystemType>(signature);
+    }
+
+    template <typename SystemType,typename ...ComponentTypes>
+    void SetSystemSignature()
+    {
+        EntitySignature signature;
+        CreateSignature<ComponentTypes...>(signature);
+        m_systemManager->SetSignature<SystemType>(signature);
     }
 
     template <typename T,typename... Args>
