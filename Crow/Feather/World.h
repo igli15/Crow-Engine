@@ -12,7 +12,7 @@
 
 struct EntityHandle;
 
-class Feather {
+class World {
 
 public:
 

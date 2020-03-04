@@ -9,13 +9,23 @@
 #include "Types.h"
 
 
-class Feather;
+class World;
 
 class System {
 
 public:
-    Feather* feather;
+    World* feather;
     std::set<Entity> m_entities;
+
+    virtual void Init()
+    {
+
+    }
+
+    virtual void Update()
+    {
+
+    }
 
 };
 

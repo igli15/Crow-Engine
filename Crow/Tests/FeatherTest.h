@@ -5,7 +5,7 @@
 #ifndef CROW_FEATHERTEST_H
 #define CROW_FEATHERTEST_H
 
-#include "../Feather/Feather.h"
+#include "../Feather/World.h"
 #include "../Feather/EntityHandle.h"
 
 
@@ -149,14 +149,14 @@ class FeatherTest {
 
 public:
 
-    Feather* feather;
+    World* feather;
     CreatureSystem* creatureSystem;
     NobleSystem* nobleSystem;
     OrcSystem* orcSystem;
 
     void Init()
     {
-        feather = new Feather();
+        feather = new World();
 
       feather->Init();
 

@@ -285,33 +285,6 @@ Feather/EntityManager.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Feather/EntityManager.cpp.s
 .PHONY : Feather/EntityManager.cpp.s
 
-Feather/Feather.o: Feather/Feather.cpp.o
-
-.PHONY : Feather/Feather.o
-
-# target to build an object file
-Feather/Feather.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Feather/Feather.cpp.o
-.PHONY : Feather/Feather.cpp.o
-
-Feather/Feather.i: Feather/Feather.cpp.i
-
-.PHONY : Feather/Feather.i
-
-# target to preprocess a source file
-Feather/Feather.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Feather/Feather.cpp.i
-.PHONY : Feather/Feather.cpp.i
-
-Feather/Feather.s: Feather/Feather.cpp.s
-
-.PHONY : Feather/Feather.s
-
-# target to generate assembly for a file
-Feather/Feather.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Feather/Feather.cpp.s
-.PHONY : Feather/Feather.cpp.s
-
 Feather/System.o: Feather/System.cpp.o
 
 .PHONY : Feather/System.o
@@ -365,6 +338,33 @@ Feather/SystemManager.s: Feather/SystemManager.cpp.s
 Feather/SystemManager.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Feather/SystemManager.cpp.s
 .PHONY : Feather/SystemManager.cpp.s
+
+Feather/World.o: Feather/World.cpp.o
+
+.PHONY : Feather/World.o
+
+# target to build an object file
+Feather/World.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Feather/World.cpp.o
+.PHONY : Feather/World.cpp.o
+
+Feather/World.i: Feather/World.cpp.i
+
+.PHONY : Feather/World.i
+
+# target to preprocess a source file
+Feather/World.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Feather/World.cpp.i
+.PHONY : Feather/World.cpp.i
+
+Feather/World.s: Feather/World.cpp.s
+
+.PHONY : Feather/World.s
+
+# target to generate assembly for a file
+Feather/World.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Feather/World.cpp.s
+.PHONY : Feather/World.cpp.s
 
 OOP_Engine/Component.o: OOP_Engine/Component.cpp.o
 
@@ -528,15 +528,15 @@ help:
 	@echo "... Feather/EntityManager.o"
 	@echo "... Feather/EntityManager.i"
 	@echo "... Feather/EntityManager.s"
-	@echo "... Feather/Feather.o"
-	@echo "... Feather/Feather.i"
-	@echo "... Feather/Feather.s"
 	@echo "... Feather/System.o"
 	@echo "... Feather/System.i"
 	@echo "... Feather/System.s"
 	@echo "... Feather/SystemManager.o"
 	@echo "... Feather/SystemManager.i"
 	@echo "... Feather/SystemManager.s"
+	@echo "... Feather/World.o"
+	@echo "... Feather/World.i"
+	@echo "... Feather/World.s"
 	@echo "... OOP_Engine/Component.o"
 	@echo "... OOP_Engine/Component.i"
 	@echo "... OOP_Engine/Component.s"

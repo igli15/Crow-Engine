@@ -148,18 +148,18 @@ CMakeFiles/Crow.dir/Feather/SystemManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Feather/SystemManager.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Feather/SystemManager.cpp" -o CMakeFiles/Crow.dir/Feather/SystemManager.cpp.s
 
-CMakeFiles/Crow.dir/Feather/Feather.cpp.o: CMakeFiles/Crow.dir/flags.make
-CMakeFiles/Crow.dir/Feather/Feather.cpp.o: ../Feather/Feather.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Crow.dir/Feather/Feather.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Feather/Feather.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Feather/Feather.cpp"
+CMakeFiles/Crow.dir/Feather/World.cpp.o: CMakeFiles/Crow.dir/flags.make
+CMakeFiles/Crow.dir/Feather/World.cpp.o: ../Feather/World.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Crow.dir/Feather/World.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Feather/World.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Feather/World.cpp"
 
-CMakeFiles/Crow.dir/Feather/Feather.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Feather/Feather.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/Feather/Feather.cpp" > CMakeFiles/Crow.dir/Feather/Feather.cpp.i
+CMakeFiles/Crow.dir/Feather/World.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Feather/World.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/Feather/World.cpp" > CMakeFiles/Crow.dir/Feather/World.cpp.i
 
-CMakeFiles/Crow.dir/Feather/Feather.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Feather/Feather.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Feather/Feather.cpp" -o CMakeFiles/Crow.dir/Feather/Feather.cpp.s
+CMakeFiles/Crow.dir/Feather/World.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Feather/World.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Feather/World.cpp" -o CMakeFiles/Crow.dir/Feather/World.cpp.s
 
 CMakeFiles/Crow.dir/OOP_Engine/Gameobject.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/OOP_Engine/Gameobject.cpp.o: ../OOP\ Engine/Gameobject.cpp
@@ -248,7 +248,7 @@ Crow_OBJECTS = \
 "CMakeFiles/Crow.dir/Feather/ComponentManager.cpp.o" \
 "CMakeFiles/Crow.dir/Feather/System.cpp.o" \
 "CMakeFiles/Crow.dir/Feather/SystemManager.cpp.o" \
-"CMakeFiles/Crow.dir/Feather/Feather.cpp.o" \
+"CMakeFiles/Crow.dir/Feather/World.cpp.o" \
 "CMakeFiles/Crow.dir/OOP_Engine/Gameobject.cpp.o" \
 "CMakeFiles/Crow.dir/OOP_Engine/Component.cpp.o" \
 "CMakeFiles/Crow.dir/OOP_Engine/OOPEngine.cpp.o" \
@@ -266,7 +266,7 @@ Crow: CMakeFiles/Crow.dir/Feather/ComponentArray.cpp.o
 Crow: CMakeFiles/Crow.dir/Feather/ComponentManager.cpp.o
 Crow: CMakeFiles/Crow.dir/Feather/System.cpp.o
 Crow: CMakeFiles/Crow.dir/Feather/SystemManager.cpp.o
-Crow: CMakeFiles/Crow.dir/Feather/Feather.cpp.o
+Crow: CMakeFiles/Crow.dir/Feather/World.cpp.o
 Crow: CMakeFiles/Crow.dir/OOP_Engine/Gameobject.cpp.o
 Crow: CMakeFiles/Crow.dir/OOP_Engine/Component.cpp.o
 Crow: CMakeFiles/Crow.dir/OOP_Engine/OOPEngine.cpp.o

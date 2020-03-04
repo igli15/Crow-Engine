@@ -6,12 +6,12 @@
 #define CROW_ENTITYHANDLE_H
 
 #include "Types.h"
-#include "Feather.h"
+#include "World.h"
 
 struct EntityHandle {
 
     Entity entity;
-    Feather* feather;
+    World* feather;
 
     template <typename T>
     void AddComponent(T component)

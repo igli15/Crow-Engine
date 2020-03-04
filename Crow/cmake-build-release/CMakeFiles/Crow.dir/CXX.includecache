@@ -45,8 +45,8 @@ EntityHandle.h
 /Users/igli/Desktop/Crow Engine/Crow/Feather/EntityHandle.h
 Types.h
 /Users/igli/Desktop/Crow Engine/Crow/Feather/Types.h
-Feather.h
-/Users/igli/Desktop/Crow Engine/Crow/Feather/Feather.h
+World.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/World.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Feather/EntityManager.h
 queue
@@ -56,25 +56,19 @@ array
 Types.h
 /Users/igli/Desktop/Crow Engine/Crow/Feather/Types.h
 
-/Users/igli/Desktop/Crow Engine/Crow/Feather/Feather.cpp
-Feather.h
-/Users/igli/Desktop/Crow Engine/Crow/Feather/Feather.h
-EntityHandle.h
-/Users/igli/Desktop/Crow Engine/Crow/Feather/EntityHandle.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Feather/Feather.h
-SystemManager.h
-/Users/igli/Desktop/Crow Engine/Crow/Feather/SystemManager.h
-ComponentManager.h
-/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentManager.h
-EntityManager.h
-/Users/igli/Desktop/Crow Engine/Crow/Feather/EntityManager.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/System.cpp
+System.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/System.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Feather/System.h
 set
 -
 Types.h
 /Users/igli/Desktop/Crow Engine/Crow/Feather/Types.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Feather/SystemManager.cpp
+SystemManager.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/SystemManager.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Feather/SystemManager.h
 typeinfo
@@ -89,6 +83,20 @@ unordered_map
 /Users/igli/Desktop/Crow Engine/Crow/Feather/Types.h
 bitset
 -
+
+/Users/igli/Desktop/Crow Engine/Crow/Feather/World.cpp
+World.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/World.h
+EntityHandle.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/EntityHandle.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Feather/World.h
+SystemManager.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/SystemManager.h
+ComponentManager.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentManager.h
+EntityManager.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/EntityManager.h
 
 /Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Component.h
 
@@ -113,8 +121,8 @@ GLFW/glfw3.h
 -
 
 /Users/igli/Desktop/Crow Engine/Crow/Tests/FeatherTest.h
-../Feather/Feather.h
-/Users/igli/Desktop/Crow Engine/Crow/Feather/Feather.h
+../Feather/World.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/World.h
 ../Feather/EntityHandle.h
 /Users/igli/Desktop/Crow Engine/Crow/Feather/EntityHandle.h
 

@@ -30,26 +30,14 @@ CMakeFiles/Crow.dir/Feather/EntityHandle.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Feather/EntityHandle.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Feather/EntityHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Feather/EntityManager.h
- /Users/igli/Desktop/Crow Engine/Crow/Feather/Feather.h
  /Users/igli/Desktop/Crow Engine/Crow/Feather/System.h
  /Users/igli/Desktop/Crow Engine/Crow/Feather/SystemManager.h
  /Users/igli/Desktop/Crow Engine/Crow/Feather/Types.h
+ /Users/igli/Desktop/Crow Engine/Crow/Feather/World.h
 CMakeFiles/Crow.dir/Feather/EntityManager.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Debug/Debug.h
  /Users/igli/Desktop/Crow Engine/Crow/Feather/EntityManager.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Feather/EntityManager.h
- /Users/igli/Desktop/Crow Engine/Crow/Feather/Types.h
-CMakeFiles/Crow.dir/Feather/Feather.cpp.o
- /Users/igli/Desktop/Crow Engine/Crow/Debug/Debug.h
- /Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentArray.h
- /Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentHandle.h
- /Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentManager.h
- /Users/igli/Desktop/Crow Engine/Crow/Feather/EntityHandle.h
- /Users/igli/Desktop/Crow Engine/Crow/Feather/EntityManager.h
- /Users/igli/Desktop/Crow Engine/Crow/Feather/Feather.cpp
- /Users/igli/Desktop/Crow Engine/Crow/Feather/Feather.h
- /Users/igli/Desktop/Crow Engine/Crow/Feather/System.h
- /Users/igli/Desktop/Crow Engine/Crow/Feather/SystemManager.h
  /Users/igli/Desktop/Crow Engine/Crow/Feather/Types.h
 CMakeFiles/Crow.dir/Feather/System.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Feather/System.cpp
@@ -61,6 +49,18 @@ CMakeFiles/Crow.dir/Feather/SystemManager.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Feather/SystemManager.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Feather/SystemManager.h
  /Users/igli/Desktop/Crow Engine/Crow/Feather/Types.h
+CMakeFiles/Crow.dir/Feather/World.cpp.o
+ /Users/igli/Desktop/Crow Engine/Crow/Debug/Debug.h
+ /Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentArray.h
+ /Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentHandle.h
+ /Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentManager.h
+ /Users/igli/Desktop/Crow Engine/Crow/Feather/EntityHandle.h
+ /Users/igli/Desktop/Crow Engine/Crow/Feather/EntityManager.h
+ /Users/igli/Desktop/Crow Engine/Crow/Feather/System.h
+ /Users/igli/Desktop/Crow Engine/Crow/Feather/SystemManager.h
+ /Users/igli/Desktop/Crow Engine/Crow/Feather/Types.h
+ /Users/igli/Desktop/Crow Engine/Crow/Feather/World.cpp
+ /Users/igli/Desktop/Crow Engine/Crow/Feather/World.h
 CMakeFiles/Crow.dir/OOP_Engine/Component.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Component.cpp
  /Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Component.h
@@ -85,10 +85,10 @@ CMakeFiles/Crow.dir/main.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentManager.h
  /Users/igli/Desktop/Crow Engine/Crow/Feather/EntityHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Feather/EntityManager.h
- /Users/igli/Desktop/Crow Engine/Crow/Feather/Feather.h
  /Users/igli/Desktop/Crow Engine/Crow/Feather/System.h
  /Users/igli/Desktop/Crow Engine/Crow/Feather/SystemManager.h
  /Users/igli/Desktop/Crow Engine/Crow/Feather/Types.h
+ /Users/igli/Desktop/Crow Engine/Crow/Feather/World.h
  /Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Component.h
  /Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Gameobject.h
  /Users/igli/Desktop/Crow Engine/Crow/OOP Engine/OOPEngine.h
