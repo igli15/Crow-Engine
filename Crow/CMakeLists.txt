@@ -17,7 +17,7 @@ include_directories(${SFML_INCLUDE_DIR})
 include_directories(${GLEW_INCLUDE_DIRS})
 include_directories(${GLFW_INCLUDE_DIR})
 
-add_executable(Crow main.cpp Debug/Debug.cpp Debug/Debug.h Feather/Types.h Feather/EntityManager.cpp Feather/EntityManager.h Feather/ComponentArray.cpp Feather/ComponentArray.h Feather/ComponentManager.cpp Feather/ComponentManager.h Feather/System.cpp Feather/System.h Feather/SystemManager.cpp Feather/SystemManager.h Feather/World.cpp Feather/World.h Tests/FeatherTest.h "OOP Engine/Gameobject.cpp" "OOP Engine/Gameobject.h" "OOP Engine/Component.cpp" "OOP Engine/Component.h" "OOP Engine/OOPEngine.cpp" "OOP Engine/OOPEngine.h" Tests/OOPEngineTest.h Feather/EntityHandle.cpp Feather/EntityHandle.h Feather/ComponentHandle.cpp Feather/ComponentHandle.h Rendering/Window.cpp Rendering/Window.h)
+add_executable(Crow main.cpp Debug/Debug.cpp Debug/Debug.h Feather/Types.h Feather/EntityManager.cpp Feather/EntityManager.h Feather/ComponentArray.cpp Feather/ComponentArray.h Feather/ComponentManager.cpp Feather/ComponentManager.h Feather/System.cpp Feather/System.h Feather/SystemManager.cpp Feather/SystemManager.h Feather/World.cpp Feather/World.h Tests/FeatherTest.h "OOP Engine/Gameobject.cpp" "OOP Engine/Gameobject.h" "OOP Engine/Component.cpp" "OOP Engine/Component.h" "OOP Engine/OOPEngine.cpp" "OOP Engine/OOPEngine.h" Tests/OOPEngineTest.h Feather/EntityHandle.cpp Feather/EntityHandle.h Feather/ComponentHandle.cpp Feather/ComponentHandle.h Rendering/Window.cpp Rendering/Window.h Feather/CustomTypeID.h)
 
 target_link_libraries(Crow ${SFML_LIBRARIES})
 target_link_libraries(Crow ${GLFW_LIBRARIES})

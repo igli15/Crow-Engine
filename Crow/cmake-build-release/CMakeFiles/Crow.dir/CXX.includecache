@@ -38,6 +38,10 @@ ComponentArray.h
 ComponentHandle.h
 /Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentHandle.h
 
+/Users/igli/Desktop/Crow Engine/Crow/Feather/CustomTypeID.h
+numeric
+-
+
 /Users/igli/Desktop/Crow Engine/Crow/Feather/EntityHandle.h
 Types.h
 /Users/igli/Desktop/Crow Engine/Crow/Feather/Types.h
@@ -107,6 +111,8 @@ GLFW/glfw3.h
 /Users/igli/Desktop/Crow Engine/Crow/Feather/World.h
 ../Feather/EntityHandle.h
 /Users/igli/Desktop/Crow Engine/Crow/Feather/EntityHandle.h
+../Feather/CustomTypeID.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/CustomTypeID.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Tests/OOPEngineTest.h
 ../OOP Engine/OOPEngine.h

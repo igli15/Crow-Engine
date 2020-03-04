@@ -106,6 +106,9 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentManager.h">
 			<Option target="Crow"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Feather/CustomTypeID.h">
+			<Option target="Crow"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Feather/EntityHandle.cpp">
 			<Option target="Crow"/>
 		</Unit>

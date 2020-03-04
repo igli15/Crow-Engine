@@ -82,6 +82,7 @@ CMakeFiles/Crow.dir/main.cpp.o: ../Debug/Debug.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Feather/ComponentArray.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Feather/ComponentManager.h
+CMakeFiles/Crow.dir/main.cpp.o: ../Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Feather/EntityHandle.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Feather/EntityManager.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Feather/System.h
