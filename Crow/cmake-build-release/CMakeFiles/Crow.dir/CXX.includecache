@@ -123,6 +123,8 @@ Tests/OOPEngineTest.h
 /Users/igli/Desktop/Crow Engine/Crow/Tests/OOPEngineTest.h
 Rendering/Window.h
 /Users/igli/Desktop/Crow Engine/Crow/Rendering/Window.h
+iostream
+-
 
 /usr/local/include/GL/glew.h
 stddef.h

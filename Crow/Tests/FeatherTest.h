@@ -9,49 +9,137 @@
 #include "../Feather/EntityHandle.h"
 
 
-struct ECSTransform
+struct ECSKingdom
 {
-    float x =0 ;
-    float y = 0;
+    float humanity = 0;
+    float populationRate = 0;
+    float nobility = 0;
+    float money = 0;
+    float evil = 0;
 };
 
-struct ECSHealth
+struct ECSCreature
 {
-public:
-    float hp;
+    float timeSpan = 80;
+    bool isAlive = true;
+    float timeCounter = 0.1f;
+    float populationIncreaseRate = 0.1f;
 };
 
-struct ECSGravity
+struct ECSNoble
 {
-public:
-    float gravityPull = 9.8f;
+    float humanity = 20;
+    float nobilityIncrease = 0.01f;
+    float moneyIncrease = 0.1f;
 };
 
-struct ECSAutoDestroy
+struct ECSOrc
 {
-public:
-    float counter;
-    float timeToDestroy = 200;
-    bool isDestroyed = false;
+    float evilRate = 0.01f;
 };
 
 
-class AutoDestrouctionSystem : public System
+class CreatureSystem : public System
 {
 public:
+    ECSKingdom* kingdom;
+
+    std::vector<ComponentHandle<ECSCreature>> handleCache;
+
+    void Init()
+    {
+        for (auto const& entity : m_entities)
+        {
+            ComponentHandle<ECSCreature> creature;
+            feather->PopulateHandles(entity,creature);
+            handleCache.push_back(creature);
+        }
+    }
+
     void Update()
     {
-        ComponentHandle<ECSHealth> healthHandle;
-        ComponentHandle<ECSAutoDestroy> autoDestroyHandle;
-
-        for (Entity const& entity: m_entities)
+        for (auto const& handle : handleCache)
         {
-            feather->PopulateHandles(entity,healthHandle,autoDestroyHandle);
+            handle.component->timeSpan -=  handle.component->timeCounter;
 
-            autoDestroyHandle.component->counter++;
-            if(autoDestroyHandle.component->counter++ >= autoDestroyHandle.component->timeToDestroy && !autoDestroyHandle.component->isDestroyed)
+            if(handle.component->isAlive &&  handle.component->timeSpan<=0)
             {
-                autoDestroyHandle.component->isDestroyed =true;
+                handle.component->isAlive = false;
+                kingdom->populationRate +=  handle.component->populationIncreaseRate;
+            }
+        }
+    }
+};
+
+class NobleSystem : public System
+{
+public:
+    ECSKingdom* kingdom;
+
+    std::vector<ComponentHandle<ECSNoble>> nobleCache;
+    std::vector<ComponentHandle<ECSCreature>> creatureCache;
+
+    void Init()
+    {
+        for (auto const& entity : m_entities)
+        {
+            ComponentHandle<ECSNoble> noble;
+            ComponentHandle<ECSCreature> creature;
+            feather->PopulateHandles(entity,noble,creature);
+            nobleCache.push_back(noble);
+            creatureCache.push_back(creature);
+        }
+    }
+
+    void Update()
+    {
+        for (int i = 0; i< m_entities.size() ; i++)
+        {
+            ComponentHandle<ECSNoble> noble = nobleCache[i];
+            ComponentHandle<ECSCreature> creature = creatureCache[i];
+            kingdom->nobility += noble.component->nobilityIncrease;
+            kingdom->money += noble.component->moneyIncrease;
+            kingdom->humanity += noble.component->humanity;
+            
+            if(!creature.component->isAlive)
+            {
+                //OnDeath
+            }
+        }
+    }
+};
+
+class OrcSystem : public System
+{
+public:
+    ECSKingdom* kingdom;
+
+    std::vector<ComponentHandle<ECSOrc>> orcCache;
+    std::vector<ComponentHandle<ECSCreature>> creatureCache;
+
+    void Init()
+    {
+        for (auto const& entity : m_entities)
+        {
+            ComponentHandle<ECSOrc> orc;
+            ComponentHandle<ECSCreature> creature;
+            feather->PopulateHandles(entity,orc,creature);
+            orcCache.push_back(orc);
+            creatureCache.push_back(creature);
+        }
+    }
+
+    void Update()
+    {
+        for (int i = 0; i< m_entities.size() ; i++)
+        {
+            ComponentHandle<ECSOrc> orc = orcCache[i];
+            ComponentHandle<ECSCreature> creature = creatureCache[i];
+            kingdom->evil += orc.component->evilRate;
+
+            if(!creature.component->isAlive)
+            {
+                //OnDeath
             }
         }
     }
@@ -62,7 +150,9 @@ class FeatherTest {
 public:
 
     Feather* feather;
-    AutoDestrouctionSystem* autoDestrouctionSystem;
+    CreatureSystem* creatureSystem;
+    NobleSystem* nobleSystem;
+    OrcSystem* orcSystem;
 
     void Init()
     {
@@ -70,33 +160,57 @@ public:
 
       feather->Init();
 
-        feather->RegisterComponent<ECSTransform>();
-        feather->RegisterComponent<ECSHealth>();
-        feather->RegisterComponent<ECSAutoDestroy>();
-        feather->RegisterComponent<ECSGravity>();
+        feather->RegisterComponent<ECSCreature>();
+        feather->RegisterComponent<ECSKingdom>();
+        feather->RegisterComponent<ECSNoble>();
+        feather->RegisterComponent<ECSOrc>();
 
-        autoDestrouctionSystem = feather->RegisterSystem<AutoDestrouctionSystem>();
+        creatureSystem = feather->RegisterSystem<CreatureSystem>();
+        nobleSystem = feather->RegisterSystem<NobleSystem>();
+        orcSystem = feather->RegisterSystem<OrcSystem>();
 
         EntitySignature signature;
-        feather->CreateSignature<ECSHealth,ECSAutoDestroy>(signature);
-        //std::cout<<signature.count()<<std::endl;
+        feather->CreateSignature<ECSCreature>(signature);
+        feather->SetSystemSignature<CreatureSystem>(signature);
 
-        feather->SetSystemSignature<AutoDestrouctionSystem>(signature);
+        EntitySignature noblesignature;
+        feather->CreateSignature<ECSCreature,ECSNoble>(signature);
+        feather->SetSystemSignature<NobleSystem>(noblesignature);
 
-        //feather->DestroyEntity(spaceShip.entity);
+        EntitySignature orcSignature;
+        feather->CreateSignature<ECSCreature,ECSOrc>(orcSignature);
+        feather->SetSystemSignature<OrcSystem>(orcSignature);
 
-        for (int i = 0; i < 5000; ++i)
+        EntityHandle kingdomEntity = feather->CreateEntity();
+
+        kingdomEntity.AddComponent(ECSKingdom{});
+
+        creatureSystem->kingdom = kingdomEntity.GetComponent<ECSKingdom>().component;
+        nobleSystem->kingdom = kingdomEntity.GetComponent<ECSKingdom>().component;
+
+
+        for (int i = 0; i < 1000; ++i)
         {
             EntityHandle entity = feather->CreateEntity();
-            entity.AddComponent(ECSHealth{});
-            entity.AddComponent(ECSAutoDestroy{});
+            entity.AddComponent(ECSCreature{});
+            entity.AddComponent(ECSNoble{});
         }
 
+        for (int i = 0; i < 1000; ++i)
+        {
+            EntityHandle entity = feather->CreateEntity();
+            entity.AddComponent(ECSCreature{});
+            entity.AddComponent(ECSOrc{});
+        }
+
+        creatureSystem->Init();
+        nobleSystem->Init();
     }
 
     void Update()
     {
-        autoDestrouctionSystem->Update();
+        creatureSystem->Update();
+        nobleSystem->Update();
     }
 
 };

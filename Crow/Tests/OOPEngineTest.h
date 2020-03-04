@@ -10,81 +10,102 @@
 #include "../OOP Engine/OOPEngine.h"
 #include "../OOP Engine/Component.h"
 
-class Transform: public Component
-{
 
-public:
-
-    float x =0 ;
-    float y = 0;
-};
-
-class Health: public Component
-{
-
-public:
-    float hp =100;
-};
-
-class Gravity : public Component
+class Kingdom : public Component
 {
 public:
-    float gravityPull = 9.8f;
-    Transform* t;
-
-    void Start()
-    {
-        t = parent->GetComponent<Transform>();
-    }
-
-    void Update()
-    {
-        t->y += gravityPull;
-    }
+    float humanity = 0;
+    float populationRate = 0;
+    float nobility = 0;
+    float money = 0;
+    float evil = 0;
 
 };
 
-class AutoDestroy : public Component
+class Creature : public Component
 {
 public:
-    float timeToDestroy = 200;
-    bool isDestroyed = false;
-    float counter = 0;
+    Kingdom* kingdom;
+    float timeSpan = 80;
+    bool isAlive = true;
+    float timeCounter = 0.1f;
+    float populationIncreaseRate = 0.1f;
 
-    void Update()
+    virtual void Update()
     {
-        counter ++;
+        timeSpan -= timeCounter;
 
-        if(counter >= 200 && !isDestroyed)
+        if(isAlive && timeSpan<=0)
         {
-            isDestroyed = true;
-            parent->GetComponent<Health>()->hp = 0;
+            Die();
+            kingdom->populationRate += populationIncreaseRate;
         }
     }
 
-};
-
-class Ball : public Gameobject
-{
-public:
-    void AddComponents() override
+    virtual void Die()
     {
-        AddComponent<Transform>();
-        AddComponent<Gravity>();
+        isAlive = false;
     }
 };
 
-class Asteroid : public Gameobject
+class Human : public Creature
 {
 public:
-    void AddComponents() override
+    float humanity = 20;
+
+    virtual void Update() override
     {
-        AddComponent<Transform>();
-        AddComponent<AutoDestroy>();
-        AddComponent<Health>();
+        Creature::Update();
+
+        kingdom->humanity += humanity;
+    }
+
+    virtual void Die() override
+    {
+        Creature::Die();
+
+        kingdom->humanity -= 5;
     }
 };
 
+class Noble : public Human
+{
+
+public:
+    float nobilityIncrease = 0.01f;
+    float moneyIncrease = 0.1f;
+    virtual void Update() override
+    {
+        Human::Update();
+        kingdom->nobility += nobilityIncrease;
+        kingdom->money += moneyIncrease;
+    }
+
+    virtual void Die() override
+    {
+        Human::Die();
+        kingdom->nobility -= 5;
+    }
+
+};
+
+class Orc : public Creature
+{
+public:
+    float evilRate = 0.01f;
+
+    virtual void Update() override
+    {
+        Creature::Update();
+        kingdom->evil += evilRate;
+    }
+
+    virtual void Die() override
+    {
+        Creature::Die();
+        kingdom->evil -= 5;
+    }
+};
 
 class OOPEngineTest
 {
@@ -95,17 +116,28 @@ public:
     OOPEngineTest()
     {
         engine = new OOPEngine();
-
-        for (int i = 0; i < 5000; ++i)
-        {
-            Ball *ball = engine->CreateGameobject<Ball>();
-            Asteroid* asteroid = engine->CreateGameobject<Asteroid>();
-        }
     }
 
     void Init()
     {
         engine->StartAllGameObjects();
+
+        Gameobject* kingdomObject = engine->CreateGameobject<Gameobject>();
+        Kingdom* kingdom = kingdomObject->AddComponent<Kingdom>();
+
+        for (int i = 0; i < 1000; ++i)
+        {
+            Gameobject* orc = engine->CreateGameobject<Gameobject>();
+            Orc* o = orc->AddComponent<Orc>();
+            o->kingdom =kingdom;
+        }
+
+        for (int i = 0; i < 1000; ++i)
+        {
+            Gameobject* noble = engine->CreateGameobject<Gameobject>();
+            Noble* n = noble->AddComponent<Noble>();
+            n->kingdom =kingdom;
+        }
 
     }
 

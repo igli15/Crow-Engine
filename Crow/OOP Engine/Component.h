@@ -12,8 +12,6 @@ class Gameobject;
 
 class Component {
 
-
-
 public:
     Gameobject* parent;
     OOPEngine* engine;

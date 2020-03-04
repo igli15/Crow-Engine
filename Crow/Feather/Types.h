@@ -10,7 +10,7 @@
 using Entity = std::uint32_t;
 using ComponentType = std::uint32_t;
 
-const int MAX_ENTITIES = 100000;
+const int MAX_ENTITIES = 2000000;
 const int MAX_COMPONENTS = 32;
 
 using EntitySignature = std::bitset<MAX_COMPONENTS>;
