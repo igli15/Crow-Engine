@@ -38,7 +38,6 @@ struct ECSOrc
     float evilRate = 0.01f;
 };
 
-
 class CreatureSystem : public System
 {
 public:
@@ -68,6 +67,22 @@ public:
                 kingdom->populationRate +=  handle.component->populationIncreaseRate;
             }
         }
+
+        /*
+        for (auto const& entity : m_entities)
+        {
+            ComponentHandle<ECSCreature> creature;
+            feather->PopulateHandles(entity,creature);
+
+            creature.component->timeSpan -=  creature.component->timeCounter;
+
+            if(creature.component->isAlive &&  creature.component->timeSpan<=0)
+            {
+                creature.component->isAlive = false;
+                kingdom->populationRate +=  creature.component->populationIncreaseRate;
+            }
+        }
+         */
     }
 };
 
@@ -135,12 +150,14 @@ public:
         {
             ComponentHandle<ECSOrc> orc = orcCache[i];
             ComponentHandle<ECSCreature> creature = creatureCache[i];
+            
             kingdom->evil += orc.component->evilRate;
 
             if(!creature.component->isAlive)
             {
                 //OnDeath
             }
+
         }
     }
 };
@@ -158,12 +175,14 @@ public:
     {
         feather = new World();
 
-      feather->Init();
+        feather->Init();
 
+      /*
         feather->RegisterComponent<ECSCreature>();
         feather->RegisterComponent<ECSKingdom>();
         feather->RegisterComponent<ECSNoble>();
         feather->RegisterComponent<ECSOrc>();
+        */
 
         creatureSystem = feather->RegisterSystem<CreatureSystem>();
         nobleSystem = feather->RegisterSystem<NobleSystem>();
@@ -198,14 +217,14 @@ public:
         nobleSystem->kingdom = kingdomEntity.GetComponent<ECSKingdom>().component;
         orcSystem->kingdom = kingdomEntity.GetComponent<ECSKingdom>().component;
 
-        for (int i = 0; i < 100000; ++i)
+        for (int i = 0; i < 1000; ++i)
         {
             EntityHandle entity = feather->CreateEntity();
             entity.AddComponent(ECSCreature{});
             entity.AddComponent(ECSNoble{});
         }
 
-        for (int i = 0; i < 100000; ++i)
+        for (int i = 0; i < 1000; ++i)
         {
             EntityHandle entity = feather->CreateEntity();
             entity.AddComponent(ECSCreature{});

@@ -10,7 +10,7 @@
 
 int main()
 {
-    Debug::Log("Init Crow");
+    //Debug::Log("Init Crow");
 
 
     OOPEngineTest oopTest;
@@ -27,7 +27,7 @@ int main()
 
     auto d1 = std::chrono::duration_cast<std::chrono::milliseconds>(t2 - t1).count();
 
-    std::cout<<d1 <<std::endl;
+    //std::cout<<d1 <<std::endl;
 
     featherTest.Init();
 
@@ -40,8 +40,9 @@ int main()
 
     auto d2 = std::chrono::duration_cast<std::chrono::milliseconds>(t4 - t3).count();
 
-    std::cout<<d2 <<std::endl;
+    //std::cout<<d2 <<std::endl;
 
+    std::cout<<d1<<";"<<d2<<std::endl;
 
     /*
     Window window;

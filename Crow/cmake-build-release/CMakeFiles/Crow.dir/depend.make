@@ -7,12 +7,14 @@ CMakeFiles/Crow.dir/Debug/Debug.cpp.o: ../Debug/Debug.h
 CMakeFiles/Crow.dir/Feather/ComponentArray.cpp.o: ../Debug/Debug.h
 CMakeFiles/Crow.dir/Feather/ComponentArray.cpp.o: ../Feather/ComponentArray.cpp
 CMakeFiles/Crow.dir/Feather/ComponentArray.cpp.o: ../Feather/ComponentArray.h
+CMakeFiles/Crow.dir/Feather/ComponentArray.cpp.o: ../Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Feather/ComponentArray.cpp.o: ../Feather/Types.h
 
 CMakeFiles/Crow.dir/Feather/ComponentHandle.cpp.o: ../Debug/Debug.h
 CMakeFiles/Crow.dir/Feather/ComponentHandle.cpp.o: ../Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Feather/ComponentHandle.cpp.o: ../Feather/ComponentHandle.cpp
 CMakeFiles/Crow.dir/Feather/ComponentHandle.cpp.o: ../Feather/ComponentHandle.h
+CMakeFiles/Crow.dir/Feather/ComponentHandle.cpp.o: ../Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Feather/ComponentHandle.cpp.o: ../Feather/Types.h
 
 CMakeFiles/Crow.dir/Feather/ComponentManager.cpp.o: ../Debug/Debug.h
@@ -20,12 +22,14 @@ CMakeFiles/Crow.dir/Feather/ComponentManager.cpp.o: ../Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Feather/ComponentManager.cpp.o: ../Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Feather/ComponentManager.cpp.o: ../Feather/ComponentManager.cpp
 CMakeFiles/Crow.dir/Feather/ComponentManager.cpp.o: ../Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Feather/ComponentManager.cpp.o: ../Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Feather/ComponentManager.cpp.o: ../Feather/Types.h
 
 CMakeFiles/Crow.dir/Feather/EntityHandle.cpp.o: ../Debug/Debug.h
 CMakeFiles/Crow.dir/Feather/EntityHandle.cpp.o: ../Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Feather/EntityHandle.cpp.o: ../Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Feather/EntityHandle.cpp.o: ../Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Feather/EntityHandle.cpp.o: ../Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Feather/EntityHandle.cpp.o: ../Feather/EntityHandle.cpp
 CMakeFiles/Crow.dir/Feather/EntityHandle.cpp.o: ../Feather/EntityHandle.h
 CMakeFiles/Crow.dir/Feather/EntityHandle.cpp.o: ../Feather/EntityManager.h
@@ -35,15 +39,18 @@ CMakeFiles/Crow.dir/Feather/EntityHandle.cpp.o: ../Feather/Types.h
 CMakeFiles/Crow.dir/Feather/EntityHandle.cpp.o: ../Feather/World.h
 
 CMakeFiles/Crow.dir/Feather/EntityManager.cpp.o: ../Debug/Debug.h
+CMakeFiles/Crow.dir/Feather/EntityManager.cpp.o: ../Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Feather/EntityManager.cpp.o: ../Feather/EntityManager.cpp
 CMakeFiles/Crow.dir/Feather/EntityManager.cpp.o: ../Feather/EntityManager.h
 CMakeFiles/Crow.dir/Feather/EntityManager.cpp.o: ../Feather/Types.h
 
+CMakeFiles/Crow.dir/Feather/System.cpp.o: ../Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Feather/System.cpp.o: ../Feather/System.cpp
 CMakeFiles/Crow.dir/Feather/System.cpp.o: ../Feather/System.h
 CMakeFiles/Crow.dir/Feather/System.cpp.o: ../Feather/Types.h
 
 CMakeFiles/Crow.dir/Feather/SystemManager.cpp.o: ../Debug/Debug.h
+CMakeFiles/Crow.dir/Feather/SystemManager.cpp.o: ../Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Feather/SystemManager.cpp.o: ../Feather/System.h
 CMakeFiles/Crow.dir/Feather/SystemManager.cpp.o: ../Feather/SystemManager.cpp
 CMakeFiles/Crow.dir/Feather/SystemManager.cpp.o: ../Feather/SystemManager.h
@@ -53,6 +60,7 @@ CMakeFiles/Crow.dir/Feather/World.cpp.o: ../Debug/Debug.h
 CMakeFiles/Crow.dir/Feather/World.cpp.o: ../Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Feather/World.cpp.o: ../Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Feather/World.cpp.o: ../Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Feather/World.cpp.o: ../Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Feather/World.cpp.o: ../Feather/EntityHandle.h
 CMakeFiles/Crow.dir/Feather/World.cpp.o: ../Feather/EntityManager.h
 CMakeFiles/Crow.dir/Feather/World.cpp.o: ../Feather/System.h

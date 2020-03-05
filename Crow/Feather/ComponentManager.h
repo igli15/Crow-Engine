@@ -14,11 +14,13 @@ class ComponentManager {
 
 public:
 
+    /*
     template <typename T>
     void RegisterComponent();
 
     template <typename T>
     ComponentType GetComponentType();
+     */
 
     template <typename T>
     void AddComponent(Entity entity,T component);
@@ -31,10 +33,9 @@ public:
 
     void OnEntityDestroyed(Entity entity)
     {
-        for (auto const& pair : m_componentArrays)
+        for (auto const& componentArray : m_allComponentArrays)
         {
-            auto const& component = pair.second;
-            component->OnEntityDestroyed(entity);
+            componentArray->OnEntityDestroyed(entity);
         }
     }
 
@@ -44,9 +45,10 @@ public:
 private:
 
     //TODO get rid of the maps
-    std::unordered_map<const char*, ComponentType> m_componentTypes{};
+    //std::unordered_map<const char*, ComponentType> m_componentTypes{};
+    //std::unordered_map<const char*,IComponentArray*> m_componentArrays{};
 
-    std::unordered_map<const char*,IComponentArray*> m_componentArrays{};
+    std::array<IComponentArray*,MAX_COMPONENTS> m_allComponentArrays;
 
     ComponentType m_componentTypeCount;
 
@@ -54,6 +56,7 @@ private:
 
 };
 
+/*
 template<typename T>
 void ComponentManager::RegisterComponent()
 {
@@ -67,6 +70,9 @@ void ComponentManager::RegisterComponent()
 
     m_componentTypeCount++;
 }
+ */
+
+/*
 
 template<typename T>
 ComponentType ComponentManager::GetComponentType()
@@ -78,19 +84,22 @@ ComponentType ComponentManager::GetComponentType()
     return m_componentTypes[typeName];
 
 }
+ */
 
 template<typename T>
 ComponentArray<T> *ComponentManager::GetComponentArray()
 {
-    const char* typeName = typeid(T).name();
+    auto array = static_cast<ComponentArray<T>*>(m_allComponentArrays[ComponentIDGenerator::index<T>]);
 
-    Debug::Assert(m_componentTypes.find(typeName) != m_componentTypes.end(),"Component is not registered");
-
-    //Debug::Log("hre");
-
-    //TODO Keep in mind that a nullptr has to be returned here if it cant get the array
-
-    return static_cast<ComponentArray<T> *> (m_componentArrays[typeName]);
+    if(array == nullptr)
+    {
+        array = new ComponentArray<T>;
+        m_allComponentArrays[ComponentIDGenerator::index<T>] = array;
+        return array;
+    } else
+    {
+        return array;
+    }
 
 }
 

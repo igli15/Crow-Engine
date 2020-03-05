@@ -23,19 +23,20 @@ public:
     void InitAllSystems();
     void UpdateAllSystems();
 
+    /*
     template <typename T>
     void RegisterComponent()
     {
         m_componentManager->RegisterComponent<T>();
     }
+     */
 
     template <typename T>
     void AddComponent(Entity entity,T component)
     {
         m_componentManager->AddComponent(entity,component);
-
         EntitySignature signature = m_entityManager->GetSignature(entity);
-        signature.set(m_componentManager->GetComponentType<T>(),true);
+        signature.set(ComponentIDGenerator::index<T>,true);
         m_entityManager->SetSignature(entity,signature);
 
         m_systemManager->OnEntitySignatureChanged(entity,signature);
@@ -47,7 +48,7 @@ public:
         m_componentManager->RemoveComponent<T>(entity);
 
         EntitySignature signature = m_entityManager->GetSignature(entity);
-        signature.set(m_componentManager->GetComponentType<T>(),false);
+        signature.set(ComponentIDGenerator::index<T>,false);
         m_entityManager->SetSignature(entity,signature);
 
         m_systemManager->OnEntitySignatureChanged(entity,signature);
@@ -66,11 +67,13 @@ public:
     }
 
 
+    /*
     template <typename T>
     ComponentType GetComponentType()
     {
         return m_componentManager->GetComponentType<T>();
     }
+     */
 
     template <typename T>
     T* RegisterSystem()
@@ -118,7 +121,7 @@ public:
         //https://stackoverflow.com/questions/27682042/why-is-this-variadic-function-call-ambiguous
         //we need 2 typenames before the template pack since when the pack is empty it becomes ambiguous with the Base Case.
 
-        signature.set(GetComponentType<T>());
+        signature.set(ComponentIDGenerator::index<T>);
         CreateSignature<T2,Arg...>(signature);
     }
 
@@ -126,7 +129,7 @@ public:
     template <typename T>
     void CreateSignature(EntitySignature& signature)
     {
-        signature.set(GetComponentType<T>());
+        signature.set(ComponentIDGenerator::index<T>);
     }
 
 private:
