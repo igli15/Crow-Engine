@@ -474,6 +474,33 @@ OOP_Engine/OOPEngine.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/OOP_Engine/OOPEngine.cpp.s
 .PHONY : OOP_Engine/OOPEngine.cpp.s
 
+Rendering/Shader.o: Rendering/Shader.cpp.o
+
+.PHONY : Rendering/Shader.o
+
+# target to build an object file
+Rendering/Shader.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Rendering/Shader.cpp.o
+.PHONY : Rendering/Shader.cpp.o
+
+Rendering/Shader.i: Rendering/Shader.cpp.i
+
+.PHONY : Rendering/Shader.i
+
+# target to preprocess a source file
+Rendering/Shader.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Rendering/Shader.cpp.i
+.PHONY : Rendering/Shader.cpp.i
+
+Rendering/Shader.s: Rendering/Shader.cpp.s
+
+.PHONY : Rendering/Shader.s
+
+# target to generate assembly for a file
+Rendering/Shader.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Rendering/Shader.cpp.s
+.PHONY : Rendering/Shader.cpp.s
+
 Rendering/Window.o: Rendering/Window.cpp.o
 
 .PHONY : Rendering/Window.o
@@ -630,6 +657,9 @@ help:
 	@echo "... OOP_Engine/OOPEngine.o"
 	@echo "... OOP_Engine/OOPEngine.i"
 	@echo "... OOP_Engine/OOPEngine.s"
+	@echo "... Rendering/Shader.o"
+	@echo "... Rendering/Shader.i"
+	@echo "... Rendering/Shader.s"
 	@echo "... Rendering/Window.o"
 	@echo "... Rendering/Window.i"
 	@echo "... Rendering/Window.s"

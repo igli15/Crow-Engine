@@ -42,8 +42,6 @@ int main()
     std::cout<<d1<<";"<<d2<<std::endl;
 */
 
-
-
     Game game;
     game.Init();
     game.Run();
