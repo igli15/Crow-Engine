@@ -123,6 +123,33 @@ Crow/fast:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/build
 .PHONY : Crow/fast
 
+Core/Game.o: Core/Game.cpp.o
+
+.PHONY : Core/Game.o
+
+# target to build an object file
+Core/Game.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Core/Game.cpp.o
+.PHONY : Core/Game.cpp.o
+
+Core/Game.i: Core/Game.cpp.i
+
+.PHONY : Core/Game.i
+
+# target to preprocess a source file
+Core/Game.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Core/Game.cpp.i
+.PHONY : Core/Game.cpp.i
+
+Core/Game.s: Core/Game.cpp.s
+
+.PHONY : Core/Game.s
+
+# target to generate assembly for a file
+Core/Game.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Core/Game.cpp.s
+.PHONY : Core/Game.cpp.s
+
 Debug/Debug.o: Debug/Debug.cpp.o
 
 .PHONY : Debug/Debug.o
@@ -474,6 +501,60 @@ Rendering/Window.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Rendering/Window.cpp.s
 .PHONY : Rendering/Window.cpp.s
 
+SandBox/MainWorld.o: SandBox/MainWorld.cpp.o
+
+.PHONY : SandBox/MainWorld.o
+
+# target to build an object file
+SandBox/MainWorld.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/MainWorld.cpp.o
+.PHONY : SandBox/MainWorld.cpp.o
+
+SandBox/MainWorld.i: SandBox/MainWorld.cpp.i
+
+.PHONY : SandBox/MainWorld.i
+
+# target to preprocess a source file
+SandBox/MainWorld.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/MainWorld.cpp.i
+.PHONY : SandBox/MainWorld.cpp.i
+
+SandBox/MainWorld.s: SandBox/MainWorld.cpp.s
+
+.PHONY : SandBox/MainWorld.s
+
+# target to generate assembly for a file
+SandBox/MainWorld.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/MainWorld.cpp.s
+.PHONY : SandBox/MainWorld.cpp.s
+
+SandBox/Systems/TestSystem.o: SandBox/Systems/TestSystem.cpp.o
+
+.PHONY : SandBox/Systems/TestSystem.o
+
+# target to build an object file
+SandBox/Systems/TestSystem.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/TestSystem.cpp.o
+.PHONY : SandBox/Systems/TestSystem.cpp.o
+
+SandBox/Systems/TestSystem.i: SandBox/Systems/TestSystem.cpp.i
+
+.PHONY : SandBox/Systems/TestSystem.i
+
+# target to preprocess a source file
+SandBox/Systems/TestSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/TestSystem.cpp.i
+.PHONY : SandBox/Systems/TestSystem.cpp.i
+
+SandBox/Systems/TestSystem.s: SandBox/Systems/TestSystem.cpp.s
+
+.PHONY : SandBox/Systems/TestSystem.s
+
+# target to generate assembly for a file
+SandBox/Systems/TestSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/TestSystem.cpp.s
+.PHONY : SandBox/Systems/TestSystem.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -510,6 +591,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Crow"
+	@echo "... Core/Game.o"
+	@echo "... Core/Game.i"
+	@echo "... Core/Game.s"
 	@echo "... Debug/Debug.o"
 	@echo "... Debug/Debug.i"
 	@echo "... Debug/Debug.s"
@@ -549,6 +633,12 @@ help:
 	@echo "... Rendering/Window.o"
 	@echo "... Rendering/Window.i"
 	@echo "... Rendering/Window.s"
+	@echo "... SandBox/MainWorld.o"
+	@echo "... SandBox/MainWorld.i"
+	@echo "... SandBox/MainWorld.s"
+	@echo "... SandBox/Systems/TestSystem.o"
+	@echo "... SandBox/Systems/TestSystem.i"
+	@echo "... SandBox/Systems/TestSystem.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

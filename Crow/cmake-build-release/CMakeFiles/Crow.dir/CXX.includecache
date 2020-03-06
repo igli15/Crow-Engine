@@ -6,6 +6,20 @@
 
 #IncludeRegexTransform: 
 
+/Users/igli/Desktop/Crow Engine/Crow/Core/Game.cpp
+Game.h
+/Users/igli/Desktop/Crow Engine/Crow/Core/Game.h
+Clock.h
+/Users/igli/Desktop/Crow Engine/Crow/Core/Clock.h
+../SandBox/MainWorld.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/MainWorld.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Core/Game.h
+../Rendering/Window.h
+/Users/igli/Desktop/Crow Engine/Crow/Rendering/Window.h
+../Feather/World.h
+/Users/igli/Desktop/Crow Engine/Crow/Feather/World.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Debug/Debug.h
 string
 -
@@ -41,12 +55,6 @@ ComponentHandle.h
 /Users/igli/Desktop/Crow Engine/Crow/Feather/CustomTypeID.h
 numeric
 -
-
-/Users/igli/Desktop/Crow Engine/Crow/Feather/EntityHandle.h
-Types.h
-/Users/igli/Desktop/Crow Engine/Crow/Feather/Types.h
-World.h
-/Users/igli/Desktop/Crow Engine/Crow/Feather/World.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Feather/EntityManager.h
 queue
@@ -86,51 +94,15 @@ ComponentManager.h
 EntityManager.h
 /Users/igli/Desktop/Crow Engine/Crow/Feather/EntityManager.h
 
-/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Component.h
-
-/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Gameobject.h
-vector
--
-iostream
--
-Component.h
-/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Component.h
-
-/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/OOPEngine.h
-vector
--
-Gameobject.h
-/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Gameobject.h
-
 /Users/igli/Desktop/Crow Engine/Crow/Rendering/Window.h
 GL/glew.h
 -
 GLFW/glfw3.h
 -
 
-/Users/igli/Desktop/Crow Engine/Crow/Tests/FeatherTest.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/MainWorld.h
 ../Feather/World.h
 /Users/igli/Desktop/Crow Engine/Crow/Feather/World.h
-../Feather/EntityHandle.h
-/Users/igli/Desktop/Crow Engine/Crow/Feather/EntityHandle.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Tests/OOPEngineTest.h
-../OOP Engine/OOPEngine.h
-/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/OOPEngine.h
-../OOP Engine/Component.h
-/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Component.h
-
-/Users/igli/Desktop/Crow Engine/Crow/main.cpp
-Debug/Debug.h
-/Users/igli/Desktop/Crow Engine/Crow/Debug/Debug.h
-Tests/FeatherTest.h
-/Users/igli/Desktop/Crow Engine/Crow/Tests/FeatherTest.h
-Tests/OOPEngineTest.h
-/Users/igli/Desktop/Crow Engine/Crow/Tests/OOPEngineTest.h
-Rendering/Window.h
-/Users/igli/Desktop/Crow Engine/Crow/Rendering/Window.h
-iostream
--
 
 /usr/local/include/GL/glew.h
 stddef.h

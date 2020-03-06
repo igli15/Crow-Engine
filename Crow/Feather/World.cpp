@@ -40,4 +40,9 @@ void World::UpdateAllSystems()
     }
 }
 
+void World::Build()
+{
+
+}
+
 

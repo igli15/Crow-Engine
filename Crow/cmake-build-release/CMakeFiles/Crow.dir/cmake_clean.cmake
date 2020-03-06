@@ -13,6 +13,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/Crow.dir/Feather/EntityHandle.cpp.o"
   "CMakeFiles/Crow.dir/Feather/ComponentHandle.cpp.o"
   "CMakeFiles/Crow.dir/Rendering/Window.cpp.o"
+  "CMakeFiles/Crow.dir/Core/Game.cpp.o"
+  "CMakeFiles/Crow.dir/SandBox/MainWorld.cpp.o"
+  "CMakeFiles/Crow.dir/SandBox/Systems/TestSystem.cpp.o"
   "Crow.pdb"
   "Crow"
 )

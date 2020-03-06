@@ -16,6 +16,8 @@ class World {
 
 public:
 
+    virtual void Build();
+
     void Init();
     EntityHandle CreateEntity();
     void DestroyEntity(Entity entity);
