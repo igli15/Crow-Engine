@@ -19,7 +19,7 @@ public:
 
     unsigned int ID;
 
-    Shader(const char* vertexPath, const char* fragmentPath);
+    Shader(const std::string& vertexPath,const std::string&  fragmentPath);
 
     void Use();
 

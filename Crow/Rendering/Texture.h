@@ -9,8 +9,8 @@
 struct Texture {
 
 public:
-    float width;
-    float height;
+    int width;
+    int height;
     float nrOfChannels;
     const unsigned char* data;
 

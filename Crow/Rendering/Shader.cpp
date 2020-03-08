@@ -3,8 +3,9 @@
 //
 
 #include "Shader.h"
+#include "../Crow.h"
 
-Shader::Shader(const char *vertexPath, const char *fragmentPath)
+Shader::Shader(const std::string& vertexPath,const std::string& fragmentPath)
 {
     std::string vertexCode;
     std::string fragmentCode;
@@ -17,8 +18,8 @@ Shader::Shader(const char *vertexPath, const char *fragmentPath)
 
     try
     {
-        vShaderFile.open(vertexPath);
-        fShaderFile.open(fragmentPath);
+        vShaderFile.open(SHADER_PATH + vertexPath);
+        fShaderFile.open(SHADER_PATH + fragmentPath);
         std::stringstream vShaderStream, fShaderStream;
         vShaderStream << vShaderFile.rdbuf();
         fShaderStream << fShaderFile.rdbuf();
@@ -29,6 +30,7 @@ Shader::Shader(const char *vertexPath, const char *fragmentPath)
     }
     catch(std::ifstream::failure e)
     {
+        std::cout<< SHADER_PATH + vertexPath<<std::endl;
         std::cout << "ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ" << std::endl;
     }
 

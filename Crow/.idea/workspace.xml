@@ -13,23 +13,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf22dce6-4d69-43d0-a044-a31c5cbccc70" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Crow.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/container.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/Debug.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/Debug.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/Debug.h" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/Debug.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Feather/ComponentArray.h" beforeDir="false" afterPath="$PROJECT_DIR$/Feather/ComponentArray.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Feather/ComponentHandle.h" beforeDir="false" afterPath="$PROJECT_DIR$/Feather/ComponentHandle.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Feather/EntityHandle.h" beforeDir="false" afterPath="$PROJECT_DIR$/Feather/EntityHandle.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Feather/SystemManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Feather/SystemManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SandBox/MainWorld.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SandBox/MainWorld.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Crow.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Crow.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FragmentShader.fs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/FragmentShader.fs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VertexShader.vs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/VertexShader.vs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Game.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/ResourceLoader.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Core/ResourceLoader.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crow.h" beforeDir="false" afterPath="$PROJECT_DIR$/Crow.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rendering/Shader.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Rendering/Shader.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rendering/Shader.h" beforeDir="false" afterPath="$PROJECT_DIR$/Rendering/Shader.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rendering/Texture.h" beforeDir="false" afterPath="$PROJECT_DIR$/Rendering/Texture.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/Crow" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/Crow" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/Crow.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/Crow.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -87,29 +84,35 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="cmake" value="8" />
-          <entry key="cpp" value="67" />
-          <entry key="h" value="129" />
+          <entry key="cpp" value="72" />
+          <entry key="fs" value="2" />
+          <entry key="h" value="136" />
           <entry key="txt" value="2" />
+          <entry key="vs" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="10" />
-          <entry key="ObjectiveC" value="196" />
+          <entry key="ObjectiveC" value="208" />
+          <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cmake" value="2" />
-          <entry key="cpp" value="3210" />
-          <entry key="h" value="16891" />
+          <entry key="cpp" value="3742" />
+          <entry key="fs" value="38" />
+          <entry key="h" value="16991" />
           <entry key="txt" value="112" />
+          <entry key="vs" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="114" />
-          <entry key="ObjectiveC" value="20101" />
+          <entry key="ObjectiveC" value="20733" />
+          <entry key="PLAIN_TEXT" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -130,9 +133,30 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Core/ResourceLoader.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="18" column="64" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
+              <folding>
+                <element signature="e#48#75#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Core/ResourceLoader.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="599">
+            <state relative-caret-position="393">
               <caret line="46" selection-start-line="46" selection-end-line="46" />
               <folding>
                 <element signature="e#1#25#0" expanded="true" />
@@ -142,88 +166,68 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SandBox/MainWorld.cpp">
+        <entry file="file://$PROJECT_DIR$/Core/Game.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+            <state relative-caret-position="-211">
+              <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
               <folding>
-                <element signature="e#48#70#0" expanded="true" />
+                <element signature="e#48#65#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Feather/ComponentHandle.h">
+        <entry file="file://$PROJECT_DIR$/Assets/Shaders/FragmentShader.fs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="32" column="92" selection-start-line="32" selection-start-column="92" selection-end-line="32" selection-end-column="92" />
+            <state relative-caret-position="242">
+              <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Feather/ComponentManager.h">
+        <entry file="file://$PROJECT_DIR$/Assets/Shaders/VertexShader.vs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-25">
-              <caret line="99" column="5" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
+            <state relative-caret-position="220">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Feather/EntityHandle.h">
+        <entry file="file://$PROJECT_DIR$/Core/Game.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Feather/EntityManager.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Feather/SystemManager.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="76" column="44" selection-start-line="76" selection-start-column="44" selection-end-line="76" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Feather/World.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2488">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Debug/Debug.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Feather/ComponentArray.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="89" column="54" lean-forward="true" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="54" />
+            <state relative-caret-position="462">
+              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
               <folding>
-                <element signature="e#109#122#0" expanded="true" />
-                <element signature="e#1061#1073#0" expanded="true" />
+                <element signature="e#90#122#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Rendering/Texture.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Rendering/Texture.cpp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Rendering/Shader.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="316">
+              <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+              <folding>
+                <element signature="e#48#67#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -237,8 +241,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Tests/NaiveEngineTest.h" />
-        <option value="$PROJECT_DIR$/OOP Engine/OOPEngine.cpp" />
         <option value="$PROJECT_DIR$/Feather/EntityManager.cpp" />
         <option value="$PROJECT_DIR$/Feather/EntityManager.h" />
         <option value="$PROJECT_DIR$/Feather/Feather.cpp" />
@@ -266,19 +268,12 @@
         <option value="$PROJECT_DIR$/SandBox/Systems/TestSystem.cpp" />
         <option value="$PROJECT_DIR$/SandBox/MainWorld.h" />
         <option value="$PROJECT_DIR$/Tests/FeatherTest.h" />
-        <option value="$PROJECT_DIR$/Rendering/Shader.cpp" />
-        <option value="$PROJECT_DIR$/Rendering/Shader.h" />
         <option value="$PROJECT_DIR$/Core/Game.h" />
-        <option value="$PROJECT_DIR$/Core/Game.cpp" />
         <option value="$PROJECT_DIR$/Plugins/stb_image.h" />
         <option value="$PROJECT_DIR$/Plugins/stb_image.cpp" />
-        <option value="$PROJECT_DIR$/Rendering/Texture.h" />
-        <option value="$PROJECT_DIR$/Core/ResourceLoader.h" />
-        <option value="$PROJECT_DIR$/Core/ResourceLoader.cpp" />
         <option value="$PROJECT_DIR$/Plugins/include/spdlog/spdlog.h" />
         <option value="$PROJECT_DIR$/Findspdlog.cmake" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/Crow.h" />
         <option value="$PROJECT_DIR$/Feather/EntityHandle.h" />
         <option value="$PROJECT_DIR$/Debug/Debug.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
@@ -288,6 +283,15 @@
         <option value="$PROJECT_DIR$/Feather/ComponentManager.h" />
         <option value="$PROJECT_DIR$/Feather/SystemManager.h" />
         <option value="$PROJECT_DIR$/SandBox/MainWorld.cpp" />
+        <option value="$PROJECT_DIR$/Rendering/Shader.h" />
+        <option value="$PROJECT_DIR$/Rendering/Shader.cpp" />
+        <option value="$PROJECT_DIR$/Crow.h" />
+        <option value="$PROJECT_DIR$/Core/ResourceLoader.h" />
+        <option value="$PROJECT_DIR$/Rendering/Texture.h" />
+        <option value="$PROJECT_DIR$/Assets/Shaders/VertexShader.vs" />
+        <option value="$PROJECT_DIR$/Core/ResourceLoader.cpp" />
+        <option value="$PROJECT_DIR$/Core/Game.cpp" />
+        <option value="$PROJECT_DIR$/Assets/Shaders/FragmentShader.fs" />
       </list>
     </option>
   </component>
@@ -317,22 +321,29 @@
             <path>
               <item name="Crow" type="b2602c69:ProjectViewProjectNode" />
               <item name="Crow" type="462c0819:PsiDirectoryNode" />
-              <item name="Debug" type="462c0819:PsiDirectoryNode" />
+              <item name="Assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Crow" type="b2602c69:ProjectViewProjectNode" />
               <item name="Crow" type="462c0819:PsiDirectoryNode" />
-              <item name="Feather" type="462c0819:PsiDirectoryNode" />
+              <item name="Assets" type="462c0819:PsiDirectoryNode" />
+              <item name="Shaders" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Crow" type="b2602c69:ProjectViewProjectNode" />
               <item name="Crow" type="462c0819:PsiDirectoryNode" />
-              <item name="SandBox" type="462c0819:PsiDirectoryNode" />
+              <item name="Assets" type="462c0819:PsiDirectoryNode" />
+              <item name="Textures" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Crow" type="b2602c69:ProjectViewProjectNode" />
               <item name="Crow" type="462c0819:PsiDirectoryNode" />
-              <item name="Tests" type="462c0819:PsiDirectoryNode" />
+              <item name="Core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Crow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Crow" type="462c0819:PsiDirectoryNode" />
+              <item name="Rendering" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -348,11 +359,13 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Assets/Textures" />
+      <recent name="$PROJECT_DIR$/Assets/Shaders" />
+      <recent name="$PROJECT_DIR$/Core" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Plugins" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Core" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -446,12 +459,12 @@
       <workItem from="1583524630664" duration="2229000" />
       <workItem from="1583586904617" duration="1851000" />
       <workItem from="1583603381695" duration="6489000" />
-      <workItem from="1583669130277" duration="1741000" />
+      <workItem from="1583669130277" duration="5885000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="255511000" />
+    <option name="totallyTimeSpent" value="259655000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -515,14 +528,13 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.fs" />
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Feather/ComponentHandle.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Feather/Utils.cpp" />
     <entry file="file://$PROJECT_DIR$/Feather/Utils.h" />
     <entry file="file://$PROJECT_DIR$/Feather/CustomTypeID.cpp" />
     <entry file="file://$PROJECT_DIR$/Feather/CustomTypeID.h">
@@ -592,40 +604,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Rendering/Shader.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/Game.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-          <folding>
-            <element signature="e#90#122#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/Game.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1540">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
-          <folding>
-            <element signature="e#48#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rendering/Shader.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2068">
-          <caret line="94" column="63" selection-start-line="94" selection-start-column="63" selection-end-line="94" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/OOPEngineTest.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="542">
@@ -633,16 +611,6 @@
           <folding>
             <element signature="e#144#180#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rendering/Texture.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rendering/Texture.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -661,26 +629,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="16" column="11" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/ResourceLoader.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding>
-            <element signature="e#48#75#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/ResourceLoader.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding>
-            <element signature="e#109#133#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -727,16 +675,6 @@
           <caret line="205" column="10" selection-start-line="205" selection-start-column="10" selection-end-line="205" selection-end-column="10" />
           <folding>
             <element signature="e#103#132#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Crow.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding>
-            <element signature="e#90#116#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -818,9 +756,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SandBox/MainWorld.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+          <folding>
+            <element signature="e#48#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rendering/Shader.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding>
+            <element signature="e#93#113#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crow.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+          <folding>
+            <element signature="e#90#116#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rendering/Texture.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/ResourceLoader.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rendering/Shader.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+          <folding>
+            <element signature="e#48#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/Game.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding>
+            <element signature="e#90#122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/ResourceLoader.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="64" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
+          <folding>
+            <element signature="e#48#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rendering/Texture.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
+        <state relative-caret-position="393">
           <caret line="46" selection-start-line="46" selection-end-line="46" />
           <folding>
             <element signature="e#1#25#0" expanded="true" />
@@ -828,12 +843,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SandBox/MainWorld.cpp">
+    <entry file="file://$PROJECT_DIR$/Assets/Shaders/FragmentShader.fs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+        <state relative-caret-position="242">
+          <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Shaders/VertexShader.vs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Core/Game.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-211">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
           <folding>
-            <element signature="e#48#70#0" expanded="true" />
+            <element signature="e#48#65#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -4,6 +4,7 @@
 CMakeFiles/Crow.dir/Core/Game.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Core/Game.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Core/Game.h
+ /Users/igli/Desktop/Crow Engine/Crow/Core/ResourceLoader.h
  /Users/igli/Desktop/Crow Engine/Crow/Crow.h
  /Users/igli/Desktop/Crow Engine/Crow/Debug/Debug.h
  /Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentArray.h
@@ -16,6 +17,7 @@ CMakeFiles/Crow.dir/Core/Game.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Feather/Types.h
  /Users/igli/Desktop/Crow Engine/Crow/Feather/World.h
  /Users/igli/Desktop/Crow Engine/Crow/Rendering/Shader.h
+ /Users/igli/Desktop/Crow Engine/Crow/Rendering/Texture.h
  /Users/igli/Desktop/Crow Engine/Crow/Rendering/Window.h
  /Users/igli/Desktop/Crow Engine/Crow/SandBox/MainWorld.h
  /usr/local/include/GL/glew.h
@@ -64,8 +66,52 @@ CMakeFiles/Crow.dir/Core/Game.cpp.o
 CMakeFiles/Crow.dir/Core/ResourceLoader.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Core/ResourceLoader.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Core/ResourceLoader.h
+ /Users/igli/Desktop/Crow Engine/Crow/Crow.h
+ /Users/igli/Desktop/Crow Engine/Crow/Debug/Debug.h
+ /Users/igli/Desktop/Crow Engine/Crow/Feather/CustomTypeID.h
+ /Users/igli/Desktop/Crow Engine/Crow/Feather/Types.h
  /Users/igli/Desktop/Crow Engine/Crow/Plugins/stb_image.h
  /Users/igli/Desktop/Crow Engine/Crow/Rendering/Texture.h
+ /usr/local/include/spdlog/common-inl.h
+ /usr/local/include/spdlog/common.h
+ /usr/local/include/spdlog/details/backtracer-inl.h
+ /usr/local/include/spdlog/details/backtracer.h
+ /usr/local/include/spdlog/details/circular_q.h
+ /usr/local/include/spdlog/details/console_globals.h
+ /usr/local/include/spdlog/details/fmt_helper.h
+ /usr/local/include/spdlog/details/log_msg-inl.h
+ /usr/local/include/spdlog/details/log_msg.h
+ /usr/local/include/spdlog/details/log_msg_buffer-inl.h
+ /usr/local/include/spdlog/details/log_msg_buffer.h
+ /usr/local/include/spdlog/details/null_mutex.h
+ /usr/local/include/spdlog/details/os-inl.h
+ /usr/local/include/spdlog/details/os.h
+ /usr/local/include/spdlog/details/pattern_formatter-inl.h
+ /usr/local/include/spdlog/details/pattern_formatter.h
+ /usr/local/include/spdlog/details/periodic_worker-inl.h
+ /usr/local/include/spdlog/details/periodic_worker.h
+ /usr/local/include/spdlog/details/registry-inl.h
+ /usr/local/include/spdlog/details/registry.h
+ /usr/local/include/spdlog/details/synchronous_factory.h
+ /usr/local/include/spdlog/fmt/bundled/core.h
+ /usr/local/include/spdlog/fmt/bundled/format-inl.h
+ /usr/local/include/spdlog/fmt/bundled/format.h
+ /usr/local/include/spdlog/fmt/fmt.h
+ /usr/local/include/spdlog/formatter.h
+ /usr/local/include/spdlog/logger-inl.h
+ /usr/local/include/spdlog/logger.h
+ /usr/local/include/spdlog/sinks/ansicolor_sink-inl.h
+ /usr/local/include/spdlog/sinks/ansicolor_sink.h
+ /usr/local/include/spdlog/sinks/sink-inl.h
+ /usr/local/include/spdlog/sinks/sink.h
+ /usr/local/include/spdlog/sinks/stdout_color_sinks-inl.h
+ /usr/local/include/spdlog/sinks/stdout_color_sinks.h
+ /usr/local/include/spdlog/sinks/wincolor_sink-inl.h
+ /usr/local/include/spdlog/sinks/wincolor_sink.h
+ /usr/local/include/spdlog/spdlog-inl.h
+ /usr/local/include/spdlog/spdlog.h
+ /usr/local/include/spdlog/tweakme.h
+ /usr/local/include/spdlog/version.h
 CMakeFiles/Crow.dir/Debug/Debug.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Debug/Debug.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Debug/Debug.h
@@ -475,9 +521,53 @@ CMakeFiles/Crow.dir/Plugins/stb_image.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Plugins/stb_image.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Plugins/stb_image.h
 CMakeFiles/Crow.dir/Rendering/Shader.cpp.o
+ /Users/igli/Desktop/Crow Engine/Crow/Crow.h
+ /Users/igli/Desktop/Crow Engine/Crow/Debug/Debug.h
+ /Users/igli/Desktop/Crow Engine/Crow/Feather/CustomTypeID.h
+ /Users/igli/Desktop/Crow Engine/Crow/Feather/Types.h
  /Users/igli/Desktop/Crow Engine/Crow/Rendering/Shader.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Rendering/Shader.h
  /usr/local/include/Gl/glew.h
+ /usr/local/include/spdlog/common-inl.h
+ /usr/local/include/spdlog/common.h
+ /usr/local/include/spdlog/details/backtracer-inl.h
+ /usr/local/include/spdlog/details/backtracer.h
+ /usr/local/include/spdlog/details/circular_q.h
+ /usr/local/include/spdlog/details/console_globals.h
+ /usr/local/include/spdlog/details/fmt_helper.h
+ /usr/local/include/spdlog/details/log_msg-inl.h
+ /usr/local/include/spdlog/details/log_msg.h
+ /usr/local/include/spdlog/details/log_msg_buffer-inl.h
+ /usr/local/include/spdlog/details/log_msg_buffer.h
+ /usr/local/include/spdlog/details/null_mutex.h
+ /usr/local/include/spdlog/details/os-inl.h
+ /usr/local/include/spdlog/details/os.h
+ /usr/local/include/spdlog/details/pattern_formatter-inl.h
+ /usr/local/include/spdlog/details/pattern_formatter.h
+ /usr/local/include/spdlog/details/periodic_worker-inl.h
+ /usr/local/include/spdlog/details/periodic_worker.h
+ /usr/local/include/spdlog/details/registry-inl.h
+ /usr/local/include/spdlog/details/registry.h
+ /usr/local/include/spdlog/details/synchronous_factory.h
+ /usr/local/include/spdlog/fmt/bundled/core.h
+ /usr/local/include/spdlog/fmt/bundled/format-inl.h
+ /usr/local/include/spdlog/fmt/bundled/format.h
+ /usr/local/include/spdlog/fmt/fmt.h
+ /usr/local/include/spdlog/formatter.h
+ /usr/local/include/spdlog/logger-inl.h
+ /usr/local/include/spdlog/logger.h
+ /usr/local/include/spdlog/sinks/ansicolor_sink-inl.h
+ /usr/local/include/spdlog/sinks/ansicolor_sink.h
+ /usr/local/include/spdlog/sinks/sink-inl.h
+ /usr/local/include/spdlog/sinks/sink.h
+ /usr/local/include/spdlog/sinks/stdout_color_sinks-inl.h
+ /usr/local/include/spdlog/sinks/stdout_color_sinks.h
+ /usr/local/include/spdlog/sinks/wincolor_sink-inl.h
+ /usr/local/include/spdlog/sinks/wincolor_sink.h
+ /usr/local/include/spdlog/spdlog-inl.h
+ /usr/local/include/spdlog/spdlog.h
+ /usr/local/include/spdlog/tweakme.h
+ /usr/local/include/spdlog/version.h
 CMakeFiles/Crow.dir/Rendering/Texture.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Rendering/Texture.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Rendering/Texture.h

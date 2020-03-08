@@ -13,6 +13,8 @@ Game.h
 /Users/igli/Desktop/Crow Engine/Crow/SandBox/MainWorld.h
 ../Rendering/Shader.h
 /Users/igli/Desktop/Crow Engine/Crow/Rendering/Shader.h
+ResourceLoader.h
+/Users/igli/Desktop/Crow Engine/Crow/Core/ResourceLoader.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Core/Game.h
 ../Rendering/Window.h
@@ -20,15 +22,19 @@ Game.h
 ../Feather/World.h
 /Users/igli/Desktop/Crow Engine/Crow/Feather/World.h
 
+/Users/igli/Desktop/Crow Engine/Crow/Core/ResourceLoader.h
+map
+-
+../Rendering/Texture.h
+/Users/igli/Desktop/Crow Engine/Crow/Rendering/Texture.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Crow.h
 Feather/Types.h
 /Users/igli/Desktop/Crow Engine/Crow/Feather/Types.h
 Debug/Debug.h
 /Users/igli/Desktop/Crow Engine/Crow/Debug/Debug.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Debug/Debug.cpp
-Debug.h
-/Users/igli/Desktop/Crow Engine/Crow/Debug/Debug.h
+string
+-
 
 /Users/igli/Desktop/Crow Engine/Crow/Debug/Debug.h
 string.h
@@ -44,10 +50,6 @@ spdlog/sinks/stdout_color_sinks.h
 memory
 -
 
-/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentArray.cpp
-ComponentArray.h
-/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentArray.h
-
 /Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentArray.h
 ../Crow.h
 /Users/igli/Desktop/Crow Engine/Crow/Crow.h
@@ -56,19 +58,11 @@ array
 unordered_map
 -
 
-/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentHandle.cpp
-ComponentHandle.h
-/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentHandle.h
-
 /Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentHandle.h
 Types.h
 /Users/igli/Desktop/Crow Engine/Crow/Feather/Types.h
 ComponentArray.h
 /Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentArray.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentManager.cpp
-ComponentManager.h
-/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentManager.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentManager.h
 unordered_map
@@ -83,16 +77,6 @@ ComponentHandle.h
 /Users/igli/Desktop/Crow Engine/Crow/Feather/CustomTypeID.h
 numeric
 -
-
-/Users/igli/Desktop/Crow Engine/Crow/Feather/EntityHandle.cpp
-EntityHandle.h
-/Users/igli/Desktop/Crow Engine/Crow/Feather/EntityHandle.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Feather/EntityHandle.h
-Types.h
-/Users/igli/Desktop/Crow Engine/Crow/Feather/Types.h
-World.h
-/Users/igli/Desktop/Crow Engine/Crow/Feather/World.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Feather/EntityManager.h
 queue
@@ -124,12 +108,6 @@ bitset
 CustomTypeID.h
 /Users/igli/Desktop/Crow Engine/Crow/Feather/CustomTypeID.h
 
-/Users/igli/Desktop/Crow Engine/Crow/Feather/World.cpp
-World.h
-/Users/igli/Desktop/Crow Engine/Crow/Feather/World.h
-EntityHandle.h
-/Users/igli/Desktop/Crow Engine/Crow/Feather/EntityHandle.h
-
 /Users/igli/Desktop/Crow Engine/Crow/Feather/World.h
 SystemManager.h
 /Users/igli/Desktop/Crow Engine/Crow/Feather/SystemManager.h
@@ -137,22 +115,6 @@ ComponentManager.h
 /Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentManager.h
 EntityManager.h
 /Users/igli/Desktop/Crow Engine/Crow/Feather/EntityManager.h
-
-/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Component.h
-
-/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Gameobject.h
-vector
--
-iostream
--
-Component.h
-/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Component.h
-
-/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/OOPEngine.h
-vector
--
-Gameobject.h
-/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Gameobject.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Rendering/Shader.h
 Gl/glew.h
@@ -166,57 +128,17 @@ sstream
 iostream
 -
 
+/Users/igli/Desktop/Crow Engine/Crow/Rendering/Texture.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Rendering/Window.h
 GL/glew.h
 -
 GLFW/glfw3.h
 -
 
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/MainWorld.cpp
-MainWorld.h
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/MainWorld.h
-../Tests/FeatherTest.h
-/Users/igli/Desktop/Crow Engine/Crow/Tests/FeatherTest.h
-Systems/TestSystem.h
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/TestSystem.h
-
 /Users/igli/Desktop/Crow Engine/Crow/SandBox/MainWorld.h
 ../Feather/World.h
 /Users/igli/Desktop/Crow Engine/Crow/Feather/World.h
-
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/TestSystem.h
-../../Feather/System.h
-/Users/igli/Desktop/Crow Engine/Crow/Feather/System.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Tests/FeatherTest.h
-../Feather/World.h
-/Users/igli/Desktop/Crow Engine/Crow/Feather/World.h
-../Feather/EntityHandle.h
-/Users/igli/Desktop/Crow Engine/Crow/Feather/EntityHandle.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Tests/OOPEngineTest.h
-../OOP Engine/OOPEngine.h
-/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/OOPEngine.h
-../OOP Engine/Component.h
-/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Component.h
-
-/Users/igli/Desktop/Crow Engine/Crow/main.cpp
-Debug/Debug.h
-/Users/igli/Desktop/Crow Engine/Crow/Debug/Debug.h
-Tests/FeatherTest.h
-/Users/igli/Desktop/Crow Engine/Crow/Tests/FeatherTest.h
-Tests/OOPEngineTest.h
-/Users/igli/Desktop/Crow Engine/Crow/Tests/OOPEngineTest.h
-Rendering/Window.h
-/Users/igli/Desktop/Crow Engine/Crow/Rendering/Window.h
-iostream
--
-time.h
--
-Core/Game.h
-/Users/igli/Desktop/Crow Engine/Crow/Core/Game.h
-Debug/Debug.h
-/Users/igli/Desktop/Crow Engine/Crow/Debug/Debug.h
 
 /usr/local/include/GL/glew.h
 stddef.h
