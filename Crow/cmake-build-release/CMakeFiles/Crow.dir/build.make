@@ -379,11 +379,6 @@ Crow: CMakeFiles/Crow.dir/Plugins/stb_image.cpp.o
 Crow: CMakeFiles/Crow.dir/Core/ResourceLoader.cpp.o
 Crow: CMakeFiles/Crow.dir/Rendering/Texture.cpp.o
 Crow: CMakeFiles/Crow.dir/build.make
-Crow: /usr/local/lib/libsfml-system.dylib
-Crow: /usr/local/lib/libsfml-window.dylib
-Crow: /usr/local/lib/libsfml-graphics.dylib
-Crow: /usr/local/lib/libsfml-network.dylib
-Crow: /usr/local/lib/libsfml-audio.dylib
 Crow: /usr/local/lib/libglfw.dylib
 Crow: /usr/local/lib/libGLEW.dylib
 Crow: CMakeFiles/Crow.dir/link.txt

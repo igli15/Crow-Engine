@@ -5,7 +5,6 @@ set(CMAKE_CXX_STANDARD 17)
 
 set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR})
 
-find_package(SFML REQUIRED COMPONENTS system window graphics network audio)
 find_package (OpenGL REQUIRED)
 find_package(GLFW REQUIRED)
 find_package(GLEW REQUIRED)
@@ -16,7 +15,6 @@ find_library(COCOA_LIBRARY Cocoa REQUIRED)
 find_library(IOKIT_LIBRARY IOKit REQUIRED)
 find_library(COREVID_LIBRARY CoreVideo REQUIRED)
 
-include_directories(${SFML_INCLUDE_DIR})
 include_directories(${GLEW_INCLUDE_DIRS})
 include_directories(${GLFW_INCLUDE_DIR})
 include_directories(${spdlog_INCLUDE_DIR})
@@ -24,7 +22,6 @@ include_directories(${GLM_INCLUDE_DIRS})
 
 add_executable(Crow main.cpp Debug/Debug.cpp Debug/Debug.h Feather/Types.h Feather/EntityManager.cpp Feather/EntityManager.h Feather/ComponentArray.cpp Feather/ComponentArray.h Feather/ComponentManager.cpp Feather/ComponentManager.h Feather/System.cpp Feather/System.h Feather/SystemManager.cpp Feather/SystemManager.h Feather/World.cpp Feather/World.h Tests/FeatherTest.h "OOP Engine/Gameobject.cpp" "OOP Engine/Gameobject.h" "OOP Engine/Component.cpp" "OOP Engine/Component.h" "OOP Engine/OOPEngine.cpp" "OOP Engine/OOPEngine.h" Tests/OOPEngineTest.h Feather/EntityHandle.cpp Feather/EntityHandle.h Feather/ComponentHandle.cpp Feather/ComponentHandle.h Rendering/Window.cpp Rendering/Window.h Feather/CustomTypeID.h Core/Game.cpp Core/Game.h SandBox/MainWorld.cpp SandBox/MainWorld.h SandBox/Systems/TestSystem.cpp SandBox/Systems/TestSystem.h Rendering/Shader.cpp Rendering/Shader.h Plugins/stb_image.h Plugins/stb_image.cpp Core/ResourceLoader.cpp Core/ResourceLoader.h Rendering/Texture.cpp Rendering/Texture.h Crow.h)
 
-target_link_libraries(Crow ${SFML_LIBRARIES})
 target_link_libraries(Crow ${GLFW_LIBRARIES})
 target_link_libraries(Crow ${spdlog_LIBRARIES})
 target_link_libraries(Crow ${GLM_LIBRARIES})
