@@ -229,6 +229,9 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/FindGLFW.cmake">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/FindGLM.cmake">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/FindSFML.cmake">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

@@ -38,6 +38,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../CMakeLists.txt"
   "../FindGLEW.cmake"
   "../FindGLFW.cmake"
+  "../FindGLM.cmake"
   "../FindSFML.cmake"
   "../Findspdlog.cmake"
   "CMakeFiles/3.12.3/CMakeCCompiler.cmake"

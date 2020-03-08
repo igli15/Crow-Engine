@@ -13,20 +13,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf22dce6-4d69-43d0-a044-a31c5cbccc70" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Textures/container.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FragmentShader.fs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/FragmentShader.fs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VertexShader.vs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/VertexShader.vs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Game.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/ResourceLoader.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Core/ResourceLoader.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crow.h" beforeDir="false" afterPath="$PROJECT_DIR$/Crow.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rendering/Shader.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Rendering/Shader.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rendering/Shader.h" beforeDir="false" afterPath="$PROJECT_DIR$/Rendering/Shader.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rendering/Texture.h" beforeDir="false" afterPath="$PROJECT_DIR$/Rendering/Texture.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Crow.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Crow.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/Crow" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/Crow" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/Crow.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/Crow.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -83,17 +81,17 @@
     <session id="1487962837">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cmake" value="8" />
+          <entry key="cmake" value="9" />
           <entry key="cpp" value="72" />
           <entry key="fs" value="2" />
           <entry key="h" value="136" />
-          <entry key="txt" value="2" />
+          <entry key="txt" value="3" />
           <entry key="vs" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CMakeLists.txt" value="10" />
+          <entry key="CMakeLists.txt" value="12" />
           <entry key="ObjectiveC" value="208" />
           <entry key="PLAIN_TEXT" value="4" />
         </counts>
@@ -101,17 +99,17 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cmake" value="2" />
-          <entry key="cpp" value="3742" />
+          <entry key="cpp" value="3774" />
           <entry key="fs" value="38" />
           <entry key="h" value="16991" />
-          <entry key="txt" value="112" />
+          <entry key="txt" value="137" />
           <entry key="vs" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CMakeLists.txt" value="114" />
-          <entry key="ObjectiveC" value="20733" />
+          <entry key="CMakeLists.txt" value="139" />
+          <entry key="ObjectiveC" value="20765" />
           <entry key="PLAIN_TEXT" value="40" />
         </counts>
       </usages-collector>
@@ -144,20 +142,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Core/ResourceLoader.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="242">
+              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
               <folding>
                 <element signature="e#1#25#0" expanded="true" />
               </folding>
@@ -165,7 +154,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Core/Game.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-211">
@@ -173,6 +162,24 @@
               <folding>
                 <element signature="e#48#65#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FindGLM.cmake">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="101">
+              <caret line="5" column="20" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -217,11 +224,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Rendering/Texture.cpp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Rendering/Shader.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="316">
@@ -241,7 +243,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Feather/EntityManager.cpp" />
         <option value="$PROJECT_DIR$/Feather/EntityManager.h" />
         <option value="$PROJECT_DIR$/Feather/Feather.cpp" />
         <option value="$PROJECT_DIR$/Feather/ComponentHandler.h" />
@@ -273,10 +274,8 @@
         <option value="$PROJECT_DIR$/Plugins/stb_image.cpp" />
         <option value="$PROJECT_DIR$/Plugins/include/spdlog/spdlog.h" />
         <option value="$PROJECT_DIR$/Findspdlog.cmake" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Feather/EntityHandle.h" />
         <option value="$PROJECT_DIR$/Debug/Debug.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/Debug/Debug.cpp" />
         <option value="$PROJECT_DIR$/Feather/ComponentArray.h" />
         <option value="$PROJECT_DIR$/Feather/ComponentHandle.h" />
@@ -292,6 +291,9 @@
         <option value="$PROJECT_DIR$/Core/ResourceLoader.cpp" />
         <option value="$PROJECT_DIR$/Core/Game.cpp" />
         <option value="$PROJECT_DIR$/Assets/Shaders/FragmentShader.fs" />
+        <option value="$PROJECT_DIR$/FindGLM.cmake" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
   </component>
@@ -344,6 +346,10 @@
               <item name="Crow" type="b2602c69:ProjectViewProjectNode" />
               <item name="Crow" type="462c0819:PsiDirectoryNode" />
               <item name="Rendering" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Crow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -459,12 +465,12 @@
       <workItem from="1583524630664" duration="2229000" />
       <workItem from="1583586904617" duration="1851000" />
       <workItem from="1583603381695" duration="6489000" />
-      <workItem from="1583669130277" duration="5885000" />
+      <workItem from="1583669130277" duration="6183000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="259655000" />
+    <option name="totallyTimeSpent" value="259953000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -479,12 +485,12 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2014652" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2014652" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23265307" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23265307" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -535,7 +541,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Feather/Utils.h" />
     <entry file="file://$PROJECT_DIR$/Feather/CustomTypeID.cpp" />
     <entry file="file://$PROJECT_DIR$/Feather/CustomTypeID.h">
       <provider selected="true" editor-type-id="text-editor">
@@ -636,13 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" column="21" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -833,16 +831,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-          <folding>
-            <element signature="e#1#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Shaders/FragmentShader.fs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -863,6 +851,30 @@
           <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
           <folding>
             <element signature="e#48#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FindGLM.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding>
+            <element signature="e#1#25#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -263,6 +263,9 @@ GLFW_glfw_LIBRARY:FILEPATH=/usr/local/lib/libglfw.dylib
 //IOKit framework for OSX
 GLFW_iokit_LIBRARY:STRING=-framework IOKit
 
+//The directory where glm/glm.hpp resides
+GLM_INCLUDE_DIR:PATH=/usr/local/include
+
 //Path to a library.
 IOKIT_LIBRARY:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/IOKit.framework
 
@@ -499,6 +502,8 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 FIND_PACKAGE_MESSAGE_DETAILS_GLEW:INTERNAL=[/usr/local/Cellar/glew-2.1.0/include/GL][/usr/local/lib/libGLEW.dylib][v()]
 //Details about finding GLFW
 FIND_PACKAGE_MESSAGE_DETAILS_GLFW:INTERNAL=[/usr/local/include][/usr/local/lib/libglfw.dylib;;-framework Cocoa;-framework IOKit;-framework CoreVideo][v3.3.2()]
+//Details about finding GLM
+FIND_PACKAGE_MESSAGE_DETAILS_GLM:INTERNAL=[/usr/local/include][v()]
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework][/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework][c ][v()]
 //ADVANCED property for variable: GIT_EXECUTABLE
@@ -517,6 +522,8 @@ GLFW_INCLUDE_DIR-ADVANCED:INTERNAL=1
 GLFW_cocoa_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GLFW_glfw_LIBRARY
 GLFW_glfw_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GLM_INCLUDE_DIR
+GLM_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_INCLUDE_DIR
 OPENGL_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_gl_LIBRARY
