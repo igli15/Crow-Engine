@@ -21,7 +21,6 @@ public:
 
     void SetWorld(World* w);
 
-
 };
 
 

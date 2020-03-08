@@ -17,6 +17,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/Crow.dir/SandBox/MainWorld.cpp.o"
   "CMakeFiles/Crow.dir/SandBox/Systems/TestSystem.cpp.o"
   "CMakeFiles/Crow.dir/Rendering/Shader.cpp.o"
+  "CMakeFiles/Crow.dir/Plugins/stb_image.cpp.o"
+  "CMakeFiles/Crow.dir/Core/ResourceLoader.cpp.o"
+  "CMakeFiles/Crow.dir/Rendering/Texture.cpp.o"
   "Crow.pdb"
   "Crow"
 )

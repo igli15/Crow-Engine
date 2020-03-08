@@ -9,6 +9,7 @@
 #include <iostream>
 #include <time.h>
 #include "Core/Game.h"
+#include "Debug/Debug.h"
 
 int main()
 {
@@ -42,6 +43,8 @@ int main()
     std::cout<<d1<<";"<<d2<<std::endl;
 */
 
+    Debug::Init();
+    
     Game game;
     game.Init();
     game.Run();

@@ -88,6 +88,12 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Core/Game.h">
 			<Option target="Crow"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Core/ResourceLoader.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Core/ResourceLoader.h">
+			<Option target="Crow"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Debug/Debug.cpp">
 			<Option target="Crow"/>
 		</Unit>
@@ -166,10 +172,22 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/OOPEngine.h">
 			<Option target="Crow"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Plugins/stb_image.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Plugins/stb_image.h">
+			<Option target="Crow"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Rendering/Shader.cpp">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Rendering/Shader.h">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Rendering/Texture.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Rendering/Texture.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Rendering/Window.cpp">
@@ -209,6 +227,9 @@
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/FindSFML.cmake">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Findspdlog.cmake">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

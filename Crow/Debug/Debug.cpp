@@ -4,20 +4,21 @@
 
 #include "Debug.h"
 
-void Debug::Log(const std::string& s)
+std::shared_ptr<spdlog::logger> Debug::m_engineLogger;
+std::shared_ptr<spdlog::logger> Debug::m_appLogger;
+
+void Debug::Init()
 {
-    std::cout<<s<<std::endl;
+    spdlog::set_pattern("%^[%T] %n: %v%$");
+
+    m_engineLogger = spdlog::stdout_color_mt("Engine");
+    m_engineLogger->set_level(spdlog::level::trace);
+
+    m_appLogger = spdlog::stdout_color_mt("App");
+    m_appLogger->set_level(spdlog::level::trace);
+
 }
 
-void Debug::Log(int i)
-{
-    std::cout<<i<<std::endl;
-}
-
-void Debug::Log(float f)
-{
-    std::cout<<f<<std::endl;
-}
 
 void Debug::Assert(bool assertion, const std::string& msg)
 {

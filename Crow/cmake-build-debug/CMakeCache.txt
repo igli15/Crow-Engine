@@ -215,6 +215,9 @@ Crow_BINARY_DIR:STATIC=/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug
 //Value Computed by CMake
 Crow_SOURCE_DIR:STATIC=/Users/igli/Desktop/Crow Engine/Crow
 
+//Git command line client
+GIT_EXECUTABLE:FILEPATH=/usr/bin/git
+
 //Path to a file.
 GLEW_INCLUDE_DIR:PATH=/usr/local/Cellar/glew-2.1.0/include/GL
 
@@ -256,6 +259,9 @@ OPENGL_gl_LIBRARY:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/
 
 //GLU library for OS X (usually same as OpenGL library)
 OPENGL_glu_LIBRARY:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework
+
+//pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=PKG_CONFIG_EXECUTABLE-NOTFOUND
 
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
@@ -325,6 +331,12 @@ SFML_WINDOW_LIBRARY_STATIC_RELEASE:FILEPATH=SFML_WINDOW_LIBRARY_STATIC_RELEASE-N
 
 //The directory containing a CMake configuration file for glfw3.
 glfw3_DIR:PATH=glfw3_DIR-NOTFOUND
+
+//spdlog library header files
+spdlog_INCLUDE_DIR:PATH=/usr/local/include
+
+//The directory containing a CMake configuration file for wde.
+wde_DIR:PATH=wde_DIR-NOTFOUND
 
 
 ########################
@@ -474,6 +486,8 @@ FIND_PACKAGE_MESSAGE_DETAILS_GLEW:INTERNAL=[/usr/local/Cellar/glew-2.1.0/include
 FIND_PACKAGE_MESSAGE_DETAILS_GLFW:INTERNAL=[/usr/local/include][/usr/local/lib/libglfw.dylib;;-framework Cocoa;-framework IOKit;-framework CoreVideo][v3.3.2()]
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework][/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework][c ][v()]
+//ADVANCED property for variable: GIT_EXECUTABLE
+GIT_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GLEW_INCLUDE_DIR
 GLEW_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GLEW_LIBRARY
@@ -494,6 +508,8 @@ OPENGL_INCLUDE_DIR-ADVANCED:INTERNAL=1
 OPENGL_gl_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_glu_LIBRARY
 OPENGL_glu_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
+PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ProcessorCount_cmd_sysctl
 ProcessorCount_cmd_sysctl-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SFML_AUDIO_LIBRARY_DYNAMIC_DEBUG
@@ -536,4 +552,6 @@ SFML_WINDOW_LIBRARY_DYNAMIC_RELEASE-ADVANCED:INTERNAL=1
 SFML_WINDOW_LIBRARY_STATIC_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SFML_WINDOW_LIBRARY_STATIC_RELEASE
 SFML_WINDOW_LIBRARY_STATIC_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: spdlog_INCLUDE_DIR
+spdlog_INCLUDE_DIR-ADVANCED:INTERNAL=1
 

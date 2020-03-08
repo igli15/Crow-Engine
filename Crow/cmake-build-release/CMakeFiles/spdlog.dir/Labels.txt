@@ -1,0 +1,13 @@
+# Target labels
+ spdlog
+# Source files and their labels
+/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/spdlog
+/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/spdlog.rule
+/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/spdlog-complete.rule
+/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/src/spdlog-stamp/spdlog-install.rule
+/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/src/spdlog-stamp/spdlog-mkdir.rule
+/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/src/spdlog-stamp/spdlog-download.rule
+/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/src/spdlog-stamp/spdlog-update.rule
+/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/src/spdlog-stamp/spdlog-patch.rule
+/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/src/spdlog-stamp/spdlog-configure.rule
+/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/src/spdlog-stamp/spdlog-build.rule

@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/spdlog"
+		},
+		{
+			"file" : "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/spdlog.rule"
+		},
+		{
+			"file" : "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/spdlog-complete.rule"
+		},
+		{
+			"file" : "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/src/spdlog-stamp/spdlog-install.rule"
+		},
+		{
+			"file" : "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/src/spdlog-stamp/spdlog-mkdir.rule"
+		},
+		{
+			"file" : "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/src/spdlog-stamp/spdlog-download.rule"
+		},
+		{
+			"file" : "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/src/spdlog-stamp/spdlog-update.rule"
+		},
+		{
+			"file" : "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/src/spdlog-stamp/spdlog-patch.rule"
+		},
+		{
+			"file" : "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/src/spdlog-stamp/spdlog-configure.rule"
+		},
+		{
+			"file" : "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/src/spdlog-stamp/spdlog-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"spdlog"
+		],
+		"name" : "spdlog"
+	}
+}

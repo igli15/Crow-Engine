@@ -150,6 +150,33 @@ Core/Game.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Core/Game.cpp.s
 .PHONY : Core/Game.cpp.s
 
+Core/ResourceLoader.o: Core/ResourceLoader.cpp.o
+
+.PHONY : Core/ResourceLoader.o
+
+# target to build an object file
+Core/ResourceLoader.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Core/ResourceLoader.cpp.o
+.PHONY : Core/ResourceLoader.cpp.o
+
+Core/ResourceLoader.i: Core/ResourceLoader.cpp.i
+
+.PHONY : Core/ResourceLoader.i
+
+# target to preprocess a source file
+Core/ResourceLoader.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Core/ResourceLoader.cpp.i
+.PHONY : Core/ResourceLoader.cpp.i
+
+Core/ResourceLoader.s: Core/ResourceLoader.cpp.s
+
+.PHONY : Core/ResourceLoader.s
+
+# target to generate assembly for a file
+Core/ResourceLoader.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Core/ResourceLoader.cpp.s
+.PHONY : Core/ResourceLoader.cpp.s
+
 Debug/Debug.o: Debug/Debug.cpp.o
 
 .PHONY : Debug/Debug.o
@@ -474,6 +501,33 @@ OOP_Engine/OOPEngine.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/OOP_Engine/OOPEngine.cpp.s
 .PHONY : OOP_Engine/OOPEngine.cpp.s
 
+Plugins/stb_image.o: Plugins/stb_image.cpp.o
+
+.PHONY : Plugins/stb_image.o
+
+# target to build an object file
+Plugins/stb_image.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Plugins/stb_image.cpp.o
+.PHONY : Plugins/stb_image.cpp.o
+
+Plugins/stb_image.i: Plugins/stb_image.cpp.i
+
+.PHONY : Plugins/stb_image.i
+
+# target to preprocess a source file
+Plugins/stb_image.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Plugins/stb_image.cpp.i
+.PHONY : Plugins/stb_image.cpp.i
+
+Plugins/stb_image.s: Plugins/stb_image.cpp.s
+
+.PHONY : Plugins/stb_image.s
+
+# target to generate assembly for a file
+Plugins/stb_image.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Plugins/stb_image.cpp.s
+.PHONY : Plugins/stb_image.cpp.s
+
 Rendering/Shader.o: Rendering/Shader.cpp.o
 
 .PHONY : Rendering/Shader.o
@@ -500,6 +554,33 @@ Rendering/Shader.s: Rendering/Shader.cpp.s
 Rendering/Shader.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Rendering/Shader.cpp.s
 .PHONY : Rendering/Shader.cpp.s
+
+Rendering/Texture.o: Rendering/Texture.cpp.o
+
+.PHONY : Rendering/Texture.o
+
+# target to build an object file
+Rendering/Texture.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Rendering/Texture.cpp.o
+.PHONY : Rendering/Texture.cpp.o
+
+Rendering/Texture.i: Rendering/Texture.cpp.i
+
+.PHONY : Rendering/Texture.i
+
+# target to preprocess a source file
+Rendering/Texture.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Rendering/Texture.cpp.i
+.PHONY : Rendering/Texture.cpp.i
+
+Rendering/Texture.s: Rendering/Texture.cpp.s
+
+.PHONY : Rendering/Texture.s
+
+# target to generate assembly for a file
+Rendering/Texture.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Rendering/Texture.cpp.s
+.PHONY : Rendering/Texture.cpp.s
 
 Rendering/Window.o: Rendering/Window.cpp.o
 
@@ -621,6 +702,9 @@ help:
 	@echo "... Core/Game.o"
 	@echo "... Core/Game.i"
 	@echo "... Core/Game.s"
+	@echo "... Core/ResourceLoader.o"
+	@echo "... Core/ResourceLoader.i"
+	@echo "... Core/ResourceLoader.s"
 	@echo "... Debug/Debug.o"
 	@echo "... Debug/Debug.i"
 	@echo "... Debug/Debug.s"
@@ -657,9 +741,15 @@ help:
 	@echo "... OOP_Engine/OOPEngine.o"
 	@echo "... OOP_Engine/OOPEngine.i"
 	@echo "... OOP_Engine/OOPEngine.s"
+	@echo "... Plugins/stb_image.o"
+	@echo "... Plugins/stb_image.i"
+	@echo "... Plugins/stb_image.s"
 	@echo "... Rendering/Shader.o"
 	@echo "... Rendering/Shader.i"
 	@echo "... Rendering/Shader.s"
+	@echo "... Rendering/Texture.o"
+	@echo "... Rendering/Texture.i"
+	@echo "... Rendering/Texture.s"
 	@echo "... Rendering/Window.o"
 	@echo "... Rendering/Window.i"
 	@echo "... Rendering/Window.s"
