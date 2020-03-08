@@ -30,6 +30,7 @@ struct ComponentHandle {
         }
         else
         {
+            ENGINE_LOG_CRITICAL("ComponentHandle couldn't find component data of the owner");
             component = nullptr;
         }
     }

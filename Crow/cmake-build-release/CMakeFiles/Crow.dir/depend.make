@@ -3,6 +3,7 @@
 
 CMakeFiles/Crow.dir/Core/Game.cpp.o: ../Core/Game.cpp
 CMakeFiles/Crow.dir/Core/Game.cpp.o: ../Core/Game.h
+CMakeFiles/Crow.dir/Core/Game.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Core/Game.cpp.o: ../Debug/Debug.h
 CMakeFiles/Crow.dir/Core/Game.cpp.o: ../Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Core/Game.cpp.o: ../Feather/ComponentHandle.h
@@ -108,6 +109,7 @@ CMakeFiles/Crow.dir/Debug/Debug.cpp.o: /usr/local/include/spdlog/spdlog.h
 CMakeFiles/Crow.dir/Debug/Debug.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Debug/Debug.cpp.o: /usr/local/include/spdlog/version.h
 
+CMakeFiles/Crow.dir/Feather/ComponentArray.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Feather/ComponentArray.cpp.o: ../Debug/Debug.h
 CMakeFiles/Crow.dir/Feather/ComponentArray.cpp.o: ../Feather/ComponentArray.cpp
 CMakeFiles/Crow.dir/Feather/ComponentArray.cpp.o: ../Feather/ComponentArray.h
@@ -154,6 +156,7 @@ CMakeFiles/Crow.dir/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/spdl
 CMakeFiles/Crow.dir/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/version.h
 
+CMakeFiles/Crow.dir/Feather/ComponentHandle.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Feather/ComponentHandle.cpp.o: ../Debug/Debug.h
 CMakeFiles/Crow.dir/Feather/ComponentHandle.cpp.o: ../Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Feather/ComponentHandle.cpp.o: ../Feather/ComponentHandle.cpp
@@ -201,6 +204,7 @@ CMakeFiles/Crow.dir/Feather/ComponentHandle.cpp.o: /usr/local/include/spdlog/spd
 CMakeFiles/Crow.dir/Feather/ComponentHandle.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Feather/ComponentHandle.cpp.o: /usr/local/include/spdlog/version.h
 
+CMakeFiles/Crow.dir/Feather/ComponentManager.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Feather/ComponentManager.cpp.o: ../Debug/Debug.h
 CMakeFiles/Crow.dir/Feather/ComponentManager.cpp.o: ../Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Feather/ComponentManager.cpp.o: ../Feather/ComponentHandle.h
@@ -249,6 +253,7 @@ CMakeFiles/Crow.dir/Feather/ComponentManager.cpp.o: /usr/local/include/spdlog/sp
 CMakeFiles/Crow.dir/Feather/ComponentManager.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Feather/ComponentManager.cpp.o: /usr/local/include/spdlog/version.h
 
+CMakeFiles/Crow.dir/Feather/EntityHandle.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Feather/EntityHandle.cpp.o: ../Debug/Debug.h
 CMakeFiles/Crow.dir/Feather/EntityHandle.cpp.o: ../Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Feather/EntityHandle.cpp.o: ../Feather/ComponentHandle.h
@@ -400,6 +405,7 @@ CMakeFiles/Crow.dir/Feather/SystemManager.cpp.o: /usr/local/include/spdlog/spdlo
 CMakeFiles/Crow.dir/Feather/SystemManager.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Feather/SystemManager.cpp.o: /usr/local/include/spdlog/version.h
 
+CMakeFiles/Crow.dir/Feather/World.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Feather/World.cpp.o: ../Debug/Debug.h
 CMakeFiles/Crow.dir/Feather/World.cpp.o: ../Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Feather/World.cpp.o: ../Feather/ComponentHandle.h
@@ -480,6 +486,7 @@ CMakeFiles/Crow.dir/Rendering/Window.cpp.o: ../Rendering/Window.h
 CMakeFiles/Crow.dir/Rendering/Window.cpp.o: /usr/local/include/GL/glew.h
 CMakeFiles/Crow.dir/Rendering/Window.cpp.o: /usr/local/include/GLFW/glfw3.h
 
+CMakeFiles/Crow.dir/SandBox/MainWorld.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/SandBox/MainWorld.cpp.o: ../Debug/Debug.h
 CMakeFiles/Crow.dir/SandBox/MainWorld.cpp.o: ../Feather/ComponentArray.h
 CMakeFiles/Crow.dir/SandBox/MainWorld.cpp.o: ../Feather/ComponentHandle.h
@@ -543,6 +550,7 @@ CMakeFiles/Crow.dir/SandBox/Systems/TestSystem.cpp.o: ../SandBox/Systems/TestSys
 CMakeFiles/Crow.dir/SandBox/Systems/TestSystem.cpp.o: ../SandBox/Systems/TestSystem.h
 
 CMakeFiles/Crow.dir/main.cpp.o: ../Core/Game.h
+CMakeFiles/Crow.dir/main.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Debug/Debug.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Feather/ComponentArray.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Feather/ComponentHandle.h

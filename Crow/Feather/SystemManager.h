@@ -61,7 +61,10 @@ T *SystemManager::RegisterSystem()
 {
     const char* typeName = typeid(T).name();
 
-    Debug::Assert(m_systems.find(typeName) == m_systems.end(), "System is already Registered");
+    if(m_systems.find(typeName) != m_systems.end())
+    {
+        ENGINE_LOG_CRITICAL("System is already Registered");
+    }
 
     T* system = new T();
     m_systems.insert({typeName,system});
@@ -73,7 +76,10 @@ void SystemManager::SetSignature(EntitySignature signature)
 {
     const char* typeName = typeid(T).name();
 
-    Debug::Assert(m_systems.find(typeName) != m_systems.end(), "System is not Registered");
+    if(m_systems.find(typeName) == m_systems.end())
+    {
+        ENGINE_LOG_CRITICAL("System is NOT Registered");
+    }
 
     m_signatures.insert({typeName,signature});
 

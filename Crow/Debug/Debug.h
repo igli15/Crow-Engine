@@ -5,7 +5,7 @@
 #ifndef CROW_DEBUG_H
 #define CROW_DEBUG_H
 
-
+#include <string.h>
 #include <string>
 #include <iostream>
 #include "spdlog/spdlog.h"

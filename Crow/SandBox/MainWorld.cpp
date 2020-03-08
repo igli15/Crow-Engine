@@ -17,4 +17,5 @@ void MainWorld::Build()
 
     EntityHandle entity  = CreateEntity();
     entity.AddComponent(TestComponent{});
+    entity.RemoveComponent<TestComponent>();
 }

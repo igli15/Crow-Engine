@@ -9,7 +9,7 @@ std::shared_ptr<spdlog::logger> Debug::m_appLogger;
 
 void Debug::Init()
 {
-    spdlog::set_pattern("%^[%T] %n: %v%$");
+    spdlog::set_pattern("%^[%T] [%l] %n: %v%$");
 
     m_engineLogger = spdlog::stdout_color_mt("Engine");
     m_engineLogger->set_level(spdlog::level::trace);

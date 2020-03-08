@@ -20,7 +20,7 @@ struct EntityHandle {
     }
 
     template <typename T>
-    void RemoveComponent(T component)
+    void RemoveComponent()
     {
         feather->RemoveComponent<T>(entity);
     }

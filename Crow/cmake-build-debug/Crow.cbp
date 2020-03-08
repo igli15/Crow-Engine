@@ -94,6 +94,9 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Core/ResourceLoader.h">
 			<Option target="Crow"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Crow.h">
+			<Option target="Crow"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Debug/Debug.cpp">
 			<Option target="Crow"/>
 		</Unit>

@@ -5,10 +5,9 @@
 #ifndef CROW_COMPONENTARRAY_H
 #define CROW_COMPONENTARRAY_H
 
-#include "Types.h"
+#include "../Crow.h"
 #include <array>
 #include <unordered_map>
-#include "../Debug/Debug.h"
 
 //TODO Get rid of this interface... use events or reflection to solve the "OnEntityDestroyed" callbacks
 class IComponentArray {
@@ -44,7 +43,11 @@ private:
 template<typename T>
 void ComponentArray<T>::AddComponentData(Entity entity, T Component)
 {
-    Debug::Assert(m_entityToIndexMap.find(entity) == m_entityToIndexMap.end(),"Component is already added");
+
+    if(m_entityToIndexMap.find(entity) != m_entityToIndexMap.end())
+    {
+        ENGINE_LOG_CRITICAL("Component is already added");
+    }
 
     size_t index = m_validSize;
     m_entityToIndexMap[entity] = index;
@@ -57,7 +60,11 @@ void ComponentArray<T>::AddComponentData(Entity entity, T Component)
 template<typename T>
 void ComponentArray<T>::RemoveComponentData(Entity entity)
 {
-    Debug::Assert(m_entityToIndexMap.find(entity) != m_entityToIndexMap.end(),"Component is not added");
+
+    if(m_entityToIndexMap.find(entity) == m_entityToIndexMap.end())
+    {
+        ENGINE_LOG_CRITICAL("Component is not added");
+    }
 
     size_t indexOfElementToRemove = m_entityToIndexMap[entity];
     size_t indexOfLastElement = m_validSize - 1;
@@ -77,7 +84,11 @@ void ComponentArray<T>::RemoveComponentData(Entity entity)
 template<typename T>
 T &ComponentArray<T>::GetComponentData(Entity entity)
 {
-    Debug::Assert(m_entityToIndexMap.find(entity) != m_entityToIndexMap.end(),"Component is not added");
+
+    if(m_entityToIndexMap.find(entity) == m_entityToIndexMap.end())
+    {
+        ENGINE_LOG_CRITICAL("Component is not added");
+    }
 
     return m_componentsArray[m_entityToIndexMap[entity]];
 }

@@ -44,7 +44,7 @@ int main()
 */
 
     Debug::Init();
-    
+
     Game game;
     game.Init();
     game.Run();
