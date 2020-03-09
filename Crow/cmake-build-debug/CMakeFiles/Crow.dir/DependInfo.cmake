@@ -19,6 +19,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Gameobject.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/OOP_Engine/Gameobject.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/OOPEngine.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/OOP_Engine/OOPEngine.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Plugins/stb_image.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Plugins/stb_image.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/Rendering/Mesh.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Rendering/Mesh.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/Rendering/Model.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Rendering/Model.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Rendering/Shader.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Rendering/Shader.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Rendering/Texture.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Rendering/Texture.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Rendering/Window.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Rendering/Window.cpp.o"

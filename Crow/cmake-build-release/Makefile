@@ -528,6 +528,60 @@ Plugins/stb_image.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Plugins/stb_image.cpp.s
 .PHONY : Plugins/stb_image.cpp.s
 
+Rendering/Mesh.o: Rendering/Mesh.cpp.o
+
+.PHONY : Rendering/Mesh.o
+
+# target to build an object file
+Rendering/Mesh.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Rendering/Mesh.cpp.o
+.PHONY : Rendering/Mesh.cpp.o
+
+Rendering/Mesh.i: Rendering/Mesh.cpp.i
+
+.PHONY : Rendering/Mesh.i
+
+# target to preprocess a source file
+Rendering/Mesh.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Rendering/Mesh.cpp.i
+.PHONY : Rendering/Mesh.cpp.i
+
+Rendering/Mesh.s: Rendering/Mesh.cpp.s
+
+.PHONY : Rendering/Mesh.s
+
+# target to generate assembly for a file
+Rendering/Mesh.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Rendering/Mesh.cpp.s
+.PHONY : Rendering/Mesh.cpp.s
+
+Rendering/Model.o: Rendering/Model.cpp.o
+
+.PHONY : Rendering/Model.o
+
+# target to build an object file
+Rendering/Model.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Rendering/Model.cpp.o
+.PHONY : Rendering/Model.cpp.o
+
+Rendering/Model.i: Rendering/Model.cpp.i
+
+.PHONY : Rendering/Model.i
+
+# target to preprocess a source file
+Rendering/Model.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Rendering/Model.cpp.i
+.PHONY : Rendering/Model.cpp.i
+
+Rendering/Model.s: Rendering/Model.cpp.s
+
+.PHONY : Rendering/Model.s
+
+# target to generate assembly for a file
+Rendering/Model.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Rendering/Model.cpp.s
+.PHONY : Rendering/Model.cpp.s
+
 Rendering/Shader.o: Rendering/Shader.cpp.o
 
 .PHONY : Rendering/Shader.o
@@ -744,6 +798,12 @@ help:
 	@echo "... Plugins/stb_image.o"
 	@echo "... Plugins/stb_image.i"
 	@echo "... Plugins/stb_image.s"
+	@echo "... Rendering/Mesh.o"
+	@echo "... Rendering/Mesh.i"
+	@echo "... Rendering/Mesh.s"
+	@echo "... Rendering/Model.o"
+	@echo "... Rendering/Model.i"
+	@echo "... Rendering/Model.s"
 	@echo "... Rendering/Shader.o"
 	@echo "... Rendering/Shader.i"
 	@echo "... Rendering/Shader.s"

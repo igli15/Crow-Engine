@@ -20,6 +20,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Crow.dir/Plugins/stb_image.cpp.o"
   "CMakeFiles/Crow.dir/Core/ResourceLoader.cpp.o"
   "CMakeFiles/Crow.dir/Rendering/Texture.cpp.o"
+  "CMakeFiles/Crow.dir/Rendering/Mesh.cpp.o"
+  "CMakeFiles/Crow.dir/Rendering/Model.cpp.o"
   "Crow.pdb"
   "Crow"
 )

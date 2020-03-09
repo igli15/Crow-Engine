@@ -14,6 +14,12 @@
 # EXTERNAL cache entries
 ########################
 
+//The directory containing a CMake configuration file for ASSIMP.
+ASSIMP_DIR:PATH=/usr/local/lib/cmake/assimp-5.0
+
+//the suffix for the assimp libraries
+ASSIMP_LIBRARY_SUFFIX:STRING=
+
 //Path to a program.
 CMAKE_AR:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar
 
@@ -332,8 +338,29 @@ SFML_WINDOW_LIBRARY_STATIC_DEBUG:FILEPATH=SFML_WINDOW_LIBRARY_STATIC_DEBUG-NOTFO
 //Path to a library.
 SFML_WINDOW_LIBRARY_STATIC_RELEASE:FILEPATH=SFML_WINDOW_LIBRARY_STATIC_RELEASE-NOTFOUND
 
+//The directory containing a CMake configuration file for assim.
+assim_DIR:PATH=assim_DIR-NOTFOUND
+
+//Path to a file.
+assimp_INCLUDE_DIRS:PATH=/usr/local/include
+
+//Path to a library.
+assimp_LIBRARIES:FILEPATH=/usr/local/lib/libassimp.dylib
+
 //The directory containing a CMake configuration file for glfw3.
 glfw3_DIR:PATH=glfw3_DIR-NOTFOUND
+
+//Path to a library.
+libIrrXML:FILEPATH=libIrrXML-NOTFOUND
+
+//Path to a library.
+libassimp:FILEPATH=libassimp-NOTFOUND
+
+//Path to a library.
+libassimp.5:FILEPATH=libassimp.5-NOTFOUND
+
+//Path to a library.
+libassimp.5.0.0:FILEPATH=libassimp.5.0.0-NOTFOUND
 
 //spdlog library header files
 spdlog_INCLUDE_DIR:PATH=/usr/local/include
@@ -346,6 +373,8 @@ wde_DIR:PATH=wde_DIR-NOTFOUND
 # INTERNAL cache entries
 ########################
 
+//ADVANCED property for variable: ASSIMP_LIBRARY_SUFFIX
+ASSIMP_LIBRARY_SUFFIX-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
 CMAKE_AR-ADVANCED:INTERNAL=1
 //This is the directory where this CMakeCache.txt was created

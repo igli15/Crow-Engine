@@ -181,6 +181,18 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Plugins/stb_image.h">
 			<Option target="Crow"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Rendering/Mesh.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Rendering/Mesh.h">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Rendering/Model.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Rendering/Model.h">
+			<Option target="Crow"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Rendering/Shader.cpp">
 			<Option target="Crow"/>
 		</Unit>
@@ -230,6 +242,9 @@
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/FindGLM.cmake">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Findassimp.cmake">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Findspdlog.cmake">
