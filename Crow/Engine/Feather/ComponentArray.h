@@ -5,7 +5,7 @@
 #ifndef CROW_COMPONENTARRAY_H
 #define CROW_COMPONENTARRAY_H
 
-#include "../Crow.h"
+#include "../../Crow.h"
 #include <array>
 #include <unordered_map>
 

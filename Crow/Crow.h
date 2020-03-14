@@ -6,9 +6,8 @@
 #define CROW_CROW_H
 
 
-#include "Feather/Types.h"
-#include "Debug/Debug.h"
-
+#include "Engine/Feather/Types.h"
+#include "Engine/Debug/Debug.h"
 
 #include <string>
 

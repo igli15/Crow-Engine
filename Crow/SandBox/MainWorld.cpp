@@ -6,16 +6,14 @@
 #include "../Tests/FeatherTest.h"
 #include "Systems/TestSystem.h"
 
-struct TestComponent{
+#include "../Engine/Components/Transform.h"
 
-};
 
 void MainWorld::Build()
 {
     RegisterSystem<TestSystem>();
-    SetSystemSignature<TestSystem,TestComponent>();
+    SetSystemSignature<TestSystem,Transform>();
 
     EntityHandle entity  = CreateEntity();
-    entity.AddComponent(TestComponent{});
-    entity.RemoveComponent<TestComponent>();
+    entity.AddComponent(Transform{glm::vec3(0,0,0),glm::vec3(0,0,0),glm::quat()});
 }

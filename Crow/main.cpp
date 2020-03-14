@@ -1,21 +1,23 @@
 
-#include "Debug/Debug.h"
+#include "Engine/Debug/Debug.h"
 
 #include "Tests/FeatherTest.h"
 #include "Tests/OOPEngineTest.h"
 
-#include "Rendering/Window.h"
+#include "Engine/Rendering/Window.h"
 
 #include <iostream>
 #include <time.h>
-#include "Core/Game.h"
-#include "Debug/Debug.h"
+#include "Engine/Core/Game.h"
+#include "Engine/Debug/Debug.h"
+
 
 int main()
 {
     //Debug::Log("Init Crow");
 
-    /*
+    Debug::Init();
+/*
     OOPEngineTest oopTest;
     FeatherTest featherTest;
 
@@ -43,7 +45,6 @@ int main()
     std::cout<<d1<<";"<<d2<<std::endl;
 */
 
-    Debug::Init();
 
     Game game;
     game.Init();

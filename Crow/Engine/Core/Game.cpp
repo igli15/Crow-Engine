@@ -3,7 +3,7 @@
 //
 
 #include "Game.h"
-#include "../SandBox/MainWorld.h"
+#include "../../SandBox/MainWorld.h"
 #include "../Rendering/Shader.h"
 #include "../Rendering/Model.h"
 #include "ResourceLoader.h"

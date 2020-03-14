@@ -5,8 +5,8 @@
 #ifndef CROW_FEATHERTEST_H
 #define CROW_FEATHERTEST_H
 
-#include "../Feather/World.h"
-#include "../Feather/EntityHandle.h"
+#include "../Engine/Feather/World.h"
+#include "../Engine/Feather/EntityHandle.h"
 
 
 struct ECSKingdom

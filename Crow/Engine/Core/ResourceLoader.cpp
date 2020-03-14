@@ -3,8 +3,8 @@
 //
 
 #include "ResourceLoader.h"
-#include "../Plugins/stb_image.h"
-#include "../Crow.h"
+#include "../../Plugins/stb_image.h"
+#include "../../Crow.h"
 
 Texture& ResourceLoader::LoadTexture(const std::string &path, const std::string &name)
 {
