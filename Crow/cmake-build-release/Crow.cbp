@@ -91,6 +91,12 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.h">
 			<Option target="Crow"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h">
+			<Option target="Crow"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.cpp">
 			<Option target="Crow"/>
 		</Unit>
@@ -167,6 +173,12 @@
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Mesh.cpp">

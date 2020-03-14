@@ -150,6 +150,33 @@ Engine/Components/Camera.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Components/Camera.cpp.s
 .PHONY : Engine/Components/Camera.cpp.s
 
+Engine/Components/MeshInfo.o: Engine/Components/MeshInfo.cpp.o
+
+.PHONY : Engine/Components/MeshInfo.o
+
+# target to build an object file
+Engine/Components/MeshInfo.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Components/MeshInfo.cpp.o
+.PHONY : Engine/Components/MeshInfo.cpp.o
+
+Engine/Components/MeshInfo.i: Engine/Components/MeshInfo.cpp.i
+
+.PHONY : Engine/Components/MeshInfo.i
+
+# target to preprocess a source file
+Engine/Components/MeshInfo.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Components/MeshInfo.cpp.i
+.PHONY : Engine/Components/MeshInfo.cpp.i
+
+Engine/Components/MeshInfo.s: Engine/Components/MeshInfo.cpp.s
+
+.PHONY : Engine/Components/MeshInfo.s
+
+# target to generate assembly for a file
+Engine/Components/MeshInfo.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Components/MeshInfo.cpp.s
+.PHONY : Engine/Components/MeshInfo.cpp.s
+
 Engine/Components/Transform.o: Engine/Components/Transform.cpp.o
 
 .PHONY : Engine/Components/Transform.o
@@ -473,6 +500,33 @@ Engine/Feather/World.s: Engine/Feather/World.cpp.s
 Engine/Feather/World.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/World.cpp.s
 .PHONY : Engine/Feather/World.cpp.s
+
+Engine/Rendering/AbstractMaterial.o: Engine/Rendering/AbstractMaterial.cpp.o
+
+.PHONY : Engine/Rendering/AbstractMaterial.o
+
+# target to build an object file
+Engine/Rendering/AbstractMaterial.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o
+.PHONY : Engine/Rendering/AbstractMaterial.cpp.o
+
+Engine/Rendering/AbstractMaterial.i: Engine/Rendering/AbstractMaterial.cpp.i
+
+.PHONY : Engine/Rendering/AbstractMaterial.i
+
+# target to preprocess a source file
+Engine/Rendering/AbstractMaterial.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.i
+.PHONY : Engine/Rendering/AbstractMaterial.cpp.i
+
+Engine/Rendering/AbstractMaterial.s: Engine/Rendering/AbstractMaterial.cpp.s
+
+.PHONY : Engine/Rendering/AbstractMaterial.s
+
+# target to generate assembly for a file
+Engine/Rendering/AbstractMaterial.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.s
+.PHONY : Engine/Rendering/AbstractMaterial.cpp.s
 
 Engine/Rendering/Mesh.o: Engine/Rendering/Mesh.cpp.o
 
@@ -810,6 +864,9 @@ help:
 	@echo "... Engine/Components/Camera.o"
 	@echo "... Engine/Components/Camera.i"
 	@echo "... Engine/Components/Camera.s"
+	@echo "... Engine/Components/MeshInfo.o"
+	@echo "... Engine/Components/MeshInfo.i"
+	@echo "... Engine/Components/MeshInfo.s"
 	@echo "... Engine/Components/Transform.o"
 	@echo "... Engine/Components/Transform.i"
 	@echo "... Engine/Components/Transform.s"
@@ -846,6 +903,9 @@ help:
 	@echo "... Engine/Feather/World.o"
 	@echo "... Engine/Feather/World.i"
 	@echo "... Engine/Feather/World.s"
+	@echo "... Engine/Rendering/AbstractMaterial.o"
+	@echo "... Engine/Rendering/AbstractMaterial.i"
+	@echo "... Engine/Rendering/AbstractMaterial.s"
 	@echo "... Engine/Rendering/Mesh.o"
 	@echo "... Engine/Rendering/Mesh.i"
 	@echo "... Engine/Rendering/Mesh.s"

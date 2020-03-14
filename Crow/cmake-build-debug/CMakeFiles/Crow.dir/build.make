@@ -382,6 +382,32 @@ CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.cpp" -o CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.s
 
+CMakeFiles/Crow.dir/Engine/Components/MeshInfo.cpp.o: CMakeFiles/Crow.dir/flags.make
+CMakeFiles/Crow.dir/Engine/Components/MeshInfo.cpp.o: ../Engine/Components/MeshInfo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/Crow.dir/Engine/Components/MeshInfo.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Components/MeshInfo.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.cpp"
+
+CMakeFiles/Crow.dir/Engine/Components/MeshInfo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Engine/Components/MeshInfo.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.cpp" > CMakeFiles/Crow.dir/Engine/Components/MeshInfo.cpp.i
+
+CMakeFiles/Crow.dir/Engine/Components/MeshInfo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Components/MeshInfo.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.cpp" -o CMakeFiles/Crow.dir/Engine/Components/MeshInfo.cpp.s
+
+CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o: CMakeFiles/Crow.dir/flags.make
+CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o: ../Engine/Rendering/AbstractMaterial.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.cpp"
+
+CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.cpp" > CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.i
+
+CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.cpp" -o CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.s
+
 # Object files for target Crow
 Crow_OBJECTS = \
 "CMakeFiles/Crow.dir/main.cpp.o" \
@@ -408,7 +434,9 @@ Crow_OBJECTS = \
 "CMakeFiles/Crow.dir/Engine/Rendering/Mesh.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Rendering/Model.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Components/Camera.cpp.o" \
-"CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o"
+"CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o" \
+"CMakeFiles/Crow.dir/Engine/Components/MeshInfo.cpp.o" \
+"CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o"
 
 # External object files for target Crow
 Crow_EXTERNAL_OBJECTS =
@@ -438,12 +466,14 @@ Crow: CMakeFiles/Crow.dir/Engine/Rendering/Mesh.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Rendering/Model.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Components/Camera.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o
+Crow: CMakeFiles/Crow.dir/Engine/Components/MeshInfo.cpp.o
+Crow: CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o
 Crow: CMakeFiles/Crow.dir/build.make
 Crow: /usr/local/lib/libglfw.dylib
 Crow: /usr/local/lib/libassimp.dylib
 Crow: /usr/local/lib/libGLEW.dylib
 Crow: CMakeFiles/Crow.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable Crow"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX executable Crow"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Crow.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

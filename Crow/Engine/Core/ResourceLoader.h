@@ -7,15 +7,17 @@
 
 #include <map>
 #include "../Rendering/Texture.h"
+#include "../Rendering/Shader.h"
 
 class ResourceLoader {
 
 private:
     std::map<std::string,Texture*> m_textures;
+    std::map<std::string,Shader*> m_shaders;
 
 public:
     Texture& LoadTexture(const std::string& path,const std::string& name);
-
+    Shader& CreateShader(const std::string& vertexPath,const std::string& fragmentPath,const std::string& name);
 
 };
 

@@ -24,6 +24,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Crow.dir/Engine/Rendering/Model.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Components/Camera.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o"
+  "CMakeFiles/Crow.dir/Engine/Components/MeshInfo.cpp.o"
+  "CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o"
   "Crow.pdb"
   "Crow"
 )

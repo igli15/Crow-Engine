@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Components/Camera.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Components/MeshInfo.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceLoader.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Core/ResourceLoader.cpp.o"
@@ -17,6 +18,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Feather/System.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemManager.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Feather/SystemManager.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Mesh.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Rendering/Mesh.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Rendering/Model.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Rendering/Shader.cpp.o"

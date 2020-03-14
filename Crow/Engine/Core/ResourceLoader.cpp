@@ -28,3 +28,13 @@ Texture& ResourceLoader::LoadTexture(const std::string &path, const std::string 
 
     return *texture;
 }
+
+Shader &
+ResourceLoader::CreateShader(const std::string &vertexPath, const std::string &fragmentPath, const std::string &name)
+{
+    Shader* shader = new Shader(vertexPath,fragmentPath);
+
+    m_shaders[name] = shader;
+
+    return *(shader);
+}
