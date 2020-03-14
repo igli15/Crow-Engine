@@ -304,18 +304,18 @@ CMakeFiles/Crow.dir/Plugins/stb_image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Plugins/stb_image.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Plugins/stb_image.cpp" -o CMakeFiles/Crow.dir/Plugins/stb_image.cpp.s
 
-CMakeFiles/Crow.dir/Engine/Core/ResourceLoader.cpp.o: CMakeFiles/Crow.dir/flags.make
-CMakeFiles/Crow.dir/Engine/Core/ResourceLoader.cpp.o: ../Engine/Core/ResourceLoader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Crow.dir/Engine/Core/ResourceLoader.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Core/ResourceLoader.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceLoader.cpp"
+CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o: CMakeFiles/Crow.dir/flags.make
+CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o: ../Engine/Core/ResourceManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.cpp"
 
-CMakeFiles/Crow.dir/Engine/Core/ResourceLoader.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Engine/Core/ResourceLoader.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceLoader.cpp" > CMakeFiles/Crow.dir/Engine/Core/ResourceLoader.cpp.i
+CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.cpp" > CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.i
 
-CMakeFiles/Crow.dir/Engine/Core/ResourceLoader.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Core/ResourceLoader.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceLoader.cpp" -o CMakeFiles/Crow.dir/Engine/Core/ResourceLoader.cpp.s
+CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.cpp" -o CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.s
 
 CMakeFiles/Crow.dir/Engine/Rendering/Texture.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Engine/Rendering/Texture.cpp.o: ../Engine/Rendering/Texture.cpp
@@ -429,7 +429,7 @@ Crow_OBJECTS = \
 "CMakeFiles/Crow.dir/SandBox/Systems/TestSystem.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Rendering/Shader.cpp.o" \
 "CMakeFiles/Crow.dir/Plugins/stb_image.cpp.o" \
-"CMakeFiles/Crow.dir/Engine/Core/ResourceLoader.cpp.o" \
+"CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Rendering/Texture.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Rendering/Mesh.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Rendering/Model.cpp.o" \
@@ -460,7 +460,7 @@ Crow: CMakeFiles/Crow.dir/SandBox/MainWorld.cpp.o
 Crow: CMakeFiles/Crow.dir/SandBox/Systems/TestSystem.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Rendering/Shader.cpp.o
 Crow: CMakeFiles/Crow.dir/Plugins/stb_image.cpp.o
-Crow: CMakeFiles/Crow.dir/Engine/Core/ResourceLoader.cpp.o
+Crow: CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Rendering/Texture.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Rendering/Mesh.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Rendering/Model.cpp.o

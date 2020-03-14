@@ -109,10 +109,10 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceLoader.cpp">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceLoader.h">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.cpp">

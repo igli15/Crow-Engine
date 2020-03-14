@@ -231,32 +231,32 @@ Engine/Core/Game.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Core/Game.cpp.s
 .PHONY : Engine/Core/Game.cpp.s
 
-Engine/Core/ResourceLoader.o: Engine/Core/ResourceLoader.cpp.o
+Engine/Core/ResourceManager.o: Engine/Core/ResourceManager.cpp.o
 
-.PHONY : Engine/Core/ResourceLoader.o
+.PHONY : Engine/Core/ResourceManager.o
 
 # target to build an object file
-Engine/Core/ResourceLoader.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Core/ResourceLoader.cpp.o
-.PHONY : Engine/Core/ResourceLoader.cpp.o
+Engine/Core/ResourceManager.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o
+.PHONY : Engine/Core/ResourceManager.cpp.o
 
-Engine/Core/ResourceLoader.i: Engine/Core/ResourceLoader.cpp.i
+Engine/Core/ResourceManager.i: Engine/Core/ResourceManager.cpp.i
 
-.PHONY : Engine/Core/ResourceLoader.i
+.PHONY : Engine/Core/ResourceManager.i
 
 # target to preprocess a source file
-Engine/Core/ResourceLoader.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Core/ResourceLoader.cpp.i
-.PHONY : Engine/Core/ResourceLoader.cpp.i
+Engine/Core/ResourceManager.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.i
+.PHONY : Engine/Core/ResourceManager.cpp.i
 
-Engine/Core/ResourceLoader.s: Engine/Core/ResourceLoader.cpp.s
+Engine/Core/ResourceManager.s: Engine/Core/ResourceManager.cpp.s
 
-.PHONY : Engine/Core/ResourceLoader.s
+.PHONY : Engine/Core/ResourceManager.s
 
 # target to generate assembly for a file
-Engine/Core/ResourceLoader.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Core/ResourceLoader.cpp.s
-.PHONY : Engine/Core/ResourceLoader.cpp.s
+Engine/Core/ResourceManager.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.s
+.PHONY : Engine/Core/ResourceManager.cpp.s
 
 Engine/Debug/Debug.o: Engine/Debug/Debug.cpp.o
 
@@ -873,9 +873,9 @@ help:
 	@echo "... Engine/Core/Game.o"
 	@echo "... Engine/Core/Game.i"
 	@echo "... Engine/Core/Game.s"
-	@echo "... Engine/Core/ResourceLoader.o"
-	@echo "... Engine/Core/ResourceLoader.i"
-	@echo "... Engine/Core/ResourceLoader.s"
+	@echo "... Engine/Core/ResourceManager.o"
+	@echo "... Engine/Core/ResourceManager.i"
+	@echo "... Engine/Core/ResourceManager.s"
 	@echo "... Engine/Debug/Debug.o"
 	@echo "... Engine/Debug/Debug.i"
 	@echo "... Engine/Debug/Debug.s"

@@ -2,7 +2,7 @@
 // Created by Igli milaqi on 07/03/2020.
 //
 
-#include "ResourceLoader.h"
+#include "ResourceManager.h"
 #include "../../Plugins/stb_image.h"
 #include "../../Crow.h"
 

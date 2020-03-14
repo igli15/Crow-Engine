@@ -6,7 +6,7 @@
 #include "../../SandBox/MainWorld.h"
 #include "../Rendering/Shader.h"
 #include "../Rendering/Model.h"
-#include "ResourceLoader.h"
+#include "ResourceManager.h"
 
 #include "glm/ext.hpp"
 
