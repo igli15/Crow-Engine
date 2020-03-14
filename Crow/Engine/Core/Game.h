@@ -9,17 +9,24 @@
 #include "../Rendering/Window.h"
 #include "../Feather/World.h"
 
+class ResourceManager;
+
 class Game {
 
 private:
     Window* window;
     World* currentWorld;
 
+    static Game* m_instance;
+
 public:
     void Init();
     void Run();
 
     void SetWorld(World* w);
+    static Game* Instance();
+
+    ResourceManager* resourceManager;
 
 };
 

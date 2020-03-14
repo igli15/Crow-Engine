@@ -6,7 +6,7 @@
 #include "../../Plugins/stb_image.h"
 #include "../../Crow.h"
 
-Texture& ResourceLoader::LoadTexture(const std::string &path, const std::string &name)
+Texture& ResourceManager::LoadTexture(const std::string &path, const std::string &name)
 {
     Texture* texture = new Texture();
     int width, height, nrChannels;
@@ -29,12 +29,23 @@ Texture& ResourceLoader::LoadTexture(const std::string &path, const std::string 
     return *texture;
 }
 
-Shader &
-ResourceLoader::CreateShader(const std::string &vertexPath, const std::string &fragmentPath, const std::string &name)
+Shader &ResourceManager::CreateShader(const std::string &vertexPath, const std::string &fragmentPath, const std::string &name)
 {
     Shader* shader = new Shader(vertexPath,fragmentPath);
 
     m_shaders[name] = shader;
 
     return *(shader);
+}
+
+Texture &ResourceManager::GetTexture(const std::string &name)
+{
+    //TODO Add Error checking here
+
+    return *m_textures[name];
+}
+
+Shader &ResourceManager::GetShader(const std::string &name)
+{
+    return *m_shaders[name];
 }

@@ -9,7 +9,7 @@
 #include "../Rendering/Texture.h"
 #include "../Rendering/Shader.h"
 
-class ResourceLoader {
+class ResourceManager {
 
 private:
     std::map<std::string,Texture*> m_textures;
@@ -18,6 +18,9 @@ private:
 public:
     Texture& LoadTexture(const std::string& path,const std::string& name);
     Shader& CreateShader(const std::string& vertexPath,const std::string& fragmentPath,const std::string& name);
+
+    Texture& GetTexture(const std::string& name);
+    Shader& GetShader(const std::string& name);
 
 };
 

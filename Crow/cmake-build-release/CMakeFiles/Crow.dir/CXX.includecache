@@ -23,24 +23,16 @@ Game.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
 ../Rendering/Model.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
-ResourceManager.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h
 glm/ext.hpp
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/glm/ext.hpp
+ResourceManager.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
 ../Rendering/Window.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
 ../Feather/World.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.cpp
-ResourceManager.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h
-../../Plugins/stb_image.h
-/Users/igli/Desktop/Crow Engine/Crow/Plugins/stb_image.h
-../../Crow.h
-/Users/igli/Desktop/Crow Engine/Crow/Crow.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h
 map
@@ -130,18 +122,6 @@ ComponentManager.h
 EntityManager.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityManager.h
 
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.cpp
-AbstractMaterial.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
-glm/glm.hpp
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/glm/glm.hpp
-string
--
-Shader.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
-
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Mesh.h
 glm/glm.hpp
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/glm/glm.hpp
@@ -174,38 +154,6 @@ glm/ext.hpp
 GL/glew.h
 -
 GLFW/glfw3.h
--
-
-/Users/igli/Desktop/Crow Engine/Crow/Plugins/stb_image.h
-stb_image.h
-/Users/igli/Desktop/Crow Engine/Crow/Plugins/stb_image.h
-stdio.h
--
-stdlib.h
--
-stdarg.h
--
-stddef.h
--
-stdlib.h
--
-string.h
--
-limits.h
--
-math.h
--
-stdio.h
--
-assert.h
--
-stdint.h
--
-emmintrin.h
--
-intrin.h
--
-arm_neon.h
 -
 
 /Users/igli/Desktop/Crow Engine/Crow/SandBox/MainWorld.h
@@ -2360,29 +2308,13 @@ detail/_fixes.hpp
 detail/func_common.inl
 /usr/local/include/glm/detail/func_common.inl
 
-/usr/local/include/glm/detail/./compute_vector_relational.hpp
-setup.hpp
-/usr/local/include/glm/detail/./setup.hpp
-limits
--
-
 /usr/local/include/glm/detail/_fixes.hpp
 cmath
 -
 
-/usr/local/include/glm/detail/_swizzle.hpp
-
-/usr/local/include/glm/detail/_swizzle_func.hpp
-
 /usr/local/include/glm/detail/_vectorize.hpp
 
 /usr/local/include/glm/detail/compute_common.hpp
-setup.hpp
-/usr/local/include/glm/detail/setup.hpp
-limits
--
-
-/usr/local/include/glm/detail/compute_vector_relational.hpp
 setup.hpp
 /usr/local/include/glm/detail/setup.hpp
 limits
@@ -2526,8 +2458,6 @@ setup.hpp
 type_half.inl
 /usr/local/include/glm/detail/type_half.inl
 
-/usr/local/include/glm/detail/type_half.inl
-
 /usr/local/include/glm/detail/type_mat4x4.hpp
 type_vec4.hpp
 /usr/local/include/glm/detail/type_vec4.hpp
@@ -2550,10 +2480,6 @@ cstddef
 type_vec1.inl
 /usr/local/include/glm/detail/type_vec1.inl
 
-/usr/local/include/glm/detail/type_vec1.inl
-./compute_vector_relational.hpp
-/usr/local/include/glm/detail/./compute_vector_relational.hpp
-
 /usr/local/include/glm/detail/type_vec2.hpp
 qualifier.hpp
 /usr/local/include/glm/detail/qualifier.hpp
@@ -2565,10 +2491,6 @@ cstddef
 -
 type_vec2.inl
 /usr/local/include/glm/detail/type_vec2.inl
-
-/usr/local/include/glm/detail/type_vec2.inl
-./compute_vector_relational.hpp
-/usr/local/include/glm/detail/./compute_vector_relational.hpp
 
 /usr/local/include/glm/detail/type_vec3.hpp
 qualifier.hpp
@@ -2582,10 +2504,6 @@ cstddef
 type_vec3.inl
 /usr/local/include/glm/detail/type_vec3.inl
 
-/usr/local/include/glm/detail/type_vec3.inl
-compute_vector_relational.hpp
-/usr/local/include/glm/detail/compute_vector_relational.hpp
-
 /usr/local/include/glm/detail/type_vec4.hpp
 qualifier.hpp
 /usr/local/include/glm/detail/qualifier.hpp
@@ -2597,14 +2515,6 @@ cstddef
 -
 type_vec4.inl
 /usr/local/include/glm/detail/type_vec4.inl
-
-/usr/local/include/glm/detail/type_vec4.inl
-compute_vector_relational.hpp
-/usr/local/include/glm/detail/compute_vector_relational.hpp
-type_vec4_simd.inl
-/usr/local/include/glm/detail/type_vec4_simd.inl
-
-/usr/local/include/glm/detail/type_vec4_simd.inl
 
 /usr/local/include/glm/exponential.hpp
 detail/type_vec1.hpp
@@ -3161,8 +3071,6 @@ platform.h
 /usr/local/include/glm/simd/geometric.h
 common.h
 /usr/local/include/glm/simd/common.h
-
-/usr/local/include/glm/simd/integer.h
 
 /usr/local/include/glm/simd/matrix.h
 geometric.h

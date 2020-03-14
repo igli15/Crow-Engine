@@ -3,15 +3,22 @@
 //
 
 #include "Game.h"
+
 #include "../../SandBox/MainWorld.h"
 #include "../Rendering/Shader.h"
 #include "../Rendering/Model.h"
+#include "glm/ext.hpp"
 #include "ResourceManager.h"
 
-#include "glm/ext.hpp"
+
+Game* Game::m_instance;
 
 void Game::Init()
 {
+    m_instance = this;
+
+    resourceManager = new ResourceManager();
+
     window = new Window();
 
     window->CreateWindow(1920,1080,"Crow");
@@ -28,7 +35,8 @@ void Game::Run()
     double lag = 0.0;
     double MS_PER_UPDATE = 1.0/60.0;
 
-    Shader shader("VertexShader.vs","FragmentShader.fs");
+
+    Shader shader = resourceManager->CreateShader("VertexShader.vs","FragmentShader.fs","unlitShader");
 
     Model crysisModel((MODEL_PATH + "nanosuit.obj").data());
 
@@ -83,4 +91,9 @@ void Game::Run()
 void Game::SetWorld(World *w)
 {
     currentWorld = w;
+}
+
+Game *Game::Instance()
+{
+    return m_instance;
 }
