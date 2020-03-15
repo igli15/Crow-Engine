@@ -9,6 +9,6 @@
 AbstractMaterial::AbstractMaterial(const std::string &shaderName)
 {
     //Get the shader from here.
-    m_shader = &(Game::Instance()->resourceManager->GetShader("shaderName"));
+    m_shader = (Game::Instance()->resourceManager->GetShader("shaderName"));
 
 }

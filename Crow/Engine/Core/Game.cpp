@@ -36,9 +36,10 @@ void Game::Run()
     double MS_PER_UPDATE = 1.0/60.0;
 
 
-    Shader shader = resourceManager->CreateShader("VertexShader.vs","FragmentShader.fs","unlitShader");
+    Shader* shader = resourceManager->CreateShader("VertexShader.vs","FragmentShader.fs","unlitShader");
 
-    Model crysisModel((MODEL_PATH + "nanosuit.obj").data());
+    Model* crysisModel = resourceManager->LoadModel((MODEL_PATH + "nanosuit.obj"),"crysis");
+
 
     while(window->isOpen())
     {
@@ -57,13 +58,13 @@ void Game::Run()
         }
 
 
-        shader.Use();
+        shader->Use();
 
         glm::mat4 projection = glm::perspective(glm::radians(45.0f),1920.0f/1080.0f, 0.1f, 100.0f);
         glm::vec3 cameraPos = glm::vec3(0.0f, 0.0f, 5.0f);
         glm::mat4 view = glm::lookAt(cameraPos,glm::vec3(0.0f,0.0f,0.0f),glm::vec3(0.0f,1.0f,0.0f));
-        shader.SetMat4("projection", projection);
-        shader.SetMat4("view", view);
+        shader->SetMat4("projection", projection);
+        shader->SetMat4("view", view);
 
         //std::cout<<crysisModel.m_meshes[0].m_vertices[10].pos.x <<std::endl;
         //std::cout<<crysisModel.m_meshes[0].m_indices.size()<<std::endl;
@@ -73,8 +74,8 @@ void Game::Run()
         glm::mat4 model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(0.0f, -1.75f, 0.0f)); // translate it down so it's at the center of the scene
         model = glm::scale(model, glm::vec3(0.2, 0.2, 0.2));
-        shader.SetMat4("model", model);
-        crysisModel.Draw(shader);
+        shader->SetMat4("model", model);
+        crysisModel->Draw(*shader);
 
 
         window->ProcessInput();
