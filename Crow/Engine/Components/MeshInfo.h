@@ -6,12 +6,13 @@
 #define CROW_MESHINFO_H
 
 #include "../Rendering/Model.h"
+#include "../Rendering/AbstractMaterial.h"
 
 struct MeshInfo {
 
 public:
     Model* model;
-
+    AbstractMaterial* material;
 
 };
 

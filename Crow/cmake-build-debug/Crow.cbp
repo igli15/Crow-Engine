@@ -181,6 +181,12 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h">
 			<Option target="Crow"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h">
+			<Option target="Crow"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Mesh.cpp">
 			<Option target="Crow"/>
 		</Unit>

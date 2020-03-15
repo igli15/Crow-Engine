@@ -528,6 +528,33 @@ Engine/Rendering/AbstractMaterial.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.s
 .PHONY : Engine/Rendering/AbstractMaterial.cpp.s
 
+Engine/Rendering/Materials/ColorMaterial.o: Engine/Rendering/Materials/ColorMaterial.cpp.o
+
+.PHONY : Engine/Rendering/Materials/ColorMaterial.o
+
+# target to build an object file
+Engine/Rendering/Materials/ColorMaterial.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o
+.PHONY : Engine/Rendering/Materials/ColorMaterial.cpp.o
+
+Engine/Rendering/Materials/ColorMaterial.i: Engine/Rendering/Materials/ColorMaterial.cpp.i
+
+.PHONY : Engine/Rendering/Materials/ColorMaterial.i
+
+# target to preprocess a source file
+Engine/Rendering/Materials/ColorMaterial.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.i
+.PHONY : Engine/Rendering/Materials/ColorMaterial.cpp.i
+
+Engine/Rendering/Materials/ColorMaterial.s: Engine/Rendering/Materials/ColorMaterial.cpp.s
+
+.PHONY : Engine/Rendering/Materials/ColorMaterial.s
+
+# target to generate assembly for a file
+Engine/Rendering/Materials/ColorMaterial.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.s
+.PHONY : Engine/Rendering/Materials/ColorMaterial.cpp.s
+
 Engine/Rendering/Mesh.o: Engine/Rendering/Mesh.cpp.o
 
 .PHONY : Engine/Rendering/Mesh.o
@@ -906,6 +933,9 @@ help:
 	@echo "... Engine/Rendering/AbstractMaterial.o"
 	@echo "... Engine/Rendering/AbstractMaterial.i"
 	@echo "... Engine/Rendering/AbstractMaterial.s"
+	@echo "... Engine/Rendering/Materials/ColorMaterial.o"
+	@echo "... Engine/Rendering/Materials/ColorMaterial.i"
+	@echo "... Engine/Rendering/Materials/ColorMaterial.s"
 	@echo "... Engine/Rendering/Mesh.o"
 	@echo "... Engine/Rendering/Mesh.i"
 	@echo "... Engine/Rendering/Mesh.s"

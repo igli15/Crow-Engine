@@ -3,8 +3,12 @@
 //
 
 #include "AbstractMaterial.h"
+#include "../Core/Game.h"
+#include "../Core/ResourceManager.h"
 
-AbstractMaterial::AbstractMaterial(const std::string &name)
+AbstractMaterial::AbstractMaterial(const std::string &shaderName)
 {
     //Get the shader from here.
+    m_shader = &(Game::Instance()->resourceManager->GetShader("shaderName"));
+
 }

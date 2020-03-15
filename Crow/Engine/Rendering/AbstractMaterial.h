@@ -16,9 +16,9 @@ class Model;
 class AbstractMaterial {
 
 public:
-    AbstractMaterial(const std::string& name);
+    AbstractMaterial(const std::string& shaderName);
 
-    virtual void render(Model* meshRenderer, const glm::mat4& pModelMatrix, const glm::mat4& pViewMatrix, const glm::mat4& pPerspectiveMatrix) = 0;
+    virtual void Render(Model* meshRenderer, const glm::mat4& pModelMatrix, const glm::mat4& pViewMatrix, const glm::mat4& pPerspectiveMatrix) = 0;
 
 protected:
     Shader* m_shader;
