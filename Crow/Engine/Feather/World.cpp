@@ -40,9 +40,18 @@ void World::UpdateAllSystems()
     }
 }
 
+void World::RenderAllSystems()
+{
+    for (int i = 0; i < m_allRegisteredSystems.size(); ++i)
+    {
+        m_allRegisteredSystems[i]->Render();
+    }
+}
+
 void World::Build()
 {
 
 }
+
 
 

@@ -231,6 +231,33 @@ Engine/Core/Game.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Core/Game.cpp.s
 .PHONY : Engine/Core/Game.cpp.s
 
+Engine/Core/GameObject.o: Engine/Core/GameObject.cpp.o
+
+.PHONY : Engine/Core/GameObject.o
+
+# target to build an object file
+Engine/Core/GameObject.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Core/GameObject.cpp.o
+.PHONY : Engine/Core/GameObject.cpp.o
+
+Engine/Core/GameObject.i: Engine/Core/GameObject.cpp.i
+
+.PHONY : Engine/Core/GameObject.i
+
+# target to preprocess a source file
+Engine/Core/GameObject.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Core/GameObject.cpp.i
+.PHONY : Engine/Core/GameObject.cpp.i
+
+Engine/Core/GameObject.s: Engine/Core/GameObject.cpp.s
+
+.PHONY : Engine/Core/GameObject.s
+
+# target to generate assembly for a file
+Engine/Core/GameObject.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Core/GameObject.cpp.s
+.PHONY : Engine/Core/GameObject.cpp.s
+
 Engine/Core/ResourceManager.o: Engine/Core/ResourceManager.cpp.o
 
 .PHONY : Engine/Core/ResourceManager.o
@@ -690,6 +717,33 @@ Engine/Rendering/Window.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.s
 .PHONY : Engine/Rendering/Window.cpp.s
 
+Engine/Systems/MeshRendererSystem.o: Engine/Systems/MeshRendererSystem.cpp.o
+
+.PHONY : Engine/Systems/MeshRendererSystem.o
+
+# target to build an object file
+Engine/Systems/MeshRendererSystem.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o
+.PHONY : Engine/Systems/MeshRendererSystem.cpp.o
+
+Engine/Systems/MeshRendererSystem.i: Engine/Systems/MeshRendererSystem.cpp.i
+
+.PHONY : Engine/Systems/MeshRendererSystem.i
+
+# target to preprocess a source file
+Engine/Systems/MeshRendererSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.i
+.PHONY : Engine/Systems/MeshRendererSystem.cpp.i
+
+Engine/Systems/MeshRendererSystem.s: Engine/Systems/MeshRendererSystem.cpp.s
+
+.PHONY : Engine/Systems/MeshRendererSystem.s
+
+# target to generate assembly for a file
+Engine/Systems/MeshRendererSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.s
+.PHONY : Engine/Systems/MeshRendererSystem.cpp.s
+
 OOP_Engine/Component.o: OOP_Engine/Component.cpp.o
 
 .PHONY : OOP_Engine/Component.o
@@ -900,6 +954,9 @@ help:
 	@echo "... Engine/Core/Game.o"
 	@echo "... Engine/Core/Game.i"
 	@echo "... Engine/Core/Game.s"
+	@echo "... Engine/Core/GameObject.o"
+	@echo "... Engine/Core/GameObject.i"
+	@echo "... Engine/Core/GameObject.s"
 	@echo "... Engine/Core/ResourceManager.o"
 	@echo "... Engine/Core/ResourceManager.i"
 	@echo "... Engine/Core/ResourceManager.s"
@@ -951,6 +1008,9 @@ help:
 	@echo "... Engine/Rendering/Window.o"
 	@echo "... Engine/Rendering/Window.i"
 	@echo "... Engine/Rendering/Window.s"
+	@echo "... Engine/Systems/MeshRendererSystem.o"
+	@echo "... Engine/Systems/MeshRendererSystem.i"
+	@echo "... Engine/Systems/MeshRendererSystem.s"
 	@echo "... OOP_Engine/Component.o"
 	@echo "... OOP_Engine/Component.i"
 	@echo "... OOP_Engine/Component.s"

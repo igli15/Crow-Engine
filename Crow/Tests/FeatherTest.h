@@ -50,7 +50,7 @@ public:
         for (auto const& entity : m_entities)
         {
             ComponentHandle<ECSCreature> creature;
-            feather->PopulateHandles(entity,creature);
+            world->PopulateHandles(entity,creature);
             handleCache.push_back(creature);
         }
     }
@@ -72,7 +72,7 @@ public:
         for (auto const& entity : m_entities)
         {
             ComponentHandle<ECSCreature> creature;
-            feather->PopulateHandles(entity,creature);
+            world->PopulateHandles(entity,creature);
 
             creature.component->timeSpan -=  creature.component->timeCounter;
 
@@ -100,7 +100,7 @@ public:
         {
             ComponentHandle<ECSNoble> noble;
             ComponentHandle<ECSCreature> creature;
-            feather->PopulateHandles(entity,noble,creature);
+            world->PopulateHandles(entity,noble,creature);
             nobleCache.push_back(noble);
             creatureCache.push_back(creature);
         }
@@ -138,7 +138,7 @@ public:
         {
             ComponentHandle<ECSOrc> orc;
             ComponentHandle<ECSCreature> creature;
-            feather->PopulateHandles(entity,orc,creature);
+            world->PopulateHandles(entity,orc,creature);
             orcCache.push_back(orc);
             creatureCache.push_back(creature);
         }
@@ -178,10 +178,10 @@ public:
         feather->Init();
 
       /*
-        feather->RegisterComponent<ECSCreature>();
-        feather->RegisterComponent<ECSKingdom>();
-        feather->RegisterComponent<ECSNoble>();
-        feather->RegisterComponent<ECSOrc>();
+        world->RegisterComponent<ECSCreature>();
+        world->RegisterComponent<ECSKingdom>();
+        world->RegisterComponent<ECSNoble>();
+        world->RegisterComponent<ECSOrc>();
         */
 
         creatureSystem = feather->RegisterSystem<CreatureSystem>();
@@ -190,19 +190,19 @@ public:
 
         /*
         EntitySignature signature;
-        feather->CreateSignature<ECSCreature>(signature);
-        feather->SetSystemSignature<CreatureSystem>(signature);
+        world->CreateSignature<ECSCreature>(signature);
+        world->SetSystemSignature<CreatureSystem>(signature);
          */
 
         /*
         EntitySignature noblesignature;
-        feather->CreateSignature<ECSCreature,ECSNoble>(signature);
-        feather->SetSystemSignature<NobleSystem>(noblesignature);
+        world->CreateSignature<ECSCreature,ECSNoble>(signature);
+        world->SetSystemSignature<NobleSystem>(noblesignature);
          */
 /*
         EntitySignature orcSignature;
-        feather->CreateSignature<ECSCreature,ECSOrc>(orcSignature);
-        feather->SetSystemSignature<OrcSystem>(orcSignature);
+        world->CreateSignature<ECSCreature,ECSOrc>(orcSignature);
+        world->SetSystemSignature<OrcSystem>(orcSignature);
         */
 
         feather->SetSystemSignature<NobleSystem,ECSCreature,ECSNoble>();

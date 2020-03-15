@@ -24,6 +24,7 @@ public:
 
     void InitAllSystems();
     void UpdateAllSystems();
+    void RenderAllSystems();
 
     /*
     template <typename T>
@@ -81,7 +82,7 @@ public:
     T* RegisterSystem()
     {
         T* system  =m_systemManager->RegisterSystem<T>();
-        system->feather = this;
+        system->world = this;
         m_allRegisteredSystems.push_back(system);
         return system;
     }

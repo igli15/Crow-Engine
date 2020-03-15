@@ -15,5 +15,5 @@ void MainWorld::Build()
     SetSystemSignature<TestSystem,Transform>();
 
     EntityHandle entity  = CreateEntity();
-    entity.AddComponent(Transform{glm::vec3(0,0,0),glm::vec3(0,0,0),glm::quat()});
+    entity.AddComponent(Transform{});
 }

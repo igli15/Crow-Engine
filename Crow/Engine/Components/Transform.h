@@ -16,6 +16,10 @@ public:
     glm::vec3 scale;
     glm::quat rotation;
 
+    const glm::mat4& GetLocalTransform() const;
+
+private:
+    glm::mat4 m_localTransform;
 };
 
 

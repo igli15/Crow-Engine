@@ -14,7 +14,7 @@ class World;
 class System {
 
 public:
-    World* feather;
+    World* world;
     std::set<Entity> m_entities;
 
     virtual void Init()
@@ -23,6 +23,11 @@ public:
     }
 
     virtual void Update()
+    {
+
+    }
+
+    virtual void Render()
     {
 
     }
