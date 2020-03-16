@@ -14,14 +14,6 @@ Engine/Debug/Debug.h
 string
 -
 
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.h
-glm/glm.hpp
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/glm/glm.hpp
-glm/gtx/projection.hpp
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/glm/gtx/projection.hpp
-glm/gtc/matrix_transform.hpp
--
-
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
 ../Rendering/Model.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
@@ -35,6 +27,22 @@ glm/gtc/quaternion.hpp
 -
 glm/gtx/quaternion.hpp
 -
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
+../Rendering/Window.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
+../Feather/World.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h
+map
+-
+../Rendering/Texture.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
+../Rendering/Shader.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
+../Rendering/Model.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
 string.h
@@ -130,6 +138,10 @@ string
 Shader.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h
+../AbstractMaterial.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Mesh.h
 glm/glm.hpp
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/glm/glm.hpp
@@ -156,23 +168,51 @@ iostream
 glm/ext.hpp
 -
 
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/MeshRendererSystem.cpp
-MeshRendererSystem.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/MeshRendererSystem.h
-../Feather/World.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
-../Components/Transform.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
-../Components/MeshInfo.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
-../Feather/EntityHandle.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
-../Components/Camera.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
+GL/glew.h
+-
+GLFW/glfw3.h
+-
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/MeshRendererSystem.h
 ../Feather/System.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/MainWorld.cpp
+MainWorld.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/MainWorld.h
+../Tests/FeatherTest.h
+/Users/igli/Desktop/Crow Engine/Crow/Tests/FeatherTest.h
+Systems/TestSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/TestSystem.h
+../Engine/Components/Transform.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
+../Engine/Systems/MeshRendererSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/MeshRendererSystem.h
+../Engine/Components/MeshInfo.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
+../Engine/Core/Game.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
+../Engine/Core/ResourceManager.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h
+../Engine/Rendering/Materials/ColorMaterial.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h
+
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/MainWorld.h
+../Engine/Feather/World.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
+
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/TestSystem.h
+../../Engine/Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Tests/FeatherTest.h
+../Engine/Feather/World.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
+../Engine/Feather/EntityHandle.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
 
 /usr/local/include/GL/glew.h
 stddef.h
@@ -186,6 +226,50 @@ inttypes.h
 Availability.h
 -
 OpenGL/glu.h
+-
+GL/glu.h
+-
+
+/usr/local/include/GLFW/glfw3.h
+stddef.h
+-
+stdint.h
+-
+vulkan/vulkan.h
+-
+GLES/gl.h
+-
+GLES/glext.h
+-
+GLES2/gl2.h
+-
+GLES2/gl2ext.h
+-
+GLES3/gl3.h
+-
+GLES2/gl2ext.h
+-
+GLES3/gl31.h
+-
+GLES2/gl2ext.h
+-
+GLES3/gl32.h
+-
+GLES2/gl2ext.h
+-
+OpenGL/gl3.h
+-
+OpenGL/gl3ext.h
+-
+GL/glcorearb.h
+-
+OpenGL/gl.h
+-
+OpenGL/glu.h
+-
+GL/gl.h
+-
+GL/glext.h
 -
 GL/glu.h
 -
@@ -1510,6 +1594,8 @@ polar_coordinates.inl
 projection.inl
 /usr/local/include/glm/./gtx/projection.inl
 
+/usr/local/include/glm/./gtx/projection.inl
+
 /usr/local/include/glm/./gtx/quaternion.hpp
 ../glm.hpp
 /usr/local/include/glm/./glm.hpp
@@ -2755,14 +2841,6 @@ norm.inl
 /usr/local/include/glm/gtx/norm.inl
 ../detail/qualifier.hpp
 /usr/local/include/glm/detail/qualifier.hpp
-
-/usr/local/include/glm/gtx/projection.hpp
-../geometric.hpp
-/usr/local/include/glm/geometric.hpp
-projection.inl
-/usr/local/include/glm/gtx/projection.inl
-
-/usr/local/include/glm/gtx/projection.inl
 
 /usr/local/include/glm/gtx/quaternion.hpp
 ../glm.hpp
