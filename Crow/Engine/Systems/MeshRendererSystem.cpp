@@ -6,6 +6,8 @@
 #include "../Feather/World.h"
 #include "../Components/Transform.h"
 #include "../Components/MeshInfo.h"
+#include "../Feather/EntityHandle.h"
+#include "../Components/Camera.h"
 
 void MeshRendererSystem::Render()
 {
@@ -22,7 +24,16 @@ void MeshRendererSystem::Render()
             continue;
         }
 
-
-        //meshInfo.material->Render(meshInfo.model,transform.GetLocalTransform(),)
+        Transform* cameraTransform = world->cameraEntity->GetComponent<Transform>().component;
+        Camera* camera=  world->cameraEntity->GetComponent<Camera>().component;
+        
+        meshInfo.material->Render(meshInfo.model,transform.GetLocalTransform(),glm::inverse(cameraTransform->GetLocalTransform()),camera->GetProjection());
     }
+
 }
+
+void MeshRendererSystem::Init()
+{
+    System::Init();
+}
+

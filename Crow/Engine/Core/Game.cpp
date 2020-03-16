@@ -36,11 +36,6 @@ void Game::Run()
     double MS_PER_UPDATE = 1.0/60.0;
 
 
-    Shader* shader = resourceManager->CreateShader("VertexShader.vs","FragmentShader.fs","unlitShader");
-
-    Model* crysisModel = resourceManager->LoadModel((MODEL_PATH + "nanosuit.obj"),"crysis");
-
-
     while(window->isOpen())
     {
         window->ClearColor(0.1,0,0,1);
@@ -53,11 +48,13 @@ void Game::Run()
 
         while (lag >= MS_PER_UPDATE)
         {
-            //currentWorld->UpdateAllSystems();
+            currentWorld->UpdateAllSystems();
             lag -= MS_PER_UPDATE;
         }
 
+        currentWorld->RenderAllSystems();
 
+        /*
         shader->Use();
 
         glm::mat4 projection = glm::perspective(glm::radians(45.0f),1920.0f/1080.0f, 0.1f, 100.0f);
@@ -76,7 +73,7 @@ void Game::Run()
         model = glm::scale(model, glm::vec3(0.2, 0.2, 0.2));
         shader->SetMat4("model", model);
         crysisModel->Draw(*shader);
-
+*/
 
         window->ProcessInput();
 

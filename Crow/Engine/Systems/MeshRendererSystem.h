@@ -11,6 +11,7 @@ class MeshRendererSystem : public System {
 
 
 public:
+    void Init() override;
     void Render() override;
 };
 

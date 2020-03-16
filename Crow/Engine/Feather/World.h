@@ -26,6 +26,8 @@ public:
     void UpdateAllSystems();
     void RenderAllSystems();
 
+    EntityHandle* cameraEntity;
+
     /*
     template <typename T>
     void RegisterComponent()
@@ -142,6 +144,8 @@ private:
     SystemManager* m_systemManager;
 
     std::vector<System*> m_allRegisteredSystems;
+
+    void CreateCamera();
 };
 
 

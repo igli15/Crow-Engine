@@ -16,7 +16,7 @@ public:
     const glm::mat4& GetProjection() ;
 
     float FOV = 60.0f;
-    float aspectRatio = 4.0f/3.0f;
+    float aspectRatio = 1920.0f/1080.0f;
     float nearClipPlane = 0.1f;
     float farClipPlane = 1000.0f;
 

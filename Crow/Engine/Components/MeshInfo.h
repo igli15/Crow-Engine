@@ -10,7 +10,6 @@
 
 struct MeshInfo {
 
-public:
     Model* model;
     AbstractMaterial* material;
 

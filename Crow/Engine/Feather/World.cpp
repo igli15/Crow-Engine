@@ -4,6 +4,8 @@
 
 #include "World.h"
 #include "EntityHandle.h"
+#include "../Components/Transform.h"
+#include "../Components/Camera.h"
 
 void World::Init()
 {
@@ -50,7 +52,17 @@ void World::RenderAllSystems()
 
 void World::Build()
 {
+    CreateCamera();
+}
 
+void World::CreateCamera()
+{
+    cameraEntity = new EntityHandle();
+    cameraEntity->entity = m_entityManager->CreateEntity();
+    cameraEntity->feather = this;
+
+    cameraEntity->AddComponent<Camera>(Camera{});
+    cameraEntity->AddComponent<Transform>(Transform{});
 }
 
 

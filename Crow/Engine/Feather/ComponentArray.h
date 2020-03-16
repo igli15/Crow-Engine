@@ -37,7 +37,7 @@ private:
     std::unordered_map<Entity,size_t> m_entityToIndexMap;
     std::unordered_map<size_t ,Entity> m_indexToEntityMap;
 
-    size_t m_validSize;
+    size_t m_validSize = 0;
 };
 
 template<typename T>

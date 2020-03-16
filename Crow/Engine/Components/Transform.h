@@ -12,14 +12,21 @@
 struct Transform {
 
 public:
-    glm::vec3 position;
-    glm::vec3 scale;
-    glm::quat rotation;
+    const glm::mat4& GetLocalTransform();
+    void Translate(const glm::vec3& translation);
+    void Scale(glm::vec3 scale);
+    void Rotate(const glm::quat& rot);
 
-    const glm::mat4& GetLocalTransform() const;
+    void SetLocalPosition(const glm::vec3& pos);
+    void SetScale(glm::vec3 scale);
+
 
 private:
-    glm::mat4 m_localTransform;
+    glm::mat4 m_localTransform = glm::mat4(1.0f);
+
+    glm::vec3 position = glm::vec3(0,0,0);
+    glm::vec3 scale = glm::vec3(1,1,1);
+    glm::quat rotation = {1, 0, 0, 0};
 };
 
 

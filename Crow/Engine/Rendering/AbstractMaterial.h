@@ -21,6 +21,7 @@ public:
     virtual void Render(Model* meshRenderer, const glm::mat4& pModelMatrix, const glm::mat4& pViewMatrix, const glm::mat4& pPerspectiveMatrix) = 0;
 
 protected:
+    void GetShader();
     Shader* m_shader;
 };
 
