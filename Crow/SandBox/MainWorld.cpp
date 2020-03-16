@@ -22,7 +22,7 @@ void MainWorld::Build()
 
     //Load the models
     Model* crysisModel = Game::Instance()->resourceManager->LoadModel((MODEL_PATH + "nanosuit.obj"),"crysis");
-    Model* suzana = Game::Instance()->resourceManager->LoadModel((MODEL_PATH + "pistol.obj"),"suzana");
+    Model* gunModel = Game::Instance()->resourceManager->LoadModel((MODEL_PATH + "pistol.obj"),"gunModel");
 
     RegisterSystem<MeshRendererSystem>();
     SetSystemSignature<MeshRendererSystem,Transform,MeshInfo>();
@@ -30,15 +30,15 @@ void MainWorld::Build()
     ColorMaterial* mat = new ColorMaterial("unlitShader");
     
     EntityHandle entity  = CreateEntity();
-    EntityHandle suzanaEntity  = CreateEntity();
+    EntityHandle gunEntity  = CreateEntity();
 
     MeshInfo m{};
     m.model = crysisModel;
     m.material = mat;
 
-    MeshInfo suzanaMeshInfo{};
-    suzanaMeshInfo.model = suzana;
-    suzanaMeshInfo.material = mat;
+    MeshInfo gunMeshInfo{};
+    gunMeshInfo.model = gunModel;
+    gunMeshInfo.material = mat;
     
     entity.AddComponent(Transform{});
 
@@ -46,13 +46,14 @@ void MainWorld::Build()
     t->Translate(glm::vec3(3,-1.5,-5));
     t->Scale(glm::vec3(0.2f,0.2f,0.2f));
 
-    suzanaEntity.AddComponent(Transform{});
-    Transform* t2 = suzanaEntity.GetComponent<Transform>().component;
+    gunEntity.AddComponent(Transform{});
+    Transform* t2 = gunEntity.GetComponent<Transform>().component;
     t2->Translate(glm::vec3(-3,0,-5));
     t2->Scale(glm::vec3(0.1f,0.1f,0.1f));
+    t2->Rotate(-25,glm::vec3(0,1,0));
     
     entity.AddComponent(m);
-    suzanaEntity.AddComponent(suzanaMeshInfo);
+    gunEntity.AddComponent(gunMeshInfo);
     //ENGINE_LOG("Here");
 
 }

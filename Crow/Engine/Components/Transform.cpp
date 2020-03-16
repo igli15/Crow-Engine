@@ -21,7 +21,7 @@ void Transform::Translate(const glm::vec3 &translation)
     m_localTransform = glm::translate(m_localTransform,translation);
 }
 
-void Transform::Scale(glm::vec3 scale)
+void Transform::Scale(const glm::vec3& scale)
 {
     m_localTransform = glm::scale(m_localTransform,scale);
 }
@@ -36,10 +36,15 @@ void Transform::SetLocalPosition(const glm::vec3 &pos)
     m_localTransform[3] = glm::vec4(pos, 1);
 }
 
-void Transform::SetScale(glm::vec3 scale)
+void Transform::SetScale(const glm::vec3& scale)
 {
     m_localTransform[0] = glm::normalize(m_localTransform[0]) *scale.x;
     m_localTransform[1] = glm::normalize(m_localTransform[1]) *scale.y;
     m_localTransform[2] = glm::normalize(m_localTransform[2]) *scale.z;
+}
+
+void Transform::Rotate(float angle, const glm::vec3 &axis)
+{
+    m_localTransform = glm::rotate(m_localTransform,glm::radians(angle),axis);
 }
 

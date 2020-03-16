@@ -14,9 +14,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cf22dce6-4d69-43d0-a044-a31c5cbccc70" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/suzana.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Components/Transform.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Components/Transform.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Components/Transform.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Components/Transform.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SandBox/MainWorld.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SandBox/MainWorld.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/Crow" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/Crow" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -75,7 +75,7 @@
         <counts>
           <entry key="cmake" value="18" />
           <entry key="cmake " value="1" />
-          <entry key="cpp" value="139" />
+          <entry key="cpp" value="140" />
           <entry key="fs" value="5" />
           <entry key="h" value="222" />
           <entry key="obj" value="2" />
@@ -86,16 +86,16 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="24" />
-          <entry key="ObjectiveC" value="361" />
+          <entry key="ObjectiveC" value="362" />
           <entry key="PLAIN_TEXT" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cmake" value="37" />
-          <entry key="cpp" value="10262" />
+          <entry key="cpp" value="10373" />
           <entry key="fs" value="55" />
-          <entry key="h" value="20387" />
+          <entry key="h" value="20465" />
           <entry key="txt" value="227" />
           <entry key="vs" value="29" />
         </counts>
@@ -103,7 +103,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="264" />
-          <entry key="ObjectiveC" value="30649" />
+          <entry key="ObjectiveC" value="30838" />
           <entry key="PLAIN_TEXT" value="84" />
         </counts>
       </usages-collector>
@@ -130,8 +130,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SandBox/MainWorld.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="673">
-              <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+            <state relative-caret-position="109">
+              <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
               <folding>
                 <element signature="e#48#70#0" expanded="true" />
               </folding>
@@ -206,6 +206,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Engine/Components/Transform.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="47" column="78" selection-start-line="47" selection-start-column="78" selection-end-line="47" selection-end-column="78" />
+              <folding>
+                <element signature="e#48#70#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Engine/Core/Game.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1101">
@@ -220,20 +232,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Engine/Components/Transform.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="396">
+              <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
               <folding>
                 <element signature="e#99#121#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Engine/Rendering/Materials/ColorMaterial.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="81" selection-start-line="12" selection-start-column="81" selection-end-line="12" selection-end-column="81" />
             </state>
           </provider>
         </entry>
@@ -289,13 +292,13 @@
         <option value="$PROJECT_DIR$/Engine/Rendering/AbstractMaterial.h" />
         <option value="$PROJECT_DIR$/Engine/Rendering/AbstractMaterial.cpp" />
         <option value="$PROJECT_DIR$/Engine/Components/Camera.h" />
-        <option value="$PROJECT_DIR$/Engine/Components/Transform.cpp" />
         <option value="$PROJECT_DIR$/Engine/Feather/World.cpp" />
-        <option value="$PROJECT_DIR$/Engine/Components/Transform.h" />
         <option value="$PROJECT_DIR$/Engine/Rendering/Materials/ColorMaterial.cpp" />
         <option value="$PROJECT_DIR$/Engine/Core/Game.cpp" />
         <option value="$PROJECT_DIR$/Engine/Rendering/Mesh.cpp" />
         <option value="$PROJECT_DIR$/Engine/Systems/MeshRendererSystem.cpp" />
+        <option value="$PROJECT_DIR$/Engine/Components/Transform.h" />
+        <option value="$PROJECT_DIR$/Engine/Components/Transform.cpp" />
         <option value="$PROJECT_DIR$/SandBox/MainWorld.cpp" />
       </list>
     </option>
@@ -535,12 +538,12 @@
       <workItem from="1584193149020" duration="5800000" />
       <workItem from="1584280661978" duration="583000" />
       <workItem from="1584356319329" duration="5456000" />
-      <workItem from="1584367708080" duration="1986000" />
+      <workItem from="1584367708080" duration="2639000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="316027000" />
+    <option name="totallyTimeSpent" value="316680000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -835,26 +838,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Components/Transform.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
-          <folding>
-            <element signature="e#48#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Components/Transform.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#99#121#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Engine/Rendering/Materials/ColorMaterial.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -926,10 +909,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Engine/Components/Transform.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="47" column="78" selection-start-line="47" selection-start-column="78" selection-end-line="47" selection-end-column="78" />
+          <folding>
+            <element signature="e#48#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Engine/Components/Transform.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <folding>
+            <element signature="e#99#121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SandBox/MainWorld.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="673">
-          <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+        <state relative-caret-position="109">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
           <folding>
             <element signature="e#48#70#0" expanded="true" />
           </folding>
