@@ -48,9 +48,10 @@ void Game::Run()
         previous = current;
         lag += elapsed;
 
+        currentWorld->UpdateAllSystems();
         while (lag >= MS_PER_UPDATE)
         {
-            currentWorld->UpdateAllSystems();
+            //currentWorld->UpdateAllSystems();
             lag -= MS_PER_UPDATE;
         }
 

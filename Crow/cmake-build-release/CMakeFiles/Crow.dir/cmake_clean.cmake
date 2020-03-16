@@ -15,7 +15,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o"
   "CMakeFiles/Crow.dir/SandBox/MainWorld.cpp.o"
-  "CMakeFiles/Crow.dir/SandBox/Systems/TestSystem.cpp.o"
+  "CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Rendering/Shader.cpp.o"
   "CMakeFiles/Crow.dir/Plugins/stb_image.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o"
@@ -29,6 +29,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Core/GameObject.cpp.o"
+  "CMakeFiles/Crow.dir/SandBox/Components/RotateComponent.cpp.o"
   "Crow.pdb"
   "Crow"
 )

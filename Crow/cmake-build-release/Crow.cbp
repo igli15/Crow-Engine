@@ -257,16 +257,22 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Plugins/stb_image.h">
 			<Option target="Crow"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/RotateComponent.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/RotateComponent.h">
+			<Option target="Crow"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/MainWorld.cpp">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/MainWorld.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/TestSystem.cpp">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RotateSystem.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/TestSystem.h">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RotateSystem.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Tests/FeatherTest.h">

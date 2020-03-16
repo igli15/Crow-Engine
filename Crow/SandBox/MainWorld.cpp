@@ -3,8 +3,7 @@
 //
 
 #include "MainWorld.h"
-#include "../Tests/FeatherTest.h"
-#include "Systems/TestSystem.h"
+
 
 #include "../Engine/Components/Transform.h"
 #include "../Engine/Systems/MeshRendererSystem.h"
@@ -12,6 +11,9 @@
 #include "../Engine/Core/Game.h"
 #include "../Engine/Core/ResourceManager.h"
 #include "../Engine/Rendering/Materials/ColorMaterial.h"
+#include "Systems/RotateSystem.h"
+#include "Components/RotateComponent.h"
+#include "../Engine/Feather/EntityHandle.h"
 
 void MainWorld::Build()
 {
@@ -26,6 +28,9 @@ void MainWorld::Build()
 
     RegisterSystem<MeshRendererSystem>();
     SetSystemSignature<MeshRendererSystem,Transform,MeshInfo>();
+
+    RegisterSystem<RotateSystem>();
+    SetSystemSignature<RotateSystem,Transform,RotateComponent>();
 
     ColorMaterial* mat = new ColorMaterial("unlitShader");
     
@@ -54,6 +59,7 @@ void MainWorld::Build()
     
     entity.AddComponent(m);
     gunEntity.AddComponent(gunMeshInfo);
+    gunEntity.AddComponent(RotateComponent{5});
     //ENGINE_LOG("Here");
 
 }

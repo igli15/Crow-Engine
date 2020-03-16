@@ -13,7 +13,6 @@ EntityManager::EntityManager()
         m_entityQueue.push(e);
     }
 
-    m_signatures = (EntitySignature*)malloc(MAX_ENTITIES * sizeof(EntitySignature));
 }
 
 Entity EntityManager::CreateEntity()

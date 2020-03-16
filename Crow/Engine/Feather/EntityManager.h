@@ -22,10 +22,7 @@ public:
 private:
     std::queue<Entity> m_entityQueue{};
 
-
-    //NOTE: Swaped the std:: array with a c style array here
-    //std::array<EntitySignature,MAX_ENTITIES> m_signatures{};
-    EntitySignature* m_signatures;
+    std::array<EntitySignature,MAX_ENTITIES> m_signatures{};
 
     int m_activeEntities = 0;
 };

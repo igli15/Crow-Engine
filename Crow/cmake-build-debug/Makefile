@@ -852,6 +852,33 @@ Plugins/stb_image.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Plugins/stb_image.cpp.s
 .PHONY : Plugins/stb_image.cpp.s
 
+SandBox/Components/RotateComponent.o: SandBox/Components/RotateComponent.cpp.o
+
+.PHONY : SandBox/Components/RotateComponent.o
+
+# target to build an object file
+SandBox/Components/RotateComponent.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Components/RotateComponent.cpp.o
+.PHONY : SandBox/Components/RotateComponent.cpp.o
+
+SandBox/Components/RotateComponent.i: SandBox/Components/RotateComponent.cpp.i
+
+.PHONY : SandBox/Components/RotateComponent.i
+
+# target to preprocess a source file
+SandBox/Components/RotateComponent.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Components/RotateComponent.cpp.i
+.PHONY : SandBox/Components/RotateComponent.cpp.i
+
+SandBox/Components/RotateComponent.s: SandBox/Components/RotateComponent.cpp.s
+
+.PHONY : SandBox/Components/RotateComponent.s
+
+# target to generate assembly for a file
+SandBox/Components/RotateComponent.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Components/RotateComponent.cpp.s
+.PHONY : SandBox/Components/RotateComponent.cpp.s
+
 SandBox/MainWorld.o: SandBox/MainWorld.cpp.o
 
 .PHONY : SandBox/MainWorld.o
@@ -879,32 +906,32 @@ SandBox/MainWorld.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/MainWorld.cpp.s
 .PHONY : SandBox/MainWorld.cpp.s
 
-SandBox/Systems/TestSystem.o: SandBox/Systems/TestSystem.cpp.o
+SandBox/Systems/RotateSystem.o: SandBox/Systems/RotateSystem.cpp.o
 
-.PHONY : SandBox/Systems/TestSystem.o
+.PHONY : SandBox/Systems/RotateSystem.o
 
 # target to build an object file
-SandBox/Systems/TestSystem.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/TestSystem.cpp.o
-.PHONY : SandBox/Systems/TestSystem.cpp.o
+SandBox/Systems/RotateSystem.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.o
+.PHONY : SandBox/Systems/RotateSystem.cpp.o
 
-SandBox/Systems/TestSystem.i: SandBox/Systems/TestSystem.cpp.i
+SandBox/Systems/RotateSystem.i: SandBox/Systems/RotateSystem.cpp.i
 
-.PHONY : SandBox/Systems/TestSystem.i
+.PHONY : SandBox/Systems/RotateSystem.i
 
 # target to preprocess a source file
-SandBox/Systems/TestSystem.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/TestSystem.cpp.i
-.PHONY : SandBox/Systems/TestSystem.cpp.i
+SandBox/Systems/RotateSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.i
+.PHONY : SandBox/Systems/RotateSystem.cpp.i
 
-SandBox/Systems/TestSystem.s: SandBox/Systems/TestSystem.cpp.s
+SandBox/Systems/RotateSystem.s: SandBox/Systems/RotateSystem.cpp.s
 
-.PHONY : SandBox/Systems/TestSystem.s
+.PHONY : SandBox/Systems/RotateSystem.s
 
 # target to generate assembly for a file
-SandBox/Systems/TestSystem.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/TestSystem.cpp.s
-.PHONY : SandBox/Systems/TestSystem.cpp.s
+SandBox/Systems/RotateSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.s
+.PHONY : SandBox/Systems/RotateSystem.cpp.s
 
 main.o: main.cpp.o
 
@@ -1023,12 +1050,15 @@ help:
 	@echo "... Plugins/stb_image.o"
 	@echo "... Plugins/stb_image.i"
 	@echo "... Plugins/stb_image.s"
+	@echo "... SandBox/Components/RotateComponent.o"
+	@echo "... SandBox/Components/RotateComponent.i"
+	@echo "... SandBox/Components/RotateComponent.s"
 	@echo "... SandBox/MainWorld.o"
 	@echo "... SandBox/MainWorld.i"
 	@echo "... SandBox/MainWorld.s"
-	@echo "... SandBox/Systems/TestSystem.o"
-	@echo "... SandBox/Systems/TestSystem.i"
-	@echo "... SandBox/Systems/TestSystem.s"
+	@echo "... SandBox/Systems/RotateSystem.o"
+	@echo "... SandBox/Systems/RotateSystem.i"
+	@echo "... SandBox/Systems/RotateSystem.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -1,0 +1,30 @@
+//
+// Created by Igli milaqi on 06/03/2020.
+//
+
+#include <iostream>
+#include <GLFW/glfw3.h>
+#include "RotateSystem.h"
+#include "../../Engine/Feather/World.h"
+#include "../../Engine/Components/Transform.h"
+#include "../Components/RotateComponent.h"
+
+void RotateSystem::Init()
+{
+    System::Init();
+
+    std::cout<<"Initialising System"<<std::endl;
+}
+
+void RotateSystem::Update()
+{
+    System::Update();
+
+    for (auto const& entity : m_entities)
+    {
+        Transform& t = world->GetComponent<Transform>(entity);
+        RotateComponent& r = world->GetComponent<RotateComponent>(entity);
+        t.Rotate(r.rotateSpeed,glm::vec3(0,1,1));
+    }
+
+}

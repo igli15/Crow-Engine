@@ -8,7 +8,7 @@
 
 #include "../../Engine/Feather/System.h"
 
-class TestSystem : public System {
+class RotateSystem : public System {
 
 
     void Init() override;

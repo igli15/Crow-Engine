@@ -31,8 +31,9 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Gameobject.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/OOP_Engine/Gameobject.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/OOPEngine.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/OOP_Engine/OOPEngine.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Plugins/stb_image.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Plugins/stb_image.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/RotateComponent.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Components/RotateComponent.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/MainWorld.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/SandBox/MainWorld.cpp.o"
-  "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/TestSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Systems/TestSystem.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RotateSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/main.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

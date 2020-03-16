@@ -15,10 +15,32 @@ class SystemManager {
 
 public:
     template <typename T>
-    T* RegisterSystem();
+    T* RegisterSystem()
+    {
+        const char* typeName = typeid(T).name();
+
+        if(m_systems.find(typeName) != m_systems.end())
+        {
+            ENGINE_LOG_CRITICAL("System is already Registered");
+        }
+
+        T* system = new T();
+        m_systems.insert({typeName,system});
+        return system;
+    }
 
     template <typename T>
-    void SetSignature(EntitySignature signature);
+    void SetSignature(EntitySignature signature)
+    {
+        const char* typeName = typeid(T).name();
+
+        if(m_systems.find(typeName) == m_systems.end())
+        {
+            ENGINE_LOG_CRITICAL("System is NOT Registered");
+        }
+
+        m_signatures[typeName] = signature;
+    }
 
     void OnEntityDestroyed(Entity entity)
     {
@@ -56,33 +78,5 @@ private:
     std::unordered_map<const char*,System*> m_systems {};
 };
 
-template<typename T>
-T *SystemManager::RegisterSystem()
-{
-    const char* typeName = typeid(T).name();
-
-    if(m_systems.find(typeName) != m_systems.end())
-    {
-        ENGINE_LOG_CRITICAL("System is already Registered");
-    }
-
-    T* system = new T();
-    m_systems.insert({typeName,system});
-    return system;
-}
-
-template<typename T>
-void SystemManager::SetSignature(EntitySignature signature)
-{
-    const char* typeName = typeid(T).name();
-
-    if(m_systems.find(typeName) == m_systems.end())
-    {
-        ENGINE_LOG_CRITICAL("System is NOT Registered");
-    }
-
-    m_signatures.insert({typeName,signature});
-
-}
 
 #endif //CROW_SYSTEMMANAGER_H
