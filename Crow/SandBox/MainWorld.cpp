@@ -33,33 +33,42 @@ void MainWorld::Build()
     SetSystemSignature<RotateSystem,Transform,RotateComponent>();
 
     ColorMaterial* mat = new ColorMaterial("unlitShader");
-    
+
+    /*
     EntityHandle entity  = CreateEntity();
-    EntityHandle gunEntity  = CreateEntity();
 
     MeshInfo m{};
     m.model = crysisModel;
     m.material = mat;
 
-    MeshInfo gunMeshInfo{};
-    gunMeshInfo.model = gunModel;
-    gunMeshInfo.material = mat;
-    
+    entity.AddComponent(m);
     entity.AddComponent(Transform{});
 
     Transform* t = entity.GetComponent<Transform>().component;
     t->Translate(glm::vec3(3,-1.5,-5));
     t->Scale(glm::vec3(0.2f,0.2f,0.2f));
+*/
 
-    gunEntity.AddComponent(Transform{});
-    Transform* t2 = gunEntity.GetComponent<Transform>().component;
-    t2->Translate(glm::vec3(-3,0,-5));
-    t2->Scale(glm::vec3(0.1f,0.1f,0.1f));
-    t2->Rotate(-25,glm::vec3(0,1,0));
-    
-    entity.AddComponent(m);
-    gunEntity.AddComponent(gunMeshInfo);
-    gunEntity.AddComponent(RotateComponent{5});
+    cameraEntity->GetComponent<Transform>().component->Translate(glm::vec3(50,50,50));
+    for (int i = 0; i < 100; ++i)
+    {
+        for (int j = 0; j < 100; ++j)
+        {
+            EntityHandle gunEntity = CreateEntity();
+
+            gunEntity.AddComponent(Transform{});
+            Transform *t2 = gunEntity.GetComponent<Transform>().component;
+            t2->Translate(glm::vec3(i , j, -10));
+            t2->Scale(glm::vec3(0.05f, 0.05f, 0.05f));
+            t2->Rotate(-25, glm::vec3(0, 1, 0));
+
+            MeshInfo gunMeshInfo{};
+            gunMeshInfo.model = gunModel;
+            gunMeshInfo.material = mat;
+            gunEntity.AddComponent(gunMeshInfo);
+            gunEntity.AddComponent(RotateComponent{5});
+        }
+    }
     //ENGINE_LOG("Here");
 
 }

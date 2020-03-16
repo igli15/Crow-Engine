@@ -18,7 +18,7 @@ struct ComponentTypeDummy
 using ComponentType = std::uint32_t;
 using ComponentIDGenerator = CustomTypeID<ComponentTypeDummy>;
 
-const int MAX_ENTITIES = 3000;
+const int MAX_ENTITIES = 100000;
 const int MAX_COMPONENTS = 32;
 using EntitySignature = std::bitset<MAX_COMPONENTS>;
 

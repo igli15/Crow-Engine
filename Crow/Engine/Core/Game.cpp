@@ -63,7 +63,7 @@ void Game::Run()
         window->SwapBuffers();
         window->PollEvents();
 
-        /*
+
         double currentTime = glfwGetTime();
         nbFrames++;
         if ( currentTime - lastTime >= 1.0 ){ // If last prinf() was more than 1 sec ago
@@ -73,7 +73,7 @@ void Game::Run()
             nbFrames = 0;
             lastTime += 1.0;
         }
-         */
+
     }
 
 
