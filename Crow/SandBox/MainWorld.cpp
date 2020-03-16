@@ -22,7 +22,7 @@ void MainWorld::Build()
 
     //Load the models
     Model* crysisModel = Game::Instance()->resourceManager->LoadModel((MODEL_PATH + "nanosuit.obj"),"crysis");
-    Model* suzana = Game::Instance()->resourceManager->LoadModel((MODEL_PATH + "cube.obj"),"suzana");
+    Model* suzana = Game::Instance()->resourceManager->LoadModel((MODEL_PATH + "pistol.obj"),"suzana");
 
     RegisterSystem<MeshRendererSystem>();
     SetSystemSignature<MeshRendererSystem,Transform,MeshInfo>();
@@ -49,7 +49,7 @@ void MainWorld::Build()
     suzanaEntity.AddComponent(Transform{});
     Transform* t2 = suzanaEntity.GetComponent<Transform>().component;
     t2->Translate(glm::vec3(-3,0,-5));
-    t2->Scale(glm::vec3(0.5f,0.5f,0.5f));
+    t2->Scale(glm::vec3(0.1f,0.1f,0.1f));
     
     entity.AddComponent(m);
     suzanaEntity.AddComponent(suzanaMeshInfo);

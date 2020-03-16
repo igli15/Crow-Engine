@@ -14,12 +14,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cf22dce6-4d69-43d0-a044-a31c5cbccc70" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/monkey_cube1.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/suzana.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Core/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Core/Game.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Rendering/Mesh.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Rendering/Mesh.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Systems/MeshRendererSystem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Systems/MeshRendererSystem.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/suzana.fbx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/SandBox/MainWorld.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SandBox/MainWorld.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/Crow" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/Crow" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -97,7 +93,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cmake" value="37" />
-          <entry key="cpp" value="10190" />
+          <entry key="cpp" value="10262" />
           <entry key="fs" value="55" />
           <entry key="h" value="20387" />
           <entry key="txt" value="227" />
@@ -107,7 +103,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="264" />
-          <entry key="ObjectiveC" value="30577" />
+          <entry key="ObjectiveC" value="30649" />
           <entry key="PLAIN_TEXT" value="84" />
         </counts>
       </usages-collector>
@@ -134,8 +130,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SandBox/MainWorld.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="801">
-              <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
+            <state relative-caret-position="673">
+              <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
               <folding>
                 <element signature="e#48#70#0" expanded="true" />
               </folding>
@@ -168,7 +164,7 @@
         <entry file="file://$PROJECT_DIR$/Engine/Systems/MeshRendererSystem.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="506">
-              <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+              <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
               <folding>
                 <element signature="e#48#79#0" expanded="true" />
               </folding>
@@ -539,12 +535,12 @@
       <workItem from="1584193149020" duration="5800000" />
       <workItem from="1584280661978" duration="583000" />
       <workItem from="1584356319329" duration="5456000" />
-      <workItem from="1584367708080" duration="1440000" />
+      <workItem from="1584367708080" duration="1986000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="315481000" />
+    <option name="totallyTimeSpent" value="316027000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -564,7 +560,7 @@
       <window_info id="Favorites" order="2" sideWeight="0.5006435" side_tool="true" weight="0.16347177" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.23069307" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23069307" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -916,7 +912,7 @@
     <entry file="file://$PROJECT_DIR$/Engine/Systems/MeshRendererSystem.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
-          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
           <folding>
             <element signature="e#48#79#0" expanded="true" />
           </folding>
@@ -932,8 +928,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SandBox/MainWorld.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="801">
-          <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
+        <state relative-caret-position="673">
+          <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
           <folding>
             <element signature="e#48#70#0" expanded="true" />
           </folding>
