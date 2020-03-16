@@ -15,6 +15,7 @@
     <list default="true" id="cf22dce6-4d69-43d0-a044-a31c5cbccc70" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/Core/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Core/Game.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SandBox/Systems/RotateSystem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SandBox/Systems/RotateSystem.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/Crow" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/Crow" afterDir="false" />
     </list>
@@ -93,7 +94,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cmake" value="37" />
-          <entry key="cpp" value="11269" />
+          <entry key="cpp" value="11414" />
           <entry key="fs" value="55" />
           <entry key="h" value="20600" />
           <entry key="txt" value="250" />
@@ -103,7 +104,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="287" />
-          <entry key="ObjectiveC" value="31869" />
+          <entry key="ObjectiveC" value="32014" />
           <entry key="PLAIN_TEXT" value="84" />
         </counts>
       </usages-collector>
@@ -130,7 +131,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SandBox/MainWorld.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="872">
+            <state relative-caret-position="724">
               <caret line="60" column="46" selection-start-line="60" selection-start-column="46" selection-end-line="60" selection-end-column="46" />
               <folding>
                 <element signature="e#48#70#0" expanded="true" />
@@ -193,8 +194,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Engine/Core/Game.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+            <state relative-caret-position="103">
+              <caret line="36" column="33" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="33" />
               <folding>
                 <element signature="e#48#65#0" expanded="true" />
               </folding>
@@ -223,8 +224,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SandBox/Systems/RotateSystem.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+            <state relative-caret-position="298">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="e#48#67#0" expanded="true" />
               </folding>
@@ -282,7 +283,6 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/SandBox/Components/RotateComponent.h" />
         <option value="$PROJECT_DIR$/SandBox/Systems/RotateSystem.h" />
-        <option value="$PROJECT_DIR$/SandBox/Systems/RotateSystem.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/Engine/Feather/SystemManager.h" />
         <option value="$PROJECT_DIR$/Engine/Feather/World.h" />
@@ -290,6 +290,7 @@
         <option value="$PROJECT_DIR$/Engine/Feather/EntityManager.h" />
         <option value="$PROJECT_DIR$/Engine/Feather/Types.h" />
         <option value="$PROJECT_DIR$/SandBox/MainWorld.cpp" />
+        <option value="$PROJECT_DIR$/SandBox/Systems/RotateSystem.cpp" />
         <option value="$PROJECT_DIR$/Engine/Core/Game.cpp" />
       </list>
     </option>
@@ -535,12 +536,12 @@
       <workItem from="1584193149020" duration="5800000" />
       <workItem from="1584280661978" duration="583000" />
       <workItem from="1584356319329" duration="5456000" />
-      <workItem from="1584367708080" duration="12696000" />
+      <workItem from="1584367708080" duration="13189000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="326737000" />
+    <option name="totallyTimeSpent" value="327230000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -560,7 +561,7 @@
       <window_info id="Favorites" order="2" sideWeight="0.5006435" side_tool="true" weight="0.16347177" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.23069307" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23069307" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -892,16 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Feather/World.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="64" column="40" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="40" />
-          <folding>
-            <element signature="e#48#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SandBox/MainWorld.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -947,19 +938,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SandBox/Systems/RotateSystem.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
-          <folding>
-            <element signature="e#48#67#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SandBox/MainWorld.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="872">
+        <state relative-caret-position="724">
           <caret line="60" column="46" selection-start-line="60" selection-start-column="46" selection-end-line="60" selection-end-column="46" />
           <folding>
             <element signature="e#48#70#0" expanded="true" />
@@ -967,10 +948,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Engine/Feather/World.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="64" column="40" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="40" />
+          <folding>
+            <element signature="e#48#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SandBox/Systems/RotateSystem.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#48#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Engine/Core/Game.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+        <state relative-caret-position="103">
+          <caret line="36" column="33" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="33" />
           <folding>
             <element signature="e#48#65#0" expanded="true" />
           </folding>

@@ -24,7 +24,20 @@ void RotateSystem::Update()
     {
         Transform& t = world->GetComponent<Transform>(entity);
         RotateComponent& r = world->GetComponent<RotateComponent>(entity);
+
         t.Rotate(r.rotateSpeed,glm::vec3(0,1,1));
     }
 
+    //This is another way of doing it...
+
+    /*
+    ComponentHandle<Transform> t;
+    ComponentHandle<RotateComponent> r;
+
+    for (auto const& entity : m_entities)
+    {
+        world->PopulateHandles(entity,t,r);
+        t.component->Rotate(r.component->rotateSpeed,glm::vec3(0,1,1));
+    }
+     */
 }

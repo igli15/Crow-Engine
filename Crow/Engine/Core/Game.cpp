@@ -49,7 +49,7 @@ void Game::Run()
 
         previous = current;
         lag += elapsed;
-        
+
         while (lag >= MS_PER_UPDATE)
         {
             currentWorld->UpdateAllSystems();
@@ -63,6 +63,7 @@ void Game::Run()
 
         window->SwapBuffers();
         window->PollEvents();
+
 
 
         double currentTime = glfwGetTime();
