@@ -5146,6 +5146,8 @@ CMakeFiles/Crow.dir/main.cpp.o: ../Tests/OOPEngineTest.h
 CMakeFiles/Crow.dir/main.cpp.o: ../main.cpp
 CMakeFiles/Crow.dir/main.cpp.o: /usr/local/include/GL/glew.h
 CMakeFiles/Crow.dir/main.cpp.o: /usr/local/include/GLFW/glfw3.h
+CMakeFiles/Crow.dir/main.cpp.o: /usr/local/include/freetype2/freetype/config/ftheader.h
+CMakeFiles/Crow.dir/main.cpp.o: /usr/local/include/freetype2/ft2build.h
 CMakeFiles/Crow.dir/main.cpp.o: /usr/local/include/spdlog/common-inl.h
 CMakeFiles/Crow.dir/main.cpp.o: /usr/local/include/spdlog/common.h
 CMakeFiles/Crow.dir/main.cpp.o: /usr/local/include/spdlog/details/backtracer-inl.h

@@ -41,6 +41,8 @@ set(CMAKE_CXX_COMPILER_ID "AppleClang")
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/local/Cellar/glew-2.1.0/include/GL"
   "/usr/local/include"
+  "/Library/Frameworks/Mono.framework/Headers"
+  "/usr/local/include/freetype2"
   )
 
 # Targets to which this target links.

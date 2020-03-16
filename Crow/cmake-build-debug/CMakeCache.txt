@@ -221,6 +221,21 @@ Crow_BINARY_DIR:STATIC=/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug
 //Value Computed by CMake
 Crow_SOURCE_DIR:STATIC=/Users/igli/Desktop/Crow Engine/Crow
 
+//Path to a library.
+FREETYPE:FILEPATH=FREETYPE-NOTFOUND
+
+//Path to a file.
+FREETYPE_INCLUDE_DIR_freetype2:PATH=/usr/local/include/freetype2
+
+//Path to a file.
+FREETYPE_INCLUDE_DIR_ft2build:PATH=/Library/Frameworks/Mono.framework/Headers
+
+//Path to a library.
+FREETYPE_LIBRARY_DEBUG:FILEPATH=FREETYPE_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+FREETYPE_LIBRARY_RELEASE:FILEPATH=/usr/local/lib/libfreetype.dylib
+
 //Git command line client
 GIT_EXECUTABLE:FILEPATH=/usr/bin/git
 

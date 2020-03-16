@@ -5147,6 +5147,8 @@ CMakeFiles/Crow.dir/main.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/main.cpp
  /usr/local/include/GL/glew.h
  /usr/local/include/GLFW/glfw3.h
+ /usr/local/include/freetype2/freetype/config/ftheader.h
+ /usr/local/include/freetype2/ft2build.h
  /usr/local/include/spdlog/common-inl.h
  /usr/local/include/spdlog/common.h
  /usr/local/include/spdlog/details/backtracer-inl.h
