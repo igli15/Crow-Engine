@@ -31,7 +31,8 @@ void Game::Init()
 
 void Game::Run()
 {
-    clock_t previous = clock();
+    double previous = glfwGetTime();
+
     double lag = 0.0;
     double MS_PER_UPDATE = 1.0/60.0;
 
@@ -43,15 +44,15 @@ void Game::Run()
         window->ClearColor(0.1,0,0,1);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-        clock_t  current = clock();
-        double elapsed = (double)(current - previous)/CLOCKS_PER_SEC;
+        double  current = glfwGetTime();
+        double elapsed = (double)(current - previous);
+
         previous = current;
         lag += elapsed;
-
-        currentWorld->UpdateAllSystems();
+        
         while (lag >= MS_PER_UPDATE)
         {
-            //currentWorld->UpdateAllSystems();
+            currentWorld->UpdateAllSystems();
             lag -= MS_PER_UPDATE;
         }
 
