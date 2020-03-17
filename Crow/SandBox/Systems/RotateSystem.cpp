@@ -26,7 +26,7 @@ void RotateSystem::Update()
         Transform& t = world->GetComponent<Transform>(entity);
         RotateComponent& r = world->GetComponent<RotateComponent>(entity);
 
-        t.Rotate(r.rotateSpeed,glm::vec3(0,1,1));
+        t.Rotate(r.rotateSpeed,glm::vec3(0,1,0));
     }
 
     //This is another way of doing it...

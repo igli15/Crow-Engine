@@ -31,6 +31,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Crow.dir/Engine/Core/GameObject.cpp.o"
   "CMakeFiles/Crow.dir/SandBox/Components/RotateComponent.cpp.o"
   "CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o"
+  "CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o"
   "Crow.pdb"
   "Crow"
 )
