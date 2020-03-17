@@ -6,12 +6,16 @@
 #include "EntityHandle.h"
 #include "../Components/Transform.h"
 #include "../Components/Camera.h"
+#include "../Systems/MeshRendererSystem.h"
+#include "../Components/MeshInfo.h"
 
 void World::Init()
 {
     m_componentManager = new ComponentManager();
     m_entityManager = new EntityManager();
     m_systemManager = new SystemManager();
+
+    RegisterEngineSystems();
 }
 
 EntityHandle World::CreateEntity()
@@ -63,6 +67,13 @@ void World::CreateCamera()
 
     cameraEntity->AddComponent<Camera>(Camera{});
     cameraEntity->AddComponent<Transform>(Transform{});
+}
+
+void World::RegisterEngineSystems()
+{
+    RegisterSystem<MeshRendererSystem>();
+    SetSystemSignature<MeshRendererSystem,Transform,MeshInfo>();
+
 }
 
 

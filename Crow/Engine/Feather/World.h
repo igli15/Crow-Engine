@@ -145,6 +145,7 @@ private:
 
     std::vector<System*> m_allRegisteredSystems;
 
+    void RegisterEngineSystems();
     void CreateCamera();
 };
 

@@ -23,12 +23,8 @@ void RotatingGunsWorld::Build()
     Game::Instance()->resourceManager->CreateShader("VertexShader.vs","FragmentShader.fs","unlitShader");
 
     //Load the models
-    Model* crysisModel = Game::Instance()->resourceManager->LoadModel((MODEL_PATH + "nanosuit.obj"),"crysis");
     Model* gunModel = Game::Instance()->resourceManager->LoadModel((MODEL_PATH + "pistol.obj"),"gunModel");
-
-    RegisterSystem<MeshRendererSystem>();
-    SetSystemSignature<MeshRendererSystem,Transform,MeshInfo>();
-
+    
     RegisterSystem<RotateSystem>();
     SetSystemSignature<RotateSystem,Transform,RotateComponent>();
 

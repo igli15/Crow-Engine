@@ -9,6 +9,7 @@ void MyGame::Init()
 {
     Game::Init();
 
-    //Set the world here
+    //Set the world here!
+
     SetWorld(new RotatingGunsWorld());
 }
