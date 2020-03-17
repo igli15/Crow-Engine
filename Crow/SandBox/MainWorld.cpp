@@ -64,6 +64,7 @@ void MainWorld::Build()
 
             MeshInfo gunMeshInfo{};
             gunMeshInfo.model = gunModel;
+            mat->diffuseColor = glm::vec3(0.8f,0.8f,0.8f);
             gunMeshInfo.material = mat;
             gunEntity.AddComponent(gunMeshInfo);
             gunEntity.AddComponent(RotateComponent{5});
