@@ -4,7 +4,6 @@
 
 #include "Game.h"
 
-#include "../../SandBox/MainWorld.h"
 #include "../Rendering/Shader.h"
 #include "../Rendering/Model.h"
 #include "glm/ext.hpp"
@@ -23,11 +22,15 @@ void Game::Init()
 
     window->CreateWindow(1920,1080,"Crow");
 
-    currentWorld = new MainWorld();
+}
+
+void Game::InitWorld()
+{
     currentWorld->Init();
     currentWorld->Build();
     currentWorld->InitAllSystems();
 }
+
 
 void Game::Run()
 {
@@ -65,7 +68,6 @@ void Game::Run()
         window->PollEvents();
 
 
-
         double currentTime = glfwGetTime();
         nbFrames++;
         if ( currentTime - lastTime >= 1.0 ){ // If last prinf() was more than 1 sec ago
@@ -77,7 +79,6 @@ void Game::Run()
         }
 
     }
-
 
     window->Terminate();
 }
@@ -91,3 +92,4 @@ Game *Game::Instance()
 {
     return m_instance;
 }
+

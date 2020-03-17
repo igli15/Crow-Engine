@@ -879,32 +879,32 @@ SandBox/Components/RotateComponent.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Components/RotateComponent.cpp.s
 .PHONY : SandBox/Components/RotateComponent.cpp.s
 
-SandBox/MainWorld.o: SandBox/MainWorld.cpp.o
+SandBox/MyGame.o: SandBox/MyGame.cpp.o
 
-.PHONY : SandBox/MainWorld.o
+.PHONY : SandBox/MyGame.o
 
 # target to build an object file
-SandBox/MainWorld.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/MainWorld.cpp.o
-.PHONY : SandBox/MainWorld.cpp.o
+SandBox/MyGame.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o
+.PHONY : SandBox/MyGame.cpp.o
 
-SandBox/MainWorld.i: SandBox/MainWorld.cpp.i
+SandBox/MyGame.i: SandBox/MyGame.cpp.i
 
-.PHONY : SandBox/MainWorld.i
+.PHONY : SandBox/MyGame.i
 
 # target to preprocess a source file
-SandBox/MainWorld.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/MainWorld.cpp.i
-.PHONY : SandBox/MainWorld.cpp.i
+SandBox/MyGame.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/MyGame.cpp.i
+.PHONY : SandBox/MyGame.cpp.i
 
-SandBox/MainWorld.s: SandBox/MainWorld.cpp.s
+SandBox/MyGame.s: SandBox/MyGame.cpp.s
 
-.PHONY : SandBox/MainWorld.s
+.PHONY : SandBox/MyGame.s
 
 # target to generate assembly for a file
-SandBox/MainWorld.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/MainWorld.cpp.s
-.PHONY : SandBox/MainWorld.cpp.s
+SandBox/MyGame.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/MyGame.cpp.s
+.PHONY : SandBox/MyGame.cpp.s
 
 SandBox/Systems/RotateSystem.o: SandBox/Systems/RotateSystem.cpp.o
 
@@ -932,6 +932,33 @@ SandBox/Systems/RotateSystem.s: SandBox/Systems/RotateSystem.cpp.s
 SandBox/Systems/RotateSystem.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.s
 .PHONY : SandBox/Systems/RotateSystem.cpp.s
+
+SandBox/Worlds/RotatingGunsWorld.o: SandBox/Worlds/RotatingGunsWorld.cpp.o
+
+.PHONY : SandBox/Worlds/RotatingGunsWorld.o
+
+# target to build an object file
+SandBox/Worlds/RotatingGunsWorld.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o
+.PHONY : SandBox/Worlds/RotatingGunsWorld.cpp.o
+
+SandBox/Worlds/RotatingGunsWorld.i: SandBox/Worlds/RotatingGunsWorld.cpp.i
+
+.PHONY : SandBox/Worlds/RotatingGunsWorld.i
+
+# target to preprocess a source file
+SandBox/Worlds/RotatingGunsWorld.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.i
+.PHONY : SandBox/Worlds/RotatingGunsWorld.cpp.i
+
+SandBox/Worlds/RotatingGunsWorld.s: SandBox/Worlds/RotatingGunsWorld.cpp.s
+
+.PHONY : SandBox/Worlds/RotatingGunsWorld.s
+
+# target to generate assembly for a file
+SandBox/Worlds/RotatingGunsWorld.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.s
+.PHONY : SandBox/Worlds/RotatingGunsWorld.cpp.s
 
 main.o: main.cpp.o
 
@@ -1053,12 +1080,15 @@ help:
 	@echo "... SandBox/Components/RotateComponent.o"
 	@echo "... SandBox/Components/RotateComponent.i"
 	@echo "... SandBox/Components/RotateComponent.s"
-	@echo "... SandBox/MainWorld.o"
-	@echo "... SandBox/MainWorld.i"
-	@echo "... SandBox/MainWorld.s"
+	@echo "... SandBox/MyGame.o"
+	@echo "... SandBox/MyGame.i"
+	@echo "... SandBox/MyGame.s"
 	@echo "... SandBox/Systems/RotateSystem.o"
 	@echo "... SandBox/Systems/RotateSystem.i"
 	@echo "... SandBox/Systems/RotateSystem.s"
+	@echo "... SandBox/Worlds/RotatingGunsWorld.o"
+	@echo "... SandBox/Worlds/RotatingGunsWorld.i"
+	@echo "... SandBox/Worlds/RotatingGunsWorld.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

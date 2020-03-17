@@ -20,7 +20,8 @@ private:
     static Game* m_instance;
 
 public:
-    void Init();
+    virtual void Init();
+    void InitWorld();
     void Run();
 
     void SetWorld(World* w);

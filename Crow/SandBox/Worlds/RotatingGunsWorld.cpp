@@ -2,20 +2,20 @@
 // Created by Igli milaqi on 06/03/2020.
 //
 
-#include "MainWorld.h"
+#include "RotatingGunsWorld.h"
 
 
-#include "../Engine/Components/Transform.h"
-#include "../Engine/Systems/MeshRendererSystem.h"
-#include "../Engine/Components/MeshInfo.h"
-#include "../Engine/Core/Game.h"
-#include "../Engine/Core/ResourceManager.h"
-#include "../Engine/Rendering/Materials/ColorMaterial.h"
-#include "Systems/RotateSystem.h"
-#include "Components/RotateComponent.h"
-#include "../Engine/Feather/EntityHandle.h"
+#include "../../Engine/Components/Transform.h"
+#include "../../Engine/Systems/MeshRendererSystem.h"
+#include "../../Engine/Components/MeshInfo.h"
+#include "../../Engine/Core/Game.h"
+#include "../../Engine/Core/ResourceManager.h"
+#include "../../Engine/Rendering/Materials/ColorMaterial.h"
+#include "../Systems/RotateSystem.h"
+#include "../Components/RotateComponent.h"
+#include "../../Engine/Feather/EntityHandle.h"
 
-void MainWorld::Build()
+void RotatingGunsWorld::Build()
 {
     World::Build();
 
@@ -34,22 +34,7 @@ void MainWorld::Build()
 
     ColorMaterial* mat = new ColorMaterial("unlitShader");
 
-    /*
-    EntityHandle entity  = CreateEntity();
-
-    MeshInfo m{};
-    m.model = crysisModel;
-    m.material = mat;
-
-    entity.AddComponent(m);
-    entity.AddComponent(Transform{});
-
-    Transform* t = entity.GetComponent<Transform>().component;
-    t->Translate(glm::vec3(3,-1.5,-5));
-    t->Scale(glm::vec3(0.2f,0.2f,0.2f));
-*/
-
-    cameraEntity->GetComponent<Transform>().component->Translate(glm::vec3(50,50,50));
+    cameraEntity->GetComponent<Transform>().component->Translate(glm::vec3(50,50,100));
     for (int i = 0; i < 100; ++i)
     {
         for (int j = 0; j < 100; ++j)

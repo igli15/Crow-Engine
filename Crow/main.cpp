@@ -10,6 +10,7 @@
 #include <time.h>
 #include "Engine/Core/Game.h"
 #include "Engine/Debug/Debug.h"
+#include "SandBox/MyGame.h"
 
 
 int main()
@@ -46,8 +47,9 @@ int main()
 */
 
 
-    Game game;
+    MyGame game;
     game.Init();
+    game.InitWorld();
     game.Run();
 
     return 0;

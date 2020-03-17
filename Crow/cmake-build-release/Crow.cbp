@@ -263,16 +263,22 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/RotateComponent.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/MainWorld.cpp">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/MyGame.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/MainWorld.h">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/MyGame.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RotateSystem.cpp">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RotateSystem.h">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/RotatingGunsWorld.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/RotatingGunsWorld.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Tests/FeatherTest.h">
