@@ -23,7 +23,7 @@ public:
      */
 
     template <typename T>
-    void AddComponent(Entity entity,T component);
+    T* AddComponent(Entity entity,T component);
 
     template <typename T>
     void RemoveComponent(Entity entity);
@@ -104,9 +104,9 @@ ComponentArray<T> *ComponentManager::GetComponentArray()
 }
 
 template<typename T>
-void ComponentManager::AddComponent(Entity entity,T component)
+T* ComponentManager::AddComponent(Entity entity,T component)
 {
-    GetComponentArray<T>()->AddComponentData(entity,component);
+    return GetComponentArray<T>()->AddComponentData(entity,component);
 }
 
 template<typename T>

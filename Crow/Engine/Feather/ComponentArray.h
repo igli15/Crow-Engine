@@ -24,7 +24,7 @@ class ComponentArray : public IComponentArray {
 
 public:
 
-    void AddComponentData(Entity entity,T Component);
+    T* AddComponentData(Entity entity,T Component);
     void RemoveComponentData(Entity entity);
 
     T& GetComponentData(Entity entity);
@@ -67,7 +67,7 @@ private:
 };
 
 template<typename T>
-void ComponentArray<T>::AddComponentData(Entity entity, T Component)
+T* ComponentArray<T>::AddComponentData(Entity entity, T Component)
 {
 
     if(m_entityToIndexMap.find(entity) != m_entityToIndexMap.end())
@@ -76,11 +76,14 @@ void ComponentArray<T>::AddComponentData(Entity entity, T Component)
     }
 
     size_t index = validSize;
+
     m_entityToIndexMap[entity] = index;
     m_indexToEntityMap[index] = entity;
     m_componentsArray[index] = Component;
 
     ++validSize;
+
+    return &(m_componentsArray[index]);
 }
 
 template<typename T>

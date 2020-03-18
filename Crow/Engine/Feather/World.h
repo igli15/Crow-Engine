@@ -41,14 +41,16 @@ public:
      */
 
     template <typename T>
-    void AddComponent(Entity entity,T component)
+    T* AddComponent(Entity entity,T component)
     {
-        m_componentManager->AddComponent(entity,component);
+        T* c = m_componentManager->AddComponent(entity,component);
         EntitySignature signature = m_entityManager->GetSignature(entity);
         signature.set(ComponentIDGenerator::index<T>,true);
         m_entityManager->SetSignature(entity,signature);
 
         m_systemManager->OnEntitySignatureChanged(entity,signature);
+
+        return c;
     }
 
     template <typename T>

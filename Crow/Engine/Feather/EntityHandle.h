@@ -14,9 +14,9 @@ struct EntityHandle {
     World* feather;
 
     template <typename T>
-    void AddComponent(T component)
+    T* AddComponent(T component)
     {
-        feather->AddComponent(entity,component);
+        return feather->AddComponent(entity,component);
     }
 
     template <typename T>

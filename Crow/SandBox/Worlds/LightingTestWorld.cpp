@@ -50,6 +50,7 @@ void LightingTestWorld::Build()
     Transform *cubeTransform = cubeEntity.GetComponent<Transform>().component;
     cubeTransform->Scale(glm::vec3(0.5f, 0.5f, 0.5f));
     cubeTransform->Translate(glm::vec3(-6,0,0));
+    cubeTransform->Rotate(45,glm::vec3(1,0,0));
 
     MeshInfo cubeMeshInfo{};
     cubeMeshInfo.model = cube;
@@ -57,7 +58,8 @@ void LightingTestWorld::Build()
     cubeEntity.AddComponent(cubeMeshInfo);
 
     EntityHandle lightEntity = CreateEntity();
-    lightEntity.AddComponent(Transform{});
+    auto t = lightEntity.AddComponent(Transform{});
+    t->Rotate(-45,glm::vec3(1,0,0));
     lightEntity.AddComponent(Light{glm::vec3(0.8,0.8,0.8)});
 
 }
