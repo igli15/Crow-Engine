@@ -39,7 +39,11 @@ void LightingTestWorld::Build()
 
     MeshInfo gunMeshInfo{};
     gunMeshInfo.model = gunModel;
-    mat->diffuseColor = glm::vec3(0.8f,0.8f,0.8f);
+
+    mat->mainColor = glm::vec3(0.75164f,0.60648f,0.22648f);
+    mat->specularColor = glm::vec3(0.628281f,0.555802,0.366065);
+    mat->shininess = 0.4f;
+
     gunMeshInfo.material = mat;
     gunEntity.AddComponent(gunMeshInfo);
     gunEntity.AddComponent(RotateComponent{1});
@@ -60,6 +64,6 @@ void LightingTestWorld::Build()
     EntityHandle lightEntity = CreateEntity();
     auto t = lightEntity.AddComponent(Transform{});
     t->Rotate(-45,glm::vec3(1,0,0));
-    lightEntity.AddComponent(Light{glm::vec3(0.8,0.8,0.8)});
+    lightEntity.AddComponent(Light{glm::vec3(1,1,1)});
 
 }
