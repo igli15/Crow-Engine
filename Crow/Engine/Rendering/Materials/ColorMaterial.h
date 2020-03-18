@@ -12,7 +12,7 @@ class ColorMaterial :public AbstractMaterial {
 public:
     ColorMaterial(const std::string& shaderName);
 
-    void Render(Model* meshRenderer, const glm::mat4& pModelMatrix, const glm::mat4& pViewMatrix, const glm::mat4& pProjectionMatrix) override;
+    void Render(Model* meshRenderer, const glm::mat4& pModelMatrix, const glm::mat4& pViewMatrix, const glm::mat4& pProjectionMatrix,const glm::vec3& viewPos,World* world) override;
     void Initialize();
 
     glm::vec3 diffuseColor = glm::vec3(1);
@@ -24,7 +24,9 @@ private:
     GLint m_uModelMatrix = 0;
     GLint m_uDiffuseColor = 0;
 
-
+    GLint m_uViewPos;
+    GLint m_uLightDir;
+    GLint m_uLightColor;
 };
 
 

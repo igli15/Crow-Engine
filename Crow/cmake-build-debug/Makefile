@@ -150,6 +150,33 @@ Engine/Components/Camera.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Components/Camera.cpp.s
 .PHONY : Engine/Components/Camera.cpp.s
 
+Engine/Components/Light.o: Engine/Components/Light.cpp.o
+
+.PHONY : Engine/Components/Light.o
+
+# target to build an object file
+Engine/Components/Light.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Components/Light.cpp.o
+.PHONY : Engine/Components/Light.cpp.o
+
+Engine/Components/Light.i: Engine/Components/Light.cpp.i
+
+.PHONY : Engine/Components/Light.i
+
+# target to preprocess a source file
+Engine/Components/Light.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Components/Light.cpp.i
+.PHONY : Engine/Components/Light.cpp.i
+
+Engine/Components/Light.s: Engine/Components/Light.cpp.s
+
+.PHONY : Engine/Components/Light.s
+
+# target to generate assembly for a file
+Engine/Components/Light.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Components/Light.cpp.s
+.PHONY : Engine/Components/Light.cpp.s
+
 Engine/Components/MeshInfo.o: Engine/Components/MeshInfo.cpp.o
 
 .PHONY : Engine/Components/MeshInfo.o
@@ -1026,6 +1053,9 @@ help:
 	@echo "... Engine/Components/Camera.o"
 	@echo "... Engine/Components/Camera.i"
 	@echo "... Engine/Components/Camera.s"
+	@echo "... Engine/Components/Light.o"
+	@echo "... Engine/Components/Light.i"
+	@echo "... Engine/Components/Light.s"
 	@echo "... Engine/Components/MeshInfo.o"
 	@echo "... Engine/Components/MeshInfo.i"
 	@echo "... Engine/Components/MeshInfo.s"

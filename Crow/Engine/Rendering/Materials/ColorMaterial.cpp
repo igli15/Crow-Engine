@@ -5,16 +5,22 @@
 #include "ColorMaterial.h"
 #include "../Model.h"
 #include "../../Debug/Debug.h"
+#include "../../Components/Light.h"
 
-void ColorMaterial::Render(Model *pModel, const glm::mat4 &pModelMatrix, const glm::mat4 &pViewMatrix, const glm::mat4 &pProjectionMatrix)
+void ColorMaterial::Render(Model *pModel, const glm::mat4 &pModelMatrix, const glm::mat4 &pViewMatrix, const glm::mat4 &pProjectionMatrix,const glm::vec3& viewPos,World* world)
 {
     m_shader->Use();
+
+    //world->GetComponentArray<Light>();
 
     glUniformMatrix4fv(m_uProjectionMatrix, 1, GL_FALSE, glm::value_ptr(pProjectionMatrix));
     glUniformMatrix4fv(m_uViewMatrix, 1, GL_FALSE, glm::value_ptr(pViewMatrix));
     glUniformMatrix4fv(m_uModelMatrix, 1, GL_FALSE, glm::value_ptr(pModelMatrix));
 
     glUniform3fv(m_uDiffuseColor,1,glm::value_ptr(diffuseColor));
+
+    glUniform3fv(m_uViewPos,1,glm::value_ptr(viewPos));
+
 
     pModel->Draw(*m_shader);
 }
@@ -31,4 +37,9 @@ void ColorMaterial::Initialize()
     m_uProjectionMatrix = m_shader->GetUniformLocation("projection");
 
     m_uDiffuseColor = m_shader->GetUniformLocation("diffuseColor");
+
+    m_uViewPos = m_shader->GetUniformLocation("viewPos");
+    m_uLightDir = m_shader->GetUniformLocation("light.direction");
+    m_uLightColor = m_shader->GetUniformLocation("light.color");
+
 }

@@ -20,6 +20,7 @@ public:
     void SetLocalPosition(const glm::vec3& pos);
     void SetScale(const glm::vec3& scale);
     void Rotate(float angle,const glm::vec3& axis);
+    glm::vec3 LocalPosition();
 
 private:
     glm::mat4 m_localTransform = glm::mat4(1.0f);

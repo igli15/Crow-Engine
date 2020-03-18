@@ -95,6 +95,12 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.h">
 			<Option target="Crow"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h">
+			<Option target="Crow"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.cpp">
 			<Option target="Crow"/>
 		</Unit>

@@ -48,3 +48,8 @@ void Transform::Rotate(float angle, const glm::vec3 &axis)
     m_localTransform = glm::rotate(m_localTransform,glm::radians(angle),axis);
 }
 
+glm::vec3 Transform::LocalPosition()
+{
+    return glm::vec3(m_localTransform[3]);
+}
+
