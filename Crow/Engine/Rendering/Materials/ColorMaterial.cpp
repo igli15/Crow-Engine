@@ -14,8 +14,10 @@ void ColorMaterial::Render(Model *pModel, const glm::mat4 &pModelMatrix, const g
 
     ///ENGINE_LOG(world->EntitiesWith<Light>().size());
 
+    auto lightEntities = world->EntitiesWith<Light,Transform>();
 
-    //world->EntitiesWith<Light,Transform>();
+    auto lightComponent = world->GetComponent<Light>(lightEntities[0]);
+    auto lightTransform = world->GetComponent<Transform>(lightEntities[0]);
 
     glUniformMatrix4fv(m_uProjectionMatrix, 1, GL_FALSE, glm::value_ptr(pProjectionMatrix));
     glUniformMatrix4fv(m_uViewMatrix, 1, GL_FALSE, glm::value_ptr(pViewMatrix));
@@ -24,6 +26,9 @@ void ColorMaterial::Render(Model *pModel, const glm::mat4 &pModelMatrix, const g
     glUniform3fv(m_uDiffuseColor,1,glm::value_ptr(diffuseColor));
 
     glUniform3fv(m_uViewPos,1,glm::value_ptr(viewPos));
+
+    glUniform3fv(m_uLightColor,1,glm::value_ptr(lightComponent.color));
+    glUniform3fv(m_uLightDir,1,glm::value_ptr(lightTransform.GetLocalTransform()[2]));
 
     pModel->Draw(*m_shader);
 }

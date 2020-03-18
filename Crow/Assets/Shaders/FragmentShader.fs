@@ -14,7 +14,26 @@ struct Light {
     vec3 color;
 };
 
+uniform Light light;
+
 void main()
 {
-    FragColor = vec4(diffuseColor,1);
+        //ambient
+        float ambientStrength = 0.1;
+        vec3 ambient = ambientStrength * light.color;
+
+        // diffuse
+        vec3 norm = normalize(Normal);
+        float diff = max(dot(norm, light.direction), 0.0);
+        vec3 diffuse = diff * light.color;
+
+        // specular
+        float specularStrength = 0.8;
+        vec3 viewDir = normalize(viewPos - FragPos);
+        vec3 reflectDir = reflect(-light.direction, norm);
+        float spec = pow(max(dot(viewDir, reflectDir), 0.0), 16);
+        vec3 specular = specularStrength * spec * light.color;
+
+        vec3 result = (ambient + diffuse + specular) * diffuseColor;
+        FragColor = vec4(result, 1.0);
 }

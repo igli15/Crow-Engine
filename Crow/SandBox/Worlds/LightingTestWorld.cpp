@@ -44,9 +44,6 @@ void LightingTestWorld::Build()
     gunEntity.AddComponent(gunMeshInfo);
     gunEntity.AddComponent(RotateComponent{1});
 
-    EntityHandle lightEntity = CreateEntity();
-    lightEntity.AddComponent(Transform{});
-    lightEntity.AddComponent(Light{glm::vec3(0.8,0.8,0)});
 
     EntityHandle cubeEntity = CreateEntity();
     cubeEntity.AddComponent(Transform{});
@@ -58,5 +55,9 @@ void LightingTestWorld::Build()
     cubeMeshInfo.model = cube;
     cubeMeshInfo.material = mat;
     cubeEntity.AddComponent(cubeMeshInfo);
+
+    EntityHandle lightEntity = CreateEntity();
+    lightEntity.AddComponent(Transform{});
+    lightEntity.AddComponent(Light{glm::vec3(0.8,0.8,0.8)});
 
 }
