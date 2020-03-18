@@ -13,4 +13,5 @@ void MyGame::Init()
     //Set the world here!
 
     SetWorld(new LightingTestWorld());
+    //SetWorld(new RotatingGunsWorld());
 }

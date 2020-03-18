@@ -12,6 +12,10 @@
 
 struct EntityHandle;
 
+
+struct Dummy{
+
+};
 class World {
 
 public:
@@ -136,6 +140,68 @@ public:
     {
         signature.set(ComponentIDGenerator::index<T>);
     }
+
+    template <typename T>
+    std::vector<Entity> EntitiesWith()
+    {
+        auto result = std::vector<Entity>{};
+
+        auto array = GetComponentArray<T>();
+
+        for (size_t i = 0; i < array->validSize; ++i)
+        {
+            result.push_back(array->GetEntityFromIndex(i));
+        }
+
+        return result;
+    }
+
+    template <typename ...Args>
+    std::vector<Entity> EntitiesWith()
+    {
+        auto result = std::vector<Entity>{};
+
+        IComponentArray* smallestArray = GetSmallestArray<Args...>(GetComponentArray<Args>()...);
+
+        result = smallestArray->GetEntities();
+
+        if constexpr (sizeof...(Args) > 0) {
+            QueryNeededEntities<Args...>(GetComponentArray<Args>()..., result);
+        }
+
+        return result;
+    }
+
+
+    template <typename ...Args>
+    IComponentArray* GetSmallestArray(ComponentArray<Args>*... componentArrays)
+    {
+        return std::min(
+                {static_cast<IComponentArray*>(componentArrays)...},
+                [](const auto* poolA, const auto* poolB) {return poolA->validSize < poolB->validSize;}
+        );
+    }
+
+
+    template <typename ...Args>
+    void QueryNeededEntities(ComponentArray<Args>*... componentArrays,std::vector<Entity>& currentList)
+    {
+        auto x = {(QueryNeededEntities(componentArrays,currentList),0)...};
+    }
+
+    template <typename T>
+    void QueryNeededEntities(ComponentArray<T>* componentArray,std::vector<Entity>& currentList)
+    {
+        for (auto it = currentList.begin() ; it != currentList.end() ; it++)
+        {
+            if(!componentArray->ContainsEntity(*it))
+            {
+                //decrement the iterator so we can safely remove it while looping
+                currentList.erase(it--);
+            }
+        }
+    }
+
 
 private:
 

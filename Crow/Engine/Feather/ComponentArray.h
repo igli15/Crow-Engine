@@ -15,6 +15,8 @@ class IComponentArray {
 public:
     virtual ~IComponentArray() = default;
     virtual void OnEntityDestroyed(Entity entity) = 0;
+    virtual std::vector<Entity> GetEntities() = 0;
+    size_t validSize = 0;
 };
 
 template <typename T>
@@ -29,6 +31,30 @@ public:
 
     void OnEntityDestroyed(Entity entity) override;
 
+    Entity GetEntityFromIndex(size_t index)
+    {
+        return m_indexToEntityMap[index];
+    }
+
+    std::vector<Entity> GetEntities() override
+    {
+        std::vector<Entity> result{};
+
+        for (int i = 0; i < validSize; ++i)
+        {
+            result.push_back(m_indexToEntityMap[i]);
+        }
+        return result;
+    }
+
+    bool ContainsEntity(Entity entity)
+    {
+        auto iterator = m_entityToIndexMap.find(entity);
+
+        return (iterator != m_entityToIndexMap.end());
+    }
+
+
 private:
     std::array<T,MAX_ENTITIES> m_componentsArray;
 
@@ -37,7 +63,7 @@ private:
     std::unordered_map<Entity,size_t> m_entityToIndexMap;
     std::unordered_map<size_t ,Entity> m_indexToEntityMap;
 
-    size_t m_validSize = 0;
+
 };
 
 template<typename T>
@@ -49,12 +75,12 @@ void ComponentArray<T>::AddComponentData(Entity entity, T Component)
         ENGINE_LOG_CRITICAL("Component is already added");
     }
 
-    size_t index = m_validSize;
+    size_t index = validSize;
     m_entityToIndexMap[entity] = index;
     m_indexToEntityMap[index] = entity;
     m_componentsArray[index] = Component;
 
-    ++m_validSize;
+    ++validSize;
 }
 
 template<typename T>
@@ -67,7 +93,7 @@ void ComponentArray<T>::RemoveComponentData(Entity entity)
     }
 
     size_t indexOfElementToRemove = m_entityToIndexMap[entity];
-    size_t indexOfLastElement = m_validSize - 1;
+    size_t indexOfLastElement = validSize - 1;
 
     m_componentsArray[indexOfElementToRemove] =  m_componentsArray[indexOfLastElement];
 
@@ -78,7 +104,7 @@ void ComponentArray<T>::RemoveComponentData(Entity entity)
     m_entityToIndexMap.erase(entity);
     m_indexToEntityMap.erase(indexOfElementToRemove);
 
-    --m_validSize;
+    --validSize;
 }
 
 template<typename T>

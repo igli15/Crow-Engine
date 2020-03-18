@@ -3011,6 +3011,7 @@ CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Crow.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
@@ -3030,9 +3031,7 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o
  /usr/local/include/GL/glew.h
  /usr/local/include/glm/./detail/_noise.hpp
  /usr/local/include/glm/./detail/_vectorize.hpp
- /usr/local/include/glm/./detail/qualifier.hpp
  /usr/local/include/glm/./detail/setup.hpp
- /usr/local/include/glm/./detail/type_float.hpp
  /usr/local/include/glm/./detail/type_half.hpp
  /usr/local/include/glm/./detail/type_mat2x2.hpp
  /usr/local/include/glm/./detail/type_mat2x2.inl
@@ -3042,26 +3041,14 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o
  /usr/local/include/glm/./detail/type_mat2x4.inl
  /usr/local/include/glm/./detail/type_mat3x2.hpp
  /usr/local/include/glm/./detail/type_mat3x2.inl
- /usr/local/include/glm/./detail/type_mat3x3.hpp
- /usr/local/include/glm/./detail/type_mat3x3.inl
  /usr/local/include/glm/./detail/type_mat3x4.hpp
  /usr/local/include/glm/./detail/type_mat3x4.inl
  /usr/local/include/glm/./detail/type_mat4x2.hpp
  /usr/local/include/glm/./detail/type_mat4x2.inl
  /usr/local/include/glm/./detail/type_mat4x3.hpp
  /usr/local/include/glm/./detail/type_mat4x3.inl
- /usr/local/include/glm/./detail/type_mat4x4.hpp
- /usr/local/include/glm/./detail/type_mat4x4.inl
- /usr/local/include/glm/./detail/type_mat4x4_simd.inl
- /usr/local/include/glm/./detail/type_quat.hpp
- /usr/local/include/glm/./detail/type_quat.inl
- /usr/local/include/glm/./detail/type_quat_simd.inl
  /usr/local/include/glm/./detail/type_vec1.hpp
  /usr/local/include/glm/./detail/type_vec2.hpp
- /usr/local/include/glm/./detail/type_vec3.hpp
- /usr/local/include/glm/./detail/type_vec4.hpp
- /usr/local/include/glm/./ext/matrix_clip_space.hpp
- /usr/local/include/glm/./ext/matrix_clip_space.inl
  /usr/local/include/glm/./ext/matrix_double2x2.hpp
  /usr/local/include/glm/./ext/matrix_double2x2_precision.hpp
  /usr/local/include/glm/./ext/matrix_double2x3.hpp
@@ -3098,30 +3085,15 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o
  /usr/local/include/glm/./ext/matrix_float4x3_precision.hpp
  /usr/local/include/glm/./ext/matrix_float4x4.hpp
  /usr/local/include/glm/./ext/matrix_float4x4_precision.hpp
- /usr/local/include/glm/./ext/matrix_projection.hpp
- /usr/local/include/glm/./ext/matrix_projection.inl
  /usr/local/include/glm/./ext/matrix_relational.hpp
  /usr/local/include/glm/./ext/matrix_relational.inl
- /usr/local/include/glm/./ext/matrix_transform.hpp
- /usr/local/include/glm/./ext/quaternion_common.hpp
- /usr/local/include/glm/./ext/quaternion_common.inl
- /usr/local/include/glm/./ext/quaternion_common_simd.inl
  /usr/local/include/glm/./ext/quaternion_double.hpp
  /usr/local/include/glm/./ext/quaternion_double_precision.hpp
- /usr/local/include/glm/./ext/quaternion_exponential.hpp
- /usr/local/include/glm/./ext/quaternion_exponential.inl
  /usr/local/include/glm/./ext/quaternion_float.hpp
  /usr/local/include/glm/./ext/quaternion_float_precision.hpp
  /usr/local/include/glm/./ext/quaternion_geometric.hpp
- /usr/local/include/glm/./ext/quaternion_geometric.inl
  /usr/local/include/glm/./ext/quaternion_relational.hpp
- /usr/local/include/glm/./ext/quaternion_relational.inl
- /usr/local/include/glm/./ext/quaternion_transform.hpp
- /usr/local/include/glm/./ext/quaternion_transform.inl
- /usr/local/include/glm/./ext/quaternion_trigonometric.hpp
- /usr/local/include/glm/./ext/quaternion_trigonometric.inl
  /usr/local/include/glm/./ext/scalar_constants.hpp
- /usr/local/include/glm/./ext/scalar_constants.inl
  /usr/local/include/glm/./ext/scalar_int_sized.hpp
  /usr/local/include/glm/./ext/scalar_relational.hpp
  /usr/local/include/glm/./ext/scalar_relational.inl
@@ -3161,7 +3133,6 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o
  /usr/local/include/glm/./ext/vector_int4.hpp
  /usr/local/include/glm/./ext/vector_int4_precision.hpp
  /usr/local/include/glm/./ext/vector_relational.hpp
- /usr/local/include/glm/./ext/vector_relational.inl
  /usr/local/include/glm/./ext/vector_uint1.hpp
  /usr/local/include/glm/./ext/vector_uint1_precision.hpp
  /usr/local/include/glm/./ext/vector_uint2.hpp
@@ -3172,15 +3143,12 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o
  /usr/local/include/glm/./ext/vector_uint4_precision.hpp
  /usr/local/include/glm/./ext/vector_ulp.hpp
  /usr/local/include/glm/./ext/vector_ulp.inl
- /usr/local/include/glm/./glm.hpp
  /usr/local/include/glm/./gtc/bitfield.hpp
  /usr/local/include/glm/./gtc/bitfield.inl
  /usr/local/include/glm/./gtc/color_space.hpp
  /usr/local/include/glm/./gtc/color_space.inl
  /usr/local/include/glm/./gtc/constants.hpp
- /usr/local/include/glm/./gtc/constants.inl
  /usr/local/include/glm/./gtc/epsilon.hpp
- /usr/local/include/glm/./gtc/epsilon.inl
  /usr/local/include/glm/./gtc/integer.hpp
  /usr/local/include/glm/./gtc/integer.inl
  /usr/local/include/glm/./gtc/matrix_access.hpp
@@ -3189,14 +3157,11 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o
  /usr/local/include/glm/./gtc/matrix_inverse.hpp
  /usr/local/include/glm/./gtc/matrix_inverse.inl
  /usr/local/include/glm/./gtc/matrix_transform.hpp
- /usr/local/include/glm/./gtc/matrix_transform.inl
  /usr/local/include/glm/./gtc/noise.hpp
  /usr/local/include/glm/./gtc/noise.inl
  /usr/local/include/glm/./gtc/packing.hpp
  /usr/local/include/glm/./gtc/packing.inl
  /usr/local/include/glm/./gtc/quaternion.hpp
- /usr/local/include/glm/./gtc/quaternion.inl
- /usr/local/include/glm/./gtc/quaternion_simd.inl
  /usr/local/include/glm/./gtc/random.hpp
  /usr/local/include/glm/./gtc/random.inl
  /usr/local/include/glm/./gtc/reciprocal.hpp
@@ -3263,7 +3228,6 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o
  /usr/local/include/glm/./gtx/mixed_product.hpp
  /usr/local/include/glm/./gtx/mixed_product.inl
  /usr/local/include/glm/./gtx/norm.hpp
- /usr/local/include/glm/./gtx/norm.inl
  /usr/local/include/glm/./gtx/normal.hpp
  /usr/local/include/glm/./gtx/normal.inl
  /usr/local/include/glm/./gtx/normalize_dot.hpp
@@ -3313,12 +3277,6 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o
  /usr/local/include/glm/./mat3x4.hpp
  /usr/local/include/glm/./mat4x2.hpp
  /usr/local/include/glm/./mat4x3.hpp
- /usr/local/include/glm/./mat4x4.hpp
- /usr/local/include/glm/./matrix.hpp
- /usr/local/include/glm/./trigonometric.hpp
- /usr/local/include/glm/./vec2.hpp
- /usr/local/include/glm/./vec3.hpp
- /usr/local/include/glm/./vec4.hpp
  /usr/local/include/glm/common.hpp
  /usr/local/include/glm/detail/./compute_vector_relational.hpp
  /usr/local/include/glm/detail/_fixes.hpp
@@ -3345,9 +3303,17 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o
  /usr/local/include/glm/detail/func_vector_relational_simd.inl
  /usr/local/include/glm/detail/qualifier.hpp
  /usr/local/include/glm/detail/setup.hpp
+ /usr/local/include/glm/detail/type_float.hpp
  /usr/local/include/glm/detail/type_half.hpp
  /usr/local/include/glm/detail/type_half.inl
+ /usr/local/include/glm/detail/type_mat3x3.hpp
+ /usr/local/include/glm/detail/type_mat3x3.inl
  /usr/local/include/glm/detail/type_mat4x4.hpp
+ /usr/local/include/glm/detail/type_mat4x4.inl
+ /usr/local/include/glm/detail/type_mat4x4_simd.inl
+ /usr/local/include/glm/detail/type_quat.hpp
+ /usr/local/include/glm/detail/type_quat.inl
+ /usr/local/include/glm/detail/type_quat_simd.inl
  /usr/local/include/glm/detail/type_vec1.hpp
  /usr/local/include/glm/detail/type_vec1.inl
  /usr/local/include/glm/detail/type_vec2.hpp
@@ -3359,9 +3325,47 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o
  /usr/local/include/glm/detail/type_vec4_simd.inl
  /usr/local/include/glm/exponential.hpp
  /usr/local/include/glm/ext.hpp
+ /usr/local/include/glm/ext/matrix_clip_space.hpp
+ /usr/local/include/glm/ext/matrix_clip_space.inl
+ /usr/local/include/glm/ext/matrix_projection.hpp
+ /usr/local/include/glm/ext/matrix_projection.inl
+ /usr/local/include/glm/ext/matrix_transform.hpp
+ /usr/local/include/glm/ext/quaternion_common.hpp
+ /usr/local/include/glm/ext/quaternion_common.inl
+ /usr/local/include/glm/ext/quaternion_common_simd.inl
+ /usr/local/include/glm/ext/quaternion_double.hpp
+ /usr/local/include/glm/ext/quaternion_double_precision.hpp
+ /usr/local/include/glm/ext/quaternion_exponential.hpp
+ /usr/local/include/glm/ext/quaternion_exponential.inl
+ /usr/local/include/glm/ext/quaternion_float.hpp
+ /usr/local/include/glm/ext/quaternion_float_precision.hpp
+ /usr/local/include/glm/ext/quaternion_geometric.hpp
+ /usr/local/include/glm/ext/quaternion_geometric.inl
+ /usr/local/include/glm/ext/quaternion_relational.hpp
+ /usr/local/include/glm/ext/quaternion_relational.inl
+ /usr/local/include/glm/ext/quaternion_transform.hpp
+ /usr/local/include/glm/ext/quaternion_transform.inl
+ /usr/local/include/glm/ext/quaternion_trigonometric.hpp
+ /usr/local/include/glm/ext/quaternion_trigonometric.inl
+ /usr/local/include/glm/ext/scalar_constants.hpp
+ /usr/local/include/glm/ext/scalar_constants.inl
+ /usr/local/include/glm/ext/vector_relational.hpp
+ /usr/local/include/glm/ext/vector_relational.inl
  /usr/local/include/glm/fwd.hpp
  /usr/local/include/glm/geometric.hpp
  /usr/local/include/glm/glm.hpp
+ /usr/local/include/glm/gtc/constants.hpp
+ /usr/local/include/glm/gtc/constants.inl
+ /usr/local/include/glm/gtc/epsilon.hpp
+ /usr/local/include/glm/gtc/epsilon.inl
+ /usr/local/include/glm/gtc/matrix_transform.hpp
+ /usr/local/include/glm/gtc/matrix_transform.inl
+ /usr/local/include/glm/gtc/quaternion.hpp
+ /usr/local/include/glm/gtc/quaternion.inl
+ /usr/local/include/glm/gtc/quaternion_simd.inl
+ /usr/local/include/glm/gtx/norm.hpp
+ /usr/local/include/glm/gtx/norm.inl
+ /usr/local/include/glm/gtx/quaternion.hpp
  /usr/local/include/glm/integer.hpp
  /usr/local/include/glm/mat2x2.hpp
  /usr/local/include/glm/mat2x3.hpp
@@ -5394,6 +5398,7 @@ CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.o
  /usr/local/include/spdlog/version.h
 CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Crow.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h

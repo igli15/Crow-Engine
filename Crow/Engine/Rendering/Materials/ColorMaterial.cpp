@@ -6,12 +6,16 @@
 #include "../Model.h"
 #include "../../Debug/Debug.h"
 #include "../../Components/Light.h"
+#include "../../Components/Transform.h"
 
 void ColorMaterial::Render(Model *pModel, const glm::mat4 &pModelMatrix, const glm::mat4 &pViewMatrix, const glm::mat4 &pProjectionMatrix,const glm::vec3& viewPos,World* world)
 {
     m_shader->Use();
 
-    //world->GetComponentArray<Light>();
+    ///ENGINE_LOG(world->EntitiesWith<Light>().size());
+
+
+    //world->EntitiesWith<Light,Transform>();
 
     glUniformMatrix4fv(m_uProjectionMatrix, 1, GL_FALSE, glm::value_ptr(pProjectionMatrix));
     glUniformMatrix4fv(m_uViewMatrix, 1, GL_FALSE, glm::value_ptr(pViewMatrix));
@@ -20,7 +24,6 @@ void ColorMaterial::Render(Model *pModel, const glm::mat4 &pModelMatrix, const g
     glUniform3fv(m_uDiffuseColor,1,glm::value_ptr(diffuseColor));
 
     glUniform3fv(m_uViewPos,1,glm::value_ptr(viewPos));
-
 
     pModel->Draw(*m_shader);
 }

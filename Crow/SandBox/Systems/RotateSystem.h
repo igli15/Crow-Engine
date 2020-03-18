@@ -7,10 +7,12 @@
 
 
 #include "../../Engine/Feather/System.h"
+#include <vector>
 
 class RotateSystem : public System {
 
 
+    std::vector<Entity> entities;
     void Init() override;
     void Update() override;
 
