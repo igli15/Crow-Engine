@@ -10,7 +10,11 @@
 
 struct Light {
 
-    glm::vec3 color;
+    enum LightType { DIRECTIONAL, POINT, SPOT};
+
+    glm::vec3 color = glm::vec3(1);
+
+    LightType type = DIRECTIONAL;
 
 };
 

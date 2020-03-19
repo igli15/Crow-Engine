@@ -12,12 +12,25 @@ void ColorMaterial::Render(Model *pModel, const glm::mat4 &pModelMatrix, const g
 {
     m_shader->Use();
 
-    ///ENGINE_LOG(world->EntitiesWith<Light>().size());
-
     auto lightEntities = world->EntitiesWith<Light,Transform>();
 
-    auto lightComponent = world->GetComponent<Light>(lightEntities[0]);
-    auto lightTransform = world->GetComponent<Transform>(lightEntities[0]);
+    int activeDirLights = 0;
+
+    for (int i = 0; i < lightEntities.size(); ++i)
+    {
+        auto lightComponent = world->GetComponent<Light>(lightEntities[i]);
+        auto lightTransform = world->GetComponent<Transform>(lightEntities[i]);
+
+        if(lightComponent.type == lightComponent.DIRECTIONAL)
+        {
+            activeDirLights +=1;
+
+            glUniform3fv(m_dirLightsUniforms[i].m_uLightColor, 1, glm::value_ptr(lightComponent.color));
+            glUniform3fv(m_dirLightsUniforms[i].m_uLightDir, 1, glm::value_ptr(-lightTransform.GetLocalTransform()[2]));
+        }
+    }
+
+    glUniform1i(m_uActiveDirLights,activeDirLights);
 
     glUniformMatrix4fv(m_uProjectionMatrix, 1, GL_FALSE, glm::value_ptr(pProjectionMatrix));
     glUniformMatrix4fv(m_uViewMatrix, 1, GL_FALSE, glm::value_ptr(pViewMatrix));
@@ -31,9 +44,6 @@ void ColorMaterial::Render(Model *pModel, const glm::mat4 &pModelMatrix, const g
     glUniform3fv(m_uMainColor,1,glm::value_ptr(mainColor));
 
     glUniform3fv(m_uViewPos,1,glm::value_ptr(viewPos));
-
-    glUniform3fv(m_uLightColor,1,glm::value_ptr(lightComponent.color));
-    glUniform3fv(m_uLightDir,1,glm::value_ptr(lightTransform.GetLocalTransform()[2]));
 
     pModel->Draw(*m_shader);
 }
@@ -55,7 +65,13 @@ void ColorMaterial::Initialize()
     m_uShininess = m_shader->GetUniformLocation("material.shininess");
 
     m_uViewPos = m_shader->GetUniformLocation("viewPos");
-    m_uLightDir = m_shader->GetUniformLocation("light.direction");
-    m_uLightColor = m_shader->GetUniformLocation("light.color");
+
+    m_uActiveDirLights =  m_shader->GetUniformLocation("activeDirLights");
+
+    for (int i = 0; i < m_dirLightsUniforms.size(); ++i)
+    {
+        m_dirLightsUniforms[i].m_uLightColor = m_shader->GetUniformLocation("dirLights[" + std::to_string(i) + "].color");
+        m_dirLightsUniforms[i].m_uLightDir = m_shader->GetUniformLocation("dirLights[" + std::to_string(i) + "].direction");
+    }
 
 }

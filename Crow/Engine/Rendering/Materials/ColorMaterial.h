@@ -23,6 +23,10 @@ public:
 
 private:
 
+    const static int MAX_DIR_LIGHT_COUNT = 10;
+    const static int MAX_POINT_LIGHT_COUNT = 10;
+    const static int MAX_SPOT_LIGHT_COUNT = 10;
+
     GLint m_uProjectionMatrix = 0;
     GLint m_uViewMatrix = 0;
     GLint m_uModelMatrix = 0;
@@ -31,10 +35,20 @@ private:
     GLint m_uAmbientIntensity;
     GLint m_uShininess;
     GLint m_uSpecularColor;
-
     GLint m_uViewPos;
-    GLint m_uLightDir;
-    GLint m_uLightColor;
+
+
+    struct DirLightUniformLocations
+    {
+        GLint m_uLightDir;
+        GLint m_uLightColor;
+    };
+
+    GLint m_uActiveDirLights;
+
+
+    std::array<DirLightUniformLocations,MAX_DIR_LIGHT_COUNT> m_dirLightsUniforms;
+
 };
 
 
