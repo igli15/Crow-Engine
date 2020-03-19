@@ -12,6 +12,7 @@ struct DirLight
 {
     vec3 direction;
     vec3 color;
+    float intensity;
 };
 
 struct PointLight
@@ -19,6 +20,7 @@ struct PointLight
     vec3 position;
     vec3 color;
 
+    float intensity;
     float constant;
     float linear;
     float quadratic;
@@ -29,6 +31,9 @@ struct SpotLight
     vec3 color;
     vec3 position;
     vec3 direction;
+
+    float intensity;
+
     float cutOff;
     float outerCutOff;
 
@@ -74,17 +79,17 @@ void main()
 
     for(int i = 0; i < activeDirLights; i++)
     {
-        result += CalcDirLight(dirLights[i],norm,viewDir);
+        result += CalcDirLight(dirLights[i],norm,viewDir) * dirLights[i].intensity;
     }
 
     for(int i = 0; i < activePointLights; i++)
     {
-        result += CalcPointLight(pointLights[i],norm,FragPos,viewDir);
+        result += CalcPointLight(pointLights[i],norm,FragPos,viewDir) * pointLights[i].intensity;
     }
 
     for(int i = 0; i < activeSpotLights; i++)
     {
-        result += CalcSpotLight(spotLights[i],norm,FragPos,viewDir);
+        result += CalcSpotLight(spotLights[i],norm,FragPos,viewDir) * spotLights[i].intensity;
     }
 
     FragColor = vec4(result, 1.0);

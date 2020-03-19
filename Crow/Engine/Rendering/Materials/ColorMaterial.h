@@ -42,6 +42,7 @@ private:
     {
         GLint m_uLightDir;
         GLint m_uLightColor;
+        GLint m_uLightIntensity;
     };
 
     struct PointLightUniformLocations
@@ -52,6 +53,8 @@ private:
         GLint m_uLightConstant;
         GLint m_uLightLinear;
         GLint m_uLightQuadratic;
+
+        GLint m_uLightIntensity;
     };
 
     struct SpotLightUniformLocations
@@ -66,6 +69,9 @@ private:
         GLint m_uLightConstant;
         GLint m_uLightLinear;
         GLint m_uLightQuadratic;
+
+        GLint m_uLightIntensity;
+
     };
 
     GLint m_uActiveDirLights;

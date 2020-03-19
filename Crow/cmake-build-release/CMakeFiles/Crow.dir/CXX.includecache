@@ -14,6 +14,10 @@ Engine/Debug/Debug.h
 string
 -
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.cpp
+Light.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h
 glm/glm.hpp
 -
@@ -144,6 +148,18 @@ Shader.h
 ../Feather/World.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.cpp
+ColorMaterial.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h
+../Model.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
+../../Debug/Debug.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
+../../Components/Light.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h
+../../Components/Transform.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h
 ../AbstractMaterial.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
@@ -182,6 +198,10 @@ GL/glew.h
 GLFW/glfw3.h
 -
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/MeshRendererSystem.h
+../Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+
 /Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/RotateComponent.h
 
 /Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RotateSystem.h
@@ -215,6 +235,32 @@ LightingTestWorld.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h
 
 /Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/LightingTestWorld.h
+../../Engine/Feather/World.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
+
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/RotatingGunsWorld.cpp
+RotatingGunsWorld.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/RotatingGunsWorld.h
+../../Engine/Components/Transform.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
+../../Engine/Systems/MeshRendererSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/MeshRendererSystem.h
+../../Engine/Components/MeshInfo.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
+../../Engine/Core/Game.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
+../../Engine/Core/ResourceManager.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h
+../../Engine/Rendering/Materials/ColorMaterial.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h
+../Systems/RotateSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RotateSystem.h
+../Components/RotateComponent.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/RotateComponent.h
+../../Engine/Feather/EntityHandle.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
+
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/RotatingGunsWorld.h
 ../../Engine/Feather/World.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
 
@@ -358,6 +404,20 @@ type_mat3x2.inl
 
 /usr/local/include/glm/./detail/type_mat3x2.inl
 
+/usr/local/include/glm/./detail/type_mat3x3.hpp
+type_vec3.hpp
+/usr/local/include/glm/./detail/type_vec3.hpp
+limits
+-
+cstddef
+-
+type_mat3x3.inl
+/usr/local/include/glm/./detail/type_mat3x3.inl
+
+/usr/local/include/glm/./detail/type_mat3x3.inl
+../matrix.hpp
+/usr/local/include/glm/./matrix.hpp
+
 /usr/local/include/glm/./detail/type_mat3x4.hpp
 type_vec3.hpp
 /usr/local/include/glm/./detail/type_vec3.hpp
@@ -400,6 +460,24 @@ type_mat4x3.inl
 
 /usr/local/include/glm/./detail/type_mat4x3.inl
 
+/usr/local/include/glm/./detail/type_mat4x4.hpp
+type_vec4.hpp
+/usr/local/include/glm/./detail/type_vec4.hpp
+limits
+-
+cstddef
+-
+type_mat4x4.inl
+/usr/local/include/glm/./detail/type_mat4x4.inl
+
+/usr/local/include/glm/./detail/type_mat4x4.inl
+../matrix.hpp
+/usr/local/include/glm/./matrix.hpp
+type_mat4x4_simd.inl
+/usr/local/include/glm/./detail/type_mat4x4_simd.inl
+
+/usr/local/include/glm/./detail/type_mat4x4_simd.inl
+
 /usr/local/include/glm/./detail/type_vec1.hpp
 qualifier.hpp
 /usr/local/include/glm/./detail/qualifier.hpp
@@ -423,6 +501,30 @@ cstddef
 -
 type_vec2.inl
 /usr/local/include/glm/./detail/type_vec2.inl
+
+/usr/local/include/glm/./detail/type_vec3.hpp
+qualifier.hpp
+/usr/local/include/glm/./detail/qualifier.hpp
+_swizzle.hpp
+/usr/local/include/glm/./detail/_swizzle.hpp
+_swizzle_func.hpp
+/usr/local/include/glm/./detail/_swizzle_func.hpp
+cstddef
+-
+type_vec3.inl
+/usr/local/include/glm/./detail/type_vec3.inl
+
+/usr/local/include/glm/./detail/type_vec4.hpp
+qualifier.hpp
+/usr/local/include/glm/./detail/qualifier.hpp
+_swizzle.hpp
+/usr/local/include/glm/./detail/_swizzle.hpp
+_swizzle_func.hpp
+/usr/local/include/glm/./detail/_swizzle_func.hpp
+cstddef
+-
+type_vec4.inl
+/usr/local/include/glm/./detail/type_vec4.inl
 
 /usr/local/include/glm/./ext/matrix_double2x2.hpp
 ../detail/type_mat2x2.hpp
@@ -2690,6 +2792,10 @@ quaternion_trigonometric.inl
 scalar_constants.inl
 /usr/local/include/glm/ext/scalar_constants.inl
 
+/usr/local/include/glm/ext/scalar_constants.inl
+limits
+-
+
 /usr/local/include/glm/ext/vector_relational.hpp
 ../detail/qualifier.hpp
 /usr/local/include/glm/detail/qualifier.hpp
@@ -2789,6 +2895,12 @@ constants.inl
 /usr/local/include/glm/detail/qualifier.hpp
 epsilon.inl
 /usr/local/include/glm/gtc/epsilon.inl
+
+/usr/local/include/glm/gtc/epsilon.inl
+../vector_relational.hpp
+/usr/local/include/glm/vector_relational.hpp
+../common.hpp
+/usr/local/include/glm/common.hpp
 
 /usr/local/include/glm/gtc/matrix_transform.hpp
 ../mat4x4.hpp
@@ -3047,6 +3159,8 @@ platform.h
 /usr/local/include/glm/simd/geometric.h
 common.h
 /usr/local/include/glm/simd/common.h
+
+/usr/local/include/glm/simd/integer.h
 
 /usr/local/include/glm/simd/matrix.h
 geometric.h

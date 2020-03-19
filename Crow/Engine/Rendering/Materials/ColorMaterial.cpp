@@ -27,6 +27,9 @@ void ColorMaterial::Render(Model *pModel, const glm::mat4 &pModelMatrix, const g
         {
             glUniform3fv(m_dirLightsUniforms[activeDirLights].m_uLightColor, 1, glm::value_ptr(lightComponent.color));
             glUniform3fv(m_dirLightsUniforms[activeDirLights].m_uLightDir, 1, glm::value_ptr(-lightTransform.GetLocalTransform()[2]));
+
+            glUniform1f(m_dirLightsUniforms[activeDirLights].m_uLightIntensity,lightComponent.intensity);
+
             activeDirLights +=1;
         }
         else if(lightComponent.type == lightComponent.POINT)
@@ -39,6 +42,9 @@ void ColorMaterial::Render(Model *pModel, const glm::mat4 &pModelMatrix, const g
             glUniform1f(m_pointLightsUniforms[activePointLights].m_uLightConstant,lightComponent.constant);
             glUniform1f(m_pointLightsUniforms[activePointLights].m_uLightLinear,lightComponent.linear);
             glUniform1f(m_pointLightsUniforms[activePointLights].m_uLightQuadratic,lightComponent.quadratic);
+
+            glUniform1f(m_pointLightsUniforms[activePointLights].m_uLightIntensity,lightComponent.intensity);
+
             activePointLights +=1;
         }
         else if(lightComponent.type == lightComponent.SPOT)
@@ -54,6 +60,8 @@ void ColorMaterial::Render(Model *pModel, const glm::mat4 &pModelMatrix, const g
             glUniform1f(m_spotLightsUniforms[activeSpotLights].m_uLightConstant,lightComponent.constant);
             glUniform1f(m_spotLightsUniforms[activeSpotLights].m_uLightLinear,lightComponent.linear);
             glUniform1f(m_spotLightsUniforms[activeSpotLights].m_uLightQuadratic,lightComponent.quadratic);
+
+            glUniform1f(m_spotLightsUniforms[activeSpotLights].m_uLightIntensity,lightComponent.intensity);
 
             activeSpotLights +=1;
         }
@@ -108,6 +116,7 @@ void ColorMaterial::Initialize()
 
         m_dirLightsUniforms[i].m_uLightColor = m_shader->GetUniformLocation(dirUniformString +".color");
         m_dirLightsUniforms[i].m_uLightDir = m_shader->GetUniformLocation(dirUniformString + ".direction");
+        m_dirLightsUniforms[i].m_uLightIntensity = m_shader->GetUniformLocation(dirUniformString + ".intensity");
     }
 
     std::string pointUniformString;
@@ -121,6 +130,8 @@ void ColorMaterial::Initialize()
         m_pointLightsUniforms[i].m_uLightConstant = m_shader->GetUniformLocation(pointUniformString + ".constant");
         m_pointLightsUniforms[i].m_uLightLinear = m_shader->GetUniformLocation(pointUniformString + ".linear");
         m_pointLightsUniforms[i].m_uLightQuadratic = m_shader->GetUniformLocation(pointUniformString + ".quadratic");
+
+        m_pointLightsUniforms[i].m_uLightIntensity = m_shader->GetUniformLocation(pointUniformString + ".intensity");
 
     }
 
@@ -140,6 +151,7 @@ void ColorMaterial::Initialize()
         m_spotLightsUniforms[i].m_uLightLinear = m_shader->GetUniformLocation(spotUniformString + ".linear");
         m_spotLightsUniforms[i].m_uLightQuadratic = m_shader->GetUniformLocation(spotUniformString + ".quadratic");
 
+        m_spotLightsUniforms[i].m_uLightIntensity = m_shader->GetUniformLocation(spotUniformString + ".intensity");
     }
 
 }
