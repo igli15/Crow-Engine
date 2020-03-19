@@ -44,11 +44,21 @@ private:
         GLint m_uLightColor;
     };
 
-    GLint m_uActiveDirLights;
+    struct PointLightUniformLocations
+    {
+        GLint m_uLightPosition;
+        GLint m_uLightColor;
 
+        GLint m_uLightConstant;
+        GLint m_uLightLinear;
+        GLint m_uLightQuadratic;
+    };
+
+    GLint m_uActiveDirLights;
+    GLint m_uActivePointLights;
 
     std::array<DirLightUniformLocations,MAX_DIR_LIGHT_COUNT> m_dirLightsUniforms;
-
+    std::array<PointLightUniformLocations,MAX_POINT_LIGHT_COUNT> m_pointLightsUniforms;
 };
 
 

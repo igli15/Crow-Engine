@@ -64,14 +64,18 @@ void LightingTestWorld::Build()
     cubeMeshInfo.material = mat;
     cubeEntity.AddComponent(cubeMeshInfo);
 
+
+    EntityHandle pointLightEntity = CreateEntity();
+    auto t3 = pointLightEntity.AddComponent(Transform{});
+    t3->Rotate(45,glm::vec3(1,0,0));
+    t3->Translate(glm::vec3(-2,0,0));
+    Light* pointLight = pointLightEntity.AddComponent(Light{});
+    pointLight->color = glm::vec3(0,1,0);
+    pointLight->type = Light::POINT;
+
+
     EntityHandle lightEntity = CreateEntity();
     auto t = lightEntity.AddComponent(Transform{});
     t->Rotate(-45,glm::vec3(1,0,0));
     lightEntity.AddComponent(Light{glm::vec3(1,0,0)});
-
-    EntityHandle lightEntity2 = CreateEntity();
-    auto t3 = lightEntity2.AddComponent(Transform{});
-    t3->Rotate(45,glm::vec3(1,0,0));
-    lightEntity2.AddComponent(Light{glm::vec3(0,1,0)});
-
 }

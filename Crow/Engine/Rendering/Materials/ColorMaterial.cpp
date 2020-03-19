@@ -15,6 +15,7 @@ void ColorMaterial::Render(Model *pModel, const glm::mat4 &pModelMatrix, const g
     auto lightEntities = world->EntitiesWith<Light,Transform>();
 
     int activeDirLights = 0;
+    int activePointLights = 0;
 
     for (int i = 0; i < lightEntities.size(); ++i)
     {
@@ -23,14 +24,27 @@ void ColorMaterial::Render(Model *pModel, const glm::mat4 &pModelMatrix, const g
 
         if(lightComponent.type == lightComponent.DIRECTIONAL)
         {
+            glUniform3fv(m_dirLightsUniforms[activeDirLights].m_uLightColor, 1, glm::value_ptr(lightComponent.color));
+            glUniform3fv(m_dirLightsUniforms[activeDirLights].m_uLightDir, 1, glm::value_ptr(-lightTransform.GetLocalTransform()[2]));
             activeDirLights +=1;
+        }
 
-            glUniform3fv(m_dirLightsUniforms[i].m_uLightColor, 1, glm::value_ptr(lightComponent.color));
-            glUniform3fv(m_dirLightsUniforms[i].m_uLightDir, 1, glm::value_ptr(-lightTransform.GetLocalTransform()[2]));
+        if(lightComponent.type == lightComponent.POINT)
+        {
+
+            glUniform3fv(m_pointLightsUniforms[activePointLights].m_uLightColor, 1, glm::value_ptr(lightComponent.color));
+
+            glUniform3fv(m_pointLightsUniforms[activePointLights].m_uLightPosition, 1, glm::value_ptr(lightTransform.LocalPosition()));
+
+            glUniform1f(m_pointLightsUniforms[activePointLights].m_uLightConstant,lightComponent.constant);
+            glUniform1f(m_pointLightsUniforms[activePointLights].m_uLightLinear,lightComponent.linear);
+            glUniform1f(m_pointLightsUniforms[activePointLights].m_uLightQuadratic,lightComponent.quadratic);
+            activePointLights +=1;
         }
     }
 
     glUniform1i(m_uActiveDirLights,activeDirLights);
+    glUniform1i(m_uActivePointLights,activePointLights);
 
     glUniformMatrix4fv(m_uProjectionMatrix, 1, GL_FALSE, glm::value_ptr(pProjectionMatrix));
     glUniformMatrix4fv(m_uViewMatrix, 1, GL_FALSE, glm::value_ptr(pViewMatrix));
@@ -67,11 +81,29 @@ void ColorMaterial::Initialize()
     m_uViewPos = m_shader->GetUniformLocation("viewPos");
 
     m_uActiveDirLights =  m_shader->GetUniformLocation("activeDirLights");
+    m_uActivePointLights =  m_shader->GetUniformLocation("activePointLights");
 
+    std::string dirUniformString;
     for (int i = 0; i < m_dirLightsUniforms.size(); ++i)
     {
-        m_dirLightsUniforms[i].m_uLightColor = m_shader->GetUniformLocation("dirLights[" + std::to_string(i) + "].color");
-        m_dirLightsUniforms[i].m_uLightDir = m_shader->GetUniformLocation("dirLights[" + std::to_string(i) + "].direction");
+        dirUniformString = "dirLights[" + std::to_string(i) + "]";
+
+        m_dirLightsUniforms[i].m_uLightColor = m_shader->GetUniformLocation(dirUniformString +".color");
+        m_dirLightsUniforms[i].m_uLightDir = m_shader->GetUniformLocation(dirUniformString + ".direction");
+    }
+
+    std::string pointUniformString;
+    for (int i = 0; i < m_pointLightsUniforms.size(); ++i)
+    {
+        pointUniformString = "pointLights[" + std::to_string(i) + "]";
+
+        m_pointLightsUniforms[i].m_uLightColor = m_shader->GetUniformLocation(pointUniformString +".color");
+        m_pointLightsUniforms[i].m_uLightPosition = m_shader->GetUniformLocation(pointUniformString + ".position");
+
+        m_pointLightsUniforms[i].m_uLightConstant = m_shader->GetUniformLocation(pointUniformString + ".constant");
+        m_pointLightsUniforms[i].m_uLightLinear = m_shader->GetUniformLocation(pointUniformString + ".linear");
+        m_pointLightsUniforms[i].m_uLightQuadratic = m_shader->GetUniformLocation(pointUniformString + ".quadratic");
+
     }
 
 }

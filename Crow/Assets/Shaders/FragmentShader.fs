@@ -14,6 +14,16 @@ struct DirLight {
     vec3 color;
 };
 
+struct PointLight {
+
+    vec3 position;
+    vec3 color;
+
+    float constant;
+    float linear;
+    float quadratic;
+};
+
 struct Material
 {
     vec3 mainColor;
@@ -25,10 +35,16 @@ struct Material
 #define NR_DIR_LIGHTS 20
 uniform DirLight dirLights[NR_DIR_LIGHTS];
 
+#define NR_POINT_LIGHTS 20
+uniform PointLight pointLights[NR_POINT_LIGHTS];
+
 uniform Material material;
+
 uniform int activeDirLights;
+uniform int activePointLights;
 
 vec3 CalcDirLight(DirLight light, vec3 normal, vec3 viewDir);
+vec3 CalcPointLight(PointLight light, vec3 normal, vec3 fragPos, vec3 viewDir);
 
 void main()
 {
@@ -40,6 +56,11 @@ void main()
     for(int i = 0; i < activeDirLights; i++)
     {
         result += CalcDirLight(dirLights[i],norm,viewDir);
+    }
+
+    for(int i = 0; i < activePointLights; i++)
+    {
+        result += CalcPointLight(pointLights[i],norm,FragPos,viewDir);
     }
 
     FragColor = vec4(result, 1.0);
@@ -56,6 +77,30 @@ vec3 CalcDirLight(DirLight light, vec3 normal, vec3 viewDir)
     vec3 ambient  = material.ambientIntensity * light.color;
     vec3 diffuse  = diff * light.color;
     vec3 specular = material.specularColor * spec * light.color;
+
+    return (ambient + diffuse + specular) * material.mainColor;
+}
+
+vec3 CalcPointLight(PointLight light, vec3 normal, vec3 fragPos, vec3 viewDir)
+{
+    vec3 lightDir = normalize(light.position - fragPos);
+
+    float diff = max(dot(normal, lightDir), 0.0);
+
+    vec3 reflectDir = reflect(-lightDir, normal);
+    float spec = pow(max(dot(viewDir, reflectDir), 0.0), material.shininess);
+
+    float distance    = length(light.position - fragPos);
+    float attenuation = 1.0 / (light.constant + light.linear * distance +
+  			     light.quadratic * (distance * distance));
+
+    vec3 ambient  = material.ambientIntensity * light.color;
+    vec3 diffuse  = diff * light.color;
+    vec3 specular = material.specularColor * spec * light.color;
+
+    ambient  *= attenuation;
+    diffuse  *= attenuation;
+    specular *= attenuation;
 
     return (ambient + diffuse + specular) * material.mainColor;
 }
