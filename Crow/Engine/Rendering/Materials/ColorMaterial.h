@@ -54,11 +54,27 @@ private:
         GLint m_uLightQuadratic;
     };
 
+    struct SpotLightUniformLocations
+    {
+        GLint m_uLightPosition;
+        GLint m_uLightDirection;
+        GLint m_uLightColor;
+
+        GLint m_uLightCutoff;
+        GLint m_uLightOuterCutoff;
+
+        GLint m_uLightConstant;
+        GLint m_uLightLinear;
+        GLint m_uLightQuadratic;
+    };
+
     GLint m_uActiveDirLights;
     GLint m_uActivePointLights;
+    GLint m_uActiveSpotLights;
 
     std::array<DirLightUniformLocations,MAX_DIR_LIGHT_COUNT> m_dirLightsUniforms;
     std::array<PointLightUniformLocations,MAX_POINT_LIGHT_COUNT> m_pointLightsUniforms;
+    std::array<SpotLightUniformLocations,MAX_SPOT_LIGHT_COUNT> m_spotLightsUniforms;
 };
 
 

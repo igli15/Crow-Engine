@@ -78,4 +78,14 @@ void LightingTestWorld::Build()
     auto t = lightEntity.AddComponent(Transform{});
     t->Rotate(-45,glm::vec3(1,0,0));
     lightEntity.AddComponent(Light{glm::vec3(1,0,0)});
+
+    EntityHandle spotLightEntity = CreateEntity();
+    Transform* spotTransform = spotLightEntity.AddComponent(Transform{});
+    spotTransform->Translate(glm::vec3(0,0,-5));
+    spotTransform->Rotate(180,glm::vec3(0,1,0));
+    Light* spotLight = spotLightEntity.AddComponent(Light{});
+    spotLight->color = glm::vec3(0,1,1);
+    spotLight->type = Light::SPOT;
+
+
 }

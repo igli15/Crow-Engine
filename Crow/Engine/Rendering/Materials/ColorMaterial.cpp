@@ -16,6 +16,7 @@ void ColorMaterial::Render(Model *pModel, const glm::mat4 &pModelMatrix, const g
 
     int activeDirLights = 0;
     int activePointLights = 0;
+    int activeSpotLights = 0;
 
     for (int i = 0; i < lightEntities.size(); ++i)
     {
@@ -28,8 +29,7 @@ void ColorMaterial::Render(Model *pModel, const glm::mat4 &pModelMatrix, const g
             glUniform3fv(m_dirLightsUniforms[activeDirLights].m_uLightDir, 1, glm::value_ptr(-lightTransform.GetLocalTransform()[2]));
             activeDirLights +=1;
         }
-
-        if(lightComponent.type == lightComponent.POINT)
+        else if(lightComponent.type == lightComponent.POINT)
         {
 
             glUniform3fv(m_pointLightsUniforms[activePointLights].m_uLightColor, 1, glm::value_ptr(lightComponent.color));
@@ -41,10 +41,27 @@ void ColorMaterial::Render(Model *pModel, const glm::mat4 &pModelMatrix, const g
             glUniform1f(m_pointLightsUniforms[activePointLights].m_uLightQuadratic,lightComponent.quadratic);
             activePointLights +=1;
         }
+        else if(lightComponent.type == lightComponent.SPOT)
+        {
+
+            glUniform3fv(m_spotLightsUniforms[activeSpotLights].m_uLightColor, 1, glm::value_ptr(lightComponent.color));
+            glUniform3fv(m_spotLightsUniforms[activeSpotLights].m_uLightDirection, 1, glm::value_ptr(-lightTransform.GetLocalTransform()[2]));
+            glUniform3fv(m_spotLightsUniforms[activeSpotLights].m_uLightPosition, 1, glm::value_ptr(lightTransform.LocalPosition()));
+
+            glUniform1f(m_spotLightsUniforms[activeSpotLights].m_uLightCutoff,lightComponent.cutoff);
+            glUniform1f(m_spotLightsUniforms[activeSpotLights].m_uLightOuterCutoff,lightComponent.outerCutoff);
+
+            glUniform1f(m_spotLightsUniforms[activeSpotLights].m_uLightConstant,lightComponent.constant);
+            glUniform1f(m_spotLightsUniforms[activeSpotLights].m_uLightLinear,lightComponent.linear);
+            glUniform1f(m_spotLightsUniforms[activeSpotLights].m_uLightQuadratic,lightComponent.quadratic);
+
+            activeSpotLights +=1;
+        }
     }
 
     glUniform1i(m_uActiveDirLights,activeDirLights);
     glUniform1i(m_uActivePointLights,activePointLights);
+    glUniform1i(m_uActiveSpotLights,activeSpotLights);
 
     glUniformMatrix4fv(m_uProjectionMatrix, 1, GL_FALSE, glm::value_ptr(pProjectionMatrix));
     glUniformMatrix4fv(m_uViewMatrix, 1, GL_FALSE, glm::value_ptr(pViewMatrix));
@@ -82,6 +99,7 @@ void ColorMaterial::Initialize()
 
     m_uActiveDirLights =  m_shader->GetUniformLocation("activeDirLights");
     m_uActivePointLights =  m_shader->GetUniformLocation("activePointLights");
+    m_uActiveSpotLights =  m_shader->GetUniformLocation("activeSpotLights");
 
     std::string dirUniformString;
     for (int i = 0; i < m_dirLightsUniforms.size(); ++i)
@@ -103,6 +121,24 @@ void ColorMaterial::Initialize()
         m_pointLightsUniforms[i].m_uLightConstant = m_shader->GetUniformLocation(pointUniformString + ".constant");
         m_pointLightsUniforms[i].m_uLightLinear = m_shader->GetUniformLocation(pointUniformString + ".linear");
         m_pointLightsUniforms[i].m_uLightQuadratic = m_shader->GetUniformLocation(pointUniformString + ".quadratic");
+
+    }
+
+    std::string spotUniformString;
+    for (int i = 0; i < m_spotLightsUniforms.size(); ++i)
+    {
+        spotUniformString = "spotLights[" + std::to_string(i) + "]";
+
+        m_spotLightsUniforms[i].m_uLightColor = m_shader->GetUniformLocation(spotUniformString +".color");
+        m_spotLightsUniforms[i].m_uLightPosition = m_shader->GetUniformLocation(spotUniformString + ".position");
+        m_spotLightsUniforms[i].m_uLightDirection = m_shader->GetUniformLocation(spotUniformString + ".direction");
+
+        m_spotLightsUniforms[i].m_uLightCutoff = m_shader->GetUniformLocation(spotUniformString + ".cutoff");
+        m_spotLightsUniforms[i].m_uLightOuterCutoff = m_shader->GetUniformLocation(spotUniformString + ".outerCutoff");
+
+        m_spotLightsUniforms[i].m_uLightConstant = m_shader->GetUniformLocation(spotUniformString + ".constant");
+        m_spotLightsUniforms[i].m_uLightLinear = m_shader->GetUniformLocation(spotUniformString + ".linear");
+        m_spotLightsUniforms[i].m_uLightQuadratic = m_shader->GetUniformLocation(spotUniformString + ".quadratic");
 
     }
 

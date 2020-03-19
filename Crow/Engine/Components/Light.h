@@ -18,6 +18,9 @@ struct Light {
     float linear = 0.09f;
     float quadratic = 0.032f;
 
+    float cutoff = 25;
+    float outerCutoff = 35;
+
     LightType type = DIRECTIONAL;
 
 };
