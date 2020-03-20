@@ -18,74 +18,72 @@ void LightingTestWorld::Build()
 {
     World::Build();
 
-    Game::Instance()->resourceManager->CreateShader("VertexShader.vs","FragmentShader.fs","unlitShader");
+    Game::Instance()->resourceManager->CreateShader("VertexShader.vs","FragmentShader.fs","litShader");
 
     //Load the models
-    Model* cube = Game::Instance()->resourceManager->LoadModel((MODEL_PATH + "cube.obj"),"cube");
+    Model* cube = Game::Instance()->resourceManager->LoadModel((MODEL_PATH + "shape.obj"),"cube");
     Model* gunModel = Game::Instance()->resourceManager->LoadModel((MODEL_PATH + "pistol.obj"),"gunModel");
+
+    Model* planeModel = Game::Instance()->resourceManager->LoadModel((MODEL_PATH + "plane.obj"),"plane");
 
     RegisterSystem<RotateSystem>();
     SetSystemSignature<RotateSystem,Transform,RotateComponent>();
 
-    ColorMaterial* mat = new ColorMaterial("unlitShader");
-
-    cameraEntity->GetComponent<Transform>().component->Translate(glm::vec3(0,0,5));
-
-    EntityHandle gunEntity = CreateEntity();
-
-    gunEntity.AddComponent(Transform{});
-    Transform *t2 = gunEntity.GetComponent<Transform>().component;
-    t2->Scale(glm::vec3(0.1f, 0.1f, 0.1f));
-
-    MeshInfo gunMeshInfo{};
-    gunMeshInfo.model = gunModel;
-
-    //mat->mainColor = glm::vec3(0.75164f,0.60648f,0.22648f);
-    //mat->specularColor = glm::vec3(0.628281f,0.555802,0.366065);
-
-    mat->mainColor = glm::vec3(1);
+    ColorMaterial* mat = new ColorMaterial("litShader");
+    mat->mainColor = glm::vec3(0.7,0.7,0.7);
     mat->specularColor = glm::vec3(1);
-    mat->shininess = 0.4f;
+    mat->shininess = 16;
 
-    gunMeshInfo.material = mat;
-    gunEntity.AddComponent(gunMeshInfo);
-    gunEntity.AddComponent(RotateComponent{1});
+    ColorMaterial* redMat = new ColorMaterial("litShader");
+    redMat->mainColor = glm::vec3(glm::vec3(1,1,1));
+    redMat->specularColor = glm::vec3(1,0,0);
+    redMat->shininess = 2;
+
+    Transform* camTransform = cameraEntity->GetComponent<Transform>().component;
+    camTransform->Translate(glm::vec3(0,4,6));
+    camTransform->Rotate(-45,glm::vec3(1,0,0));
+
+    EntityHandle plane = CreateEntity();
+    Transform* planeTransform = plane.AddComponent(Transform{});
+    plane.AddComponent(MeshInfo{planeModel,mat});
+    planeTransform->Translate(glm::vec3(0,-2,0));
+    planeTransform->Scale(glm::vec3(20,10,10));
 
 
     EntityHandle cubeEntity = CreateEntity();
     cubeEntity.AddComponent(Transform{});
     Transform *cubeTransform = cubeEntity.GetComponent<Transform>().component;
-    cubeTransform->Scale(glm::vec3(0.5f, 0.5f, 0.5f));
-    cubeTransform->Translate(glm::vec3(-6,0,0));
-    cubeTransform->Rotate(45,glm::vec3(1,0,0));
+    cubeEntity.AddComponent(RotateComponent{1});
 
     MeshInfo cubeMeshInfo{};
     cubeMeshInfo.model = cube;
-    cubeMeshInfo.material = mat;
+    cubeMeshInfo.material = redMat;
     cubeEntity.AddComponent(cubeMeshInfo);
 
 
-    EntityHandle pointLightEntity = CreateEntity();
-    auto t3 = pointLightEntity.AddComponent(Transform{});
-    t3->Rotate(45,glm::vec3(1,0,0));
-    t3->Translate(glm::vec3(-2,0,0));
-    Light* pointLight = pointLightEntity.AddComponent(Light{});
-    pointLight->color = glm::vec3(0,1,0);
-    pointLight->type = Light::POINT;
-
-
     EntityHandle lightEntity = CreateEntity();
-    auto t = lightEntity.AddComponent(Transform{});
-    t->Rotate(-45,glm::vec3(1,0,0));
-    lightEntity.AddComponent(Light{glm::vec3(1,0,0)});
+    auto dirLightTransform = lightEntity.AddComponent(Transform{});
+    dirLightTransform->Rotate(-45,glm::vec3(1,0,0));
+    Light* dirLight = lightEntity.AddComponent(Light{glm::vec3(0.8,0.8,0.8)});
+    dirLight->intensity = 0.5;
+
+    EntityHandle pointLightEntity = CreateEntity();
+    auto pointLightTransform = pointLightEntity.AddComponent(Transform{});
+    pointLightTransform->Translate(glm::vec3(-4,0,0));
+    Light* pointLight = pointLightEntity.AddComponent(Light{glm::vec3(0,0,0.8)});
+    pointLight->type = pointLight->POINT;
+
+    EntityHandle pointLightEntity2 = CreateEntity();
+    auto pointLightTransform2 = pointLightEntity2.AddComponent(Transform{});
+    pointLightTransform2->Translate(glm::vec3(4,0,0));
+    Light* pointLight2 = pointLightEntity2.AddComponent(Light{glm::vec3(0,0,0.8)});
+    pointLight2->type = pointLight->POINT;
+
 
     EntityHandle spotLightEntity = CreateEntity();
-    Transform* spotTransform = spotLightEntity.AddComponent(Transform{});
-    spotTransform->Translate(glm::vec3(0,0,-5));
-    spotTransform->Rotate(180,glm::vec3(0,1,0));
-    Light* spotLight = spotLightEntity.AddComponent(Light{});
-    spotLight->color = glm::vec3(0,1,1);
-    spotLight->type = Light::SPOT;
-
-
+    auto spotLightTransform = spotLightEntity.AddComponent(Transform{});
+    spotLightTransform->Translate(glm::vec3(0,2,0));
+    spotLightTransform->Rotate(-90,glm::vec3(1,0,0));
+    Light* spotLight = spotLightEntity.AddComponent(Light{glm::vec3(0.5,0.5,0)});
+    spotLight->type = pointLight->SPOT;
 }
