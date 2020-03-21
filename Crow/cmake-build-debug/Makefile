@@ -609,6 +609,33 @@ Engine/Rendering/Materials/ColorMaterial.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.s
 .PHONY : Engine/Rendering/Materials/ColorMaterial.cpp.s
 
+Engine/Rendering/Materials/TranslucentColorMat.o: Engine/Rendering/Materials/TranslucentColorMat.cpp.o
+
+.PHONY : Engine/Rendering/Materials/TranslucentColorMat.o
+
+# target to build an object file
+Engine/Rendering/Materials/TranslucentColorMat.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/TranslucentColorMat.cpp.o
+.PHONY : Engine/Rendering/Materials/TranslucentColorMat.cpp.o
+
+Engine/Rendering/Materials/TranslucentColorMat.i: Engine/Rendering/Materials/TranslucentColorMat.cpp.i
+
+.PHONY : Engine/Rendering/Materials/TranslucentColorMat.i
+
+# target to preprocess a source file
+Engine/Rendering/Materials/TranslucentColorMat.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/TranslucentColorMat.cpp.i
+.PHONY : Engine/Rendering/Materials/TranslucentColorMat.cpp.i
+
+Engine/Rendering/Materials/TranslucentColorMat.s: Engine/Rendering/Materials/TranslucentColorMat.cpp.s
+
+.PHONY : Engine/Rendering/Materials/TranslucentColorMat.s
+
+# target to generate assembly for a file
+Engine/Rendering/Materials/TranslucentColorMat.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/TranslucentColorMat.cpp.s
+.PHONY : Engine/Rendering/Materials/TranslucentColorMat.cpp.s
+
 Engine/Rendering/Mesh.o: Engine/Rendering/Mesh.cpp.o
 
 .PHONY : Engine/Rendering/Mesh.o
@@ -1014,6 +1041,33 @@ SandBox/Worlds/RotatingGunsWorld.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.s
 .PHONY : SandBox/Worlds/RotatingGunsWorld.cpp.s
 
+SandBox/Worlds/TranslucentMaterialTestWorld.o: SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o
+
+.PHONY : SandBox/Worlds/TranslucentMaterialTestWorld.o
+
+# target to build an object file
+SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o
+.PHONY : SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o
+
+SandBox/Worlds/TranslucentMaterialTestWorld.i: SandBox/Worlds/TranslucentMaterialTestWorld.cpp.i
+
+.PHONY : SandBox/Worlds/TranslucentMaterialTestWorld.i
+
+# target to preprocess a source file
+SandBox/Worlds/TranslucentMaterialTestWorld.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.i
+.PHONY : SandBox/Worlds/TranslucentMaterialTestWorld.cpp.i
+
+SandBox/Worlds/TranslucentMaterialTestWorld.s: SandBox/Worlds/TranslucentMaterialTestWorld.cpp.s
+
+.PHONY : SandBox/Worlds/TranslucentMaterialTestWorld.s
+
+# target to generate assembly for a file
+SandBox/Worlds/TranslucentMaterialTestWorld.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.s
+.PHONY : SandBox/Worlds/TranslucentMaterialTestWorld.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -1104,6 +1158,9 @@ help:
 	@echo "... Engine/Rendering/Materials/ColorMaterial.o"
 	@echo "... Engine/Rendering/Materials/ColorMaterial.i"
 	@echo "... Engine/Rendering/Materials/ColorMaterial.s"
+	@echo "... Engine/Rendering/Materials/TranslucentColorMat.o"
+	@echo "... Engine/Rendering/Materials/TranslucentColorMat.i"
+	@echo "... Engine/Rendering/Materials/TranslucentColorMat.s"
 	@echo "... Engine/Rendering/Mesh.o"
 	@echo "... Engine/Rendering/Mesh.i"
 	@echo "... Engine/Rendering/Mesh.s"
@@ -1149,6 +1206,9 @@ help:
 	@echo "... SandBox/Worlds/RotatingGunsWorld.o"
 	@echo "... SandBox/Worlds/RotatingGunsWorld.i"
 	@echo "... SandBox/Worlds/RotatingGunsWorld.s"
+	@echo "... SandBox/Worlds/TranslucentMaterialTestWorld.o"
+	@echo "... SandBox/Worlds/TranslucentMaterialTestWorld.i"
+	@echo "... SandBox/Worlds/TranslucentMaterialTestWorld.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

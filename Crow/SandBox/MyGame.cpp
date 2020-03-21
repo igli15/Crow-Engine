@@ -5,6 +5,7 @@
 #include "MyGame.h"
 #include "Worlds/RotatingGunsWorld.h"
 #include "Worlds/LightingTestWorld.h"
+#include "Worlds/TranslucentMaterialTestWorld.h"
 
 void MyGame::Init()
 {
@@ -12,6 +13,7 @@ void MyGame::Init()
 
     //Set the world here!
 
-    SetWorld(new LightingTestWorld());
+    SetWorld(new TranslucentMaterialTestWorld());
+    //SetWorld(new LightingTestWorld());
     //SetWorld(new RotatingGunsWorld());
 }
