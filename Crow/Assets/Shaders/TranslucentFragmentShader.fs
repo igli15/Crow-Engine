@@ -137,6 +137,11 @@ vec3 CalcPointLight(PointLight light, vec3 normal, vec3 fragPos, vec3 viewDir)
     float attenuation = 1.0 / (light.constant + light.linear * distance +
   			     light.quadratic * (distance * distance));
 
+    vec3 transLightDir = lightDir + normal * translucentDistortion;
+    float transDot = 2 * attenuation * pow ( max (0, dot ( viewDir, -transLightDir ) ), translucentPower ) * translucentScale;
+    vec3 transLight = (transDot) * translucentColor;
+    vec3 transAlbedo = light.color * transLight;
+
     vec3 ambient  = material.ambientIntensity * light.color;
     vec3 diffuse  = diff * light.color;
     vec3 specular = material.specularColor * spec * light.color;
@@ -145,7 +150,7 @@ vec3 CalcPointLight(PointLight light, vec3 normal, vec3 fragPos, vec3 viewDir)
     diffuse  *= attenuation;
     specular *= attenuation;
 
-    return (ambient + diffuse + specular) * material.mainColor;
+    return (ambient + diffuse + specular + transAlbedo) * material.mainColor;
 }
 
 vec3 CalcSpotLight(SpotLight light, vec3 normal, vec3 fragPos, vec3 viewDir)
@@ -165,6 +170,11 @@ vec3 CalcSpotLight(SpotLight light, vec3 normal, vec3 fragPos, vec3 viewDir)
     float epsilon = light.cutOff - light.outerCutOff;
     float intensity = clamp((theta - light.outerCutOff) / epsilon, 0.0, 1.0);
 
+    vec3 transLightDir = lightDir + normal * translucentDistortion;
+    float transDot = 2 * attenuation * pow ( max (0, dot ( viewDir, -transLightDir ) ), translucentPower ) * translucentScale;
+    vec3 transLight = (transDot) * translucentColor;
+    vec3 transAlbedo = light.color * transLight;
+
     vec3 ambient  = material.ambientIntensity * light.color;
     vec3 diffuse  = diff * light.color;
     vec3 specular = material.specularColor * spec * light.color;
@@ -173,5 +183,5 @@ vec3 CalcSpotLight(SpotLight light, vec3 normal, vec3 fragPos, vec3 viewDir)
     diffuse *= attenuation * intensity;
     specular *= attenuation * intensity;
 
-    return (ambient + diffuse + specular) * material.mainColor;
+    return (ambient + diffuse + specular + transAlbedo) * material.mainColor;
 }

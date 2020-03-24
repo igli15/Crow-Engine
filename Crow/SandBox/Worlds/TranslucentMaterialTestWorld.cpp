@@ -31,8 +31,8 @@ void TranslucentMaterialTestWorld::Build()
 
     TranslucentColorMat* translucentMat = new TranslucentColorMat();
     translucentMat->translucentScale = 1;
-    translucentMat->translucentColor = glm::vec3(1,0.8,0.6);
-    translucentMat->shininess = 256;
+    translucentMat->translucentColor = glm::vec3(1,1,1);
+    translucentMat->shininess = 16;
 
     ColorMaterial* mat = new ColorMaterial("litShader");
     mat->mainColor = glm::vec3(0.7,0.7,0.7);
@@ -65,14 +65,10 @@ void TranslucentMaterialTestWorld::Build()
     EntityHandle lightEntity = CreateEntity();
     auto dirLightTransform = lightEntity.AddComponent(Transform{});
     dirLightTransform->Rotate(135,glm::vec3(1,0,0));
+    dirLightTransform->Translate(glm::vec3(0,1,1));
     Light* dirLight = lightEntity.AddComponent(Light{glm::vec3(0.8,0.8,0.8)});
     dirLight->intensity = 1;
-
-    EntityHandle lightEntity2 = CreateEntity();
-    auto dirLightTransform2 = lightEntity2.AddComponent(Transform{});
-    dirLightTransform2->Rotate(-45,glm::vec3(1,0,0));
-    Light* dirLight2 = lightEntity2.AddComponent(Light{glm::vec3(1,1,1)});
-    dirLight2->intensity = 0.8;
+    dirLight->type = dirLight->POINT;
 
 
 }
