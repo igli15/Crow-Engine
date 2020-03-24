@@ -35,6 +35,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Components/Light.cpp.o"
   "CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o"
+  "CMakeFiles/Crow.dir/Engine/EventQueue/Event.cpp.o"
+  "CMakeFiles/Crow.dir/Engine/EventQueue/EventQueue.cpp.o"
+  "CMakeFiles/Crow.dir/Engine/EventQueue/MemberFunctionHandler.cpp.o"
+  "CMakeFiles/Crow.dir/SandBox/Worlds/PhysicsTestWorld.cpp.o"
   "Crow.pdb"
   "Crow"
 )

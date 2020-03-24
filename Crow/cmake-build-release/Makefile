@@ -339,6 +339,87 @@ Engine/Debug/Debug.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Debug/Debug.cpp.s
 .PHONY : Engine/Debug/Debug.cpp.s
 
+Engine/EventQueue/Event.o: Engine/EventQueue/Event.cpp.o
+
+.PHONY : Engine/EventQueue/Event.o
+
+# target to build an object file
+Engine/EventQueue/Event.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/EventQueue/Event.cpp.o
+.PHONY : Engine/EventQueue/Event.cpp.o
+
+Engine/EventQueue/Event.i: Engine/EventQueue/Event.cpp.i
+
+.PHONY : Engine/EventQueue/Event.i
+
+# target to preprocess a source file
+Engine/EventQueue/Event.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/EventQueue/Event.cpp.i
+.PHONY : Engine/EventQueue/Event.cpp.i
+
+Engine/EventQueue/Event.s: Engine/EventQueue/Event.cpp.s
+
+.PHONY : Engine/EventQueue/Event.s
+
+# target to generate assembly for a file
+Engine/EventQueue/Event.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/EventQueue/Event.cpp.s
+.PHONY : Engine/EventQueue/Event.cpp.s
+
+Engine/EventQueue/EventQueue.o: Engine/EventQueue/EventQueue.cpp.o
+
+.PHONY : Engine/EventQueue/EventQueue.o
+
+# target to build an object file
+Engine/EventQueue/EventQueue.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/EventQueue/EventQueue.cpp.o
+.PHONY : Engine/EventQueue/EventQueue.cpp.o
+
+Engine/EventQueue/EventQueue.i: Engine/EventQueue/EventQueue.cpp.i
+
+.PHONY : Engine/EventQueue/EventQueue.i
+
+# target to preprocess a source file
+Engine/EventQueue/EventQueue.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/EventQueue/EventQueue.cpp.i
+.PHONY : Engine/EventQueue/EventQueue.cpp.i
+
+Engine/EventQueue/EventQueue.s: Engine/EventQueue/EventQueue.cpp.s
+
+.PHONY : Engine/EventQueue/EventQueue.s
+
+# target to generate assembly for a file
+Engine/EventQueue/EventQueue.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/EventQueue/EventQueue.cpp.s
+.PHONY : Engine/EventQueue/EventQueue.cpp.s
+
+Engine/EventQueue/MemberFunctionHandler.o: Engine/EventQueue/MemberFunctionHandler.cpp.o
+
+.PHONY : Engine/EventQueue/MemberFunctionHandler.o
+
+# target to build an object file
+Engine/EventQueue/MemberFunctionHandler.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/EventQueue/MemberFunctionHandler.cpp.o
+.PHONY : Engine/EventQueue/MemberFunctionHandler.cpp.o
+
+Engine/EventQueue/MemberFunctionHandler.i: Engine/EventQueue/MemberFunctionHandler.cpp.i
+
+.PHONY : Engine/EventQueue/MemberFunctionHandler.i
+
+# target to preprocess a source file
+Engine/EventQueue/MemberFunctionHandler.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/EventQueue/MemberFunctionHandler.cpp.i
+.PHONY : Engine/EventQueue/MemberFunctionHandler.cpp.i
+
+Engine/EventQueue/MemberFunctionHandler.s: Engine/EventQueue/MemberFunctionHandler.cpp.s
+
+.PHONY : Engine/EventQueue/MemberFunctionHandler.s
+
+# target to generate assembly for a file
+Engine/EventQueue/MemberFunctionHandler.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/EventQueue/MemberFunctionHandler.cpp.s
+.PHONY : Engine/EventQueue/MemberFunctionHandler.cpp.s
+
 Engine/Feather/ComponentArray.o: Engine/Feather/ComponentArray.cpp.o
 
 .PHONY : Engine/Feather/ComponentArray.o
@@ -1014,6 +1095,33 @@ SandBox/Worlds/LightingTestWorld.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.s
 .PHONY : SandBox/Worlds/LightingTestWorld.cpp.s
 
+SandBox/Worlds/PhysicsTestWorld.o: SandBox/Worlds/PhysicsTestWorld.cpp.o
+
+.PHONY : SandBox/Worlds/PhysicsTestWorld.o
+
+# target to build an object file
+SandBox/Worlds/PhysicsTestWorld.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Worlds/PhysicsTestWorld.cpp.o
+.PHONY : SandBox/Worlds/PhysicsTestWorld.cpp.o
+
+SandBox/Worlds/PhysicsTestWorld.i: SandBox/Worlds/PhysicsTestWorld.cpp.i
+
+.PHONY : SandBox/Worlds/PhysicsTestWorld.i
+
+# target to preprocess a source file
+SandBox/Worlds/PhysicsTestWorld.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Worlds/PhysicsTestWorld.cpp.i
+.PHONY : SandBox/Worlds/PhysicsTestWorld.cpp.i
+
+SandBox/Worlds/PhysicsTestWorld.s: SandBox/Worlds/PhysicsTestWorld.cpp.s
+
+.PHONY : SandBox/Worlds/PhysicsTestWorld.s
+
+# target to generate assembly for a file
+SandBox/Worlds/PhysicsTestWorld.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Worlds/PhysicsTestWorld.cpp.s
+.PHONY : SandBox/Worlds/PhysicsTestWorld.cpp.s
+
 SandBox/Worlds/RotatingGunsWorld.o: SandBox/Worlds/RotatingGunsWorld.cpp.o
 
 .PHONY : SandBox/Worlds/RotatingGunsWorld.o
@@ -1128,6 +1236,15 @@ help:
 	@echo "... Engine/Debug/Debug.o"
 	@echo "... Engine/Debug/Debug.i"
 	@echo "... Engine/Debug/Debug.s"
+	@echo "... Engine/EventQueue/Event.o"
+	@echo "... Engine/EventQueue/Event.i"
+	@echo "... Engine/EventQueue/Event.s"
+	@echo "... Engine/EventQueue/EventQueue.o"
+	@echo "... Engine/EventQueue/EventQueue.i"
+	@echo "... Engine/EventQueue/EventQueue.s"
+	@echo "... Engine/EventQueue/MemberFunctionHandler.o"
+	@echo "... Engine/EventQueue/MemberFunctionHandler.i"
+	@echo "... Engine/EventQueue/MemberFunctionHandler.s"
 	@echo "... Engine/Feather/ComponentArray.o"
 	@echo "... Engine/Feather/ComponentArray.i"
 	@echo "... Engine/Feather/ComponentArray.s"
@@ -1203,6 +1320,9 @@ help:
 	@echo "... SandBox/Worlds/LightingTestWorld.o"
 	@echo "... SandBox/Worlds/LightingTestWorld.i"
 	@echo "... SandBox/Worlds/LightingTestWorld.s"
+	@echo "... SandBox/Worlds/PhysicsTestWorld.o"
+	@echo "... SandBox/Worlds/PhysicsTestWorld.i"
+	@echo "... SandBox/Worlds/PhysicsTestWorld.s"
 	@echo "... SandBox/Worlds/RotatingGunsWorld.o"
 	@echo "... SandBox/Worlds/RotatingGunsWorld.i"
 	@echo "... SandBox/Worlds/RotatingGunsWorld.s"

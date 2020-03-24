@@ -49,7 +49,6 @@ void LightingTestWorld::Build()
     planeTransform->Translate(glm::vec3(0,-2,0));
     planeTransform->Scale(glm::vec3(20,10,10));
 
-
     EntityHandle cubeEntity = CreateEntity();
     cubeEntity.AddComponent(Transform{});
     Transform *cubeTransform = cubeEntity.GetComponent<Transform>().component;
