@@ -8,6 +8,7 @@
 #include "../Components/Camera.h"
 #include "../Systems/MeshRendererSystem.h"
 #include "../Components/MeshInfo.h"
+#include "../Systems/CollisionDetectionSystem.h"
 
 void World::Init()
 {
@@ -72,6 +73,7 @@ void World::CreateCamera()
 void World::RegisterEngineSystems()
 {
     RegisterSystem<MeshRendererSystem>();
+    RegisterSystem<CollisionDetectionSystem>();
     SetSystemSignature<MeshRendererSystem,Transform,MeshInfo>();
 
 }

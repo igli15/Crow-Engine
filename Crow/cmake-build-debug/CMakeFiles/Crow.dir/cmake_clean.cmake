@@ -41,6 +41,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Crow.dir/SandBox/Worlds/PhysicsTestWorld.cpp.o"
   "CMakeFiles/Crow.dir/SandBox/Components/MoveComponent.cpp.o"
   "CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.o"
+  "CMakeFiles/Crow.dir/Engine/Components/SphereCollider.cpp.o"
+  "CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o"
   "Crow.pdb"
   "Crow"
 )

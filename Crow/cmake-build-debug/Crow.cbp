@@ -107,6 +107,12 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h">
 			<Option target="Crow"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/SphereCollider.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/SphereCollider.h">
+			<Option target="Crow"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.cpp">
 			<Option target="Crow"/>
 		</Unit>
@@ -255,6 +261,12 @@
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/CollisionDetectionSystem.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/CollisionDetectionSystem.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/MeshRendererSystem.cpp">

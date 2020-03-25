@@ -16,6 +16,7 @@
 #include "../../Engine/Components/Light.h"
 #include "../Components/MoveComponent.h"
 #include "../Systems/MoveSystem.h"
+#include "../../Engine/Components/SphereCollider.h"
 
 void PhysicsTestWorld::Build()
 {
@@ -51,12 +52,14 @@ void PhysicsTestWorld::Build()
     sphere1.AddComponent(MeshInfo{sphereModel,sphereMat});
     sphere1Transform->Translate(glm::vec3(-3,0,0));
     sphere1.AddComponent(MoveComponent{glm::vec3(1,0,0),0.02});
+    sphere1.AddComponent(SphereCollider{1});
 
     EntityHandle sphere2 = CreateEntity();
     Transform* sphere2Transform = sphere2.AddComponent(Transform{});
     sphere2.AddComponent(MeshInfo{sphereModel,sphereMat});
     sphere2Transform->Translate(glm::vec3(3,0,0));
     sphere2.AddComponent(MoveComponent{glm::vec3(-1,0,0),0.02});
+    sphere2.AddComponent(SphereCollider{1});
 
     EntityHandle lightEntity = CreateEntity();
     auto dirLightTransform = lightEntity.AddComponent(Transform{});

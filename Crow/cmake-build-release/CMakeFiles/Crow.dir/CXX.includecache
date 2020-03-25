@@ -24,6 +24,8 @@ glm/glm.hpp
 ../Rendering/AbstractMaterial.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/SphereCollider.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
 glm/glm.hpp
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/glm/glm.hpp
@@ -225,6 +227,8 @@ PhysicsTestWorld.h
 /Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/MoveComponent.h
 ../Systems/MoveSystem.h
 /Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/MoveSystem.h
+../../Engine/Components/SphereCollider.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/SphereCollider.h
 
 /Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/PhysicsTestWorld.h
 ../../Engine/Feather/World.h

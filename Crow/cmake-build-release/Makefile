@@ -204,6 +204,33 @@ Engine/Components/MeshInfo.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Components/MeshInfo.cpp.s
 .PHONY : Engine/Components/MeshInfo.cpp.s
 
+Engine/Components/SphereCollider.o: Engine/Components/SphereCollider.cpp.o
+
+.PHONY : Engine/Components/SphereCollider.o
+
+# target to build an object file
+Engine/Components/SphereCollider.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Components/SphereCollider.cpp.o
+.PHONY : Engine/Components/SphereCollider.cpp.o
+
+Engine/Components/SphereCollider.i: Engine/Components/SphereCollider.cpp.i
+
+.PHONY : Engine/Components/SphereCollider.i
+
+# target to preprocess a source file
+Engine/Components/SphereCollider.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Components/SphereCollider.cpp.i
+.PHONY : Engine/Components/SphereCollider.cpp.i
+
+Engine/Components/SphereCollider.s: Engine/Components/SphereCollider.cpp.s
+
+.PHONY : Engine/Components/SphereCollider.s
+
+# target to generate assembly for a file
+Engine/Components/SphereCollider.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Components/SphereCollider.cpp.s
+.PHONY : Engine/Components/SphereCollider.cpp.s
+
 Engine/Components/Transform.o: Engine/Components/Transform.cpp.o
 
 .PHONY : Engine/Components/Transform.o
@@ -852,6 +879,33 @@ Engine/Rendering/Window.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.s
 .PHONY : Engine/Rendering/Window.cpp.s
 
+Engine/Systems/CollisionDetectionSystem.o: Engine/Systems/CollisionDetectionSystem.cpp.o
+
+.PHONY : Engine/Systems/CollisionDetectionSystem.o
+
+# target to build an object file
+Engine/Systems/CollisionDetectionSystem.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o
+.PHONY : Engine/Systems/CollisionDetectionSystem.cpp.o
+
+Engine/Systems/CollisionDetectionSystem.i: Engine/Systems/CollisionDetectionSystem.cpp.i
+
+.PHONY : Engine/Systems/CollisionDetectionSystem.i
+
+# target to preprocess a source file
+Engine/Systems/CollisionDetectionSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.i
+.PHONY : Engine/Systems/CollisionDetectionSystem.cpp.i
+
+Engine/Systems/CollisionDetectionSystem.s: Engine/Systems/CollisionDetectionSystem.cpp.s
+
+.PHONY : Engine/Systems/CollisionDetectionSystem.s
+
+# target to generate assembly for a file
+Engine/Systems/CollisionDetectionSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.s
+.PHONY : Engine/Systems/CollisionDetectionSystem.cpp.s
+
 Engine/Systems/MeshRendererSystem.o: Engine/Systems/MeshRendererSystem.cpp.o
 
 .PHONY : Engine/Systems/MeshRendererSystem.o
@@ -1275,6 +1329,9 @@ help:
 	@echo "... Engine/Components/MeshInfo.o"
 	@echo "... Engine/Components/MeshInfo.i"
 	@echo "... Engine/Components/MeshInfo.s"
+	@echo "... Engine/Components/SphereCollider.o"
+	@echo "... Engine/Components/SphereCollider.i"
+	@echo "... Engine/Components/SphereCollider.s"
 	@echo "... Engine/Components/Transform.o"
 	@echo "... Engine/Components/Transform.i"
 	@echo "... Engine/Components/Transform.s"
@@ -1347,6 +1404,9 @@ help:
 	@echo "... Engine/Rendering/Window.o"
 	@echo "... Engine/Rendering/Window.i"
 	@echo "... Engine/Rendering/Window.s"
+	@echo "... Engine/Systems/CollisionDetectionSystem.o"
+	@echo "... Engine/Systems/CollisionDetectionSystem.i"
+	@echo "... Engine/Systems/CollisionDetectionSystem.s"
 	@echo "... Engine/Systems/MeshRendererSystem.o"
 	@echo "... Engine/Systems/MeshRendererSystem.i"
 	@echo "... Engine/Systems/MeshRendererSystem.s"
