@@ -182,7 +182,15 @@ GL/glew.h
 GLFW/glfw3.h
 -
 
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/MoveComponent.h
+glm/glm.hpp
+-
+
 /Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/RotateComponent.h
+
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/MoveSystem.h
+../../Engine/Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
 
 /Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RotateSystem.h
 ../../Engine/Feather/System.h
@@ -213,6 +221,10 @@ PhysicsTestWorld.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
 ../../Engine/Components/Light.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h
+../Components/MoveComponent.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/MoveComponent.h
+../Systems/MoveSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/MoveSystem.h
 
 /Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/PhysicsTestWorld.h
 ../../Engine/Feather/World.h

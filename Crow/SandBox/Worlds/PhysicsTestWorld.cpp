@@ -14,18 +14,26 @@
 #include "../../Engine/Feather/EntityHandle.h"
 #include "../../Engine/Components/MeshInfo.h"
 #include "../../Engine/Components/Light.h"
+#include "../Components/MoveComponent.h"
+#include "../Systems/MoveSystem.h"
 
 void PhysicsTestWorld::Build()
 {
     World::Build();
 
+    RegisterSystem<MoveSystem>();
     Game::Instance()->resourceManager->CreateShader("VertexShader.vs","FragmentShader.fs","litShader");
 
     Model* planeModel = Game::Instance()->resourceManager->LoadModel((MODEL_PATH + "plane.obj"),"plane");
+    Model* sphereModel = Game::Instance()->resourceManager->LoadModel((MODEL_PATH + "sphere.obj"),"sphere");
 
     ColorMaterial* mat = new ColorMaterial("litShader");
     mat->mainColor = glm::vec3(0.7,0.7,0.7);
     mat->specularColor = glm::vec3(1);
+    mat->shininess = 16;
+
+    ColorMaterial* sphereMat = new ColorMaterial("litShader");
+    mat->mainColor = glm::vec3(1,1,1);
     mat->shininess = 16;
 
     Transform* camTransform = cameraEntity->GetComponent<Transform>().component;
@@ -37,6 +45,18 @@ void PhysicsTestWorld::Build()
     plane.AddComponent(MeshInfo{planeModel,mat});
     planeTransform->Translate(glm::vec3(0,-2,0));
     planeTransform->Scale(glm::vec3(20,10,10));
+
+    EntityHandle sphere1 = CreateEntity();
+    Transform* sphere1Transform = sphere1.AddComponent(Transform{});
+    sphere1.AddComponent(MeshInfo{sphereModel,sphereMat});
+    sphere1Transform->Translate(glm::vec3(-3,0,0));
+    sphere1.AddComponent(MoveComponent{glm::vec3(1,0,0),0.02});
+
+    EntityHandle sphere2 = CreateEntity();
+    Transform* sphere2Transform = sphere2.AddComponent(Transform{});
+    sphere2.AddComponent(MeshInfo{sphereModel,sphereMat});
+    sphere2Transform->Translate(glm::vec3(3,0,0));
+    sphere2.AddComponent(MoveComponent{glm::vec3(-1,0,0),0.02});
 
     EntityHandle lightEntity = CreateEntity();
     auto dirLightTransform = lightEntity.AddComponent(Transform{});

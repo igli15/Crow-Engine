@@ -987,6 +987,33 @@ Plugins/stb_image.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Plugins/stb_image.cpp.s
 .PHONY : Plugins/stb_image.cpp.s
 
+SandBox/Components/MoveComponent.o: SandBox/Components/MoveComponent.cpp.o
+
+.PHONY : SandBox/Components/MoveComponent.o
+
+# target to build an object file
+SandBox/Components/MoveComponent.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Components/MoveComponent.cpp.o
+.PHONY : SandBox/Components/MoveComponent.cpp.o
+
+SandBox/Components/MoveComponent.i: SandBox/Components/MoveComponent.cpp.i
+
+.PHONY : SandBox/Components/MoveComponent.i
+
+# target to preprocess a source file
+SandBox/Components/MoveComponent.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Components/MoveComponent.cpp.i
+.PHONY : SandBox/Components/MoveComponent.cpp.i
+
+SandBox/Components/MoveComponent.s: SandBox/Components/MoveComponent.cpp.s
+
+.PHONY : SandBox/Components/MoveComponent.s
+
+# target to generate assembly for a file
+SandBox/Components/MoveComponent.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Components/MoveComponent.cpp.s
+.PHONY : SandBox/Components/MoveComponent.cpp.s
+
 SandBox/Components/RotateComponent.o: SandBox/Components/RotateComponent.cpp.o
 
 .PHONY : SandBox/Components/RotateComponent.o
@@ -1040,6 +1067,33 @@ SandBox/MyGame.s: SandBox/MyGame.cpp.s
 SandBox/MyGame.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/MyGame.cpp.s
 .PHONY : SandBox/MyGame.cpp.s
+
+SandBox/Systems/MoveSystem.o: SandBox/Systems/MoveSystem.cpp.o
+
+.PHONY : SandBox/Systems/MoveSystem.o
+
+# target to build an object file
+SandBox/Systems/MoveSystem.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.o
+.PHONY : SandBox/Systems/MoveSystem.cpp.o
+
+SandBox/Systems/MoveSystem.i: SandBox/Systems/MoveSystem.cpp.i
+
+.PHONY : SandBox/Systems/MoveSystem.i
+
+# target to preprocess a source file
+SandBox/Systems/MoveSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.i
+.PHONY : SandBox/Systems/MoveSystem.cpp.i
+
+SandBox/Systems/MoveSystem.s: SandBox/Systems/MoveSystem.cpp.s
+
+.PHONY : SandBox/Systems/MoveSystem.s
+
+# target to generate assembly for a file
+SandBox/Systems/MoveSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.s
+.PHONY : SandBox/Systems/MoveSystem.cpp.s
 
 SandBox/Systems/RotateSystem.o: SandBox/Systems/RotateSystem.cpp.o
 
@@ -1308,12 +1362,18 @@ help:
 	@echo "... Plugins/stb_image.o"
 	@echo "... Plugins/stb_image.i"
 	@echo "... Plugins/stb_image.s"
+	@echo "... SandBox/Components/MoveComponent.o"
+	@echo "... SandBox/Components/MoveComponent.i"
+	@echo "... SandBox/Components/MoveComponent.s"
 	@echo "... SandBox/Components/RotateComponent.o"
 	@echo "... SandBox/Components/RotateComponent.i"
 	@echo "... SandBox/Components/RotateComponent.s"
 	@echo "... SandBox/MyGame.o"
 	@echo "... SandBox/MyGame.i"
 	@echo "... SandBox/MyGame.s"
+	@echo "... SandBox/Systems/MoveSystem.o"
+	@echo "... SandBox/Systems/MoveSystem.i"
+	@echo "... SandBox/Systems/MoveSystem.s"
 	@echo "... SandBox/Systems/RotateSystem.o"
 	@echo "... SandBox/Systems/RotateSystem.i"
 	@echo "... SandBox/Systems/RotateSystem.s"
