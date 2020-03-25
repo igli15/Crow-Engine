@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/EventQueue/Event.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/EventQueue/EventQueue.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/EventQueue/MemberFunctionHandler.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEvent.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/Events/CollisionEvent.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/Feather/ComponentHandle.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.o"

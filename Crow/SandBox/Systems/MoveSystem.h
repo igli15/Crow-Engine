@@ -8,10 +8,15 @@
 
 #include "../../Engine/Feather/System.h"
 
+struct CollisionEvent;
+
+
 class MoveSystem : public System {
 
     void Init() override;
     void Update() override;
+
+    void UpdateMaterials(CollisionEvent* collisionEvent);
 };
 
 

@@ -6,6 +6,7 @@
 #include "../Components/Transform.h"
 #include "../Feather/World.h"
 #include "../Components/SphereCollider.h"
+#include "../Events/CollisionEvent.h"
 
 void CollisionDetectionSystem::Update()
 {
@@ -28,7 +29,7 @@ void CollisionDetectionSystem::Update()
 
             if(distance<= s1.radius * s2.radius)
             {
-                ENGINE_LOG("Boom");
+                world->eventQueue->Publish(new CollisionEvent{EntityHandle{entities[i],world},EntityHandle{entities[j],world}});
             }
         }
     }

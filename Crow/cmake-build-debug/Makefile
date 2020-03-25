@@ -447,6 +447,33 @@ Engine/EventQueue/MemberFunctionHandler.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/EventQueue/MemberFunctionHandler.cpp.s
 .PHONY : Engine/EventQueue/MemberFunctionHandler.cpp.s
 
+Engine/Events/CollisionEvent.o: Engine/Events/CollisionEvent.cpp.o
+
+.PHONY : Engine/Events/CollisionEvent.o
+
+# target to build an object file
+Engine/Events/CollisionEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Events/CollisionEvent.cpp.o
+.PHONY : Engine/Events/CollisionEvent.cpp.o
+
+Engine/Events/CollisionEvent.i: Engine/Events/CollisionEvent.cpp.i
+
+.PHONY : Engine/Events/CollisionEvent.i
+
+# target to preprocess a source file
+Engine/Events/CollisionEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Events/CollisionEvent.cpp.i
+.PHONY : Engine/Events/CollisionEvent.cpp.i
+
+Engine/Events/CollisionEvent.s: Engine/Events/CollisionEvent.cpp.s
+
+.PHONY : Engine/Events/CollisionEvent.s
+
+# target to generate assembly for a file
+Engine/Events/CollisionEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Events/CollisionEvent.cpp.s
+.PHONY : Engine/Events/CollisionEvent.cpp.s
+
 Engine/Feather/ComponentArray.o: Engine/Feather/ComponentArray.cpp.o
 
 .PHONY : Engine/Feather/ComponentArray.o
@@ -1356,6 +1383,9 @@ help:
 	@echo "... Engine/EventQueue/MemberFunctionHandler.o"
 	@echo "... Engine/EventQueue/MemberFunctionHandler.i"
 	@echo "... Engine/EventQueue/MemberFunctionHandler.s"
+	@echo "... Engine/Events/CollisionEvent.o"
+	@echo "... Engine/Events/CollisionEvent.i"
+	@echo "... Engine/Events/CollisionEvent.s"
 	@echo "... Engine/Feather/ComponentArray.o"
 	@echo "... Engine/Feather/ComponentArray.i"
 	@echo "... Engine/Feather/ComponentArray.s"

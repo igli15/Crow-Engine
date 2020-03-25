@@ -6,6 +6,9 @@
 #include "../../Engine/Feather/World.h"
 #include "../Components/MoveComponent.h"
 #include "../../Engine/Components/Transform.h"
+#include "../../Engine/Events/CollisionEvent.h"
+#include "../../Engine/Components/MeshInfo.h"
+#include "../../Engine/Rendering/Materials/ColorMaterial.h"
 
 void MoveSystem::Update()
 {
@@ -22,6 +25,14 @@ void MoveSystem::Update()
     }
 }
 
-void MoveSystem::Init() {
+void MoveSystem::Init()
+{
     System::Init();
+
+    world->eventQueue->Subscribe(this,&MoveSystem::UpdateMaterials);
+}
+
+void MoveSystem::UpdateMaterials(CollisionEvent* collisionEvent)
+{
+    static_cast<ColorMaterial*>(collisionEvent->entity1.GetComponent<MeshInfo>().component->material)->mainColor = glm::vec3(1,0,0);
 }

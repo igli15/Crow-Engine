@@ -8,6 +8,7 @@
 #include "SystemManager.h"
 #include "ComponentManager.h"
 #include "EntityManager.h"
+#include "../EventQueue/EventQueue.h"
 
 
 struct EntityHandle;
@@ -31,6 +32,8 @@ public:
     void RenderAllSystems();
 
     EntityHandle* cameraEntity;
+    EventQueue* eventQueue;
+
 
     /*
     template <typename T>

@@ -15,6 +15,7 @@ void World::Init()
     m_componentManager = new ComponentManager();
     m_entityManager = new EntityManager();
     m_systemManager = new SystemManager();
+    eventQueue = new EventQueue();
 
     RegisterEngineSystems();
 }
