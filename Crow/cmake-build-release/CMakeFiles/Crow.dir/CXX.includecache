@@ -80,6 +80,10 @@ typeindex
 Event.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEnterEvent.h
+../Feather/EntityHandle.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEvent.h
 ../EventQueue/Event.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
@@ -233,6 +237,8 @@ MoveSystem.h
 /Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/MoveSystem.h
 ../../Engine/Feather/System.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+../../Engine/Events/CollisionEnterEvent.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEnterEvent.h
 
 /Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RotateSystem.h
 ../../Engine/Feather/System.h

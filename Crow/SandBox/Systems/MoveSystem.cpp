@@ -32,7 +32,8 @@ void MoveSystem::Init()
     world->eventQueue->Subscribe(this,&MoveSystem::UpdateMaterials);
 }
 
-void MoveSystem::UpdateMaterials(CollisionEvent* collisionEvent)
+void MoveSystem::UpdateMaterials(CollisionEnterEvent* collisionEvent)
 {
+    ENGINE_LOG("CollisionEnter");
     static_cast<ColorMaterial*>(collisionEvent->entity1.GetComponent<MeshInfo>().component->material)->mainColor = glm::vec3(1,0,0);
 }

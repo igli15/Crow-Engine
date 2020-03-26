@@ -7,6 +7,7 @@
 
 
 #include "../../Engine/Feather/System.h"
+#include "../../Engine/Events/CollisionEnterEvent.h"
 
 struct CollisionEvent;
 
@@ -16,7 +17,7 @@ class MoveSystem : public System {
     void Init() override;
     void Update() override;
 
-    void UpdateMaterials(CollisionEvent* collisionEvent);
+    void UpdateMaterials(CollisionEnterEvent* collisionEvent);
 };
 
 

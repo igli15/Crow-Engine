@@ -44,6 +44,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Crow.dir/Engine/Components/SphereCollider.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Events/CollisionEvent.cpp.o"
+  "CMakeFiles/Crow.dir/Engine/Events/CollisionEnterEvent.cpp.o"
+  "CMakeFiles/Crow.dir/Engine/Events/CollisionExitEvent.cpp.o"
   "Crow.pdb"
   "Crow"
 )

@@ -642,6 +642,32 @@ CMakeFiles/Crow.dir/Engine/Events/CollisionEvent.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Events/CollisionEvent.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEvent.cpp" -o CMakeFiles/Crow.dir/Engine/Events/CollisionEvent.cpp.s
 
+CMakeFiles/Crow.dir/Engine/Events/CollisionEnterEvent.cpp.o: CMakeFiles/Crow.dir/flags.make
+CMakeFiles/Crow.dir/Engine/Events/CollisionEnterEvent.cpp.o: ../Engine/Events/CollisionEnterEvent.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/Crow.dir/Engine/Events/CollisionEnterEvent.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Events/CollisionEnterEvent.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEnterEvent.cpp"
+
+CMakeFiles/Crow.dir/Engine/Events/CollisionEnterEvent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Engine/Events/CollisionEnterEvent.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEnterEvent.cpp" > CMakeFiles/Crow.dir/Engine/Events/CollisionEnterEvent.cpp.i
+
+CMakeFiles/Crow.dir/Engine/Events/CollisionEnterEvent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Events/CollisionEnterEvent.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEnterEvent.cpp" -o CMakeFiles/Crow.dir/Engine/Events/CollisionEnterEvent.cpp.s
+
+CMakeFiles/Crow.dir/Engine/Events/CollisionExitEvent.cpp.o: CMakeFiles/Crow.dir/flags.make
+CMakeFiles/Crow.dir/Engine/Events/CollisionExitEvent.cpp.o: ../Engine/Events/CollisionExitEvent.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/Crow.dir/Engine/Events/CollisionExitEvent.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Events/CollisionExitEvent.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionExitEvent.cpp"
+
+CMakeFiles/Crow.dir/Engine/Events/CollisionExitEvent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Engine/Events/CollisionExitEvent.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionExitEvent.cpp" > CMakeFiles/Crow.dir/Engine/Events/CollisionExitEvent.cpp.i
+
+CMakeFiles/Crow.dir/Engine/Events/CollisionExitEvent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Events/CollisionExitEvent.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionExitEvent.cpp" -o CMakeFiles/Crow.dir/Engine/Events/CollisionExitEvent.cpp.s
+
 # Object files for target Crow
 Crow_OBJECTS = \
 "CMakeFiles/Crow.dir/main.cpp.o" \
@@ -688,7 +714,9 @@ Crow_OBJECTS = \
 "CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Components/SphereCollider.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o" \
-"CMakeFiles/Crow.dir/Engine/Events/CollisionEvent.cpp.o"
+"CMakeFiles/Crow.dir/Engine/Events/CollisionEvent.cpp.o" \
+"CMakeFiles/Crow.dir/Engine/Events/CollisionEnterEvent.cpp.o" \
+"CMakeFiles/Crow.dir/Engine/Events/CollisionExitEvent.cpp.o"
 
 # External object files for target Crow
 Crow_EXTERNAL_OBJECTS =
@@ -738,12 +766,14 @@ Crow: CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Components/SphereCollider.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Events/CollisionEvent.cpp.o
+Crow: CMakeFiles/Crow.dir/Engine/Events/CollisionEnterEvent.cpp.o
+Crow: CMakeFiles/Crow.dir/Engine/Events/CollisionExitEvent.cpp.o
 Crow: CMakeFiles/Crow.dir/build.make
 Crow: /usr/local/lib/libglfw.dylib
 Crow: /usr/local/lib/libassimp.dylib
 Crow: /usr/local/lib/libGLEW.dylib
 Crow: CMakeFiles/Crow.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_46) "Linking CXX executable Crow"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_48) "Linking CXX executable Crow"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Crow.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
