@@ -113,13 +113,14 @@ void ComponentArray<T>::RemoveComponentData(Entity entity)
 template<typename T>
 T &ComponentArray<T>::GetComponentData(Entity entity)
 {
+    auto it = m_entityToIndexMap.find(entity);
 
-    if(m_entityToIndexMap.find(entity) == m_entityToIndexMap.end())
+    if(it == m_entityToIndexMap.end())
     {
         ENGINE_LOG_CRITICAL("Component is not added");
     }
 
-    return m_componentsArray[m_entityToIndexMap[entity]];
+    return m_componentsArray[it->second];
 }
 
 template<typename T>

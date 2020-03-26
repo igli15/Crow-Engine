@@ -14,6 +14,7 @@
 #include "../Systems/RotateSystem.h"
 #include "../Components/RotateComponent.h"
 #include "../../Engine/Feather/EntityHandle.h"
+#include "../../Engine/Components/SphereCollider.h"
 
 void RotatingGunsWorld::Build()
 {
@@ -49,6 +50,7 @@ void RotatingGunsWorld::Build()
             gunMeshInfo.material = mat;
             gunEntity.AddComponent(gunMeshInfo);
             gunEntity.AddComponent(RotateComponent{5});
+            //gunEntity.AddComponent(SphereCollider{1});
         }
     }
     //ENGINE_LOG("Here");
