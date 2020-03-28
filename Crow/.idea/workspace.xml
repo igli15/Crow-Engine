@@ -13,25 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf22dce6-4d69-43d0-a044-a31c5cbccc70" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp-4281832a.o.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp-01066d71.o.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Worlds/PhysicsTestWorld.cpp-e855ba6c.o.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp-22fae9ad.o.tmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Core/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Core/Game.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/EventQueue/EventQueue.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/EventQueue/EventQueue.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Feather/ComponentArray.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Feather/ComponentArray.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Feather/ComponentManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Feather/ComponentManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Feather/EntityManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Feather/EntityManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Feather/World.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Feather/World.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/Feather/World.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Feather/World.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Systems/CollisionDetectionSystem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Systems/CollisionDetectionSystem.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SandBox/Systems/MoveSystem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SandBox/Systems/MoveSystem.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SandBox/Worlds/PhysicsTestWorld.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SandBox/Worlds/PhysicsTestWorld.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/Crow" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/Crow" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -110,7 +92,7 @@
           <entry key="cmake" value="37" />
           <entry key="cpp" value="18000" />
           <entry key="fs" value="1749" />
-          <entry key="h" value="27201" />
+          <entry key="h" value="27202" />
           <entry key="txt" value="288" />
           <entry key="vs" value="72" />
         </counts>
@@ -119,7 +101,7 @@
         <counts>
           <entry key="CMakeLists.txt" value="325" />
           <entry key="Doxygen file" value="1" />
-          <entry key="ObjectiveC" value="45200" />
+          <entry key="ObjectiveC" value="45201" />
           <entry key="PLAIN_TEXT" value="1821" />
         </counts>
       </usages-collector>
@@ -147,14 +129,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Engine/Feather/World.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-188">
-              <caret line="174" column="33" selection-start-line="174" selection-start-column="32" selection-end-line="174" selection-end-column="43" />
+            <state relative-caret-position="370">
+              <caret line="176" column="41" selection-start-line="176" selection-start-column="41" selection-end-line="176" selection-end-column="41" />
               <folding>
                 <element signature="e#95#121#0" expanded="true" />
+                <element signature="e#2257#2278#0" expanded="true" />
                 <element signature="e#2422#2470#0" expanded="true" />
+                <element signature="e#2679#2708#0" expanded="true" />
                 <element signature="e#3227#3267#0" expanded="true" />
                 <element signature="e#3691#3703#0" expanded="true" />
                 <element signature="e#4181#4199#0" expanded="true" />
@@ -168,9 +152,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="544">
               <caret line="90" column="49" selection-start-line="90" selection-start-column="49" selection-end-line="90" selection-end-column="49" />
-              <folding>
-                <element signature="e#48#66#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -205,7 +186,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Engine/Feather/ComponentManager.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="479">
@@ -234,8 +215,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Engine/Feather/ComponentArray.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="82" column="9" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
+            <state relative-caret-position="509">
+              <caret line="58" column="39" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
               <folding>
                 <element signature="e#109#132#0" expanded="true" />
               </folding>
@@ -246,8 +227,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SandBox/Systems/MoveSystem.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="233">
+              <caret line="16" column="49" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="49" />
               <folding>
                 <element signature="e#48#71#0" expanded="true" />
               </folding>
@@ -308,12 +289,12 @@
         <option value="$PROJECT_DIR$/Engine/Feather/SystemManager.h" />
         <option value="$PROJECT_DIR$/Engine/Feather/CustomTypeID.h" />
         <option value="$PROJECT_DIR$/Engine/Feather/EntityManager.cpp" />
-        <option value="$PROJECT_DIR$/Engine/Feather/World.h" />
-        <option value="$PROJECT_DIR$/SandBox/Systems/MoveSystem.cpp" />
         <option value="$PROJECT_DIR$/Engine/Feather/World.cpp" />
         <option value="$PROJECT_DIR$/SandBox/Worlds/PhysicsTestWorld.cpp" />
         <option value="$PROJECT_DIR$/Engine/Feather/ComponentArray.h" />
         <option value="$PROJECT_DIR$/Engine/Feather/ComponentManager.h" />
+        <option value="$PROJECT_DIR$/Engine/Feather/World.h" />
+        <option value="$PROJECT_DIR$/SandBox/Systems/MoveSystem.cpp" />
       </list>
     </option>
   </component>
@@ -578,12 +559,12 @@
       <workItem from="1585218733737" duration="9266000" />
       <workItem from="1585302884223" duration="3807000" />
       <workItem from="1585313454980" duration="12078000" />
-      <workItem from="1585390870246" duration="6658000" />
+      <workItem from="1585390870246" duration="7059000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="428086000" />
+    <option name="totallyTimeSpent" value="428487000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -878,17 +859,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Feather/World.h">
+    <entry file="file://$PROJECT_DIR$/Engine/Feather/ComponentManager.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-188">
-          <caret line="174" column="33" selection-start-line="174" selection-start-column="32" selection-end-line="174" selection-end-column="43" />
-          <folding>
-            <element signature="e#95#121#0" expanded="true" />
-            <element signature="e#2422#2470#0" expanded="true" />
-            <element signature="e#3227#3267#0" expanded="true" />
-            <element signature="e#3691#3703#0" expanded="true" />
-            <element signature="e#4181#4199#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="479">
+          <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -896,9 +870,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="90" column="49" selection-start-line="90" selection-start-column="49" selection-end-line="90" selection-end-column="49" />
-          <folding>
-            <element signature="e#48#66#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -914,8 +885,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SandBox/Systems/MoveSystem.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="233">
+          <caret line="16" column="49" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="49" />
           <folding>
             <element signature="e#48#71#0" expanded="true" />
           </folding>
@@ -924,18 +895,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Engine/Feather/ComponentArray.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="82" column="9" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
+        <state relative-caret-position="509">
+          <caret line="58" column="39" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
           <folding>
             <element signature="e#109#132#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Feather/ComponentManager.h">
+    <entry file="file://$PROJECT_DIR$/Engine/Feather/World.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+        <state relative-caret-position="370">
+          <caret line="176" column="41" selection-start-line="176" selection-start-column="41" selection-end-line="176" selection-end-column="41" />
+          <folding>
+            <element signature="e#95#121#0" expanded="true" />
+            <element signature="e#2257#2278#0" expanded="true" />
+            <element signature="e#2422#2470#0" expanded="true" />
+            <element signature="e#2679#2708#0" expanded="true" />
+            <element signature="e#3227#3267#0" expanded="true" />
+            <element signature="e#3691#3703#0" expanded="true" />
+            <element signature="e#4181#4199#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -174,7 +174,7 @@ public:
 
         result = smallestArray->GetEntities();
 
-        if constexpr (sizeof...(Args) > 0) {
+        if constexpr (sizeof...(Args) > 1) {
             QueryNeededEntities<IComponentArray,IComponentArray,Args...>(GetComponentArray<Args>()..., result);
         }
 
