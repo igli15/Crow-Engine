@@ -25,7 +25,9 @@ public:
 
     void Init();
     EntityHandle CreateEntity();
+    void InternalDestroyEntity(Entity entity);
     void DestroyEntity(Entity entity);
+    void ClearEntityGarbage();
 
     void InitAllSystems();
     void UpdateAllSystems();
@@ -146,6 +148,7 @@ public:
         signature.set(ComponentIDGenerator::index<T>);
     }
 
+    /*
     template <typename T>
     std::vector<Entity> EntitiesWith()
     {
@@ -160,6 +163,7 @@ public:
 
         return result;
     }
+     */
 
     template <typename ...Args>
     std::vector<Entity> EntitiesWith()
@@ -171,7 +175,7 @@ public:
         result = smallestArray->GetEntities();
 
         if constexpr (sizeof...(Args) > 0) {
-            QueryNeededEntities<Args...>(GetComponentArray<Args>()..., result);
+            QueryNeededEntities<IComponentArray,IComponentArray,Args...>(GetComponentArray<Args>()..., result);
         }
 
         return result;
@@ -187,13 +191,6 @@ public:
         );
     }
 
-
-    template <typename ...Args>
-    void QueryNeededEntities(ComponentArray<Args>*... componentArrays,std::vector<Entity>& currentList)
-    {
-        auto x = {(QueryNeededEntities(componentArrays,currentList),0)...};
-    }
-
     template <typename T>
     void QueryNeededEntities(ComponentArray<T>* componentArray,std::vector<Entity>& currentList)
     {
@@ -207,12 +204,22 @@ public:
         }
     }
 
+    template <typename T,typename T2,typename ...Args>
+    void QueryNeededEntities(ComponentArray<Args>*... componentArrays,std::vector<Entity>& currentList)
+    {
+        auto x = {(QueryNeededEntities(componentArrays,currentList),0)...};
+    }
+
+
+
 
 private:
 
     ComponentManager* m_componentManager;
     EntityManager* m_entityManager;
     SystemManager* m_systemManager;
+
+    std::vector<Entity> m_entityGarbage;
 
     std::vector<System*> m_allRegisteredSystems;
 

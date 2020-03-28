@@ -28,8 +28,6 @@ Entity EntityManager::CreateEntity()
 
 void EntityManager::DestroyEntity(Entity e)
 {
-    Debug::Assert(e < MAX_ENTITIES, "Entity count can not be negative");
-
     m_signatures[e].reset(); //reset the bitset
     m_entityQueue.push(e); //put it back at the queue
     m_activeEntities--;

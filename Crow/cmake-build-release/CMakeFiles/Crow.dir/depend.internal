@@ -7319,6 +7319,7 @@ CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o
  /usr/local/include/spdlog/version.h
 CMakeFiles/Crow.dir/SandBox/Worlds/PhysicsTestWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Crow.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/SphereCollider.h
@@ -7347,6 +7348,7 @@ CMakeFiles/Crow.dir/SandBox/Worlds/PhysicsTestWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/CollisionDetectionSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/MoveComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/RotateComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/MoveSystem.h
@@ -7571,7 +7573,6 @@ CMakeFiles/Crow.dir/SandBox/Worlds/PhysicsTestWorld.cpp.o
  /usr/local/include/glm/./gtx/polar_coordinates.hpp
  /usr/local/include/glm/./gtx/polar_coordinates.inl
  /usr/local/include/glm/./gtx/projection.hpp
- /usr/local/include/glm/./gtx/projection.inl
  /usr/local/include/glm/./gtx/quaternion.hpp
  /usr/local/include/glm/./gtx/range.hpp
  /usr/local/include/glm/./gtx/raw_data.hpp
@@ -7605,7 +7606,6 @@ CMakeFiles/Crow.dir/SandBox/Worlds/PhysicsTestWorld.cpp.o
  /usr/local/include/glm/./mat3x4.hpp
  /usr/local/include/glm/./mat4x2.hpp
  /usr/local/include/glm/./mat4x3.hpp
- /usr/local/include/glm/./matrix.hpp
  /usr/local/include/glm/./simd/integer.h
  /usr/local/include/glm/common.hpp
  /usr/local/include/glm/detail/./compute_vector_relational.hpp
@@ -7693,6 +7693,8 @@ CMakeFiles/Crow.dir/SandBox/Worlds/PhysicsTestWorld.cpp.o
  /usr/local/include/glm/gtc/quaternion_simd.inl
  /usr/local/include/glm/gtx/norm.hpp
  /usr/local/include/glm/gtx/norm.inl
+ /usr/local/include/glm/gtx/projection.hpp
+ /usr/local/include/glm/gtx/projection.inl
  /usr/local/include/glm/gtx/quaternion.hpp
  /usr/local/include/glm/integer.hpp
  /usr/local/include/glm/mat2x2.hpp

@@ -53,6 +53,8 @@ void Game::Run()
         previous = current;
         lag += elapsed;
 
+        currentWorld->ClearEntityGarbage();
+
         while (lag >= MS_PER_UPDATE)
         {
             currentWorld->UpdateAllSystems();

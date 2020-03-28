@@ -25,7 +25,7 @@ EntityHandle World::CreateEntity()
     return {m_entityManager->CreateEntity(),this};
 }
 
-void World::DestroyEntity(Entity entity)
+void World::InternalDestroyEntity(Entity entity)
 {
     m_entityManager->DestroyEntity(entity);
     m_componentManager->OnEntityDestroyed(entity);
@@ -77,6 +77,23 @@ void World::RegisterEngineSystems()
     RegisterSystem<CollisionDetectionSystem>();
     SetSystemSignature<MeshRendererSystem,Transform,MeshInfo>();
 
+    //SetSystemSignature<CollisionDetectionSystem,Transform,SphereCollider>();
+
+}
+
+void World::DestroyEntity(Entity entity)
+{
+    m_entityGarbage.push_back(entity);
+}
+
+void World::ClearEntityGarbage() 
+{
+    for (int i = m_entityGarbage.size() - 1; i >= 0; i--)
+    {
+        InternalDestroyEntity(m_entityGarbage[i]);
+    }
+
+    m_entityGarbage.clear();
 }
 
 

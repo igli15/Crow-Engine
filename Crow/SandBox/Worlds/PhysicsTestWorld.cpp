@@ -17,12 +17,15 @@
 #include "../Components/MoveComponent.h"
 #include "../Systems/MoveSystem.h"
 #include "../../Engine/Components/SphereCollider.h"
+#include "../../Engine/Components/Camera.h"
+#include "../../Engine/Systems/CollisionDetectionSystem.h"
 
 void PhysicsTestWorld::Build()
 {
     World::Build();
 
     RegisterSystem<MoveSystem>();
+    //SetSystemSignature<CollisionDetectionSystem,Transform,SphereCollider>();
     Game::Instance()->resourceManager->CreateShader("VertexShader.vs","FragmentShader.fs","litShader");
 
     Model* planeModel = Game::Instance()->resourceManager->LoadModel((MODEL_PATH + "plane.obj"),"plane");
@@ -34,8 +37,12 @@ void PhysicsTestWorld::Build()
     mat->shininess = 16;
 
     ColorMaterial* sphereMat = new ColorMaterial("litShader");
-    mat->mainColor = glm::vec3(1,1,1);
-    mat->shininess = 16;
+    sphereMat->mainColor = glm::vec3(1,1,1);
+    sphereMat->shininess = 16;
+
+    ColorMaterial* sphereMat2 = new ColorMaterial("litShader");
+    sphereMat2->mainColor = glm::vec3(1,1,1);
+    sphereMat2->shininess = 16;
 
     Transform* camTransform = cameraEntity->GetComponent<Transform>().component;
     camTransform->Translate(glm::vec3(0,4,6));
@@ -56,7 +63,7 @@ void PhysicsTestWorld::Build()
 
     EntityHandle sphere2 = CreateEntity();
     Transform* sphere2Transform = sphere2.AddComponent(Transform{});
-    sphere2.AddComponent(MeshInfo{sphereModel,sphereMat});
+    sphere2.AddComponent(MeshInfo{sphereModel,sphereMat2});
     sphere2Transform->Translate(glm::vec3(3,0,0));
     sphere2.AddComponent(MoveComponent{glm::vec3(-1,0,0),0.02});
     sphere2.AddComponent(SphereCollider{1});

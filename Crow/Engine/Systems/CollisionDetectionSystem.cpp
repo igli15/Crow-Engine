@@ -16,7 +16,7 @@ void CollisionDetectionSystem::Update()
 
     m_frameCounter += 1;
 
-    auto entities = world->EntitiesWith<SphereCollider,Transform>();
+    auto entities = world->EntitiesWith<Transform,SphereCollider>();
 
     for (int i = 0; i < entities.size(); i++)
     {

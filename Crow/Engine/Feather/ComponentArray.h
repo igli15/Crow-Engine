@@ -24,12 +24,66 @@ class ComponentArray : public IComponentArray {
 
 public:
 
-    T* AddComponentData(Entity entity,T Component);
-    void RemoveComponentData(Entity entity);
+    T* AddComponentData(Entity entity,T Component)
+    {
+        if(m_entityToIndexMap.find(entity) != m_entityToIndexMap.end())
+        {
+            ENGINE_LOG_CRITICAL("Component is already added");
+        }
 
-    T& GetComponentData(Entity entity);
+        size_t index = validSize;
 
-    void OnEntityDestroyed(Entity entity) override;
+        m_entityToIndexMap[entity] = index;
+        m_indexToEntityMap[index] = entity;
+        m_componentsArray[index] = Component;
+
+        ++validSize;
+
+        return &(m_componentsArray[index]);
+    }
+
+    void RemoveComponentData(Entity entity)
+    {
+        if(m_entityToIndexMap.find(entity) == m_entityToIndexMap.end())
+        {
+            ENGINE_LOG_CRITICAL("Component is not added");
+        }
+
+        size_t indexOfElementToRemove = m_entityToIndexMap[entity];
+        size_t indexOfLastElement = validSize - 1;
+
+        m_componentsArray[indexOfElementToRemove] =  m_componentsArray[indexOfLastElement];
+
+        Entity entityOfLastElement = m_indexToEntityMap[indexOfLastElement];
+
+        m_entityToIndexMap[entityOfLastElement] = indexOfElementToRemove;
+        m_indexToEntityMap[indexOfElementToRemove] = entityOfLastElement;
+
+        m_entityToIndexMap.erase(entity);
+        m_indexToEntityMap.erase(indexOfLastElement);
+
+        --validSize;
+    }
+
+    T& GetComponentData(Entity entity)
+    {
+        auto it = m_entityToIndexMap.find(entity);
+
+        if(it == m_entityToIndexMap.end())
+        {
+            ENGINE_LOG_CRITICAL("Component is not added");
+        }
+
+        return m_componentsArray[it->second];
+    }
+
+    void OnEntityDestroyed(Entity entity) override
+    {
+        if (m_entityToIndexMap.find(entity) != m_entityToIndexMap.end())
+        {
+            RemoveComponentData(entity);
+        }
+    }
 
     Entity GetEntityFromIndex(size_t index)
     {
@@ -40,10 +94,11 @@ public:
     {
         std::vector<Entity> result{};
 
-        for (int i = 0; i < validSize; ++i)
+        for (size_t i = 0; i < validSize; ++i)
         {
             result.push_back(m_indexToEntityMap[i]);
         }
+
         return result;
     }
 
@@ -66,71 +121,9 @@ private:
 
 };
 
-template<typename T>
-T* ComponentArray<T>::AddComponentData(Entity entity, T Component)
-{
 
-    if(m_entityToIndexMap.find(entity) != m_entityToIndexMap.end())
-    {
-        ENGINE_LOG_CRITICAL("Component is already added");
-    }
 
-    size_t index = validSize;
 
-    m_entityToIndexMap[entity] = index;
-    m_indexToEntityMap[index] = entity;
-    m_componentsArray[index] = Component;
-
-    ++validSize;
-
-    return &(m_componentsArray[index]);
-}
-
-template<typename T>
-void ComponentArray<T>::RemoveComponentData(Entity entity)
-{
-
-    if(m_entityToIndexMap.find(entity) == m_entityToIndexMap.end())
-    {
-        ENGINE_LOG_CRITICAL("Component is not added");
-    }
-
-    size_t indexOfElementToRemove = m_entityToIndexMap[entity];
-    size_t indexOfLastElement = validSize - 1;
-
-    m_componentsArray[indexOfElementToRemove] =  m_componentsArray[indexOfLastElement];
-
-    Entity entityOfLastElement = m_indexToEntityMap[indexOfLastElement];
-    m_entityToIndexMap[entityOfLastElement] = indexOfElementToRemove;
-    m_indexToEntityMap[indexOfElementToRemove] = entityOfLastElement;
-
-    m_entityToIndexMap.erase(entity);
-    m_indexToEntityMap.erase(indexOfElementToRemove);
-
-    --validSize;
-}
-
-template<typename T>
-T &ComponentArray<T>::GetComponentData(Entity entity)
-{
-    auto it = m_entityToIndexMap.find(entity);
-
-    if(it == m_entityToIndexMap.end())
-    {
-        ENGINE_LOG_CRITICAL("Component is not added");
-    }
-
-    return m_componentsArray[it->second];
-}
-
-template<typename T>
-void ComponentArray<T>::OnEntityDestroyed(Entity entity)
-{
-    if (m_entityToIndexMap.find(entity) != m_entityToIndexMap.end())
-    {
-        RemoveComponentData(entity);
-    }
-}
 
 
 #endif //CROW_COMPONENTARRAY_H

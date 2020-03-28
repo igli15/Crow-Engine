@@ -16,6 +16,7 @@ void MoveSystem::Update()
 
     auto entities = world->EntitiesWith<Transform,MoveComponent>();
 
+    //ENGINE_LOG(entities.size());
     for (int i = 0; i < entities.size(); ++i)
     {
         MoveComponent& moveComponent = world->GetComponent<MoveComponent>(entities[i]);
@@ -23,6 +24,7 @@ void MoveSystem::Update()
 
         transform.Translate(moveComponent.direction * moveComponent.speed);
     }
+
 }
 
 void MoveSystem::Init()
@@ -34,6 +36,8 @@ void MoveSystem::Init()
 
 void MoveSystem::UpdateMaterials(CollisionEnterEvent* collisionEvent)
 {
-    //ENGINE_LOG("CollisionEnter");
+    ENGINE_LOG("CollisionEnter");
     static_cast<ColorMaterial*>(collisionEvent->entity1.GetComponent<MeshInfo>().component->material)->mainColor = glm::vec3(1,0,0);
+    world->DestroyEntity(collisionEvent->entity1.entity);
+    //world->DestroyEntity(collisionEvent->entity2.entity);
 }

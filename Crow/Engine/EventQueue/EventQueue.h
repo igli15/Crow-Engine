@@ -30,6 +30,7 @@ public:
         {
             if (handler != nullptr) {
                 handler->Execute(event);
+                delete event;
             }
         }
     }

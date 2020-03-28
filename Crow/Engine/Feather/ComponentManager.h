@@ -33,9 +33,12 @@ public:
 
     void OnEntityDestroyed(Entity entity)
     {
-        for (auto const& componentArray : m_allComponentArrays)
+        for (int i = 0; i<arrayCount ; ++i)
         {
-            componentArray->OnEntityDestroyed(entity);
+            if(m_allComponentArrays[i] != nullptr)
+            {
+                m_allComponentArrays[i]->OnEntityDestroyed(entity);
+            }
         }
     }
 
@@ -44,47 +47,10 @@ public:
 
 private:
 
-    //TODO get rid of the maps
-    //std::unordered_map<const char*, ComponentType> m_componentTypes{};
-    //std::unordered_map<const char*,IComponentArray*> m_componentArrays{};
-
     std::array<IComponentArray*,MAX_COMPONENTS> m_allComponentArrays;
-
-    ComponentType m_componentTypeCount;
-
-
-
+    int arrayCount = 0;
 };
 
-/*
-template<typename T>
-void ComponentManager::RegisterComponent()
-{
-    const char* typeName = typeid(T).name();
-
-    Debug::Assert(m_componentTypes.find(typeName) == m_componentTypes.end(),"Component is already registered");
-
-    m_componentTypes[typeName] = m_componentTypeCount;
-
-    m_componentArrays[typeName] = new ComponentArray<T>();
-
-    m_componentTypeCount++;
-}
- */
-
-/*
-
-template<typename T>
-ComponentType ComponentManager::GetComponentType()
-{
-    const char* typeName = typeid(T).name();
-
-    Debug::Assert(m_componentTypes.find(typeName) != m_componentTypes.end(),"Component is not registered");
-
-    return m_componentTypes[typeName];
-
-}
- */
 
 template<typename T>
 ComponentArray<T> *ComponentManager::GetComponentArray()
@@ -95,6 +61,7 @@ ComponentArray<T> *ComponentManager::GetComponentArray()
     {
         array = new ComponentArray<T>;
         m_allComponentArrays[ComponentIDGenerator::index<T>] = array;
+        arrayCount++;
         return array;
     } else
     {
