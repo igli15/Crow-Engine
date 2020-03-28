@@ -94,11 +94,11 @@ public:
     {
         std::vector<Entity> result{};
 
-        for (size_t i = 0; i < validSize; ++i)
+        for (auto it = m_entityToIndexMap.begin(); it != m_entityToIndexMap.end() ; it++)
         {
-            result.push_back(m_indexToEntityMap[i]);
+            result.push_back(it->first);
         }
-
+        
         return result;
     }
 
