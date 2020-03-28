@@ -525,22 +525,9 @@ CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.s: cmake_for
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/TranslucentMaterialTestWorld.cpp" -o CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.s
 
-CMakeFiles/Crow.dir/Engine/EventQueue/Event.cpp.o: CMakeFiles/Crow.dir/flags.make
-CMakeFiles/Crow.dir/Engine/EventQueue/Event.cpp.o: ../Engine/EventQueue/Event.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/Crow.dir/Engine/EventQueue/Event.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/EventQueue/Event.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.cpp"
-
-CMakeFiles/Crow.dir/Engine/EventQueue/Event.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Engine/EventQueue/Event.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.cpp" > CMakeFiles/Crow.dir/Engine/EventQueue/Event.cpp.i
-
-CMakeFiles/Crow.dir/Engine/EventQueue/Event.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/EventQueue/Event.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.cpp" -o CMakeFiles/Crow.dir/Engine/EventQueue/Event.cpp.s
-
 CMakeFiles/Crow.dir/Engine/EventQueue/EventQueue.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Engine/EventQueue/EventQueue.cpp.o: ../Engine/EventQueue/EventQueue.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/Crow.dir/Engine/EventQueue/EventQueue.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/Crow.dir/Engine/EventQueue/EventQueue.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/EventQueue/EventQueue.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.cpp"
 
 CMakeFiles/Crow.dir/Engine/EventQueue/EventQueue.cpp.i: cmake_force
@@ -553,7 +540,7 @@ CMakeFiles/Crow.dir/Engine/EventQueue/EventQueue.cpp.s: cmake_force
 
 CMakeFiles/Crow.dir/Engine/EventQueue/MemberFunctionHandler.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Engine/EventQueue/MemberFunctionHandler.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/Crow.dir/Engine/EventQueue/MemberFunctionHandler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/Crow.dir/Engine/EventQueue/MemberFunctionHandler.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/EventQueue/MemberFunctionHandler.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.cpp"
 
 CMakeFiles/Crow.dir/Engine/EventQueue/MemberFunctionHandler.cpp.i: cmake_force
@@ -566,7 +553,7 @@ CMakeFiles/Crow.dir/Engine/EventQueue/MemberFunctionHandler.cpp.s: cmake_force
 
 CMakeFiles/Crow.dir/SandBox/Worlds/PhysicsTestWorld.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/SandBox/Worlds/PhysicsTestWorld.cpp.o: ../SandBox/Worlds/PhysicsTestWorld.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/Crow.dir/SandBox/Worlds/PhysicsTestWorld.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/Crow.dir/SandBox/Worlds/PhysicsTestWorld.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/SandBox/Worlds/PhysicsTestWorld.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/PhysicsTestWorld.cpp"
 
 CMakeFiles/Crow.dir/SandBox/Worlds/PhysicsTestWorld.cpp.i: cmake_force
@@ -579,7 +566,7 @@ CMakeFiles/Crow.dir/SandBox/Worlds/PhysicsTestWorld.cpp.s: cmake_force
 
 CMakeFiles/Crow.dir/SandBox/Components/MoveComponent.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/SandBox/Components/MoveComponent.cpp.o: ../SandBox/Components/MoveComponent.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/Crow.dir/SandBox/Components/MoveComponent.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/Crow.dir/SandBox/Components/MoveComponent.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/SandBox/Components/MoveComponent.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/MoveComponent.cpp"
 
 CMakeFiles/Crow.dir/SandBox/Components/MoveComponent.cpp.i: cmake_force
@@ -592,7 +579,7 @@ CMakeFiles/Crow.dir/SandBox/Components/MoveComponent.cpp.s: cmake_force
 
 CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.o: ../SandBox/Systems/MoveSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/MoveSystem.cpp"
 
 CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.i: cmake_force
@@ -605,7 +592,7 @@ CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.s: cmake_force
 
 CMakeFiles/Crow.dir/Engine/Components/SphereCollider.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Engine/Components/SphereCollider.cpp.o: ../Engine/Components/SphereCollider.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/Crow.dir/Engine/Components/SphereCollider.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/Crow.dir/Engine/Components/SphereCollider.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Components/SphereCollider.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/SphereCollider.cpp"
 
 CMakeFiles/Crow.dir/Engine/Components/SphereCollider.cpp.i: cmake_force
@@ -618,7 +605,7 @@ CMakeFiles/Crow.dir/Engine/Components/SphereCollider.cpp.s: cmake_force
 
 CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o: ../Engine/Systems/CollisionDetectionSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/CollisionDetectionSystem.cpp"
 
 CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.i: cmake_force
@@ -628,45 +615,6 @@ CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.i: cmake_force
 CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/CollisionDetectionSystem.cpp" -o CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.s
-
-CMakeFiles/Crow.dir/Engine/Events/CollisionEvent.cpp.o: CMakeFiles/Crow.dir/flags.make
-CMakeFiles/Crow.dir/Engine/Events/CollisionEvent.cpp.o: ../Engine/Events/CollisionEvent.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/Crow.dir/Engine/Events/CollisionEvent.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Events/CollisionEvent.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEvent.cpp"
-
-CMakeFiles/Crow.dir/Engine/Events/CollisionEvent.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Engine/Events/CollisionEvent.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEvent.cpp" > CMakeFiles/Crow.dir/Engine/Events/CollisionEvent.cpp.i
-
-CMakeFiles/Crow.dir/Engine/Events/CollisionEvent.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Events/CollisionEvent.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEvent.cpp" -o CMakeFiles/Crow.dir/Engine/Events/CollisionEvent.cpp.s
-
-CMakeFiles/Crow.dir/Engine/Events/CollisionEnterEvent.cpp.o: CMakeFiles/Crow.dir/flags.make
-CMakeFiles/Crow.dir/Engine/Events/CollisionEnterEvent.cpp.o: ../Engine/Events/CollisionEnterEvent.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/Crow.dir/Engine/Events/CollisionEnterEvent.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Events/CollisionEnterEvent.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEnterEvent.cpp"
-
-CMakeFiles/Crow.dir/Engine/Events/CollisionEnterEvent.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Engine/Events/CollisionEnterEvent.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEnterEvent.cpp" > CMakeFiles/Crow.dir/Engine/Events/CollisionEnterEvent.cpp.i
-
-CMakeFiles/Crow.dir/Engine/Events/CollisionEnterEvent.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Events/CollisionEnterEvent.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEnterEvent.cpp" -o CMakeFiles/Crow.dir/Engine/Events/CollisionEnterEvent.cpp.s
-
-CMakeFiles/Crow.dir/Engine/Events/CollisionExitEvent.cpp.o: CMakeFiles/Crow.dir/flags.make
-CMakeFiles/Crow.dir/Engine/Events/CollisionExitEvent.cpp.o: ../Engine/Events/CollisionExitEvent.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/Crow.dir/Engine/Events/CollisionExitEvent.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Events/CollisionExitEvent.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionExitEvent.cpp"
-
-CMakeFiles/Crow.dir/Engine/Events/CollisionExitEvent.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Engine/Events/CollisionExitEvent.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionExitEvent.cpp" > CMakeFiles/Crow.dir/Engine/Events/CollisionExitEvent.cpp.i
-
-CMakeFiles/Crow.dir/Engine/Events/CollisionExitEvent.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Events/CollisionExitEvent.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionExitEvent.cpp" -o CMakeFiles/Crow.dir/Engine/Events/CollisionExitEvent.cpp.s
 
 # Object files for target Crow
 Crow_OBJECTS = \
@@ -706,17 +654,13 @@ Crow_OBJECTS = \
 "CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Components/Light.cpp.o" \
 "CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o" \
-"CMakeFiles/Crow.dir/Engine/EventQueue/Event.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/EventQueue/EventQueue.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/EventQueue/MemberFunctionHandler.cpp.o" \
 "CMakeFiles/Crow.dir/SandBox/Worlds/PhysicsTestWorld.cpp.o" \
 "CMakeFiles/Crow.dir/SandBox/Components/MoveComponent.cpp.o" \
 "CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Components/SphereCollider.cpp.o" \
-"CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o" \
-"CMakeFiles/Crow.dir/Engine/Events/CollisionEvent.cpp.o" \
-"CMakeFiles/Crow.dir/Engine/Events/CollisionEnterEvent.cpp.o" \
-"CMakeFiles/Crow.dir/Engine/Events/CollisionExitEvent.cpp.o"
+"CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o"
 
 # External object files for target Crow
 Crow_EXTERNAL_OBJECTS =
@@ -757,7 +701,6 @@ Crow: CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o
 Crow: CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Components/Light.cpp.o
 Crow: CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o
-Crow: CMakeFiles/Crow.dir/Engine/EventQueue/Event.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/EventQueue/EventQueue.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/EventQueue/MemberFunctionHandler.cpp.o
 Crow: CMakeFiles/Crow.dir/SandBox/Worlds/PhysicsTestWorld.cpp.o
@@ -765,15 +708,12 @@ Crow: CMakeFiles/Crow.dir/SandBox/Components/MoveComponent.cpp.o
 Crow: CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Components/SphereCollider.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o
-Crow: CMakeFiles/Crow.dir/Engine/Events/CollisionEvent.cpp.o
-Crow: CMakeFiles/Crow.dir/Engine/Events/CollisionEnterEvent.cpp.o
-Crow: CMakeFiles/Crow.dir/Engine/Events/CollisionExitEvent.cpp.o
 Crow: CMakeFiles/Crow.dir/build.make
 Crow: /usr/local/lib/libglfw.dylib
 Crow: /usr/local/lib/libassimp.dylib
 Crow: /usr/local/lib/libGLEW.dylib
 Crow: CMakeFiles/Crow.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_48) "Linking CXX executable Crow"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_44) "Linking CXX executable Crow"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Crow.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

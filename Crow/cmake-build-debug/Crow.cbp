@@ -143,9 +143,6 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.cpp">
-			<Option target="Crow"/>
-		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h">
 			<Option target="Crow"/>
 		</Unit>
@@ -161,19 +158,10 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEnterEvent.cpp">
-			<Option target="Crow"/>
-		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEnterEvent.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEvent.cpp">
-			<Option target="Crow"/>
-		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEvent.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionExitEvent.cpp">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionExitEvent.h">
