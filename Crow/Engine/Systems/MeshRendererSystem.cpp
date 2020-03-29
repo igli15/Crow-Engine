@@ -27,7 +27,7 @@ void MeshRendererSystem::Render()
         Transform* cameraTransform = world->cameraEntity->GetComponent<Transform>().component;
         Camera* camera=  world->cameraEntity->GetComponent<Camera>().component;
 
-        meshInfo.material->Render(meshInfo.model,transform.GetLocalTransform(),glm::inverse(cameraTransform->GetLocalTransform()),camera->GetProjection()
+        meshInfo.material->Render(meshInfo.model,transform.GetWorldTransform(),glm::inverse(cameraTransform->GetWorldTransform()),camera->GetProjection()
                                      ,cameraTransform->LocalPosition(),world);
     }
 

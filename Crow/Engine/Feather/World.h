@@ -99,6 +99,8 @@ public:
         T* system  =m_systemManager->RegisterSystem<T>();
         system->world = this;
         m_allRegisteredSystems.push_back(system);
+        system->OnCreate();
+
         return system;
     }
 

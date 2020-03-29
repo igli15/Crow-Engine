@@ -16,13 +16,13 @@ void TransformHierarchySystem::OnCreate()
 void TransformHierarchySystem::OnTransformRemoved(OnEntityDestroyedEvent* event)
 {
     Transform& t = world->GetComponent<Transform>(event->entity);
-
-    ENGINE_LOG(t.LocalPosition().x);
+    t.DestroyAllChildrenEntities();
 }
 
 void TransformHierarchySystem::OnComponentAdded(ComponentAddedEvent<Transform> *event)
 {
-    ENGINE_LOG("Transform created");
+    event->component->m_contextWorld = world;
+    event->component->owner = event->entity;
 
 }
 

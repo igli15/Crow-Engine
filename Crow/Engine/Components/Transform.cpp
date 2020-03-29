@@ -10,6 +10,8 @@
 
 #include "glm/gtc/quaternion.hpp"
 #include "../Debug/Debug.h"
+#include "../Feather/World.h"
+
 
 const glm::mat4& Transform::GetLocalTransform()
 {
@@ -55,8 +57,33 @@ glm::vec3 Transform::LocalPosition()
 
 const glm::mat4 &Transform::GetWorldTransform()
 {
+    if(m_parentTransform == nullptr) return m_localTransform;
+
+    m_worldTransform = m_parentTransform->GetWorldTransform() * m_localTransform;
+
     return m_worldTransform;
 }
 
+void Transform::SetParent(Transform *transform)
+{
+    if(m_parentTransform != nullptr)
+    {
+        m_parentTransform->m_childrens.erase(std::find(m_childrens.begin(),m_childrens.end(),owner));
+    }
+
+    m_parentTransform = transform;
+
+    if(transform!= nullptr) {
+        transform->m_childrens.push_back(this->owner);
+    }
+}
+
+void Transform::DestroyAllChildrenEntities() 
+{
+    for (int i = 0; i < m_childrens.size(); ++i)
+    {
+        m_contextWorld->DestroyEntity(m_childrens[i]);
+    }
+}
 
 

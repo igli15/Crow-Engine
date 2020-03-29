@@ -13,47 +13,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf22dce6-4d69-43d0-a044-a31c5cbccc70" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Engine/Events/ComponentAddedEvent.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Engine/Events/ComponentAddedEvent.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Engine/Events/EntityEvents.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Engine/Systems/TransformHierarchySystem.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Engine/Systems/TransformHierarchySystem.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/Components/Transform.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Components/Transform.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/Components/Transform.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Components/Transform.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/EventQueue/Event.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/EventQueue/Event.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/EventQueue/EventQueue.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/EventQueue/EventQueue.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Events/CollisionEnterEvent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Events/CollisionEnterEvent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Events/CollisionEvent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Events/CollisionEvent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Events/CollisionExitEvent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Events/CollisionExitEvent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Feather/ComponentArray.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Feather/ComponentArray.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Feather/System.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Feather/System.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Feather/Types.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Feather/Types.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Feather/World.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Feather/World.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/Feather/World.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Feather/World.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Crow.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Crow.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/Crow" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/Crow" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/Crow.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/Crow.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Systems/MeshRendererSystem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Systems/MeshRendererSystem.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Systems/TransformHierarchySystem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Systems/TransformHierarchySystem.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SandBox/Worlds/PhysicsTestWorld.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SandBox/Worlds/PhysicsTestWorld.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -112,9 +77,9 @@
         <counts>
           <entry key="cmake" value="21" />
           <entry key="cmake " value="1" />
-          <entry key="cpp" value="276" />
+          <entry key="cpp" value="279" />
           <entry key="fs" value="12" />
-          <entry key="h" value="368" />
+          <entry key="h" value="370" />
           <entry key="obj" value="2" />
           <entry key="txt" value="9" />
           <entry key="vs" value="11" />
@@ -123,16 +88,16 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="30" />
-          <entry key="ObjectiveC" value="644" />
+          <entry key="ObjectiveC" value="649" />
           <entry key="PLAIN_TEXT" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cmake" value="37" />
-          <entry key="cpp" value="18874" />
+          <entry key="cpp" value="19269" />
           <entry key="fs" value="1749" />
-          <entry key="h" value="29642" />
+          <entry key="h" value="29808" />
           <entry key="txt" value="288" />
           <entry key="vs" value="72" />
         </counts>
@@ -141,7 +106,7 @@
         <counts>
           <entry key="CMakeLists.txt" value="325" />
           <entry key="Doxygen file" value="1" />
-          <entry key="ObjectiveC" value="48515" />
+          <entry key="ObjectiveC" value="49076" />
           <entry key="PLAIN_TEXT" value="1821" />
         </counts>
       </usages-collector>
@@ -181,12 +146,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Engine/Feather/World.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-773">
-              <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+            <state relative-caret-position="273">
+              <caret line="102" selection-start-line="102" selection-end-line="102" />
               <folding>
+                <element signature="e#95#121#0" expanded="true" />
                 <element signature="e#775#787#0" expanded="true" />
                 <element signature="e#1209#1221#0" expanded="true" />
                 <element signature="e#1608#1620#0" expanded="true" />
@@ -198,19 +164,60 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Engine/Events/CollisionEnterEvent.h">
+        <entry file="file://$PROJECT_DIR$/SandBox/Worlds/LightingTestWorld.h">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SandBox/Worlds/PhysicsTestWorld.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+            <state relative-caret-position="629">
+              <caret line="74" column="50" selection-start-line="74" selection-start-column="50" selection-end-line="74" selection-end-column="50" />
+              <folding>
+                <element signature="e#48#77#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Engine/Systems/TransformHierarchySystem.cpp">
+        <entry file="file://$PROJECT_DIR$/Engine/Components/Transform.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="31">
+              <caret line="58" column="1" lean-forward="true" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+              <folding>
+                <element signature="e#48#70#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Engine/Systems/MeshRendererSystem.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="528">
-              <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+              <caret line="29" column="128" selection-start-line="29" selection-start-column="128" selection-end-line="29" selection-end-column="128" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Engine/Components/Transform.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="386">
+              <caret line="37" column="35" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="35" />
+              <folding>
+                <element signature="e#99#121#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Engine/Systems/TransformHierarchySystem.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
               <folding>
                 <element signature="e#48#85#0" expanded="true" />
               </folding>
@@ -221,9 +228,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Engine/EventQueue/EventQueue.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+            <state relative-caret-position="109">
+              <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
               <folding>
+                <element signature="e#102#136#0" expanded="true" />
                 <element signature="e#692#718#0" expanded="true" />
               </folding>
             </state>
@@ -237,45 +245,6 @@
               <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
               <folding>
                 <element signature="e#128#158#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Engine/Feather/System.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Engine/Feather/World.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="687">
-              <caret line="89" column="4" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="4" />
-              <folding>
-                <element signature="e#48#66#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Engine/Events/ComponentAddedEvent.cpp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Engine/Events/ComponentAddedEvent.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="92" selection-start-line="18" selection-start-column="92" selection-end-line="18" selection-end-column="92" />
-              <folding>
-                <element signature="e#120#149#0" expanded="true" />
-                <element signature="e#193#205#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -312,19 +281,16 @@
         <option value="$PROJECT_DIR$/SandBox/MyGame.cpp" />
         <option value="$PROJECT_DIR$/SandBox/Worlds/RotatingGunsWorld.cpp" />
         <option value="$PROJECT_DIR$/Engine/Core/Game.cpp" />
-        <option value="$PROJECT_DIR$/Engine/Systems/MeshRendererSystem.cpp" />
         <option value="$PROJECT_DIR$/Engine/Systems/CollisionDetectionSystem.cpp" />
         <option value="$PROJECT_DIR$/Engine/Feather/SystemManager.h" />
         <option value="$PROJECT_DIR$/Engine/Feather/CustomTypeID.h" />
         <option value="$PROJECT_DIR$/Engine/Feather/EntityManager.cpp" />
-        <option value="$PROJECT_DIR$/SandBox/Worlds/PhysicsTestWorld.cpp" />
         <option value="$PROJECT_DIR$/SandBox/Systems/MoveSystem.cpp" />
         <option value="$PROJECT_DIR$/Engine/Feather/ComponentManager.h" />
         <option value="$PROJECT_DIR$/Engine/Feather/ComponentArray.h" />
         <option value="$PROJECT_DIR$/Engine/Events/EntityEventes.h" />
         <option value="$PROJECT_DIR$/Engine/Systems/TransformHiearchySystem.cpp" />
         <option value="$PROJECT_DIR$/Engine/Feather/Types.h" />
-        <option value="$PROJECT_DIR$/Engine/Components/Transform.cpp" />
         <option value="$PROJECT_DIR$/Engine/Events/ComponentRemovedEvent.h" />
         <option value="$PROJECT_DIR$/Engine/Systems/TransformHiearchySystem.h" />
         <option value="$PROJECT_DIR$/Engine/EventQueue/Event.h" />
@@ -332,14 +298,17 @@
         <option value="$PROJECT_DIR$/Engine/Events/CollisionEvent.h" />
         <option value="$PROJECT_DIR$/Engine/Events/CollisionExitEvent.h" />
         <option value="$PROJECT_DIR$/Engine/Events/EntityEvents.h" />
-        <option value="$PROJECT_DIR$/Engine/Components/Transform.h" />
         <option value="$PROJECT_DIR$/Engine/Feather/World.cpp" />
         <option value="$PROJECT_DIR$/Engine/EventQueue/EventQueue.h" />
         <option value="$PROJECT_DIR$/Engine/Feather/System.h" />
-        <option value="$PROJECT_DIR$/Engine/Systems/TransformHierarchySystem.cpp" />
         <option value="$PROJECT_DIR$/Engine/Systems/TransformHierarchySystem.h" />
         <option value="$PROJECT_DIR$/Engine/Events/ComponentAddedEvent.h" />
         <option value="$PROJECT_DIR$/Engine/Feather/World.h" />
+        <option value="$PROJECT_DIR$/Engine/Components/Transform.h" />
+        <option value="$PROJECT_DIR$/Engine/Components/Transform.cpp" />
+        <option value="$PROJECT_DIR$/Engine/Systems/MeshRendererSystem.cpp" />
+        <option value="$PROJECT_DIR$/SandBox/Worlds/PhysicsTestWorld.cpp" />
+        <option value="$PROJECT_DIR$/Engine/Systems/TransformHierarchySystem.cpp" />
       </list>
     </option>
   </component>
@@ -625,12 +594,12 @@
       <workItem from="1585313454980" duration="12078000" />
       <workItem from="1585390870246" duration="7059000" />
       <workItem from="1585478016937" duration="7768000" />
-      <workItem from="1585492808483" duration="6159000" />
+      <workItem from="1585492808483" duration="8099000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="443870000" />
+    <option name="totallyTimeSpent" value="445810000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -701,18 +670,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Engine/Components/SphereCollider.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Engine/Components/SphereCollider.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Systems/MeshRendererSystem.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Engine/Feather/EntityHandle.h">
       <provider selected="true" editor-type-id="text-editor">
@@ -764,16 +727,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SandBox/Components/MoveComponent.cpp">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SandBox/Worlds/PhysicsTestWorld.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
-          <folding>
-            <element signature="e#48#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Engine/Components/Camera.h">
       <provider selected="true" editor-type-id="text-editor" />
@@ -866,16 +819,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Components/Transform.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
-          <folding>
-            <element signature="e#48#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Engine/Feather/Types.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -917,13 +860,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Components/Transform.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Engine/Events/CollisionEnterEvent.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -941,28 +877,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Events/EntityEvents.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="12" />
-          <folding>
-            <element signature="e#108#140#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Engine/Events/ComponentAddedEvent.cpp">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/EventQueue/EventQueue.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
-          <folding>
-            <element signature="e#692#718#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Engine/Feather/System.h">
       <provider selected="true" editor-type-id="text-editor">
@@ -992,26 +908,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Systems/TransformHierarchySystem.cpp">
+    <entry file="file://$PROJECT_DIR$/Engine/EventQueue/EventQueue.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+          <folding>
+            <element signature="e#102#136#0" expanded="true" />
+            <element signature="e#692#718#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Engine/Events/EntityEvents.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="12" />
+          <folding>
+            <element signature="e#108#140#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Engine/Components/Transform.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="37" column="35" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="35" />
+          <folding>
+            <element signature="e#99#121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Engine/Systems/MeshRendererSystem.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
-          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+          <caret line="29" column="128" selection-start-line="29" selection-start-column="128" selection-end-line="29" selection-end-column="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Engine/Components/Transform.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="58" column="1" lean-forward="true" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
           <folding>
-            <element signature="e#48#85#0" expanded="true" />
+            <element signature="e#48#70#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Engine/Feather/World.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-773">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+        <state relative-caret-position="273">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
           <folding>
+            <element signature="e#95#121#0" expanded="true" />
             <element signature="e#775#787#0" expanded="true" />
             <element signature="e#1209#1221#0" expanded="true" />
             <element signature="e#1608#1620#0" expanded="true" />
             <element signature="e#1742#1754#0" expanded="true" />
             <element signature="e#2033#2045#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SandBox/Worlds/LightingTestWorld.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SandBox/Worlds/PhysicsTestWorld.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="74" column="50" selection-start-line="74" selection-start-column="50" selection-end-line="74" selection-end-column="50" />
+          <folding>
+            <element signature="e#48#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Engine/Systems/TransformHierarchySystem.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+          <folding>
+            <element signature="e#48#85#0" expanded="true" />
           </folding>
         </state>
       </provider>

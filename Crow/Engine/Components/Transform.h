@@ -11,9 +11,9 @@
 #include <glm/gtx/quaternion.hpp>
 #include <vector>
 
+class World;
 struct Transform {
 
-    class World;
     friend class TransformHierarchySystem;
 
 public:
@@ -31,8 +31,10 @@ public:
     glm::vec3 LocalPosition();
 
     //TODO Implement these
-    void SetParent(World* world,Entity  parent);
-    void UnParent();
+    void SetParent(Transform* transform);
+    void AddChild(Entity entity);
+    void RemoveChild(Entity entity);
+
     void DestroyAllChildrenEntities();
 
 private:
@@ -43,6 +45,8 @@ private:
     Transform* m_parentTransform = nullptr;
     World* m_contextWorld;
     Entity owner;
+
+    //void SetWorld(World* world);
 };
 
 

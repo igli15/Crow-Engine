@@ -68,6 +68,13 @@ void PhysicsTestWorld::Build()
     sphere2.AddComponent(MoveComponent{glm::vec3(-1,0,0),0.02});
     sphere2.AddComponent(SphereCollider{1});
 
+    EntityHandle sphere3 = CreateEntity();
+    Transform* sphere3Transform = sphere3.AddComponent(Transform{});
+    sphere3.AddComponent(MeshInfo{sphereModel,sphereMat2});
+    sphere3Transform->Translate(glm::vec3(4,1,0));
+    sphere3Transform->SetParent(sphere2Transform);
+
+
     EntityHandle lightEntity = CreateEntity();
     auto dirLightTransform = lightEntity.AddComponent(Transform{});
     dirLightTransform->Rotate(-45,glm::vec3(1,0,0));
