@@ -21,6 +21,7 @@ private:
 
 public:
     virtual void Init();
+    virtual void LoadAssets();
     void InitWorld();
     void Run();
 

@@ -44,6 +44,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Events/ComponentAddedEvent.cpp.o"
+  "CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o"
   "Crow.pdb"
   "Crow"
 )

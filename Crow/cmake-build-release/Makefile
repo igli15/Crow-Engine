@@ -1257,6 +1257,33 @@ SandBox/Worlds/PhysicsTestWorld.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Worlds/PhysicsTestWorld.cpp.s
 .PHONY : SandBox/Worlds/PhysicsTestWorld.cpp.s
 
+SandBox/Worlds/PrototypeWorld.o: SandBox/Worlds/PrototypeWorld.cpp.o
+
+.PHONY : SandBox/Worlds/PrototypeWorld.o
+
+# target to build an object file
+SandBox/Worlds/PrototypeWorld.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o
+.PHONY : SandBox/Worlds/PrototypeWorld.cpp.o
+
+SandBox/Worlds/PrototypeWorld.i: SandBox/Worlds/PrototypeWorld.cpp.i
+
+.PHONY : SandBox/Worlds/PrototypeWorld.i
+
+# target to preprocess a source file
+SandBox/Worlds/PrototypeWorld.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.i
+.PHONY : SandBox/Worlds/PrototypeWorld.cpp.i
+
+SandBox/Worlds/PrototypeWorld.s: SandBox/Worlds/PrototypeWorld.cpp.s
+
+.PHONY : SandBox/Worlds/PrototypeWorld.s
+
+# target to generate assembly for a file
+SandBox/Worlds/PrototypeWorld.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.s
+.PHONY : SandBox/Worlds/PrototypeWorld.cpp.s
+
 SandBox/Worlds/RotatingGunsWorld.o: SandBox/Worlds/RotatingGunsWorld.cpp.o
 
 .PHONY : SandBox/Worlds/RotatingGunsWorld.o
@@ -1473,6 +1500,9 @@ help:
 	@echo "... SandBox/Worlds/PhysicsTestWorld.o"
 	@echo "... SandBox/Worlds/PhysicsTestWorld.i"
 	@echo "... SandBox/Worlds/PhysicsTestWorld.s"
+	@echo "... SandBox/Worlds/PrototypeWorld.o"
+	@echo "... SandBox/Worlds/PrototypeWorld.i"
+	@echo "... SandBox/Worlds/PrototypeWorld.s"
 	@echo "... SandBox/Worlds/RotatingGunsWorld.o"
 	@echo "... SandBox/Worlds/RotatingGunsWorld.i"
 	@echo "... SandBox/Worlds/RotatingGunsWorld.s"

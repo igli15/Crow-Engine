@@ -95,3 +95,8 @@ Game *Game::Instance()
     return m_instance;
 }
 
+void Game::LoadAssets()
+{
+
+}
+

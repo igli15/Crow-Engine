@@ -362,6 +362,12 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/PhysicsTestWorld.h">
 			<Option target="Crow"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/PrototypeWorld.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/PrototypeWorld.h">
+			<Option target="Crow"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/RotatingGunsWorld.cpp">
 			<Option target="Crow"/>
 		</Unit>

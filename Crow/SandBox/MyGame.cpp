@@ -7,6 +7,17 @@
 #include "Worlds/LightingTestWorld.h"
 #include "Worlds/TranslucentMaterialTestWorld.h"
 #include "Worlds/PhysicsTestWorld.h"
+#include "Worlds/PrototypeWorld.h"
+#include "../Engine/Core/ResourceManager.h"
+
+void MyGame::LoadAssets()
+{
+    resourceManager->CreateShader("TranslucentVertexShader.vs","TranslucentFragmentShader.fs","translucentShader");
+    resourceManager->CreateShader("VertexShader.vs","FragmentShader.fs","litShader");
+
+    Model* planeModel = resourceManager->LoadModel((MODEL_PATH + "plane.obj"),"plane");
+    Model* sphereModel = resourceManager->LoadModel((MODEL_PATH + "sphere.obj"),"sphere");
+}
 
 void MyGame::Init()
 {
@@ -14,8 +25,10 @@ void MyGame::Init()
 
     //Set the world here!
 
-    SetWorld(new PhysicsTestWorld());
+    SetWorld(new PrototypeWorld());
+    //SetWorld(new PhysicsTestWorld());
     //SetWorld(new TranslucentMaterialTestWorld());
     //SetWorld(new LightingTestWorld());
     //SetWorld(new RotatingGunsWorld());
 }
+
