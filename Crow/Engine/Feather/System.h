@@ -17,6 +17,11 @@ public:
     World* world;
     std::set<Entity> m_entities;
 
+    //Called on system creation. be aware
+    virtual void OnCreate()
+    {
+
+    }
     virtual void Init()
     {
 

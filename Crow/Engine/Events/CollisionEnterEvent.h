@@ -8,8 +8,9 @@
 
 #include "../Feather/EntityHandle.h"
 
-struct CollisionEnterEvent : public Event {
+class CollisionEnterEvent : public Event {
 
+public:
     EntityHandle entity1;
     EntityHandle entity2;
 

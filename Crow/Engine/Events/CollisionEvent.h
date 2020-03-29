@@ -9,8 +9,9 @@
 #include "../EventQueue/Event.h"
 #include "../Feather/EntityHandle.h"
 
-struct CollisionEvent : public Event {
+class CollisionEvent : public Event {
 
+public:
     EntityHandle entity1;
     EntityHandle entity2;
 

@@ -7,6 +7,7 @@
 
 
 #include "MemberFunctionHandler.h"
+#include "../Debug/Debug.h"
 #include <list>
 #include <map>
 #include <typeindex>
@@ -40,6 +41,7 @@ public:
     void Subscribe(T * instance, void (T::*memberFunction)(EventType *))
     {
         HandlerList * handlers = m_subscribers[typeid(EventType)];
+
 
         if (handlers == nullptr)
         {

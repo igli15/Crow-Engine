@@ -9,7 +9,6 @@
 #include <array>
 #include <unordered_map>
 
-//TODO Get rid of this interface... use events or reflection to solve the "OnEntityDestroyed" callbacks
 class IComponentArray {
 
 public:
@@ -98,7 +97,7 @@ public:
         {
             result.push_back(it->first);
         }
-        
+
         return result;
     }
 

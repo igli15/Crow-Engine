@@ -41,9 +41,13 @@ MeshInfo.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
 glm/glm.hpp
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/glm/glm.hpp
+../Feather/Types.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
 glm/gtc/quaternion.hpp
 -
 glm/gtx/quaternion.hpp
+-
+vector
 -
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.cpp
@@ -93,6 +97,8 @@ memory
 /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
 MemberFunctionHandler.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
+../Debug/Debug.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
 list
 -
 map
@@ -120,9 +126,17 @@ Event.h
 ../Feather/EntityHandle.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
 
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.cpp
-ComponentArray.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+../Feather/Types.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
+../EventQueue/Event.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/EntityEvents.h
+../EventQueue/Event.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
+../Feather/Types.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
 ../../Crow.h
@@ -132,19 +146,11 @@ array
 unordered_map
 -
 
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.cpp
-ComponentHandle.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
-
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
 Types.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
 ComponentArray.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.cpp
-ComponentManager.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
 unordered_map
@@ -215,6 +221,10 @@ EntityHandle.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
 ../Systems/CollisionDetectionSystem.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/CollisionDetectionSystem.h
+../Events/EntityEvents.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/EntityEvents.h
+../Systems/TransformHierarchySystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/TransformHierarchySystem.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
 SystemManager.h
@@ -225,6 +235,10 @@ EntityManager.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityManager.h
 ../EventQueue/EventQueue.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
+../Events/ComponentAddedEvent.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+../Components/Transform.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.cpp
 AbstractMaterial.h
@@ -351,6 +365,22 @@ MeshRendererSystem.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/MeshRendererSystem.h
 ../Feather/System.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/TransformHierarchySystem.cpp
+TransformHierarchySystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/TransformHierarchySystem.h
+../Feather/World.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/TransformHierarchySystem.h
+../Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+../Components/Transform.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
+../Events/EntityEvents.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/EntityEvents.h
+../Events/ComponentAddedEvent.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
 
 /Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/MoveComponent.h
 glm/glm.hpp

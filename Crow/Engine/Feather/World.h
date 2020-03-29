@@ -9,7 +9,7 @@
 #include "ComponentManager.h"
 #include "EntityManager.h"
 #include "../EventQueue/EventQueue.h"
-
+#include "../Events/ComponentAddedEvent.h"
 
 struct EntityHandle;
 
@@ -54,6 +54,8 @@ public:
         m_entityManager->SetSignature(entity,signature);
 
         m_systemManager->OnEntitySignatureChanged(entity,signature);
+
+        eventQueue->Publish(new ComponentAddedEvent<T>(entity,c));
 
         return c;
     }

@@ -420,6 +420,33 @@ Engine/EventQueue/MemberFunctionHandler.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/EventQueue/MemberFunctionHandler.cpp.s
 .PHONY : Engine/EventQueue/MemberFunctionHandler.cpp.s
 
+Engine/Events/ComponentAddedEvent.o: Engine/Events/ComponentAddedEvent.cpp.o
+
+.PHONY : Engine/Events/ComponentAddedEvent.o
+
+# target to build an object file
+Engine/Events/ComponentAddedEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Events/ComponentAddedEvent.cpp.o
+.PHONY : Engine/Events/ComponentAddedEvent.cpp.o
+
+Engine/Events/ComponentAddedEvent.i: Engine/Events/ComponentAddedEvent.cpp.i
+
+.PHONY : Engine/Events/ComponentAddedEvent.i
+
+# target to preprocess a source file
+Engine/Events/ComponentAddedEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Events/ComponentAddedEvent.cpp.i
+.PHONY : Engine/Events/ComponentAddedEvent.cpp.i
+
+Engine/Events/ComponentAddedEvent.s: Engine/Events/ComponentAddedEvent.cpp.s
+
+.PHONY : Engine/Events/ComponentAddedEvent.s
+
+# target to generate assembly for a file
+Engine/Events/ComponentAddedEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Events/ComponentAddedEvent.cpp.s
+.PHONY : Engine/Events/ComponentAddedEvent.cpp.s
+
 Engine/Feather/ComponentArray.o: Engine/Feather/ComponentArray.cpp.o
 
 .PHONY : Engine/Feather/ComponentArray.o
@@ -906,6 +933,33 @@ Engine/Systems/MeshRendererSystem.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.s
 .PHONY : Engine/Systems/MeshRendererSystem.cpp.s
 
+Engine/Systems/TransformHierarchySystem.o: Engine/Systems/TransformHierarchySystem.cpp.o
+
+.PHONY : Engine/Systems/TransformHierarchySystem.o
+
+# target to build an object file
+Engine/Systems/TransformHierarchySystem.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.o
+.PHONY : Engine/Systems/TransformHierarchySystem.cpp.o
+
+Engine/Systems/TransformHierarchySystem.i: Engine/Systems/TransformHierarchySystem.cpp.i
+
+.PHONY : Engine/Systems/TransformHierarchySystem.i
+
+# target to preprocess a source file
+Engine/Systems/TransformHierarchySystem.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.i
+.PHONY : Engine/Systems/TransformHierarchySystem.cpp.i
+
+Engine/Systems/TransformHierarchySystem.s: Engine/Systems/TransformHierarchySystem.cpp.s
+
+.PHONY : Engine/Systems/TransformHierarchySystem.s
+
+# target to generate assembly for a file
+Engine/Systems/TransformHierarchySystem.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.s
+.PHONY : Engine/Systems/TransformHierarchySystem.cpp.s
+
 OOP_Engine/Component.o: OOP_Engine/Component.cpp.o
 
 .PHONY : OOP_Engine/Component.o
@@ -1326,6 +1380,9 @@ help:
 	@echo "... Engine/EventQueue/MemberFunctionHandler.o"
 	@echo "... Engine/EventQueue/MemberFunctionHandler.i"
 	@echo "... Engine/EventQueue/MemberFunctionHandler.s"
+	@echo "... Engine/Events/ComponentAddedEvent.o"
+	@echo "... Engine/Events/ComponentAddedEvent.i"
+	@echo "... Engine/Events/ComponentAddedEvent.s"
 	@echo "... Engine/Feather/ComponentArray.o"
 	@echo "... Engine/Feather/ComponentArray.i"
 	@echo "... Engine/Feather/ComponentArray.s"
@@ -1380,6 +1437,9 @@ help:
 	@echo "... Engine/Systems/MeshRendererSystem.o"
 	@echo "... Engine/Systems/MeshRendererSystem.i"
 	@echo "... Engine/Systems/MeshRendererSystem.s"
+	@echo "... Engine/Systems/TransformHierarchySystem.o"
+	@echo "... Engine/Systems/TransformHierarchySystem.i"
+	@echo "... Engine/Systems/TransformHierarchySystem.s"
 	@echo "... OOP_Engine/Component.o"
 	@echo "... OOP_Engine/Component.i"
 	@echo "... OOP_Engine/Component.s"

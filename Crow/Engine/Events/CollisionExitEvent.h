@@ -11,6 +11,7 @@
 
 struct CollisionExitEvent : public Event {
 
+public:
     EntityHandle entity1;
     EntityHandle entity2;
 

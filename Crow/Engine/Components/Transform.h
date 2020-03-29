@@ -6,13 +6,21 @@
 #define CROW_TRANSFORM_H
 
 #include "glm/glm.hpp"
+#include "../Feather/Types.h"
 #include <glm/gtc/quaternion.hpp>
 #include <glm/gtx/quaternion.hpp>
+#include <vector>
 
 struct Transform {
 
+    class World;
+    friend class TransformHierarchySystem;
+
 public:
+
     const glm::mat4& GetLocalTransform();
+    const glm::mat4& GetWorldTransform();
+
     void Translate(const glm::vec3& translation);
     void Scale(const glm::vec3& scale);
     void Rotate(const glm::quat& rot);
@@ -22,12 +30,19 @@ public:
     void Rotate(float angle,const glm::vec3& axis);
     glm::vec3 LocalPosition();
 
+    //TODO Implement these
+    void SetParent(World* world,Entity  parent);
+    void UnParent();
+    void DestroyAllChildrenEntities();
+
 private:
+    std::vector<Entity> m_childrens;
+    glm::mat4 m_worldTransform = glm::mat4(1.0f);
     glm::mat4 m_localTransform = glm::mat4(1.0f);
 
-    glm::vec3 position = glm::vec3(0,0,0);
-    glm::vec3 scale = glm::vec3(1,1,1);
-    glm::quat rotation = {1, 0, 0, 0};
+    Transform* m_parentTransform = nullptr;
+    World* m_contextWorld;
+    Entity owner;
 };
 
 

@@ -9,6 +9,8 @@
 #include "../Systems/MeshRendererSystem.h"
 #include "../Components/MeshInfo.h"
 #include "../Systems/CollisionDetectionSystem.h"
+#include "../Events/EntityEvents.h"
+#include "../Systems/TransformHierarchySystem.h"
 
 void World::Init()
 {
@@ -75,6 +77,7 @@ void World::RegisterEngineSystems()
 {
     RegisterSystem<MeshRendererSystem>();
     RegisterSystem<CollisionDetectionSystem>();
+    RegisterSystem<TransformHierarchySystem>();
     SetSystemSignature<MeshRendererSystem,Transform,MeshInfo>();
 
     //SetSystemSignature<CollisionDetectionSystem,Transform,SphereCollider>();
@@ -84,6 +87,7 @@ void World::RegisterEngineSystems()
 void World::DestroyEntity(Entity entity)
 {
     m_entityGarbage.push_back(entity);
+    eventQueue->Publish(new OnEntityDestroyedEvent(entity));
 }
 
 void World::ClearEntityGarbage() 

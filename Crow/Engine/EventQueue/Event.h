@@ -6,7 +6,7 @@
 #define CROW_EVENT_H
 
 
-struct Event {
+class Event {
 
 protected:
     virtual ~Event() {};

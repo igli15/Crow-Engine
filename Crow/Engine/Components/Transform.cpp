@@ -53,3 +53,10 @@ glm::vec3 Transform::LocalPosition()
     return glm::vec3(m_localTransform[3]);
 }
 
+const glm::mat4 &Transform::GetWorldTransform()
+{
+    return m_worldTransform;
+}
+
+
+
