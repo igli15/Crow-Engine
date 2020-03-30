@@ -8303,6 +8303,7 @@ CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: ../Engine/Feather/Types
 CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: ../Engine/Feather/World.h
 CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: ../Engine/Rendering/AbstractMaterial.h
 CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: ../Engine/Rendering/Materials/ColorMaterial.h
+CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: ../Engine/Rendering/Materials/TranslucentColorMat.h
 CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: ../Engine/Rendering/Mesh.h
 CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: ../Engine/Rendering/Model.h
 CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: ../Engine/Rendering/Shader.h

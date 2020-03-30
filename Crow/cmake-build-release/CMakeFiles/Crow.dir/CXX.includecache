@@ -190,6 +190,10 @@ Shader.h
 ../AbstractMaterial.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/TranslucentColorMat.h
+../AbstractMaterial.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Mesh.h
 glm/glm.hpp
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/glm/glm.hpp
@@ -247,6 +251,8 @@ PrototypeWorld.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/SphereCollider.h
 ../../Engine/Components/Camera.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.h
+../../Engine/Rendering/Materials/TranslucentColorMat.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/TranslucentColorMat.h
 
 /Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/PrototypeWorld.h
 ../../Engine/Feather/World.h

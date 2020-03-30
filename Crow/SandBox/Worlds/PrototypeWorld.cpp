@@ -14,31 +14,56 @@
 #include "../../Engine/Components/Light.h"
 #include "../../Engine/Components/SphereCollider.h"
 #include "../../Engine/Components/Camera.h"
+#include "../../Engine/Rendering/Materials/TranslucentColorMat.h"
 
 void PrototypeWorld::Build()
 {
     World::Build();
+
+    Model* planeModel = Game::Instance()->resourceManager->GetModel("plane");
+    Model* lanternModel = Game::Instance()->resourceManager->GetModel("lantern");
+    Model* graveModel = Game::Instance()->resourceManager->GetModel("gravestone");
+    Model* ghostModel = Game::Instance()->resourceManager->GetModel("ghost");
 
     ColorMaterial* mat = new ColorMaterial("litShader");
     mat->mainColor = glm::vec3(0.7,0.7,0.7);
     mat->specularColor = glm::vec3(1);
     mat->shininess = 16;
 
-    Model* planeModel = Game::Instance()->resourceManager->GetModel("plane");
+    TranslucentColorMat* lanternMaterial = new TranslucentColorMat();
+    lanternMaterial->ambientIntensity = 0.5;
+
+    TranslucentColorMat* ghostMaterial = new TranslucentColorMat();
+    ghostMaterial->translucentScale = 1;
+    ghostMaterial->translucentDistortion = 1.2;
 
     ComponentHandle<Transform> cameraTransform = cameraEntity->GetComponent<Transform>();
-    cameraTransform.component->Translate(glm::vec3(0,4,6));
-    cameraTransform.component->Rotate(-45,glm::vec3(1,0,0));
+    cameraTransform.component->Translate(glm::vec3(0,6,5));
+    cameraTransform.component->Rotate(-50,glm::vec3(1,0,0));
 
     EntityHandle planeEntity = CreateEntity();
     Transform* planeTransform = planeEntity.AddComponent(Transform{});
     planeTransform->SetScale(glm::vec3(20,10,10));
     planeEntity.AddComponent(MeshInfo{planeModel,mat});
 
-    EntityHandle lightEntity = CreateEntity();
-    auto dirLightTransform = lightEntity.AddComponent(Transform{});
-    dirLightTransform->Rotate(-45,glm::vec3(1,0,0));
-    Light* dirLight = lightEntity.AddComponent(Light{glm::vec3(0.8,0.8,0.8)});
-    dirLight->intensity = 1;
+
+    EntityHandle lanternEntity = CreateEntity();
+    Transform* lanternTransform = lanternEntity.AddComponent(Transform{});
+    lanternTransform->Translate(glm::vec3(0,1,-1));
+    //lanternTransform->Rotate(135,glm::vec3(1,0,0));
+    lanternEntity.AddComponent(MeshInfo{lanternModel,lanternMaterial});
+    Light* lanternLight = lanternEntity.AddComponent(Light{});
+    lanternLight->type = Light::POINT;
+    lanternLight->quadratic = 0.3f;
+
+
+    EntityHandle ghost1 = CreateEntity();
+    Transform* ghost1Transform = ghost1.AddComponent(Transform{});
+    ghost1Transform->Translate(glm::vec3(0,1,0.5));
+    ghost1Transform->Scale(glm::vec3(0.2,0.2,0.2));
+    //ghost1Transform->Rotate(90,glm::vec3(0,1,0));
+    ghost1.AddComponent(MeshInfo{ghostModel,ghostMaterial});
+
+
 
 }
