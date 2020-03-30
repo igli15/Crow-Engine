@@ -31,16 +31,16 @@ void PhysicsTestWorld::Build()
     Model* planeModel = Game::Instance()->resourceManager->LoadModel((MODEL_PATH + "plane.obj"),"plane");
     Model* sphereModel = Game::Instance()->resourceManager->LoadModel((MODEL_PATH + "sphere.obj"),"sphere");
 
-    ColorMaterial* mat = new ColorMaterial("litShader");
+    ColorMaterial* mat = new ColorMaterial();
     mat->mainColor = glm::vec3(0.7,0.7,0.7);
     mat->specularColor = glm::vec3(1);
     mat->shininess = 16;
 
-    ColorMaterial* sphereMat = new ColorMaterial("litShader");
+    ColorMaterial* sphereMat = new ColorMaterial();
     sphereMat->mainColor = glm::vec3(1,1,1);
     sphereMat->shininess = 16;
 
-    ColorMaterial* sphereMat2 = new ColorMaterial("litShader");
+    ColorMaterial* sphereMat2 = new ColorMaterial();
     sphereMat2->mainColor = glm::vec3(1,1,1);
     sphereMat2->shininess = 16;
 

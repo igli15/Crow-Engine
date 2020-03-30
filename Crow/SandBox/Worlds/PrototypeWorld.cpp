@@ -30,7 +30,7 @@ void PrototypeWorld::Build()
     Model* graveModel = Game::Instance()->resourceManager->GetModel("gravestone");
     Model* ghostModel = Game::Instance()->resourceManager->GetModel("ghost");
 
-    ColorMaterial* mat = new ColorMaterial("litShader");
+    ColorMaterial* mat = new ColorMaterial();
     mat->mainColor = glm::vec3(0.7,0.7,0.7);
     mat->specularColor = glm::vec3(1);
     mat->shininess = 16;

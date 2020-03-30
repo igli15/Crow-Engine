@@ -87,7 +87,7 @@ void ColorMaterial::Render(Model *pModel, const glm::mat4 &pModelMatrix, const g
     pModel->Draw(*m_shader);
 }
 
-ColorMaterial::ColorMaterial(const std::string &shaderName) : AbstractMaterial(shaderName)
+ColorMaterial::ColorMaterial() : AbstractMaterial("litShader")
 {
     Initialize();
 }

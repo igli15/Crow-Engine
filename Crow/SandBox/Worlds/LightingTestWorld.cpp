@@ -29,12 +29,12 @@ void LightingTestWorld::Build()
     RegisterSystem<RotateSystem>();
     SetSystemSignature<RotateSystem,Transform,RotateComponent>();
 
-    ColorMaterial* mat = new ColorMaterial("litShader");
+    ColorMaterial* mat = new ColorMaterial();
     mat->mainColor = glm::vec3(0.7,0.7,0.7);
     mat->specularColor = glm::vec3(1);
     mat->shininess = 16;
 
-    ColorMaterial* redMat = new ColorMaterial("litShader");
+    ColorMaterial* redMat = new ColorMaterial();
     redMat->mainColor = glm::vec3(glm::vec3(1,1,1));
     redMat->specularColor = glm::vec3(1,0,0);
     redMat->shininess = 2;

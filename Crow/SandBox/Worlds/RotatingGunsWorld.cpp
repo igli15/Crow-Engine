@@ -29,7 +29,7 @@ void RotatingGunsWorld::Build()
     RegisterSystem<RotateSystem>();
     SetSystemSignature<RotateSystem,Transform,RotateComponent>();
 
-    ColorMaterial* mat = new ColorMaterial("unlitShader");
+    ColorMaterial* mat = new ColorMaterial();
 
     cameraEntity->GetComponent<Transform>().component->Translate(glm::vec3(50,50,100));
     for (int i = 0; i < 100; ++i)

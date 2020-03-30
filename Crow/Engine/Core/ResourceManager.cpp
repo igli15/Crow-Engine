@@ -74,6 +74,6 @@ Model *ResourceManager::GetModel(const std::string &name)
     {
         ENGINE_LOG_ERROR("There is no Model with that name!");
     }
-    
+
     return m_models[name];
 }

@@ -27,6 +27,25 @@ public:
     Texture* GetTexture(const std::string& name);
     Shader* GetShader(const std::string& name);
     Model* GetModel(const std::string& name);
+
+    template <typename T>
+    T* CreateMaterial(const std::string& matName)
+    {
+        T* material = new T();
+        m_materials[matName] = material;
+        return material;
+    }
+
+    template <typename T>
+    T* GetMaterial(const std::string& matName)
+    {
+        if(m_materials.find(matName) == m_materials.end())
+        {
+            ENGINE_LOG_ERROR("There is no Material with that name!");
+        }
+
+        return m_materials[matName];
+    }
 };
 
 

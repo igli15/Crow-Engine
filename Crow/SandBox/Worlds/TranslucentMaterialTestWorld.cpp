@@ -34,7 +34,7 @@ void TranslucentMaterialTestWorld::Build()
     translucentMat->translucentColor = glm::vec3(1,1,1);
     translucentMat->shininess = 16;
 
-    ColorMaterial* mat = new ColorMaterial("litShader");
+    ColorMaterial* mat = new ColorMaterial();
     mat->mainColor = glm::vec3(0.7,0.7,0.7);
     mat->specularColor = glm::vec3(1);
     mat->shininess = 16;

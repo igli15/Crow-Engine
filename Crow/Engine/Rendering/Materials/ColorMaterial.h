@@ -10,7 +10,7 @@
 class ColorMaterial :public AbstractMaterial {
 
 public:
-    ColorMaterial(const std::string& shaderName);
+    ColorMaterial();
 
     void Render(Model* meshRenderer, const glm::mat4& pModelMatrix, const glm::mat4& pViewMatrix, const glm::mat4& pProjectionMatrix,const glm::vec3& viewPos,World* world) override;
     void Initialize();
