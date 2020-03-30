@@ -40,14 +40,22 @@ Shader *ResourceManager::CreateShader(const std::string &vertexPath, const std::
 
 Texture *ResourceManager::GetTexture(const std::string &name)
 {
-    //TODO Add Error checking here
+
+    if(m_textures.find(name) == m_textures.end())
+    {
+        ENGINE_LOG_ERROR("There is no Texture with that name!");
+    }
 
     return m_textures[name];
 }
 
 Shader *ResourceManager::GetShader(const std::string &name)
 {
-    //TODO Add Error checking here
+    if(m_shaders.find(name) == m_shaders.end())
+    {
+        ENGINE_LOG_ERROR("There is no Shader with that name!");
+    }
+
     return m_shaders[name];
 }
 
@@ -62,6 +70,10 @@ Model *ResourceManager::LoadModel(const std::string &path, const std::string &na
 
 Model *ResourceManager::GetModel(const std::string &name)
 {
-    //TODO Add Error checking here
+    if(m_models.find(name) == m_models.end())
+    {
+        ENGINE_LOG_ERROR("There is no Model with that name!");
+    }
+    
     return m_models[name];
 }

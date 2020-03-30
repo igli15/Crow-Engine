@@ -9,6 +9,7 @@
 #include "../Rendering/Texture.h"
 #include "../Rendering/Shader.h"
 #include "../Rendering/Model.h"
+#include "../Rendering/AbstractMaterial.h"
 
 class ResourceManager {
 
@@ -16,6 +17,7 @@ private:
     std::map<std::string,Texture*> m_textures;
     std::map<std::string,Shader*> m_shaders;
     std::map<std::string,Model*> m_models;
+    std::map<std::string,AbstractMaterial*> m_materials;
 
 public:
     Texture* LoadTexture(const std::string& path,const std::string& name);
