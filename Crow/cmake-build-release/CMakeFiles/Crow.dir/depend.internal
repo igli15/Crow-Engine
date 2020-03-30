@@ -8291,6 +8291,7 @@ CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEnterEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
@@ -8310,6 +8311,8 @@ CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
+ /Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/MoveComponent.h
+ /Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/MoveSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/PrototypeWorld.cpp
  /Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/PrototypeWorld.h
  /usr/local/include/GL/glew.h

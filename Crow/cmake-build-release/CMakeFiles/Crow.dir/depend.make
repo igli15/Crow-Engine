@@ -8290,6 +8290,7 @@ CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: ../Engine/EventQueue/Event.h
 CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: ../Engine/EventQueue/EventQueue.h
 CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
+CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: ../Engine/Events/CollisionEnterEvent.h
 CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: ../Engine/Feather/ComponentHandle.h
@@ -8309,6 +8310,8 @@ CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: ../Engine/Rendering/Mod
 CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: ../Engine/Rendering/Shader.h
 CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: ../Engine/Rendering/Texture.h
 CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: ../Engine/Rendering/Window.h
+CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: ../SandBox/Components/MoveComponent.h
+CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: ../SandBox/Systems/MoveSystem.h
 CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: ../SandBox/Worlds/PrototypeWorld.cpp
 CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: ../SandBox/Worlds/PrototypeWorld.h
 CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: /usr/local/include/GL/glew.h

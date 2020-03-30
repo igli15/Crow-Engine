@@ -94,6 +94,10 @@ typeindex
 Event.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEnterEvent.h
+../Feather/EntityHandle.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
 ../Feather/Types.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
@@ -228,6 +232,16 @@ GL/glew.h
 GLFW/glfw3.h
 -
 
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/MoveComponent.h
+glm/glm.hpp
+-
+
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/MoveSystem.h
+../../Engine/Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+../../Engine/Events/CollisionEnterEvent.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEnterEvent.h
+
 /Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/PrototypeWorld.cpp
 PrototypeWorld.h
 /Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/PrototypeWorld.h
@@ -253,6 +267,10 @@ PrototypeWorld.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.h
 ../../Engine/Rendering/Materials/TranslucentColorMat.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/TranslucentColorMat.h
+../Components/MoveComponent.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/MoveComponent.h
+../Systems/MoveSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/MoveSystem.h
 
 /Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/PrototypeWorld.h
 ../../Engine/Feather/World.h
