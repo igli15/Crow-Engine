@@ -137,6 +137,12 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h">
 			<Option target="Crow"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/XMLWorld.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/XMLWorld.h">
+			<Option target="Crow"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.cpp">
 			<Option target="Crow"/>
 		</Unit>

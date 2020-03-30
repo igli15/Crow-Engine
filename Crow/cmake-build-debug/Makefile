@@ -339,6 +339,33 @@ Engine/Core/ResourceManager.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.s
 .PHONY : Engine/Core/ResourceManager.cpp.s
 
+Engine/Core/XMLWorld.o: Engine/Core/XMLWorld.cpp.o
+
+.PHONY : Engine/Core/XMLWorld.o
+
+# target to build an object file
+Engine/Core/XMLWorld.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o
+.PHONY : Engine/Core/XMLWorld.cpp.o
+
+Engine/Core/XMLWorld.i: Engine/Core/XMLWorld.cpp.i
+
+.PHONY : Engine/Core/XMLWorld.i
+
+# target to preprocess a source file
+Engine/Core/XMLWorld.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.i
+.PHONY : Engine/Core/XMLWorld.cpp.i
+
+Engine/Core/XMLWorld.s: Engine/Core/XMLWorld.cpp.s
+
+.PHONY : Engine/Core/XMLWorld.s
+
+# target to generate assembly for a file
+Engine/Core/XMLWorld.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.s
+.PHONY : Engine/Core/XMLWorld.cpp.s
+
 Engine/Debug/Debug.o: Engine/Debug/Debug.cpp.o
 
 .PHONY : Engine/Debug/Debug.o
@@ -1398,6 +1425,9 @@ help:
 	@echo "... Engine/Core/ResourceManager.o"
 	@echo "... Engine/Core/ResourceManager.i"
 	@echo "... Engine/Core/ResourceManager.s"
+	@echo "... Engine/Core/XMLWorld.o"
+	@echo "... Engine/Core/XMLWorld.i"
+	@echo "... Engine/Core/XMLWorld.s"
 	@echo "... Engine/Debug/Debug.o"
 	@echo "... Engine/Debug/Debug.i"
 	@echo "... Engine/Debug/Debug.s"
