@@ -386,6 +386,12 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/TranslucentMaterialTestWorld.h">
 			<Option target="Crow"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/XmlTestWorld.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/XmlTestWorld.h">
+			<Option target="Crow"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Tests/FeatherTest.h">
 			<Option target="Crow"/>
 		</Unit>

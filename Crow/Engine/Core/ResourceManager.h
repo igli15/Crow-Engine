@@ -44,7 +44,7 @@ public:
             ENGINE_LOG_ERROR("There is no Material with that name!");
         }
 
-        return m_materials[matName];
+        return static_cast<T*>(m_materials[matName]);
     }
 };
 

@@ -1,0 +1,16 @@
+<root>
+  <GameObject name="Directional Light" position="(0.0000, 3.0000, 0.0000)" rotation="(0.4082, 0.2346, -0.1094, 0.8754)" scale="(1.0000, 1.0000, 1.0000)">
+    <Components />
+  </GameObject>
+  <GameObject name="Cube" position="(1.6800, 2.5500, -9.1300)" rotation="(0.0558, -0.2327, 0.2263, 0.9442)" scale="(1.0000, 1.0000, 1.0000)" mesh="cube">
+    <Components />
+  </GameObject>
+  <GameObject name="Camera" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, -1.0000, 0.0000, 0.0000)" scale="(1.0000, 1.0000, 1.0000)">
+    <Components />
+    <GameObject name="Main Camera" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, -1.0000)" scale="(1.0000, 1.0000, 1.0000)">
+      <Components>
+        <Camera />
+      </Components>
+    </GameObject>
+  </GameObject>
+</root>

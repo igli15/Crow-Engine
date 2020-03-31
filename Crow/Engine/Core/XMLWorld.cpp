@@ -12,6 +12,7 @@
 #include "Game.h"
 #include "ResourceManager.h"
 #include "../Components/MeshInfo.h"
+#include "../Rendering/Materials/ColorMaterial.h"
 
 void XMLWorld::Build()
 {
@@ -36,6 +37,11 @@ void XMLWorld::Load(const std::string &sceneName)
 
 void XMLWorld::ParseAllEntities(rapidxml::xml_node<> *node, EntityHandle entity, bool isRoot)
 {
+    if(node == nullptr)
+    {
+        ENGINE_LOG_ERROR("XML Node is null!");
+    }
+
     EntityHandle currentNode = entity;
 
     //if it read GameObject
@@ -51,7 +57,7 @@ void XMLWorld::ParseAllEntities(rapidxml::xml_node<> *node, EntityHandle entity,
         //ColorMaterial* defaultMat = dynamic_cast<ColorMaterial*>(AbstractGame::Instance()->GetResourceManager()->GetMaterial("whiteMat"));
         //newNode->setMaterial(defaultMat);
 
-        /*
+
         if (strcmp(node->first_node()->name(), "Components") == 0)
         {
             rapidxml::xml_node<>* compNode = node->first_node();
@@ -60,16 +66,19 @@ void XMLWorld::ParseAllEntities(rapidxml::xml_node<> *node, EntityHandle entity,
                 ParseComponents(com, newNode);
             }
         }
-         */
 
+        /*
         if(!isRoot) {
             Transform *currentTransform = currentNode.GetComponent<Transform>().component;
             Transform *newTransform = newNode.GetComponent<Transform>().component;
 
             newTransform->SetParent(currentTransform);
 
-            currentNode = newNode;
+
         }
+         */
+
+        if(!isRoot)  currentNode = newNode;
     }
 
     ParseChildren(node, currentNode);
@@ -98,7 +107,7 @@ EntityHandle XMLWorld::ParseEntity(rapidxml::xml_node<> *node)
             glm::quat rot;
             //seperate the value into 4 floats anf buffer them to quaternion...
             sscanf(a->value(), "(%f,%f,%f,%f)", &rot.x, &rot.y, &rot.z, &rot.w);
-            entityTransform->Rotate(glm::angle(rot), glm::axis(rot));
+            entityTransform->Rotate(rot);
         }
         else if (attributeName == "scale")
         {
@@ -110,7 +119,8 @@ EntityHandle XMLWorld::ParseEntity(rapidxml::xml_node<> *node)
         else if (attributeName == "mesh")
         {
             Model* mesh = Game::Instance()->resourceManager->GetModel(a->value());
-            //entity.AddComponent(MeshInfo{mesh,});
+            ENGINE_LOG(a->value());
+            entity.AddComponent(MeshInfo{mesh,Game::Instance()->resourceManager->GetMaterial<ColorMaterial>("defaultMat")});
         }
     }
 
@@ -122,5 +132,14 @@ void XMLWorld::ParseChildren(rapidxml::xml_node<> *node, EntityHandle entity)
     for (rapidxml::xml_node<>* child = node->first_node(); child != nullptr; child = child->next_sibling())
     {
         ParseAllEntities(child,entity);
+    }
+}
+
+void XMLWorld::ParseComponents(rapidxml::xml_node<> *com, EntityHandle newNode)
+{
+    if (strcmp(com->name(), "Camera") == 0)
+    {
+       ENGINE_LOG("Camera Here");
+
     }
 }

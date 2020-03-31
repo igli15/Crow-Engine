@@ -1365,6 +1365,33 @@ SandBox/Worlds/TranslucentMaterialTestWorld.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.s
 .PHONY : SandBox/Worlds/TranslucentMaterialTestWorld.cpp.s
 
+SandBox/Worlds/XmlTestWorld.o: SandBox/Worlds/XmlTestWorld.cpp.o
+
+.PHONY : SandBox/Worlds/XmlTestWorld.o
+
+# target to build an object file
+SandBox/Worlds/XmlTestWorld.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o
+.PHONY : SandBox/Worlds/XmlTestWorld.cpp.o
+
+SandBox/Worlds/XmlTestWorld.i: SandBox/Worlds/XmlTestWorld.cpp.i
+
+.PHONY : SandBox/Worlds/XmlTestWorld.i
+
+# target to preprocess a source file
+SandBox/Worlds/XmlTestWorld.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.i
+.PHONY : SandBox/Worlds/XmlTestWorld.cpp.i
+
+SandBox/Worlds/XmlTestWorld.s: SandBox/Worlds/XmlTestWorld.cpp.s
+
+.PHONY : SandBox/Worlds/XmlTestWorld.s
+
+# target to generate assembly for a file
+SandBox/Worlds/XmlTestWorld.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.s
+.PHONY : SandBox/Worlds/XmlTestWorld.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -1539,6 +1566,9 @@ help:
 	@echo "... SandBox/Worlds/TranslucentMaterialTestWorld.o"
 	@echo "... SandBox/Worlds/TranslucentMaterialTestWorld.i"
 	@echo "... SandBox/Worlds/TranslucentMaterialTestWorld.s"
+	@echo "... SandBox/Worlds/XmlTestWorld.o"
+	@echo "... SandBox/Worlds/XmlTestWorld.i"
+	@echo "... SandBox/Worlds/XmlTestWorld.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

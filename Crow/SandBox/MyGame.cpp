@@ -8,13 +8,18 @@
 #include "Worlds/TranslucentMaterialTestWorld.h"
 #include "Worlds/PhysicsTestWorld.h"
 #include "Worlds/PrototypeWorld.h"
+#include "Worlds/XmlTestWorld.h"
 #include "../Engine/Core/ResourceManager.h"
+#include "../Engine/Rendering/Materials/ColorMaterial.h"
 
 void MyGame::LoadAssets()
 {
     resourceManager->CreateShader("TranslucentVertexShader.vs","TranslucentFragmentShader.fs","translucentShader");
     resourceManager->CreateShader("VertexShader.vs","FragmentShader.fs","litShader");
 
+    resourceManager->CreateMaterial<ColorMaterial>("defaultMat");
+
+    resourceManager->LoadModel((MODEL_PATH + "cube.obj"),"cube");
     resourceManager->LoadModel((MODEL_PATH + "plane.obj"),"plane");
     resourceManager->LoadModel((MODEL_PATH + "sphere.obj"),"sphere");
     resourceManager->LoadModel((MODEL_PATH + "lanternCandle.obj"),"lantern");
@@ -30,7 +35,8 @@ void MyGame::Init()
 
     //Set the world here!
 
-    SetWorld(new PrototypeWorld());
+    SetWorld(new XmlTestWorld());
+    //SetWorld(new PrototypeWorld());
     //SetWorld(new PhysicsTestWorld());
     //SetWorld(new TranslucentMaterialTestWorld());
     //SetWorld(new LightingTestWorld());

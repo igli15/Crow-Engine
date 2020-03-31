@@ -16,11 +16,12 @@ class XMLWorld : public World {
 public:
     void Build() override;
 
-private:
+protected:
     void Load(const std::string& sceneName);
     void ParseAllEntities(rapidxml::xml_node<> *node, EntityHandle entity, bool isRoot = false);
     EntityHandle ParseEntity(rapidxml::xml_node<>* node);
     void ParseChildren(rapidxml::xml_node<>* node, EntityHandle entity);
+    void ParseComponents(rapidxml::xml_node<>* com,EntityHandle newNode);
 };
 
 
