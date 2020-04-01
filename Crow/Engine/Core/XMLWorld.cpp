@@ -102,7 +102,7 @@ EntityHandle XMLWorld::ParseEntity(rapidxml::xml_node<> *node) {
         }
 
     }
-    
+
     if (strcmp(node->first_node()->name(), "Components") == 0) {
         rapidxml::xml_node<> *compNode = node->first_node();
         for (rapidxml::xml_node<> *com = compNode->first_node(); com != nullptr; com = com->next_sibling()) {

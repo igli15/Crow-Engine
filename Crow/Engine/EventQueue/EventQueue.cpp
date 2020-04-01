@@ -3,3 +3,15 @@
 //
 
 #include "EventQueue.h"
+
+EventQueue* EventQueue::m_instance = nullptr;
+
+EventQueue& EventQueue::Instance()
+{
+    if(m_instance == nullptr)
+    {
+        m_instance = new EventQueue();
+    }
+
+    return *m_instance;
+}

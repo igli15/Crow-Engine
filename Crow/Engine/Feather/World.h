@@ -33,8 +33,6 @@ public:
     void UpdateAllSystems();
     void RenderAllSystems();
 
-    EventQueue* eventQueue;
-
 
     /*
     template <typename T>
@@ -54,7 +52,7 @@ public:
 
         m_systemManager->OnEntitySignatureChanged(entity,signature);
 
-        eventQueue->Publish(new ComponentAddedEvent<T>(entity,c));
+        EventQueue::Instance().Publish(new ComponentAddedEvent<T>(entity,c));
 
         return c;
     }

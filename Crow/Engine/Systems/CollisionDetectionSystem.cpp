@@ -58,18 +58,18 @@ void CollisionDetectionSystem::ThrowCollisionEvents()
     {
         if (i->second == -m_frameCounter)
         {
-            world->eventQueue->Publish(new CollisionEnterEvent{i->first.first,i->first.second});
+            EventQueue::Instance().Publish(new CollisionEnterEvent{i->first.first,i->first.second});
             i++;
 
         }
         else if (i->second == m_frameCounter)
         {
-            world->eventQueue->Publish(new CollisionEvent{i->first.first,i->first.second});
+            EventQueue::Instance().Publish(new CollisionEvent{i->first.first,i->first.second});
             i++;
         }
         else
         {
-            world->eventQueue->Publish(new CollisionExitEvent{i->first.first,i->first.second});
+            EventQueue::Instance().Publish(new CollisionExitEvent{i->first.first,i->first.second});
             i = m_collisionMap.erase(i);
         }
     }

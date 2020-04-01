@@ -31,7 +31,7 @@ void MoveSystem::Init()
 {
     System::Init();
 
-    world->eventQueue->Subscribe(this,&MoveSystem::UpdateMaterials);
+    EventQueue::Instance().Subscribe(this,&MoveSystem::UpdateMaterials);
 }
 
 void MoveSystem::UpdateMaterials(CollisionEnterEvent* collisionEvent)

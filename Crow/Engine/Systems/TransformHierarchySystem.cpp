@@ -9,8 +9,8 @@ void TransformHierarchySystem::OnCreate()
 {
     System::OnCreate();
 
-    world->eventQueue->Subscribe(this,&TransformHierarchySystem::OnComponentAdded);
-    world->eventQueue->Subscribe(this,&TransformHierarchySystem::OnTransformRemoved);
+    EventQueue::Instance().Subscribe(this,&TransformHierarchySystem::OnComponentAdded);
+    EventQueue::Instance().Subscribe(this,&TransformHierarchySystem::OnTransformRemoved);
 }
 
 void TransformHierarchySystem::OnTransformRemoved(OnEntityDestroyedEvent* event)

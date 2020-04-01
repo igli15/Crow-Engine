@@ -17,6 +17,9 @@ typedef std::list<MemberFunctionBase*> HandlerList;
 class EventQueue {
 
 public:
+
+    static EventQueue& Instance();
+
     template <typename EventType>
     void Publish(EventType* event)
     {
@@ -53,7 +56,7 @@ public:
     }
 
 private:
-
+    static EventQueue* m_instance;
     std::map<std::type_index,HandlerList*> m_subscribers;
 };
 

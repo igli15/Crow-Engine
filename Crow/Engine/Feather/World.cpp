@@ -17,7 +17,6 @@ void World::Init()
     m_componentManager = new ComponentManager();
     m_entityManager = new EntityManager();
     m_systemManager = new SystemManager();
-    eventQueue = new EventQueue();
 
     RegisterEngineSystems();
 }
@@ -78,7 +77,7 @@ void World::RegisterEngineSystems()
 void World::DestroyEntity(Entity entity)
 {
     m_entityGarbage.push_back(entity);
-    eventQueue->Publish(new OnEntityDestroyedEvent(entity));
+    EventQueue::Instance().Publish(new OnEntityDestroyedEvent(entity));
 }
 
 void World::ClearEntityGarbage() 
