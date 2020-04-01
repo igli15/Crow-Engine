@@ -8,7 +8,7 @@
 
 struct SphereCollider {
 
-    float radius = 1;
+    float radius = 1.0f;
 
 };
 

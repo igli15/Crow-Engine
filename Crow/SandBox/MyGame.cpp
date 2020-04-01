@@ -20,6 +20,8 @@ void MyGame::LoadAssets()
     resourceManager->CreateMaterial<ColorMaterial>("defaultMat");
 
     resourceManager->LoadModel((MODEL_PATH + "cube.obj"),"cube");
+    resourceManager->LoadModel((MODEL_PATH + "sphere.obj"),"sphere");
+    resourceManager->LoadModel((MODEL_PATH + "axis.obj"),"axis");
     resourceManager->LoadModel((MODEL_PATH + "plane.obj"),"plane");
     resourceManager->LoadModel((MODEL_PATH + "sphere.obj"),"sphere");
     resourceManager->LoadModel((MODEL_PATH + "lanternCandle.obj"),"lantern");

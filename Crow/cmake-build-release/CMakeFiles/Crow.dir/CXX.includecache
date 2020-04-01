@@ -14,6 +14,18 @@ Engine/Debug/Debug.h
 string
 -
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.h
+glm/glm.hpp
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/glm/glm.hpp
+glm/gtx/projection.hpp
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/glm/gtx/projection.hpp
+glm/gtc/matrix_transform.hpp
+-
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h
+glm/glm.hpp
+-
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
 ../Rendering/Model.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
@@ -73,6 +85,10 @@ ResourceManager.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
 ../Rendering/Materials/ColorMaterial.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h
+../Components/Camera.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.h
+../Components/Light.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/XMLWorld.h
 ../Feather/World.h
@@ -1632,8 +1648,6 @@ polar_coordinates.inl
 projection.inl
 /usr/local/include/glm/./gtx/projection.inl
 
-/usr/local/include/glm/./gtx/projection.inl
-
 /usr/local/include/glm/./gtx/quaternion.hpp
 ../glm.hpp
 /usr/local/include/glm/./glm.hpp
@@ -2879,6 +2893,14 @@ norm.inl
 /usr/local/include/glm/gtx/norm.inl
 ../detail/qualifier.hpp
 /usr/local/include/glm/detail/qualifier.hpp
+
+/usr/local/include/glm/gtx/projection.hpp
+../geometric.hpp
+/usr/local/include/glm/geometric.hpp
+projection.inl
+/usr/local/include/glm/gtx/projection.inl
+
+/usr/local/include/glm/gtx/projection.inl
 
 /usr/local/include/glm/gtx/quaternion.hpp
 ../glm.hpp

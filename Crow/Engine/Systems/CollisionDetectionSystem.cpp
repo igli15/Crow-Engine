@@ -18,22 +18,22 @@ void CollisionDetectionSystem::Update()
 
     auto entities = world->EntitiesWith<Transform,SphereCollider>();
 
-    for (int i = 0; i < entities.size(); i++)
+    for (int firstEntityIndex = 0; firstEntityIndex < entities.size(); firstEntityIndex++)
     {
-        for (int j = i + 1; j < entities.size(); j++)
+        Transform& t1 = world->GetComponent<Transform>(entities[firstEntityIndex]);
+        SphereCollider& s1 = world->GetComponent<SphereCollider>(entities[firstEntityIndex]);
+        for (int nextEntityIndex = firstEntityIndex + 1; nextEntityIndex < entities.size(); nextEntityIndex++)
         {
-            Transform& t1 = world->GetComponent<Transform>(entities[i]);
-            Transform& t2 = world->GetComponent<Transform>(entities[j]);
+            Transform& t2 = world->GetComponent<Transform>(entities[nextEntityIndex]);
 
-            SphereCollider& s1 = world->GetComponent<SphereCollider>(entities[i]);
-            SphereCollider& s2 = world->GetComponent<SphereCollider>(entities[j]);
+            SphereCollider& s2 = world->GetComponent<SphereCollider>(entities[nextEntityIndex]);
 
             glm::vec3 distanceVector = t1.LocalPosition() - t2.LocalPosition();
             float distance = glm::length(distanceVector);
 
             if(distance<= s1.radius * s2.radius)
             {
-                EntityPair entityPair(EntityHandle{entities[i],world},EntityHandle{entities[j],world});
+                EntityPair entityPair(EntityHandle{entities[firstEntityIndex],world},EntityHandle{entities[nextEntityIndex],world});
 
                 auto it = m_collisionMap.find(entityPair);
 

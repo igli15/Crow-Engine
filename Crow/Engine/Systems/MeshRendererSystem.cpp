@@ -24,11 +24,12 @@ void MeshRendererSystem::Render()
             continue;
         }
 
-        Transform* cameraTransform = world->cameraEntity->GetComponent<Transform>().component;
-        Camera* camera=  world->cameraEntity->GetComponent<Camera>().component;
+        Entity cameraEntity = world->EntitiesWith<Camera>()[0];
+        Transform& cameraTransform = world->GetComponent<Transform>(cameraEntity);
+        Camera& camera=  world->GetComponent<Camera>(cameraEntity);
 
-        meshInfo.material->Render(meshInfo.model,transform.GetWorldTransform(),glm::inverse(cameraTransform->GetWorldTransform()),camera->GetProjection()
-                                     ,cameraTransform->LocalPosition(),world);
+        meshInfo.material->Render(meshInfo.model,transform.GetWorldTransform(),glm::inverse(cameraTransform.GetWorldTransform()),camera.GetProjection()
+                                     ,cameraTransform.WorldPosition(),world);
     }
 
 }

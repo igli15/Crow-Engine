@@ -13,6 +13,7 @@
 #include "../../Engine/Feather/EntityHandle.h"
 #include "../../Engine/Components/MeshInfo.h"
 #include "../../Engine/Components/Light.h"
+#include "../../Engine/Components/Camera.h"
 
 void LightingTestWorld::Build()
 {
@@ -39,7 +40,9 @@ void LightingTestWorld::Build()
     redMat->specularColor = glm::vec3(1,0,0);
     redMat->shininess = 2;
 
-    Transform* camTransform = cameraEntity->GetComponent<Transform>().component;
+    EntityHandle cameraEntity = CreateEntity();
+    cameraEntity.AddComponent(Camera{});
+    Transform* camTransform = cameraEntity.AddComponent(Transform{});
     camTransform->Translate(glm::vec3(0,4,6));
     camTransform->Rotate(-45,glm::vec3(1,0,0));
 

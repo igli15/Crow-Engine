@@ -1864,6 +1864,8 @@ CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o: /usr/local/include/spdlog
 CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o: /usr/local/include/spdlog/version.h
 
 CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o: ../Crow.h
+CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o: ../Engine/Components/Camera.h
+CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o: ../Engine/Components/Light.h
 CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o: ../Engine/Components/MeshInfo.h
 CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o: ../Engine/Components/Transform.h
 CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o: ../Engine/Core/Game.h
@@ -2109,7 +2111,6 @@ CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o: /usr/local/include/glm/./gtx/per
 CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o: /usr/local/include/glm/./gtx/polar_coordinates.hpp
 CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o: /usr/local/include/glm/./gtx/polar_coordinates.inl
 CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o: /usr/local/include/glm/./gtx/projection.hpp
-CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o: /usr/local/include/glm/./gtx/projection.inl
 CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o: /usr/local/include/glm/./gtx/quaternion.hpp
 CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o: /usr/local/include/glm/./gtx/range.hpp
 CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o: /usr/local/include/glm/./gtx/raw_data.hpp
@@ -2231,6 +2232,8 @@ CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o: /usr/local/include/glm/gtc/quate
 CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o: /usr/local/include/glm/gtc/quaternion_simd.inl
 CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o: /usr/local/include/glm/gtx/norm.hpp
 CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o: /usr/local/include/glm/gtx/norm.inl
+CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o: /usr/local/include/glm/gtx/projection.hpp
+CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o: /usr/local/include/glm/gtx/projection.inl
 CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o: /usr/local/include/glm/gtx/quaternion.hpp
 CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o: /usr/local/include/glm/integer.hpp
 CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o: /usr/local/include/glm/mat2x2.hpp
@@ -7852,6 +7855,7 @@ CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.o: /usr/local/include/spdlo
 CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.o: /usr/local/include/spdlog/version.h
 
 CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: ../Crow.h
+CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: ../Engine/Components/Camera.h
 CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: ../Engine/Components/Light.h
 CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: ../Engine/Components/MeshInfo.h
 CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: ../Engine/Components/Transform.h
@@ -8101,7 +8105,6 @@ CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: /usr/local/include/g
 CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: /usr/local/include/glm/./gtx/polar_coordinates.hpp
 CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: /usr/local/include/glm/./gtx/polar_coordinates.inl
 CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: /usr/local/include/glm/./gtx/projection.hpp
-CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: /usr/local/include/glm/./gtx/projection.inl
 CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: /usr/local/include/glm/./gtx/quaternion.hpp
 CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: /usr/local/include/glm/./gtx/range.hpp
 CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: /usr/local/include/glm/./gtx/raw_data.hpp
@@ -8135,7 +8138,6 @@ CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: /usr/local/include/g
 CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: /usr/local/include/glm/./mat3x4.hpp
 CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: /usr/local/include/glm/./mat4x2.hpp
 CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: /usr/local/include/glm/./mat4x3.hpp
-CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: /usr/local/include/glm/./matrix.hpp
 CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: /usr/local/include/glm/./simd/integer.h
 CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: /usr/local/include/glm/common.hpp
 CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: /usr/local/include/glm/detail/./compute_vector_relational.hpp
@@ -8223,6 +8225,8 @@ CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: /usr/local/include/g
 CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: /usr/local/include/glm/gtc/quaternion_simd.inl
 CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: /usr/local/include/glm/gtx/norm.hpp
 CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: /usr/local/include/glm/gtx/norm.inl
+CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: /usr/local/include/glm/gtx/projection.hpp
+CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: /usr/local/include/glm/gtx/projection.inl
 CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: /usr/local/include/glm/gtx/quaternion.hpp
 CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: /usr/local/include/glm/integer.hpp
 CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: /usr/local/include/glm/mat2x2.hpp
@@ -9170,6 +9174,7 @@ CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: /usr/local/include/spdl
 CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: /usr/local/include/spdlog/version.h
 
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Crow.h
+CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Components/Camera.h
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Components/MeshInfo.h
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Components/SphereCollider.h
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Components/Transform.h
@@ -9418,7 +9423,6 @@ CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: /usr/local/include/g
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: /usr/local/include/glm/./gtx/polar_coordinates.hpp
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: /usr/local/include/glm/./gtx/polar_coordinates.inl
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: /usr/local/include/glm/./gtx/projection.hpp
-CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: /usr/local/include/glm/./gtx/projection.inl
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: /usr/local/include/glm/./gtx/quaternion.hpp
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: /usr/local/include/glm/./gtx/range.hpp
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: /usr/local/include/glm/./gtx/raw_data.hpp
@@ -9540,6 +9544,8 @@ CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: /usr/local/include/g
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: /usr/local/include/glm/gtc/quaternion_simd.inl
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: /usr/local/include/glm/gtx/norm.hpp
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: /usr/local/include/glm/gtx/norm.inl
+CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: /usr/local/include/glm/gtx/projection.hpp
+CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: /usr/local/include/glm/gtx/projection.inl
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: /usr/local/include/glm/gtx/quaternion.hpp
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: /usr/local/include/glm/integer.hpp
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: /usr/local/include/glm/mat2x2.hpp
@@ -9606,6 +9612,7 @@ CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: /usr/local/include/s
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: /usr/local/include/spdlog/version.h
 
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../Crow.h
+CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../Engine/Components/Camera.h
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../Engine/Components/Light.h
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../Engine/Components/MeshInfo.h
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../Engine/Components/Transform.h
@@ -9854,7 +9861,6 @@ CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: /usr/loca
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: /usr/local/include/glm/./gtx/polar_coordinates.hpp
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: /usr/local/include/glm/./gtx/polar_coordinates.inl
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: /usr/local/include/glm/./gtx/projection.hpp
-CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: /usr/local/include/glm/./gtx/projection.inl
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: /usr/local/include/glm/./gtx/quaternion.hpp
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: /usr/local/include/glm/./gtx/range.hpp
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: /usr/local/include/glm/./gtx/raw_data.hpp
@@ -9976,6 +9982,8 @@ CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: /usr/loca
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: /usr/local/include/glm/gtc/quaternion_simd.inl
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: /usr/local/include/glm/gtx/norm.hpp
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: /usr/local/include/glm/gtx/norm.inl
+CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: /usr/local/include/glm/gtx/projection.hpp
+CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: /usr/local/include/glm/gtx/projection.inl
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: /usr/local/include/glm/gtx/quaternion.hpp
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: /usr/local/include/glm/integer.hpp
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: /usr/local/include/glm/mat2x2.hpp

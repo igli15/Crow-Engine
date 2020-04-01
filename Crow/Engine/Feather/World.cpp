@@ -60,18 +60,9 @@ void World::RenderAllSystems()
 
 void World::Build()
 {
-    CreateCamera();
+
 }
 
-void World::CreateCamera()
-{
-    cameraEntity = new EntityHandle();
-    cameraEntity->entity = m_entityManager->CreateEntity();
-    cameraEntity->feather = this;
-
-    cameraEntity->AddComponent<Camera>(Camera{});
-    cameraEntity->AddComponent<Transform>(Transform{});
-}
 
 void World::RegisterEngineSystems()
 {

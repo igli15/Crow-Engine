@@ -15,6 +15,7 @@
 #include "../Components/RotateComponent.h"
 #include "../../Engine/Feather/EntityHandle.h"
 #include "../../Engine/Components/SphereCollider.h"
+#include "../../Engine/Components/Camera.h"
 
 void RotatingGunsWorld::Build()
 {
@@ -31,7 +32,10 @@ void RotatingGunsWorld::Build()
 
     ColorMaterial* mat = new ColorMaterial();
 
-    cameraEntity->GetComponent<Transform>().component->Translate(glm::vec3(50,50,100));
+    EntityHandle cameraEntity = CreateEntity();
+    cameraEntity.AddComponent(Camera{});
+    cameraEntity.AddComponent(Transform{})->Translate(glm::vec3(50,50,100));
+    //cameraEntity->GetComponent<Transform>().component->Translate(glm::vec3(50,50,100));
     for (int i = 0; i < 100; ++i)
     {
         for (int j = 0; j < 100; ++j)

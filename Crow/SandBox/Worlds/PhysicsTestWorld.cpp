@@ -44,7 +44,9 @@ void PhysicsTestWorld::Build()
     sphereMat2->mainColor = glm::vec3(1,1,1);
     sphereMat2->shininess = 16;
 
-    Transform* camTransform = cameraEntity->GetComponent<Transform>().component;
+    EntityHandle cameraEntity = CreateEntity();
+    cameraEntity.AddComponent(Camera{});
+    Transform* camTransform = cameraEntity.AddComponent(Transform{});
     camTransform->Translate(glm::vec3(0,4,6));
     camTransform->Rotate(-45,glm::vec3(1,0,0));
 

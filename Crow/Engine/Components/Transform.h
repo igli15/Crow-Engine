@@ -29,11 +29,11 @@ public:
     void SetScale(const glm::vec3& scale);
     void Rotate(float angle,const glm::vec3& axis);
     glm::vec3 LocalPosition();
+    glm::vec3 WorldPosition();
 
     //TODO Implement these
     void SetParent(Transform* transform);
-    void AddChild(Entity entity);
-    void RemoveChild(Entity entity);
+    int GetChildCount();
 
     void DestroyAllChildrenEntities();
 

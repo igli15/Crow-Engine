@@ -43,9 +43,11 @@ void PrototypeWorld::Build()
     ghostMaterial->translucentDistortion = 1;
     ghostMaterial->translucentPower = 0.5;
 
-    ComponentHandle<Transform> cameraTransform = cameraEntity->GetComponent<Transform>();
-    cameraTransform.component->Translate(glm::vec3(0,6,5));
-    cameraTransform.component->Rotate(-50,glm::vec3(1,0,0));
+    EntityHandle cameraEntity = CreateEntity();
+    cameraEntity.AddComponent(Camera{});
+    Transform* cameraTransform = cameraEntity.AddComponent(Transform{});
+    cameraTransform->Translate(glm::vec3(0,6,5));
+    cameraTransform->Rotate(-50,glm::vec3(1,0,0));
 
     EntityHandle planeEntity = CreateEntity();
     Transform* planeTransform = planeEntity.AddComponent(Transform{});

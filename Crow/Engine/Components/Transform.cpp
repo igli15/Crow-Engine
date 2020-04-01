@@ -74,6 +74,7 @@ void Transform::SetParent(Transform *transform)
     m_parentTransform = transform;
 
     if(transform!= nullptr) {
+
         transform->m_childrens.push_back(this->owner);
     }
 }
@@ -84,6 +85,17 @@ void Transform::DestroyAllChildrenEntities()
     {
         m_contextWorld->DestroyEntity(m_childrens[i]);
     }
+}
+
+int Transform::GetChildCount()
+{
+    return m_childrens.size();
+}
+
+glm::vec3 Transform::WorldPosition()
+{
+
+    return glm::vec3(GetWorldTransform()[3]);
 }
 
 

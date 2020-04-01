@@ -14,6 +14,7 @@
 #include "../../Engine/Components/MeshInfo.h"
 #include "../../Engine/Components/Light.h"
 #include "../../Engine/Rendering/Materials/TranslucentColorMat.h"
+#include "../../Engine/Components/Camera.h"
 
 void TranslucentMaterialTestWorld::Build()
 {
@@ -39,7 +40,9 @@ void TranslucentMaterialTestWorld::Build()
     mat->specularColor = glm::vec3(1);
     mat->shininess = 16;
 
-    Transform* camTransform = cameraEntity->GetComponent<Transform>().component;
+    EntityHandle cameraEntity = CreateEntity();
+    cameraEntity.AddComponent(Camera{});
+    Transform* camTransform = cameraEntity.AddComponent(Transform{});
     camTransform->Translate(glm::vec3(0,4,5));
     camTransform->Rotate(-45,glm::vec3(1,0,0));
 

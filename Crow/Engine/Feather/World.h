@@ -33,7 +33,6 @@ public:
     void UpdateAllSystems();
     void RenderAllSystems();
 
-    EntityHandle* cameraEntity;
     EventQueue* eventQueue;
 
 
@@ -228,7 +227,6 @@ private:
     std::vector<System*> m_allRegisteredSystems;
 
     void RegisterEngineSystems();
-    void CreateCamera();
 };
 
 

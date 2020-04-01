@@ -33,6 +33,13 @@ struct EntityHandle {
         return componentHandle;
     }
 
+    EntityHandle& operator=(const EntityHandle& other)
+    {
+        entity = other.entity;
+        feather = other.feather;
+        return *this;
+    }
+
     bool operator == (const EntityHandle &other) const
     {
         return(this->entity == other.entity);

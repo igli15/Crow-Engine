@@ -1,16 +1,36 @@
 <root>
-  <GameObject name="Directional Light" position="(0.0000, 3.0000, 0.0000)" rotation="(0.4082, 0.2346, -0.1094, 0.8754)" scale="(1.0000, 1.0000, 1.0000)">
+  <GameObject name="Directional Light" position="(2.5300, 15.3100, -10.4500)" rotation="(0.1940, 0.2787, 0.2319, 0.9115)" scale="(1.0000, 1.0000, 1.0000)">
+    <Components>
+      <Light type="DIRECTIONAL" color="(0.9882, 0.0000, 0.0000)" intensity="6.3800" attenuationConstants="(1.0000, 0.0900, 0.0320)" cutoffAngle="30.0000" outercutoffAngle="60.0000" />
+    </Components>
+  </GameObject>
+  <GameObject name="model" position="(-0.7300, 1.0818, -19.9800)" rotation="(0.0000, -0.7071, 0.0000, 0.7071)" scale="(1.0000, 1.0000, 1.0000)" mesh="axis">
     <Components />
   </GameObject>
-  <GameObject name="Cube" position="(1.6800, 2.5500, -9.1300)" rotation="(0.0558, -0.2327, 0.2263, 0.9442)" scale="(1.0000, 1.0000, 1.0000)" mesh="cube">
+  <GameObject name="model2" position="(12.1700, 1.0818, -20.0500)" rotation="(0.0000, -1.0000, 0.0000, 0.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="axis">
     <Components />
   </GameObject>
-  <GameObject name="Camera" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, -1.0000, 0.0000, 0.0000)" scale="(1.0000, 1.0000, 1.0000)">
+  <GameObject name="model3" position="(11.9400, 1.0818, -7.8000)" rotation="(0.0000, 0.7071, 0.0000, 0.7071)" scale="(1.0000, 1.0000, 1.0000)" mesh="axis">
     <Components />
-    <GameObject name="Main Camera" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, -1.0000)" scale="(1.0000, 1.0000, 1.0000)">
-      <Components>
-        <Camera />
-      </Components>
+  </GameObject>
+  <GameObject name="model6" position="(-0.7300, 1.0818, -8.1193)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="axis">
+    <Components />
+  </GameObject>
+  <GameObject name="Cube" position="(0.8000, 1.4000, -18.5300)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="cube">
+    <Components />
+  </GameObject>
+  <GameObject name="Cube (1)" position="(10.6700, 1.4000, -18.5600)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="cube">
+    <Components />
+  </GameObject>
+  <GameObject name="Sphere" position="(0.6300, 1.4000, -9.8100)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="sphere">
+    <Components />
+  </GameObject>
+  <GameObject name="MGECamera" position="(0.0000, 17.5000, 2.9600)" rotation="(-0.3608, 0.0000, 0.0000, 0.9326)" scale="(1.0000, 1.0000, 1.0000)">
+    <Components>
+      <Camera FOV="60" aspectRatio="1.333333" nearClipPlane="0.1" farClipPlane="1000" />
+    </Components>
+    <GameObject name="Camera" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 1.0000, 0.0000, 0.0000)" scale="(1.0000, 1.0000, 1.0000)">
+      <Components />
     </GameObject>
   </GameObject>
 </root>
