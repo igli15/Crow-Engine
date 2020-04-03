@@ -13,6 +13,12 @@ void MeshRendererSystem::Render()
 {
     System::Render();
 
+    Entity cameraEntity = world->EntitiesWith<Camera>()[0];
+    Transform& cameraTransform = world->GetComponent<Transform>(cameraEntity);
+    Camera& camera=  world->GetComponent<Camera>(cameraEntity);
+
+    glm::mat4 camInverseMat = glm::inverse(cameraTransform.GetWorldTransform());
+
     for (auto const& entity : m_entities)
     {
         Transform& transform = world->GetComponent<Transform>(entity);
@@ -24,11 +30,7 @@ void MeshRendererSystem::Render()
             continue;
         }
 
-        Entity cameraEntity = world->EntitiesWith<Camera>()[0];
-        Transform& cameraTransform = world->GetComponent<Transform>(cameraEntity);
-        Camera& camera=  world->GetComponent<Camera>(cameraEntity);
-
-        meshInfo.material->Render(meshInfo.model,transform.GetWorldTransform(),glm::inverse(cameraTransform.GetWorldTransform()),camera.GetProjection()
+        meshInfo.material->Render(meshInfo.model,transform.GetWorldTransform(),camInverseMat,camera.GetProjection()
                                      ,cameraTransform.WorldPosition(),world);
     }
 
