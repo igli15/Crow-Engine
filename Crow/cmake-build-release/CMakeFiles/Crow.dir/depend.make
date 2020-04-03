@@ -1009,6 +1009,7 @@ CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o: /usr/local/include/spdlog
 CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: ../Engine/Core/Game.cpp
 CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: ../Engine/Core/Game.h
+CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: ../Engine/Core/Input.h
 CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: ../Engine/Core/ResourceManager.h
 CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: ../Engine/EventQueue/Event.h
@@ -1436,6 +1437,53 @@ CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: /usr/local/include/spdlog/version.h
 
 CMakeFiles/Crow.dir/Engine/Core/GameObject.cpp.o: ../Engine/Core/GameObject.cpp
 CMakeFiles/Crow.dir/Engine/Core/GameObject.cpp.o: ../Engine/Core/GameObject.h
+
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: ../Engine/Core/Input.cpp
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: ../Engine/Core/Input.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: ../Engine/Debug/Debug.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: ../Engine/Rendering/Window.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/GL/glew.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/GLFW/glfw3.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/common-inl.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/common.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/details/backtracer-inl.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/details/backtracer.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/details/circular_q.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/details/console_globals.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/details/fmt_helper.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/details/log_msg-inl.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/details/log_msg.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/details/log_msg_buffer-inl.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/details/log_msg_buffer.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/details/null_mutex.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/details/os-inl.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/details/os.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/details/pattern_formatter-inl.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/details/pattern_formatter.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/details/periodic_worker-inl.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/details/periodic_worker.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/details/registry-inl.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/details/registry.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/details/synchronous_factory.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/fmt/bundled/core.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/fmt/bundled/format-inl.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/fmt/bundled/format.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/fmt/fmt.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/formatter.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/logger-inl.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/logger.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/sinks/ansicolor_sink-inl.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/sinks/ansicolor_sink.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/sinks/sink-inl.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/sinks/sink.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/sinks/stdout_color_sinks-inl.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/sinks/stdout_color_sinks.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/sinks/wincolor_sink-inl.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/sinks/wincolor_sink.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/spdlog-inl.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/spdlog.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/tweakme.h
+CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/version.h
 
 CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o: ../Engine/Core/ResourceManager.cpp
@@ -1869,6 +1917,7 @@ CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o: ../Engine/Components/Light.h
 CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o: ../Engine/Components/MeshInfo.h
 CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o: ../Engine/Components/Transform.h
 CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o: ../Engine/Core/Game.h
+CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o: ../Engine/Core/Input.h
 CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o: ../Engine/Core/ResourceManager.h
 CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o: ../Engine/Core/XMLWorld.cpp
 CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o: ../Engine/Core/XMLWorld.h
@@ -3131,6 +3180,7 @@ CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: /usr/local/include/spdlog/versio
 
 CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o: ../Engine/Core/Game.h
+CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o: ../Engine/Core/Input.h
 CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o: ../Engine/Core/ResourceManager.h
 CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o: ../Engine/EventQueue/Event.h
@@ -5613,10 +5663,52 @@ CMakeFiles/Crow.dir/Engine/Rendering/Shader.cpp.o: /usr/local/include/spdlog/ver
 CMakeFiles/Crow.dir/Engine/Rendering/Texture.cpp.o: ../Engine/Rendering/Texture.cpp
 CMakeFiles/Crow.dir/Engine/Rendering/Texture.cpp.o: ../Engine/Rendering/Texture.h
 
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: ../Engine/Core/Input.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: ../Engine/Rendering/Window.cpp
 CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: ../Engine/Rendering/Window.h
 CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/GL/glew.h
 CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/GLFW/glfw3.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/common-inl.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/common.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/details/backtracer-inl.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/details/backtracer.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/details/circular_q.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/details/console_globals.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/details/fmt_helper.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/details/log_msg-inl.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/details/log_msg.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/details/log_msg_buffer-inl.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/details/log_msg_buffer.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/details/null_mutex.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/details/os-inl.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/details/os.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/details/pattern_formatter-inl.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/details/pattern_formatter.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/details/periodic_worker-inl.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/details/periodic_worker.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/details/registry-inl.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/details/registry.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/details/synchronous_factory.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/fmt/bundled/core.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/fmt/bundled/format-inl.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/fmt/bundled/format.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/fmt/fmt.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/formatter.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/logger-inl.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/logger.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/sinks/ansicolor_sink-inl.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/sinks/ansicolor_sink.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/sinks/sink-inl.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/sinks/sink.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/sinks/stdout_color_sinks-inl.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/sinks/stdout_color_sinks.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/sinks/wincolor_sink-inl.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/sinks/wincolor_sink.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/spdlog-inl.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/spdlog.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/tweakme.h
+CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/version.h
 
 CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o: ../Engine/Components/SphereCollider.h
@@ -6734,6 +6826,7 @@ CMakeFiles/Crow.dir/SandBox/Components/RotateComponent.cpp.o: ../SandBox/Compone
 
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Core/Game.h
+CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Core/Input.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Core/ResourceManager.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Core/XMLWorld.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Debug/Debug.h
@@ -7860,6 +7953,7 @@ CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: ../Engine/Components
 CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: ../Engine/Components/MeshInfo.h
 CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: ../Engine/Components/Transform.h
 CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: ../Engine/Core/Game.h
+CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: ../Engine/Core/Input.h
 CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: ../Engine/Core/ResourceManager.h
 CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o: ../Engine/EventQueue/Event.h
@@ -8298,6 +8392,7 @@ CMakeFiles/Crow.dir/SandBox/Worlds/PhysicsTestWorld.cpp.o: ../Engine/Components/
 CMakeFiles/Crow.dir/SandBox/Worlds/PhysicsTestWorld.cpp.o: ../Engine/Components/SphereCollider.h
 CMakeFiles/Crow.dir/SandBox/Worlds/PhysicsTestWorld.cpp.o: ../Engine/Components/Transform.h
 CMakeFiles/Crow.dir/SandBox/Worlds/PhysicsTestWorld.cpp.o: ../Engine/Core/Game.h
+CMakeFiles/Crow.dir/SandBox/Worlds/PhysicsTestWorld.cpp.o: ../Engine/Core/Input.h
 CMakeFiles/Crow.dir/SandBox/Worlds/PhysicsTestWorld.cpp.o: ../Engine/Core/ResourceManager.h
 CMakeFiles/Crow.dir/SandBox/Worlds/PhysicsTestWorld.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/SandBox/Worlds/PhysicsTestWorld.cpp.o: ../Engine/EventQueue/Event.h
@@ -8740,6 +8835,7 @@ CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: ../Engine/Components/Me
 CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: ../Engine/Components/SphereCollider.h
 CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: ../Engine/Components/Transform.h
 CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: ../Engine/Core/Game.h
+CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: ../Engine/Core/Input.h
 CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: ../Engine/Core/ResourceManager.h
 CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o: ../Engine/EventQueue/Event.h
@@ -9179,6 +9275,7 @@ CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Components
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Components/SphereCollider.h
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Components/Transform.h
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Core/Game.h
+CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Core/Input.h
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Core/ResourceManager.h
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/EventQueue/Event.h
@@ -9617,6 +9714,7 @@ CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../Engine
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../Engine/Components/MeshInfo.h
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../Engine/Components/Transform.h
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../Engine/Core/Game.h
+CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../Engine/Core/Input.h
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../Engine/Core/ResourceManager.h
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../Engine/EventQueue/Event.h
@@ -10307,6 +10405,7 @@ CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o: /usr/local/include/spdlog
 
 CMakeFiles/Crow.dir/main.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Engine/Core/Game.h
+CMakeFiles/Crow.dir/main.cpp.o: ../Engine/Core/Input.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Engine/EventQueue/Event.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Engine/EventQueue/EventQueue.h

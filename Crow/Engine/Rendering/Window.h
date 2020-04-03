@@ -8,13 +8,17 @@
 
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
+#include "../Core/Input.h"
+
+
+class Input;
 
 class Window {
 
+    friend class Input;
 private:
     GLFWwindow* m_internalWindow;
     void InternalInitGLEW();
-
 
 public:
     int CreateWindow(int windowWidth,int windowHeight,const char* windowName,int majorVersion = 3,int minorVersion = 3);
@@ -26,7 +30,11 @@ public:
     void PollEvents();
     void Terminate();
 
+    inline static void InputKeyCallback(GLFWwindow* window, int key, int scancode, int action, int mods);
+
 };
+
+
 
 
 #endif //CROW_WINDOW_H

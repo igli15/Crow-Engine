@@ -8,6 +8,7 @@
 #include "../Rendering/Model.h"
 #include "glm/ext.hpp"
 #include "ResourceManager.h"
+#include "Input.h"
 
 
 Game* Game::m_instance;
@@ -55,15 +56,30 @@ void Game::Run()
 
         currentWorld->ClearEntityGarbage();
 
+        window->ProcessInput();
+
         while (lag >= MS_PER_UPDATE)
         {
+            if(Input::GetKeyDown(GLFW_KEY_SPACE))
+            {
+                ENGINE_LOG("Space Down");
+            }
+
+            if(Input::GetKeyUp(GLFW_KEY_SPACE))
+            {
+                ENGINE_LOG("Space Up");
+            }
+
+            if(Input::GetKey(GLFW_KEY_SPACE))
+            {
+                ENGINE_LOG("Space");
+            }
+
             currentWorld->UpdateAllSystems();
             lag -= MS_PER_UPDATE;
         }
 
         currentWorld->RenderAllSystems();
-
-        window->ProcessInput();
 
 
         window->SwapBuffers();

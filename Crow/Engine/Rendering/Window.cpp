@@ -4,6 +4,9 @@
 
 #include <iostream>
 #include "Window.h"
+#include "../Core/Input.h"
+#include "../Debug/Debug.h"
+#include <unordered_map>
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
@@ -52,6 +55,10 @@ int Window::CreateWindow(int windowWidth, int windowHeight, const char *windowNa
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
+    Input::instance = new Input();
+    Input::instance->window = this;
+    glfwSetKeyCallback(m_internalWindow,Window::InputKeyCallback);
+
     return 1;
 }
 
@@ -61,6 +68,7 @@ void Window::InternalInitGLEW()
     //initialize the opengl extension wrangler
     GLint glewStatus = glewInit();
     std::cout << "Initialized GLEW, status (1 == OK, 0 == FAILED):" << (glewStatus == GLEW_OK) << std::endl << std::endl;
+
 }
 
 void Window::ProcessInput()
@@ -96,3 +104,33 @@ void Window::ClearColor(float r, float g, float b, float a)
     glClearColor(r, g,b, a);
     glClear(GL_COLOR_BUFFER_BIT);
 }
+
+
+//TODO clean this mess up. to many calls to the maps get it once!
+void Window::InputKeyCallback(GLFWwindow* window, int key, int scancode, int action, int mods)
+{
+    Input::KeyState state;
+
+    auto keyIterator = Input::instance->m_keyMap.find(key);
+
+    if(action == GLFW_PRESS && keyIterator == Input::instance->m_keyMap.end())
+    {
+        ENGINE_LOG("key Down");
+        state = Input::KeyState::PRESSED;
+        Input::instance->m_keyMap[key] = state;
+    }
+    if(action == GLFW_PRESS && keyIterator != Input::instance->m_keyMap.end() && keyIterator->second == Input::KeyState::RELEASED)
+    {
+        ENGINE_LOG("key Down");
+        state = Input::KeyState::PRESSED;
+        Input::instance->m_keyMap[key] = state;
+    }
+    else if(action == GLFW_RELEASE && keyIterator != Input::instance->m_keyMap.end())
+    {
+        ENGINE_LOG("key up");
+        state = Input::KeyState::RELEASED;
+        Input::instance->m_keyMap[key] = state;
+    }
+
+}
+
