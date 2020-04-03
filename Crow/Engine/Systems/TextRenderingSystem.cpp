@@ -29,7 +29,6 @@ void TextRenderingSystem::Render()
     {
         Text& text = world->GetComponent<Text>(entities[i]);
         Transform& textTransform = world->GetComponent<Transform>(entities[i]);
-        ENGINE_LOG(textTransform.WorldPosition().x);
         RenderText(&text,textTransform.WorldPosition().x,textTransform.WorldPosition().y);
     }
 }
