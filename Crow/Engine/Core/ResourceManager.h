@@ -11,6 +11,8 @@
 #include "../Rendering/Model.h"
 #include "../Rendering/AbstractMaterial.h"
 
+class Font;
+
 class ResourceManager {
 
 private:
@@ -18,15 +20,18 @@ private:
     std::map<std::string,Shader*> m_shaders;
     std::map<std::string,Model*> m_models;
     std::map<std::string,AbstractMaterial*> m_materials;
+    std::map<std::string,Font*> m_fonts;
 
 public:
     Texture* LoadTexture(const std::string& path,const std::string& name);
     Shader* CreateShader(const std::string& vertexPath,const std::string& fragmentPath,const std::string& name);
     Model* LoadModel(const std::string& path,const std::string& name);
+    Font* LoadFont(const std::string& path,const std::string& name);
 
     Texture* GetTexture(const std::string& name);
     Shader* GetShader(const std::string& name);
     Model* GetModel(const std::string& name);
+    Font* GetFont(const std::string& name);
 
     template <typename T>
     T* CreateMaterial(const std::string& matName)

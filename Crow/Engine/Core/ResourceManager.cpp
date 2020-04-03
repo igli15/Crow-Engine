@@ -6,6 +6,8 @@
 #include "../../Plugins/stb_image.h"
 #include "../../Crow.h"
 
+#include "../Rendering/Font.h"
+
 Texture* ResourceManager::LoadTexture(const std::string &path, const std::string &name)
 {
     Texture* texture = new Texture();
@@ -76,4 +78,23 @@ Model *ResourceManager::GetModel(const std::string &name)
     }
 
     return m_models[name];
+}
+
+Font *ResourceManager::LoadFont(const std::string& path,const std::string& name)
+{
+    Font* font = new Font(path,48);
+
+    m_fonts[name] = font;
+
+    return font;
+}
+
+Font *ResourceManager::GetFont(const std::string &name)
+{
+    if(m_fonts.find(name) == m_fonts.end())
+    {
+        ENGINE_LOG_ERROR("There is no Font with that name!");
+    }
+
+    return m_fonts[name];
 }

@@ -29,6 +29,8 @@ void MyGame::LoadAssets()
     resourceManager->LoadModel((MODEL_PATH + "skeleton.obj"),"skeleton");
     resourceManager->LoadModel((MODEL_PATH + "pine.obj"),"pine");
     resourceManager->LoadModel((MODEL_PATH + "ghost1.obj"),"ghost");
+
+    resourceManager->LoadFont((FONT_PATH + "Roboto-Light.ttf"),"roboto");
 }
 
 void MyGame::Init()

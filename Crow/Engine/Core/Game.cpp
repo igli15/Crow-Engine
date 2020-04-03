@@ -23,6 +23,8 @@ void Game::Init()
 
     window->CreateWindow(1920,1080,"Crow");
 
+    InitFreeTypeLibrary();
+
 }
 
 void Game::InitWorld()
@@ -60,21 +62,6 @@ void Game::Run()
 
         while (lag >= MS_PER_UPDATE)
         {
-            if(Input::GetKeyDown(GLFW_KEY_SPACE))
-            {
-                ENGINE_LOG("Space Down");
-            }
-
-            if(Input::GetKeyUp(GLFW_KEY_SPACE))
-            {
-                ENGINE_LOG("Space Up");
-            }
-
-            if(Input::GetKey(GLFW_KEY_SPACE))
-            {
-                ENGINE_LOG("Space");
-            }
-
             currentWorld->UpdateAllSystems();
             lag -= MS_PER_UPDATE;
         }
@@ -114,5 +101,15 @@ Game *Game::Instance()
 void Game::LoadAssets()
 {
 
+}
+
+void Game::InitFreeTypeLibrary()
+{
+    ftLibrary = new FT_Library();
+
+    if (FT_Init_FreeType(ftLibrary))
+    {
+       ENGINE_LOG_CRITICAL("FreeType wasn't initialized correctly!");
+    }
 }
 

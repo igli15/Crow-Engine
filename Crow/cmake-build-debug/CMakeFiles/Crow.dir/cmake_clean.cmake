@@ -48,6 +48,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o"
   "CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o"
+  "CMakeFiles/Crow.dir/Engine/Components/Text.cpp.o"
+  "CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o"
+  "CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o"
   "Crow.pdb"
   "Crow"
 )

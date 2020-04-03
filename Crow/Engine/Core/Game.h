@@ -9,6 +9,9 @@
 #include "../Rendering/Window.h"
 #include "../Feather/World.h"
 
+#include "freetype2/ft2build.h"
+#include FT_FREETYPE_H
+
 class ResourceManager;
 
 class Game {
@@ -19,6 +22,7 @@ private:
 
     static Game* m_instance;
 
+    void InitFreeTypeLibrary();
 public:
     virtual void Init();
     virtual void LoadAssets();
@@ -28,6 +32,7 @@ public:
     void SetWorld(World* w);
     static Game* Instance();
 
+    FT_Library* ftLibrary;
     ResourceManager* resourceManager;
 
 };

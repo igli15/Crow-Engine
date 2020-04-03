@@ -16,5 +16,6 @@ const std::string TEXTURE_PATH ("../Assets/Textures/");
 const std::string SHADER_PATH ("../Assets/Shaders/");
 const std::string MODEL_PATH ("../Assets/Models/");
 const std::string SCENE_PATH ("../Assets/Worlds/");
+const std::string FONT_PATH ("../Assets/Fonts/");
 
 #endif //CROW_CROW_H

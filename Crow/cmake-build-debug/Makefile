@@ -231,6 +231,33 @@ Engine/Components/SphereCollider.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Components/SphereCollider.cpp.s
 .PHONY : Engine/Components/SphereCollider.cpp.s
 
+Engine/Components/Text.o: Engine/Components/Text.cpp.o
+
+.PHONY : Engine/Components/Text.o
+
+# target to build an object file
+Engine/Components/Text.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Components/Text.cpp.o
+.PHONY : Engine/Components/Text.cpp.o
+
+Engine/Components/Text.i: Engine/Components/Text.cpp.i
+
+.PHONY : Engine/Components/Text.i
+
+# target to preprocess a source file
+Engine/Components/Text.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Components/Text.cpp.i
+.PHONY : Engine/Components/Text.cpp.i
+
+Engine/Components/Text.s: Engine/Components/Text.cpp.s
+
+.PHONY : Engine/Components/Text.s
+
+# target to generate assembly for a file
+Engine/Components/Text.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Components/Text.cpp.s
+.PHONY : Engine/Components/Text.cpp.s
+
 Engine/Components/Transform.o: Engine/Components/Transform.cpp.o
 
 .PHONY : Engine/Components/Transform.o
@@ -744,6 +771,33 @@ Engine/Rendering/AbstractMaterial.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.s
 .PHONY : Engine/Rendering/AbstractMaterial.cpp.s
 
+Engine/Rendering/Font.o: Engine/Rendering/Font.cpp.o
+
+.PHONY : Engine/Rendering/Font.o
+
+# target to build an object file
+Engine/Rendering/Font.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o
+.PHONY : Engine/Rendering/Font.cpp.o
+
+Engine/Rendering/Font.i: Engine/Rendering/Font.cpp.i
+
+.PHONY : Engine/Rendering/Font.i
+
+# target to preprocess a source file
+Engine/Rendering/Font.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.i
+.PHONY : Engine/Rendering/Font.cpp.i
+
+Engine/Rendering/Font.s: Engine/Rendering/Font.cpp.s
+
+.PHONY : Engine/Rendering/Font.s
+
+# target to generate assembly for a file
+Engine/Rendering/Font.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.s
+.PHONY : Engine/Rendering/Font.cpp.s
+
 Engine/Rendering/Materials/ColorMaterial.o: Engine/Rendering/Materials/ColorMaterial.cpp.o
 
 .PHONY : Engine/Rendering/Materials/ColorMaterial.o
@@ -986,6 +1040,33 @@ Engine/Systems/MeshRendererSystem.s: Engine/Systems/MeshRendererSystem.cpp.s
 Engine/Systems/MeshRendererSystem.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.s
 .PHONY : Engine/Systems/MeshRendererSystem.cpp.s
+
+Engine/Systems/TextRenderingSystem.o: Engine/Systems/TextRenderingSystem.cpp.o
+
+.PHONY : Engine/Systems/TextRenderingSystem.o
+
+# target to build an object file
+Engine/Systems/TextRenderingSystem.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o
+.PHONY : Engine/Systems/TextRenderingSystem.cpp.o
+
+Engine/Systems/TextRenderingSystem.i: Engine/Systems/TextRenderingSystem.cpp.i
+
+.PHONY : Engine/Systems/TextRenderingSystem.i
+
+# target to preprocess a source file
+Engine/Systems/TextRenderingSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.i
+.PHONY : Engine/Systems/TextRenderingSystem.cpp.i
+
+Engine/Systems/TextRenderingSystem.s: Engine/Systems/TextRenderingSystem.cpp.s
+
+.PHONY : Engine/Systems/TextRenderingSystem.s
+
+# target to generate assembly for a file
+Engine/Systems/TextRenderingSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.s
+.PHONY : Engine/Systems/TextRenderingSystem.cpp.s
 
 Engine/Systems/TransformHierarchySystem.o: Engine/Systems/TransformHierarchySystem.cpp.o
 
@@ -1467,6 +1548,9 @@ help:
 	@echo "... Engine/Components/SphereCollider.o"
 	@echo "... Engine/Components/SphereCollider.i"
 	@echo "... Engine/Components/SphereCollider.s"
+	@echo "... Engine/Components/Text.o"
+	@echo "... Engine/Components/Text.i"
+	@echo "... Engine/Components/Text.s"
 	@echo "... Engine/Components/Transform.o"
 	@echo "... Engine/Components/Transform.i"
 	@echo "... Engine/Components/Transform.s"
@@ -1524,6 +1608,9 @@ help:
 	@echo "... Engine/Rendering/AbstractMaterial.o"
 	@echo "... Engine/Rendering/AbstractMaterial.i"
 	@echo "... Engine/Rendering/AbstractMaterial.s"
+	@echo "... Engine/Rendering/Font.o"
+	@echo "... Engine/Rendering/Font.i"
+	@echo "... Engine/Rendering/Font.s"
 	@echo "... Engine/Rendering/Materials/ColorMaterial.o"
 	@echo "... Engine/Rendering/Materials/ColorMaterial.i"
 	@echo "... Engine/Rendering/Materials/ColorMaterial.s"
@@ -1551,6 +1638,9 @@ help:
 	@echo "... Engine/Systems/MeshRendererSystem.o"
 	@echo "... Engine/Systems/MeshRendererSystem.i"
 	@echo "... Engine/Systems/MeshRendererSystem.s"
+	@echo "... Engine/Systems/TextRenderingSystem.o"
+	@echo "... Engine/Systems/TextRenderingSystem.i"
+	@echo "... Engine/Systems/TextRenderingSystem.s"
 	@echo "... Engine/Systems/TransformHierarchySystem.o"
 	@echo "... Engine/Systems/TransformHierarchySystem.i"
 	@echo "... Engine/Systems/TransformHierarchySystem.s"
