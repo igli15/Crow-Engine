@@ -94,8 +94,8 @@ int Transform::GetChildCount()
 
 glm::vec3 Transform::WorldPosition()
 {
-
     return glm::vec3(GetWorldTransform()[3]);
 }
+
 
 

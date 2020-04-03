@@ -51,6 +51,8 @@ public:
 
         return static_cast<T*>(m_materials[matName]);
     }
+
+    const std::map<std::string,Font*>& InternalGetFontMap();
 };
 
 

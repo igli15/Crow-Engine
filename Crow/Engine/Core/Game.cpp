@@ -100,7 +100,8 @@ Game *Game::Instance()
 
 void Game::LoadAssets()
 {
-
+    resourceManager->CreateShader("TextVertexShader.vs","TextFragmentShader.fs","textShader");
+    resourceManager->LoadFont((FONT_PATH + "Roboto-Light.ttf"),"roboto");
 }
 
 void Game::InitFreeTypeLibrary()

@@ -11,6 +11,8 @@
 
 class Font {
 
+    friend class TextRenderingSystem;
+
 public:
     explicit Font(const std::string& path,unsigned int fontSize = 48);
     void SetFontSize(unsigned int newSize);

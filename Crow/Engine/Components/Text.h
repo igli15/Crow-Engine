@@ -7,13 +7,14 @@
 
 #include <string>
 #include "glm/glm.hpp"
+#include "../Rendering/Font.h"
 
-class Text {
+struct Text {
 
     std::string textString;
     glm::vec3 color = glm::vec3(1);
     float scale = 1;
-
+    Font* font;
 };
 
 

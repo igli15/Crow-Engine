@@ -16,6 +16,7 @@
 #include "../../Engine/Feather/EntityHandle.h"
 #include "../../Engine/Components/SphereCollider.h"
 #include "../../Engine/Components/Camera.h"
+#include "../../Engine/Components/Text.h"
 
 void RotatingGunsWorld::Build()
 {
@@ -57,6 +58,9 @@ void RotatingGunsWorld::Build()
             //gunEntity.AddComponent(SphereCollider{1});
         }
     }
-    //ENGINE_LOG("Here");
 
+    EntityHandle textEntity = CreateEntity();
+    Transform* textTransform = textEntity.AddComponent(Transform{});
+    textTransform->SetLocalPosition(glm::vec3(0,0,0));
+    textEntity.AddComponent(Text{"Hello Text",glm::vec3(1,0,0),1,Game::Instance()->resourceManager->GetFont("roboto")});
 }

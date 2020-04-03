@@ -11,6 +11,10 @@
 #include "../Feather/System.h"
 #include "glm/glm.hpp"
 
+class Text;
+class Transform;
+class Shader;
+
 //represents glyph data for a character.
 struct Character {
 
@@ -25,11 +29,14 @@ class TextRenderingSystem : public System {
 
 public:
     void Init() override;
+    void Render() override;
 
 private:
     void BufferAllTextComponents();
-
+    void RenderText(Text* text,float x, float y);
     std::map<GLchar,Character> m_charactersMap;
+    Shader* m_shader;
+    GLuint VAO, VBO;
 };
 
 

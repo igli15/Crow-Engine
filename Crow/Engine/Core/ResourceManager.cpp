@@ -98,3 +98,8 @@ Font *ResourceManager::GetFont(const std::string &name)
 
     return m_fonts[name];
 }
+
+const std::map<std::string, Font *> &ResourceManager::InternalGetFontMap()
+{
+    return m_fonts;
+}
