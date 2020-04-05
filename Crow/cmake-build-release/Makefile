@@ -258,6 +258,33 @@ Engine/Components/SphereCollider.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Components/SphereCollider.cpp.s
 .PHONY : Engine/Components/SphereCollider.cpp.s
 
+Engine/Components/SpriteInfo.o: Engine/Components/SpriteInfo.cpp.o
+
+.PHONY : Engine/Components/SpriteInfo.o
+
+# target to build an object file
+Engine/Components/SpriteInfo.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Components/SpriteInfo.cpp.o
+.PHONY : Engine/Components/SpriteInfo.cpp.o
+
+Engine/Components/SpriteInfo.i: Engine/Components/SpriteInfo.cpp.i
+
+.PHONY : Engine/Components/SpriteInfo.i
+
+# target to preprocess a source file
+Engine/Components/SpriteInfo.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Components/SpriteInfo.cpp.i
+.PHONY : Engine/Components/SpriteInfo.cpp.i
+
+Engine/Components/SpriteInfo.s: Engine/Components/SpriteInfo.cpp.s
+
+.PHONY : Engine/Components/SpriteInfo.s
+
+# target to generate assembly for a file
+Engine/Components/SpriteInfo.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Components/SpriteInfo.cpp.s
+.PHONY : Engine/Components/SpriteInfo.cpp.s
+
 Engine/Components/Text.o: Engine/Components/Text.cpp.o
 
 .PHONY : Engine/Components/Text.o
@@ -879,6 +906,33 @@ Engine/Rendering/Materials/InstancedColorMaterial.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/InstancedColorMaterial.cpp.s
 .PHONY : Engine/Rendering/Materials/InstancedColorMaterial.cpp.s
 
+Engine/Rendering/Materials/SpriteMaterial.o: Engine/Rendering/Materials/SpriteMaterial.cpp.o
+
+.PHONY : Engine/Rendering/Materials/SpriteMaterial.o
+
+# target to build an object file
+Engine/Rendering/Materials/SpriteMaterial.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o
+.PHONY : Engine/Rendering/Materials/SpriteMaterial.cpp.o
+
+Engine/Rendering/Materials/SpriteMaterial.i: Engine/Rendering/Materials/SpriteMaterial.cpp.i
+
+.PHONY : Engine/Rendering/Materials/SpriteMaterial.i
+
+# target to preprocess a source file
+Engine/Rendering/Materials/SpriteMaterial.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.i
+.PHONY : Engine/Rendering/Materials/SpriteMaterial.cpp.i
+
+Engine/Rendering/Materials/SpriteMaterial.s: Engine/Rendering/Materials/SpriteMaterial.cpp.s
+
+.PHONY : Engine/Rendering/Materials/SpriteMaterial.s
+
+# target to generate assembly for a file
+Engine/Rendering/Materials/SpriteMaterial.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.s
+.PHONY : Engine/Rendering/Materials/SpriteMaterial.cpp.s
+
 Engine/Rendering/Materials/TranslucentColorMat.o: Engine/Rendering/Materials/TranslucentColorMat.cpp.o
 
 .PHONY : Engine/Rendering/Materials/TranslucentColorMat.o
@@ -986,6 +1040,33 @@ Engine/Rendering/Shader.s: Engine/Rendering/Shader.cpp.s
 Engine/Rendering/Shader.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Shader.cpp.s
 .PHONY : Engine/Rendering/Shader.cpp.s
+
+Engine/Rendering/Sprite.o: Engine/Rendering/Sprite.cpp.o
+
+.PHONY : Engine/Rendering/Sprite.o
+
+# target to build an object file
+Engine/Rendering/Sprite.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Sprite.cpp.o
+.PHONY : Engine/Rendering/Sprite.cpp.o
+
+Engine/Rendering/Sprite.i: Engine/Rendering/Sprite.cpp.i
+
+.PHONY : Engine/Rendering/Sprite.i
+
+# target to preprocess a source file
+Engine/Rendering/Sprite.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Sprite.cpp.i
+.PHONY : Engine/Rendering/Sprite.cpp.i
+
+Engine/Rendering/Sprite.s: Engine/Rendering/Sprite.cpp.s
+
+.PHONY : Engine/Rendering/Sprite.s
+
+# target to generate assembly for a file
+Engine/Rendering/Sprite.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Sprite.cpp.s
+.PHONY : Engine/Rendering/Sprite.cpp.s
 
 Engine/Rendering/Texture.o: Engine/Rendering/Texture.cpp.o
 
@@ -1121,6 +1202,33 @@ Engine/Systems/MeshRendererSystem.s: Engine/Systems/MeshRendererSystem.cpp.s
 Engine/Systems/MeshRendererSystem.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.s
 .PHONY : Engine/Systems/MeshRendererSystem.cpp.s
+
+Engine/Systems/SpriteRendererSystem.o: Engine/Systems/SpriteRendererSystem.cpp.o
+
+.PHONY : Engine/Systems/SpriteRendererSystem.o
+
+# target to build an object file
+Engine/Systems/SpriteRendererSystem.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o
+.PHONY : Engine/Systems/SpriteRendererSystem.cpp.o
+
+Engine/Systems/SpriteRendererSystem.i: Engine/Systems/SpriteRendererSystem.cpp.i
+
+.PHONY : Engine/Systems/SpriteRendererSystem.i
+
+# target to preprocess a source file
+Engine/Systems/SpriteRendererSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.i
+.PHONY : Engine/Systems/SpriteRendererSystem.cpp.i
+
+Engine/Systems/SpriteRendererSystem.s: Engine/Systems/SpriteRendererSystem.cpp.s
+
+.PHONY : Engine/Systems/SpriteRendererSystem.s
+
+# target to generate assembly for a file
+Engine/Systems/SpriteRendererSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.s
+.PHONY : Engine/Systems/SpriteRendererSystem.cpp.s
 
 Engine/Systems/TextRenderingSystem.o: Engine/Systems/TextRenderingSystem.cpp.o
 
@@ -1632,6 +1740,9 @@ help:
 	@echo "... Engine/Components/SphereCollider.o"
 	@echo "... Engine/Components/SphereCollider.i"
 	@echo "... Engine/Components/SphereCollider.s"
+	@echo "... Engine/Components/SpriteInfo.o"
+	@echo "... Engine/Components/SpriteInfo.i"
+	@echo "... Engine/Components/SpriteInfo.s"
 	@echo "... Engine/Components/Text.o"
 	@echo "... Engine/Components/Text.i"
 	@echo "... Engine/Components/Text.s"
@@ -1701,6 +1812,9 @@ help:
 	@echo "... Engine/Rendering/Materials/InstancedColorMaterial.o"
 	@echo "... Engine/Rendering/Materials/InstancedColorMaterial.i"
 	@echo "... Engine/Rendering/Materials/InstancedColorMaterial.s"
+	@echo "... Engine/Rendering/Materials/SpriteMaterial.o"
+	@echo "... Engine/Rendering/Materials/SpriteMaterial.i"
+	@echo "... Engine/Rendering/Materials/SpriteMaterial.s"
 	@echo "... Engine/Rendering/Materials/TranslucentColorMat.o"
 	@echo "... Engine/Rendering/Materials/TranslucentColorMat.i"
 	@echo "... Engine/Rendering/Materials/TranslucentColorMat.s"
@@ -1713,6 +1827,9 @@ help:
 	@echo "... Engine/Rendering/Shader.o"
 	@echo "... Engine/Rendering/Shader.i"
 	@echo "... Engine/Rendering/Shader.s"
+	@echo "... Engine/Rendering/Sprite.o"
+	@echo "... Engine/Rendering/Sprite.i"
+	@echo "... Engine/Rendering/Sprite.s"
 	@echo "... Engine/Rendering/Texture.o"
 	@echo "... Engine/Rendering/Texture.i"
 	@echo "... Engine/Rendering/Texture.s"
@@ -1728,6 +1845,9 @@ help:
 	@echo "... Engine/Systems/MeshRendererSystem.o"
 	@echo "... Engine/Systems/MeshRendererSystem.i"
 	@echo "... Engine/Systems/MeshRendererSystem.s"
+	@echo "... Engine/Systems/SpriteRendererSystem.o"
+	@echo "... Engine/Systems/SpriteRendererSystem.i"
+	@echo "... Engine/Systems/SpriteRendererSystem.s"
 	@echo "... Engine/Systems/TextRenderingSystem.o"
 	@echo "... Engine/Systems/TextRenderingSystem.i"
 	@echo "... Engine/Systems/TextRenderingSystem.s"

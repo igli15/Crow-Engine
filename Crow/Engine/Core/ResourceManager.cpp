@@ -7,13 +7,14 @@
 #include "../../Crow.h"
 
 #include "../Rendering/Font.h"
+#include "../Rendering/Sprite.h"
 
 Texture *ResourceManager::LoadTexture(const std::string &path, const std::string &name) {
     Texture *texture = new Texture();
     int width, height, nrChannels;
 
     stbi_set_flip_vertically_on_load(true);
-    unsigned char *data = stbi_load((TEXTURE_PATH + path).data(), &width, &height, &nrChannels, 0);
+    unsigned char *data = stbi_load((path).data(), &width, &height, &nrChannels, 0);
 
     if (!data) {
         ENGINE_LOG_ERROR("There is no texture in path: " + path);
@@ -24,6 +25,7 @@ Texture *ResourceManager::LoadTexture(const std::string &path, const std::string
     texture->height = height;
     texture->nrOfChannels = nrChannels;
 
+    texture->Generate(width,height,data);
     m_textures[name] = texture;
 
     return texture;
@@ -102,4 +104,24 @@ Font *ResourceManager::GetFont(const std::string &name) {
 
 const std::map<std::string, Font *> &ResourceManager::InternalGetFontMap() {
     return m_fonts;
+}
+
+Sprite *ResourceManager::CreateSprite(const std::string &name, Texture *texture)
+{
+    Sprite* sprite = new Sprite();
+
+    sprite->texture = texture;
+    m_sprites[name] = sprite;
+
+    return sprite;
+}
+
+Sprite *ResourceManager::GetSprite(const std::string &name)
+{
+    if (m_sprites.find(name) == m_sprites.end())
+    {
+        ENGINE_LOG_ERROR("There is no Sprite with that name!");
+    }
+
+    return m_sprites[name];
 }

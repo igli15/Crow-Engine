@@ -4,10 +4,10 @@
 
 #include "Texture.h"
 
-void Texture::Generate(GLuint width, GLuint height, unsigned char *data)
+void Texture::Generate(GLuint pwidth, GLuint pheight, unsigned char *data)
 {
-    this->width = width;
-    this->height = height;
+    this->width = pwidth;
+    this->height = pheight;
 
     glBindTexture(GL_TEXTURE_2D, this->ID);
     glTexImage2D(GL_TEXTURE_2D, 0, this->internalFormat, width, height, 0, this->imageFormat, GL_UNSIGNED_BYTE, data);

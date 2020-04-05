@@ -13,6 +13,7 @@
 #include "../Systems/TransformHierarchySystem.h"
 #include "../Systems/TextRenderingSystem.h"
 #include "../Systems/InstancedMeshRenderingSystem.h"
+#include "../Systems/SpriteRendererSystem.h"
 
 void World::Init()
 {
@@ -72,6 +73,7 @@ void World::RegisterEngineSystems()
     RegisterSystem<CollisionDetectionSystem>();
     RegisterSystem<TransformHierarchySystem>();
     RegisterSystem<TextRenderingSystem>();
+    RegisterSystem<SpriteRendererSystem>();
     SetSystemSignature<MeshRendererSystem,Transform,MeshInfo>();
 
     //SetSystemSignature<CollisionDetectionSystem,Transform,SphereCollider>();

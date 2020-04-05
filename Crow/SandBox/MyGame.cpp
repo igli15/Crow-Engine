@@ -18,6 +18,7 @@ void MyGame::LoadAssets()
 
     resourceManager->CreateShader("TranslucentVertexShader.vs","TranslucentFragmentShader.fs","translucentShader");
     resourceManager->CreateShader("VertexShader.vs","FragmentShader.fs","litShader");
+    resourceManager->CreateShader("SpriteVertexShader.vs","SpriteFragmentShader.fs","spriteShader");
 
     resourceManager->CreateMaterial<ColorMaterial>("defaultMat");
 

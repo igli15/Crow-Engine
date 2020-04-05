@@ -20,6 +20,7 @@
 #include "../../Engine/Components/Light.h"
 #include "../../Engine/Rendering/Materials/InstancedColorMaterial.h"
 #include "../../Engine/Components/InstancedMeshInfo.h"
+#include "../../Engine/Components/SpriteInfo.h"
 
 void RotatingGunsWorld::Build()
 {
@@ -70,6 +71,17 @@ void RotatingGunsWorld::Build()
     Transform* textTransform = textEntity.AddComponent(Transform{});
     textTransform->SetLocalPosition(glm::vec3(0,0,0));
     textEntity.AddComponent(Text{"Hello Text",glm::vec3(1,0,0),1,Game::Instance()->resourceManager->GetFont("roboto")});
+
+
+    Texture* texture = Game::Instance()->resourceManager->LoadTexture(TEXTURE_PATH + "crowIcon.png","crowTexture");
+    Sprite* sprite = Game::Instance()->resourceManager->CreateSprite("crowSprite",texture);
+    SpriteMaterial* spriteMaterial = new SpriteMaterial();
+
+    EntityHandle spriteEntity = CreateEntity();
+    Transform* spriteTransform = spriteEntity.AddComponent(Transform{});
+    spriteTransform->SetLocalPosition(glm::vec3(200,200,0));
+    spriteTransform->Scale(glm::vec3(200,200,1));
+    spriteEntity.AddComponent(SpriteInfo{glm::vec3(1),sprite,spriteMaterial});
 
     EntityHandle lightEntity = CreateEntity();
     auto dirLightTransform = lightEntity.AddComponent(Transform{});

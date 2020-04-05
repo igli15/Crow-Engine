@@ -54,6 +54,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/Crow.dir/Engine/Components/InstancedMeshInfo.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Rendering/Materials/InstancedColorMaterial.cpp.o"
+  "CMakeFiles/Crow.dir/Engine/Components/SpriteInfo.cpp.o"
+  "CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o"
+  "CMakeFiles/Crow.dir/Engine/Rendering/Sprite.cpp.o"
+  "CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o"
   "Crow.pdb"
   "Crow"
 )

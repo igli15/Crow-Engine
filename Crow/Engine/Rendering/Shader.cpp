@@ -112,3 +112,9 @@ GLuint Shader::GetAttribLocation (const std::string& pName)
 {
     return glGetAttribLocation (ID, pName.c_str());
 }
+
+void Shader::SetVec3(const std::string &name, const glm::vec3 &v3)
+{
+    int location = glGetUniformLocation(ID, name.c_str());
+    glUniform3fv(location, 1, glm::value_ptr(v3));
+}
