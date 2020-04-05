@@ -25,7 +25,6 @@ void MyGame::LoadAssets()
     resourceManager->LoadModel((MODEL_PATH + "sphere.obj"),"sphere");
     resourceManager->LoadModel((MODEL_PATH + "axis.obj"),"axis");
     resourceManager->LoadModel((MODEL_PATH + "plane.obj"),"plane");
-    resourceManager->LoadModel((MODEL_PATH + "sphere.obj"),"sphere");
     resourceManager->LoadModel((MODEL_PATH + "lanternCandle.obj"),"lantern");
     resourceManager->LoadModel((MODEL_PATH + "gravestone.obj"),"gravestone");
     resourceManager->LoadModel((MODEL_PATH + "skeleton.obj"),"skeleton");

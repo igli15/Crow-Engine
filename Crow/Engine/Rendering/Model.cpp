@@ -9,60 +9,50 @@
 #include "assimp/scene.h"
 #include "assimp/postprocess.h"
 
-Model::Model(const char *path)
-{
+Model::Model(const char *path) {
     LoadModel(path);
 }
 
-void Model::Draw(const Shader &shader)
-{
+void Model::Draw(const Shader &shader) {
     //std::cout<<"Meshes: "<< m_meshes.size()<<std::endl;
 
-    for (int i = 0; i < m_meshes.size() ; ++i)
-    {
+    for (int i = 0; i < m_meshes.size(); ++i) {
         m_meshes[i].Draw(shader);
     }
 }
 
-void Model::LoadModel(const std::string& path)
-{
+void Model::LoadModel(const std::string &path) {
     Assimp::Importer importer;
-    const aiScene* scene = importer.ReadFile(path.data(),aiProcess_Triangulate | aiProcess_FlipUVs);
+    const aiScene *scene = importer.ReadFile(path.data(), aiProcess_Triangulate | aiProcess_FlipUVs);
 
-    if(!scene || scene->mFlags & AI_SCENE_FLAGS_INCOMPLETE || !scene->mRootNode)
-    {
+    if (!scene || scene->mFlags & AI_SCENE_FLAGS_INCOMPLETE || !scene->mRootNode) {
         ENGINE_LOG_ERROR("Mesh was not loaded correctly. Path: " + path);
         return;
     }
 
     directory = path.substr(0, path.find_last_of('/'));
 
-    ProcessNode(scene->mRootNode,scene);
+    ProcessNode(scene->mRootNode, scene);
 
 }
 
-void Model::ProcessNode(aiNode *node, const aiScene *scene)
-{
-    for (int i = 0; i < node->mNumMeshes; ++i)
-    {
-        aiMesh* m = scene->mMeshes[node->mMeshes[i]];
-        m_meshes.push_back(ProcessMesh(m,scene));
+void Model::ProcessNode(aiNode *node, const aiScene *scene) {
+    for (int i = 0; i < node->mNumMeshes; ++i) {
+        aiMesh *m = scene->mMeshes[node->mMeshes[i]];
+        m_meshes.push_back(ProcessMesh(m, scene));
     }
 
     //recursively process all the child nodes as well
-    for (int j = 0; j < node->mNumChildren; ++j)
-    {
-        ProcessNode(node->mChildren[j],scene);
+    for (int j = 0; j < node->mNumChildren; ++j) {
+        ProcessNode(node->mChildren[j], scene);
     }
 }
 
-Mesh Model::ProcessMesh(aiMesh *mesh, const aiScene *scene)
-{
+Mesh Model::ProcessMesh(aiMesh *mesh, const aiScene *scene) {
     std::vector<Vertex> vertices;
     std::vector<unsigned int> indices;
 
-    for(unsigned int i = 0; i < mesh->mNumVertices; i++)
-    {
+    for (unsigned int i = 0; i < mesh->mNumVertices; i++) {
         Vertex vertex;
         glm::vec3 vector;
         // positions
@@ -77,7 +67,7 @@ Mesh Model::ProcessMesh(aiMesh *mesh, const aiScene *scene)
         vertex.normal = vector;
         // texture coordinates
 
-        if(mesh->mTextureCoords[0]) // does the mesh contain texture coordinates?
+        if (mesh->mTextureCoords[0]) // does the mesh contain texture coordinates?
         {
             glm::vec2 vec;
             // a vertex can contain up to 8 different texture coordinates. We thus make the assumption that we won't
@@ -85,8 +75,7 @@ Mesh Model::ProcessMesh(aiMesh *mesh, const aiScene *scene)
             vec.x = mesh->mTextureCoords[0][i].x;
             vec.y = mesh->mTextureCoords[0][i].y;
             vertex.uvs = vec;
-        }
-        else
+        } else
             vertex.uvs = glm::vec2(0.0f, 0.0f);
 
         /*
@@ -105,14 +94,80 @@ Mesh Model::ProcessMesh(aiMesh *mesh, const aiScene *scene)
         vertices.push_back(vertex);
     }
 
-    for(unsigned int i = 0; i < mesh->mNumFaces; i++)
-    {
+    for (unsigned int i = 0; i < mesh->mNumFaces; i++) {
         aiFace face = mesh->mFaces[i];
-        for(unsigned int j = 0; j < face.mNumIndices; j++)
-        {
+        for (unsigned int j = 0; j < face.mNumIndices; j++) {
             indices.push_back(face.mIndices[j]);
         }
     }
 
-    return Mesh(vertices,indices);
+    return Mesh(vertices, indices);
+}
+
+void Model::InstanceBufferMeshes()
+{
+
+    for (int meshIndex = 0; meshIndex < m_meshes.size(); ++meshIndex)
+    {
+        unsigned int VAO = m_meshes[meshIndex].VAO;
+        glBindVertexArray(VAO);
+        // set attribute pointers for matrix (4 times vec4)
+        glEnableVertexAttribArray(3);
+        glVertexAttribPointer(3, 4, GL_FLOAT, GL_FALSE, sizeof(glm::mat4), (void *) 0);
+        glEnableVertexAttribArray(4);
+        glVertexAttribPointer(4, 4, GL_FLOAT, GL_FALSE, sizeof(glm::mat4), (void *) (sizeof(glm::vec4)));
+        glEnableVertexAttribArray(5);
+        glVertexAttribPointer(5, 4, GL_FLOAT, GL_FALSE, sizeof(glm::mat4), (void *) (2 * sizeof(glm::vec4)));
+        glEnableVertexAttribArray(6);
+        glVertexAttribPointer(6, 4, GL_FLOAT, GL_FALSE, sizeof(glm::mat4), (void *) (3 * sizeof(glm::vec4)));
+
+        glVertexAttribDivisor(3, 1);
+        glVertexAttribDivisor(4, 1);
+        glVertexAttribDivisor(5, 1);
+        glVertexAttribDivisor(6, 1);
+
+        glBindVertexArray(0);
+    }
+
+}
+
+void Model::InstanceRenderMeshes(int amount)
+{
+    for (unsigned int meshIndex = 0; meshIndex < m_meshes.size(); meshIndex++)
+    {
+        glBindVertexArray(m_meshes[meshIndex].VAO);
+        glDrawElementsInstanced(GL_TRIANGLES, m_meshes[meshIndex].m_indices.size(), GL_UNSIGNED_INT, 0, amount);
+        glBindVertexArray(0);
+    }
+}
+
+void Model::BindModelBuffer(std::vector<glm::mat4>& models)
+{
+
+    for (int i = 0; i < m_meshes.size(); ++i) {
+
+        glBindVertexArray(m_meshes[i].VAO);
+        glBindBuffer(GL_ARRAY_BUFFER, m_meshes[i].VBO);
+        glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(glm::mat4) * models.size(), &models[0]);
+        glBindVertexArray(0);
+    }
+
+
+    /*
+    // Map the buffer
+    glm::mat4* matrices = (glm::mat4 *)glMapBuffer(GL_ARRAY_BUFFER,
+                                          GL_WRITE_ONLY);
+
+
+    for (int n = 0; n < models.size(); n++)
+    {
+        if(matrices != nullptr)
+        {
+            ENGINE_LOG("here");
+            matrices[n] = models[n];
+        }
+    }
+
+    glUnmapBuffer(GL_ARRAY_BUFFER);
+     */
 }

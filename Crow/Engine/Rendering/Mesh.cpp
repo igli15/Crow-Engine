@@ -47,3 +47,4 @@ void Mesh::BufferMesh()
 
     glBindVertexArray(0);
 }
+

@@ -22,6 +22,9 @@ private:
     std::map<std::string,AbstractMaterial*> m_materials;
     std::map<std::string,Font*> m_fonts;
 
+    int m_modelIdCounter = 0;
+
+
 public:
     Texture* LoadTexture(const std::string& path,const std::string& name);
     Shader* CreateShader(const std::string& vertexPath,const std::string& fragmentPath,const std::string& name);

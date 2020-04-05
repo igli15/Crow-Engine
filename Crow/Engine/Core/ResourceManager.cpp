@@ -8,17 +8,15 @@
 
 #include "../Rendering/Font.h"
 
-Texture* ResourceManager::LoadTexture(const std::string &path, const std::string &name)
-{
-    Texture* texture = new Texture();
+Texture *ResourceManager::LoadTexture(const std::string &path, const std::string &name) {
+    Texture *texture = new Texture();
     int width, height, nrChannels;
 
     stbi_set_flip_vertically_on_load(true);
     unsigned char *data = stbi_load((TEXTURE_PATH + path).data(), &width, &height, &nrChannels, 0);
 
-    if(!data)
-    {
-       ENGINE_LOG_ERROR("There is no texture in path: " + path);
+    if (!data) {
+        ENGINE_LOG_ERROR("There is no texture in path: " + path);
     }
 
     texture->data = data;
@@ -31,75 +29,77 @@ Texture* ResourceManager::LoadTexture(const std::string &path, const std::string
     return texture;
 }
 
-Shader *ResourceManager::CreateShader(const std::string &vertexPath, const std::string &fragmentPath, const std::string &name)
-{
-    Shader* shader = new Shader(vertexPath,fragmentPath);
+Shader *
+ResourceManager::CreateShader(const std::string &vertexPath, const std::string &fragmentPath, const std::string &name) {
+    Shader *shader = new Shader(vertexPath, fragmentPath);
 
     m_shaders[name] = shader;
 
     return shader;
 }
 
-Texture *ResourceManager::GetTexture(const std::string &name)
-{
+Texture *ResourceManager::GetTexture(const std::string &name) {
 
-    if(m_textures.find(name) == m_textures.end())
-    {
+    if (m_textures.find(name) == m_textures.end()) {
         ENGINE_LOG_ERROR("There is no Texture with that name!");
     }
 
     return m_textures[name];
 }
 
-Shader *ResourceManager::GetShader(const std::string &name)
-{
-    if(m_shaders.find(name) == m_shaders.end())
-    {
+Shader *ResourceManager::GetShader(const std::string &name) {
+    if (m_shaders.find(name) == m_shaders.end()) {
         ENGINE_LOG_ERROR("There is no Shader with that name!");
     }
 
     return m_shaders[name];
 }
 
-Model *ResourceManager::LoadModel(const std::string &path, const std::string &name)
-{
-    Model* model = new Model(path.data());
+Model *ResourceManager::LoadModel(const std::string &path, const std::string &name) {
+    Model *model = new Model(path.data());
 
-    m_models[name] = model;
+    auto iterator = m_models.find(name);
 
-    return model;
+    if (iterator != m_models.end())
+    {
+        ENGINE_LOG_CRITICAL("Model with that name already exists!");
+        throw;
+    }
+    else
+    {
+        m_modelIdCounter++;
+        model->ID = m_modelIdCounter;
+        m_models.insert(iterator,std::make_pair(name,model));
+        return model;
+    }
+
+    return nullptr;
 }
 
-Model *ResourceManager::GetModel(const std::string &name)
-{
-    if(m_models.find(name) == m_models.end())
-    {
+Model *ResourceManager::GetModel(const std::string &name) {
+    if (m_models.find(name) == m_models.end()) {
         ENGINE_LOG_ERROR("There is no Model with that name!");
     }
 
     return m_models[name];
 }
 
-Font *ResourceManager::LoadFont(const std::string& path,const std::string& name)
-{
-    Font* font = new Font(path,48);
+Font *ResourceManager::LoadFont(const std::string &path, const std::string &name) {
+    Font *font = new Font(path, 48);
 
     m_fonts[name] = font;
 
     return font;
 }
 
-Font *ResourceManager::GetFont(const std::string &name)
-{
-    if(m_fonts.find(name) == m_fonts.end())
-    {
+Font *ResourceManager::GetFont(const std::string &name) {
+    if (m_fonts.find(name) == m_fonts.end()) {
         ENGINE_LOG_ERROR("There is no Font with that name!");
     }
 
     return m_fonts[name];
 }
 
-const std::map<std::string, Font *> &ResourceManager::InternalGetFontMap()
-{
+const std::map<std::string, Font *> &ResourceManager::InternalGetFontMap() {
     return m_fonts;
 }

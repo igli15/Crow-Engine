@@ -67,6 +67,7 @@ void Window::InternalInitGLEW()
     std::cout << "Initializing GLEW..." << std::endl;
     //initialize the opengl extension wrangler
     GLint glewStatus = glewInit();
+    glGetError(); // need to check for error here cuz a bug in glew throws an error in opengl
     std::cout << "Initialized GLEW, status (1 == OK, 0 == FAILED):" << (glewStatus == GLEW_OK) << std::endl << std::endl;
 
 }

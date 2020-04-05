@@ -17,13 +17,18 @@
 #include "../../Engine/Components/SphereCollider.h"
 #include "../../Engine/Components/Camera.h"
 #include "../../Engine/Components/Text.h"
+#include "../../Engine/Components/Light.h"
+#include "../../Engine/Rendering/Materials/InstancedColorMaterial.h"
+#include "../../Engine/Components/InstancedMeshInfo.h"
 
 void RotatingGunsWorld::Build()
 {
     World::Build();
 
     //Register the shader once
-    Game::Instance()->resourceManager->CreateShader("VertexShader.vs","FragmentShader.fs","unlitShader");
+    //Game::Instance()->resourceManager->CreateShader("InstancedVertexShader.vs","InstancedFragmentShader.fs","instancedLitShader");
+    Game::Instance()->resourceManager->CreateShader("VertexShader.vs","FragmentShader.fs","litShader");
+
 
     //Load the models
     Model* gunModel = Game::Instance()->resourceManager->LoadModel((MODEL_PATH + "pistol.obj"),"gunModel");
@@ -32,6 +37,7 @@ void RotatingGunsWorld::Build()
     SetSystemSignature<RotateSystem,Transform,RotateComponent>();
 
     ColorMaterial* mat = new ColorMaterial();
+    //InstancedColorMaterial* mat = new InstancedColorMaterial();
 
     EntityHandle cameraEntity = CreateEntity();
     cameraEntity.AddComponent(Camera{});
@@ -50,6 +56,7 @@ void RotatingGunsWorld::Build()
             t2->Rotate(-25, glm::vec3(0, 1, 0));
 
             MeshInfo gunMeshInfo{};
+            //InstancedMeshInfo gunMeshInfo{};
             gunMeshInfo.model = gunModel;
             mat->mainColor = glm::vec3(0.8f,0.8f,0.8f);
             gunMeshInfo.material = mat;
@@ -63,4 +70,11 @@ void RotatingGunsWorld::Build()
     Transform* textTransform = textEntity.AddComponent(Transform{});
     textTransform->SetLocalPosition(glm::vec3(0,0,0));
     textEntity.AddComponent(Text{"Hello Text",glm::vec3(1,0,0),1,Game::Instance()->resourceManager->GetFont("roboto")});
+
+    EntityHandle lightEntity = CreateEntity();
+    auto dirLightTransform = lightEntity.AddComponent(Transform{});
+    dirLightTransform->Rotate(-45,glm::vec3(1,0,0));
+    Light* dirLight = lightEntity.AddComponent(Light{glm::vec3(0.8,0.8,0.8)});
+    dirLight->intensity = 1;
+
 }

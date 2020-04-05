@@ -28,6 +28,11 @@ public:
     void LoadModel(const std::string& path);
     void ProcessNode(aiNode* node,const aiScene* scene);
     Mesh ProcessMesh(aiMesh* mesh,const aiScene* scene);
+
+    void InstanceBufferMeshes();
+    void InstanceRenderMeshes(int amount);
+    void BindModelBuffer(std::vector<glm::mat4>& models);
+    int ID = -1;
 };
 
 

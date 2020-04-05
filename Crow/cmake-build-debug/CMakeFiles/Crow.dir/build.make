@@ -733,6 +733,45 @@ CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Font.cpp" -o CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.s
 
+CMakeFiles/Crow.dir/Engine/Components/InstancedMeshInfo.cpp.o: CMakeFiles/Crow.dir/flags.make
+CMakeFiles/Crow.dir/Engine/Components/InstancedMeshInfo.cpp.o: ../Engine/Components/InstancedMeshInfo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/Crow.dir/Engine/Components/InstancedMeshInfo.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Components/InstancedMeshInfo.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/InstancedMeshInfo.cpp"
+
+CMakeFiles/Crow.dir/Engine/Components/InstancedMeshInfo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Engine/Components/InstancedMeshInfo.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/InstancedMeshInfo.cpp" > CMakeFiles/Crow.dir/Engine/Components/InstancedMeshInfo.cpp.i
+
+CMakeFiles/Crow.dir/Engine/Components/InstancedMeshInfo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Components/InstancedMeshInfo.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/InstancedMeshInfo.cpp" -o CMakeFiles/Crow.dir/Engine/Components/InstancedMeshInfo.cpp.s
+
+CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.o: CMakeFiles/Crow.dir/flags.make
+CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.o: ../Engine/Systems/InstancedMeshRenderingSystem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/InstancedMeshRenderingSystem.cpp"
+
+CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/InstancedMeshRenderingSystem.cpp" > CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.i
+
+CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/InstancedMeshRenderingSystem.cpp" -o CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.s
+
+CMakeFiles/Crow.dir/Engine/Rendering/Materials/InstancedColorMaterial.cpp.o: CMakeFiles/Crow.dir/flags.make
+CMakeFiles/Crow.dir/Engine/Rendering/Materials/InstancedColorMaterial.cpp.o: ../Engine/Rendering/Materials/InstancedColorMaterial.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/Crow.dir/Engine/Rendering/Materials/InstancedColorMaterial.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Rendering/Materials/InstancedColorMaterial.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/InstancedColorMaterial.cpp"
+
+CMakeFiles/Crow.dir/Engine/Rendering/Materials/InstancedColorMaterial.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Engine/Rendering/Materials/InstancedColorMaterial.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/InstancedColorMaterial.cpp" > CMakeFiles/Crow.dir/Engine/Rendering/Materials/InstancedColorMaterial.cpp.i
+
+CMakeFiles/Crow.dir/Engine/Rendering/Materials/InstancedColorMaterial.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Rendering/Materials/InstancedColorMaterial.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/InstancedColorMaterial.cpp" -o CMakeFiles/Crow.dir/Engine/Rendering/Materials/InstancedColorMaterial.cpp.s
+
 # Object files for target Crow
 Crow_OBJECTS = \
 "CMakeFiles/Crow.dir/main.cpp.o" \
@@ -786,7 +825,10 @@ Crow_OBJECTS = \
 "CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Components/Text.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o" \
-"CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o"
+"CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o" \
+"CMakeFiles/Crow.dir/Engine/Components/InstancedMeshInfo.cpp.o" \
+"CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.o" \
+"CMakeFiles/Crow.dir/Engine/Rendering/Materials/InstancedColorMaterial.cpp.o"
 
 # External object files for target Crow
 Crow_EXTERNAL_OBJECTS =
@@ -843,13 +885,16 @@ Crow: CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Components/Text.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o
+Crow: CMakeFiles/Crow.dir/Engine/Components/InstancedMeshInfo.cpp.o
+Crow: CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.o
+Crow: CMakeFiles/Crow.dir/Engine/Rendering/Materials/InstancedColorMaterial.cpp.o
 Crow: CMakeFiles/Crow.dir/build.make
 Crow: /usr/local/lib/libglfw.dylib
 Crow: /usr/local/lib/libassimp.dylib
 Crow: /usr/local/lib/libGLEW.dylib
 Crow: /usr/local/lib/libfreetype.dylib
 Crow: CMakeFiles/Crow.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_53) "Linking CXX executable Crow"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_56) "Linking CXX executable Crow"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Crow.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -12,6 +12,7 @@
 #include "../Events/EntityEvents.h"
 #include "../Systems/TransformHierarchySystem.h"
 #include "../Systems/TextRenderingSystem.h"
+#include "../Systems/InstancedMeshRenderingSystem.h"
 
 void World::Init()
 {
@@ -67,6 +68,7 @@ void World::Build()
 void World::RegisterEngineSystems()
 {
     RegisterSystem<MeshRendererSystem>();
+    RegisterSystem<InstancedMeshRenderingSystem>();
     RegisterSystem<CollisionDetectionSystem>();
     RegisterSystem<TransformHierarchySystem>();
     RegisterSystem<TextRenderingSystem>();
