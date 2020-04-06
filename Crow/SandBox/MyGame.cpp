@@ -11,6 +11,7 @@
 #include "Worlds/XmlTestWorld.h"
 #include "../Engine/Core/ResourceManager.h"
 #include "../Engine/Rendering/Materials/ColorMaterial.h"
+#include "Worlds/SpriteRenderingWorld.h"
 
 void MyGame::LoadAssets()
 {
@@ -45,6 +46,7 @@ void MyGame::Init()
     //SetWorld(new PhysicsTestWorld());
     //SetWorld(new TranslucentMaterialTestWorld());
     //SetWorld(new LightingTestWorld());
-    SetWorld(new RotatingGunsWorld());
+    //SetWorld(new RotatingGunsWorld());
+    SetWorld(new SpriteRenderingWorld());
 }
 

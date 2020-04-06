@@ -1635,6 +1635,33 @@ SandBox/Worlds/RotatingGunsWorld.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.s
 .PHONY : SandBox/Worlds/RotatingGunsWorld.cpp.s
 
+SandBox/Worlds/SpriteRenderingWorld.o: SandBox/Worlds/SpriteRenderingWorld.cpp.o
+
+.PHONY : SandBox/Worlds/SpriteRenderingWorld.o
+
+# target to build an object file
+SandBox/Worlds/SpriteRenderingWorld.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o
+.PHONY : SandBox/Worlds/SpriteRenderingWorld.cpp.o
+
+SandBox/Worlds/SpriteRenderingWorld.i: SandBox/Worlds/SpriteRenderingWorld.cpp.i
+
+.PHONY : SandBox/Worlds/SpriteRenderingWorld.i
+
+# target to preprocess a source file
+SandBox/Worlds/SpriteRenderingWorld.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.i
+.PHONY : SandBox/Worlds/SpriteRenderingWorld.cpp.i
+
+SandBox/Worlds/SpriteRenderingWorld.s: SandBox/Worlds/SpriteRenderingWorld.cpp.s
+
+.PHONY : SandBox/Worlds/SpriteRenderingWorld.s
+
+# target to generate assembly for a file
+SandBox/Worlds/SpriteRenderingWorld.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.s
+.PHONY : SandBox/Worlds/SpriteRenderingWorld.cpp.s
+
 SandBox/Worlds/TranslucentMaterialTestWorld.o: SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o
 
 .PHONY : SandBox/Worlds/TranslucentMaterialTestWorld.o
@@ -1893,6 +1920,9 @@ help:
 	@echo "... SandBox/Worlds/RotatingGunsWorld.o"
 	@echo "... SandBox/Worlds/RotatingGunsWorld.i"
 	@echo "... SandBox/Worlds/RotatingGunsWorld.s"
+	@echo "... SandBox/Worlds/SpriteRenderingWorld.o"
+	@echo "... SandBox/Worlds/SpriteRenderingWorld.i"
+	@echo "... SandBox/Worlds/SpriteRenderingWorld.s"
 	@echo "... SandBox/Worlds/TranslucentMaterialTestWorld.o"
 	@echo "... SandBox/Worlds/TranslucentMaterialTestWorld.i"
 	@echo "... SandBox/Worlds/TranslucentMaterialTestWorld.s"

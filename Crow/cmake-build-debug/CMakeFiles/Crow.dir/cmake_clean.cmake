@@ -58,6 +58,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Rendering/Sprite.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o"
+  "CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o"
   "Crow.pdb"
   "Crow"
 )

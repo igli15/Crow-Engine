@@ -446,6 +446,12 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/RotatingGunsWorld.h">
 			<Option target="Crow"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/SpriteRenderingWorld.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/SpriteRenderingWorld.h">
+			<Option target="Crow"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/TranslucentMaterialTestWorld.cpp">
 			<Option target="Crow"/>
 		</Unit>

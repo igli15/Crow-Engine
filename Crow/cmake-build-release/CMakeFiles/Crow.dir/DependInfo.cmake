@@ -60,6 +60,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/PhysicsTestWorld.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Worlds/PhysicsTestWorld.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/PrototypeWorld.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/RotatingGunsWorld.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/SpriteRenderingWorld.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/TranslucentMaterialTestWorld.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/XmlTestWorld.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/main.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/main.cpp.o"

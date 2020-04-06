@@ -13,7 +13,7 @@ Texture *ResourceManager::LoadTexture(const std::string &path, const std::string
     Texture *texture = new Texture();
     int width, height, nrChannels;
 
-    stbi_set_flip_vertically_on_load(true);
+    stbi_set_flip_vertically_on_load(false);
     unsigned char *data = stbi_load((path).data(), &width, &height, &nrChannels, 0);
 
     if (!data) {

@@ -29,6 +29,8 @@ void SpriteRendererSystem::Render()
         Transform& transform = world->GetComponent<Transform>(entities[i]);
         SpriteInfo& spriteInfo = world->GetComponent<SpriteInfo>(entities[i]);
 
+        
+
         spriteInfo.material->RenderSprite(&spriteInfo,transform.GetWorldTransform(),m_projectionMatrix);
     }
 }
