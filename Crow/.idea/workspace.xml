@@ -14,15 +14,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cf22dce6-4d69-43d0-a044-a31c5cbccc70" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/EventQueue/EventQueue.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/EventQueue/EventQueue.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Feather/System.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Feather/System.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Rendering/Model.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Rendering/Model.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Systems/SpriteRendererSystem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Systems/SpriteRendererSystem.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Systems/TransformHierarchySystem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Systems/TransformHierarchySystem.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SandBox/MyGame.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SandBox/MyGame.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SandBox/Systems/MoveSystem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SandBox/Systems/MoveSystem.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/Crow" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/Crow" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
@@ -180,7 +171,7 @@
         <entry file="file://$PROJECT_DIR$/Engine/Feather/EntityHandle.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
-              <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
               <folding>
                 <element signature="e#105#123#0" expanded="true" />
               </folding>
@@ -299,11 +290,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="89" />
-    <option name="y" value="49" />
-    <option name="width" value="1680" />
-    <option name="height" value="951" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -587,12 +576,12 @@
       <workItem from="1586083384042" duration="2065000" />
       <workItem from="1586087154316" duration="14287000" />
       <workItem from="1586162396376" duration="6355000" />
-      <workItem from="1586187824178" duration="2128000" />
+      <workItem from="1586187824178" duration="2810000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="582211000" />
+    <option name="totallyTimeSpent" value="582893000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -604,15 +593,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="89" y="49" width="1680" height="951" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4993565" visible="true" weight="0.2002442" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4993565" visible="true" weight="0.17465389" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5006435" side_tool="true" weight="0.16347177" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32871288" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.18393481" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.15643564" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -937,7 +926,7 @@
     <entry file="file://$PROJECT_DIR$/Engine/Feather/EntityHandle.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
-          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
           <folding>
             <element signature="e#105#123#0" expanded="true" />
           </folding>
