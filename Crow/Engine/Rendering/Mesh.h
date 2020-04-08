@@ -31,15 +31,16 @@ public:
     Mesh(const std::vector<Vertex>& vertices,const std::vector<unsigned int>& m_indices);
     void Draw(const Shader& shader);
 
+    //TODO if one of these vbo is not copied things break!!!
     Mesh(const Mesh &otherMesh) : m_vertices(otherMesh.m_vertices), m_indices(otherMesh.m_indices) , VAO(otherMesh.VAO),
-                                  VBO(otherMesh.VBO), EBO(otherMesh.EBO)
+                                  VBO(otherMesh.VBO), EBO(otherMesh.EBO),IVBO(otherMesh.IVBO)
     {
         //std::cout<<"Copying"<<std::endl;
         //BufferMesh();
     }
 
 //private:
-    unsigned int VAO,VBO,EBO;
+    unsigned int VAO,VBO,EBO,IVBO;
     void BufferMesh();
 };
 

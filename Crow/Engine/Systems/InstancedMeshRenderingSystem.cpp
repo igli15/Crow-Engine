@@ -38,9 +38,8 @@ void InstancedMeshRenderingSystem::OnCreate() {
 void InstancedMeshRenderingSystem::Render() {
     System::Render();
 
-
-    /*
     //TODO maybe render normally just find away to change the vbo here and draw instance arrays!
+
 
     auto entities = world->EntitiesWith<Transform,InstancedMeshInfo>();
 
@@ -50,41 +49,43 @@ void InstancedMeshRenderingSystem::Render() {
 
     glm::mat4 camInverseMat = glm::inverse(cameraTransform.GetWorldTransform());
 
-    m_modelMap.clear();
+    for (auto pair: m_instancedModelMap)
+    {
+        pair.second.modelMatrices->clear();
+    }
 
     for (int i = 0; i < entities.size() ; ++i)
     {
         InstancedMeshInfo& meshInfo = world->GetComponent<InstancedMeshInfo>(entities[i]);
         Transform& transform = world->GetComponent<Transform>(entities[i]);
 
-        m_modelMap[meshInfo.model->ID].push_back(transform.GetWorldTransform());
-    }
+        m_instancedModelMap[meshInfo.model->ID].modelMatrices->push_back(transform.GetWorldTransform());
 
-
-    for (int i = 0; i < entities.size() ; ++i)
-    {
-
-        InstancedMeshInfo& meshInfo = world->GetComponent<InstancedMeshInfo>(entities[i]);
-
-
-        if(glCheckError() != 0) throw;
-        //ENGINE_LOG(m_modelMap[meshInfo.model->ID].size());
-        meshInfo.model->BindModelBuffer(m_modelMap[meshInfo.model->ID]);
-        meshInfo.material->RenderInstanced(meshInfo.model,(int)m_modelMap[meshInfo.model->ID].size(),camInverseMat,camera.GetProjection()
+        meshInfo.material->RenderInstanced(camInverseMat,camera.GetProjection()
                 ,cameraTransform.WorldPosition(),world);
     }
 
-    InstancedMeshInfo& meshInfo = world->GetComponent<InstancedMeshInfo>(entities[0]);
-    if(glCheckError() != 0) throw;
-    meshInfo.model->InstanceRenderMeshes(10000);
-    if(glCheckError() != 0) throw;
+    for (auto pair: m_instancedModelMap)
+    {
+        pair.second.model->BindModelBuffer(*pair.second.modelMatrices);
+        pair.second.model->InstanceRenderMeshes(pair.second.modelMatrices->size());
+    }
 
-     */
 }
 
 void InstancedMeshRenderingSystem::OnMeshInfoAdded(ComponentAddedEvent<InstancedMeshInfo> *event)
 {
     event->component->model->InstanceBufferMeshes();
+
+    int ID = event->component->model->ID;
+    auto iterator = m_instancedModelMap.find(ID);
+
+    if(iterator == m_instancedModelMap.end())
+    {
+        ENGINE_LOG(ID);
+        InstancedModelData data {event->component->model,new std::vector<glm::mat4>()};
+        m_instancedModelMap.insert(iterator,std::make_pair(ID,data));
+    }
 }
 
 void InstancedMeshRenderingSystem::OnEntityDestroyed(OnEntityDestroyedEvent *event)

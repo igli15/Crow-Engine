@@ -13,7 +13,7 @@ void InstancedColorMaterial::Render(Model *meshRenderer, const glm::mat4 &pModel
 
 }
 
-void InstancedColorMaterial::RenderInstanced(Model *pModel, int amountOfInstances, const glm::mat4 &pViewMatrix,
+void InstancedColorMaterial::RenderInstanced(const glm::mat4 &pViewMatrix,
                                              const glm::mat4 &pProjectionMatrix, const glm::vec3 &viewPos,
                                              World *world) {
 

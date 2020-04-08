@@ -13,6 +13,12 @@
 #include <unordered_map>
 #include <vector>
 
+
+struct InstancedModelData
+{
+    Model* model;
+    std::vector<glm::mat4>* modelMatrices;
+};
 class Transform;
 
 class InstancedMeshRenderingSystem : public System{
@@ -26,6 +32,7 @@ public:
 
 private:
     std::unordered_map<int,std::vector<glm::mat4>> m_modelMap;
+    std::unordered_map<int,InstancedModelData> m_instancedModelMap;
 
 };
 

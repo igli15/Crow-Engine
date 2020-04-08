@@ -106,12 +106,16 @@ Mesh Model::ProcessMesh(aiMesh *mesh, const aiScene *scene) {
 
 void Model::InstanceBufferMeshes()
 {
-
     for (int meshIndex = 0; meshIndex < m_meshes.size(); ++meshIndex)
     {
         unsigned int VAO = m_meshes[meshIndex].VAO;
         glBindVertexArray(VAO);
-        // set attribute pointers for matrix (4 times vec4)
+
+        glBindBuffer(GL_ARRAY_BUFFER,m_meshes[meshIndex].IVBO);
+
+        //TODO this 100000 here is the max nr of transformations per model maybe put it in a conts int or smth
+        glBufferData(GL_ARRAY_BUFFER,100000 * sizeof(glm::mat4), nullptr,GL_DYNAMIC_DRAW);
+
         glEnableVertexAttribArray(3);
         glVertexAttribPointer(3, 4, GL_FLOAT, GL_FALSE, sizeof(glm::mat4), (void *) 0);
         glEnableVertexAttribArray(4);
@@ -121,12 +125,10 @@ void Model::InstanceBufferMeshes()
         glEnableVertexAttribArray(6);
         glVertexAttribPointer(6, 4, GL_FLOAT, GL_FALSE, sizeof(glm::mat4), (void *) (3 * sizeof(glm::vec4)));
 
-        glVertexAttribDivisor(3, 1);
+         glVertexAttribDivisor(3, 1);
         glVertexAttribDivisor(4, 1);
         glVertexAttribDivisor(5, 1);
         glVertexAttribDivisor(6, 1);
-
-        glBindVertexArray(0);
     }
 
 }
@@ -143,31 +145,12 @@ void Model::InstanceRenderMeshes(int amount)
 
 void Model::BindModelBuffer(std::vector<glm::mat4>& models)
 {
-
-    for (int i = 0; i < m_meshes.size(); ++i) {
-
+    for (int i = 0; i < m_meshes.size(); ++i)
+    {
         glBindVertexArray(m_meshes[i].VAO);
-        glBindBuffer(GL_ARRAY_BUFFER, m_meshes[i].VBO);
-        glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(glm::mat4) * models.size(), &models[0]);
+        glBindBuffer(GL_ARRAY_BUFFER,(m_meshes[i].IVBO));
+        glBufferSubData(GL_ARRAY_BUFFER,0,models.size() * sizeof(glm::mat4), models.data());
         glBindVertexArray(0);
     }
 
-
-    /*
-    // Map the buffer
-    glm::mat4* matrices = (glm::mat4 *)glMapBuffer(GL_ARRAY_BUFFER,
-                                          GL_WRITE_ONLY);
-
-
-    for (int n = 0; n < models.size(); n++)
-    {
-        if(matrices != nullptr)
-        {
-            ENGINE_LOG("here");
-            matrices[n] = models[n];
-        }
-    }
-
-    glUnmapBuffer(GL_ARRAY_BUFFER);
-     */
 }

@@ -27,7 +27,7 @@ void RotatingGunsWorld::Build()
     World::Build();
 
     //Register the shader once
-    //Game::Instance()->resourceManager->CreateShader("InstancedVertexShader.vs","InstancedFragmentShader.fs","instancedLitShader");
+    Game::Instance()->resourceManager->CreateShader("InstancedVertexShader.vs","InstancedFragmentShader.fs","instancedLitShader");
     Game::Instance()->resourceManager->CreateShader("VertexShader.vs","FragmentShader.fs","litShader");
 
 
@@ -42,7 +42,7 @@ void RotatingGunsWorld::Build()
 
     EntityHandle cameraEntity = CreateEntity();
     cameraEntity.AddComponent(Camera{});
-    cameraEntity.AddComponent(Transform{})->Translate(glm::vec3(50,50,100));
+    cameraEntity.AddComponent(Transform{})->Translate(glm::vec3(50,50,60));
     //cameraEntity->GetComponent<Transform>().component->Translate(glm::vec3(50,50,100));
     for (int i = 0; i < 100; ++i)
     {
