@@ -18,8 +18,8 @@ class AbstractMaterial {
 
 public:
     AbstractMaterial(const std::string& shaderName);
-    virtual void Render(Model* meshRenderer, const glm::mat4& pModelMatrix, const glm::mat4& pViewMatrix, const glm::mat4& pPerspectiveMatrix,const glm::vec3& viewPos,World* world) = 0;
-    virtual void RenderInstanced(const glm::mat4& pViewMatrix, const glm::mat4& pPerspectiveMatrix,const glm::vec3& viewPos,World* world){}
+    virtual void BufferUniforms(const glm::mat4 &pModelMatrix, const glm::mat4 &pViewMatrix,
+                                const glm::mat4 &pPerspectiveMatrix, const glm::vec3 &viewPos, World *world) = 0;
 
 protected:
     Shader* m_shader;

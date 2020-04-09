@@ -13,11 +13,12 @@ Model::Model(const char *path) {
     LoadModel(path);
 }
 
-void Model::Draw(const Shader &shader) {
+void Model::Draw() {
     //std::cout<<"Meshes: "<< m_meshes.size()<<std::endl;
 
-    for (int i = 0; i < m_meshes.size(); ++i) {
-        m_meshes[i].Draw(shader);
+    for (int i = 0; i < m_meshes.size(); ++i)
+    {
+        m_meshes[i].Draw();
     }
 }
 

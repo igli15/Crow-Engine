@@ -12,8 +12,8 @@ class InstancedColorMaterial : public AbstractMaterial {
 public:
     InstancedColorMaterial() ;
 
-    void Render(Model* meshRenderer, const glm::mat4& pModelMatrix, const glm::mat4& pViewMatrix, const glm::mat4& pProjectionMatrix,const glm::vec3& viewPos,World* world) override;
-    void RenderInstanced(const glm::mat4& pViewMatrix, const glm::mat4& pPerspectiveMatrix,const glm::vec3& viewPos,World* world) override;
+    void BufferUniforms(const glm::mat4 &pModelMatrix, const glm::mat4 &pViewMatrix, const glm::mat4 &pProjectionMatrix,
+                        const glm::vec3 &viewPos, World *world) override;
     void Initialize();
 
     glm::vec3 mainColor = glm::vec3(1);

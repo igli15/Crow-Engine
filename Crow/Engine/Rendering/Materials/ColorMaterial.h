@@ -12,7 +12,8 @@ class ColorMaterial :public AbstractMaterial {
 public:
     ColorMaterial();
 
-    void Render(Model* meshRenderer, const glm::mat4& pModelMatrix, const glm::mat4& pViewMatrix, const glm::mat4& pProjectionMatrix,const glm::vec3& viewPos,World* world) override;
+    void BufferUniforms(const glm::mat4 &pModelMatrix, const glm::mat4 &pViewMatrix, const glm::mat4 &pProjectionMatrix,
+                        const glm::vec3 &viewPos, World *world) override;
     void Initialize();
 
     glm::vec3 mainColor = glm::vec3(1);

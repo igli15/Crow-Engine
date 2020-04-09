@@ -38,9 +38,6 @@ void InstancedMeshRenderingSystem::OnCreate() {
 void InstancedMeshRenderingSystem::Render() {
     System::Render();
 
-    //TODO maybe render normally just find away to change the vbo here and draw instance arrays!
-
-
     auto entities = world->EntitiesWith<Transform,InstancedMeshInfo>();
 
     Entity cameraEntity = world->EntitiesWith<Camera>()[0];
@@ -48,7 +45,8 @@ void InstancedMeshRenderingSystem::Render() {
     Camera& camera=  world->GetComponent<Camera>(cameraEntity);
 
     glm::mat4 camInverseMat = glm::inverse(cameraTransform.GetWorldTransform());
-
+    glm::mat4 projection = camera.GetProjection();
+    
     for (auto pair: m_instancedModelMap)
     {
         pair.second.modelMatrices->clear();
@@ -61,13 +59,17 @@ void InstancedMeshRenderingSystem::Render() {
 
         m_instancedModelMap[meshInfo.model->ID].modelMatrices->push_back(transform.GetWorldTransform());
 
-        meshInfo.material->RenderInstanced(camInverseMat,camera.GetProjection()
-                ,cameraTransform.WorldPosition(),world);
+        //Buffer the uniforms to the shader
+        //The first parameter is useless here since the model mat for instanced models will be buffered after the loop
+
+        meshInfo.material->BufferUniforms(glm::mat4(1),camInverseMat,projection,cameraTransform.WorldPosition(),world);
     }
 
     for (auto pair: m_instancedModelMap)
     {
+        //Buffer the all model matrices VBO to the shader
         pair.second.model->BindModelBuffer(*pair.second.modelMatrices);
+        //Draw in one call all the models
         pair.second.model->InstanceRenderMeshes(pair.second.modelMatrices->size());
     }
 

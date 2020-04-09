@@ -13,7 +13,7 @@ Mesh::Mesh(const std::vector<Vertex> &vertices, const std::vector<unsigned int> 
     BufferMesh();
 }
 
-void Mesh::Draw(const Shader &shader)
+void Mesh::Draw()
 {
     glBindVertexArray(VAO);
 

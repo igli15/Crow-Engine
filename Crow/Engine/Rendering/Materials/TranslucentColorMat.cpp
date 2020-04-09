@@ -8,7 +8,8 @@
 #include "../../Components/Light.h"
 #include "../../Components/Transform.h"
 
-void TranslucentColorMat::Render(Model *pModel, const glm::mat4 &pModelMatrix, const glm::mat4 &pViewMatrix, const glm::mat4 &pProjectionMatrix,const glm::vec3& viewPos,World* world)
+void TranslucentColorMat::BufferUniforms(const glm::mat4 &pModelMatrix, const glm::mat4 &pViewMatrix,
+                                         const glm::mat4 &pProjectionMatrix, const glm::vec3 &viewPos, World *world)
 {
     m_shader->Use();
 
@@ -89,7 +90,6 @@ void TranslucentColorMat::Render(Model *pModel, const glm::mat4 &pModelMatrix, c
     glUniform1f(m_uTranslucentPower,translucentPower);
     glUniform1f(m_uTranslucentDistortion,translucentDistortion);
 
-    pModel->Draw(*m_shader);
 }
 
 TranslucentColorMat::TranslucentColorMat() : AbstractMaterial("translucentShader")

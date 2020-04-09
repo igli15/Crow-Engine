@@ -8,14 +8,8 @@
 #include "../../Components/Light.h"
 #include "../../Components/Transform.h"
 
-void InstancedColorMaterial::Render(Model *meshRenderer, const glm::mat4 &pModelMatrix, const glm::mat4 &pViewMatrix,
-                                    const glm::mat4 &pProjectionMatrix, const glm::vec3 &viewPos, World *world) {
-
-}
-
-void InstancedColorMaterial::RenderInstanced(const glm::mat4 &pViewMatrix,
-                                             const glm::mat4 &pProjectionMatrix, const glm::vec3 &viewPos,
-                                             World *world) {
+void InstancedColorMaterial::BufferUniforms(const glm::mat4 &pModelMatrix, const glm::mat4 &pViewMatrix,
+                                            const glm::mat4 &pProjectionMatrix, const glm::vec3 &viewPos, World *world) {
 
     m_shader->Use();
 
@@ -92,6 +86,8 @@ void InstancedColorMaterial::RenderInstanced(const glm::mat4 &pViewMatrix,
 
 
 }
+
+
 
 void InstancedColorMaterial::Initialize()
 {

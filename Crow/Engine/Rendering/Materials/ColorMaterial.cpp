@@ -8,7 +8,8 @@
 #include "../../Components/Light.h"
 #include "../../Components/Transform.h"
 
-void ColorMaterial::Render(Model *pModel, const glm::mat4 &pModelMatrix, const glm::mat4 &pViewMatrix, const glm::mat4 &pProjectionMatrix,const glm::vec3& viewPos,World* world)
+void ColorMaterial::BufferUniforms(const glm::mat4 &pModelMatrix, const glm::mat4 &pViewMatrix,
+                                   const glm::mat4 &pProjectionMatrix, const glm::vec3 &viewPos, World *world)
 {
     m_shader->Use();
 
@@ -84,7 +85,6 @@ void ColorMaterial::Render(Model *pModel, const glm::mat4 &pModelMatrix, const g
 
     glUniform3fv(m_uViewPos,1,glm::value_ptr(viewPos));
 
-    pModel->Draw(*m_shader);
 }
 
 ColorMaterial::ColorMaterial() : AbstractMaterial("litShader")

@@ -37,8 +37,8 @@ void RotatingGunsWorld::Build()
     RegisterSystem<RotateSystem>();
     SetSystemSignature<RotateSystem,Transform,RotateComponent>();
 
-    ColorMaterial* mat = new ColorMaterial();
-    //InstancedColorMaterial* mat = new InstancedColorMaterial();
+    //ColorMaterial* mat = new ColorMaterial();
+    InstancedColorMaterial* mat = new InstancedColorMaterial();
 
     EntityHandle cameraEntity = CreateEntity();
     cameraEntity.AddComponent(Camera{});
@@ -56,8 +56,8 @@ void RotatingGunsWorld::Build()
             t2->Scale(glm::vec3(0.05f, 0.05f, 0.05f));
             t2->Rotate(-25, glm::vec3(0, 1, 0));
 
-            MeshInfo gunMeshInfo{};
-            //InstancedMeshInfo gunMeshInfo{};
+            //MeshInfo gunMeshInfo{};
+            InstancedMeshInfo gunMeshInfo{};
             gunMeshInfo.model = gunModel;
             mat->mainColor = glm::vec3(0.8f,0.8f,0.8f);
             gunMeshInfo.material = mat;

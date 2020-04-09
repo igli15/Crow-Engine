@@ -30,8 +30,10 @@ void MeshRendererSystem::Render()
             continue;
         }
 
-        meshInfo.material->Render(meshInfo.model,transform.GetWorldTransform(),camInverseMat,camera.GetProjection()
-                                     ,cameraTransform.WorldPosition(),world);
+        meshInfo.material->BufferUniforms(transform.GetWorldTransform(), camInverseMat, camera.GetProjection(),
+                                          cameraTransform.WorldPosition(), world);
+
+        meshInfo.model->Draw();
     }
 
 }
