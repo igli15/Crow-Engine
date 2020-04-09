@@ -12,6 +12,7 @@
 #include "freetype2/ft2build.h"
 #include FT_FREETYPE_H
 
+class Renderer;
 class ResourceManager;
 
 class Game {
@@ -34,6 +35,7 @@ public:
 
     FT_Library* ftLibrary;
     ResourceManager* resourceManager;
+    Renderer* renderer;
 
 };
 

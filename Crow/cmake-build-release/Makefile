@@ -420,6 +420,33 @@ Engine/Core/Input.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Core/Input.cpp.s
 .PHONY : Engine/Core/Input.cpp.s
 
+Engine/Core/Renderer.o: Engine/Core/Renderer.cpp.o
+
+.PHONY : Engine/Core/Renderer.o
+
+# target to build an object file
+Engine/Core/Renderer.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.o
+.PHONY : Engine/Core/Renderer.cpp.o
+
+Engine/Core/Renderer.i: Engine/Core/Renderer.cpp.i
+
+.PHONY : Engine/Core/Renderer.i
+
+# target to preprocess a source file
+Engine/Core/Renderer.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.i
+.PHONY : Engine/Core/Renderer.cpp.i
+
+Engine/Core/Renderer.s: Engine/Core/Renderer.cpp.s
+
+.PHONY : Engine/Core/Renderer.s
+
+# target to generate assembly for a file
+Engine/Core/Renderer.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.s
+.PHONY : Engine/Core/Renderer.cpp.s
+
 Engine/Core/ResourceManager.o: Engine/Core/ResourceManager.cpp.o
 
 .PHONY : Engine/Core/ResourceManager.o
@@ -1785,6 +1812,9 @@ help:
 	@echo "... Engine/Core/Input.o"
 	@echo "... Engine/Core/Input.i"
 	@echo "... Engine/Core/Input.s"
+	@echo "... Engine/Core/Renderer.o"
+	@echo "... Engine/Core/Renderer.i"
+	@echo "... Engine/Core/Renderer.s"
 	@echo "... Engine/Core/ResourceManager.o"
 	@echo "... Engine/Core/ResourceManager.i"
 	@echo "... Engine/Core/ResourceManager.s"

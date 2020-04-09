@@ -9,7 +9,7 @@
 #include "glm/ext.hpp"
 #include "ResourceManager.h"
 #include "Input.h"
-
+#include "Renderer.h"
 
 Game* Game::m_instance;
 
@@ -17,6 +17,7 @@ void Game::Init()
 {
     m_instance = this;
 
+    renderer = new Renderer();
     resourceManager = new ResourceManager();
 
     window = new Window();

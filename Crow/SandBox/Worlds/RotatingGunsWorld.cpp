@@ -28,7 +28,7 @@ void RotatingGunsWorld::Build()
 
     //Register the shader once
     Game::Instance()->resourceManager->CreateShader("InstancedVertexShader.vs","InstancedFragmentShader.fs","instancedLitShader");
-    Game::Instance()->resourceManager->CreateShader("VertexShader.vs","FragmentShader.fs","litShader");
+    //Game::Instance()->resourceManager->CreateShader("VertexShader.vs","FragmentShader.fs","litShader");
 
 
     //Load the models
@@ -38,7 +38,7 @@ void RotatingGunsWorld::Build()
     SetSystemSignature<RotateSystem,Transform,RotateComponent>();
 
     //ColorMaterial* mat = new ColorMaterial();
-    InstancedColorMaterial* mat = new InstancedColorMaterial();
+    InstancedColorMaterial* mat = Game::Instance()->resourceManager->CreateMaterial<InstancedColorMaterial>("instancedColorMat");
 
     EntityHandle cameraEntity = CreateEntity();
     cameraEntity.AddComponent(Camera{});

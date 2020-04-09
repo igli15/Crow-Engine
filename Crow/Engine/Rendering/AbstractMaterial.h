@@ -21,6 +21,12 @@ public:
     virtual void BufferUniforms(const glm::mat4 &pModelMatrix, const glm::mat4 &pViewMatrix,
                                 const glm::mat4 &pPerspectiveMatrix, const glm::vec3 &viewPos, World *world) = 0;
 
+
+    virtual void BufferMaterialUniforms(){};
+
+    virtual void BufferShaderUniforms(const glm::mat4 &pViewMatrix,
+                                        const glm::mat4 &pPerspectiveMatrix, const glm::vec3 &viewPos, World *world){};
+
 protected:
     Shader* m_shader;
 };

@@ -155,6 +155,12 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h">
 			<Option target="Crow"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Renderer.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Renderer.h">
+			<Option target="Crow"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.cpp">
 			<Option target="Crow"/>
 		</Unit>

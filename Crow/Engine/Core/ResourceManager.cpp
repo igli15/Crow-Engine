@@ -9,6 +9,7 @@
 #include "../Rendering/Font.h"
 #include "../Rendering/Sprite.h"
 
+
 Texture *ResourceManager::LoadTexture(const std::string &path, const std::string &name) {
     Texture *texture = new Texture();
     int width, height, nrChannels;
@@ -31,11 +32,20 @@ Texture *ResourceManager::LoadTexture(const std::string &path, const std::string
     return texture;
 }
 
-Shader *
-ResourceManager::CreateShader(const std::string &vertexPath, const std::string &fragmentPath, const std::string &name) {
-    Shader *shader = new Shader(vertexPath, fragmentPath);
+Shader* ResourceManager::CreateShader(const std::string &vertexPath, const std::string &fragmentPath, const std::string &name)
+{
+    auto iterator = m_shaders.find(name);
 
+    if(iterator != m_shaders.end())
+    {
+        ENGINE_LOG_CRITICAL("Shader with that name is already created!");
+        throw;
+    }
+
+    Shader * shader = new Shader(vertexPath, fragmentPath);
     m_shaders[name] = shader;
+
+    Game::Instance()->renderer->allShaders.push_back(shader);
 
     return shader;
 }

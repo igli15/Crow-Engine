@@ -84,6 +84,12 @@ unordered_map
 ../Debug/Debug.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Renderer.h
+vector
+-
+../Rendering/AbstractMaterial.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h
 map
 -
@@ -95,6 +101,10 @@ map
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
 ../Rendering/AbstractMaterial.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+Game.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
+Renderer.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Renderer.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
 string.h
@@ -229,18 +239,6 @@ string
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h
 ../AbstractMaterial.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/InstancedColorMaterial.cpp
-InstancedColorMaterial.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/InstancedColorMaterial.h
-../Model.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
-../../Debug/Debug.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
-../../Components/Light.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h
-../../Components/Transform.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/InstancedColorMaterial.h
 ../AbstractMaterial.h
@@ -1728,8 +1726,6 @@ polar_coordinates.inl
 ../geometric.hpp
 /usr/local/include/glm/./geometric.hpp
 projection.inl
-/usr/local/include/glm/./gtx/projection.inl
-
 /usr/local/include/glm/./gtx/projection.inl
 
 /usr/local/include/glm/./gtx/quaternion.hpp

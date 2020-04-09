@@ -11,6 +11,9 @@
 #include "../Rendering/Model.h"
 #include "../Rendering/AbstractMaterial.h"
 
+#include "Game.h"
+#include "Renderer.h"
+
 class Font;
 class Sprite;
 
@@ -43,8 +46,19 @@ public:
     template <typename T>
     T* CreateMaterial(const std::string& matName)
     {
+        auto iterator = m_materials.find(matName);
+
+        if(iterator != m_materials.end())
+        {
+            ENGINE_LOG_CRITICAL("Material with that name is already created!");
+            throw;
+        }
+
         T* material = new T();
         m_materials[matName] = material;
+
+        Game::Instance()->renderer->allMaterials.push_back(material);
+
         return material;
     }
 

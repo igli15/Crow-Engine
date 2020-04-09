@@ -18,7 +18,6 @@ void SpriteMaterial::RenderSprite(SpriteInfo *spriteInfo, const glm::mat4 &pMode
     this->shader->SetMat4("projection", pPerspectiveMatrix);
     this->shader->SetVec3("spriteColor", spriteInfo->color);
 
-    spriteInfo->sprite->Render();
 }
 
 SpriteMaterial::SpriteMaterial()
