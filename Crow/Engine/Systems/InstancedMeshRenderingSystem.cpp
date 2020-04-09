@@ -5,6 +5,8 @@
 #include "InstancedMeshRenderingSystem.h"
 #include "../Components/Transform.h"
 #include "../Components/Camera.h"
+#include "../Core/Game.h"
+#include "../Core/Renderer.h"
 
 GLenum glCheckError_(const char *file, int line)
 {
@@ -33,6 +35,8 @@ void InstancedMeshRenderingSystem::OnCreate() {
 
     EventQueue::Instance().Subscribe(this, &InstancedMeshRenderingSystem::OnMeshInfoAdded);
     EventQueue::Instance().Subscribe(this, &InstancedMeshRenderingSystem::OnEntityDestroyed);
+
+    m_renderer = Game::Instance()->renderer;
 }
 
 void InstancedMeshRenderingSystem::Render() {
@@ -46,7 +50,21 @@ void InstancedMeshRenderingSystem::Render() {
 
     glm::mat4 camInverseMat = glm::inverse(cameraTransform.GetWorldTransform());
     glm::mat4 projection = camera.GetProjection();
-    
+
+    for (int shaderIndex = 0; shaderIndex < m_renderer->allShaders.size(); ++shaderIndex)
+    {
+        m_renderer->allShaders[shaderIndex]->bufferedThisFrame = false;
+    }
+
+    for (int materialIndex = 0; materialIndex < m_renderer->allMaterials.size(); ++materialIndex)
+    {
+        if(m_renderer->allMaterials[materialIndex]->activeInstanceCount > 0)
+        {
+            m_renderer->allMaterials[materialIndex]->BufferShaderUniforms(camInverseMat,projection,cameraTransform.WorldPosition(),world);
+            m_renderer->allMaterials[materialIndex]->BufferMaterialUniforms();
+        }
+    }
+
     for (auto pair: m_instancedModelMap)
     {
         pair.second.modelMatrices->clear();
@@ -58,11 +76,6 @@ void InstancedMeshRenderingSystem::Render() {
         Transform& transform = world->GetComponent<Transform>(entities[i]);
 
         m_instancedModelMap[meshInfo.model->ID].modelMatrices->push_back(transform.GetWorldTransform());
-
-        //Buffer the uniforms to the shader
-        //The first parameter is useless here since the model mat for instanced models will be buffered after the loop
-
-        meshInfo.material->BufferUniforms(glm::mat4(1),camInverseMat,projection,cameraTransform.WorldPosition(),world);
     }
 
     for (auto pair: m_instancedModelMap)

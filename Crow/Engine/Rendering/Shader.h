@@ -19,6 +19,7 @@ class Shader {
 public:
 
     unsigned int ID;
+    bool bufferedThisFrame = false;
 
     Shader(const std::string& vertexPath,const std::string&  fragmentPath);
 

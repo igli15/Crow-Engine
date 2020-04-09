@@ -27,6 +27,8 @@ public:
     virtual void BufferShaderUniforms(const glm::mat4 &pViewMatrix,
                                         const glm::mat4 &pPerspectiveMatrix, const glm::vec3 &viewPos, World *world){};
 
+    int activeInstanceCount = 0;
+
 protected:
     Shader* m_shader;
 };
