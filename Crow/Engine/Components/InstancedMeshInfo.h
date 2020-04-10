@@ -23,6 +23,7 @@ struct InstancedMeshInfo {
         material->activeInstanceCount += 1;
 
     };
+
     AbstractMaterial* GetMaterial()
     {
         return material;

@@ -14,6 +14,7 @@
 #include "../Systems/TextRenderingSystem.h"
 #include "../Systems/InstancedMeshRenderingSystem.h"
 #include "../Systems/SpriteRendererSystem.h"
+#include "../Systems/BufferMaterialsSystem.h"
 
 void World::Init()
 {
@@ -74,7 +75,9 @@ void World::RegisterEngineSystems()
     RegisterSystem<TransformHierarchySystem>();
     RegisterSystem<TextRenderingSystem>();
     RegisterSystem<SpriteRendererSystem>();
+    RegisterSystem<BufferMaterialsSystem>();
     SetSystemSignature<MeshRendererSystem,Transform,MeshInfo>();
+    SetSystemSignature<InstancedMeshRenderingSystem,Transform,InstancedMeshInfo>();
 
     //SetSystemSignature<CollisionDetectionSystem,Transform,SphereCollider>();
 
@@ -94,6 +97,14 @@ void World::ClearEntityGarbage()
     }
 
     m_entityGarbage.clear();
+}
+
+void World::PreRenderAllSystems()
+{
+    for (int i = 0; i < m_allRegisteredSystems.size(); ++i)
+    {
+        m_allRegisteredSystems[i]->PreRender();
+    }
 }
 
 

@@ -5,30 +5,8 @@
 #include "InstancedMeshRenderingSystem.h"
 #include "../Components/Transform.h"
 #include "../Components/Camera.h"
-#include "../Core/Game.h"
-#include "../Core/Renderer.h"
 
-GLenum glCheckError_(const char *file, int line)
-{
-    GLenum errorCode;
-    while ((errorCode = glGetError()) != GL_NO_ERROR)
-    {
-        std::string error;
-        switch (errorCode)
-        {
-            case GL_INVALID_ENUM:                  error = "INVALID_ENUM"; break;
-            case GL_INVALID_VALUE:                 error = "INVALID_VALUE"; break;
-            case GL_INVALID_OPERATION:             error = "INVALID_OPERATION"; break;
-            case GL_STACK_OVERFLOW:                error = "STACK_OVERFLOW"; break;
-            case GL_STACK_UNDERFLOW:               error = "STACK_UNDERFLOW"; break;
-            case GL_OUT_OF_MEMORY:                 error = "OUT_OF_MEMORY"; break;
-            case GL_INVALID_FRAMEBUFFER_OPERATION: error = "INVALID_FRAMEBUFFER_OPERATION"; break;
-        }
-        std::cout << error << " | " << file << " (" << line << ")" << std::endl;
-    }
-    return errorCode;
-}
-#define glCheckError() glCheckError_(__FILE__, __LINE__)
+
 
 void InstancedMeshRenderingSystem::OnCreate() {
     System::OnCreate();
@@ -36,44 +14,21 @@ void InstancedMeshRenderingSystem::OnCreate() {
     EventQueue::Instance().Subscribe(this, &InstancedMeshRenderingSystem::OnMeshInfoAdded);
     EventQueue::Instance().Subscribe(this, &InstancedMeshRenderingSystem::OnEntityDestroyed);
 
-    m_renderer = Game::Instance()->renderer;
 }
 
 void InstancedMeshRenderingSystem::Render() {
     System::Render();
 
-    auto entities = world->EntitiesWith<Transform,InstancedMeshInfo>();
-
-    Entity cameraEntity = world->EntitiesWith<Camera>()[0];
-    Transform& cameraTransform = world->GetComponent<Transform>(cameraEntity);
-    Camera& camera=  world->GetComponent<Camera>(cameraEntity);
-
-    glm::mat4 camInverseMat = glm::inverse(cameraTransform.GetWorldTransform());
-    glm::mat4 projection = camera.GetProjection();
-
-    for (int shaderIndex = 0; shaderIndex < m_renderer->allShaders.size(); ++shaderIndex)
-    {
-        m_renderer->allShaders[shaderIndex]->bufferedThisFrame = false;
-    }
-
-    for (int materialIndex = 0; materialIndex < m_renderer->allMaterials.size(); ++materialIndex)
-    {
-        if(m_renderer->allMaterials[materialIndex]->activeInstanceCount > 0)
-        {
-            m_renderer->allMaterials[materialIndex]->BufferShaderUniforms(camInverseMat,projection,cameraTransform.WorldPosition(),world);
-            m_renderer->allMaterials[materialIndex]->BufferMaterialUniforms();
-        }
-    }
 
     for (auto pair: m_instancedModelMap)
     {
         pair.second.modelMatrices->clear();
     }
 
-    for (int i = 0; i < entities.size() ; ++i)
+    for (const auto& entity : m_entities)
     {
-        InstancedMeshInfo& meshInfo = world->GetComponent<InstancedMeshInfo>(entities[i]);
-        Transform& transform = world->GetComponent<Transform>(entities[i]);
+        InstancedMeshInfo& meshInfo = world->GetComponent<InstancedMeshInfo>(entity);
+        Transform& transform = world->GetComponent<Transform>(entity);
 
         m_instancedModelMap[meshInfo.model->ID].modelMatrices->push_back(transform.GetWorldTransform());
     }

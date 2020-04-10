@@ -67,6 +67,7 @@ void RotatingGunsWorld::Build()
         }
     }
 
+
     EntityHandle textEntity = CreateEntity();
     Transform* textTransform = textEntity.AddComponent(Transform{});
     textTransform->SetLocalPosition(glm::vec3(0,0,0));

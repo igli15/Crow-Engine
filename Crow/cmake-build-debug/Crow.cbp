@@ -203,10 +203,10 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionExitEvent.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.cpp">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/EntityEvents.h">
@@ -336,6 +336,12 @@
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/BufferMaterialsSystem.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/BufferMaterialsSystem.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/CollisionDetectionSystem.cpp">

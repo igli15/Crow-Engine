@@ -3617,12 +3617,6 @@ CMakeFiles/Crow.dir/Engine/EventQueue/MemberFunctionHandler.cpp.o: ../Engine/Eve
 CMakeFiles/Crow.dir/Engine/EventQueue/MemberFunctionHandler.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.cpp
 CMakeFiles/Crow.dir/Engine/EventQueue/MemberFunctionHandler.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
 
-CMakeFiles/Crow.dir/Engine/Events/ComponentAddedEvent.cpp.o: ../Engine/EventQueue/Event.h
-CMakeFiles/Crow.dir/Engine/Events/ComponentAddedEvent.cpp.o: ../Engine/Events/ComponentAddedEvent.cpp
-CMakeFiles/Crow.dir/Engine/Events/ComponentAddedEvent.cpp.o: ../Engine/Events/ComponentAddedEvent.h
-CMakeFiles/Crow.dir/Engine/Events/ComponentAddedEvent.cpp.o: ../Engine/Feather/CustomTypeID.h
-CMakeFiles/Crow.dir/Engine/Events/ComponentAddedEvent.cpp.o: ../Engine/Feather/Types.h
-
 CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: ../Engine/Feather/ComponentArray.cpp
@@ -8223,6 +8217,7 @@ CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/spd
 CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/version.h
 
+
 CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o: ../Engine/Components/SphereCollider.h
 CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o: ../Engine/Components/Transform.h
@@ -8484,9 +8479,6 @@ CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.o: ../Engine/Components/Camera.h
 CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.o: ../Engine/Components/InstancedMeshInfo.h
 CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.o: ../Engine/Components/Transform.h
-CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.o: ../Engine/Core/Game.h
-CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.o: ../Engine/Core/Input.h
-CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.o: ../Engine/Core/Renderer.h
 CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.o: ../Engine/EventQueue/Event.h
 CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.o: ../Engine/EventQueue/EventQueue.h
@@ -8506,13 +8498,9 @@ CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.o: ../Engine
 CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.o: ../Engine/Rendering/Mesh.h
 CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.o: ../Engine/Rendering/Model.h
 CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.o: ../Engine/Rendering/Shader.h
-CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.o: ../Engine/Rendering/Window.h
 CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.o: ../Engine/Systems/InstancedMeshRenderingSystem.cpp
 CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.o: ../Engine/Systems/InstancedMeshRenderingSystem.h
 CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.o: /usr/local/include/GL/glew.h
-CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.o: /usr/local/include/GLFW/glfw3.h
-CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.o: /usr/local/include/freetype2/freetype/config/ftheader.h
-CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.o: /usr/local/include/freetype2/ft2build.h
 CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.o: /usr/local/include/glm/./detail/_noise.hpp
 CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.o: /usr/local/include/glm/./detail/_vectorize.hpp
 CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.o: /usr/local/include/glm/./detail/setup.hpp

@@ -34,7 +34,6 @@ public:
 private:
     std::unordered_map<int,std::vector<glm::mat4>> m_modelMap;
     std::unordered_map<int,InstancedModelData> m_instancedModelMap;
-    Renderer* m_renderer;
 
 };
 

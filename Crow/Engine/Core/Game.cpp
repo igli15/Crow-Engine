@@ -67,8 +67,8 @@ void Game::Run()
             lag -= MS_PER_UPDATE;
         }
 
+        currentWorld->PreRenderAllSystems();
         currentWorld->RenderAllSystems();
-
 
         window->SwapBuffers();
         window->PollEvents();

@@ -32,15 +32,7 @@ public:
     void InitAllSystems();
     void UpdateAllSystems();
     void RenderAllSystems();
-
-
-    /*
-    template <typename T>
-    void RegisterComponent()
-    {
-        m_componentManager->RegisterComponent<T>();
-    }
-     */
+    void PreRenderAllSystems();
 
     template <typename T>
     T* AddComponent(Entity entity,T component)
@@ -81,14 +73,6 @@ public:
         return m_componentManager->GetComponentArray<T>();
     }
 
-
-    /*
-    template <typename T>
-    ComponentType GetComponentType()
-    {
-        return m_componentManager->GetComponentType<T>();
-    }
-     */
 
     template <typename T>
     T* RegisterSystem()
@@ -149,22 +133,6 @@ public:
         signature.set(ComponentIDGenerator::index<T>);
     }
 
-    /*
-    template <typename T>
-    std::vector<Entity> EntitiesWith()
-    {
-        auto result = std::vector<Entity>{};
-
-        auto array = GetComponentArray<T>();
-
-        for (size_t i = 0; i < array->validSize; ++i)
-        {
-            result.push_back(array->GetEntityFromIndex(i));
-        }
-
-        return result;
-    }
-     */
 
     template <typename ...Args>
     std::vector<Entity> EntitiesWith()

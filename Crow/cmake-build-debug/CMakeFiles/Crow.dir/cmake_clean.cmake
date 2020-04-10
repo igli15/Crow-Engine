@@ -43,7 +43,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Crow.dir/Engine/Components/SphereCollider.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.o"
-  "CMakeFiles/Crow.dir/Engine/Events/ComponentAddedEvent.cpp.o"
   "CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o"
   "CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o"
@@ -60,6 +59,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o"
   "CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.o"
+  "CMakeFiles/Crow.dir/Engine/Systems/BufferMaterialsSystem.cpp.o"
   "Crow.pdb"
   "Crow"
 )

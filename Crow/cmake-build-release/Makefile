@@ -582,33 +582,6 @@ Engine/EventQueue/MemberFunctionHandler.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/EventQueue/MemberFunctionHandler.cpp.s
 .PHONY : Engine/EventQueue/MemberFunctionHandler.cpp.s
 
-Engine/Events/ComponentAddedEvent.o: Engine/Events/ComponentAddedEvent.cpp.o
-
-.PHONY : Engine/Events/ComponentAddedEvent.o
-
-# target to build an object file
-Engine/Events/ComponentAddedEvent.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Events/ComponentAddedEvent.cpp.o
-.PHONY : Engine/Events/ComponentAddedEvent.cpp.o
-
-Engine/Events/ComponentAddedEvent.i: Engine/Events/ComponentAddedEvent.cpp.i
-
-.PHONY : Engine/Events/ComponentAddedEvent.i
-
-# target to preprocess a source file
-Engine/Events/ComponentAddedEvent.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Events/ComponentAddedEvent.cpp.i
-.PHONY : Engine/Events/ComponentAddedEvent.cpp.i
-
-Engine/Events/ComponentAddedEvent.s: Engine/Events/ComponentAddedEvent.cpp.s
-
-.PHONY : Engine/Events/ComponentAddedEvent.s
-
-# target to generate assembly for a file
-Engine/Events/ComponentAddedEvent.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Events/ComponentAddedEvent.cpp.s
-.PHONY : Engine/Events/ComponentAddedEvent.cpp.s
-
 Engine/Feather/ComponentArray.o: Engine/Feather/ComponentArray.cpp.o
 
 .PHONY : Engine/Feather/ComponentArray.o
@@ -1148,6 +1121,33 @@ Engine/Rendering/Window.s: Engine/Rendering/Window.cpp.s
 Engine/Rendering/Window.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.s
 .PHONY : Engine/Rendering/Window.cpp.s
+
+Engine/Systems/BufferMaterialsSystem.o: Engine/Systems/BufferMaterialsSystem.cpp.o
+
+.PHONY : Engine/Systems/BufferMaterialsSystem.o
+
+# target to build an object file
+Engine/Systems/BufferMaterialsSystem.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Systems/BufferMaterialsSystem.cpp.o
+.PHONY : Engine/Systems/BufferMaterialsSystem.cpp.o
+
+Engine/Systems/BufferMaterialsSystem.i: Engine/Systems/BufferMaterialsSystem.cpp.i
+
+.PHONY : Engine/Systems/BufferMaterialsSystem.i
+
+# target to preprocess a source file
+Engine/Systems/BufferMaterialsSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Systems/BufferMaterialsSystem.cpp.i
+.PHONY : Engine/Systems/BufferMaterialsSystem.cpp.i
+
+Engine/Systems/BufferMaterialsSystem.s: Engine/Systems/BufferMaterialsSystem.cpp.s
+
+.PHONY : Engine/Systems/BufferMaterialsSystem.s
+
+# target to generate assembly for a file
+Engine/Systems/BufferMaterialsSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Systems/BufferMaterialsSystem.cpp.s
+.PHONY : Engine/Systems/BufferMaterialsSystem.cpp.s
 
 Engine/Systems/CollisionDetectionSystem.o: Engine/Systems/CollisionDetectionSystem.cpp.o
 
@@ -1830,9 +1830,6 @@ help:
 	@echo "... Engine/EventQueue/MemberFunctionHandler.o"
 	@echo "... Engine/EventQueue/MemberFunctionHandler.i"
 	@echo "... Engine/EventQueue/MemberFunctionHandler.s"
-	@echo "... Engine/Events/ComponentAddedEvent.o"
-	@echo "... Engine/Events/ComponentAddedEvent.i"
-	@echo "... Engine/Events/ComponentAddedEvent.s"
 	@echo "... Engine/Feather/ComponentArray.o"
 	@echo "... Engine/Feather/ComponentArray.i"
 	@echo "... Engine/Feather/ComponentArray.s"
@@ -1893,6 +1890,9 @@ help:
 	@echo "... Engine/Rendering/Window.o"
 	@echo "... Engine/Rendering/Window.i"
 	@echo "... Engine/Rendering/Window.s"
+	@echo "... Engine/Systems/BufferMaterialsSystem.o"
+	@echo "... Engine/Systems/BufferMaterialsSystem.i"
+	@echo "... Engine/Systems/BufferMaterialsSystem.s"
 	@echo "... Engine/Systems/CollisionDetectionSystem.o"
 	@echo "... Engine/Systems/CollisionDetectionSystem.i"
 	@echo "... Engine/Systems/CollisionDetectionSystem.s"
