@@ -24,9 +24,9 @@ void MyGame::LoadAssets()
     resourceManager->CreateMaterial<ColorMaterial>("defaultMat");
 
     resourceManager->LoadModel((MODEL_PATH + "cube.obj"),"cube");
-    resourceManager->LoadModel((MODEL_PATH + "sphere.obj"),"sphere");
+    //resourceManager->LoadModel((MODEL_PATH + "sphere.obj"),"sphere");
     resourceManager->LoadModel((MODEL_PATH + "axis.obj"),"axis");
-    resourceManager->LoadModel((MODEL_PATH + "plane.obj"),"plane");
+    //resourceManager->LoadModel((MODEL_PATH + "plane.obj"),"plane");
     resourceManager->LoadModel((MODEL_PATH + "lanternCandle.obj"),"lantern");
     resourceManager->LoadModel((MODEL_PATH + "gravestone.obj"),"gravestone");
     resourceManager->LoadModel((MODEL_PATH + "skeleton.obj"),"skeleton");
@@ -43,10 +43,10 @@ void MyGame::Init()
 
     //SetWorld(new XmlTestWorld());
     //SetWorld(new PrototypeWorld());
-    //SetWorld(new PhysicsTestWorld());
+    SetWorld(new PhysicsTestWorld());
     //SetWorld(new TranslucentMaterialTestWorld());
     //SetWorld(new LightingTestWorld());
-    SetWorld(new RotatingGunsWorld());
+    //SetWorld(new RotatingGunsWorld());
     //SetWorld(new SpriteRenderingWorld());
 }
 

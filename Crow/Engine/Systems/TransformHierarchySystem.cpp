@@ -16,10 +16,9 @@ void TransformHierarchySystem::OnCreate()
 //TODO: Add ComponentRemovedEvent<Transform>
 
 
-void TransformHierarchySystem::OnTransformRemoved(OnEntityDestroyedEvent* event)
+void TransformHierarchySystem::OnTransformRemoved(ComponentRemovedEvent<Transform>* event)
 {
-    Transform& t = world->GetComponent<Transform>(event->entity);
-    t.DestroyAllChildrenEntities();
+    event->component.DestroyAllChildrenEntities();
 }
 
 void TransformHierarchySystem::OnComponentAdded(ComponentAddedEvent<Transform> *event)

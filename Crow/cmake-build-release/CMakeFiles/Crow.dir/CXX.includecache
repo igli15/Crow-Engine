@@ -250,6 +250,12 @@ Event.h
 ../EventQueue/Event.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
+../EventQueue/Event.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
+../Feather/Types.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/EntityEvents.h
 ../EventQueue/Event.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
@@ -263,10 +269,14 @@ ComponentArray.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
 ../../Crow.h
 /Users/igli/Desktop/Crow Engine/Crow/Crow.h
+../EventQueue/EventQueue.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
 array
 -
 unordered_map
 -
+../Events/ComponentRemovedEvent.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.cpp
 ComponentHandle.h
@@ -516,6 +526,10 @@ GLFW/glfw3.h
 ../Core/Input.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/BufferMaterialsSystem.h
+../Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/CollisionDetectionSystem.cpp
 CollisionDetectionSystem.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/CollisionDetectionSystem.h
@@ -639,6 +653,8 @@ TransformHierarchySystem.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/EntityEvents.h
 ../Events/ComponentAddedEvent.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+../Events/ComponentRemovedEvent.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Plugins/RapidXML/rapidxml.hpp
 cstdlib

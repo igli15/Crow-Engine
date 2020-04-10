@@ -14,9 +14,9 @@ class ComponentRemovedEvent : public Event {
 
 public:
     Entity entity;
-    T* component;
+    T component;
 
-    ComponentRemovedEvent(Entity pEntity,T* pComponent) : entity(pEntity),component(pComponent)
+    ComponentRemovedEvent(Entity pEntity,T pComponent) : entity(pEntity),component(pComponent)
     {
 
     }

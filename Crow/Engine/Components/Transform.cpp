@@ -83,7 +83,7 @@ void Transform::DestroyAllChildrenEntities()
 {
     for (int i = 0; i < m_childrens.size(); ++i)
     {
-        m_contextWorld->DestroyEntity(m_childrens[i]);
+        m_contextWorld->InternalDestroyEntity(m_childrens[i]);
     }
 }
 

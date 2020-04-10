@@ -180,6 +180,7 @@ CMakeFiles/Crow.dir/Engine/Components/InstancedMeshInfo.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
@@ -758,6 +759,7 @@ CMakeFiles/Crow.dir/Engine/Components/MeshInfo.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
@@ -1504,6 +1506,7 @@ CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
@@ -1761,6 +1764,7 @@ CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
@@ -2240,6 +2244,7 @@ CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
@@ -2661,6 +2666,7 @@ CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
@@ -3101,6 +3107,7 @@ CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
@@ -3620,6 +3627,10 @@ CMakeFiles/Crow.dir/Engine/EventQueue/MemberFunctionHandler.cpp.o
 CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Crow.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/CustomTypeID.h
@@ -3667,6 +3678,10 @@ CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o
 CMakeFiles/Crow.dir/Engine/Feather/ComponentHandle.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Crow.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
@@ -3715,6 +3730,10 @@ CMakeFiles/Crow.dir/Engine/Feather/ComponentHandle.cpp.o
 CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Crow.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.cpp
@@ -3768,6 +3787,7 @@ CMakeFiles/Crow.dir/Engine/Feather/EntityHandle.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
@@ -3928,6 +3948,7 @@ CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/EntityEvents.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
@@ -3944,6 +3965,7 @@ CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Mesh.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/BufferMaterialsSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/CollisionDetectionSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/InstancedMeshRenderingSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/MeshRendererSystem.h
@@ -4363,6 +4385,7 @@ CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
@@ -4789,6 +4812,7 @@ CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
@@ -4854,6 +4878,7 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
@@ -5279,6 +5304,7 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/InstancedColorMaterial.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
@@ -5707,6 +5733,7 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
@@ -6139,6 +6166,7 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/TranslucentColorMat.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
@@ -8230,6 +8258,7 @@ CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionExitEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
@@ -8485,6 +8514,7 @@ CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/EntityEvents.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
@@ -8913,6 +8943,7 @@ CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
@@ -9341,6 +9372,7 @@ CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
@@ -9604,6 +9636,7 @@ CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
@@ -10035,6 +10068,7 @@ CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/EntityEvents.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
@@ -10468,6 +10502,7 @@ CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
@@ -10910,6 +10945,7 @@ CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEnterEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
@@ -11337,6 +11373,7 @@ CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
@@ -11598,6 +11635,7 @@ CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
@@ -12041,6 +12079,7 @@ CMakeFiles/Crow.dir/SandBox/Worlds/PhysicsTestWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEnterEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
@@ -12487,6 +12526,7 @@ CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEnterEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
@@ -12933,6 +12973,7 @@ CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
@@ -13378,6 +13419,7 @@ CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
@@ -13818,6 +13860,7 @@ CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
@@ -14255,6 +14298,7 @@ CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
@@ -14510,6 +14554,7 @@ CMakeFiles/Crow.dir/main.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h

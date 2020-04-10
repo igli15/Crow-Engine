@@ -6,8 +6,10 @@
 #define CROW_COMPONENTARRAY_H
 
 #include "../../Crow.h"
+#include "../EventQueue/EventQueue.h"
 #include <array>
 #include <unordered_map>
+#include "../Events/ComponentRemovedEvent.h"
 
 class IComponentArray {
 
@@ -51,6 +53,9 @@ public:
         size_t indexOfElementToRemove = m_entityToIndexMap[entity];
         size_t indexOfLastElement = validSize - 1;
 
+        //Copy of the component about to be removed
+        T comp = m_componentsArray[indexOfElementToRemove];
+
         m_componentsArray[indexOfElementToRemove] =  m_componentsArray[indexOfLastElement];
 
         Entity entityOfLastElement = m_indexToEntityMap[indexOfLastElement];
@@ -62,6 +67,9 @@ public:
         m_indexToEntityMap.erase(indexOfLastElement);
 
         --validSize;
+
+        //Gets a copy of the removed component
+        EventQueue::Instance().Publish(new ComponentRemovedEvent<T>(entity, comp));
     }
 
     T& GetComponentData(Entity entity)

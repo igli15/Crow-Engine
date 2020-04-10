@@ -26,7 +26,7 @@ void PhysicsTestWorld::Build()
 
     RegisterSystem<MoveSystem>();
     //SetSystemSignature<CollisionDetectionSystem,Transform,SphereCollider>();
-    Game::Instance()->resourceManager->CreateShader("VertexShader.vs","FragmentShader.fs","litShader");
+    //Game::Instance()->resourceManager->CreateShader("VertexShader.vs","FragmentShader.fs","litShader");
 
     Model* planeModel = Game::Instance()->resourceManager->LoadModel((MODEL_PATH + "plane.obj"),"plane");
     Model* sphereModel = Game::Instance()->resourceManager->LoadModel((MODEL_PATH + "sphere.obj"),"sphere");

@@ -10,6 +10,7 @@
 #include "../Components/Transform.h"
 #include "../Events/EntityEvents.h"
 #include "../Events/ComponentAddedEvent.h"
+#include "../Events/ComponentRemovedEvent.h"
 
 class TransformHierarchySystem : public System{
 
@@ -18,7 +19,7 @@ public:
     void OnCreate() override;
 
     void OnComponentAdded(ComponentAddedEvent<Transform>* event);
-    void OnTransformRemoved(OnEntityDestroyedEvent* event);
+    void OnTransformRemoved(ComponentRemovedEvent<Transform>* event);
 
 };
 
