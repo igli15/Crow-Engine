@@ -447,33 +447,6 @@ Engine/Core/ResourceManager.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.s
 .PHONY : Engine/Core/ResourceManager.cpp.s
 
-Engine/Core/XMLWorld.o: Engine/Core/XMLWorld.cpp.o
-
-.PHONY : Engine/Core/XMLWorld.o
-
-# target to build an object file
-Engine/Core/XMLWorld.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o
-.PHONY : Engine/Core/XMLWorld.cpp.o
-
-Engine/Core/XMLWorld.i: Engine/Core/XMLWorld.cpp.i
-
-.PHONY : Engine/Core/XMLWorld.i
-
-# target to preprocess a source file
-Engine/Core/XMLWorld.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.i
-.PHONY : Engine/Core/XMLWorld.cpp.i
-
-Engine/Core/XMLWorld.s: Engine/Core/XMLWorld.cpp.s
-
-.PHONY : Engine/Core/XMLWorld.s
-
-# target to generate assembly for a file
-Engine/Core/XMLWorld.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.s
-.PHONY : Engine/Core/XMLWorld.cpp.s
-
 Engine/Debug/Debug.o: Engine/Debug/Debug.cpp.o
 
 .PHONY : Engine/Debug/Debug.o
@@ -500,6 +473,33 @@ Engine/Debug/Debug.s: Engine/Debug/Debug.cpp.s
 Engine/Debug/Debug.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Debug/Debug.cpp.s
 .PHONY : Engine/Debug/Debug.cpp.s
+
+Engine/Editor/UnitySceneParser.o: Engine/Editor/UnitySceneParser.cpp.o
+
+.PHONY : Engine/Editor/UnitySceneParser.o
+
+# target to build an object file
+Engine/Editor/UnitySceneParser.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o
+.PHONY : Engine/Editor/UnitySceneParser.cpp.o
+
+Engine/Editor/UnitySceneParser.i: Engine/Editor/UnitySceneParser.cpp.i
+
+.PHONY : Engine/Editor/UnitySceneParser.i
+
+# target to preprocess a source file
+Engine/Editor/UnitySceneParser.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.i
+.PHONY : Engine/Editor/UnitySceneParser.cpp.i
+
+Engine/Editor/UnitySceneParser.s: Engine/Editor/UnitySceneParser.cpp.s
+
+.PHONY : Engine/Editor/UnitySceneParser.s
+
+# target to generate assembly for a file
+Engine/Editor/UnitySceneParser.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.s
+.PHONY : Engine/Editor/UnitySceneParser.cpp.s
 
 Engine/EventQueue/EventQueue.o: Engine/EventQueue/EventQueue.cpp.o
 
@@ -1653,12 +1653,12 @@ help:
 	@echo "... Engine/Core/ResourceManager.o"
 	@echo "... Engine/Core/ResourceManager.i"
 	@echo "... Engine/Core/ResourceManager.s"
-	@echo "... Engine/Core/XMLWorld.o"
-	@echo "... Engine/Core/XMLWorld.i"
-	@echo "... Engine/Core/XMLWorld.s"
 	@echo "... Engine/Debug/Debug.o"
 	@echo "... Engine/Debug/Debug.i"
 	@echo "... Engine/Debug/Debug.s"
+	@echo "... Engine/Editor/UnitySceneParser.o"
+	@echo "... Engine/Editor/UnitySceneParser.i"
+	@echo "... Engine/Editor/UnitySceneParser.s"
 	@echo "... Engine/EventQueue/EventQueue.o"
 	@echo "... Engine/EventQueue/EventQueue.i"
 	@echo "... Engine/EventQueue/EventQueue.s"

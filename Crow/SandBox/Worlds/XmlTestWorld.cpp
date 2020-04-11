@@ -4,12 +4,12 @@
 
 #include "XmlTestWorld.h"
 #include "../../Engine/Feather/EntityHandle.h"
-#include "../../Engine/Components/Transform.h"
-#include "../../Engine/Components/Light.h"
+#include "../../Engine/Feather/World.h"
+#include "../../Engine/Editor/UnitySceneParser.h"
 
 void XmlTestWorld::Build()
 {
-    XMLWorld::Build();
+    World::Build();
 
-    Load("TestScene.xml");
+    UnitySceneParser::ParseUnityScene("TestScene.xml",this);
 }

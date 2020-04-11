@@ -6,9 +6,9 @@
 #define CROW_XMLTESTWORLD_H
 
 
-#include "../../Engine/Core/XMLWorld.h"
+#include "../../Engine/Feather/World.h"
 
-class XmlTestWorld : public XMLWorld {
+class XmlTestWorld : public World {
 
 public:
     void Build() override;

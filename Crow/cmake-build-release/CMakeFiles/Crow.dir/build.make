@@ -577,22 +577,9 @@ CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/TransformHierarchySystem.cpp" -o CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.s
 
-CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o: CMakeFiles/Crow.dir/flags.make
-CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o: ../Engine/Core/XMLWorld.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/XMLWorld.cpp"
-
-CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/XMLWorld.cpp" > CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.i
-
-CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/XMLWorld.cpp" -o CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.s
-
 CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o: ../SandBox/Worlds/XmlTestWorld.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/XmlTestWorld.cpp"
 
 CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.i: cmake_force
@@ -605,7 +592,7 @@ CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.s: cmake_force
 
 CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: ../Engine/Core/Input.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.cpp"
 
 CMakeFiles/Crow.dir/Engine/Core/Input.cpp.i: cmake_force
@@ -618,7 +605,7 @@ CMakeFiles/Crow.dir/Engine/Core/Input.cpp.s: cmake_force
 
 CMakeFiles/Crow.dir/Engine/Components/Text.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Engine/Components/Text.cpp.o: ../Engine/Components/Text.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/Crow.dir/Engine/Components/Text.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/Crow.dir/Engine/Components/Text.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Components/Text.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Text.cpp"
 
 CMakeFiles/Crow.dir/Engine/Components/Text.cpp.i: cmake_force
@@ -631,7 +618,7 @@ CMakeFiles/Crow.dir/Engine/Components/Text.cpp.s: cmake_force
 
 CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o: ../Engine/Systems/TextRenderingSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/TextRenderingSystem.cpp"
 
 CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.i: cmake_force
@@ -644,7 +631,7 @@ CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.s: cmake_force
 
 CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o: ../Engine/Rendering/Font.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Font.cpp"
 
 CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.i: cmake_force
@@ -657,7 +644,7 @@ CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.s: cmake_force
 
 CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o: ../Engine/Systems/MeshRendererSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/MeshRendererSystem.cpp"
 
 CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.i: cmake_force
@@ -670,7 +657,7 @@ CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.s: cmake_force
 
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o: ../Engine/Rendering/Materials/ColorMaterial.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.cpp"
 
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.i: cmake_force
@@ -683,7 +670,7 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.s: cmake_force
 
 CMakeFiles/Crow.dir/Engine/Components/SpriteInfo.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Engine/Components/SpriteInfo.cpp.o: ../Engine/Components/SpriteInfo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/Crow.dir/Engine/Components/SpriteInfo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/Crow.dir/Engine/Components/SpriteInfo.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Components/SpriteInfo.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/SpriteInfo.cpp"
 
 CMakeFiles/Crow.dir/Engine/Components/SpriteInfo.cpp.i: cmake_force
@@ -696,7 +683,7 @@ CMakeFiles/Crow.dir/Engine/Components/SpriteInfo.cpp.s: cmake_force
 
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o: ../Engine/Rendering/Materials/SpriteMaterial.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/SpriteMaterial.cpp"
 
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.i: cmake_force
@@ -709,7 +696,7 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.s: cmake_force
 
 CMakeFiles/Crow.dir/Engine/Rendering/Sprite.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Engine/Rendering/Sprite.cpp.o: ../Engine/Rendering/Sprite.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/Crow.dir/Engine/Rendering/Sprite.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/Crow.dir/Engine/Rendering/Sprite.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Rendering/Sprite.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Sprite.cpp"
 
 CMakeFiles/Crow.dir/Engine/Rendering/Sprite.cpp.i: cmake_force
@@ -722,7 +709,7 @@ CMakeFiles/Crow.dir/Engine/Rendering/Sprite.cpp.s: cmake_force
 
 CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: ../Engine/Systems/SpriteRendererSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/SpriteRendererSystem.cpp"
 
 CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.i: cmake_force
@@ -735,7 +722,7 @@ CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.s: cmake_force
 
 CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o: ../SandBox/Worlds/SpriteRenderingWorld.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/SpriteRenderingWorld.cpp"
 
 CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.i: cmake_force
@@ -748,7 +735,7 @@ CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.s: cmake_force
 
 CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.o: ../Engine/Core/Renderer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Renderer.cpp"
 
 CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.i: cmake_force
@@ -761,7 +748,7 @@ CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.s: cmake_force
 
 CMakeFiles/Crow.dir/Engine/Systems/BufferMaterialsSystem.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Engine/Systems/BufferMaterialsSystem.cpp.o: ../Engine/Systems/BufferMaterialsSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/Crow.dir/Engine/Systems/BufferMaterialsSystem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/Crow.dir/Engine/Systems/BufferMaterialsSystem.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Systems/BufferMaterialsSystem.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/BufferMaterialsSystem.cpp"
 
 CMakeFiles/Crow.dir/Engine/Systems/BufferMaterialsSystem.cpp.i: cmake_force
@@ -771,6 +758,19 @@ CMakeFiles/Crow.dir/Engine/Systems/BufferMaterialsSystem.cpp.i: cmake_force
 CMakeFiles/Crow.dir/Engine/Systems/BufferMaterialsSystem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Systems/BufferMaterialsSystem.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/BufferMaterialsSystem.cpp" -o CMakeFiles/Crow.dir/Engine/Systems/BufferMaterialsSystem.cpp.s
+
+CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: CMakeFiles/Crow.dir/flags.make
+CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: ../Engine/Editor/UnitySceneParser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Editor/UnitySceneParser.cpp"
+
+CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/Engine/Editor/UnitySceneParser.cpp" > CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.i
+
+CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Engine/Editor/UnitySceneParser.cpp" -o CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.s
 
 # Object files for target Crow
 Crow_OBJECTS = \
@@ -814,7 +814,6 @@ Crow_OBJECTS = \
 "CMakeFiles/Crow.dir/Engine/Components/SphereCollider.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.o" \
-"CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o" \
 "CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Components/Text.cpp.o" \
@@ -828,7 +827,8 @@ Crow_OBJECTS = \
 "CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o" \
 "CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.o" \
-"CMakeFiles/Crow.dir/Engine/Systems/BufferMaterialsSystem.cpp.o"
+"CMakeFiles/Crow.dir/Engine/Systems/BufferMaterialsSystem.cpp.o" \
+"CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o"
 
 # External object files for target Crow
 Crow_EXTERNAL_OBJECTS =
@@ -873,7 +873,6 @@ Crow: CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Components/SphereCollider.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.o
-Crow: CMakeFiles/Crow.dir/Engine/Core/XMLWorld.cpp.o
 Crow: CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Components/Text.cpp.o
@@ -888,6 +887,7 @@ Crow: CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o
 Crow: CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Systems/BufferMaterialsSystem.cpp.o
+Crow: CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o
 Crow: CMakeFiles/Crow.dir/build.make
 Crow: /usr/local/lib/libglfw.dylib
 Crow: /usr/local/lib/libassimp.dylib

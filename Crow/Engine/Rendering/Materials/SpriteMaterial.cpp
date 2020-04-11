@@ -29,7 +29,7 @@ void SpriteMaterial::BufferMaterialUniforms()
 {
     AbstractMaterial::BufferMaterialUniforms();
 
-    
+
     glUniform3fv(m_uSpriteColor, 1, glm::value_ptr(color));
 }
 
