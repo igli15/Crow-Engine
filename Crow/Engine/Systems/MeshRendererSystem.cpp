@@ -1,45 +1,56 @@
 //
-// Created by Igli milaqi on 15/03/2020.
+// Created by Igli milaqi on 04/04/2020.
 //
 
 #include "MeshRendererSystem.h"
-#include "../Feather/World.h"
 #include "../Components/Transform.h"
-#include "../Components/MeshInfo.h"
-#include "../Feather/EntityHandle.h"
 #include "../Components/Camera.h"
 
-void MeshRendererSystem::Render()
-{
+
+
+void MeshRendererSystem::OnCreate() {
+    System::OnCreate();
+
+    EventQueue::Instance().Subscribe(this, &MeshRendererSystem::OnMeshInfoAdded);
+}
+
+void MeshRendererSystem::Render() {
     System::Render();
 
-    Entity cameraEntity = world->EntitiesWith<Camera>()[0];
-    Transform& cameraTransform = world->GetComponent<Transform>(cameraEntity);
-    Camera& camera=  world->GetComponent<Camera>(cameraEntity);
 
-    glm::mat4 camInverseMat = glm::inverse(cameraTransform.GetWorldTransform());
-
-    for (auto const& entity : m_entities)
+    for (auto pair: m_instancedModelMap)
     {
-        Transform& transform = world->GetComponent<Transform>(entity);
+        pair.second.modelMatrices->clear();
+    }
+
+    for (const auto& entity : m_entities)
+    {
         MeshInfo& meshInfo = world->GetComponent<MeshInfo>(entity);
+        Transform& transform = world->GetComponent<Transform>(entity);
 
-        if(meshInfo.model == nullptr || meshInfo.GetMaterial() == nullptr)
-        {
-            ENGINE_LOG_ERROR("Trying to draw mesh without a material or model");
-            continue;
-        }
+        m_instancedModelMap[meshInfo.model->ID].modelMatrices->push_back(transform.GetWorldTransform());
+    }
 
-        meshInfo.GetMaterial()->BufferUniforms(transform.GetWorldTransform(), camInverseMat, camera.GetProjection(),
-                                          cameraTransform.WorldPosition(), world);
-
-        meshInfo.model->Draw();
+    for (auto pair: m_instancedModelMap)
+    {
+        //Buffer the all model matrices VBO to the shader
+        pair.second.model->BindModelBuffer(*pair.second.modelMatrices);
+        //Draw in one call all the models
+        pair.second.model->InstanceRenderMeshes(pair.second.modelMatrices->size());
     }
 
 }
 
-void MeshRendererSystem::Init()
+void MeshRendererSystem::OnMeshInfoAdded(ComponentAddedEvent<MeshInfo> *event)
 {
-    System::Init();
-}
+    event->component->model->InstanceBufferMeshes();
 
+    int ID = event->component->model->ID;
+    auto iterator = m_instancedModelMap.find(ID);
+
+    if(iterator == m_instancedModelMap.end())
+    {
+        MeshInstancedData data {event->component->model, new std::vector<glm::mat4>()};
+        m_instancedModelMap.insert(iterator,std::make_pair(ID,data));
+    }
+}

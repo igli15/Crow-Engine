@@ -16,11 +16,10 @@ class Model;
 
 class AbstractMaterial {
 
+    friend class BufferMaterialsSystem;
+
 public:
     AbstractMaterial(const std::string& shaderName);
-    virtual void BufferUniforms(const glm::mat4 &pModelMatrix, const glm::mat4 &pViewMatrix,
-                                const glm::mat4 &pPerspectiveMatrix, const glm::vec3 &viewPos, World *world) = 0;
-
 
     virtual void BufferMaterialUniforms(){};
 

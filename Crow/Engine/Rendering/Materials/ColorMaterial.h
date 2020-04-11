@@ -1,5 +1,5 @@
 //
-// Created by Igli milaqi on 15/03/2020.
+// Created by Igli milaqi on 04/04/2020.
 //
 
 #ifndef CROW_COLORMATERIAL_H
@@ -7,14 +7,17 @@
 
 #include "../AbstractMaterial.h"
 
-class ColorMaterial :public AbstractMaterial {
+class ColorMaterial : public AbstractMaterial {
 
 public:
-    ColorMaterial();
+    ColorMaterial() ;
 
-    void BufferUniforms(const glm::mat4 &pModelMatrix, const glm::mat4 &pViewMatrix, const glm::mat4 &pProjectionMatrix,
-                        const glm::vec3 &viewPos, World *world) override;
     void Initialize();
+
+    void BufferShaderUniforms(const glm::mat4 &pViewMatrix,
+                                      const glm::mat4 &pPerspectiveMatrix, const glm::vec3 &viewPos, World *world) override;
+
+    void BufferMaterialUniforms() override;
 
     glm::vec3 mainColor = glm::vec3(1);
     glm::vec3 specularColor = glm::vec3(1);
@@ -82,6 +85,7 @@ private:
     std::array<DirLightUniformLocations,MAX_DIR_LIGHT_COUNT> m_dirLightsUniforms;
     std::array<PointLightUniformLocations,MAX_POINT_LIGHT_COUNT> m_pointLightsUniforms;
     std::array<SpotLightUniformLocations,MAX_SPOT_LIGHT_COUNT> m_spotLightsUniforms;
+
 };
 
 

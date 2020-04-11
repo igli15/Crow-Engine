@@ -12,7 +12,7 @@
 #include "../Events/EntityEvents.h"
 #include "../Systems/TransformHierarchySystem.h"
 #include "../Systems/TextRenderingSystem.h"
-#include "../Systems/InstancedMeshRenderingSystem.h"
+#include "../Systems/MeshRendererSystem.h"
 #include "../Systems/SpriteRendererSystem.h"
 #include "../Systems/BufferMaterialsSystem.h"
 
@@ -70,14 +70,14 @@ void World::Build()
 void World::RegisterEngineSystems()
 {
     //RegisterSystem<MeshRendererSystem>();
-    RegisterSystem<InstancedMeshRenderingSystem>();
+    RegisterSystem<MeshRendererSystem>();
     RegisterSystem<CollisionDetectionSystem>();
     RegisterSystem<TransformHierarchySystem>();
     RegisterSystem<TextRenderingSystem>();
     RegisterSystem<SpriteRendererSystem>();
     RegisterSystem<BufferMaterialsSystem>();
     //SetSystemSignature<MeshRendererSystem,Transform,MeshInfo>();
-    SetSystemSignature<InstancedMeshRenderingSystem,Transform,MeshInfo>();
+    SetSystemSignature<MeshRendererSystem,Transform,MeshInfo>();
 
     //SetSystemSignature<CollisionDetectionSystem,Transform,SphereCollider>();
 

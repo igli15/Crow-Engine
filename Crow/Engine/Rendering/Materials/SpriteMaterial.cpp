@@ -9,12 +9,6 @@
 #include "../../Core/Game.h"
 #include "../../Core/ResourceManager.h"
 
-void SpriteMaterial::RenderSprite(SpriteInfo *spriteInfo, const glm::mat4 &pModelMatrix,
-                                  const glm::mat4 &pPerspectiveMatrix)
-{
-
-}
-
 SpriteMaterial::SpriteMaterial() : AbstractMaterial("spriteShader")
 {
     m_shader->SetInt("image",0);
@@ -44,11 +38,5 @@ void SpriteMaterial::BufferShaderUniforms(const glm::mat4 &pViewMatrix, const gl
 
     m_shader->SetMat4("projection", glm::ortho(0.0f, static_cast<GLfloat>(1920),
                                                static_cast<GLfloat>(1080), 0.0f, -1.0f, 1.0f));
-
-}
-
-void SpriteMaterial::BufferUniforms(const glm::mat4 &pModelMatrix, const glm::mat4 &pViewMatrix,
-                                    const glm::mat4 &pProjectionMatrix, const glm::vec3 &viewPos, World *world)
-{
 
 }

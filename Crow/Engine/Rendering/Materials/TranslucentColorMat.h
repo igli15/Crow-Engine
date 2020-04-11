@@ -12,8 +12,6 @@ class TranslucentColorMat :public AbstractMaterial {
 public:
     TranslucentColorMat();
 
-    void BufferUniforms(const glm::mat4 &pModelMatrix, const glm::mat4 &pViewMatrix, const glm::mat4 &pProjectionMatrix,
-                        const glm::vec3 &viewPos, World *world) override;
     void Initialize();
 
     void BufferShaderUniforms(const glm::mat4 &pViewMatrix,

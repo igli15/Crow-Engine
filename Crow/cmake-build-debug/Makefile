@@ -852,33 +852,6 @@ Engine/Rendering/Materials/ColorMaterial.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.s
 .PHONY : Engine/Rendering/Materials/ColorMaterial.cpp.s
 
-Engine/Rendering/Materials/InstancedColorMaterial.o: Engine/Rendering/Materials/InstancedColorMaterial.cpp.o
-
-.PHONY : Engine/Rendering/Materials/InstancedColorMaterial.o
-
-# target to build an object file
-Engine/Rendering/Materials/InstancedColorMaterial.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/InstancedColorMaterial.cpp.o
-.PHONY : Engine/Rendering/Materials/InstancedColorMaterial.cpp.o
-
-Engine/Rendering/Materials/InstancedColorMaterial.i: Engine/Rendering/Materials/InstancedColorMaterial.cpp.i
-
-.PHONY : Engine/Rendering/Materials/InstancedColorMaterial.i
-
-# target to preprocess a source file
-Engine/Rendering/Materials/InstancedColorMaterial.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/InstancedColorMaterial.cpp.i
-.PHONY : Engine/Rendering/Materials/InstancedColorMaterial.cpp.i
-
-Engine/Rendering/Materials/InstancedColorMaterial.s: Engine/Rendering/Materials/InstancedColorMaterial.cpp.s
-
-.PHONY : Engine/Rendering/Materials/InstancedColorMaterial.s
-
-# target to generate assembly for a file
-Engine/Rendering/Materials/InstancedColorMaterial.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/InstancedColorMaterial.cpp.s
-.PHONY : Engine/Rendering/Materials/InstancedColorMaterial.cpp.s
-
 Engine/Rendering/Materials/SpriteMaterial.o: Engine/Rendering/Materials/SpriteMaterial.cpp.o
 
 .PHONY : Engine/Rendering/Materials/SpriteMaterial.o
@@ -1148,33 +1121,6 @@ Engine/Systems/CollisionDetectionSystem.s: Engine/Systems/CollisionDetectionSyst
 Engine/Systems/CollisionDetectionSystem.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.s
 .PHONY : Engine/Systems/CollisionDetectionSystem.cpp.s
-
-Engine/Systems/InstancedMeshRenderingSystem.o: Engine/Systems/InstancedMeshRenderingSystem.cpp.o
-
-.PHONY : Engine/Systems/InstancedMeshRenderingSystem.o
-
-# target to build an object file
-Engine/Systems/InstancedMeshRenderingSystem.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.o
-.PHONY : Engine/Systems/InstancedMeshRenderingSystem.cpp.o
-
-Engine/Systems/InstancedMeshRenderingSystem.i: Engine/Systems/InstancedMeshRenderingSystem.cpp.i
-
-.PHONY : Engine/Systems/InstancedMeshRenderingSystem.i
-
-# target to preprocess a source file
-Engine/Systems/InstancedMeshRenderingSystem.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.i
-.PHONY : Engine/Systems/InstancedMeshRenderingSystem.cpp.i
-
-Engine/Systems/InstancedMeshRenderingSystem.s: Engine/Systems/InstancedMeshRenderingSystem.cpp.s
-
-.PHONY : Engine/Systems/InstancedMeshRenderingSystem.s
-
-# target to generate assembly for a file
-Engine/Systems/InstancedMeshRenderingSystem.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Systems/InstancedMeshRenderingSystem.cpp.s
-.PHONY : Engine/Systems/InstancedMeshRenderingSystem.cpp.s
 
 Engine/Systems/MeshRendererSystem.o: Engine/Systems/MeshRendererSystem.cpp.o
 
@@ -1752,9 +1698,6 @@ help:
 	@echo "... Engine/Rendering/Materials/ColorMaterial.o"
 	@echo "... Engine/Rendering/Materials/ColorMaterial.i"
 	@echo "... Engine/Rendering/Materials/ColorMaterial.s"
-	@echo "... Engine/Rendering/Materials/InstancedColorMaterial.o"
-	@echo "... Engine/Rendering/Materials/InstancedColorMaterial.i"
-	@echo "... Engine/Rendering/Materials/InstancedColorMaterial.s"
 	@echo "... Engine/Rendering/Materials/SpriteMaterial.o"
 	@echo "... Engine/Rendering/Materials/SpriteMaterial.i"
 	@echo "... Engine/Rendering/Materials/SpriteMaterial.s"
@@ -1785,9 +1728,6 @@ help:
 	@echo "... Engine/Systems/CollisionDetectionSystem.o"
 	@echo "... Engine/Systems/CollisionDetectionSystem.i"
 	@echo "... Engine/Systems/CollisionDetectionSystem.s"
-	@echo "... Engine/Systems/InstancedMeshRenderingSystem.o"
-	@echo "... Engine/Systems/InstancedMeshRenderingSystem.i"
-	@echo "... Engine/Systems/InstancedMeshRenderingSystem.s"
 	@echo "... Engine/Systems/MeshRendererSystem.o"
 	@echo "... Engine/Systems/MeshRendererSystem.i"
 	@echo "... Engine/Systems/MeshRendererSystem.s"

@@ -36,10 +36,15 @@ void BufferMaterialsSystem::PreRender()
 
     for (int materialIndex = 0; materialIndex < m_renderer->allMaterials.size(); ++materialIndex)
     {
-        if(m_renderer->allMaterials[materialIndex]->activeInstanceCount > 0)
+        AbstractMaterial* material =m_renderer->allMaterials[materialIndex];
+
+        if(material->activeInstanceCount > 0)
         {
-            m_renderer->allMaterials[materialIndex]->BufferShaderUniforms(camInverseMat,projection,cameraTransform.WorldPosition(),world);
-            m_renderer->allMaterials[materialIndex]->BufferMaterialUniforms();
+            if(material->m_shader->bufferedThisFrame != true)
+            {
+               material->BufferShaderUniforms(camInverseMat, projection,cameraTransform.WorldPosition(), world);
+            }
+           material->BufferMaterialUniforms();
         }
     }
 }
