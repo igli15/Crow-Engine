@@ -12,4 +12,7 @@ AbstractMaterial::AbstractMaterial(const std::string &shaderName)
 }
 
 
-
+Shader* AbstractMaterial::GetShader()
+{
+    return m_shader;
+}

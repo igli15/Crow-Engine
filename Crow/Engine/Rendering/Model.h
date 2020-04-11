@@ -30,7 +30,7 @@ public:
     Mesh ProcessMesh(aiMesh* mesh,const aiScene* scene);
 
     void InstanceBufferMeshes();
-    void InstanceRenderMeshes(int amount);
+    void InstanceRenderMeshes(int amount,Shader* shader);
     void BindModelBuffer(std::vector<glm::mat4>& models);
     int ID = -1;
 };

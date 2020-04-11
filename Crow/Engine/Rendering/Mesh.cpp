@@ -13,8 +13,10 @@ Mesh::Mesh(const std::vector<Vertex> &vertices, const std::vector<unsigned int> 
     BufferMesh();
 }
 
-void Mesh::Draw()
+void Mesh::Draw(Shader* shader)
 {
+    shader->Use();
+
     glBindVertexArray(VAO);
 
     glDrawElements(GL_TRIANGLES, m_indices.size(), GL_UNSIGNED_INT, 0);

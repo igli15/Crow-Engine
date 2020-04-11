@@ -34,9 +34,9 @@ void MeshRendererSystem::Render() {
     for (auto pair: m_instancedModelMap)
     {
         //Buffer the all model matrices VBO to the shader
-        pair.second.model->BindModelBuffer(*pair.second.modelMatrices);
+        pair.second.meshInfo.model->BindModelBuffer(*pair.second.modelMatrices);
         //Draw in one call all the models
-        pair.second.model->InstanceRenderMeshes(pair.second.modelMatrices->size());
+        pair.second.meshInfo.model->InstanceRenderMeshes(pair.second.modelMatrices->size(),pair.second.meshInfo.GetMaterial()->GetShader());
     }
 
 }
@@ -50,7 +50,7 @@ void MeshRendererSystem::OnMeshInfoAdded(ComponentAddedEvent<MeshInfo> *event)
 
     if(iterator == m_instancedModelMap.end())
     {
-        MeshInstancedData data {event->component->model, new std::vector<glm::mat4>()};
+        MeshInstancedData data {*event->component, new std::vector<glm::mat4>()};
         m_instancedModelMap.insert(iterator,std::make_pair(ID,data));
     }
 }

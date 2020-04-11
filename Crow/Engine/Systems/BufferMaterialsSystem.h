@@ -10,6 +10,8 @@
 #include "../Components/SpriteInfo.h"
 #include "../Components/MeshInfo.h"
 #include "../Events/ComponentRemovedEvent.h"
+#include "../Rendering/AbstractMaterial.h"
+
 
 class Renderer;
 

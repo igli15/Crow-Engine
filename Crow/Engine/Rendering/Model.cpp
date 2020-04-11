@@ -18,7 +18,7 @@ void Model::Draw() {
 
     for (int i = 0; i < m_meshes.size(); ++i)
     {
-        m_meshes[i].Draw();
+       // m_meshes[i].Draw();
     }
 }
 
@@ -134,8 +134,10 @@ void Model::InstanceBufferMeshes()
 
 }
 
-void Model::InstanceRenderMeshes(int amount)
+void Model::InstanceRenderMeshes(int amount,Shader* shader)
 {
+    shader->Use();
+
     for (unsigned int meshIndex = 0; meshIndex < m_meshes.size(); meshIndex++)
     {
         glBindVertexArray(m_meshes[meshIndex].VAO);

@@ -19,7 +19,7 @@ struct MeshInfo {
     MeshInfo(Model* pModel,AbstractMaterial* pMat)
     {
         model = pModel;
-        material = pMat;
+        SetMaterial(pMat);
     };
 
     void SetMaterial(AbstractMaterial* newMat)

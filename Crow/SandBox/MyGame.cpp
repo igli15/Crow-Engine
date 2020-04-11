@@ -29,6 +29,7 @@ void MyGame::LoadAssets()
     resourceManager->LoadModel((MODEL_PATH + "skeleton.obj"),"skeleton");
     resourceManager->LoadModel((MODEL_PATH + "pine.obj"),"pine");
     resourceManager->LoadModel((MODEL_PATH + "ghost1.obj"),"ghost");
+    resourceManager->LoadModel((MODEL_PATH + "dragon.obj"),"dragon");
 
 }
 
@@ -41,9 +42,9 @@ void MyGame::Init()
     //SetWorld(new XmlTestWorld());
     //SetWorld(new PrototypeWorld());
     //SetWorld(new PhysicsTestWorld());
-    //SetWorld(new TranslucentMaterialTestWorld());
+    SetWorld(new TranslucentMaterialTestWorld());
     //SetWorld(new LightingTestWorld());
-    SetWorld(new RotatingGunsWorld());
+   // SetWorld(new RotatingGunsWorld());
     //SetWorld(new SpriteRenderingWorld());
 }
 

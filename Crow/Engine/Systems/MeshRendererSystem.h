@@ -15,7 +15,7 @@
 
 struct MeshInstancedData
 {
-    Model* model;
+    MeshInfo meshInfo;
     std::vector<glm::mat4>* modelMatrices;
 };
 class Transform;

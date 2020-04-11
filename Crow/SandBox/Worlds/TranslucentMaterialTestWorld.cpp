@@ -20,22 +20,22 @@ void TranslucentMaterialTestWorld::Build()
 {
     World::Build();
 
-    Game::Instance()->resourceManager->CreateShader("VertexShader.vs","FragmentShader.fs","litShader");
-    Game::Instance()->resourceManager->CreateShader("TranslucentVertexShader.vs","TranslucentFragmentShader.fs","translucentShader");
+
+    ResourceManager* resourceManager = Game::Instance()->resourceManager;
 
     //Load the models
-    Model* dragon = Game::Instance()->resourceManager->LoadModel((MODEL_PATH + "dragon.obj"),"dragon");
-    Model* planeModel = Game::Instance()->resourceManager->LoadModel((MODEL_PATH + "plane.obj"),"plane");
+    Model* dragon = resourceManager->GetModel("dragon");
+    Model* planeModel = resourceManager->GetModel("plane");
 
     RegisterSystem<RotateSystem>();
     SetSystemSignature<RotateSystem,Transform,RotateComponent>();
 
-    TranslucentColorMat* translucentMat = new TranslucentColorMat();
+    TranslucentColorMat* translucentMat = resourceManager->CreateMaterial<TranslucentColorMat>("translucentDragonMat");
     translucentMat->translucentScale = 1;
     translucentMat->translucentColor = glm::vec3(1,1,1);
     translucentMat->shininess = 16;
 
-    ColorMaterial* mat = new ColorMaterial();
+    ColorMaterial* mat = resourceManager->CreateMaterial<ColorMaterial>("planeColorMat");
     mat->mainColor = glm::vec3(0.7,0.7,0.7);
     mat->specularColor = glm::vec3(1);
     mat->shininess = 16;
@@ -63,8 +63,7 @@ void TranslucentMaterialTestWorld::Build()
     cubeMeshInfo.model = dragon;
     cubeMeshInfo.SetMaterial(translucentMat);
     cubeEntity.AddComponent(cubeMeshInfo);
-
-
+    
     EntityHandle lightEntity = CreateEntity();
     auto dirLightTransform = lightEntity.AddComponent(Transform{});
     dirLightTransform->Rotate(135,glm::vec3(1,0,0));

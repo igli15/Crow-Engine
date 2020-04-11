@@ -29,7 +29,7 @@ public:
 
 public:
     Mesh(const std::vector<Vertex>& vertices,const std::vector<unsigned int>& m_indices);
-    void Draw();
+    void Draw(Shader* shader);
 
     //TODO if one of these vbo is not copied things break!!!
     Mesh(const Mesh &otherMesh) : m_vertices(otherMesh.m_vertices), m_indices(otherMesh.m_indices) , VAO(otherMesh.VAO),

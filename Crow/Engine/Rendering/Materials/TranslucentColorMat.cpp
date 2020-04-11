@@ -88,6 +88,8 @@ void TranslucentColorMat::BufferShaderUniforms(const glm::mat4 &pViewMatrix, con
 {
     AbstractMaterial::BufferShaderUniforms(pViewMatrix, pPerspectiveMatrix, viewPos, world);
 
+    m_shader->Use();
+
     auto lightEntities = world->EntitiesWith<Light,Transform>();
 
     int activeDirLights = 0;
@@ -150,10 +152,6 @@ void TranslucentColorMat::BufferShaderUniforms(const glm::mat4 &pViewMatrix, con
     glUniformMatrix4fv(m_uProjectionMatrix, 1, GL_FALSE, glm::value_ptr(pPerspectiveMatrix));
     glUniformMatrix4fv(m_uViewMatrix, 1, GL_FALSE, glm::value_ptr(pViewMatrix));
 
-    glUniform3fv(m_uMainColor,1,glm::value_ptr(mainColor));
-    glUniform3fv(m_uSpecularColor,1,glm::value_ptr(specularColor));
-    glUniform1f(m_uAmbientIntensity,ambientIntensity);
-    glUniform1f(m_uShininess,shininess);
 
     glUniform3fv(m_uViewPos,1,glm::value_ptr(viewPos));
 
@@ -165,6 +163,9 @@ void TranslucentColorMat::BufferMaterialUniforms()
     AbstractMaterial::BufferMaterialUniforms();
 
     glUniform3fv(m_uMainColor,1,glm::value_ptr(mainColor));
+    glUniform3fv(m_uSpecularColor,1,glm::value_ptr(specularColor));
+    glUniform1f(m_uAmbientIntensity,ambientIntensity);
+    glUniform1f(m_uShininess,shininess);
 
     glUniform3fv(m_uTranslucentColor,1,glm::value_ptr(translucentColor));
     glUniform1f(m_uTranslucentScale,translucentScale);

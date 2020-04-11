@@ -28,6 +28,8 @@ public:
 
     int activeInstanceCount = 0;
 
+    Shader* GetShader();
+
 protected:
     Shader* m_shader;
 };

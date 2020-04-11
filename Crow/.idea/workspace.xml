@@ -14,48 +14,24 @@
   <component name="ChangeListManager">
     <list default="true" id="cf22dce6-4d69-43d0-a044-a31c5cbccc70" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/InstancedFragmentShader.fs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/InstancedVertexShader.vs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/VertexShader.vs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/VertexShader.vs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Feather/World.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Feather/World.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/TranslucentVertexShader.vs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/TranslucentVertexShader.vs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Components/MeshInfo.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Components/MeshInfo.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Rendering/AbstractMaterial.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Rendering/AbstractMaterial.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/Rendering/AbstractMaterial.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Rendering/AbstractMaterial.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Rendering/Materials/ColorMaterial.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Rendering/Materials/ColorMaterial.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Rendering/Materials/ColorMaterial.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Rendering/Materials/ColorMaterial.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Rendering/Materials/InstancedColorMaterial.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Rendering/Materials/InstancedColorMaterial.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Rendering/Materials/SpriteMaterial.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Rendering/Materials/SpriteMaterial.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Rendering/Materials/SpriteMaterial.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Rendering/Materials/SpriteMaterial.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/Rendering/Materials/TranslucentColorMat.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Rendering/Materials/TranslucentColorMat.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Rendering/Materials/TranslucentColorMat.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Rendering/Materials/TranslucentColorMat.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Systems/BufferMaterialsSystem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Systems/BufferMaterialsSystem.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Systems/InstancedMeshRenderingSystem.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Systems/InstancedMeshRenderingSystem.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Rendering/Mesh.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Rendering/Mesh.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Rendering/Mesh.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Rendering/Mesh.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Rendering/Model.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Rendering/Model.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Rendering/Model.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Rendering/Model.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Systems/BufferMaterialsSystem.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Systems/BufferMaterialsSystem.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/Systems/MeshRendererSystem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Systems/MeshRendererSystem.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/Systems/MeshRendererSystem.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Systems/MeshRendererSystem.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SandBox/Worlds/RotatingGunsWorld.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SandBox/Worlds/RotatingGunsWorld.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Crow.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Crow.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SandBox/MyGame.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SandBox/MyGame.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SandBox/Worlds/TranslucentMaterialTestWorld.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SandBox/Worlds/TranslucentMaterialTestWorld.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/Crow" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/Crow" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/Crow.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/Crow.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/Makefile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,7 +223,7 @@
       <workItem from="1586422945264" duration="7262000" />
       <workItem from="1586510530475" duration="6457000" />
       <workItem from="1586522456182" duration="8410000" />
-      <workItem from="1586592680851" duration="2240000" />
+      <workItem from="1586592680851" duration="4533000" />
     </task>
     <servers />
   </component>
@@ -288,29 +264,29 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="712" y="403" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1080.0.1080.1920/0.0.1920.1080/1920.0.1680.1050@0.0.1920.1080" timestamp="1586524000702" />
-    <state width="1878" height="129" key="GridCell.Tab.0.bottom" timestamp="1586599197337">
+    <state width="1878" height="129" key="GridCell.Tab.0.bottom" timestamp="1586601953178">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="129" key="GridCell.Tab.0.bottom/-1080.0.1080.1920/0.0.1920.1080/1920.0.1680.1050@0.0.1920.1080" timestamp="1586535092282" />
-    <state width="1878" height="129" key="GridCell.Tab.0.bottom/-1080.0.1080.1920/1920.0.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1586599197337" />
+    <state width="1878" height="129" key="GridCell.Tab.0.bottom/-1080.0.1080.1920/1920.0.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1586601953178" />
     <state width="1878" height="375" key="GridCell.Tab.0.bottom/-1080.23.1080.1897/0.23.1920.978/1920.23.1680.1027@0.23.1920.978" timestamp="1586522715402" />
-    <state width="1878" height="129" key="GridCell.Tab.0.center" timestamp="1586599197336">
+    <state width="1878" height="129" key="GridCell.Tab.0.center" timestamp="1586601953176">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="129" key="GridCell.Tab.0.center/-1080.0.1080.1920/0.0.1920.1080/1920.0.1680.1050@0.0.1920.1080" timestamp="1586535092280" />
-    <state width="1878" height="129" key="GridCell.Tab.0.center/-1080.0.1080.1920/1920.0.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1586599197336" />
+    <state width="1878" height="129" key="GridCell.Tab.0.center/-1080.0.1080.1920/1920.0.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1586601953176" />
     <state width="1878" height="375" key="GridCell.Tab.0.center/-1080.23.1080.1897/0.23.1920.978/1920.23.1680.1027@0.23.1920.978" timestamp="1586522715390" />
-    <state width="1878" height="129" key="GridCell.Tab.0.left" timestamp="1586599197335">
+    <state width="1878" height="129" key="GridCell.Tab.0.left" timestamp="1586601953175">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="129" key="GridCell.Tab.0.left/-1080.0.1080.1920/0.0.1920.1080/1920.0.1680.1050@0.0.1920.1080" timestamp="1586535092279" />
-    <state width="1878" height="129" key="GridCell.Tab.0.left/-1080.0.1080.1920/1920.0.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1586599197335" />
+    <state width="1878" height="129" key="GridCell.Tab.0.left/-1080.0.1080.1920/1920.0.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1586601953175" />
     <state width="1878" height="375" key="GridCell.Tab.0.left/-1080.23.1080.1897/0.23.1920.978/1920.23.1680.1027@0.23.1920.978" timestamp="1586522715385" />
-    <state width="1878" height="129" key="GridCell.Tab.0.right" timestamp="1586599197336">
+    <state width="1878" height="129" key="GridCell.Tab.0.right" timestamp="1586601953177">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="129" key="GridCell.Tab.0.right/-1080.0.1080.1920/0.0.1920.1080/1920.0.1680.1050@0.0.1920.1080" timestamp="1586535092281" />
-    <state width="1878" height="129" key="GridCell.Tab.0.right/-1080.0.1080.1920/1920.0.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1586599197336" />
+    <state width="1878" height="129" key="GridCell.Tab.0.right/-1080.0.1080.1920/1920.0.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1586601953177" />
     <state width="1878" height="375" key="GridCell.Tab.0.right/-1080.23.1080.1897/0.23.1920.978/1920.23.1680.1027@0.23.1920.978" timestamp="1586522715393" />
     <state width="1878" height="375" key="GridCell.Tab.1.bottom" timestamp="1586527265499">
       <screen x="0" y="0" width="1920" height="1080" />
