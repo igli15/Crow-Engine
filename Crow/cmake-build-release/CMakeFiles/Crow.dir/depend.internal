@@ -734,6 +734,7 @@ CMakeFiles/Crow.dir/Engine/Components/SpriteInfo.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/SpriteMaterial.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Sprite.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
@@ -3609,6 +3610,7 @@ CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/SpriteMaterial.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Mesh.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
@@ -7240,6 +7242,7 @@ CMakeFiles/Crow.dir/Engine/Systems/BufferMaterialsSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/SpriteMaterial.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Mesh.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
@@ -8298,6 +8301,7 @@ CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/SpriteMaterial.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Sprite.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
@@ -10600,6 +10604,7 @@ CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Font.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/SpriteMaterial.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Mesh.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h

@@ -63,7 +63,7 @@ void TranslucentMaterialTestWorld::Build()
     cubeMeshInfo.model = dragon;
     cubeMeshInfo.SetMaterial(translucentMat);
     cubeEntity.AddComponent(cubeMeshInfo);
-    
+
     EntityHandle lightEntity = CreateEntity();
     auto dirLightTransform = lightEntity.AddComponent(Transform{});
     dirLightTransform->Rotate(135,glm::vec3(1,0,0));

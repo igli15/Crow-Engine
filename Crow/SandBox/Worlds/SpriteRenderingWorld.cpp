@@ -24,6 +24,8 @@ void SpriteRenderingWorld::Build()
     Sprite* sprite = Game::Instance()->resourceManager->CreateSprite("crowSprite",texture);
     SpriteMaterial* spriteMaterial = Game::Instance()->resourceManager->CreateMaterial<SpriteMaterial>("spriteMat");
 
+    if(spriteMaterial == nullptr) throw;
+
     EntityHandle spriteEntity = CreateEntity();
     Transform* spriteTransform = spriteEntity.AddComponent(Transform{});
     spriteTransform->SetLocalPosition(glm::vec3(200,200,0));
@@ -31,6 +33,7 @@ void SpriteRenderingWorld::Build()
     SpriteInfo spriteInfo{};
     spriteInfo.sprite = sprite;
     spriteInfo.SetMaterial(spriteMaterial);
+    spriteInfo.SetColor(glm::vec3(1,0,1));
     spriteEntity.AddComponent(spriteInfo);
 
 }

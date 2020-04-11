@@ -8,6 +8,7 @@
 
 #include <vector>
 #include "Texture.h"
+class Shader;
 
 class Sprite {
 
@@ -17,7 +18,7 @@ public:
     Sprite();
     void Buffer();
     void BufferModelMatrices(std::vector<glm::mat4>& modelMatrices);
-    void Render(int amount);
+    void Render(int amount,Shader* shader);
 
     int ID;
 

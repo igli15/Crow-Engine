@@ -11,22 +11,26 @@
 
 SpriteMaterial::SpriteMaterial() : AbstractMaterial("spriteShader")
 {
-    m_shader->SetInt("image",0);
-
     Initialize();
 }
 
 void SpriteMaterial::Initialize()
 {
-    //TODO get shader variables here once
+    //TODO make screen size a global value and not hardcode it!
+    m_orthoProjection = glm::ortho(0.0f, static_cast<GLfloat>(1920),
+                                   static_cast<GLfloat>(1080), 0.0f, -1.0f, 1.0f);
+
+    m_shader->SetInt("image",0);
+    m_uProjection = m_shader->GetUniformLocation("projection");
+    m_uSpriteColor = m_shader->GetUniformLocation("spriteColor");
 }
 
 void SpriteMaterial::BufferMaterialUniforms()
 {
     AbstractMaterial::BufferMaterialUniforms();
 
-    //TODO make color a property of this material
-    this->m_shader->SetVec3("spriteColor", glm::vec3(1,1,1));
+    
+    glUniform3fv(m_uSpriteColor, 1, glm::value_ptr(color));
 }
 
 void SpriteMaterial::BufferShaderUniforms(const glm::mat4 &pViewMatrix, const glm::mat4 &pPerspectiveMatrix,
@@ -36,7 +40,5 @@ void SpriteMaterial::BufferShaderUniforms(const glm::mat4 &pViewMatrix, const gl
 
     m_shader->Use();
 
-    m_shader->SetMat4("projection", glm::ortho(0.0f, static_cast<GLfloat>(1920),
-                                               static_cast<GLfloat>(1080), 0.0f, -1.0f, 1.0f));
-
+    glUniformMatrix4fv(m_uProjection, 1, GL_FALSE, glm::value_ptr(m_orthoProjection));
 }

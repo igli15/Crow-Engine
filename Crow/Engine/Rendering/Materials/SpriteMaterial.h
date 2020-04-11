@@ -24,6 +24,14 @@ public:
 
     void BufferMaterialUniforms() override;
 
+    glm::vec3 color = glm::vec3(1);
+
+
+    GLint m_uSpriteColor,m_uProjection;
+
+private:
+    glm::mat4 m_orthoProjection = glm::mat4(1);
+
 };
 
 

@@ -9,22 +9,45 @@
 #include "glm/glm.hpp"
 #include "../Rendering/Sprite.h"
 #include "../Rendering/AbstractMaterial.h"
+#include "../Rendering/Materials/SpriteMaterial.h"
 
 struct SpriteInfo {
 
-    glm::vec3 color = glm::vec3(1);
     Sprite* sprite;
+
+    SpriteInfo(){};
+    SpriteInfo(Sprite* pSprite,AbstractMaterial* pMaterial,glm::vec3 pColor = glm::vec3(1))
+    {
+        SetMaterial(pMaterial);
+        material = pMaterial;
+        sprite = pSprite;
+        SetColor(pColor);
+    };
 
     void SetMaterial(AbstractMaterial* newMat)
     {
-        if(material == newMat) return;
+        if(material == newMat)
+        {
+            ENGINE_LOG_WARNING("Assigning the same material to sprite info");
+            return;
+        }
 
-        if(material!= nullptr) material->activeInstanceCount -= 1;
+        if(material!= nullptr)
+        {
+            ENGINE_LOG_WARNING("Assigning null material to sprite info");
+            material->activeInstanceCount -= 1;
+        }
 
         material = newMat;
         material->activeInstanceCount += 1;
 
     };
+
+    void SetColor(const glm::vec3& newColor)
+    {
+        color = newColor;
+        static_cast<SpriteMaterial*>(material)->color = newColor;
+    }
 
     AbstractMaterial* GetMaterial()
     {
@@ -32,7 +55,8 @@ struct SpriteInfo {
     };
 
 private:
-    AbstractMaterial* material;
+    glm::vec3 color = glm::vec3(1);
+    AbstractMaterial* material = nullptr;
 
 };
 

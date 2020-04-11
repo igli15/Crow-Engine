@@ -7,8 +7,10 @@
 #include "Sprite.h"
 #include "Shader.h"
 
-void Sprite::Render(int amount)
+void Sprite::Render(int amount,Shader* shader)
 {
+    shader->Use();
+    
     glActiveTexture(GL_TEXTURE0);
     texture->Bind();
 

@@ -733,6 +733,7 @@ CMakeFiles/Crow.dir/Engine/Components/SpriteInfo.cpp.o: ../Engine/Feather/System
 CMakeFiles/Crow.dir/Engine/Components/SpriteInfo.cpp.o: ../Engine/Feather/Types.h
 CMakeFiles/Crow.dir/Engine/Components/SpriteInfo.cpp.o: ../Engine/Feather/World.h
 CMakeFiles/Crow.dir/Engine/Components/SpriteInfo.cpp.o: ../Engine/Rendering/AbstractMaterial.h
+CMakeFiles/Crow.dir/Engine/Components/SpriteInfo.cpp.o: ../Engine/Rendering/Materials/SpriteMaterial.h
 CMakeFiles/Crow.dir/Engine/Components/SpriteInfo.cpp.o: ../Engine/Rendering/Shader.h
 CMakeFiles/Crow.dir/Engine/Components/SpriteInfo.cpp.o: ../Engine/Rendering/Sprite.h
 CMakeFiles/Crow.dir/Engine/Components/SpriteInfo.cpp.o: ../Engine/Rendering/Texture.h
@@ -3608,6 +3609,7 @@ CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Feather/Types.h
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Feather/World.cpp
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Feather/World.h
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Rendering/AbstractMaterial.h
+CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Rendering/Materials/SpriteMaterial.h
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Rendering/Mesh.h
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Rendering/Model.h
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Rendering/Shader.h
@@ -7239,6 +7241,7 @@ CMakeFiles/Crow.dir/Engine/Systems/BufferMaterialsSystem.cpp.o: ../Engine/Feathe
 CMakeFiles/Crow.dir/Engine/Systems/BufferMaterialsSystem.cpp.o: ../Engine/Feather/Types.h
 CMakeFiles/Crow.dir/Engine/Systems/BufferMaterialsSystem.cpp.o: ../Engine/Feather/World.h
 CMakeFiles/Crow.dir/Engine/Systems/BufferMaterialsSystem.cpp.o: ../Engine/Rendering/AbstractMaterial.h
+CMakeFiles/Crow.dir/Engine/Systems/BufferMaterialsSystem.cpp.o: ../Engine/Rendering/Materials/SpriteMaterial.h
 CMakeFiles/Crow.dir/Engine/Systems/BufferMaterialsSystem.cpp.o: ../Engine/Rendering/Mesh.h
 CMakeFiles/Crow.dir/Engine/Systems/BufferMaterialsSystem.cpp.o: ../Engine/Rendering/Model.h
 CMakeFiles/Crow.dir/Engine/Systems/BufferMaterialsSystem.cpp.o: ../Engine/Rendering/Shader.h
@@ -8297,6 +8300,7 @@ CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: ../Engine/Feather
 CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: ../Engine/Feather/Types.h
 CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: ../Engine/Feather/World.h
 CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: ../Engine/Rendering/AbstractMaterial.h
+CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: ../Engine/Rendering/Materials/SpriteMaterial.h
 CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: ../Engine/Rendering/Shader.h
 CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: ../Engine/Rendering/Sprite.h
 CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: ../Engine/Rendering/Texture.h
@@ -10599,6 +10603,7 @@ CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Feather/Wo
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Rendering/AbstractMaterial.h
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Rendering/Font.h
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Rendering/Materials/ColorMaterial.h
+CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Rendering/Materials/SpriteMaterial.h
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Rendering/Mesh.h
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Rendering/Model.h
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Rendering/Shader.h

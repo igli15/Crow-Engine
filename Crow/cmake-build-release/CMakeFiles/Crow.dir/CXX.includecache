@@ -22,15 +22,15 @@ glm/gtx/projection.hpp
 glm/gtc/matrix_transform.hpp
 -
 
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/SpriteInfo.h
 glm/glm.hpp
--
-
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
-../Rendering/Model.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/glm/glm.hpp
+../Rendering/Sprite.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Sprite.h
 ../Rendering/AbstractMaterial.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+../Rendering/Materials/SpriteMaterial.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/SpriteMaterial.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
 glm/glm.hpp
@@ -214,11 +214,9 @@ Shader.h
 ../Feather/World.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
 
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h
-../AbstractMaterial.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/TranslucentColorMat.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/SpriteMaterial.h
+glm/glm.hpp
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/glm/glm.hpp
 ../AbstractMaterial.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
 
@@ -248,6 +246,12 @@ iostream
 glm/ext.hpp
 -
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Sprite.h
+vector
+-
+Texture.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
 GL/glew.h
 -
@@ -260,43 +264,27 @@ GLFW/glfw3.h
 ../Core/Input.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
 
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/RotateComponent.h
-
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RotateSystem.h
-../../Engine/Feather/System.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
-vector
--
-
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/TranslucentMaterialTestWorld.cpp
-TranslucentMaterialTestWorld.h
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/TranslucentMaterialTestWorld.h
-../Systems/RotateSystem.h
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RotateSystem.h
-../../Engine/Rendering/Materials/ColorMaterial.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h
-../../Engine/Rendering/Model.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/SpriteRenderingWorld.cpp
+SpriteRenderingWorld.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/SpriteRenderingWorld.h
+../../Engine/Rendering/Texture.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
 ../../Engine/Core/Game.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
-../../Engine/Components/Transform.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
-../Components/RotateComponent.h
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/RotateComponent.h
-../../Engine/Core/ResourceManager.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h
 ../../Engine/Feather/EntityHandle.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
-../../Engine/Components/MeshInfo.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
-../../Engine/Components/Light.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h
-../../Engine/Rendering/Materials/TranslucentColorMat.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/TranslucentColorMat.h
+../../Engine/Components/SpriteInfo.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/SpriteInfo.h
+../../Engine/Components/Transform.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
+../../Engine/Core/ResourceManager.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h
 ../../Engine/Components/Camera.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.h
+../../Engine/Rendering/Materials/SpriteMaterial.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/SpriteMaterial.h
 
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/TranslucentMaterialTestWorld.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/SpriteRenderingWorld.h
 ../../Engine/Feather/World.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
 

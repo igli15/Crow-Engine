@@ -26,7 +26,7 @@ void RotatingGunsWorld::Build()
     World::Build();
 
     //Register the shader once
-    Game::Instance()->resourceManager->CreateShader("VertexShader.vs","FragmentShader.fs","instancedLitShader");
+    //Game::Instance()->resourceManager->CreateShader("VertexShader.vs","FragmentShader.fs","instancedLitShader");
     //Game::Instance()->resourceManager->CreateShader("VertexShader.vs","FragmentShader.fs","litShader");
 
 
