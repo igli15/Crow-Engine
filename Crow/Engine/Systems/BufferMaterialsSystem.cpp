@@ -43,3 +43,21 @@ void BufferMaterialsSystem::PreRender()
         }
     }
 }
+
+void BufferMaterialsSystem::OnSpriteInfoRemoved(ComponentRemovedEvent<SpriteInfo> *event)
+{
+    event->component.GetMaterial()->activeInstanceCount -=1;
+}
+
+void BufferMaterialsSystem::OnMeshInfoRemoved(ComponentRemovedEvent<MeshInfo> *event)
+{
+    event->component.GetMaterial()->activeInstanceCount -=1;
+}
+
+void BufferMaterialsSystem::OnCreate()
+{
+    System::OnCreate();
+
+    EventQueue::Instance().Subscribe(this, &BufferMaterialsSystem::OnSpriteInfoRemoved);
+    EventQueue::Instance().Subscribe(this, &BufferMaterialsSystem::OnMeshInfoRemoved);
+}

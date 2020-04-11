@@ -6,6 +6,7 @@
 #define CROW_SPRITE_H
 
 
+#include <vector>
 #include "Texture.h"
 
 class Sprite {
@@ -15,11 +16,15 @@ public:
 
     Sprite();
     void Buffer();
-    void Render();
+    void BufferModelMatrices(std::vector<glm::mat4>& modelMatrices);
+    void Render(int amount);
+
+    int ID;
 
 private:
-    GLuint m_quadVAO;
+    GLuint VAO;
     GLuint m_quadVBO;
+    GLuint m_modelsVBO;
 };
 
 

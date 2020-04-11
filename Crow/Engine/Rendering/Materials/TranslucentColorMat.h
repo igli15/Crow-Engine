@@ -16,6 +16,11 @@ public:
                         const glm::vec3 &viewPos, World *world) override;
     void Initialize();
 
+    void BufferShaderUniforms(const glm::mat4 &pViewMatrix,
+                              const glm::mat4 &pPerspectiveMatrix, const glm::vec3 &viewPos, World *world) override;
+
+    void BufferMaterialUniforms() override;
+
     glm::vec3 mainColor = glm::vec3(1);
     glm::vec3 specularColor = glm::vec3(1);
     glm::vec3 translucentColor = glm::vec3(1);

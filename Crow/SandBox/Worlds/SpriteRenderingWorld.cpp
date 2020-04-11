@@ -10,6 +10,7 @@
 #include "../../Engine/Components/Transform.h"
 #include "../../Engine/Core/ResourceManager.h"
 #include "../../Engine/Components/Camera.h"
+#include "../../Engine/Rendering/Materials/SpriteMaterial.h"
 
 void SpriteRenderingWorld::Build()
 {
@@ -21,11 +22,15 @@ void SpriteRenderingWorld::Build()
 
     Texture* texture = Game::Instance()->resourceManager->LoadTexture(TEXTURE_PATH + "crowIcon.png","crowTexture");
     Sprite* sprite = Game::Instance()->resourceManager->CreateSprite("crowSprite",texture);
-    SpriteMaterial* spriteMaterial = new SpriteMaterial();
+    SpriteMaterial* spriteMaterial = Game::Instance()->resourceManager->CreateMaterial<SpriteMaterial>("spriteMat");
 
     EntityHandle spriteEntity = CreateEntity();
     Transform* spriteTransform = spriteEntity.AddComponent(Transform{});
     spriteTransform->SetLocalPosition(glm::vec3(200,200,0));
     spriteTransform->Scale(glm::vec3(200,200,1));
-    spriteEntity.AddComponent(SpriteInfo{glm::vec3(1),sprite,spriteMaterial});
+    SpriteInfo spriteInfo{};
+    spriteInfo.sprite = sprite;
+    spriteInfo.SetMaterial(spriteMaterial);
+    spriteEntity.AddComponent(spriteInfo);
+
 }

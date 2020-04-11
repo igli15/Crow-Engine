@@ -8,13 +8,12 @@
 
 #include "../Feather/System.h"
 #include "../Events/ComponentAddedEvent.h"
-#include "../Components/InstancedMeshInfo.h"
 #include "../Events/EntityEvents.h"
 #include <unordered_map>
 #include <vector>
+#include "../Components/MeshInfo.h"
 
-
-struct InstancedModelData
+struct MeshInstancedData
 {
     Model* model;
     std::vector<glm::mat4>* modelMatrices;
@@ -27,13 +26,11 @@ class InstancedMeshRenderingSystem : public System{
 public:
     void OnCreate() override;
     void Render() override;
-    void OnMeshInfoAdded(ComponentAddedEvent<InstancedMeshInfo>* event);
-    void OnEntityDestroyed(OnEntityDestroyedEvent* event);
+    void OnMeshInfoAdded(ComponentAddedEvent<MeshInfo>* event);
 
 
 private:
-    std::unordered_map<int,std::vector<glm::mat4>> m_modelMap;
-    std::unordered_map<int,InstancedModelData> m_instancedModelMap;
+    std::unordered_map<int,MeshInstancedData> m_instancedModelMap;
 
 };
 

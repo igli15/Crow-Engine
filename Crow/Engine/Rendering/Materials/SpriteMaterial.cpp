@@ -12,16 +12,43 @@
 void SpriteMaterial::RenderSprite(SpriteInfo *spriteInfo, const glm::mat4 &pModelMatrix,
                                   const glm::mat4 &pPerspectiveMatrix)
 {
-    shader->Use();
-
-    this->shader->SetMat4("model", pModelMatrix);
-    this->shader->SetMat4("projection", pPerspectiveMatrix);
-    this->shader->SetVec3("spriteColor", spriteInfo->color);
 
 }
 
-SpriteMaterial::SpriteMaterial()
+SpriteMaterial::SpriteMaterial() : AbstractMaterial("spriteShader")
 {
-    shader = Game::Instance()->resourceManager->GetShader("spriteShader");
-    shader->SetInt("image",0);
+    m_shader->SetInt("image",0);
+
+    Initialize();
+}
+
+void SpriteMaterial::Initialize()
+{
+    //TODO get shader variables here once
+}
+
+void SpriteMaterial::BufferMaterialUniforms()
+{
+    AbstractMaterial::BufferMaterialUniforms();
+
+    //TODO make color a property of this material
+    this->m_shader->SetVec3("spriteColor", glm::vec3(1,1,1));
+}
+
+void SpriteMaterial::BufferShaderUniforms(const glm::mat4 &pViewMatrix, const glm::mat4 &pPerspectiveMatrix,
+                                          const glm::vec3 &viewPos, World *world)
+{
+    AbstractMaterial::BufferShaderUniforms(pViewMatrix, pPerspectiveMatrix, viewPos, world);
+
+    m_shader->Use();
+
+    m_shader->SetMat4("projection", glm::ortho(0.0f, static_cast<GLfloat>(1920),
+                                               static_cast<GLfloat>(1080), 0.0f, -1.0f, 1.0f));
+
+}
+
+void SpriteMaterial::BufferUniforms(const glm::mat4 &pModelMatrix, const glm::mat4 &pViewMatrix,
+                                    const glm::mat4 &pProjectionMatrix, const glm::vec3 &viewPos, World *world)
+{
+
 }

@@ -69,15 +69,15 @@ void World::Build()
 
 void World::RegisterEngineSystems()
 {
-    RegisterSystem<MeshRendererSystem>();
+    //RegisterSystem<MeshRendererSystem>();
     RegisterSystem<InstancedMeshRenderingSystem>();
     RegisterSystem<CollisionDetectionSystem>();
     RegisterSystem<TransformHierarchySystem>();
     RegisterSystem<TextRenderingSystem>();
     RegisterSystem<SpriteRendererSystem>();
     RegisterSystem<BufferMaterialsSystem>();
-    SetSystemSignature<MeshRendererSystem,Transform,MeshInfo>();
-    SetSystemSignature<InstancedMeshRenderingSystem,Transform,InstancedMeshInfo>();
+    //SetSystemSignature<MeshRendererSystem,Transform,MeshInfo>();
+    SetSystemSignature<InstancedMeshRenderingSystem,Transform,MeshInfo>();
 
     //SetSystemSignature<CollisionDetectionSystem,Transform,SphereCollider>();
 

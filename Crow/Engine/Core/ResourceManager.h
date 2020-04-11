@@ -28,6 +28,7 @@ private:
     std::map<std::string,Sprite*> m_sprites;
 
     int m_modelIdCounter = 0;
+    int m_spriteIdCounter = 0;
 
 
 public:

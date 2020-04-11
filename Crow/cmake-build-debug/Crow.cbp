@@ -44,7 +44,6 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/local/Cellar/glew-2.1.0/include/GL"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Frameworks/Mono.framework/Headers"/>
 					<Add directory="/usr/local/include/freetype2"/>
@@ -68,7 +67,6 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/local/Cellar/glew-2.1.0/include/GL"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Frameworks/Mono.framework/Headers"/>
 					<Add directory="/usr/local/include/freetype2"/>
@@ -93,12 +91,6 @@
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/InstancedMeshInfo.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/InstancedMeshInfo.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.cpp">
@@ -432,24 +424,6 @@
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RotateSystem.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/LightingTestWorld.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/LightingTestWorld.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/PhysicsTestWorld.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/PhysicsTestWorld.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/PrototypeWorld.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/PrototypeWorld.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/RotatingGunsWorld.cpp">

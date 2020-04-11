@@ -11,7 +11,35 @@
 struct MeshInfo {
 
     Model* model;
-    AbstractMaterial* material;
+
+    MeshInfo()
+    {
+    };
+
+    MeshInfo(Model* pModel,AbstractMaterial* pMat)
+    {
+        model = pModel;
+        material = pMat;
+    };
+
+    void SetMaterial(AbstractMaterial* newMat)
+    {
+        if(material == newMat) return;
+
+        if(material!= nullptr) material->activeInstanceCount -= 1;
+
+        material = newMat;
+        material->activeInstanceCount += 1;
+
+    };
+
+    AbstractMaterial* GetMaterial()
+    {
+        return material;
+    };
+
+private:
+    AbstractMaterial* material = nullptr;
 
 };
 

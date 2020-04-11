@@ -118,9 +118,18 @@ const std::map<std::string, Font *> &ResourceManager::InternalGetFontMap() {
 
 Sprite *ResourceManager::CreateSprite(const std::string &name, Texture *texture)
 {
+
+    if (m_sprites.find(name) != m_sprites.end())
+    {
+        ENGINE_LOG_ERROR("There is already a  Sprite with that name!");
+        throw;
+    }
+
     Sprite* sprite = new Sprite();
 
     sprite->texture = texture;
+    m_spriteIdCounter++;
+    sprite->ID = m_spriteIdCounter;
     m_sprites[name] = sprite;
 
     return sprite;

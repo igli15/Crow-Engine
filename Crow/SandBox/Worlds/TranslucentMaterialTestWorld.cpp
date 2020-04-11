@@ -61,7 +61,7 @@ void TranslucentMaterialTestWorld::Build()
 
     MeshInfo cubeMeshInfo{};
     cubeMeshInfo.model = dragon;
-    cubeMeshInfo.material = translucentMat;
+    cubeMeshInfo.SetMaterial(translucentMat);
     cubeEntity.AddComponent(cubeMeshInfo);
 
 

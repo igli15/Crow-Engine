@@ -11,84 +11,7 @@
 void TranslucentColorMat::BufferUniforms(const glm::mat4 &pModelMatrix, const glm::mat4 &pViewMatrix,
                                          const glm::mat4 &pProjectionMatrix, const glm::vec3 &viewPos, World *world)
 {
-    m_shader->Use();
 
-    auto lightEntities = world->EntitiesWith<Light,Transform>();
-
-    int activeDirLights = 0;
-    int activePointLights = 0;
-    int activeSpotLights = 0;
-
-    for (int i = 0; i < lightEntities.size(); ++i)
-    {
-        auto lightComponent = world->GetComponent<Light>(lightEntities[i]);
-        auto lightTransform = world->GetComponent<Transform>(lightEntities[i]);
-
-        if(lightComponent.type == lightComponent.DIRECTIONAL)
-        {
-            glUniform3fv(m_dirLightsUniforms[activeDirLights].m_uLightColor, 1, glm::value_ptr(lightComponent.color));
-            glUniform3fv(m_dirLightsUniforms[activeDirLights].m_uLightDir, 1, glm::value_ptr(-lightTransform.GetLocalTransform()[2]));
-
-            glUniform1f(m_dirLightsUniforms[activeDirLights].m_uLightIntensity,lightComponent.intensity);
-
-            activeDirLights +=1;
-        }
-        else if(lightComponent.type == lightComponent.POINT)
-        {
-
-            glUniform3fv(m_pointLightsUniforms[activePointLights].m_uLightColor, 1, glm::value_ptr(lightComponent.color));
-
-            glUniform3fv(m_pointLightsUniforms[activePointLights].m_uLightPosition, 1, glm::value_ptr(lightTransform.LocalPosition()));
-
-            glUniform1f(m_pointLightsUniforms[activePointLights].m_uLightConstant,lightComponent.constant);
-            glUniform1f(m_pointLightsUniforms[activePointLights].m_uLightLinear,lightComponent.linear);
-            glUniform1f(m_pointLightsUniforms[activePointLights].m_uLightQuadratic,lightComponent.quadratic);
-
-            glUniform1f(m_pointLightsUniforms[activePointLights].m_uLightIntensity,lightComponent.intensity);
-
-            activePointLights +=1;
-        }
-        else if(lightComponent.type == lightComponent.SPOT)
-        {
-
-            glUniform3fv(m_spotLightsUniforms[activeSpotLights].m_uLightColor, 1, glm::value_ptr(lightComponent.color));
-            glUniform3fv(m_spotLightsUniforms[activeSpotLights].m_uLightDirection, 1, glm::value_ptr(-lightTransform.GetLocalTransform()[2]));
-            glUniform3fv(m_spotLightsUniforms[activeSpotLights].m_uLightPosition, 1, glm::value_ptr(lightTransform.LocalPosition()));
-
-            glUniform1f(m_spotLightsUniforms[activeSpotLights].m_uLightCutoff,lightComponent.cutoff);
-            glUniform1f(m_spotLightsUniforms[activeSpotLights].m_uLightOuterCutoff,lightComponent.outerCutoff);
-
-            glUniform1f(m_spotLightsUniforms[activeSpotLights].m_uLightConstant,lightComponent.constant);
-            glUniform1f(m_spotLightsUniforms[activeSpotLights].m_uLightLinear,lightComponent.linear);
-            glUniform1f(m_spotLightsUniforms[activeSpotLights].m_uLightQuadratic,lightComponent.quadratic);
-
-            glUniform1f(m_spotLightsUniforms[activeSpotLights].m_uLightIntensity,lightComponent.intensity);
-
-            activeSpotLights +=1;
-        }
-    }
-
-    glUniform1i(m_uActiveDirLights,activeDirLights);
-    glUniform1i(m_uActivePointLights,activePointLights);
-    glUniform1i(m_uActiveSpotLights,activeSpotLights);
-
-    glUniformMatrix4fv(m_uProjectionMatrix, 1, GL_FALSE, glm::value_ptr(pProjectionMatrix));
-    glUniformMatrix4fv(m_uViewMatrix, 1, GL_FALSE, glm::value_ptr(pViewMatrix));
-    glUniformMatrix4fv(m_uModelMatrix, 1, GL_FALSE, glm::value_ptr(pModelMatrix));
-
-    glUniform3fv(m_uMainColor,1,glm::value_ptr(mainColor));
-    glUniform3fv(m_uSpecularColor,1,glm::value_ptr(specularColor));
-    glUniform1f(m_uAmbientIntensity,ambientIntensity);
-    glUniform1f(m_uShininess,shininess);
-
-    glUniform3fv(m_uMainColor,1,glm::value_ptr(mainColor));
-
-    glUniform3fv(m_uViewPos,1,glm::value_ptr(viewPos));
-
-    glUniform3fv(m_uTranslucentColor,1,glm::value_ptr(translucentColor));
-    glUniform1f(m_uTranslucentScale,translucentScale);
-    glUniform1f(m_uTranslucentPower,translucentPower);
-    glUniform1f(m_uTranslucentDistortion,translucentDistortion);
 
 }
 
@@ -164,4 +87,93 @@ void TranslucentColorMat::Initialize()
         m_spotLightsUniforms[i].m_uLightIntensity = m_shader->GetUniformLocation(spotUniformString + ".intensity");
     }
 
+}
+
+void TranslucentColorMat::BufferShaderUniforms(const glm::mat4 &pViewMatrix, const glm::mat4 &pPerspectiveMatrix,
+                                               const glm::vec3 &viewPos, World *world)
+{
+    AbstractMaterial::BufferShaderUniforms(pViewMatrix, pPerspectiveMatrix, viewPos, world);
+
+    auto lightEntities = world->EntitiesWith<Light,Transform>();
+
+    int activeDirLights = 0;
+    int activePointLights = 0;
+    int activeSpotLights = 0;
+
+    for (int i = 0; i < lightEntities.size(); ++i)
+    {
+        auto lightComponent = world->GetComponent<Light>(lightEntities[i]);
+        auto lightTransform = world->GetComponent<Transform>(lightEntities[i]);
+
+        if(lightComponent.type == lightComponent.DIRECTIONAL)
+        {
+            glUniform3fv(m_dirLightsUniforms[activeDirLights].m_uLightColor, 1, glm::value_ptr(lightComponent.color));
+            glUniform3fv(m_dirLightsUniforms[activeDirLights].m_uLightDir, 1, glm::value_ptr(-lightTransform.GetLocalTransform()[2]));
+
+            glUniform1f(m_dirLightsUniforms[activeDirLights].m_uLightIntensity,lightComponent.intensity);
+
+            activeDirLights +=1;
+        }
+        else if(lightComponent.type == lightComponent.POINT)
+        {
+
+            glUniform3fv(m_pointLightsUniforms[activePointLights].m_uLightColor, 1, glm::value_ptr(lightComponent.color));
+
+            glUniform3fv(m_pointLightsUniforms[activePointLights].m_uLightPosition, 1, glm::value_ptr(lightTransform.LocalPosition()));
+
+            glUniform1f(m_pointLightsUniforms[activePointLights].m_uLightConstant,lightComponent.constant);
+            glUniform1f(m_pointLightsUniforms[activePointLights].m_uLightLinear,lightComponent.linear);
+            glUniform1f(m_pointLightsUniforms[activePointLights].m_uLightQuadratic,lightComponent.quadratic);
+
+            glUniform1f(m_pointLightsUniforms[activePointLights].m_uLightIntensity,lightComponent.intensity);
+
+            activePointLights +=1;
+        }
+        else if(lightComponent.type == lightComponent.SPOT)
+        {
+
+            glUniform3fv(m_spotLightsUniforms[activeSpotLights].m_uLightColor, 1, glm::value_ptr(lightComponent.color));
+            glUniform3fv(m_spotLightsUniforms[activeSpotLights].m_uLightDirection, 1, glm::value_ptr(-lightTransform.GetLocalTransform()[2]));
+            glUniform3fv(m_spotLightsUniforms[activeSpotLights].m_uLightPosition, 1, glm::value_ptr(lightTransform.LocalPosition()));
+
+            glUniform1f(m_spotLightsUniforms[activeSpotLights].m_uLightCutoff,lightComponent.cutoff);
+            glUniform1f(m_spotLightsUniforms[activeSpotLights].m_uLightOuterCutoff,lightComponent.outerCutoff);
+
+            glUniform1f(m_spotLightsUniforms[activeSpotLights].m_uLightConstant,lightComponent.constant);
+            glUniform1f(m_spotLightsUniforms[activeSpotLights].m_uLightLinear,lightComponent.linear);
+            glUniform1f(m_spotLightsUniforms[activeSpotLights].m_uLightQuadratic,lightComponent.quadratic);
+
+            glUniform1f(m_spotLightsUniforms[activeSpotLights].m_uLightIntensity,lightComponent.intensity);
+
+            activeSpotLights +=1;
+        }
+    }
+
+    glUniform1i(m_uActiveDirLights,activeDirLights);
+    glUniform1i(m_uActivePointLights,activePointLights);
+    glUniform1i(m_uActiveSpotLights,activeSpotLights);
+
+    glUniformMatrix4fv(m_uProjectionMatrix, 1, GL_FALSE, glm::value_ptr(pPerspectiveMatrix));
+    glUniformMatrix4fv(m_uViewMatrix, 1, GL_FALSE, glm::value_ptr(pViewMatrix));
+
+    glUniform3fv(m_uMainColor,1,glm::value_ptr(mainColor));
+    glUniform3fv(m_uSpecularColor,1,glm::value_ptr(specularColor));
+    glUniform1f(m_uAmbientIntensity,ambientIntensity);
+    glUniform1f(m_uShininess,shininess);
+
+    glUniform3fv(m_uViewPos,1,glm::value_ptr(viewPos));
+
+
+}
+
+void TranslucentColorMat::BufferMaterialUniforms()
+{
+    AbstractMaterial::BufferMaterialUniforms();
+
+    glUniform3fv(m_uMainColor,1,glm::value_ptr(mainColor));
+
+    glUniform3fv(m_uTranslucentColor,1,glm::value_ptr(translucentColor));
+    glUniform1f(m_uTranslucentScale,translucentScale);
+    glUniform1f(m_uTranslucentPower,translucentPower);
+    glUniform1f(m_uTranslucentDistortion,translucentDistortion);
 }

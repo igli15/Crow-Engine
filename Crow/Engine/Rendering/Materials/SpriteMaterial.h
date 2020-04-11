@@ -7,18 +7,26 @@
 
 
 #include "glm/glm.hpp"
+#include "../AbstractMaterial.h"
 
 class SpriteInfo;
 class Shader;
 
-class SpriteMaterial
+class SpriteMaterial : public AbstractMaterial
 {
 public:
     SpriteMaterial();
     void RenderSprite(SpriteInfo* spriteInfo, const glm::mat4& pModelMatrix, const glm::mat4& pPerspectiveMatrix);
 
-private:
-    Shader* shader;
+    void BufferUniforms(const glm::mat4 &pModelMatrix, const glm::mat4 &pViewMatrix, const glm::mat4 &pProjectionMatrix,
+                        const glm::vec3 &viewPos, World *world) override;
+    void Initialize();
+
+    void BufferShaderUniforms(const glm::mat4 &pViewMatrix,
+                                      const glm::mat4 &pPerspectiveMatrix, const glm::vec3 &viewPos, World *world) override;
+
+    void BufferMaterialUniforms() override;
+
 };
 
 

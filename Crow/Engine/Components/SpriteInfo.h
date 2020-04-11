@@ -8,13 +8,31 @@
 
 #include "glm/glm.hpp"
 #include "../Rendering/Sprite.h"
-#include "../Rendering/Materials/SpriteMaterial.h"
+#include "../Rendering/AbstractMaterial.h"
 
 struct SpriteInfo {
 
     glm::vec3 color = glm::vec3(1);
     Sprite* sprite;
-    SpriteMaterial* material;
+
+    void SetMaterial(AbstractMaterial* newMat)
+    {
+        if(material == newMat) return;
+
+        if(material!= nullptr) material->activeInstanceCount -= 1;
+
+        material = newMat;
+        material->activeInstanceCount += 1;
+
+    };
+
+    AbstractMaterial* GetMaterial()
+    {
+        return material;
+    };
+
+private:
+    AbstractMaterial* material;
 
 };
 

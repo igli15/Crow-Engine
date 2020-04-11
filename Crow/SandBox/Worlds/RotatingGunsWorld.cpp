@@ -19,7 +19,6 @@
 #include "../../Engine/Components/Text.h"
 #include "../../Engine/Components/Light.h"
 #include "../../Engine/Rendering/Materials/InstancedColorMaterial.h"
-#include "../../Engine/Components/InstancedMeshInfo.h"
 #include "../../Engine/Components/SpriteInfo.h"
 
 void RotatingGunsWorld::Build()
@@ -57,7 +56,7 @@ void RotatingGunsWorld::Build()
             t2->Rotate(-25, glm::vec3(0, 1, 0));
 
             //MeshInfo gunMeshInfo{};
-            InstancedMeshInfo gunMeshInfo{};
+            MeshInfo gunMeshInfo{};
             gunMeshInfo.model = gunModel;
             mat->mainColor = glm::vec3(0.8f,0.8f,0.8f);
             gunMeshInfo.SetMaterial(mat);

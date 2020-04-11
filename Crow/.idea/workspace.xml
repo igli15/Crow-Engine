@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="Crow" targetName="Crow" />
     </generated>
@@ -13,442 +13,165 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf22dce6-4d69-43d0-a044-a31c5cbccc70" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/Crow Engine.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Components/Transform.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Components/Transform.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Events/ComponentRemovedEvent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Events/ComponentRemovedEvent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Feather/ComponentArray.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Feather/ComponentArray.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Systems/TransformHierarchySystem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Systems/TransformHierarchySystem.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Systems/TransformHierarchySystem.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Systems/TransformHierarchySystem.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/SpriteVertexShader.vs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/SpriteVertexShader.vs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Components/InstancedMeshInfo.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Components/InstancedMeshInfo.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Components/MeshInfo.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Components/MeshInfo.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Components/SpriteInfo.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Components/SpriteInfo.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Core/ResourceManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Core/ResourceManager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Core/ResourceManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Core/ResourceManager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Feather/World.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Feather/World.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Rendering/Materials/InstancedColorMaterial.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Rendering/Materials/InstancedColorMaterial.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Rendering/Materials/SpriteMaterial.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Rendering/Materials/SpriteMaterial.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Rendering/Materials/SpriteMaterial.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Rendering/Materials/SpriteMaterial.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Rendering/Materials/TranslucentColorMat.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Rendering/Materials/TranslucentColorMat.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Rendering/Materials/TranslucentColorMat.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Rendering/Materials/TranslucentColorMat.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Rendering/Sprite.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Rendering/Sprite.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Rendering/Sprite.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Rendering/Sprite.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Systems/BufferMaterialsSystem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Systems/BufferMaterialsSystem.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Systems/BufferMaterialsSystem.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Systems/BufferMaterialsSystem.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Systems/InstancedMeshRenderingSystem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Systems/InstancedMeshRenderingSystem.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Systems/InstancedMeshRenderingSystem.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Systems/InstancedMeshRenderingSystem.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Systems/MeshRendererSystem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Systems/MeshRendererSystem.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Systems/SpriteRendererSystem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Systems/SpriteRendererSystem.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Systems/SpriteRendererSystem.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Systems/SpriteRendererSystem.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SandBox/MyGame.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SandBox/MyGame.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SandBox/Worlds/PhysicsTestWorld.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SandBox/Worlds/PhysicsTestWorld.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SandBox/Systems/MoveSystem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SandBox/Systems/MoveSystem.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SandBox/Worlds/LightingTestWorld.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SandBox/Worlds/LightingTestWorld.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SandBox/Worlds/PhysicsTestWorld.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SandBox/Worlds/PhysicsTestWorld.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SandBox/Worlds/PrototypeWorld.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SandBox/Worlds/PrototypeWorld.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SandBox/Worlds/RotatingGunsWorld.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SandBox/Worlds/RotatingGunsWorld.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SandBox/Worlds/SpriteRenderingWorld.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SandBox/Worlds/SpriteRenderingWorld.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SandBox/Worlds/TranslucentMaterialTestWorld.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SandBox/Worlds/TranslucentMaterialTestWorld.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.cxx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/spdlog.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/spdlog.dir/Labels.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/spdlog.dir/Labels.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/spdlog.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/spdlog.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/spdlog.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Crow" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Crow" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Crow.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Crow.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.12.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.12.3/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.12.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.12.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.12.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp-4281832a.o.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp-01066d71.o.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Worlds/PhysicsTestWorld.cpp-e855ba6c.o.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp-22fae9ad.o.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/feature_tests.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/feature_tests.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/feature_tests.cxx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/spdlog.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/spdlog.dir/Labels.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/spdlog.dir/Labels.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/spdlog.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/spdlog.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/spdlog.dir/progress.make" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/Crow" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/Crow" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/Crow.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/Crow.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/Makefile" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
-    <ignored path="$PROJECT_DIR$/cmake-build-release/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Release" />
-  <component name="FUSProjectUsageTrigger">
-    <session id="638542189">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="33" />
-          <entry key="project.open.time.10" value="3" />
-          <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.6" value="9" />
-          <entry key="project.open.time.7" value="15" />
-          <entry key="project.open.time.8" value="4" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="34" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="cpp" value="4687" />
-          <entry key="h" value="13683" />
-          <entry key="txt" value="86" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="CMakeLists.txt" value="86" />
-          <entry key="ObjectiveC" value="18370" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="cmake" value="5" />
-          <entry key="cpp" value="231" />
-          <entry key="h" value="243" />
-          <entry key="txt" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CMakeLists.txt" value="9" />
-          <entry key="ObjectiveC" value="474" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="1487962837">
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="cmake" value="24" />
-          <entry key="cmake " value="1" />
-          <entry key="cmake copy" value="1" />
-          <entry key="cpp" value="533" />
-          <entry key="fs" value="24" />
-          <entry key="h" value="569" />
-          <entry key="obj" value="2" />
-          <entry key="txt" value="11" />
-          <entry key="vs" value="21" />
-          <entry key="xml" value="9" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CMakeLists.txt" value="35" />
-          <entry key="ObjectiveC" value="1102" />
-          <entry key="PLAIN_TEXT" value="49" />
-          <entry key="XML" value="9" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="cmake" value="37" />
-          <entry key="cpp" value="36934" />
-          <entry key="fs" value="1756" />
-          <entry key="h" value="37922" />
-          <entry key="txt" value="290" />
-          <entry key="vs" value="138" />
-          <entry key="xml" value="84" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="CMakeLists.txt" value="327" />
-          <entry key="Doxygen file" value="1" />
-          <entry key="ObjectiveC" value="74855" />
-          <entry key="PLAIN_TEXT" value="1894" />
-          <entry key="XML" value="84" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="59" />
-          <entry key="project.open.time.10" value="9" />
-          <entry key="project.open.time.11" value="5" />
-          <entry key="project.open.time.12" value="4" />
-          <entry key="project.open.time.13" value="2" />
-          <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.16" value="1" />
-          <entry key="project.open.time.5" value="2" />
-          <entry key="project.open.time.6" value="13" />
-          <entry key="project.open.time.7" value="14" />
-          <entry key="project.open.time.8" value="8" />
-          <entry key="project.open.time.9" value="8" />
-          <entry key="project.opened" value="67" />
-        </counts>
-      </usages-collector>
-    </session>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FavoritesManager">
     <favorites_list name="Crow" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SandBox/Worlds/PhysicsTestWorld.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-607">
-              <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SandBox/MyGame.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="584">
-              <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
-              <folding>
-                <element signature="e#48#67#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Engine/Events/ComponentAddedEvent.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-              <folding>
-                <element signature="e#120#149#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Engine/Feather/ComponentArray.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="55" column="51" selection-start-line="55" selection-start-column="51" selection-end-line="55" selection-end-column="51" />
-              <folding>
-                <element signature="e#109#132#0" expanded="true" />
-                <element signature="e#396#408#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Engine/Components/Camera.cpp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Engine/Components/Camera.h">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Engine/Systems/TransformHierarchySystem.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="12" column="89" selection-start-line="12" selection-start-column="89" selection-end-line="12" selection-end-column="89" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Engine/Systems/TransformHierarchySystem.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="21" column="61" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="61" />
-              <folding>
-                <element signature="e#128#158#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Engine/Events/ComponentRemovedEvent.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Engine/Components/Transform.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="82" column="1" selection-start-line="82" selection-start-column="1" selection-end-line="82" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/Engine/Rendering/Shader.cpp" />
-        <option value="$PROJECT_DIR$/Engine/Rendering/Sprite.h" />
-        <option value="$PROJECT_DIR$/Engine/Components/SpriteInfo.h" />
-        <option value="$PROJECT_DIR$/Engine/Systems/SpriteRendererSystem.h" />
-        <option value="$PROJECT_DIR$/Engine/Rendering/Sprite.cpp" />
-        <option value="$PROJECT_DIR$/Assets/Shaders/SpriteVertexShader.vs" />
-        <option value="$PROJECT_DIR$/Assets/Shaders/SpriteFragmentShader.fs" />
-        <option value="$PROJECT_DIR$/Engine/Rendering/Materials/SpriteMaterial.h" />
-        <option value="$PROJECT_DIR$/Engine/Rendering/Texture.cpp" />
-        <option value="$PROJECT_DIR$/Engine/Rendering/Texture.h" />
-        <option value="$PROJECT_DIR$/SandBox/Worlds/SpriteRenderingWorld.h" />
-        <option value="$PROJECT_DIR$/SandBox/Worlds/SpriteRenderingWorld.cpp" />
-        <option value="$PROJECT_DIR$/SandBox/Worlds/LightingTestWorld.cpp" />
-        <option value="$PROJECT_DIR$/SandBox/Systems/MoveSystem.cpp" />
-        <option value="$PROJECT_DIR$/Engine/EventQueue/EventQueue.h" />
-        <option value="$PROJECT_DIR$/Engine/Rendering/Materials/ColorMaterial.cpp" />
-        <option value="$PROJECT_DIR$/Engine/Rendering/Materials/TranslucentColorMat.h" />
-        <option value="$PROJECT_DIR$/Engine/Rendering/Materials/TranslucentColorMat.cpp" />
-        <option value="$PROJECT_DIR$/Engine/Rendering/Mesh.cpp" />
-        <option value="$PROJECT_DIR$/Engine/Rendering/Mesh.h" />
-        <option value="$PROJECT_DIR$/Engine/Rendering/Model.h" />
-        <option value="$PROJECT_DIR$/Engine/Rendering/Model.cpp" />
-        <option value="$PROJECT_DIR$/Engine/Systems/MeshRendererSystem.cpp" />
-        <option value="$PROJECT_DIR$/Engine/Rendering/Materials/ColorMaterial.h" />
-        <option value="$PROJECT_DIR$/Engine/Rendering/Materials/SpriteMaterial.cpp" />
-        <option value="$PROJECT_DIR$/Engine/Systems/SpriteRendererSystem.cpp" />
-        <option value="$PROJECT_DIR$/Engine/Core/Renderer.h" />
-        <option value="$PROJECT_DIR$/Engine/Core/Game.h" />
-        <option value="$PROJECT_DIR$/Engine/Core/ResourceManager.cpp" />
-        <option value="$PROJECT_DIR$/Engine/Core/ResourceManager.h" />
-        <option value="$PROJECT_DIR$/Engine/Rendering/Shader.h" />
-        <option value="$PROJECT_DIR$/Engine/Rendering/AbstractMaterial.h" />
-        <option value="$PROJECT_DIR$/Engine/Rendering/Materials/InstancedColorMaterial.h" />
-        <option value="$PROJECT_DIR$/Engine/Rendering/Materials/InstancedColorMaterial.cpp" />
-        <option value="$PROJECT_DIR$/Engine/Components/InstancedMeshInfo.h" />
-        <option value="$PROJECT_DIR$/Engine/Feather/System.h" />
-        <option value="$PROJECT_DIR$/Engine/Core/Game.cpp" />
-        <option value="$PROJECT_DIR$/Engine/Systems/BufferMaterialsSystem.h" />
-        <option value="$PROJECT_DIR$/SandBox/Worlds/RotatingGunsWorld.cpp" />
-        <option value="$PROJECT_DIR$/Engine/Systems/InstancedMeshRenderingSystem.h" />
-        <option value="$PROJECT_DIR$/Engine/Systems/BufferMaterialsSystem.cpp" />
-        <option value="$PROJECT_DIR$/Engine/Feather/World.cpp" />
-        <option value="$PROJECT_DIR$/Engine/Systems/InstancedMeshRenderingSystem.cpp" />
-        <option value="$PROJECT_DIR$/Engine/Feather/World.h" />
-        <option value="$PROJECT_DIR$/Engine/Systems/TransformHierarchySystem.h" />
-        <option value="$PROJECT_DIR$/SandBox/MyGame.cpp" />
-        <option value="$PROJECT_DIR$/SandBox/Worlds/PhysicsTestWorld.cpp" />
-        <option value="$PROJECT_DIR$/Engine/Components/Transform.cpp" />
-        <option value="$PROJECT_DIR$/Engine/Events/ComponentRemovedEvent.h" />
-        <option value="$PROJECT_DIR$/Engine/Systems/TransformHierarchySystem.cpp" />
-        <option value="$PROJECT_DIR$/Engine/Feather/ComponentArray.h" />
-      </list>
-    </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
-  </component>
+  <component name="ProjectId" id="1aLkqmWVuucUoMxJzE3gCvzkJB3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Crow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crow" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crow" type="462c0819:PsiDirectoryNode" />
-              <item name="Assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crow" type="462c0819:PsiDirectoryNode" />
-              <item name="Assets" type="462c0819:PsiDirectoryNode" />
-              <item name="Shaders" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crow" type="462c0819:PsiDirectoryNode" />
-              <item name="Engine" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crow" type="462c0819:PsiDirectoryNode" />
-              <item name="Engine" type="462c0819:PsiDirectoryNode" />
-              <item name="Components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crow" type="462c0819:PsiDirectoryNode" />
-              <item name="Engine" type="462c0819:PsiDirectoryNode" />
-              <item name="Core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crow" type="462c0819:PsiDirectoryNode" />
-              <item name="Engine" type="462c0819:PsiDirectoryNode" />
-              <item name="EventQueue" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crow" type="462c0819:PsiDirectoryNode" />
-              <item name="Engine" type="462c0819:PsiDirectoryNode" />
-              <item name="Events" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crow" type="462c0819:PsiDirectoryNode" />
-              <item name="Engine" type="462c0819:PsiDirectoryNode" />
-              <item name="Feather" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crow" type="462c0819:PsiDirectoryNode" />
-              <item name="Engine" type="462c0819:PsiDirectoryNode" />
-              <item name="Rendering" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crow" type="462c0819:PsiDirectoryNode" />
-              <item name="Engine" type="462c0819:PsiDirectoryNode" />
-              <item name="Rendering" type="462c0819:PsiDirectoryNode" />
-              <item name="Materials" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crow" type="462c0819:PsiDirectoryNode" />
-              <item name="Engine" type="462c0819:PsiDirectoryNode" />
-              <item name="Systems" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crow" type="462c0819:PsiDirectoryNode" />
-              <item name="OOP Engine" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crow" type="462c0819:PsiDirectoryNode" />
-              <item name="Plugins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crow" type="462c0819:PsiDirectoryNode" />
-              <item name="SandBox" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crow" type="462c0819:PsiDirectoryNode" />
-              <item name="SandBox" type="462c0819:PsiDirectoryNode" />
-              <item name="Components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crow" type="462c0819:PsiDirectoryNode" />
-              <item name="SandBox" type="462c0819:PsiDirectoryNode" />
-              <item name="Systems" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crow" type="462c0819:PsiDirectoryNode" />
-              <item name="SandBox" type="462c0819:PsiDirectoryNode" />
-              <item name="Worlds" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Crow" type="462c0819:PsiDirectoryNode" />
-              <item name="Tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Crow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.cpp&#10;{&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -465,20 +188,8 @@
       <recent name="$PROJECT_DIR$/Assets/Textures" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.Crow">
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+  <component name="RunManager" selected="CMake Application.Build All">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Crow" TARGET_NAME="Crow" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Crow" RUN_TARGET_NAME="Crow">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -489,8 +200,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Build All" />
-      <item itemvalue="Application.Crow" />
+      <item itemvalue="CMake Application.Build All" />
+      <item itemvalue="CMake Application.Crow" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -603,12 +314,11 @@
       <workItem from="1586162396376" duration="6355000" />
       <workItem from="1586187824178" duration="2810000" />
       <workItem from="1586422945264" duration="7262000" />
-      <workItem from="1586510530475" duration="4714000" />
+      <workItem from="1586510530475" duration="6457000" />
+      <workItem from="1586522456182" duration="8410000" />
+      <workItem from="1586592680851" duration="553000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="605991000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -619,420 +329,88 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4993565" visible="true" weight="0.18104367" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" sideWeight="0.5006435" side_tool="true" weight="0.16347177" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32871288" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.15643564" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32871288" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32772276" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.33168316" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.26831684" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="LuaJ" order="3" weight="0.32947975" />
-      <window_info anchor="right" id="Database" order="4" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4993565" visible="true" weight="0.22523962" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" sideWeight="0.5006435" side_tool="true" weight="0.16347177" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32871288" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.17524752" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32871288" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32772276" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.33168316" />
-      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.27326733" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="LuaJ" order="3" weight="0.32947975" />
-      <window_info anchor="right" id="Database" order="4" />
-    </layout-to-restore>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.fs" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Shaders/SpriteFragmentShader.fs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Shaders/InstancedFragmentShader.fs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-470" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Shaders/InstancedVertexShader.vs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Rendering/Materials/TranslucentColorMat.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Rendering/Mesh.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Rendering/Mesh.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Rendering/Model.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Rendering/Model.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Rendering/Materials/ColorMaterial.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Rendering/AbstractMaterial.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Systems/MeshRendererSystem.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Rendering/Materials/ColorMaterial.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="916">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Rendering/Materials/SpriteMaterial.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Rendering/Shader.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Core/Game.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="27" column="19" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Core/Renderer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="39" />
-          <folding>
-            <element signature="e#98#115#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Core/Renderer.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Core/ResourceManager.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="47" column="61" selection-start-line="47" selection-start-column="3" selection-end-line="47" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Core/ResourceManager.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="59" column="67" selection-start-line="59" selection-start-column="67" selection-end-line="59" selection-end-column="67" />
-          <folding>
-            <element signature="e#109#123#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Systems/SpriteRendererSystem.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="31" column="36" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="41" />
-          <folding>
-            <element signature="e#48#81#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Rendering/Shader.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Rendering/Materials/InstancedColorMaterial.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="39" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Rendering/AbstractMaterial.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Rendering/Materials/InstancedColorMaterial.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="916">
-          <caret line="165" column="47" selection-start-line="165" selection-start-column="47" selection-end-line="165" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Rendering/Materials/TranslucentColorMat.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1892">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Components/InstancedMeshInfo.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Components/InstancedMeshInfo.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Feather/System.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding>
-            <element signature="e#93#107#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Systems/InstancedMeshRenderingSystem.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="35" column="67" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="67" />
-          <folding>
-            <element signature="e#138#168#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Systems/BufferMaterialsSystem.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Systems/BufferMaterialsSystem.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#48#82#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Rendering/Materials/SpriteMaterial.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Systems/InstancedMeshRenderingSystem.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="29" column="83" selection-start-line="29" selection-start-column="83" selection-end-line="29" selection-end-column="83" />
-          <folding>
-            <element signature="e#48#89#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Core/Game.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="69" column="41" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="41" />
-          <folding>
-            <element signature="e#48#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Events/EntityEvents.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Events/ComponentRemovedEvent.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Events/ComponentAddedEvent.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SandBox/Worlds/RotatingGunsWorld.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-72">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="e#48#78#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Feather/ComponentManager.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="39" column="43" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Feather/World.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1936">
-          <caret line="88" column="34" selection-start-line="88" selection-start-column="27" selection-end-line="88" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Feather/World.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1153">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#95#121#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Components/Transform.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="82" column="1" selection-start-line="82" selection-start-column="1" selection-end-line="82" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SandBox/MyGame.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
-          <folding>
-            <element signature="e#48#67#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SandBox/Worlds/PhysicsTestWorld.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-607">
-          <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Systems/TransformHierarchySystem.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="61" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="61" />
-          <folding>
-            <element signature="e#128#158#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Events/ComponentAddedEvent.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#120#149#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Components/Camera.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Components/Camera.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Events/ComponentRemovedEvent.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Systems/TransformHierarchySystem.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="12" column="89" selection-start-line="12" selection-start-column="89" selection-end-line="12" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine/Feather/ComponentArray.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="55" column="51" selection-start-line="55" selection-start-column="51" selection-end-line="55" selection-end-column="51" />
-          <folding>
-            <element signature="e#109#132#0" expanded="true" />
-            <element signature="e#396#408#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="677" y="268" key="#Build_All" timestamp="1586522622136">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="677" y="268" key="#Build_All/-1080.0.1080.1920/0.0.1920.1080/1920.0.1680.1050@0.0.1920.1080" timestamp="1586522622136" />
+    <state x="424" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586522574178">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="424" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1080.0.1080.1920/0.0.1920.1080/1920.0.1680.1050@0.0.1920.1080" timestamp="1586522574178" />
+    <state x="712" y="383" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1586522908277">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="712" y="383" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/-1080.0.1080.1920/0.0.1920.1080/1920.0.1680.1050@0.0.1920.1080" timestamp="1586522908277" />
+    <state x="698" y="295" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586595244891">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="698" y="295" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1080.0.1080.1920/0.0.1920.1080/1920.0.1680.1050@0.0.1920.1080" timestamp="1586535486312" />
+    <state x="698" y="295" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1080.0.1080.1920/1920.0.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1586595244891" />
+    <state x="712" y="403" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1586524000702">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="712" y="403" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/-1080.0.1080.1920/0.0.1920.1080/1920.0.1680.1050@0.0.1920.1080" timestamp="1586524000702" />
+    <state width="1878" height="129" key="GridCell.Tab.0.bottom" timestamp="1586595620578">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="129" key="GridCell.Tab.0.bottom/-1080.0.1080.1920/0.0.1920.1080/1920.0.1680.1050@0.0.1920.1080" timestamp="1586535092282" />
+    <state width="1878" height="129" key="GridCell.Tab.0.bottom/-1080.0.1080.1920/1920.0.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1586595620578" />
+    <state width="1878" height="375" key="GridCell.Tab.0.bottom/-1080.23.1080.1897/0.23.1920.978/1920.23.1680.1027@0.23.1920.978" timestamp="1586522715402" />
+    <state width="1878" height="129" key="GridCell.Tab.0.center" timestamp="1586595620577">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="129" key="GridCell.Tab.0.center/-1080.0.1080.1920/0.0.1920.1080/1920.0.1680.1050@0.0.1920.1080" timestamp="1586535092280" />
+    <state width="1878" height="129" key="GridCell.Tab.0.center/-1080.0.1080.1920/1920.0.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1586595620577" />
+    <state width="1878" height="375" key="GridCell.Tab.0.center/-1080.23.1080.1897/0.23.1920.978/1920.23.1680.1027@0.23.1920.978" timestamp="1586522715390" />
+    <state width="1878" height="129" key="GridCell.Tab.0.left" timestamp="1586595620576">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="129" key="GridCell.Tab.0.left/-1080.0.1080.1920/0.0.1920.1080/1920.0.1680.1050@0.0.1920.1080" timestamp="1586535092279" />
+    <state width="1878" height="129" key="GridCell.Tab.0.left/-1080.0.1080.1920/1920.0.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1586595620576" />
+    <state width="1878" height="375" key="GridCell.Tab.0.left/-1080.23.1080.1897/0.23.1920.978/1920.23.1680.1027@0.23.1920.978" timestamp="1586522715385" />
+    <state width="1878" height="129" key="GridCell.Tab.0.right" timestamp="1586595620578">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="129" key="GridCell.Tab.0.right/-1080.0.1080.1920/0.0.1920.1080/1920.0.1680.1050@0.0.1920.1080" timestamp="1586535092281" />
+    <state width="1878" height="129" key="GridCell.Tab.0.right/-1080.0.1080.1920/1920.0.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1586595620578" />
+    <state width="1878" height="375" key="GridCell.Tab.0.right/-1080.23.1080.1897/0.23.1920.978/1920.23.1680.1027@0.23.1920.978" timestamp="1586522715393" />
+    <state width="1878" height="375" key="GridCell.Tab.1.bottom" timestamp="1586527265499">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="375" key="GridCell.Tab.1.bottom/-1080.0.1080.1920/0.0.1920.1080/1920.0.1680.1050@0.0.1920.1080" timestamp="1586527265499" />
+    <state width="1878" height="375" key="GridCell.Tab.1.bottom/-1080.23.1080.1897/0.0.1920.1001/1920.23.1680.1027@0.0.1920.1001" timestamp="1586522727088" />
+    <state width="1878" height="375" key="GridCell.Tab.1.center" timestamp="1586527265497">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="375" key="GridCell.Tab.1.center/-1080.0.1080.1920/0.0.1920.1080/1920.0.1680.1050@0.0.1920.1080" timestamp="1586527265497" />
+    <state width="1878" height="375" key="GridCell.Tab.1.center/-1080.23.1080.1897/0.0.1920.1001/1920.23.1680.1027@0.0.1920.1001" timestamp="1586522727065" />
+    <state width="1878" height="375" key="GridCell.Tab.1.left" timestamp="1586527265496">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="375" key="GridCell.Tab.1.left/-1080.0.1080.1920/0.0.1920.1080/1920.0.1680.1050@0.0.1920.1080" timestamp="1586527265496" />
+    <state width="1878" height="375" key="GridCell.Tab.1.left/-1080.23.1080.1897/0.0.1920.1001/1920.23.1680.1027@0.0.1920.1001" timestamp="1586522727056" />
+    <state width="1878" height="375" key="GridCell.Tab.1.right" timestamp="1586527265498">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="375" key="GridCell.Tab.1.right/-1080.0.1080.1920/0.0.1920.1080/1920.0.1680.1050@0.0.1920.1080" timestamp="1586527265498" />
+    <state width="1878" height="375" key="GridCell.Tab.1.right/-1080.23.1080.1897/0.0.1920.1001/1920.23.1680.1027@0.0.1920.1001" timestamp="1586522727076" />
+    <state x="334" y="183" key="SettingsEditor" timestamp="1586532947624">
+      <screen x="0" y="0" width="1920" height="1001" />
+    </state>
+    <state x="334" y="197" key="SettingsEditor/-1080.0.1080.1920/0.0.1920.1080/1920.0.1680.1050@0.0.1920.1080" timestamp="1586526170377" />
+    <state x="334" y="183" key="SettingsEditor/-1080.23.1080.1897/0.0.1920.1001/1920.23.1680.1027@0.0.1920.1001" timestamp="1586532947624" />
+    <state x="470" y="178" key="SettingsEditor/-1080.23.1080.1897/0.0.1920.1080/1920.23.1680.1027@0.0.1920.1080" timestamp="1586522934460" />
+    <state x="630" y="374" key="com.intellij.ide.util.TipDialog" timestamp="1586592690769">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="630" y="374" key="com.intellij.ide.util.TipDialog/-1080.0.1080.1920/1920.0.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1586592690769" />
   </component>
   <component name="masterDetails">
     <states>

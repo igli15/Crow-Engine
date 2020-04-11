@@ -37,7 +37,7 @@ void MoveSystem::Init()
 void MoveSystem::UpdateMaterials(CollisionEnterEvent* collisionEvent)
 {
     ENGINE_LOG("CollisionEnter");
-    static_cast<ColorMaterial*>(collisionEvent->entity1.GetComponent<MeshInfo>().component->material)->mainColor = glm::vec3(1,0,0);
+    static_cast<ColorMaterial*>(collisionEvent->entity1.GetComponent<MeshInfo>().component->GetMaterial())->mainColor = glm::vec3(1,0,0);
     world->DestroyEntity(collisionEvent->entity1.entity);
     //world->DestroyEntity(collisionEvent->entity2.entity);
 }

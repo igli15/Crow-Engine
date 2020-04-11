@@ -24,13 +24,13 @@ void MeshRendererSystem::Render()
         Transform& transform = world->GetComponent<Transform>(entity);
         MeshInfo& meshInfo = world->GetComponent<MeshInfo>(entity);
 
-        if(meshInfo.model == nullptr || meshInfo.material == nullptr)
+        if(meshInfo.model == nullptr || meshInfo.GetMaterial() == nullptr)
         {
             ENGINE_LOG_ERROR("Trying to draw mesh without a material or model");
             continue;
         }
 
-        meshInfo.material->BufferUniforms(transform.GetWorldTransform(), camInverseMat, camera.GetProjection(),
+        meshInfo.GetMaterial()->BufferUniforms(transform.GetWorldTransform(), camInverseMat, camera.GetProjection(),
                                           cameraTransform.WorldPosition(), world);
 
         meshInfo.model->Draw();

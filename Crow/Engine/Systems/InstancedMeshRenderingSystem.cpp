@@ -12,8 +12,6 @@ void InstancedMeshRenderingSystem::OnCreate() {
     System::OnCreate();
 
     EventQueue::Instance().Subscribe(this, &InstancedMeshRenderingSystem::OnMeshInfoAdded);
-    EventQueue::Instance().Subscribe(this, &InstancedMeshRenderingSystem::OnEntityDestroyed);
-
 }
 
 void InstancedMeshRenderingSystem::Render() {
@@ -27,7 +25,7 @@ void InstancedMeshRenderingSystem::Render() {
 
     for (const auto& entity : m_entities)
     {
-        InstancedMeshInfo& meshInfo = world->GetComponent<InstancedMeshInfo>(entity);
+        MeshInfo& meshInfo = world->GetComponent<MeshInfo>(entity);
         Transform& transform = world->GetComponent<Transform>(entity);
 
         m_instancedModelMap[meshInfo.model->ID].modelMatrices->push_back(transform.GetWorldTransform());
@@ -43,7 +41,7 @@ void InstancedMeshRenderingSystem::Render() {
 
 }
 
-void InstancedMeshRenderingSystem::OnMeshInfoAdded(ComponentAddedEvent<InstancedMeshInfo> *event)
+void InstancedMeshRenderingSystem::OnMeshInfoAdded(ComponentAddedEvent<MeshInfo> *event)
 {
     event->component->model->InstanceBufferMeshes();
 
@@ -52,13 +50,7 @@ void InstancedMeshRenderingSystem::OnMeshInfoAdded(ComponentAddedEvent<Instanced
 
     if(iterator == m_instancedModelMap.end())
     {
-        ENGINE_LOG(ID);
-        InstancedModelData data {event->component->model,new std::vector<glm::mat4>()};
+        MeshInstancedData data {event->component->model, new std::vector<glm::mat4>()};
         m_instancedModelMap.insert(iterator,std::make_pair(ID,data));
     }
-}
-
-void InstancedMeshRenderingSystem::OnEntityDestroyed(OnEntityDestroyedEvent *event)
-{
-
 }

@@ -5,7 +5,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/Components/Camera.cpp.o"
-  "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/InstancedMeshInfo.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/Components/InstancedMeshInfo.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/Components/Light.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/Components/MeshInfo.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/SphereCollider.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/Components/SphereCollider.cpp.o"
@@ -57,9 +56,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/MyGame.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/MoveSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RotateSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.o"
-  "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/LightingTestWorld.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/SandBox/Worlds/LightingTestWorld.cpp.o"
-  "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/PhysicsTestWorld.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/SandBox/Worlds/PhysicsTestWorld.cpp.o"
-  "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/PrototypeWorld.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/SandBox/Worlds/PrototypeWorld.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/RotatingGunsWorld.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/SpriteRenderingWorld.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/TranslucentMaterialTestWorld.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o"
@@ -70,7 +66,6 @@ set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/usr/local/Cellar/glew-2.1.0/include/GL"
   "/usr/local/include"
   "/Library/Frameworks/Mono.framework/Headers"
   "/usr/local/include/freetype2"
