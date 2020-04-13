@@ -32,7 +32,7 @@ void SpriteRenderingWorld::Build()
     spriteTransform->Scale(glm::vec3(200,200,1));
     SpriteInfo spriteInfo{};
     spriteInfo.sprite = sprite;
-    spriteInfo.SetMaterial(spriteMaterial);
+    spriteInfo.material = spriteMaterial;
     spriteInfo.SetColor(glm::vec3(1,0,1));
     spriteEntity.AddComponent(spriteInfo);
 

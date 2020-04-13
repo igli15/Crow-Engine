@@ -1,10 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Crow.dir/Engine/Components/Camera.cpp.o"
-  "CMakeFiles/Crow.dir/Engine/Components/Light.cpp.o"
-  "CMakeFiles/Crow.dir/Engine/Components/MeshInfo.cpp.o"
-  "CMakeFiles/Crow.dir/Engine/Components/SphereCollider.cpp.o"
-  "CMakeFiles/Crow.dir/Engine/Components/SpriteInfo.cpp.o"
-  "CMakeFiles/Crow.dir/Engine/Components/Text.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Core/GameObject.cpp.o"

@@ -14,17 +14,32 @@
   <component name="ChangeListManager">
     <list default="true" id="cf22dce6-4d69-43d0-a044-a31c5cbccc70" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/SpriteVertexShader.vs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/SpriteVertexShader.vs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Rendering/AbstractMaterial.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Rendering/AbstractMaterial.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Rendering/Materials/SpriteMaterial.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Rendering/Materials/SpriteMaterial.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Rendering/Materials/SpriteMaterial.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Rendering/Materials/SpriteMaterial.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Rendering/Sprite.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Rendering/Sprite.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Rendering/Sprite.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Rendering/Sprite.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Components/Light.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Components/MeshInfo.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Components/SpriteInfo.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Components/SpriteInfo.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/Systems/SpriteRendererSystem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Systems/SpriteRendererSystem.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Systems/SpriteRendererSystem.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Systems/SpriteRendererSystem.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SandBox/MyGame.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SandBox/MyGame.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/Crow" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/Crow" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SandBox/Worlds/SpriteRenderingWorld.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SandBox/Worlds/SpriteRenderingWorld.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Crow.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Crow.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/Crow.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/Crow.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/Makefile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +234,7 @@
       <workItem from="1586592680851" duration="21712000" />
       <workItem from="1586680871093" duration="17291000" />
       <workItem from="1586728108435" duration="1741000" />
-      <workItem from="1586774373294" duration="7626000" />
+      <workItem from="1586774373294" duration="7834000" />
     </task>
     <servers />
   </component>
@@ -265,10 +280,10 @@
     </state>
     <state width="517" height="466" key="DebuggerActiveHint/-1080.0.1080.1920/0.0.1920.1080/1920.0.1680.1050@0.0.1920.1080" timestamp="1586647665739" />
     <state width="508" height="466" key="DebuggerActiveHint/-1080.0.1080.1920/1920.0.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1586684215824" />
-    <state width="1878" height="129" key="GridCell.Tab.0.bottom" timestamp="1586792605721">
+    <state width="1878" height="129" key="GridCell.Tab.0.bottom" timestamp="1586792852284">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="129" key="GridCell.Tab.0.bottom/-1080.0.1080.1920/0.0.1920.1080/1920.0.1680.1050@0.0.1920.1080" timestamp="1586792605721" />
+    <state width="1878" height="129" key="GridCell.Tab.0.bottom/-1080.0.1080.1920/0.0.1920.1080/1920.0.1680.1050@0.0.1920.1080" timestamp="1586792852284" />
     <state width="1878" height="129" key="GridCell.Tab.0.bottom/-1080.0.1080.1920/1920.0.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1586729199982" />
     <state width="1878" height="129" key="GridCell.Tab.0.bottom/-1080.23.1080.1897/0.0.1920.1001/1920.23.1680.1027@0.0.1920.1001" timestamp="1586621394844" />
     <state width="1878" height="129" key="GridCell.Tab.0.bottom/-1080.23.1080.1897/0.0.1920.1002/1920.23.1680.1027@0.0.1920.1002" timestamp="1586623532551" />
@@ -278,10 +293,10 @@
     <state width="1878" height="129" key="GridCell.Tab.0.bottom/-1080.23.1080.1897/1920.23.1680.1027/0.0.1920.1001@0.0.1920.1001" timestamp="1586729045248" />
     <state width="1878" height="129" key="GridCell.Tab.0.bottom/-1080.23.1080.1897/1920.23.1680.1027/0.0.1920.1080@0.0.1920.1080" timestamp="1586709916291" />
     <state width="1878" height="129" key="GridCell.Tab.0.bottom/-1080.23.1080.1897/1920.23.1680.1027/0.23.1920.979@0.23.1920.979" timestamp="1586714923628" />
-    <state width="1878" height="129" key="GridCell.Tab.0.center" timestamp="1586792605720">
+    <state width="1878" height="129" key="GridCell.Tab.0.center" timestamp="1586792852283">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="129" key="GridCell.Tab.0.center/-1080.0.1080.1920/0.0.1920.1080/1920.0.1680.1050@0.0.1920.1080" timestamp="1586792605720" />
+    <state width="1878" height="129" key="GridCell.Tab.0.center/-1080.0.1080.1920/0.0.1920.1080/1920.0.1680.1050@0.0.1920.1080" timestamp="1586792852283" />
     <state width="1878" height="129" key="GridCell.Tab.0.center/-1080.0.1080.1920/1920.0.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1586729199981" />
     <state width="1878" height="129" key="GridCell.Tab.0.center/-1080.23.1080.1897/0.0.1920.1001/1920.23.1680.1027@0.0.1920.1001" timestamp="1586621394842" />
     <state width="1878" height="129" key="GridCell.Tab.0.center/-1080.23.1080.1897/0.0.1920.1002/1920.23.1680.1027@0.0.1920.1002" timestamp="1586623532548" />
@@ -291,10 +306,10 @@
     <state width="1878" height="129" key="GridCell.Tab.0.center/-1080.23.1080.1897/1920.23.1680.1027/0.0.1920.1001@0.0.1920.1001" timestamp="1586729045245" />
     <state width="1878" height="129" key="GridCell.Tab.0.center/-1080.23.1080.1897/1920.23.1680.1027/0.0.1920.1080@0.0.1920.1080" timestamp="1586709916290" />
     <state width="1878" height="129" key="GridCell.Tab.0.center/-1080.23.1080.1897/1920.23.1680.1027/0.23.1920.979@0.23.1920.979" timestamp="1586714923626" />
-    <state width="1878" height="129" key="GridCell.Tab.0.left" timestamp="1586792605719">
+    <state width="1878" height="129" key="GridCell.Tab.0.left" timestamp="1586792852281">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="129" key="GridCell.Tab.0.left/-1080.0.1080.1920/0.0.1920.1080/1920.0.1680.1050@0.0.1920.1080" timestamp="1586792605719" />
+    <state width="1878" height="129" key="GridCell.Tab.0.left/-1080.0.1080.1920/0.0.1920.1080/1920.0.1680.1050@0.0.1920.1080" timestamp="1586792852281" />
     <state width="1878" height="129" key="GridCell.Tab.0.left/-1080.0.1080.1920/1920.0.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1586729199980" />
     <state width="1878" height="129" key="GridCell.Tab.0.left/-1080.23.1080.1897/0.0.1920.1001/1920.23.1680.1027@0.0.1920.1001" timestamp="1586621394837" />
     <state width="1878" height="129" key="GridCell.Tab.0.left/-1080.23.1080.1897/0.0.1920.1002/1920.23.1680.1027@0.0.1920.1002" timestamp="1586623532547" />
@@ -305,10 +320,10 @@
     <state width="1878" height="129" key="GridCell.Tab.0.left/-1080.23.1080.1897/1920.23.1680.1027/0.0.1920.1002@0.0.1920.1080" timestamp="1586714923664" />
     <state width="1878" height="129" key="GridCell.Tab.0.left/-1080.23.1080.1897/1920.23.1680.1027/0.0.1920.1080@0.0.1920.1080" timestamp="1586709916289" />
     <state width="1878" height="129" key="GridCell.Tab.0.left/-1080.23.1080.1897/1920.23.1680.1027/0.23.1920.979@0.23.1920.979" timestamp="1586714923625" />
-    <state width="1878" height="129" key="GridCell.Tab.0.right" timestamp="1586792605720">
+    <state width="1878" height="129" key="GridCell.Tab.0.right" timestamp="1586792852283">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="129" key="GridCell.Tab.0.right/-1080.0.1080.1920/0.0.1920.1080/1920.0.1680.1050@0.0.1920.1080" timestamp="1586792605720" />
+    <state width="1878" height="129" key="GridCell.Tab.0.right/-1080.0.1080.1920/0.0.1920.1080/1920.0.1680.1050@0.0.1920.1080" timestamp="1586792852283" />
     <state width="1878" height="129" key="GridCell.Tab.0.right/-1080.0.1080.1920/1920.0.1680.1050/0.0.1920.1080@0.0.1920.1080" timestamp="1586729199982" />
     <state width="1878" height="129" key="GridCell.Tab.0.right/-1080.23.1080.1897/0.0.1920.1001/1920.23.1680.1027@0.0.1920.1001" timestamp="1586621394843" />
     <state width="1878" height="129" key="GridCell.Tab.0.right/-1080.23.1080.1897/0.0.1920.1002/1920.23.1680.1027@0.0.1920.1002" timestamp="1586623532550" />

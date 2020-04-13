@@ -14,33 +14,13 @@
 struct SpriteInfo {
 
     Sprite* sprite;
+    AbstractMaterial* material = nullptr;
 
     SpriteInfo(){};
-    SpriteInfo(Sprite* pSprite,AbstractMaterial* pMaterial,glm::vec3 pColor = glm::vec3(1))
+    SpriteInfo(Sprite* pSprite,AbstractMaterial* pMaterial,glm::vec3 pColor = glm::vec3(1)) : sprite(pSprite),material(pMaterial),color(pColor)
     {
-        SetMaterial(pMaterial);
-        material = pMaterial;
-        sprite = pSprite;
-        SetColor(pColor);
     };
 
-    void SetMaterial(AbstractMaterial* newMat)
-    {
-        if(material == newMat)
-        {
-            ENGINE_LOG_WARNING("Assigning the same material to sprite info");
-            return;
-        }
-
-        if(material!= nullptr)
-        {
-            if(material->activeInstanceCount > 0)  material->activeInstanceCount -= 1;
-        }
-
-        material = newMat;
-        material->activeInstanceCount += 1;
-
-    };
 
     void SetColor(const glm::vec3& newColor)
     {
@@ -48,14 +28,9 @@ struct SpriteInfo {
         static_cast<SpriteMaterial*>(material)->color = newColor;
     }
 
-    AbstractMaterial* GetMaterial()
-    {
-        return material;
-    };
 
 private:
     glm::vec3 color = glm::vec3(1);
-    AbstractMaterial* material = nullptr;
 
 };
 

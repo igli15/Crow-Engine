@@ -93,31 +93,16 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.cpp">
-			<Option target="Crow"/>
-		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.cpp">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/SphereCollider.cpp">
-			<Option target="Crow"/>
-		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/SphereCollider.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/SpriteInfo.cpp">
-			<Option target="Crow"/>
-		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/SpriteInfo.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Text.cpp">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Text.h">

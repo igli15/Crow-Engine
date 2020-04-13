@@ -36,10 +36,10 @@ void SpriteRendererSystem::Render()
         Transform& transform = world->GetComponent<Transform>(entities[i]);
         SpriteInfo& spriteInfo = world->GetComponent<SpriteInfo>(entities[i]);
 
-        spriteInfo.GetMaterial()->GetShader()->Use();
-        spriteInfo.GetMaterial()->BufferShaderUniforms(camInverseMat,m_projectionMatrix,m_cameraTransform->WorldPosition(),world);
-        spriteInfo.GetMaterial()->BufferModelUniform(transform.GetWorldTransform());
-        spriteInfo.GetMaterial()->BufferMaterialUniforms();
+        spriteInfo.material->GetShader()->Use();
+        spriteInfo.material->BufferShaderUniforms(camInverseMat,m_projectionMatrix,m_cameraTransform->WorldPosition(),world);
+        spriteInfo.material->BufferModelUniform(transform.GetWorldTransform());
+        spriteInfo.material->BufferMaterialUniforms();
         spriteInfo.sprite->Render();
     }
 

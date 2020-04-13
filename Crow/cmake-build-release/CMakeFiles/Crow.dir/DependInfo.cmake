@@ -5,11 +5,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Components/Camera.cpp.o"
-  "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Components/Light.cpp.o"
-  "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Components/MeshInfo.cpp.o"
-  "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/SphereCollider.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Components/SphereCollider.cpp.o"
-  "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/SpriteInfo.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Components/SpriteInfo.cpp.o"
-  "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Text.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Components/Text.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/GameObject.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Core/GameObject.cpp.o"
