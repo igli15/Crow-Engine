@@ -35,6 +35,11 @@ void TranslucentMaterialTestWorld::Build()
     translucentMat->translucentColor = glm::vec3(1,1,1);
     translucentMat->shininess = 16;
 
+    TranslucentColorMat* translucentMat2 = resourceManager->CreateMaterial<TranslucentColorMat>("translucentDragonMat2");
+    translucentMat2->translucentScale = 1;
+    translucentMat2->translucentColor = glm::vec3(1,0,1);
+    translucentMat2->shininess = 16;
+
     ColorMaterial* mat = resourceManager->CreateMaterial<ColorMaterial>("planeColorMat");
     mat->mainColor = glm::vec3(0.7,0.7,0.7);
     mat->specularColor = glm::vec3(1);
@@ -52,18 +57,37 @@ void TranslucentMaterialTestWorld::Build()
     planeTransform->Translate(glm::vec3(0,-2,0));
     planeTransform->Scale(glm::vec3(20,10,10));
 
+    {
+        EntityHandle cubeEntity = CreateEntity();
+        cubeEntity.AddComponent(Transform{});
+        Transform *cubeTransform = cubeEntity.GetComponent<Transform>().component;
+        cubeTransform->Scale(glm::vec3(3, 3, 3));
+        cubeEntity.AddComponent(RotateComponent{1});
 
-    EntityHandle cubeEntity = CreateEntity();
-    cubeEntity.AddComponent(Transform{});
-    Transform *cubeTransform = cubeEntity.GetComponent<Transform>().component;
-    cubeTransform->Scale(glm::vec3(3,3,3));
-    cubeEntity.AddComponent(RotateComponent{1});
+        MeshInfo cubeMeshInfo{};
+        cubeMeshInfo.model = dragon;
+        // cubeMeshInfo.SetMaterial(mat);
+        cubeMeshInfo.material = translucentMat;
+        cubeEntity.AddComponent(cubeMeshInfo);
+    }
 
-    MeshInfo cubeMeshInfo{};
-    cubeMeshInfo.model = dragon;
-    // cubeMeshInfo.SetMaterial(mat);
-    cubeMeshInfo.material = translucentMat;
-    cubeEntity.AddComponent(cubeMeshInfo);
+    {
+        EntityHandle cubeEntity = CreateEntity();
+        cubeEntity.AddComponent(Transform{});
+        Transform *cubeTransform = cubeEntity.GetComponent<Transform>().component;
+        cubeTransform->Scale(glm::vec3(3, 3, 3));
+        cubeTransform->Translate(glm::vec3(1,0,0));
+        cubeEntity.AddComponent(RotateComponent{1});
+
+        MeshInfo cubeMeshInfo{};
+        cubeMeshInfo.model = dragon;
+        // cubeMeshInfo.SetMaterial(mat);
+        cubeMeshInfo.material = translucentMat2;
+        //cubeMeshInfo.material = mat;
+        cubeEntity.AddComponent(cubeMeshInfo);
+    }
+
+
 
     EntityHandle lightEntity = CreateEntity();
     auto dirLightTransform = lightEntity.AddComponent(Transform{});
@@ -71,7 +95,7 @@ void TranslucentMaterialTestWorld::Build()
     dirLightTransform->Translate(glm::vec3(0,1,1));
     Light* dirLight = lightEntity.AddComponent(Light{glm::vec3(0.8,0.8,0.8)});
     dirLight->intensity = 1;
-    dirLight->type = dirLight->POINT;
+    dirLight->type = dirLight->DIRECTIONAL;
 
 
 }

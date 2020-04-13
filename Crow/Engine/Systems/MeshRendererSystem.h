@@ -45,6 +45,7 @@ private:
     std::unordered_map<int,std::set<Model*>> m_matIdToModelsMap;
     std::unordered_map<int,std::vector<glm::mat4>*> m_modelIDtoMatricesMap;
 
+    int Hash(int x,int y);
 
    std::set<AbstractMaterial*> m_activeMaterials;
     Renderer* renderer;

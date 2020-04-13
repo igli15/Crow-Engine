@@ -26,10 +26,7 @@ void MeshRendererSystem::Render() {
     glm::mat4 projection = camera.GetProjection();
 
 
-    for (auto pair: m_matIdToModelsMap)
-    {
-        pair.second.clear();
-    }
+    m_matIdToModelsMap.clear();
 
     for (auto pair: m_modelIDtoMatricesMap)
     {
@@ -43,13 +40,14 @@ void MeshRendererSystem::Render() {
 
         m_matIdToModelsMap[meshInfo.material->ID].insert(meshInfo.model);
 
-        auto matricesIterator = m_modelIDtoMatricesMap.find(meshInfo.model->ID);
+        int hash = Hash(meshInfo.model->ID,meshInfo.material->ID);
+        auto matricesIterator = m_modelIDtoMatricesMap.find(hash);
 
         if(matricesIterator == m_modelIDtoMatricesMap.end())
         {
             std::vector<glm::mat4>* matricesVector = new std::vector<glm::mat4>();
             matricesVector->push_back(transform.GetWorldTransform());
-            m_modelIDtoMatricesMap.insert(matricesIterator,std::make_pair(meshInfo.model->ID,matricesVector));
+            m_modelIDtoMatricesMap.insert(matricesIterator,std::make_pair(hash,matricesVector));
         }
         else
         {
@@ -62,15 +60,25 @@ void MeshRendererSystem::Render() {
     {
         AbstractMaterial* material = renderer->materialMap[pair.first];
 
+        ENGINE_LOG(material->name);
+        ENGINE_LOG(material->ID);
+        ENGINE_LOG(pair.second.size());
+
         material->GetShader()->Use();
         material->BufferShaderUniforms(camInverseMat, projection,cameraTransform.WorldPosition(), world);
         material->BufferMaterialUniforms();
 
         for (const auto& model : pair.second)
         {
-            std::vector<glm::mat4>* modelMatricesPtr = m_modelIDtoMatricesMap[model->ID];
+            std::vector<glm::mat4>* modelMatricesPtr = m_modelIDtoMatricesMap[Hash(model->ID,material->ID)];
+            ENGINE_LOG(modelMatricesPtr->size());
             model->BindModelBuffer(*modelMatricesPtr);
             model->InstanceRenderMeshes(modelMatricesPtr->size());
         }
     }
+}
+
+int MeshRendererSystem::Hash(int x,int y)
+{
+    return 0.5 * (x+y) * (x+y+1) + y;
 }

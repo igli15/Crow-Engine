@@ -73,7 +73,8 @@ public:
     {
         if(m_materials.find(matName) == m_materials.end())
         {
-            ENGINE_LOG_ERROR("There is no Material with that name!");
+            ENGINE_LOG_WARNING("There is no Material with that name!");
+            return  nullptr;
         }
 
         return static_cast<T*>(m_materials[matName]);

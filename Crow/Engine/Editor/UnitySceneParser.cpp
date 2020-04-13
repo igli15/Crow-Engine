@@ -187,7 +187,16 @@ void UnitySceneParser::ParseComponents(rapidxml::xml_node<> *com, EntityHandle n
             if (attributeName == "materialName")
             {
                 std::string value(a->value());
-                colorMaterial = Game::Instance()->resourceManager->GetMaterial<ColorMaterial>(value);
+                auto material = Game::Instance()->resourceManager->GetMaterial<ColorMaterial>(value);
+                if(material == nullptr)
+                {
+                    colorMaterial = Game::Instance()->resourceManager->CreateMaterial<ColorMaterial>(value);
+                }
+                else
+                {
+                    colorMaterial = material;
+                }
+
             }
             else if(attributeName == "mainColor")
             {
