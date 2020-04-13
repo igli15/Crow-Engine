@@ -23,13 +23,13 @@ void SpriteMaterial::Initialize()
     m_shader->SetInt("image",0);
     m_uProjection = m_shader->GetUniformLocation("projection");
     m_uSpriteColor = m_shader->GetUniformLocation("spriteColor");
+    m_uModel = m_shader->GetUniformLocation("model");
 }
 
 void SpriteMaterial::BufferMaterialUniforms()
 {
     AbstractMaterial::BufferMaterialUniforms();
 
-    m_shader->Use();
     glUniform3fv(m_uSpriteColor, 1, glm::value_ptr(color));
 }
 
@@ -40,7 +40,12 @@ void SpriteMaterial::BufferShaderUniforms(const glm::mat4 &pViewMatrix, const gl
 
     m_shader->bufferedThisFrame = true;
 
-    m_shader->Use();
+    glUniformMatrix4fv(m_uProjection, 1, GL_FALSE, glm::value_ptr(pPerspectiveMatrix));
+}
 
-    glUniformMatrix4fv(m_uProjection, 1, GL_FALSE, glm::value_ptr(m_orthoProjection));
+void SpriteMaterial::BufferModelUniform(const glm::mat4 &pModelMatrix)
+{
+    AbstractMaterial::BufferModelUniform(pModelMatrix);
+
+    glUniformMatrix4fv(m_uModel, 1, GL_FALSE, glm::value_ptr(pModelMatrix));
 }

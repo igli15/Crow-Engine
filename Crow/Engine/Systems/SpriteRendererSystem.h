@@ -11,25 +11,23 @@
 #include "../Feather/System.h"
 #include "../Rendering/Sprite.h"
 #include "../Components/SpriteInfo.h"
-#include "../Events/ComponentAddedEvent.h"
 
-struct SpriteInstancedData
-{
-    SpriteInfo* spriteInfo;
-    std::vector<glm::mat4>* modelMatrices;
-};
+
+class Camera;
+class Transform;
 
 class SpriteRendererSystem : public System
 {
 public:
-    void Init() override;
     void Render() override;
-    void OnCreate() override;
-    void OnSpriteInfoAdded(ComponentAddedEvent<SpriteInfo>* event);
+    void Init() override;
 
 private:
-    glm::mat4 m_projectionMatrix;
-    std::unordered_map<int,SpriteInstancedData> m_instancedModelMap;
+    glm::mat4 m_projectionMatrix = glm::mat4(1);
+
+    Camera* m_camera = nullptr;
+    Transform* m_cameraTransform = nullptr;
+
 };
 
 

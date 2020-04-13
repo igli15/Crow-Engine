@@ -1,10 +1,9 @@
 #version 330 core
 layout (location = 0) in vec4 vertex; // <vec2 position, vec2 texCoords>
-layout (location = 1) in mat4 model;
-
 
 out vec2 TexCoords;
 uniform mat4 projection;
+uniform mat4 model;
 
 void main()
 {

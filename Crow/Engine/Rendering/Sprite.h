@@ -17,15 +17,13 @@ public:
 
     Sprite();
     void Buffer();
-    void BufferModelMatrices(std::vector<glm::mat4>& modelMatrices);
-    void Render(int amount,Shader* shader);
+    void Render();
 
     int ID;
 
 private:
     GLuint VAO;
     GLuint m_quadVBO;
-    GLuint m_modelsVBO;
 };
 
 

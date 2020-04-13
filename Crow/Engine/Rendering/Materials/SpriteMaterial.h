@@ -24,10 +24,12 @@ public:
 
     void BufferMaterialUniforms() override;
 
+    void BufferModelUniform(const glm::mat4 &pModelMatrix) override;
+
     glm::vec3 color = glm::vec3(1);
 
 
-    GLint m_uSpriteColor,m_uProjection;
+    GLint m_uSpriteColor,m_uProjection,m_uModel;
 
 private:
     glm::mat4 m_orthoProjection = glm::mat4(1);

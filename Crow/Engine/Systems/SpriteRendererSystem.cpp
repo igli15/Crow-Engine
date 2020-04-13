@@ -15,6 +15,11 @@ void SpriteRendererSystem::Init()
 
     m_projectionMatrix = glm::ortho(0.0f, static_cast<GLfloat>(1920),
                                       static_cast<GLfloat>(1080), 0.0f, -1.0f, 1.0f);
+
+    Entity cameraEntity = world->EntitiesWith<Camera>()[0];
+    m_cameraTransform = &world->GetComponent<Transform>(cameraEntity);
+    m_camera =  &world->GetComponent<Camera>(cameraEntity);
+
 }
 
 
@@ -24,43 +29,20 @@ void SpriteRendererSystem::Render()
 
     auto entities = world->EntitiesWith<Transform,SpriteInfo>();
 
-    for (auto pair: m_instancedModelMap)
-    {
-        pair.second.modelMatrices->clear();
-    }
+    glm::mat4 camInverseMat = glm::inverse(m_cameraTransform->GetWorldTransform());
 
     for (int i = 0; i < entities.size(); ++i)
     {
         Transform& transform = world->GetComponent<Transform>(entities[i]);
         SpriteInfo& spriteInfo = world->GetComponent<SpriteInfo>(entities[i]);
 
-        m_instancedModelMap[spriteInfo.sprite->ID].spriteInfo->GetMaterial()->BufferMaterialUniforms();
-        m_instancedModelMap[spriteInfo.sprite->ID].modelMatrices->push_back(transform.GetWorldTransform());
+        spriteInfo.GetMaterial()->GetShader()->Use();
+        spriteInfo.GetMaterial()->BufferShaderUniforms(camInverseMat,m_projectionMatrix,m_cameraTransform->WorldPosition(),world);
+        spriteInfo.GetMaterial()->BufferModelUniform(transform.GetWorldTransform());
+        spriteInfo.GetMaterial()->BufferMaterialUniforms();
+        spriteInfo.sprite->Render();
     }
 
-    for (auto pair: m_instancedModelMap)
-    {
-        //Buffer the all model matrices VBO to the shader
-        pair.second.spriteInfo->sprite->BufferModelMatrices(*pair.second.modelMatrices);
 
-        pair.second.spriteInfo->sprite->Render(pair.second.modelMatrices->size(),pair.second.spriteInfo->GetMaterial()->GetShader());
-    }
 }
 
-void SpriteRendererSystem::OnSpriteInfoAdded(ComponentAddedEvent<SpriteInfo> *event)
-{
-    int ID = event->component->sprite->ID;
-    auto iterator = m_instancedModelMap.find(ID);
-
-    if(iterator == m_instancedModelMap.end())
-    {
-        SpriteInstancedData data {event->component, new std::vector<glm::mat4>()};
-        m_instancedModelMap.insert(iterator,std::make_pair(ID,data));
-    }
-}
-
-void SpriteRendererSystem::OnCreate()
-{
-    System::OnCreate();
-    EventQueue::Instance().Subscribe(this, &SpriteRendererSystem::OnSpriteInfoAdded);
-}

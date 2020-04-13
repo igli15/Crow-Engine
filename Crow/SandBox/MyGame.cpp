@@ -40,12 +40,12 @@ void MyGame::Init()
 
     //Set the world here!
 
-    SetWorld(new XmlTestWorld());
+    //SetWorld(new XmlTestWorld());
     //SetWorld(new PrototypeWorld());
     //SetWorld(new PhysicsTestWorld());
     //SetWorld(new TranslucentMaterialTestWorld());
     //SetWorld(new LightingTestWorld());
     //SetWorld(new RotatingGunsWorld());
-    //SetWorld(new SpriteRenderingWorld());
+    SetWorld(new SpriteRenderingWorld());
 }
 

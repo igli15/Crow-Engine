@@ -31,6 +31,8 @@ public:
     virtual void BufferShaderUniforms(const glm::mat4 &pViewMatrix,
                                         const glm::mat4 &pPerspectiveMatrix, const glm::vec3 &viewPos, World *world){};
 
+    virtual void BufferModelUniform(const glm::mat4 &pModelMatrix){};
+
     int activeInstanceCount = 0;
 
     Shader* GetShader();
