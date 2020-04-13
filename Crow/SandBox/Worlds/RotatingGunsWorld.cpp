@@ -59,7 +59,7 @@ void RotatingGunsWorld::Build()
             MeshInfo gunMeshInfo{};
             gunMeshInfo.model = gunModel;
             mat->mainColor = glm::vec3(0.8f,0.8f,0.8f);
-            gunMeshInfo.SetMaterial(mat);
+            gunMeshInfo.material = mat;
             gunEntity.AddComponent(gunMeshInfo);
             gunEntity.AddComponent(RotateComponent{5});
             //gunEntity.AddComponent(SphereCollider{1});

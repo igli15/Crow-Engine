@@ -34,15 +34,16 @@ void SpriteRendererSystem::Render()
         Transform& transform = world->GetComponent<Transform>(entities[i]);
         SpriteInfo& spriteInfo = world->GetComponent<SpriteInfo>(entities[i]);
 
+        m_instancedModelMap[spriteInfo.sprite->ID].spriteInfo->GetMaterial()->BufferMaterialUniforms();
         m_instancedModelMap[spriteInfo.sprite->ID].modelMatrices->push_back(transform.GetWorldTransform());
     }
 
     for (auto pair: m_instancedModelMap)
     {
         //Buffer the all model matrices VBO to the shader
-        pair.second.spriteInfo.sprite->BufferModelMatrices(*pair.second.modelMatrices);
+        pair.second.spriteInfo->sprite->BufferModelMatrices(*pair.second.modelMatrices);
 
-        pair.second.spriteInfo.sprite->Render(pair.second.modelMatrices->size(),pair.second.spriteInfo.GetMaterial()->GetShader());
+        pair.second.spriteInfo->sprite->Render(pair.second.modelMatrices->size(),pair.second.spriteInfo->GetMaterial()->GetShader());
     }
 }
 
@@ -53,7 +54,7 @@ void SpriteRendererSystem::OnSpriteInfoAdded(ComponentAddedEvent<SpriteInfo> *ev
 
     if(iterator == m_instancedModelMap.end())
     {
-        SpriteInstancedData data {*event->component, new std::vector<glm::mat4>()};
+        SpriteInstancedData data {event->component, new std::vector<glm::mat4>()};
         m_instancedModelMap.insert(iterator,std::make_pair(ID,data));
     }
 }

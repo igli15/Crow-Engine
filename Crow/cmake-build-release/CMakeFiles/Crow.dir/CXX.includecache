@@ -22,6 +22,22 @@ glm/gtx/projection.hpp
 glm/gtc/matrix_transform.hpp
 -
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h
+glm/glm.hpp
+-
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
+../Rendering/Model.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
+../Rendering/AbstractMaterial.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+../EventQueue/EventQueue.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
+../Events/MaterialAddedEvent.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/MaterialAddedEvent.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/SphereCollider.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/SpriteInfo.h
 glm/glm.hpp
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/glm/glm.hpp
@@ -31,6 +47,14 @@ glm/glm.hpp
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
 ../Rendering/Materials/SpriteMaterial.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/SpriteMaterial.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Text.h
+string
+-
+glm/glm.hpp
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/glm/glm.hpp
+../Rendering/Font.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Font.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
 glm/glm.hpp
@@ -61,8 +85,12 @@ unordered_map
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Renderer.h
 vector
 -
+unordered_map
+-
 ../Rendering/AbstractMaterial.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+../Components/MeshInfo.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h
 map
@@ -123,6 +151,18 @@ Event.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
 ../Feather/Types.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/EntityEvents.h
+../EventQueue/Event.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
+../Feather/Types.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/MaterialAddedEvent.h
+../EventQueue/Event.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
+../Rendering/AbstractMaterial.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
 ../../Crow.h
@@ -192,6 +232,32 @@ bitset
 CustomTypeID.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/CustomTypeID.h
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.cpp
+World.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
+EntityHandle.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
+../Components/Transform.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
+../Components/Camera.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.h
+../Systems/MeshRendererSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/MeshRendererSystem.h
+../Components/MeshInfo.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
+../Systems/CollisionDetectionSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/CollisionDetectionSystem.h
+../Events/EntityEvents.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/EntityEvents.h
+../Systems/TransformHierarchySystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/TransformHierarchySystem.h
+../Systems/TextRenderingSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/TextRenderingSystem.h
+../Systems/MeshRendererSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/MeshRendererSystem.h
+../Systems/SpriteRendererSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/SpriteRendererSystem.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
 SystemManager.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemManager.h
@@ -214,6 +280,16 @@ Shader.h
 ../Feather/World.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Font.h
+freetype2/ft2build.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/freetype2/ft2build.h
+string
+-
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h
+../AbstractMaterial.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/SpriteMaterial.h
 glm/glm.hpp
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/glm/glm.hpp
@@ -227,6 +303,18 @@ Shader.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
 vector
 -
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.cpp
+Model.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
+../../Crow.h
+/Users/igli/Desktop/Crow Engine/Crow/Crow.h
+assimp/Importer.hpp
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/assimp/Importer.hpp
+assimp/scene.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/assimp/scene.h
+assimp/postprocess.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/assimp/postprocess.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
 Mesh.h
@@ -264,27 +352,121 @@ GLFW/glfw3.h
 ../Core/Input.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
 
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/SpriteRenderingWorld.cpp
-SpriteRenderingWorld.h
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/SpriteRenderingWorld.h
-../../Engine/Rendering/Texture.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
-../../Engine/Core/Game.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
-../../Engine/Feather/EntityHandle.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/CollisionDetectionSystem.h
+../Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+../Feather/EntityHandle.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
-../../Engine/Components/SpriteInfo.h
+unordered_map
+-
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/MeshRendererSystem.cpp
+MeshRendererSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/MeshRendererSystem.h
+../Components/Transform.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
+../Components/Camera.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.h
+../Core/Game.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
+../Core/Renderer.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Renderer.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/MeshRendererSystem.h
+../Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+../Events/ComponentAddedEvent.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+../Events/EntityEvents.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/EntityEvents.h
+unordered_map
+-
+vector
+-
+set
+-
+../Components/MeshInfo.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/SpriteRendererSystem.h
+glm/glm.hpp
+-
+unordered_map
+-
+../Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+../Rendering/Sprite.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Sprite.h
+../Components/SpriteInfo.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/SpriteInfo.h
+../Events/ComponentAddedEvent.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/TextRenderingSystem.h
+OpenGL/OpenGL.h
+-
+map
+-
+../Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+glm/glm.hpp
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/glm/glm.hpp
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/TransformHierarchySystem.h
+../Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+../Components/Transform.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
+../Events/EntityEvents.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/EntityEvents.h
+../Events/ComponentAddedEvent.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+../Events/ComponentRemovedEvent.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
+
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/RotateComponent.h
+
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RotateSystem.h
+../../Engine/Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+vector
+-
+
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/RotatingGunsWorld.cpp
+RotatingGunsWorld.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/RotatingGunsWorld.h
 ../../Engine/Components/Transform.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
+../../Engine/Systems/MeshRendererSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/MeshRendererSystem.h
+../../Engine/Components/MeshInfo.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
+../../Engine/Core/Game.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
 ../../Engine/Core/ResourceManager.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h
+../../Engine/Rendering/Materials/ColorMaterial.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h
+../Systems/RotateSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RotateSystem.h
+../Components/RotateComponent.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/RotateComponent.h
+../../Engine/Feather/EntityHandle.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
+../../Engine/Components/SphereCollider.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/SphereCollider.h
 ../../Engine/Components/Camera.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.h
-../../Engine/Rendering/Materials/SpriteMaterial.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/SpriteMaterial.h
+../../Engine/Components/Text.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Text.h
+../../Engine/Components/Light.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h
+../../Engine/Rendering/Materials/ColorMaterial.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h
+../../Engine/Components/SpriteInfo.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/SpriteInfo.h
 
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/SpriteRenderingWorld.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/RotatingGunsWorld.h
 ../../Engine/Feather/World.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
 
@@ -346,6 +528,248 @@ GL/gl.h
 GL/glext.h
 -
 GL/glu.h
+-
+
+/usr/local/include/assimp/Compiler/poppack1.h
+
+/usr/local/include/assimp/Compiler/pstdint.h
+stddef.h
+-
+limits.h
+-
+signal.h
+-
+stdint.h
+-
+sys/inttypes.h
+-
+wchar.h
+-
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+
+/usr/local/include/assimp/Compiler/pushpack1.h
+
+/usr/local/include/assimp/Importer.hpp
+assimp/types.h
+-
+
+/usr/local/include/assimp/MathFunctions.h
+limits
+-
+
+/usr/local/include/assimp/aabb.h
+assimp/vector3.h
+-
+
+/usr/local/include/assimp/anim.h
+assimp/types.h
+-
+assimp/quaternion.h
+-
+
+/usr/local/include/assimp/camera.h
+types.h
+/usr/local/include/assimp/types.h
+
+/usr/local/include/assimp/color4.h
+defs.h
+/usr/local/include/assimp/defs.h
+
+/usr/local/include/assimp/color4.inl
+color4.h
+/usr/local/include/assimp/color4.h
+
+/usr/local/include/assimp/config.h
+
+/usr/local/include/assimp/defs.h
+assimp/config.h
+-
+
+/usr/local/include/assimp/light.h
+types.h
+/usr/local/include/assimp/types.h
+
+/usr/local/include/assimp/material.h
+types.h
+/usr/local/include/assimp/types.h
+./Compiler/pushpack1.h
+/usr/local/include/assimp/Compiler/pushpack1.h
+./Compiler/poppack1.h
+/usr/local/include/assimp/Compiler/poppack1.h
+material.inl
+/usr/local/include/assimp/material.inl
+
+/usr/local/include/assimp/material.inl
+
+/usr/local/include/assimp/matrix3x3.h
+defs.h
+/usr/local/include/assimp/defs.h
+
+/usr/local/include/assimp/matrix3x3.inl
+matrix3x3.h
+/usr/local/include/assimp/matrix3x3.h
+matrix4x4.h
+/usr/local/include/assimp/matrix4x4.h
+algorithm
+-
+cmath
+-
+limits
+-
+
+/usr/local/include/assimp/matrix4x4.h
+vector3.h
+/usr/local/include/assimp/vector3.h
+defs.h
+/usr/local/include/assimp/defs.h
+
+/usr/local/include/assimp/matrix4x4.inl
+matrix4x4.h
+/usr/local/include/assimp/matrix4x4.h
+matrix3x3.h
+/usr/local/include/assimp/matrix3x3.h
+quaternion.h
+/usr/local/include/assimp/quaternion.h
+MathFunctions.h
+/usr/local/include/assimp/MathFunctions.h
+algorithm
+-
+limits
+-
+cmath
+-
+
+/usr/local/include/assimp/mesh.h
+assimp/types.h
+-
+assimp/aabb.h
+-
+
+/usr/local/include/assimp/metadata.h
+Compiler/pstdint.h
+/usr/local/include/assimp/Compiler/pstdint.h
+stdint.h
+-
+string
+-
+
+/usr/local/include/assimp/postprocess.h
+types.h
+/usr/local/include/assimp/types.h
+
+/usr/local/include/assimp/quaternion.h
+defs.h
+/usr/local/include/assimp/defs.h
+
+/usr/local/include/assimp/quaternion.inl
+quaternion.h
+/usr/local/include/assimp/quaternion.h
+cmath
+-
+
+/usr/local/include/assimp/scene.h
+types.h
+/usr/local/include/assimp/types.h
+texture.h
+/usr/local/include/assimp/texture.h
+mesh.h
+/usr/local/include/assimp/mesh.h
+light.h
+/usr/local/include/assimp/light.h
+camera.h
+/usr/local/include/assimp/camera.h
+material.h
+/usr/local/include/assimp/material.h
+anim.h
+/usr/local/include/assimp/anim.h
+metadata.h
+/usr/local/include/assimp/metadata.h
+cstdlib
+-
+
+/usr/local/include/assimp/texture.h
+types.h
+/usr/local/include/assimp/types.h
+./Compiler/pushpack1.h
+/usr/local/include/assimp/Compiler/pushpack1.h
+./Compiler/poppack1.h
+/usr/local/include/assimp/Compiler/poppack1.h
+
+/usr/local/include/assimp/types.h
+sys/types.h
+-
+stddef.h
+-
+string.h
+-
+limits.h
+-
+stdint.h
+-
+defs.h
+/usr/local/include/assimp/defs.h
+vector3.h
+/usr/local/include/assimp/vector3.h
+vector2.h
+/usr/local/include/assimp/vector2.h
+color4.h
+/usr/local/include/assimp/color4.h
+matrix3x3.h
+/usr/local/include/assimp/matrix3x3.h
+matrix4x4.h
+/usr/local/include/assimp/matrix4x4.h
+quaternion.h
+/usr/local/include/assimp/quaternion.h
+cstring
+-
+new
+-
+string
+-
+vector2.inl
+/usr/local/include/assimp/vector2.inl
+vector3.inl
+/usr/local/include/assimp/vector3.inl
+color4.inl
+/usr/local/include/assimp/color4.inl
+quaternion.inl
+/usr/local/include/assimp/quaternion.inl
+matrix3x3.inl
+/usr/local/include/assimp/matrix3x3.inl
+matrix4x4.inl
+/usr/local/include/assimp/matrix4x4.inl
+
+/usr/local/include/assimp/vector2.h
+cmath
+-
+math.h
+-
+defs.h
+/usr/local/include/assimp/defs.h
+
+/usr/local/include/assimp/vector2.inl
+vector2.h
+/usr/local/include/assimp/vector2.h
+cmath
+-
+
+/usr/local/include/assimp/vector3.h
+cmath
+-
+math.h
+-
+defs.h
+/usr/local/include/assimp/defs.h
+
+/usr/local/include/assimp/vector3.inl
+vector3.h
+/usr/local/include/assimp/vector3.h
+cmath
 -
 
 /usr/local/include/freetype2/freetype/config/ftheader.h

@@ -204,6 +204,9 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/EntityEvents.h">
 			<Option target="Crow"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/MaterialAddedEvent.h">
+			<Option target="Crow"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.cpp">
 			<Option target="Crow"/>
 		</Unit>
@@ -322,12 +325,6 @@
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/BufferMaterialsSystem.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/BufferMaterialsSystem.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/CollisionDetectionSystem.cpp">

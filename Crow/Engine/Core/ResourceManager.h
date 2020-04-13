@@ -29,7 +29,7 @@ private:
 
     int m_modelIdCounter = 0;
     int m_spriteIdCounter = 0;
-
+    int m_materialIdCounter = 0;
 
 public:
     Texture* LoadTexture(const std::string& path,const std::string& name);
@@ -56,9 +56,14 @@ public:
         }
 
         T* material = new T();
+
+        material->name = matName;
+        material->ID = ++m_materialIdCounter;
+
         m_materials[matName] = material;
 
         Game::Instance()->renderer->allMaterials.push_back(material);
+        Game::Instance()->renderer->materialMap[material->ID] = material;
 
         return material;
     }

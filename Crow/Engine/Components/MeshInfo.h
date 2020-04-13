@@ -7,38 +7,12 @@
 
 #include "../Rendering/Model.h"
 #include "../Rendering/AbstractMaterial.h"
+#include "../EventQueue/EventQueue.h"
+#include "../Events/MaterialAddedEvent.h"
 
 struct MeshInfo {
 
-    Model* model;
-
-    MeshInfo()
-    {
-    };
-
-    MeshInfo(Model* pModel,AbstractMaterial* pMat)
-    {
-        model = pModel;
-        SetMaterial(pMat);
-    };
-
-    void SetMaterial(AbstractMaterial* newMat)
-    {
-        if(material == newMat) return;
-
-        if(material!= nullptr) material->activeInstanceCount -= 1;
-
-        material = newMat;
-        material->activeInstanceCount += 1;
-
-    };
-
-    AbstractMaterial* GetMaterial()
-    {
-        return material;
-    };
-
-private:
+    Model* model = nullptr;
     AbstractMaterial* material = nullptr;
 
 };

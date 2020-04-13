@@ -1,9 +1,4 @@
 <root>
-  <GameObject name="Directional Light" position="(2.5300, 15.3100, -10.4500)" rotation="(0.1940, 0.2787, 0.2319, 0.9115)" scale="(1.0000, 1.0000, 1.0000)">
-    <Components>
-      <Light type="DIRECTIONAL" color="(0.9882, 0.0000, 0.0000)" intensity="6.3800" attenuationConstants="(1.0000, 0.0900, 0.0320)" cutoffAngle="30.0000" outercutoffAngle="60.0000" />
-    </Components>
-  </GameObject>
   <GameObject name="model" position="(-0.7300, 1.0818, -19.9800)" rotation="(0.0000, -0.7071, 0.0000, 0.7071)" scale="(1.0000, 1.0000, 1.0000)" mesh="axis">
     <Components />
   </GameObject>
@@ -23,13 +18,23 @@
     <Components />
   </GameObject>
   <GameObject name="Sphere" position="(0.6300, 1.4000, -9.8100)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="sphere">
-    <Components />
+    <Components>
+      <ColorMaterial materialName="cyanMaterial" mainColor="(0.0000, 1.0000, 0.7294)" specularColor="(1.0000, 0.9843, 0.9843)" shininess="16.0000" ambientIntensity="0.1000" />
+    </Components>
   </GameObject>
   <GameObject name="MGECamera" position="(0.0000, 17.5000, 2.9600)" rotation="(-0.3608, 0.0000, 0.0000, 0.9326)" scale="(1.0000, 1.0000, 1.0000)">
     <Components>
       <Camera FOV="60" aspectRatio="1.333333" nearClipPlane="0.1" farClipPlane="1000" />
     </Components>
     <GameObject name="Camera" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 1.0000, 0.0000, 0.0000)" scale="(1.0000, 1.0000, 1.0000)">
+      <Components />
+    </GameObject>
+  </GameObject>
+  <GameObject name="CrowLight" position="(0.0000, 19.1800, 0.0000)" rotation="(-0.5588, 0.0000, 0.0000, 0.8293)" scale="(1.0000, 1.0000, 1.0000)">
+    <Components>
+      <Light type="DIRECTIONAL" color="(1.0000, 1.0000, 0.9451)" intensity="1.0000" attenuationConstants="(1.0000, 0.0900, 0.0320)" cutoffAngle="30.0000" outercutoffAngle="60.0000" />
+    </Components>
+    <GameObject name="Directional Light" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 1.0000, 0.0000, 0.0000)" scale="(1.0000, 1.0000, 1.0000)">
       <Components />
     </GameObject>
   </GameObject>

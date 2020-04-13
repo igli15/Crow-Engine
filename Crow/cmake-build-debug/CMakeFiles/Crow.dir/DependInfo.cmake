@@ -39,7 +39,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Sprite.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/Rendering/Sprite.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/Rendering/Texture.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o"
-  "/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/BufferMaterialsSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/Systems/BufferMaterialsSystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/CollisionDetectionSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/MeshRendererSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/SpriteRendererSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o"

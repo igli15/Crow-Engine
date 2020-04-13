@@ -5,22 +5,35 @@
 #include "MeshRendererSystem.h"
 #include "../Components/Transform.h"
 #include "../Components/Camera.h"
-
+#include "../Core/Game.h"
+#include "../Core/Renderer.h"
 
 
 void MeshRendererSystem::OnCreate() {
     System::OnCreate();
 
-    EventQueue::Instance().Subscribe(this, &MeshRendererSystem::OnMeshInfoAdded);
+    renderer = Game::Instance()->renderer;
 }
 
 void MeshRendererSystem::Render() {
     System::Render();
 
+    Entity cameraEntity = world->EntitiesWith<Camera>()[0];
+    Transform& cameraTransform = world->GetComponent<Transform>(cameraEntity);
+    Camera& camera=  world->GetComponent<Camera>(cameraEntity);
 
-    for (auto pair: m_instancedModelMap)
+    glm::mat4 camInverseMat = glm::inverse(cameraTransform.GetWorldTransform());
+    glm::mat4 projection = camera.GetProjection();
+
+
+    for (auto pair: m_matIdToModelsMap)
     {
-        pair.second.modelMatrices->clear();
+        pair.second.clear();
+    }
+
+    for (auto pair: m_modelIDtoMatricesMap)
+    {
+        pair.second->clear();
     }
 
     for (const auto& entity : m_entities)
@@ -28,29 +41,36 @@ void MeshRendererSystem::Render() {
         MeshInfo& meshInfo = world->GetComponent<MeshInfo>(entity);
         Transform& transform = world->GetComponent<Transform>(entity);
 
-        m_instancedModelMap[meshInfo.model->ID].modelMatrices->push_back(transform.GetWorldTransform());
+        m_matIdToModelsMap[meshInfo.material->ID].insert(meshInfo.model);
+
+        auto matricesIterator = m_modelIDtoMatricesMap.find(meshInfo.model->ID);
+
+        if(matricesIterator == m_modelIDtoMatricesMap.end())
+        {
+            std::vector<glm::mat4>* matricesVector = new std::vector<glm::mat4>();
+            matricesVector->push_back(transform.GetWorldTransform());
+            m_modelIDtoMatricesMap.insert(matricesIterator,std::make_pair(meshInfo.model->ID,matricesVector));
+        }
+        else
+        {
+            matricesIterator->second->push_back(transform.GetWorldTransform());
+        }
+
     }
 
-    for (auto pair: m_instancedModelMap)
+    for (const auto& pair:  m_matIdToModelsMap)
     {
-        //Buffer the all model matrices VBO to the shader
-        pair.second.meshInfo.model->BindModelBuffer(*pair.second.modelMatrices);
-        //Draw in one call all the models
-        pair.second.meshInfo.model->InstanceRenderMeshes(pair.second.modelMatrices->size(),pair.second.meshInfo.GetMaterial()->GetShader());
-    }
+        AbstractMaterial* material = renderer->materialMap[pair.first];
 
-}
+        material->GetShader()->Use();
+        material->BufferShaderUniforms(camInverseMat, projection,cameraTransform.WorldPosition(), world);
+        material->BufferMaterialUniforms();
 
-void MeshRendererSystem::OnMeshInfoAdded(ComponentAddedEvent<MeshInfo> *event)
-{
-    event->component->model->InstanceBufferMeshes();
-
-    int ID = event->component->model->ID;
-    auto iterator = m_instancedModelMap.find(ID);
-
-    if(iterator == m_instancedModelMap.end())
-    {
-        MeshInstancedData data {*event->component, new std::vector<glm::mat4>()};
-        m_instancedModelMap.insert(iterator,std::make_pair(ID,data));
+        for (const auto& model : pair.second)
+        {
+            std::vector<glm::mat4>* modelMatricesPtr = m_modelIDtoMatricesMap[model->ID];
+            model->BindModelBuffer(*modelMatricesPtr);
+            model->InstanceRenderMeshes(modelMatricesPtr->size());
+        }
     }
 }

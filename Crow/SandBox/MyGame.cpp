@@ -19,6 +19,7 @@ void MyGame::LoadAssets()
     resourceManager->CreateShader("SpriteVertexShader.vs","SpriteFragmentShader.fs","spriteShader");
 
     resourceManager->CreateMaterial<ColorMaterial>("defaultMat");
+    resourceManager->CreateMaterial<ColorMaterial>("cyanMaterial");
 
     resourceManager->LoadModel((MODEL_PATH + "cube.obj"),"cube");
     resourceManager->LoadModel((MODEL_PATH + "sphere.obj"),"sphere");
@@ -44,7 +45,7 @@ void MyGame::Init()
     //SetWorld(new PhysicsTestWorld());
     //SetWorld(new TranslucentMaterialTestWorld());
     //SetWorld(new LightingTestWorld());
-   // SetWorld(new RotatingGunsWorld());
+    //SetWorld(new RotatingGunsWorld());
     //SetWorld(new SpriteRenderingWorld());
 }
 

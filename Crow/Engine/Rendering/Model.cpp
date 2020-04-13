@@ -11,6 +11,8 @@
 
 Model::Model(const char *path) {
     LoadModel(path);
+
+    InstanceBufferMeshes();
 }
 
 void Model::Draw() {
@@ -134,10 +136,8 @@ void Model::InstanceBufferMeshes()
 
 }
 
-void Model::InstanceRenderMeshes(int amount,Shader* shader)
+void Model::InstanceRenderMeshes(int amount)
 {
-    shader->Use();
-
     for (unsigned int meshIndex = 0; meshIndex < m_meshes.size(); meshIndex++)
     {
         glBindVertexArray(m_meshes[meshIndex].VAO);

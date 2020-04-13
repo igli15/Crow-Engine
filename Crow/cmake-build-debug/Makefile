@@ -1068,33 +1068,6 @@ Engine/Rendering/Window.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.s
 .PHONY : Engine/Rendering/Window.cpp.s
 
-Engine/Systems/BufferMaterialsSystem.o: Engine/Systems/BufferMaterialsSystem.cpp.o
-
-.PHONY : Engine/Systems/BufferMaterialsSystem.o
-
-# target to build an object file
-Engine/Systems/BufferMaterialsSystem.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Systems/BufferMaterialsSystem.cpp.o
-.PHONY : Engine/Systems/BufferMaterialsSystem.cpp.o
-
-Engine/Systems/BufferMaterialsSystem.i: Engine/Systems/BufferMaterialsSystem.cpp.i
-
-.PHONY : Engine/Systems/BufferMaterialsSystem.i
-
-# target to preprocess a source file
-Engine/Systems/BufferMaterialsSystem.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Systems/BufferMaterialsSystem.cpp.i
-.PHONY : Engine/Systems/BufferMaterialsSystem.cpp.i
-
-Engine/Systems/BufferMaterialsSystem.s: Engine/Systems/BufferMaterialsSystem.cpp.s
-
-.PHONY : Engine/Systems/BufferMaterialsSystem.s
-
-# target to generate assembly for a file
-Engine/Systems/BufferMaterialsSystem.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Systems/BufferMaterialsSystem.cpp.s
-.PHONY : Engine/Systems/BufferMaterialsSystem.cpp.s
-
 Engine/Systems/CollisionDetectionSystem.o: Engine/Systems/CollisionDetectionSystem.cpp.o
 
 .PHONY : Engine/Systems/CollisionDetectionSystem.o
@@ -1722,9 +1695,6 @@ help:
 	@echo "... Engine/Rendering/Window.o"
 	@echo "... Engine/Rendering/Window.i"
 	@echo "... Engine/Rendering/Window.s"
-	@echo "... Engine/Systems/BufferMaterialsSystem.o"
-	@echo "... Engine/Systems/BufferMaterialsSystem.i"
-	@echo "... Engine/Systems/BufferMaterialsSystem.s"
 	@echo "... Engine/Systems/CollisionDetectionSystem.o"
 	@echo "... Engine/Systems/CollisionDetectionSystem.i"
 	@echo "... Engine/Systems/CollisionDetectionSystem.s"

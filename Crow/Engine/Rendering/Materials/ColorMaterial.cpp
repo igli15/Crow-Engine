@@ -84,8 +84,6 @@ void ColorMaterial::BufferShaderUniforms(const glm::mat4 &pViewMatrix, const glm
 
     m_shader->bufferedThisFrame = true;
 
-    m_shader->Use();
-
     auto lightEntities = world->EntitiesWith<Light,Transform>();
 
     int activeDirLights = 0;

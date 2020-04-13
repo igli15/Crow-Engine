@@ -14,7 +14,6 @@
 #include "../Systems/TextRenderingSystem.h"
 #include "../Systems/MeshRendererSystem.h"
 #include "../Systems/SpriteRendererSystem.h"
-#include "../Systems/BufferMaterialsSystem.h"
 
 void World::Init()
 {
@@ -75,7 +74,6 @@ void World::RegisterEngineSystems()
     RegisterSystem<TransformHierarchySystem>();
     RegisterSystem<TextRenderingSystem>();
     RegisterSystem<SpriteRendererSystem>();
-    RegisterSystem<BufferMaterialsSystem>();
     //SetSystemSignature<MeshRendererSystem,Transform,MeshInfo>();
     SetSystemSignature<MeshRendererSystem,Transform,MeshInfo>();
 

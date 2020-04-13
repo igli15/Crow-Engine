@@ -29,7 +29,7 @@ void SpriteMaterial::BufferMaterialUniforms()
 {
     AbstractMaterial::BufferMaterialUniforms();
 
-
+    m_shader->Use();
     glUniform3fv(m_uSpriteColor, 1, glm::value_ptr(color));
 }
 
@@ -37,6 +37,8 @@ void SpriteMaterial::BufferShaderUniforms(const glm::mat4 &pViewMatrix, const gl
                                           const glm::vec3 &viewPos, World *world)
 {
     AbstractMaterial::BufferShaderUniforms(pViewMatrix, pPerspectiveMatrix, viewPos, world);
+
+    m_shader->bufferedThisFrame = true;
 
     m_shader->Use();
 

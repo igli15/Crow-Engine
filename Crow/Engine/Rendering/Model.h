@@ -17,6 +17,10 @@ class Model {
 
 public:
     Model(const char* path);
+    bool operator==(Model& other) const
+    {
+        return ID == other.ID;
+    }
 
     void Draw();
 
@@ -30,7 +34,7 @@ public:
     Mesh ProcessMesh(aiMesh* mesh,const aiScene* scene);
 
     void InstanceBufferMeshes();
-    void InstanceRenderMeshes(int amount,Shader* shader);
+    void InstanceRenderMeshes(int amount);
     void BindModelBuffer(std::vector<glm::mat4>& models);
     int ID = -1;
 };

@@ -15,7 +15,7 @@
 
 struct SpriteInstancedData
 {
-    SpriteInfo spriteInfo;
+    SpriteInfo* spriteInfo;
     std::vector<glm::mat4>* modelMatrices;
 };
 

@@ -88,7 +88,7 @@ void TranslucentColorMat::BufferShaderUniforms(const glm::mat4 &pViewMatrix, con
 {
     AbstractMaterial::BufferShaderUniforms(pViewMatrix, pPerspectiveMatrix, viewPos, world);
 
-    m_shader->Use();
+    m_shader->bufferedThisFrame = true;
 
     auto lightEntities = world->EntitiesWith<Light,Transform>();
 
@@ -161,6 +161,7 @@ void TranslucentColorMat::BufferShaderUniforms(const glm::mat4 &pViewMatrix, con
 void TranslucentColorMat::BufferMaterialUniforms()
 {
     AbstractMaterial::BufferMaterialUniforms();
+
 
     glUniform3fv(m_uMainColor,1,glm::value_ptr(mainColor));
     glUniform3fv(m_uSpecularColor,1,glm::value_ptr(specularColor));

@@ -34,8 +34,7 @@ struct SpriteInfo {
 
         if(material!= nullptr)
         {
-            ENGINE_LOG_WARNING("Assigning null material to sprite info");
-            material->activeInstanceCount -= 1;
+            if(material->activeInstanceCount > 0)  material->activeInstanceCount -= 1;
         }
 
         material = newMat;

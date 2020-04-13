@@ -21,6 +21,11 @@ class AbstractMaterial {
 public:
     AbstractMaterial(const std::string& shaderName);
 
+    bool operator==(AbstractMaterial& other) const
+    {
+       return ID == other.ID;
+    }
+
     virtual void BufferMaterialUniforms(){};
 
     virtual void BufferShaderUniforms(const glm::mat4 &pViewMatrix,
@@ -30,8 +35,16 @@ public:
 
     Shader* GetShader();
 
+    std::string name;
+    int ID = -1;
+
+    std::vector<glm::mat4> modelMatrices;
+
+    //TODO should be a renderable!
+    std::set<Model*> models;
+
 protected:
-    Shader* m_shader;
+    Shader* m_shader = nullptr;
 };
 
 

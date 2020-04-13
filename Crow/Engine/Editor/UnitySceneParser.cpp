@@ -72,6 +72,7 @@ EntityHandle UnitySceneParser::ParseEntity(rapidxml::xml_node<> *node, World *wo
 
     Transform *entityTransform = entity.AddComponent(Transform{});
 
+
     for (rapidxml::xml_attribute<> *a = node->first_attribute();
          a != nullptr;
          a = a->next_attribute()) {
@@ -96,8 +97,11 @@ EntityHandle UnitySceneParser::ParseEntity(rapidxml::xml_node<> *node, World *wo
             entityTransform->Scale(scale);
         } else if (attributeName == "mesh") {
             Model *mesh = Game::Instance()->resourceManager->GetModel(a->value());
-            entity.AddComponent(
-                    MeshInfo{mesh, Game::Instance()->resourceManager->GetMaterial<ColorMaterial>("defaultMat")});
+
+            MeshInfo meshInfo{mesh,Game::Instance()->resourceManager->GetMaterial<ColorMaterial>("defaultMat")};
+            meshInfo.model = mesh;
+            entity.AddComponent(meshInfo);
+            //meshInfo.SetMaterial( Game::Instance()->resourceManager->GetMaterial<ColorMaterial>("cyanMaterial"));
         }
 
     }
@@ -132,7 +136,9 @@ void UnitySceneParser::ParseComponents(rapidxml::xml_node<> *com, EntityHandle n
                 cam->farClipPlane = strtof(a->value(), 0);
             }
         }
-    } else if (strcmp(com->name(), "Light") == 0) {
+    }
+    else if (strcmp(com->name(), "Light") == 0)
+    {
         Light *light = newNode.AddComponent(Light{});
 
         for (rapidxml::xml_attribute<> *a = com->first_attribute();
@@ -168,5 +174,42 @@ void UnitySceneParser::ParseComponents(rapidxml::xml_node<> *com, EntityHandle n
 
         }
 
+    }
+    else if (strcmp(com->name(), "ColorMaterial") == 0)
+    {
+        ColorMaterial* colorMaterial;
+        for (rapidxml::xml_attribute<> *a = com->first_attribute();
+             a != nullptr;
+             a = a->next_attribute())
+        {
+            std::string attributeName = a->name();
+
+            if (attributeName == "materialName")
+            {
+                std::string value(a->value());
+                colorMaterial = Game::Instance()->resourceManager->GetMaterial<ColorMaterial>(value);
+            }
+            else if(attributeName == "mainColor")
+            {
+                glm::vec3 color;
+                sscanf(a->value(), "(%f,%f,%f)", &color.x, &color.y, &color.z);
+                colorMaterial->mainColor = color;
+            }
+            else if(attributeName == "specularColor")
+            {
+                glm::vec3 color;
+                sscanf(a->value(), "(%f,%f,%f)", &color.x, &color.y, &color.z);
+                colorMaterial->specularColor = color;
+            }
+            else if(attributeName == "shininess")
+            {
+                colorMaterial->shininess = strtof(a->value(), 0);
+            }
+            else if(attributeName == "ambientIntensity")
+            {
+                colorMaterial->ambientIntensity = strtof(a->value(), 0);
+            }
+        }
+        newNode.GetComponent<MeshInfo>().component->material = colorMaterial;
     }
 }

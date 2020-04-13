@@ -34,7 +34,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Crow.dir/Engine/Rendering/Sprite.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Rendering/Texture.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o"
-  "CMakeFiles/Crow.dir/Engine/Systems/BufferMaterialsSystem.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o"
