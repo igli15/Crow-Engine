@@ -13,6 +13,7 @@
 #include "../Rendering/Materials/ColorMaterial.h"
 #include "../Components/Camera.h"
 #include "../Components/Light.h"
+#include "../Rendering/Materials/TranslucentColorMat.h"
 
 void UnitySceneParser::ParseUnityScene(const std::string &fileName, World *currentWorld)
 {
@@ -220,5 +221,69 @@ void UnitySceneParser::ParseComponents(rapidxml::xml_node<> *com, EntityHandle n
             }
         }
         newNode.GetComponent<MeshInfo>().component->material = colorMaterial;
+    }
+    else if (strcmp(com->name(), "TranslucentMaterial") == 0)
+    {
+        TranslucentColorMat* translucentColorMat;
+        for (rapidxml::xml_attribute<> *a = com->first_attribute();
+             a != nullptr;
+             a = a->next_attribute())
+        {
+            std::string attributeName = a->name();
+
+            if (attributeName == "materialName")
+            {
+                std::string value(a->value());
+                auto material = Game::Instance()->resourceManager->GetMaterial<TranslucentColorMat>(value);
+                if(material == nullptr)
+                {
+                    translucentColorMat = Game::Instance()->resourceManager->CreateMaterial<TranslucentColorMat>(value);
+                }
+                else
+                {
+                    translucentColorMat = material;
+                }
+
+            }
+            else if(attributeName == "mainColor")
+            {
+                glm::vec3 color;
+                sscanf(a->value(), "(%f,%f,%f)", &color.x, &color.y, &color.z);
+                translucentColorMat->mainColor = color;
+            }
+            else if(attributeName == "specularColor")
+            {
+                glm::vec3 color;
+                sscanf(a->value(), "(%f,%f,%f)", &color.x, &color.y, &color.z);
+                translucentColorMat->specularColor = color;
+            }
+            else if(attributeName == "translucencyColor")
+            {
+                glm::vec3 color;
+                sscanf(a->value(), "(%f,%f,%f)", &color.x, &color.y, &color.z);
+                translucentColorMat->translucentColor = color;
+            }
+            else if(attributeName == "shininess")
+            {
+                translucentColorMat->shininess = strtof(a->value(), 0);
+            }
+            else if(attributeName == "ambientIntensity")
+            {
+                translucentColorMat->ambientIntensity = strtof(a->value(), 0);
+            }
+            else if(attributeName == "translucentPower")
+            {
+                translucentColorMat->translucentPower = strtof(a->value(), 0);
+            }
+            else if(attributeName == "translucentScale")
+            {
+                translucentColorMat->translucentScale = strtof(a->value(), 0);
+            }
+            else if(attributeName == "translucentDistortion")
+            {
+                translucentColorMat->translucentDistortion = strtof(a->value(), 0);
+            }
+        }
+        newNode.GetComponent<MeshInfo>().component->material = translucentColorMat;
     }
 }

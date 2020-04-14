@@ -60,10 +60,6 @@ void MeshRendererSystem::Render() {
     {
         AbstractMaterial* material = renderer->materialMap[pair.first];
 
-        ENGINE_LOG(material->name);
-        ENGINE_LOG(material->ID);
-        ENGINE_LOG(pair.second.size());
-
         material->GetShader()->Use();
         material->BufferShaderUniforms(camInverseMat, projection,cameraTransform.WorldPosition(), world);
         material->BufferMaterialUniforms();
@@ -71,7 +67,6 @@ void MeshRendererSystem::Render() {
         for (const auto& model : pair.second)
         {
             std::vector<glm::mat4>* modelMatricesPtr = m_modelIDtoMatricesMap[Hash(model->ID,material->ID)];
-            ENGINE_LOG(modelMatricesPtr->size());
             model->BindModelBuffer(*modelMatricesPtr);
             model->InstanceRenderMeshes(modelMatricesPtr->size());
         }
