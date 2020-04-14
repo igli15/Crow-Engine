@@ -120,8 +120,6 @@ public:
 private:
     std::array<T,MAX_ENTITIES> m_componentsArray;
 
-    //TODO: Change them to be a vector of tuples instead of a map. map will have a cache miss when trying to acces the key value pair.
-
     std::unordered_map<Entity,size_t> m_entityToIndexMap;
     std::unordered_map<size_t ,Entity> m_indexToEntityMap;
 

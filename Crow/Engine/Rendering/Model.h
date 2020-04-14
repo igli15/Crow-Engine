@@ -24,7 +24,6 @@ public:
 
     void Draw();
 
-//private:
     std::vector<Mesh> m_meshes;
 
     std::string directory;
@@ -37,6 +36,8 @@ public:
     void InstanceRenderMeshes(int amount);
     void BindModelBuffer(std::vector<glm::mat4>& models);
     int ID = -1;
+
+    int maxNumberOfModelInstances = 10000;
 };
 
 

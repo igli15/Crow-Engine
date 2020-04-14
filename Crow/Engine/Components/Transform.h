@@ -31,7 +31,6 @@ public:
     glm::vec3 LocalPosition();
     glm::vec3 WorldPosition();
 
-    //TODO Implement these
     void SetParent(Transform* transform);
     int GetChildCount();
 

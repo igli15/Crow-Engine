@@ -36,7 +36,7 @@ struct ComponentHandle {
     }
 
 
-    //TODO not really the best implementation now it just brute force removes the component
+
     void Destroy()
     {
         manager->RemoveComponentData(owner);

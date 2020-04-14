@@ -117,7 +117,7 @@ void Model::InstanceBufferMeshes()
         glBindBuffer(GL_ARRAY_BUFFER,m_meshes[meshIndex].IVBO);
 
         //TODO this 100000 here is the max nr of transformations per model maybe put it in a conts int or smth
-        glBufferData(GL_ARRAY_BUFFER,100000 * sizeof(glm::mat4), nullptr,GL_DYNAMIC_DRAW);
+        glBufferData(GL_ARRAY_BUFFER,maxNumberOfModelInstances * sizeof(glm::mat4), nullptr,GL_DYNAMIC_DRAW);
 
         glEnableVertexAttribArray(3);
         glVertexAttribPointer(3, 4, GL_FLOAT, GL_FALSE, sizeof(glm::mat4), (void *) 0);

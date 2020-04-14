@@ -73,7 +73,6 @@ public:
 
 private:
 
-    //TODO more maps here = more cache misses
     std::unordered_map<const char*,EntitySignature> m_signatures {};
     std::unordered_map<const char*,System*> m_systems {};
 };

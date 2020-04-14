@@ -107,7 +107,6 @@ void Window::ClearColor(float r, float g, float b, float a)
 }
 
 
-//TODO clean this mess up. to many calls to the maps get it once!
 void Window::InputKeyCallback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
     Input::KeyState state;
@@ -116,21 +115,18 @@ void Window::InputKeyCallback(GLFWwindow* window, int key, int scancode, int act
 
     if(action == GLFW_PRESS && keyIterator == Input::instance->m_keyMap.end())
     {
-        ENGINE_LOG("key Down");
         state = Input::KeyState::PRESSED;
-        Input::instance->m_keyMap[key] = state;
+        Input::instance->m_keyMap.insert(keyIterator,std::make_pair(key,state));
     }
     if(action == GLFW_PRESS && keyIterator != Input::instance->m_keyMap.end() && keyIterator->second == Input::KeyState::RELEASED)
     {
-        ENGINE_LOG("key Down");
         state = Input::KeyState::PRESSED;
-        Input::instance->m_keyMap[key] = state;
+        keyIterator->second = state;
     }
     else if(action == GLFW_RELEASE && keyIterator != Input::instance->m_keyMap.end())
     {
-        ENGINE_LOG("key up");
         state = Input::KeyState::RELEASED;
-        Input::instance->m_keyMap[key] = state;
+        keyIterator->second = state;
     }
 
 }

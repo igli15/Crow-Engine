@@ -40,11 +40,6 @@ public:
     std::string name;
     int ID = -1;
 
-    std::vector<glm::mat4> modelMatrices;
-
-    //TODO should be a renderable!
-    std::set<Model*> models;
-
 protected:
     Shader* m_shader = nullptr;
 };

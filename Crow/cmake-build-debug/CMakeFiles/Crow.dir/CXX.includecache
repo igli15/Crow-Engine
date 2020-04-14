@@ -24,6 +24,22 @@ string
 ../Events/MaterialAddedEvent.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/MaterialAddedEvent.h
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.cpp
+Game.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
+../Rendering/Shader.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
+../Rendering/Model.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
+glm/ext.hpp
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/glm/ext.hpp
+ResourceManager.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h
+Input.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
+Renderer.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Renderer.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
 ../Rendering/Window.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
@@ -198,10 +214,6 @@ Shader.h
 ../Feather/World.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
 
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h
-../AbstractMaterial.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
-
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Mesh.h
 glm/glm.hpp
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/glm/glm.hpp
@@ -232,6 +244,18 @@ glm/ext.hpp
 GL/glew.h
 -
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.cpp
+iostream
+-
+Window.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
+../Core/Input.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
+../Debug/Debug.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
+unordered_map
+-
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
 GL/glew.h
 -
@@ -239,42 +263,6 @@ GLFW/glfw3.h
 -
 ../Core/Input.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
-
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/MyGame.cpp
-MyGame.h
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/MyGame.h
-Worlds/RotatingGunsWorld.h
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/RotatingGunsWorld.h
-Worlds/TranslucentMaterialTestWorld.h
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/TranslucentMaterialTestWorld.h
-Worlds/XmlTestWorld.h
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/XmlTestWorld.h
-../Engine/Core/ResourceManager.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h
-../Engine/Rendering/Materials/ColorMaterial.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h
-Worlds/SpriteRenderingWorld.h
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/SpriteRenderingWorld.h
-
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/MyGame.h
-../Engine/Core/Game.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
-
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/RotatingGunsWorld.h
-../../Engine/Feather/World.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
-
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/SpriteRenderingWorld.h
-../../Engine/Feather/World.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
-
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/TranslucentMaterialTestWorld.h
-../../Engine/Feather/World.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
-
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/XmlTestWorld.h
-../../Engine/Feather/World.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
 
 /usr/local/include/GL/glew.h
 stddef.h
