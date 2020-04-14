@@ -21,16 +21,16 @@ void MyGame::LoadAssets()
     resourceManager->CreateMaterial<ColorMaterial>("defaultMat");
     //resourceManager->CreateMaterial<ColorMaterial>("cyanMaterial");
 
-    resourceManager->LoadModel((MODEL_PATH + "cube.obj"),"cube");
-    resourceManager->LoadModel((MODEL_PATH + "sphere.obj"),"sphere");
-    resourceManager->LoadModel((MODEL_PATH + "axis.obj"),"axis");
-    resourceManager->LoadModel((MODEL_PATH + "plane.obj"),"plane");
-    resourceManager->LoadModel((MODEL_PATH + "lanternCandle.obj"),"lantern");
-    resourceManager->LoadModel((MODEL_PATH + "gravestone.obj"),"gravestone");
-    resourceManager->LoadModel((MODEL_PATH + "skeleton.obj"),"skeleton");
-    resourceManager->LoadModel((MODEL_PATH + "pine.obj"),"pine");
-    resourceManager->LoadModel((MODEL_PATH + "ghost1.obj"),"ghost");
-    resourceManager->LoadModel((MODEL_PATH + "dragon.obj"),"dragon");
+    resourceManager->LoadModel(("cube.obj"),"cube");
+    resourceManager->LoadModel(("sphere.obj"),"sphere");
+    resourceManager->LoadModel(("axis.obj"),"axis");
+    resourceManager->LoadModel(("plane.obj"),"plane");
+    resourceManager->LoadModel(("lanternCandle.obj"),"lantern");
+    resourceManager->LoadModel(("gravestone.obj"),"gravestone");
+    resourceManager->LoadModel(("skeleton.obj"),"skeleton");
+    resourceManager->LoadModel(("pine.obj"),"pine");
+    resourceManager->LoadModel(("ghost1.obj"),"ghost");
+    resourceManager->LoadModel(("dragon.obj"),"dragon");
 
 }
 
@@ -40,9 +40,9 @@ void MyGame::Init()
 
     //Set the world here!
 
-    SetWorld(new XmlTestWorld());
+    //SetWorld(new XmlTestWorld());
     //SetWorld(new TranslucentMaterialTestWorld());
-    //SetWorld(new RotatingGunsWorld());
+    SetWorld(new RotatingGunsWorld());
     //SetWorld(new SpriteRenderingWorld());
 }
 

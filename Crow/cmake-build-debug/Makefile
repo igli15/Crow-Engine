@@ -717,6 +717,33 @@ Engine/Rendering/Materials/SpriteMaterial.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.s
 .PHONY : Engine/Rendering/Materials/SpriteMaterial.cpp.s
 
+Engine/Rendering/Materials/TextureMaterial.o: Engine/Rendering/Materials/TextureMaterial.cpp.o
+
+.PHONY : Engine/Rendering/Materials/TextureMaterial.o
+
+# target to build an object file
+Engine/Rendering/Materials/TextureMaterial.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o
+.PHONY : Engine/Rendering/Materials/TextureMaterial.cpp.o
+
+Engine/Rendering/Materials/TextureMaterial.i: Engine/Rendering/Materials/TextureMaterial.cpp.i
+
+.PHONY : Engine/Rendering/Materials/TextureMaterial.i
+
+# target to preprocess a source file
+Engine/Rendering/Materials/TextureMaterial.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.i
+.PHONY : Engine/Rendering/Materials/TextureMaterial.cpp.i
+
+Engine/Rendering/Materials/TextureMaterial.s: Engine/Rendering/Materials/TextureMaterial.cpp.s
+
+.PHONY : Engine/Rendering/Materials/TextureMaterial.s
+
+# target to generate assembly for a file
+Engine/Rendering/Materials/TextureMaterial.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.s
+.PHONY : Engine/Rendering/Materials/TextureMaterial.cpp.s
+
 Engine/Rendering/Materials/TranslucentColorMat.o: Engine/Rendering/Materials/TranslucentColorMat.cpp.o
 
 .PHONY : Engine/Rendering/Materials/TranslucentColorMat.o
@@ -1494,6 +1521,9 @@ help:
 	@echo "... Engine/Rendering/Materials/SpriteMaterial.o"
 	@echo "... Engine/Rendering/Materials/SpriteMaterial.i"
 	@echo "... Engine/Rendering/Materials/SpriteMaterial.s"
+	@echo "... Engine/Rendering/Materials/TextureMaterial.o"
+	@echo "... Engine/Rendering/Materials/TextureMaterial.i"
+	@echo "... Engine/Rendering/Materials/TextureMaterial.s"
 	@echo "... Engine/Rendering/Materials/TranslucentColorMat.o"
 	@echo "... Engine/Rendering/Materials/TranslucentColorMat.i"
 	@echo "... Engine/Rendering/Materials/TranslucentColorMat.s"

@@ -26,6 +26,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Font.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/SpriteMaterial.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/TextureMaterial.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/TranslucentColorMat.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Rendering/Materials/TranslucentColorMat.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Mesh.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Rendering/Mesh.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Rendering/Model.cpp.o"

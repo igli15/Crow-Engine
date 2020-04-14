@@ -31,7 +31,7 @@ void RotatingGunsWorld::Build()
 
 
     //Load the models
-    Model* gunModel = Game::Instance()->resourceManager->LoadModel((MODEL_PATH + "pistol.obj"),"gunModel");
+    Model* gunModel = Game::Instance()->resourceManager->LoadModel(("pistol.obj"),"gunModel");
 
     RegisterSystem<RotateSystem>();
     SetSystemSignature<RotateSystem,Transform,RotateComponent>();

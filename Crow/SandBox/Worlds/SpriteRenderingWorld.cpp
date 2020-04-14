@@ -20,7 +20,7 @@ void SpriteRenderingWorld::Build()
     cameraEntity.AddComponent(Camera{});
     cameraEntity.AddComponent(Transform{})->Translate(glm::vec3(0,0,0));
 
-    Texture* texture = Game::Instance()->resourceManager->LoadTexture(TEXTURE_PATH + "crowIcon.png","crowTexture");
+    Texture* texture = Game::Instance()->resourceManager->LoadTexture("crowIcon.png","crowTexture");
     Sprite* sprite = Game::Instance()->resourceManager->CreateSprite("crowSprite",texture);
     SpriteMaterial* spriteMaterial = Game::Instance()->resourceManager->CreateMaterial<SpriteMaterial>("spriteMat");
 

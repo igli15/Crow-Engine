@@ -25,7 +25,7 @@ Texture *ResourceManager::LoadTexture(const std::string &path, const std::string
     int width, height, nrChannels;
 
     stbi_set_flip_vertically_on_load(false);
-    unsigned char *data = stbi_load((path).data(), &width, &height, &nrChannels, 0);
+    unsigned char *data = stbi_load((TEXTURE_PATH + path).data(), &width, &height, &nrChannels, 0);
 
     if (!data)
     {
@@ -54,7 +54,7 @@ Shader* ResourceManager::CreateShader(const std::string &vertexPath, const std::
         throw;
     }
 
-    Shader * shader = new Shader(vertexPath, fragmentPath);
+    Shader * shader = new Shader(SHADER_PATH + vertexPath, SHADER_PATH + fragmentPath);
     m_shaders[name] = shader;
 
     Game::Instance()->renderer->allShaders.push_back(shader);
@@ -90,7 +90,7 @@ Shader *ResourceManager::GetShader(const std::string &name)
 
 Model *ResourceManager::LoadModel(const std::string &path, const std::string &name)
 {
-    Model *model = new Model(path.data());
+    Model *model = new Model((MODEL_PATH + path).data());
 
     auto iterator = m_models.find(name);
 
@@ -133,7 +133,7 @@ Font *ResourceManager::LoadFont(const std::string &path, const std::string &name
         throw;
     }
 
-    Font *font = new Font(path, 48);
+    Font *font = new Font(FONT_PATH + path, 48);
 
     m_fonts[name] = font;
 

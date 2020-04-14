@@ -18,8 +18,8 @@ Shader::Shader(const std::string& vertexPath,const std::string& fragmentPath)
 
     try
     {
-        vShaderFile.open(SHADER_PATH + vertexPath);
-        fShaderFile.open(SHADER_PATH + fragmentPath);
+        vShaderFile.open(vertexPath);
+        fShaderFile.open(fragmentPath);
         std::stringstream vShaderStream, fShaderStream;
         vShaderStream << vShaderFile.rdbuf();
         fShaderStream << fShaderFile.rdbuf();
@@ -30,7 +30,7 @@ Shader::Shader(const std::string& vertexPath,const std::string& fragmentPath)
     }
     catch(std::ifstream::failure e)
     {
-        std::cout<< SHADER_PATH + vertexPath<<std::endl;
+        std::cout<< vertexPath<<std::endl;
         std::cout << "ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ" << std::endl;
     }
 
