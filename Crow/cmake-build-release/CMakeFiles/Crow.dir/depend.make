@@ -822,9 +822,6 @@ CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: /usr/local/include/spdlog/spdlog.h
 CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Engine/Core/GameObject.cpp.o: ../Engine/Core/GameObject.cpp
-CMakeFiles/Crow.dir/Engine/Core/GameObject.cpp.o: ../Engine/Core/GameObject.h
-
 CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: ../Engine/Core/Input.cpp
 CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: ../Engine/Core/Input.h
 CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: ../Engine/Debug/Debug.h
@@ -1750,6 +1747,7 @@ CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: ../Engine/Feather/Type
 CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: ../Engine/Feather/World.h
 CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: ../Engine/Rendering/AbstractMaterial.h
 CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: ../Engine/Rendering/Materials/ColorMaterial.h
+CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: ../Engine/Rendering/Materials/TranslucentColorMat.h
 CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: ../Engine/Rendering/Mesh.h
 CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: ../Engine/Rendering/Model.h
 CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: ../Engine/Rendering/Shader.h

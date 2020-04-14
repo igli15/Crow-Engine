@@ -10,14 +10,25 @@
 #include "../Rendering/Sprite.h"
 
 
-Texture *ResourceManager::LoadTexture(const std::string &path, const std::string &name) {
+Texture *ResourceManager::LoadTexture(const std::string &path, const std::string &name)
+{
+
+    auto iterator = m_textures.find(name);
+
+    if(iterator != m_textures.end())
+    {
+        ENGINE_LOG_ERROR("There is already a texture with name: " + name);
+        throw;
+    }
+
     Texture *texture = new Texture();
     int width, height, nrChannels;
 
     stbi_set_flip_vertically_on_load(false);
     unsigned char *data = stbi_load((path).data(), &width, &height, &nrChannels, 0);
 
-    if (!data) {
+    if (!data)
+    {
         ENGINE_LOG_ERROR("There is no texture in path: " + path);
     }
 
@@ -27,6 +38,7 @@ Texture *ResourceManager::LoadTexture(const std::string &path, const std::string
     texture->nrOfChannels = nrChannels;
 
     texture->Generate(width,height,data);
+
     m_textures[name] = texture;
 
     return texture;
@@ -38,7 +50,7 @@ Shader* ResourceManager::CreateShader(const std::string &vertexPath, const std::
 
     if(iterator != m_shaders.end())
     {
-        ENGINE_LOG_CRITICAL("Shader with that name is already created!");
+        ENGINE_LOG_CRITICAL("There is already a shader with name: " + name);
         throw;
     }
 
@@ -50,31 +62,41 @@ Shader* ResourceManager::CreateShader(const std::string &vertexPath, const std::
     return shader;
 }
 
-Texture *ResourceManager::GetTexture(const std::string &name) {
+Texture *ResourceManager::GetTexture(const std::string &name)
+{
+    auto iterator = m_textures.find(name);
 
-    if (m_textures.find(name) == m_textures.end()) {
-        ENGINE_LOG_ERROR("There is no Texture with that name!");
+    if (iterator == m_textures.end())
+    {
+        ENGINE_LOG_ERROR("There is no Texture with name: " + name);
+        return nullptr;
     }
 
-    return m_textures[name];
+    return iterator->second;
 }
 
-Shader *ResourceManager::GetShader(const std::string &name) {
-    if (m_shaders.find(name) == m_shaders.end()) {
-        ENGINE_LOG_ERROR("There is no Shader with that name!");
+Shader *ResourceManager::GetShader(const std::string &name)
+{
+    auto iterator = m_shaders.find(name);
+
+    if (iterator == m_shaders.end())
+    {
+        ENGINE_LOG_ERROR("There is no Shader with name: " + name);
+        return nullptr;
     }
 
-    return m_shaders[name];
+    return iterator->second;
 }
 
-Model *ResourceManager::LoadModel(const std::string &path, const std::string &name) {
+Model *ResourceManager::LoadModel(const std::string &path, const std::string &name)
+{
     Model *model = new Model(path.data());
 
     auto iterator = m_models.find(name);
 
     if (iterator != m_models.end())
     {
-        ENGINE_LOG_CRITICAL("Model with that name already exists!");
+        ENGINE_LOG_ERROR("There is already a model with name: " + name);
         throw;
     }
     else
@@ -89,14 +111,28 @@ Model *ResourceManager::LoadModel(const std::string &path, const std::string &na
 }
 
 Model *ResourceManager::GetModel(const std::string &name) {
-    if (m_models.find(name) == m_models.end()) {
-        ENGINE_LOG_ERROR("There is no Model with that name!");
+
+    auto iterator = m_models.find(name);
+
+    if (iterator == m_models.end())
+    {
+        ENGINE_LOG_ERROR("There is no Model with name: " + name);
+        return nullptr;
     }
 
-    return m_models[name];
+    return iterator->second;
 }
 
-Font *ResourceManager::LoadFont(const std::string &path, const std::string &name) {
+Font *ResourceManager::LoadFont(const std::string &path, const std::string &name)
+{
+    auto iterator = m_fonts.find(name);
+
+    if (iterator != m_fonts.end())
+    {
+        ENGINE_LOG_ERROR("There is already a font with name: " + name);
+        throw;
+    }
+
     Font *font = new Font(path, 48);
 
     m_fonts[name] = font;
@@ -105,23 +141,29 @@ Font *ResourceManager::LoadFont(const std::string &path, const std::string &name
 }
 
 Font *ResourceManager::GetFont(const std::string &name) {
-    if (m_fonts.find(name) == m_fonts.end()) {
-        ENGINE_LOG_ERROR("There is no Font with that name!");
+
+    auto iterator = m_fonts.find(name);
+    if (iterator == m_fonts.end())
+    {
+        ENGINE_LOG_ERROR("There is no Font with name: " + name);
+        return nullptr;
     }
 
-    return m_fonts[name];
+    return iterator->second;
 }
 
-const std::map<std::string, Font *> &ResourceManager::InternalGetFontMap() {
+const std::map<std::string, Font *> &ResourceManager::InternalGetFontMap()
+{
     return m_fonts;
 }
 
 Sprite *ResourceManager::CreateSprite(const std::string &name, Texture *texture)
 {
+    auto iterator = m_sprites.find(name);
 
-    if (m_sprites.find(name) != m_sprites.end())
+    if (iterator != m_sprites.end())
     {
-        ENGINE_LOG_ERROR("There is already a  Sprite with that name!");
+        ENGINE_LOG_ERROR("There is already a sprite with name: " + name);
         throw;
     }
 
@@ -137,10 +179,13 @@ Sprite *ResourceManager::CreateSprite(const std::string &name, Texture *texture)
 
 Sprite *ResourceManager::GetSprite(const std::string &name)
 {
-    if (m_sprites.find(name) == m_sprites.end())
+    auto iterator = m_sprites.find(name);
+
+    if (iterator == m_sprites.end())
     {
-        ENGINE_LOG_ERROR("There is no Sprite with that name!");
+        ENGINE_LOG_ERROR("There is no sprite with name: " + name);
+        return nullptr;
     }
 
-    return m_sprites[name];
+    return iterator->second;
 }

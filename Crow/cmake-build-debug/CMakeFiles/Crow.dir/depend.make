@@ -822,9 +822,6 @@ CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: /usr/local/include/spdlog/spdlog.h
 CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Engine/Core/GameObject.cpp.o: ../Engine/Core/GameObject.cpp
-CMakeFiles/Crow.dir/Engine/Core/GameObject.cpp.o: ../Engine/Core/GameObject.h
-
 CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: ../Engine/Core/Input.cpp
 CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: ../Engine/Core/Input.h
 CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: ../Engine/Debug/Debug.h

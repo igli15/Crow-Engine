@@ -14,18 +14,6 @@ Engine/Debug/Debug.h
 string
 -
 
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.h
-glm/glm.hpp
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/glm/glm.hpp
-glm/gtx/projection.hpp
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/glm/gtx/projection.hpp
-glm/gtc/matrix_transform.hpp
--
-
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h
-glm/glm.hpp
--
-
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
 ../Rendering/Model.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
@@ -35,18 +23,6 @@ glm/glm.hpp
 /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
 ../Events/MaterialAddedEvent.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/MaterialAddedEvent.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
-glm/glm.hpp
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/glm/glm.hpp
-../Feather/Types.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
-glm/gtc/quaternion.hpp
--
-glm/gtx/quaternion.hpp
--
-vector
--
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
 ../Rendering/Window.h
@@ -101,38 +77,6 @@ spdlog/sinks/stdout_color_sinks.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/spdlog/sinks/stdout_color_sinks.h
 memory
 -
-
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Editor/UnitySceneParser.cpp
-fstream
--
-UnitySceneParser.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Editor/UnitySceneParser.h
-../Feather/World.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
-../Components/Transform.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
-../Rendering/Model.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
-../Core/Game.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
-../Components/MeshInfo.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
-../Core/ResourceManager.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h
-../Rendering/Materials/ColorMaterial.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h
-../Components/Camera.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.h
-../Components/Light.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Editor/UnitySceneParser.h
-string
--
-../../Plugins/RapidXML/rapidxml.hpp
-/Users/igli/Desktop/Crow Engine/Crow/Plugins/RapidXML/rapidxml.hpp
-../Feather/EntityHandle.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
 
@@ -201,12 +145,6 @@ ComponentHandle.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/CustomTypeID.h
 numeric
 -
-
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
-Types.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
-World.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityManager.h
 queue
@@ -301,16 +239,6 @@ GLFW/glfw3.h
 -
 ../Core/Input.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Plugins/RapidXML/rapidxml.hpp
-cstdlib
--
-cassert
--
-new
--
-exception
--
 
 /Users/igli/Desktop/Crow Engine/Crow/SandBox/MyGame.cpp
 MyGame.h

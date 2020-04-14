@@ -51,7 +51,7 @@ public:
 
         if(iterator != m_materials.end())
         {
-            ENGINE_LOG_CRITICAL("Material with that name is already created!");
+            ENGINE_LOG_ERROR("There is already a material with name: " + matName);
             throw;
         }
 
@@ -73,7 +73,7 @@ public:
     {
         if(m_materials.find(matName) == m_materials.end())
         {
-            ENGINE_LOG_WARNING("There is no Material with that name!");
+            ENGINE_LOG_WARNING("There is no Material with name: " + matName);
             return  nullptr;
         }
 

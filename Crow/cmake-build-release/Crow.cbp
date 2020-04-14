@@ -120,12 +120,6 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/GameObject.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/GameObject.h">
-			<Option target="Crow"/>
-		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.cpp">
 			<Option target="Crow"/>
 		</Unit>

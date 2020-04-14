@@ -2,7 +2,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Crow.dir/Engine/Components/Camera.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o"
-  "CMakeFiles/Crow.dir/Engine/Core/GameObject.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o"

@@ -204,33 +204,6 @@ Engine/Core/Game.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Core/Game.cpp.s
 .PHONY : Engine/Core/Game.cpp.s
 
-Engine/Core/GameObject.o: Engine/Core/GameObject.cpp.o
-
-.PHONY : Engine/Core/GameObject.o
-
-# target to build an object file
-Engine/Core/GameObject.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Core/GameObject.cpp.o
-.PHONY : Engine/Core/GameObject.cpp.o
-
-Engine/Core/GameObject.i: Engine/Core/GameObject.cpp.i
-
-.PHONY : Engine/Core/GameObject.i
-
-# target to preprocess a source file
-Engine/Core/GameObject.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Core/GameObject.cpp.i
-.PHONY : Engine/Core/GameObject.cpp.i
-
-Engine/Core/GameObject.s: Engine/Core/GameObject.cpp.s
-
-.PHONY : Engine/Core/GameObject.s
-
-# target to generate assembly for a file
-Engine/Core/GameObject.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Core/GameObject.cpp.s
-.PHONY : Engine/Core/GameObject.cpp.s
-
 Engine/Core/Input.o: Engine/Core/Input.cpp.o
 
 .PHONY : Engine/Core/Input.o
@@ -1464,9 +1437,6 @@ help:
 	@echo "... Engine/Core/Game.o"
 	@echo "... Engine/Core/Game.i"
 	@echo "... Engine/Core/Game.s"
-	@echo "... Engine/Core/GameObject.o"
-	@echo "... Engine/Core/GameObject.i"
-	@echo "... Engine/Core/GameObject.s"
 	@echo "... Engine/Core/Input.o"
 	@echo "... Engine/Core/Input.i"
 	@echo "... Engine/Core/Input.s"
