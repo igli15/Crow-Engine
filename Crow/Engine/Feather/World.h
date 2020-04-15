@@ -29,6 +29,7 @@ public:
     void DestroyEntity(Entity entity);
     void ClearEntityGarbage();
 
+    /// Initializes all the registered systems
     void InitAllSystems();
     void UpdateAllSystems();
     void RenderAllSystems();

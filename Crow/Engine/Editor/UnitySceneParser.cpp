@@ -15,6 +15,7 @@
 #include "../Components/Light.h"
 #include "../Rendering/Materials/TranslucentColorMat.h"
 
+//TODO simplify functions by adding more
 void UnitySceneParser::ParseUnityScene(const std::string &fileName, World *currentWorld)
 {
     //Reads the xml file and gets the root node

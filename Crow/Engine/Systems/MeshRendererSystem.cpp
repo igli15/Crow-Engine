@@ -75,5 +75,5 @@ void MeshRendererSystem::Render() {
 
 int MeshRendererSystem::Hash(int x,int y)
 {
-    return 0.5 * (x+y) * (x+y+1) + y;
+    return  (x+y) * (x+y+1) / 2 + y;
 }
