@@ -37,6 +37,16 @@ Texture *ResourceManager::LoadTexture(const std::string &path, const std::string
     texture->height = height;
     texture->nrOfChannels = nrChannels;
 
+    if(nrChannels == 3)
+    {
+        texture->imageFormat = GL_RGB;
+        texture->internalFormat = GL_RGB;
+    } else if(nrChannels == 4)
+    {
+        texture->imageFormat = GL_RGBA;
+        texture->internalFormat = GL_RGBA;
+    }
+
     texture->Generate(width,height,data);
 
     m_textures[name] = texture;

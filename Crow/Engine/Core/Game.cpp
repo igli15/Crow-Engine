@@ -103,6 +103,8 @@ void Game::LoadAssets()
 {
     resourceManager->CreateShader("TextVertexShader.vs","TextFragmentShader.fs","textShader");
     resourceManager->LoadFont(("Roboto-Light.ttf"),"roboto");
+    resourceManager->LoadTexture("whiteTexture.png","whiteTexture");
+    resourceManager->LoadTexture("blackTexture.png","blackTexture");
 }
 
 void Game::InitFreeTypeLibrary()

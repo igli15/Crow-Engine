@@ -17,7 +17,7 @@ void MyGame::LoadAssets()
     resourceManager->CreateShader("TranslucentVertexShader.vs","TranslucentFragmentShader.fs","translucentShader");
     resourceManager->CreateShader("VertexShader.vs","FragmentShader.fs","litShader");
     resourceManager->CreateShader("SpriteVertexShader.vs","SpriteFragmentShader.fs","spriteShader");
-
+    resourceManager->CreateShader("TextureVertexShader.vs","TextureFragmentShader.fs","textureShader");
     resourceManager->CreateMaterial<ColorMaterial>("defaultMat");
     //resourceManager->CreateMaterial<ColorMaterial>("cyanMaterial");
 
@@ -32,6 +32,9 @@ void MyGame::LoadAssets()
     resourceManager->LoadModel(("ghost1.obj"),"ghost");
     resourceManager->LoadModel(("dragon.obj"),"dragon");
 
+    resourceManager->LoadTexture("container.png","containerTexture");
+    resourceManager->LoadTexture("containerSpecular.png","containerSpecTexture");
+
 }
 
 void MyGame::Init()
@@ -40,8 +43,8 @@ void MyGame::Init()
 
     //Set the world here!
 
-    SetWorld(new XmlTestWorld());
-    //SetWorld(new TranslucentMaterialTestWorld());
+    //SetWorld(new XmlTestWorld());
+    SetWorld(new TranslucentMaterialTestWorld());
     //SetWorld(new RotatingGunsWorld());
     //SetWorld(new SpriteRenderingWorld());
 }

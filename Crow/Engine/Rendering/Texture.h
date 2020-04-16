@@ -27,8 +27,8 @@ public:
     GLuint filterMin; // Filtering mode if texture pixels < screen pixels
     GLuint filterMax; // Filtering mode if texture pixels > screen pixels
 
-    Texture(GLuint pInternalFormat = GL_RGBA,GLuint pImageFormat = GL_RGBA, GLuint pWrapS = GL_REPEAT,GLuint pWrapT = GL_REPEAT,
-            GLuint pFilterMin = GL_LINEAR, GLuint pFilterMax = GL_LINEAR);
+    Texture(GLuint pInternalFormat = GL_RGB,GLuint pImageFormat = GL_RGB, GLuint pWrapS = GL_REPEAT,GLuint pWrapT = GL_REPEAT,
+            GLuint pFilterMin = GL_LINEAR_MIPMAP_LINEAR, GLuint pFilterMax = GL_LINEAR);
 
     void Generate(GLuint width, GLuint height, unsigned char* data);
     void Bind();

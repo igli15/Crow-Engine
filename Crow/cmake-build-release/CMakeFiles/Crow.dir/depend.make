@@ -4179,6 +4179,8 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o: /usr/local/
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o: /usr/local/include/spdlog/version.h
 
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: ../Crow.h
+CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: ../Engine/Components/Light.h
+CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: ../Engine/Components/Transform.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: ../Engine/EventQueue/Event.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: ../Engine/EventQueue/EventQueue.h
@@ -4198,6 +4200,7 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: ../Engine/
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: ../Engine/Rendering/Materials/TextureMaterial.cpp
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: ../Engine/Rendering/Materials/TextureMaterial.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: ../Engine/Rendering/Shader.h
+CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: ../Engine/Rendering/Texture.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: /usr/local/include/GL/glew.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: /usr/local/include/glm/common.hpp
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: /usr/local/include/glm/detail/_fixes.hpp
