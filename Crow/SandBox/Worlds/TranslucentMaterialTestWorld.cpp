@@ -50,9 +50,12 @@ void TranslucentMaterialTestWorld::Build()
     TextureMaterial* textureMaterial = resourceManager->CreateMaterial<TextureMaterial>("containerMat");
     Texture* containerDiffuse = resourceManager->GetTexture("containerTexture");
     Texture* containerSpecular = resourceManager->GetTexture("containerSpecTexture");
+    Texture* emission = resourceManager->GetTexture("matrixTexture");
     textureMaterial->diffuseTexture = containerDiffuse;
     textureMaterial->specularTexture = containerSpecular;
-    textureMaterial->shininess = 1;
+    textureMaterial->emissionTexture = emission;
+    textureMaterial->shininess = 128;
+    textureMaterial->emissionScale = 3;
 
     EntityHandle cameraEntity = CreateEntity();
     cameraEntity.AddComponent(Camera{});
@@ -103,7 +106,7 @@ void TranslucentMaterialTestWorld::Build()
     dirLightTransform->Rotate(-45,glm::vec3(1,0,0));
     dirLightTransform->Translate(glm::vec3(0,1,1));
     Light* dirLight = lightEntity.AddComponent(Light{glm::vec3(0.8,0.8,0.8)});
-    dirLight->intensity = 1;
+    dirLight->intensity = 0.2;
     dirLight->type = dirLight->DIRECTIONAL;
 
 

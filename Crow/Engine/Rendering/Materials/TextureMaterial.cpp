@@ -26,6 +26,7 @@ void TextureMaterial::Initialize()
 
     m_uDiffuseTexture = m_shader->GetUniformLocation("material.diffuseTexture");
     m_uSpecularTexture = m_shader->GetUniformLocation("material.specularTexture");
+    m_uEmissionTexture = m_shader->GetUniformLocation("material.emissionTexture");
 
     m_uMainColor = m_shader->GetUniformLocation("material.mainColor");
     m_uSpecularColor = m_shader->GetUniformLocation("material.specularColor");
@@ -37,6 +38,8 @@ void TextureMaterial::Initialize()
     m_uActiveDirLights =  m_shader->GetUniformLocation("activeDirLights");
     m_uActivePointLights =  m_shader->GetUniformLocation("activePointLights");
     m_uActiveSpotLights =  m_shader->GetUniformLocation("activeSpotLights");
+
+    m_uEmissionScale = m_shader->GetUniformLocation("material.emissionScale");
 
     std::string dirUniformString;
     for (int i = 0; i < m_dirLightsUniforms.size(); ++i)
@@ -189,11 +192,25 @@ void TextureMaterial::BufferMaterialUniforms()
         glUniform1i(m_uSpecularTexture, 1);
     }
 
+    if(emissionTexture != nullptr)
+    {
+        glActiveTexture(GL_TEXTURE2);
+        glBindTexture(GL_TEXTURE_2D, emissionTexture->ID);
+        glUniform1i(m_uEmissionTexture, 2);
+    }
+    else
+    {
+        glActiveTexture(GL_TEXTURE2);
+        glBindTexture(GL_TEXTURE_2D, m_blackTexture->ID);
+        glUniform1i(m_uEmissionTexture, 2);
+    }
+
 
     glUniform3fv(m_uMainColor,1,glm::value_ptr(mainColor));
     glUniform3fv(m_uSpecularColor,1,glm::value_ptr(specularColor));
     glUniform1f(m_uAmbientIntensity,ambientIntensity);
     glUniform1f(m_uShininess,shininess);
+    glUniform1f(m_uEmissionScale,emissionScale);
 
     glUniform3fv(m_uMainColor,1,glm::value_ptr(mainColor));
 }

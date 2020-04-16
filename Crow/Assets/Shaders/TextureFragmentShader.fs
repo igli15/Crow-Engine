@@ -47,10 +47,12 @@ struct Material
 {
     sampler2D diffuseTexture;
     sampler2D specularTexture;
+    sampler2D emissionTexture;
     vec3 mainColor;
     vec3 specularColor;
     float ambientIntensity;
     float shininess;
+    float emissionScale;
 };
 
 #define NR_DIR_LIGHTS 20
@@ -94,7 +96,8 @@ void main()
         result += CalcSpotLight(spotLights[i],norm,FragPos,viewDir) * spotLights[i].intensity;
     }
 
-    FragColor = vec4(result, 1.0);
+    vec3 emission = material.emissionScale * texture(material.emissionTexture,TexCoords).rgb;
+    FragColor = vec4(result + emission, 1.0);
 }
 
 vec3 CalcDirLight(DirLight light, vec3 normal, vec3 viewDir)

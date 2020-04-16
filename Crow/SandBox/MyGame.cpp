@@ -34,6 +34,8 @@ void MyGame::LoadAssets()
 
     resourceManager->LoadTexture("container.png","containerTexture");
     resourceManager->LoadTexture("containerSpecular.png","containerSpecTexture");
+    resourceManager->LoadTexture("crowIcon.png","crowTexture");
+    resourceManager->LoadTexture("matrix.jpg","matrixTexture");
 
 }
 

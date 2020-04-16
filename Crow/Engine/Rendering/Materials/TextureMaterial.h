@@ -28,9 +28,11 @@ public:
 
     float shininess = 16;
     float ambientIntensity = 0.1f;
+    float emissionScale = 1;
 
     Texture* diffuseTexture = nullptr;
     Texture* specularTexture = nullptr;
+    Texture* emissionTexture = nullptr;
 
 private:
 
@@ -50,6 +52,8 @@ private:
 
     GLint m_uDiffuseTexture;
     GLint m_uSpecularTexture;
+    GLint m_uEmissionTexture;
+    GLint m_uEmissionScale;
 
 
     struct DirLightUniformLocations
