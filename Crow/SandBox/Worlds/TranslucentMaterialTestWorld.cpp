@@ -48,8 +48,8 @@ void TranslucentMaterialTestWorld::Build()
     mat->shininess = 16;
 
     TextureMaterial* textureMaterial = resourceManager->CreateMaterial<TextureMaterial>("containerMat");
-    Texture* containerDiffuse = resourceManager->GetTexture("containerTexture");
-    Texture* containerSpecular = resourceManager->GetTexture("containerSpecTexture");
+    Texture* containerDiffuse = resourceManager->GetTexture("containerDiffuse");
+    Texture* containerSpecular = resourceManager->GetTexture("containerSpecular");
     Texture* emission = resourceManager->GetTexture("matrixTexture");
     textureMaterial->diffuseTexture = containerDiffuse;
     textureMaterial->specularTexture = containerSpecular;

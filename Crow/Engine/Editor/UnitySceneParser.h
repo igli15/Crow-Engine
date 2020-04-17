@@ -28,6 +28,7 @@ private:
     static void ParseCameraComponent(rapidxml::xml_node<>* node,EntityHandle entityHandle);
     static void ParseTranslucentMaterial(rapidxml::xml_node<>* node,EntityHandle entityHandle);
     static void ParseColorMaterial(rapidxml::xml_node<>* node,EntityHandle entityHandle);
+    static void ParseTextureMaterial(rapidxml::xml_node<>* node,EntityHandle entityHandle);
 
     //XML Util functions
     static glm::vec3 ScanVector3f(const char* charLine);

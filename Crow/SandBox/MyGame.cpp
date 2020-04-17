@@ -32,8 +32,9 @@ void MyGame::LoadAssets()
     resourceManager->LoadModel(("ghost1.obj"),"ghost");
     resourceManager->LoadModel(("dragon.obj"),"dragon");
 
-    resourceManager->LoadTexture("container.png","containerTexture");
-    resourceManager->LoadTexture("containerSpecular.png","containerSpecTexture");
+    resourceManager->LoadTexture("container.png","containerDiffuse");
+    resourceManager->LoadTexture("containerSpecular.png","containerSpecular");
+
     resourceManager->LoadTexture("crowIcon.png","crowTexture");
     resourceManager->LoadTexture("matrix.jpg","matrixTexture");
 

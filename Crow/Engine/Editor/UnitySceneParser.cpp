@@ -14,6 +14,7 @@
 #include "../Components/Camera.h"
 #include "../Components/Light.h"
 #include "../Rendering/Materials/TranslucentColorMat.h"
+#include "../Rendering/Materials/TextureMaterial.h"
 
 void UnitySceneParser::ParseUnityScene(const std::string &fileName, World *currentWorld)
 {
@@ -100,6 +101,10 @@ void UnitySceneParser::ParseComponents(rapidxml::xml_node<> *com, EntityHandle n
     else if (strcmp(com->name(), "TranslucentMaterial") == 0)
     {
         ParseTranslucentMaterial(com,newNode);
+    }
+    else if (strcmp(com->name(), "TextureMaterial") == 0)
+    {
+        ParseTextureMaterial(com,newNode);
     }
 }
 
@@ -305,6 +310,70 @@ void UnitySceneParser::ParseColorMaterial(rapidxml::xml_node<> *node, EntityHand
     entityHandle.GetComponent<MeshInfo>().component->material = colorMaterial;
 }
 
+void UnitySceneParser::ParseTextureMaterial(rapidxml::xml_node<> *node, EntityHandle entityHandle)
+{
+    TextureMaterial* textureMaterial;
+    for (rapidxml::xml_attribute<> *a = node->first_attribute();
+         a != nullptr;
+         a = a->next_attribute())
+    {
+        std::string attributeName = a->name();
+
+        if (attributeName == "materialName")
+        {
+            std::string value(a->value());
+            auto material = Game::Instance()->resourceManager->GetMaterial<TextureMaterial>(value);
+
+            if(material == nullptr)
+            {
+                textureMaterial = Game::Instance()->resourceManager->CreateMaterial<TextureMaterial>(value);
+            }
+            else
+            {
+                textureMaterial = material;
+            }
+
+        }
+        else if(attributeName == "diffuseTextureName")
+        {
+            std::string value(a->value());
+            textureMaterial->diffuseTexture = Game::Instance()->resourceManager->GetTexture(value);
+        }
+        else if(attributeName == "specularTextureName")
+        {
+            std::string value(a->value());
+            textureMaterial->specularTexture = Game::Instance()->resourceManager->GetTexture(value);
+        }
+        else if(attributeName == "emissionTextureName")
+        {
+            std::string value(a->value());
+            textureMaterial->emissionTexture = Game::Instance()->resourceManager->GetTexture(value);
+        }
+        else if(attributeName == "mainColor")
+        {
+            textureMaterial->mainColor = ScanVector3f(a->value());
+        }
+        else if(attributeName == "specularColor")
+        {
+            textureMaterial->specularColor = ScanVector3f(a->value());
+        }
+        else if(attributeName == "shininess")
+        {
+            textureMaterial->shininess = strtof(a->value(), 0);
+        }
+        else if(attributeName == "ambientIntensity")
+        {
+            textureMaterial->ambientIntensity = strtof(a->value(), 0);
+        }
+        else if(attributeName == "emissionScale")
+        {
+            textureMaterial->emissionScale = strtof(a->value(), 0);
+        }
+    }
+
+    entityHandle.GetComponent<MeshInfo>().component->material = textureMaterial;
+}
+
 
 glm::vec3 UnitySceneParser::ScanVector3f(const char *line)
 {
@@ -331,5 +400,6 @@ glm::quat UnitySceneParser::ScanQuaternion(const char *charLine)
 
     return quaternion;
 }
+
 
 

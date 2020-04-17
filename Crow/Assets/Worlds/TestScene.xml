@@ -19,7 +19,9 @@
     </Components>
   </GameObject>
   <GameObject name="Cube (1)" position="(10.6700, 1.4000, -18.5600)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="cube">
-    <Components />
+    <Components>
+      <TextureMaterial materialName="containerMat" diffuseTextureName="containerDiffuse" specularTextureName="containerSpecular" emissionTextureName="containerEmission" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+    </Components>
   </GameObject>
   <GameObject name="Sphere" position="(0.6300, 1.4000, -9.8100)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="sphere">
     <Components>
