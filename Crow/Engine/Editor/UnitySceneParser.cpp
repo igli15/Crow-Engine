@@ -15,7 +15,6 @@
 #include "../Components/Light.h"
 #include "../Rendering/Materials/TranslucentColorMat.h"
 
-//TODO simplify functions by adding more
 void UnitySceneParser::ParseUnityScene(const std::string &fileName, World *currentWorld)
 {
     //Reads the xml file and gets the root node
@@ -72,41 +71,7 @@ EntityHandle UnitySceneParser::ParseEntity(rapidxml::xml_node<> *node, World *wo
 {
     EntityHandle entity = world->CreateEntity();
 
-    Transform *entityTransform = entity.AddComponent(Transform{});
-
-
-    for (rapidxml::xml_attribute<> *a = node->first_attribute();
-         a != nullptr;
-         a = a->next_attribute()) {
-        std::string attributeName = a->name();
-
-        if (attributeName == "position") {
-            glm::vec3 pos;
-            //seperate the value into 3 floats anf buffer them to pos vector...
-            sscanf(a->value(), "(%f,%f,%f)", &pos.x, &pos.y, &pos.z);
-            entityTransform->SetLocalPosition(pos);
-        } else if (attributeName == "rotation") {
-            glm::quat rot;
-            //seperate the value into 4 floats anf buffer them to quaternion...
-            sscanf(a->value(), "(%f,%f,%f,%f)", &rot.x, &rot.y, &rot.z, &rot.w);
-            //sscanf(a->value(), "(%f,%f,%f,%f)", &rot.y, &rot.x, &rot.w, &rot.z);
-            entityTransform->Rotate(rot);
-            //entityTransform->Rotate(glm::angle(rot),glm::axis(rot));
-        } else if (attributeName == "scale") {
-            glm::vec3 scale;
-            //seperate the value into 3 floats anf buffer them to scale vector...
-            sscanf(a->value(), "(%f,%f,%f)", &scale.x, &scale.y, &scale.z);
-            entityTransform->Scale(scale);
-        } else if (attributeName == "mesh") {
-            Model *mesh = Game::Instance()->resourceManager->GetModel(a->value());
-
-            MeshInfo meshInfo{mesh,Game::Instance()->resourceManager->GetMaterial<ColorMaterial>("defaultMat")};
-            meshInfo.model = mesh;
-            entity.AddComponent(meshInfo);
-            //meshInfo.SetMaterial( Game::Instance()->resourceManager->GetMaterial<ColorMaterial>("cyanMaterial"));
-        }
-
-    }
+    ParseEntityCore(node,entity);
 
     if (strcmp(node->first_node()->name(), "Components") == 0) {
         rapidxml::xml_node<> *compNode = node->first_node();
@@ -120,171 +85,251 @@ EntityHandle UnitySceneParser::ParseEntity(rapidxml::xml_node<> *node, World *wo
 
 void UnitySceneParser::ParseComponents(rapidxml::xml_node<> *com, EntityHandle newNode)
 {
-    if (strcmp(com->name(), "Camera") == 0) {
-
-        Camera *cam = newNode.AddComponent(Camera{});
-
-        for (rapidxml::xml_attribute<> *a = com->first_attribute();
-             a != nullptr;
-             a = a->next_attribute()) {
-            std::string attributeName = a->name();
-            if (attributeName == "FOV") {
-                cam->FOV = strtof(a->value(), 0);
-            } else if (attributeName == "aspectRatio") {
-                cam->aspectRatio = strtof(a->value(), 0);
-            } else if (attributeName == "nearClipPlane") {
-                cam->nearClipPlane = strtof(a->value(), 0);
-            } else if (attributeName == "farClipPlane") {
-                cam->farClipPlane = strtof(a->value(), 0);
-            }
-        }
+    if (strcmp(com->name(), "Camera") == 0)
+    {
+        ParseCameraComponent(com,newNode);
     }
     else if (strcmp(com->name(), "Light") == 0)
     {
-        Light *light = newNode.AddComponent(Light{});
-
-        for (rapidxml::xml_attribute<> *a = com->first_attribute();
-             a != nullptr;
-             a = a->next_attribute()) {
-            std::string attributeName = a->name();
-            if (attributeName == "type") {
-                std::string value(a->value());
-                if (value == "DIRECTIONAL") {
-                    light->type = Light::DIRECTIONAL;
-                } else if (value == "POINT") {
-                    light->type = Light::POINT;
-                } else if (value == "SPOT") {
-                    light->type = Light::SPOT;
-                }
-            } else if (attributeName == "color") {
-                glm::vec3 color;
-                sscanf(a->value(), "(%f,%f,%f)", &color.x, &color.y, &color.z);
-                light->color = color;
-            } else if (attributeName == "intensity") {
-                light->intensity = strtof(a->value(), 0);
-            } else if (attributeName == "attenuationConstants") {
-                glm::vec3 consts;
-                sscanf(a->value(), "(%f,%f,%f)", &consts.x, &consts.y, &consts.z);
-                light->constant = consts.x;
-                light->linear = consts.y;
-                light->quadratic = consts.z;
-            } else if (attributeName == "cutoffAngle") {
-                light->cutoff = strtof(a->value(), 0);
-            } else if (attributeName == "outercutoffAngle") {
-                light->outerCutoff = strtof(a->value(), 0);
-            }
-
-        }
-
+        ParseLightComponent(com, newNode);
     }
     else if (strcmp(com->name(), "ColorMaterial") == 0)
     {
-        ColorMaterial* colorMaterial;
-        for (rapidxml::xml_attribute<> *a = com->first_attribute();
-             a != nullptr;
-             a = a->next_attribute())
-        {
-            std::string attributeName = a->name();
-
-            if (attributeName == "materialName")
-            {
-                std::string value(a->value());
-                auto material = Game::Instance()->resourceManager->GetMaterial<ColorMaterial>(value);
-                if(material == nullptr)
-                {
-                    colorMaterial = Game::Instance()->resourceManager->CreateMaterial<ColorMaterial>(value);
-                }
-                else
-                {
-                    colorMaterial = material;
-                }
-
-            }
-            else if(attributeName == "mainColor")
-            {
-                glm::vec3 color;
-                sscanf(a->value(), "(%f,%f,%f)", &color.x, &color.y, &color.z);
-                colorMaterial->mainColor = color;
-            }
-            else if(attributeName == "specularColor")
-            {
-                glm::vec3 color;
-                sscanf(a->value(), "(%f,%f,%f)", &color.x, &color.y, &color.z);
-                colorMaterial->specularColor = color;
-            }
-            else if(attributeName == "shininess")
-            {
-                colorMaterial->shininess = strtof(a->value(), 0);
-            }
-            else if(attributeName == "ambientIntensity")
-            {
-                colorMaterial->ambientIntensity = strtof(a->value(), 0);
-            }
-        }
-        newNode.GetComponent<MeshInfo>().component->material = colorMaterial;
+        ParseColorMaterial(com,newNode);
     }
     else if (strcmp(com->name(), "TranslucentMaterial") == 0)
     {
-        TranslucentColorMat* translucentColorMat;
-        for (rapidxml::xml_attribute<> *a = com->first_attribute();
-             a != nullptr;
-             a = a->next_attribute())
-        {
-            std::string attributeName = a->name();
-
-            if (attributeName == "materialName")
-            {
-                std::string value(a->value());
-                auto material = Game::Instance()->resourceManager->GetMaterial<TranslucentColorMat>(value);
-                if(material == nullptr)
-                {
-                    translucentColorMat = Game::Instance()->resourceManager->CreateMaterial<TranslucentColorMat>(value);
-                }
-                else
-                {
-                    translucentColorMat = material;
-                }
-
-            }
-            else if(attributeName == "mainColor")
-            {
-                glm::vec3 color;
-                sscanf(a->value(), "(%f,%f,%f)", &color.x, &color.y, &color.z);
-                translucentColorMat->mainColor = color;
-            }
-            else if(attributeName == "specularColor")
-            {
-                glm::vec3 color;
-                sscanf(a->value(), "(%f,%f,%f)", &color.x, &color.y, &color.z);
-                translucentColorMat->specularColor = color;
-            }
-            else if(attributeName == "translucencyColor")
-            {
-                glm::vec3 color;
-                sscanf(a->value(), "(%f,%f,%f)", &color.x, &color.y, &color.z);
-                translucentColorMat->translucentColor = color;
-            }
-            else if(attributeName == "shininess")
-            {
-                translucentColorMat->shininess = strtof(a->value(), 0);
-            }
-            else if(attributeName == "ambientIntensity")
-            {
-                translucentColorMat->ambientIntensity = strtof(a->value(), 0);
-            }
-            else if(attributeName == "translucentPower")
-            {
-                translucentColorMat->translucentPower = strtof(a->value(), 0);
-            }
-            else if(attributeName == "translucentScale")
-            {
-                translucentColorMat->translucentScale = strtof(a->value(), 0);
-            }
-            else if(attributeName == "translucentDistortion")
-            {
-                translucentColorMat->translucentDistortion = strtof(a->value(), 0);
-            }
-        }
-        newNode.GetComponent<MeshInfo>().component->material = translucentColorMat;
+        ParseTranslucentMaterial(com,newNode);
     }
 }
+
+void UnitySceneParser::ParseEntityCore(rapidxml::xml_node<> *node, EntityHandle entityHandle)
+{
+    Transform *entityTransform = entityHandle.AddComponent(Transform{});
+
+    for (rapidxml::xml_attribute<> *a = node->first_attribute();
+         a != nullptr;
+         a = a->next_attribute()) {
+        std::string attributeName = a->name();
+
+        if (attributeName == "position")
+        {
+            glm::vec3 pos = ScanVector3f(a->value());
+            entityTransform->SetLocalPosition(pos);
+        }
+        else if (attributeName == "rotation")
+        {
+            glm::quat rot = ScanQuaternion(a->value());
+            entityTransform->Rotate(rot);
+            //entityTransform->Rotate(glm::angle(rot),glm::axis(rot));
+        }
+        else if (attributeName == "scale")
+        {
+            glm::vec3 scale = ScanVector3f(a->value());;
+            entityTransform->Scale(scale);
+        }
+        else if (attributeName == "mesh")
+        {
+            Model *mesh = Game::Instance()->resourceManager->GetModel(a->value());
+
+            MeshInfo meshInfo{mesh,Game::Instance()->resourceManager->GetMaterial<ColorMaterial>("defaultMat")};
+            meshInfo.model = mesh;
+            entityHandle.AddComponent(meshInfo);
+        }
+
+    }
+}
+
+
+void UnitySceneParser::ParseLightComponent(rapidxml::xml_node<> *node, EntityHandle entityHandle)
+{
+    Light *light = entityHandle.AddComponent(Light{});
+
+    for (rapidxml::xml_attribute<> *a = node->first_attribute();
+         a != nullptr;
+         a = a->next_attribute()) {
+        std::string attributeName = a->name();
+        if (attributeName == "type") {
+            std::string value(a->value());
+            if (value == "DIRECTIONAL") {
+                light->type = Light::DIRECTIONAL;
+            } else if (value == "POINT") {
+                light->type = Light::POINT;
+            } else if (value == "SPOT") {
+                light->type = Light::SPOT;
+            }
+        } else if (attributeName == "color")
+        {
+            light->color = ScanVector3f(a->value());
+        } else if (attributeName == "intensity") {
+            light->intensity = strtof(a->value(), 0);
+        } else if (attributeName == "attenuationConstants")
+        {
+            glm::vec3 consts = ScanVector3f(a->value());
+            light->constant = consts.x;
+            light->linear = consts.y;
+            light->quadratic = consts.z;
+        } else if (attributeName == "cutoffAngle")
+        {
+            light->cutoff = strtof(a->value(), 0);
+        } else if (attributeName == "outercutoffAngle")
+        {
+            light->outerCutoff = strtof(a->value(), 0);
+        }
+
+    }
+
+}
+
+void UnitySceneParser::ParseCameraComponent(rapidxml::xml_node<> *node, EntityHandle entityHandle)
+{
+    Camera *cam = entityHandle.AddComponent(Camera{});
+
+    for (rapidxml::xml_attribute<> *a = node->first_attribute();
+         a != nullptr;
+         a = a->next_attribute()) {
+        std::string attributeName = a->name();
+        if (attributeName == "FOV") {
+            cam->FOV = strtof(a->value(), 0);
+        } else if (attributeName == "aspectRatio") {
+            cam->aspectRatio = strtof(a->value(), 0);
+        } else if (attributeName == "nearClipPlane") {
+            cam->nearClipPlane = strtof(a->value(), 0);
+        } else if (attributeName == "farClipPlane") {
+            cam->farClipPlane = strtof(a->value(), 0);
+        }
+    }
+}
+
+void UnitySceneParser::ParseTranslucentMaterial(rapidxml::xml_node<> *node, EntityHandle entityHandle)
+{
+    TranslucentColorMat* translucentColorMat;
+    for (rapidxml::xml_attribute<> *a = node->first_attribute();
+         a != nullptr;
+         a = a->next_attribute())
+    {
+        std::string attributeName = a->name();
+
+        if (attributeName == "materialName")
+        {
+            std::string value(a->value());
+            auto material = Game::Instance()->resourceManager->GetMaterial<TranslucentColorMat>(value);
+            if(material == nullptr)
+            {
+                translucentColorMat = Game::Instance()->resourceManager->CreateMaterial<TranslucentColorMat>(value);
+            }
+            else
+            {
+                translucentColorMat = material;
+            }
+
+        }
+        else if(attributeName == "mainColor")
+        {
+            translucentColorMat->mainColor = ScanVector3f(a->value());
+        }
+        else if(attributeName == "specularColor")
+        {
+            translucentColorMat->specularColor = ScanVector3f(a->value());
+        }
+        else if(attributeName == "translucencyColor")
+        {
+            translucentColorMat->translucentColor = ScanVector3f(a->value());
+        }
+        else if(attributeName == "shininess")
+        {
+            translucentColorMat->shininess = strtof(a->value(), 0);
+        }
+        else if(attributeName == "ambientIntensity")
+        {
+            translucentColorMat->ambientIntensity = strtof(a->value(), 0);
+        }
+        else if(attributeName == "translucentPower")
+        {
+            translucentColorMat->translucentPower = strtof(a->value(), 0);
+        }
+        else if(attributeName == "translucentScale")
+        {
+            translucentColorMat->translucentScale = strtof(a->value(), 0);
+        }
+        else if(attributeName == "translucentDistortion")
+        {
+            translucentColorMat->translucentDistortion = strtof(a->value(), 0);
+        }
+    }
+
+    entityHandle.GetComponent<MeshInfo>().component->material = translucentColorMat;
+}
+
+void UnitySceneParser::ParseColorMaterial(rapidxml::xml_node<> *node, EntityHandle entityHandle)
+{
+
+    ColorMaterial* colorMaterial;
+    for (rapidxml::xml_attribute<> *a = node->first_attribute();
+         a != nullptr;
+         a = a->next_attribute())
+    {
+        std::string attributeName = a->name();
+
+        if (attributeName == "materialName")
+        {
+            std::string value(a->value());
+            auto material = Game::Instance()->resourceManager->GetMaterial<ColorMaterial>(value);
+            if(material == nullptr)
+            {
+                colorMaterial = Game::Instance()->resourceManager->CreateMaterial<ColorMaterial>(value);
+            }
+            else
+            {
+                colorMaterial = material;
+            }
+
+        }
+        else if(attributeName == "mainColor")
+        {
+            colorMaterial->mainColor = ScanVector3f(a->value());
+        }
+        else if(attributeName == "specularColor")
+        {
+            colorMaterial->specularColor = ScanVector3f(a->value());
+        }
+        else if(attributeName == "shininess")
+        {
+            colorMaterial->shininess = strtof(a->value(), 0);
+        }
+        else if(attributeName == "ambientIntensity")
+        {
+            colorMaterial->ambientIntensity = strtof(a->value(), 0);
+        }
+    }
+    entityHandle.GetComponent<MeshInfo>().component->material = colorMaterial;
+}
+
+
+glm::vec3 UnitySceneParser::ScanVector3f(const char *line)
+{
+    glm::vec3 vector = glm::vec3(0);
+    int elementsScaned = sscanf(line, "(%f,%f,%f)", &vector.x, &vector.y, &vector.z);
+    if(elementsScaned < 3)
+    {
+        ENGINE_LOG_ERROR("Parser could not scan vector3!");
+        throw;
+    }
+
+    return vector;
+}
+
+glm::quat UnitySceneParser::ScanQuaternion(const char *charLine)
+{
+    glm::quat quaternion;
+    int elementsScaned = sscanf(charLine, "(%f,%f,%f,%f)", &quaternion.x, &quaternion.y, &quaternion.z,&quaternion.w);
+    if(elementsScaned < 4)
+    {
+        ENGINE_LOG_ERROR("Parser could not scan quaternion!");
+        throw;
+    }
+
+    return quaternion;
+}
+
+

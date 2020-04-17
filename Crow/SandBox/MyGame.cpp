@@ -45,8 +45,8 @@ void MyGame::Init()
 
     //Set the world here!
 
-    //SetWorld(new XmlTestWorld());
-    SetWorld(new TranslucentMaterialTestWorld());
+    SetWorld(new XmlTestWorld());
+    //SetWorld(new TranslucentMaterialTestWorld());
     //SetWorld(new RotatingGunsWorld());
     //SetWorld(new SpriteRenderingWorld());
 }
