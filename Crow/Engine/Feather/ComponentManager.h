@@ -10,27 +10,30 @@
 #include "ComponentArray.h"
 #include "ComponentHandle.h"
 
+
+///"ComponentManager" Keeps track of all "ComponentArrays" and notifies them if an entity got removed from the world
+///All the ComponentArrays pointers are stored in an array and the location of the arrays is their type ID.
 class ComponentManager {
 
 public:
 
-    /*
-    template <typename T>
-    void RegisterComponent();
-
-    template <typename T>
-    ComponentType GetComponentType();
-     */
-
+    ///Finds an component array of Type "T" and updates it correctly with the new entity and component
+    ///@param entity the entity which the component will be added to.
+    ///@param component the component that's going to be added.
+    ///@return a pointer to the added component
     template <typename T>
     T* AddComponent(Entity entity,T component);
 
     template <typename T>
     void RemoveComponent(Entity entity);
 
+    ///Finds an component array of Type "T" and remove the component
+    ///@param entity the entity which the component will be removed from
     template <typename T>
     T& GetComponent(Entity entity);
 
+    ///Notifies all the active component arrays if an Entity got destroyed
+    ///and if so update them accordingly
     void OnEntityDestroyed(Entity entity)
     {
         for (int i = 0; i<arrayCount ; ++i)
@@ -42,12 +45,16 @@ public:
         }
     }
 
+    ///Get an component array of a specified type "T"
     template <typename T>
     ComponentArray<T>* GetComponentArray();
 
 private:
 
+    ///All the component array pointers. size = max number of components
     std::array<IComponentArray*,MAX_COMPONENTS> m_allComponentArrays;
+
+    ///The active count for the "m_allComponentArrays" array.
     int arrayCount = 0;
 };
 

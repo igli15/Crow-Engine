@@ -8,9 +8,10 @@
 #include <numeric>
 
 
-//Create a custom id for every TypeDummy
-//For example if you give it one "TypeDummy" every "Type" that gets the index starts from 0 amd goes up.
-
+///Create a custom id for every TypeDummy
+///For example if you give it one "TypeDummy" every "Type" that gets the index starts from 0 amd goes up.
+///Useful for generating type ids without the need of inheritance.
+///If you need a new seed of types just provide a new type dummy.
 template <typename TypeDummy>
 class CustomTypeID {
 

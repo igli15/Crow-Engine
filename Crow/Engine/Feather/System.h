@@ -11,6 +11,9 @@
 
 class World;
 
+///The base class for all the systems
+///Provides virtual functions such as OnCreate,Init,Update,Render and PreRender.
+///It contains a set of entities which are the entities this sytems will run on (if any EntitySignature was provided to the system, if not set will be empty).
 class System {
 
 public:
