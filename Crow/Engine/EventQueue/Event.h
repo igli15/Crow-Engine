@@ -5,7 +5,7 @@
 #ifndef CROW_EVENT_H
 #define CROW_EVENT_H
 
-
+///Base class for all events.
 class Event {
 
 protected:

@@ -17,6 +17,10 @@ struct MeshInstancedData
     std::vector<glm::mat4>* modelMatrices;
 };
 
+
+///The Renderer class for now just hold references to renderable objects in the scene.
+///The actual rendering is done by the Rendering Systems.
+///All of this data might move to the systems too eventually.
 class Renderer {
 
 public:

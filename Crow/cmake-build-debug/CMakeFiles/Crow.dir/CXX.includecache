@@ -212,6 +212,10 @@ glm/ext/quaternion_float.hpp
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.cpp
+EventQueue.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
 MemberFunctionHandler.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
@@ -223,6 +227,10 @@ map
 -
 typeindex
 -
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.cpp
+MemberFunctionHandler.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
 Event.h
@@ -268,6 +276,10 @@ Event.h
 ../Rendering/AbstractMaterial.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.cpp
+ComponentArray.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
 ../../Crow.h
 /Users/igli/Desktop/Crow Engine/Crow/Crow.h
@@ -280,11 +292,19 @@ unordered_map
 ../Events/ComponentRemovedEvent.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.cpp
+ComponentHandle.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
 Types.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
 ComponentArray.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.cpp
+ComponentManager.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
 unordered_map

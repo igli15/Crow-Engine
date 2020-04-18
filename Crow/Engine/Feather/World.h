@@ -238,9 +238,7 @@ public:
     {
         auto x = {(QueryNeededEntities(componentArrays,currentList),0)...};
     }
-
-
-
+    
 
 private:
 

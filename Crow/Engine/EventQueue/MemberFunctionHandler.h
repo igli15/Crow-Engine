@@ -8,9 +8,11 @@
 
 #include "Event.h"
 
+///Base class for MemberFunctionHandler.
 class MemberFunctionBase
 {
 public:
+    ///Executes the callback function
     void Execute(Event* event)
     {
         Call(event);
@@ -21,6 +23,7 @@ private:
 };
 
 
+///Wrapper around the callback functions registered for events.
 template <class T, class EventType>
 class MemberFunctionHandler : public MemberFunctionBase {
 
