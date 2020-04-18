@@ -14,16 +14,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cf22dce6-4d69-43d0-a044-a31c5cbccc70" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Core/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Core/Game.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Core/Input.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Core/Input.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Core/Renderer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Core/Renderer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Core/ResourceManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Core/ResourceManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/EventQueue/Event.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/EventQueue/Event.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/EventQueue/EventQueue.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/EventQueue/EventQueue.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/EventQueue/MemberFunctionHandler.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/EventQueue/MemberFunctionHandler.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Feather/World.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Feather/World.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Crow" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Crow" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Components/Transform.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Components/Transform.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +213,7 @@
       <workItem from="1587119642764" duration="8226000" />
       <workItem from="1587134462177" duration="3804000" />
       <workItem from="1587204764748" duration="1159000" />
-      <workItem from="1587212328356" duration="4678000" />
+      <workItem from="1587212328356" duration="4940000" />
     </task>
     <servers />
   </component>
