@@ -56,22 +56,6 @@ glm/glm.hpp
 ../Rendering/Font.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Font.h
 
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.cpp
-Transform.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
-glm/gtx/vector_query.hpp
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/glm/gtx/vector_query.hpp
-glm/gtx/matrix_decompose.hpp
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/glm/gtx/matrix_decompose.hpp
-glm/gtx/quaternion.hpp
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/glm/gtx/quaternion.hpp
-glm/gtc/quaternion.hpp
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/glm/gtc/quaternion.hpp
-../Debug/Debug.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
-../Feather/World.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
-
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
 glm/glm.hpp
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/glm/glm.hpp
@@ -83,6 +67,22 @@ glm/gtx/quaternion.hpp
 -
 vector
 -
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.cpp
+Game.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
+../Rendering/Shader.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
+../Rendering/Model.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
+glm/ext.hpp
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/glm/ext.hpp
+ResourceManager.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h
+Input.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
+Renderer.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Renderer.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
 ../Rendering/Window.h
@@ -98,6 +98,10 @@ unordered_map
 ../Debug/Debug.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Renderer.cpp
+Renderer.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Renderer.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Renderer.h
 vector
 -
@@ -107,6 +111,18 @@ unordered_map
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
 ../Components/MeshInfo.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.cpp
+ResourceManager.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h
+../../Plugins/stb_image.h
+/Users/igli/Desktop/Crow Engine/Crow/Plugins/stb_image.h
+../../Crow.h
+/Users/igli/Desktop/Crow Engine/Crow/Crow.h
+../Rendering/Font.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Font.h
+../Rendering/Sprite.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Sprite.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h
 map
@@ -201,12 +217,6 @@ Event.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEvent.h
-../EventQueue/Event.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
-../Feather/EntityHandle.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionExitEvent.h
 ../EventQueue/Event.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
 ../Feather/EntityHandle.h
@@ -342,6 +352,14 @@ EntityManager.h
 ../Events/ComponentAddedEvent.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.cpp
+AbstractMaterial.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+../Core/Game.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
+../Core/ResourceManager.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
 glm/glm.hpp
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/glm/glm.hpp
@@ -373,6 +391,18 @@ ColorMaterial.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h
 ../AbstractMaterial.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/SpriteMaterial.cpp
+SpriteMaterial.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/SpriteMaterial.h
+../../Rendering/Shader.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
+../../Components/SpriteInfo.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/SpriteInfo.h
+../../Core/Game.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
+../../Core/ResourceManager.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/SpriteMaterial.h
 glm/glm.hpp
@@ -457,22 +487,6 @@ GLFW/glfw3.h
 -
 ../Core/Input.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/CollisionDetectionSystem.cpp
-CollisionDetectionSystem.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/CollisionDetectionSystem.h
-../Components/Transform.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
-../Feather/World.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
-../Components/SphereCollider.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/SphereCollider.h
-../Events/CollisionEvent.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEvent.h
-../Events/CollisionEnterEvent.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEnterEvent.h
-../Events/CollisionExitEvent.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionExitEvent.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/CollisionDetectionSystem.h
 ../Feather/System.h
@@ -560,12 +574,6 @@ map
 glm/glm.hpp
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/glm/glm.hpp
 
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/TransformHierarchySystem.cpp
-TransformHierarchySystem.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/TransformHierarchySystem.h
-../Feather/World.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
-
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/TransformHierarchySystem.h
 ../Feather/System.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
@@ -588,11 +596,63 @@ new
 exception
 -
 
+/Users/igli/Desktop/Crow Engine/Crow/Plugins/stb_image.h
+stb_image.h
+/Users/igli/Desktop/Crow Engine/Crow/Plugins/stb_image.h
+stdio.h
+-
+stdlib.h
+-
+stdarg.h
+-
+stddef.h
+-
+stdlib.h
+-
+string.h
+-
+limits.h
+-
+math.h
+-
+stdio.h
+-
+assert.h
+-
+stdint.h
+-
+emmintrin.h
+-
+intrin.h
+-
+arm_neon.h
+-
+
 /Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/MoveComponent.h
 glm/glm.hpp
 -
 
 /Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/RotateComponent.h
+
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/MyGame.cpp
+MyGame.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/MyGame.h
+Worlds/RotatingGunsWorld.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/RotatingGunsWorld.h
+Worlds/TranslucentMaterialTestWorld.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/TranslucentMaterialTestWorld.h
+Worlds/XmlTestWorld.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/XmlTestWorld.h
+../Engine/Core/ResourceManager.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h
+../Engine/Rendering/Materials/ColorMaterial.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h
+Worlds/SpriteRenderingWorld.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/SpriteRenderingWorld.h
+
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/MyGame.h
+../Engine/Core/Game.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
 
 /Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/MoveSystem.cpp
 MoveSystem.h
@@ -615,20 +675,6 @@ MoveSystem.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
 ../../Engine/Events/CollisionEnterEvent.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEnterEvent.h
-
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RotateSystem.cpp
-iostream
--
-GLFW/glfw3.h
--
-RotateSystem.h
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RotateSystem.h
-../../Engine/Feather/World.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
-../../Engine/Components/Transform.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
-../Components/RotateComponent.h
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/RotateComponent.h
 
 /Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RotateSystem.h
 ../../Engine/Feather/System.h
@@ -729,6 +775,10 @@ TranslucentMaterialTestWorld.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/TextureMaterial.h
 
 /Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/TranslucentMaterialTestWorld.h
+../../Engine/Feather/World.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
+
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/XmlTestWorld.h
 ../../Engine/Feather/World.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
 
@@ -2812,28 +2862,6 @@ matrix_cross_product.inl
 
 /usr/local/include/glm/gtx/matrix_cross_product.inl
 
-/usr/local/include/glm/gtx/matrix_decompose.hpp
-../mat4x4.hpp
-/usr/local/include/glm/mat4x4.hpp
-../vec3.hpp
-/usr/local/include/glm/vec3.hpp
-../vec4.hpp
-/usr/local/include/glm/vec4.hpp
-../geometric.hpp
-/usr/local/include/glm/geometric.hpp
-../gtc/quaternion.hpp
-/usr/local/include/glm/gtc/quaternion.hpp
-../gtc/matrix_transform.hpp
-/usr/local/include/glm/gtc/matrix_transform.hpp
-matrix_decompose.inl
-/usr/local/include/glm/gtx/matrix_decompose.inl
-
-/usr/local/include/glm/gtx/matrix_decompose.inl
-../gtc/constants.hpp
-/usr/local/include/glm/gtc/constants.hpp
-../gtc/epsilon.hpp
-/usr/local/include/glm/gtc/epsilon.hpp
-
 /usr/local/include/glm/gtx/matrix_interpolation.hpp
 ../glm.hpp
 /usr/local/include/glm/glm.hpp
@@ -2977,12 +3005,6 @@ projection.inl
 /usr/local/include/glm/gtx/norm.hpp
 quaternion.inl
 /usr/local/include/glm/gtx/quaternion.inl
-
-/usr/local/include/glm/gtx/quaternion.inl
-limits
--
-../gtc/constants.hpp
-/usr/local/include/glm/gtc/constants.hpp
 
 /usr/local/include/glm/gtx/range.hpp
 ../detail/setup.hpp

@@ -13,10 +13,10 @@
 
 class Model;
 
-
+///AbstractMaterial is the base class for all the materials.
+///It provides virtual methods which the materials should implement.
+///Each Material has it's own shader and buffers the shader's uniforms once.
 class AbstractMaterial {
-
-    friend class BufferMaterialsSystem;
 
 public:
     AbstractMaterial(const std::string& shaderName);
@@ -33,7 +33,6 @@ public:
 
     virtual void BufferModelUniform(const glm::mat4 &pModelMatrix){};
 
-    int activeInstanceCount = 0;
 
     Shader* GetShader();
 
