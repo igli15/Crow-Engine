@@ -98,7 +98,7 @@ void ColorMaterial::BufferShaderUniforms(const glm::mat4 &pViewMatrix, const glm
         if(lightComponent.type == lightComponent.DIRECTIONAL)
         {
             glUniform3fv(m_dirLightsUniforms[activeDirLights].m_uLightColor, 1, glm::value_ptr(lightComponent.color));
-            glUniform3fv(m_dirLightsUniforms[activeDirLights].m_uLightDir, 1, glm::value_ptr(-lightTransform.GetLocalTransform()[2]));
+            glUniform3fv(m_dirLightsUniforms[activeDirLights].m_uLightDir, 1, glm::value_ptr(lightTransform.GetLocalTransform()[2]));
 
             glUniform1f(m_dirLightsUniforms[activeDirLights].m_uLightIntensity,lightComponent.intensity);
 
@@ -123,7 +123,7 @@ void ColorMaterial::BufferShaderUniforms(const glm::mat4 &pViewMatrix, const glm
         {
 
             glUniform3fv(m_spotLightsUniforms[activeSpotLights].m_uLightColor, 1, glm::value_ptr(lightComponent.color));
-            glUniform3fv(m_spotLightsUniforms[activeSpotLights].m_uLightDirection, 1, glm::value_ptr(-lightTransform.GetLocalTransform()[2]));
+            glUniform3fv(m_spotLightsUniforms[activeSpotLights].m_uLightDirection, 1, glm::value_ptr(lightTransform.GetLocalTransform()[2]));
             glUniform3fv(m_spotLightsUniforms[activeSpotLights].m_uLightPosition, 1, glm::value_ptr(lightTransform.LocalPosition()));
 
             glUniform1f(m_spotLightsUniforms[activeSpotLights].m_uLightCutoff,lightComponent.cutoff);

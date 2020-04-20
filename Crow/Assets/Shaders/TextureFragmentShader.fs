@@ -102,8 +102,10 @@ void main()
 
 vec3 CalcDirLight(DirLight light, vec3 normal, vec3 viewDir)
 {
-    vec3 lightDir = normalize(-light.direction);
-    float diff = max(dot(normal, lightDir), 0.0);
+    vec3 lightDir = normalize(light.direction);
+
+    //if they are pointing at each other dot should return 1 that's why we do -lightDir here
+    float diff = max(dot(normal, -lightDir), 0.0);
 
     vec3 halfwayDir = normalize(lightDir + viewDir);
 

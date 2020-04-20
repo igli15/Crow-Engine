@@ -103,11 +103,14 @@ void TranslucentMaterialTestWorld::Build()
 
     EntityHandle lightEntity = CreateEntity();
     auto dirLightTransform = lightEntity.AddComponent(Transform{});
-    dirLightTransform->Rotate(-45,glm::vec3(1,0,0));
-    dirLightTransform->Translate(glm::vec3(0,1,1));
+    //dirLightTransform->Rotate(-45,glm::vec3(1,0,0));
+    //dirLightTransform->Translate(glm::vec3(0,1,1));
     Light* dirLight = lightEntity.AddComponent(Light{glm::vec3(0.8,0.8,0.8)});
-    dirLight->intensity = 0.2;
+    dirLight->intensity = 1;
     dirLight->type = dirLight->DIRECTIONAL;
 
+    ENGINE_LOG(dirLightTransform->GetLocalTransform()[2].x);
+    ENGINE_LOG(dirLightTransform->GetLocalTransform()[2].y);
+    ENGINE_LOG(dirLightTransform->GetLocalTransform()[2].z);
 
 }

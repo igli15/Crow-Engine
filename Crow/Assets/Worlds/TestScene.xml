@@ -25,7 +25,7 @@
   </GameObject>
   <GameObject name="Sphere" position="(0.6300, 1.4000, -9.8100)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="sphere">
     <Components>
-      <TranslucentMaterial materialName="translucentMaterial" mainColor="(0.7529, 0.7529, 0.7529)" specularColor="(1.0000, 1.0000, 1.0000)" translucencyColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" translucentPower="0.8000" translucentScale="1.2000" translucentDistortion="1.2000" />
+      <TranslucentMaterial materialName="translucentMaterial" mainColor="(0.7216, 0.7216, 0.7216)" specularColor="(1.0000, 1.0000, 1.0000)" translucencyColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" translucentPower="0.8000" translucentScale="1.0000" translucentDistortion="1.2000" />
     </Components>
   </GameObject>
   <GameObject name="CrowCamera" position="(0.0000, 17.5000, 2.9600)" rotation="(-0.3584, 0.0000, 0.0000, 0.9336)" scale="(1.0000, 1.0000, 1.0000)">
@@ -36,12 +36,9 @@
       <Components />
     </GameObject>
   </GameObject>
-  <GameObject name="CrowDirLight" position="(0.0000, 19.1800, 0.0000)" rotation="(-0.5792, 0.0000, 0.0000, 0.8152)" scale="(1.0000, 1.0000, 1.0000)">
+  <GameObject name="UnityDirLight" position="(-8.2300, 11.6500, -8.2300)" rotation="(0.3536, 0.3536, -0.1464, 0.8536)" scale="(1.0000, 1.0000, 1.0000)">
     <Components>
-      <Light type="DIRECTIONAL" color="(1.0000, 0.9570, 0.8430)" intensity="1.0000" attenuationConstants="(1.0000, 0.0900, 0.0320)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
+      <Light type="DIRECTIONAL" color="(1.0000, 0.9569, 0.8431)" intensity="1.0000" attenuationConstants="(1.0000, 0.0900, 0.0320)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
     </Components>
-    <GameObject name="UnityDirLight" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 1.0000, 0.0000, 0.0000)" scale="(1.0000, 1.0000, 1.0000)">
-      <Components />
-    </GameObject>
   </GameObject>
 </root>
