@@ -1,5 +1,5 @@
 <root>
-  <GameObject name="CrowCamera" position="(1.5800, 31.0800, 25.1700)" rotation="(-0.3397, 0.0043, -0.0015, 0.9405)" scale="(1.0000, 1.0000, 1.0000)">
+  <GameObject name="CrowCamera" position="(-3.5000, 38.7000, 35.3000)" rotation="(-0.3165, 0.0169, 0.0157, 0.9483)" scale="(1.0000, 1.0000, 1.0000)">
     <Components>
       <Camera FOV="60" aspectRatio="1.777778" nearClipPlane="0.1" farClipPlane="1000" />
     </Components>
@@ -12,25 +12,436 @@
       <Light type="DIRECTIONAL" color="(1.0000, 1.0000, 0.9804)" intensity="1.0000" attenuationConstants="(1.0000, 0.0900, 0.0320)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
     </Components>
   </GameObject>
-  <GameObject name="base" position="(-15.1100, -3.5800, 11.5800)" rotation="(0.0000, 0.1129, 0.0000, 0.9936)" scale="(6.0000, 6.0000, 6.0000)" mesh="floatingRock">
-    <Components />
+  <GameObject name="base" position="(-17.4000, -6.4000, 15.6000)" rotation="(0.0000, 0.1129, 0.0000, 0.9936)" scale="(10.3668, 10.3668, 10.3668)" mesh="floatingRock">
+    <Components>
+      <ColorMaterial materialName="baseMaterial" mainColor="(0.2824, 0.2863, 0.2863)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" />
+    </Components>
   </GameObject>
   <GameObject name="enemyBase" position="(23.2000, 0.0000, -72.0000)" rotation="(0.0000, -0.1894, 0.0000, 0.9819)" scale="(235.8769, 3.0000, 89.0203)" mesh="cube">
+    <Components>
+      <ColorMaterial materialName="enemyBaseMaterial" mainColor="(0.2824, 0.2863, 0.2863)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" />
+    </Components>
+  </GameObject>
+  <GameObject name="middleBridge" position="(-7.3000, 1.3000, -11.6000)" rotation="(0.0000, -0.1685, 0.0000, 0.9857)" scale="(7.0195, 0.2063, 44.9448)" mesh="cube">
+    <Components>
+      <ColorMaterial materialName="bridgeMaterial" mainColor="(0.4000, 0.4039, 0.4039)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" />
+    </Components>
+  </GameObject>
+  <GameObject name="rightBridge" position="(13.0000, 1.3000, -3.4000)" rotation="(0.0000, -0.4640, 0.0000, 0.8858)" scale="(6.1979, 0.2063, 55.1328)" mesh="cube">
+    <Components>
+      <ColorMaterial materialName="bridgeMaterial" mainColor="(0.4000, 0.4039, 0.4039)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" />
+    </Components>
+  </GameObject>
+  <GameObject name="leftBridge" position="(-32.4000, 1.3000, -20.5000)" rotation="(0.0000, 0.1588, 0.0000, 0.9873)" scale="(6.6806, 0.2063, 63.9077)" mesh="cube">
+    <Components>
+      <ColorMaterial materialName="bridgeMaterial" mainColor="(0.4000, 0.4039, 0.4039)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" />
+    </Components>
+  </GameObject>
+  <GameObject name="trees" position="(-30.0099, -6.2591, -63.2708)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)">
     <Components />
+    <GameObject name="pine" position="(-6.1101, 7.9091, -18.7000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (1)" position="(-11.3000, 7.9091, -17.5000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (2)" position="(-3.1000, 7.9091, -14.8000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (3)" position="(-6.6101, 7.9091, -31.1000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (4)" position="(-11.8000, 7.9091, -29.9000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (5)" position="(-3.6000, 7.9091, -27.2000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (6)" position="(-14.6000, 7.9091, -45.9000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (7)" position="(-19.7899, 7.9091, -44.7000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (8)" position="(-11.5899, 7.9091, -42.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (9)" position="(7.7899, 7.9091, -20.3000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (10)" position="(2.6000, 7.9091, -19.1000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (11)" position="(10.8000, 7.9091, -16.4000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (12)" position="(23.0798, 7.9091, -18.7000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (13)" position="(17.8899, 7.9091, -17.5000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (14)" position="(26.0899, 7.9091, -14.8000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (15)" position="(22.5798, 7.9091, -31.1000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (16)" position="(17.3899, 7.9091, -29.9000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (17)" position="(25.5899, 7.9091, -27.2000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (18)" position="(14.5899, 7.9091, -45.9000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (19)" position="(9.4000, 7.9091, -44.7000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (20)" position="(17.6000, 7.9091, -42.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (21)" position="(36.9798, 7.9091, -20.3000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (22)" position="(31.7899, 7.9091, -19.1000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (23)" position="(39.9899, 7.9091, -16.4000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (24)" position="(-20.9000, 7.9091, -62.5000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (25)" position="(-12.7000, 7.9091, -59.8000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (26)" position="(6.6798, 7.9091, -38.1000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (27)" position="(1.4899, 7.9091, -36.9000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (28)" position="(9.6899, 7.9091, -34.2000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (29)" position="(48.4101, 7.9091, -1.9000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (30)" position="(43.2202, 7.9091, -0.7000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (31)" position="(51.4202, 7.9091, 2.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (32)" position="(47.9101, 7.9091, -14.3000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (33)" position="(42.7202, 7.9091, -13.1000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (34)" position="(50.9202, 7.9091, -10.4000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (35)" position="(39.9202, 7.9091, -29.1000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (36)" position="(34.7303, 7.9091, -27.9000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (37)" position="(42.9303, 7.9091, -25.2000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (38)" position="(62.3101, 7.9091, -3.5000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (39)" position="(57.1202, 7.9091, -2.3000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (40)" position="(65.3202, 7.9091, 0.4000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (41)" position="(77.6000, 7.9091, -1.9000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (42)" position="(72.4101, 7.9091, -0.7000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (43)" position="(80.6101, 7.9091, 2.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (44)" position="(77.1000, 7.9091, -14.3000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (45)" position="(71.9101, 7.9091, -13.1000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (46)" position="(80.1101, 7.9091, -10.4000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (47)" position="(69.1101, 7.9091, -29.1000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (48)" position="(63.9202, 7.9091, -27.9000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (49)" position="(72.1202, 7.9091, -25.2000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (50)" position="(91.5000, 7.9091, -3.5000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (51)" position="(86.3101, 7.9091, -2.3000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (52)" position="(94.5101, 7.9091, 0.4000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (53)" position="(33.6202, 7.9091, -45.7000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (54)" position="(41.8202, 7.9091, -43.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (55)" position="(61.2000, 7.9091, -21.3000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (56)" position="(56.0101, 7.9091, -20.1000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (57)" position="(64.2101, 7.9091, -17.4000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (58)" position="(80.2000, 7.9091, 15.5000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (59)" position="(75.0101, 7.9091, 16.7000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (60)" position="(83.2101, 7.9091, 19.4000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (61)" position="(-37.3000, 7.9091, -21.4000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (62)" position="(74.5101, 7.9091, 4.3000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (63)" position="(82.7101, 7.9091, 7.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (64)" position="(-45.2899, 7.9091, -36.2000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (65)" position="(-50.4798, 7.9091, -35.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (66)" position="(-42.2798, 7.9091, -32.3000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (67)" position="(94.1000, 7.9091, 13.9000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (68)" position="(88.9101, 7.9091, 15.1000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (69)" position="(97.1101, 7.9091, 17.8000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (70)" position="(-7.6101, 7.9091, -9.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (71)" position="(104.2000, 7.9091, 16.7000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (72)" position="(112.4000, 7.9091, 19.4000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (73)" position="(-8.1101, 7.9091, -21.4000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (74)" position="(-13.3000, 7.9091, -20.2000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (75)" position="(-5.1000, 7.9091, -17.5000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (76)" position="(-16.1000, 7.9091, -36.2000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (77)" position="(-21.2899, 7.9091, -35.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (78)" position="(-13.0899, 7.9091, -32.3000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (79)" position="(6.2899, 7.9091, -10.6000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (80)" position="(1.1000, 7.9091, -9.4000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (81)" position="(9.3000, 7.9091, -6.7000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (82)" position="(-51.5899, 7.9091, -52.8000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (83)" position="(-43.3899, 7.9091, -50.1000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (84)" position="(-24.0101, 7.9091, -28.4000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (85)" position="(-29.2000, 7.9091, -27.2000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (86)" position="(-21.0000, 7.9091, -24.5000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (87)" position="(81.6000, 7.9091, -6.9000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (88)" position="(110.7899, 7.9091, -6.9000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (89)" position="(105.6000, 7.9091, -5.7000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (90)" position="(113.8000, 7.9091, -3.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (91)" position="(97.6101, 7.9091, -20.5000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (92)" position="(105.8101, 7.9091, -17.8000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (93)" position="(125.1899, 7.9091, 3.9000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (94)" position="(120.0000, 7.9091, 5.1000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (95)" position="(128.2000, 7.9091, 7.8000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (96)" position="(94.8899, 7.9091, -13.9000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (97)" position="(89.7000, 7.9091, -12.7000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (98)" position="(97.9000, 7.9091, -10.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (99)" position="(47.9101, 7.9091, -29.7000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (100)" position="(77.1000, 7.9091, -29.7000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (101)" position="(71.9101, 7.9091, -28.5000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (102)" position="(80.1101, 7.9091, -25.8000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (103)" position="(63.9202, 7.9091, -43.3000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (104)" position="(72.1202, 7.9091, -40.6000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (105)" position="(91.5000, 7.9091, -18.9000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (106)" position="(86.3101, 7.9091, -17.7000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (107)" position="(94.5101, 7.9091, -15.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (108)" position="(61.2000, 7.9091, -36.7000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (109)" position="(56.0101, 7.9091, -35.5000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (110)" position="(64.2101, 7.9091, -32.8000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (111)" position="(-7.8000, 7.9091, -43.7000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (112)" position="(21.3899, 7.9091, -43.7000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (113)" position="(16.2000, 7.9091, -42.5000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (114)" position="(24.4000, 7.9091, -39.8000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (115)" position="(8.2101, 7.9091, -57.3000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (116)" position="(16.4101, 7.9091, -54.6000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (117)" position="(35.7899, 7.9091, -32.9000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (118)" position="(30.6000, 7.9091, -31.7000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (119)" position="(38.8000, 7.9091, -29.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (120)" position="(5.4899, 7.9091, -50.7000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (121)" position="(0.3000, 7.9091, -49.5000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (122)" position="(8.5000, 7.9091, -46.8000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (123)" position="(-33.2101, 7.9091, -63.7000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (124)" position="(-38.4000, 7.9091, -62.5000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (125)" position="(-30.2000, 7.9091, -59.8000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (126)" position="(-38.9000, 7.9091, -74.9000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (127)" position="(-30.7000, 7.9091, -72.2000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (128)" position="(-19.3101, 7.9091, -65.3000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (129)" position="(-24.5000, 7.9091, -64.1000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (130)" position="(-16.3000, 7.9091, -61.4000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (131)" position="(-9.2101, 7.9091, -62.5000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
+    <GameObject name="pine (132)" position="(-1.0101, 7.9091, -59.8000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(4.0000, 4.0000, 4.0000)" mesh="pine">
+      <Components />
+    </GameObject>
   </GameObject>
-  <GameObject name="middleBridge" position="(-6.3900, 1.3000, -11.3300)" rotation="(0.0000, -0.1685, 0.0000, 0.9857)" scale="(5.1580, 0.2063, 44.9448)" mesh="cube">
+  <GameObject name="ghost" position="(-23.8773, 2.8321, 6.0799)" rotation="(0.0000, -0.9918, 0.0000, 0.1279)" scale="(0.5000, 0.5000, 0.5000)" mesh="ghost">
     <Components>
-      <ColorMaterial materialName="bridgeMaterial" mainColor="(0.4000, 0.4039, 0.4039)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" />
-    </Components>
-  </GameObject>
-  <GameObject name="rightBridge" position="(6.7000, 1.3000, -6.1000)" rotation="(0.0000, -0.4038, 0.0000, 0.9148)" scale="(5.1580, 0.2063, 55.1328)" mesh="cube">
-    <Components>
-      <ColorMaterial materialName="bridgeMaterial" mainColor="(0.4000, 0.4039, 0.4039)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" />
-    </Components>
-  </GameObject>
-  <GameObject name="leftBridge" position="(-22.7000, 1.3000, -18.3000)" rotation="(0.0000, 0.0973, 0.0000, 0.9953)" scale="(5.1580, 0.2063, 63.9077)" mesh="cube">
-    <Components>
-      <ColorMaterial materialName="bridgeMaterial" mainColor="(0.4000, 0.4039, 0.4039)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" />
+      <TranslucentMaterial materialName="translucentMaterial" mainColor="(0.4824, 0.4863, 0.4863)" specularColor="(1.0000, 1.0000, 1.0000)" translucencyColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" translucentPower="0.5000" translucentScale="1.2000" translucentDistortion="0.8000" />
     </Components>
   </GameObject>
 </root>
