@@ -9,6 +9,7 @@
 #include "../Engine/Core/ResourceManager.h"
 #include "../Engine/Rendering/Materials/ColorMaterial.h"
 #include "Worlds/SpriteRenderingWorld.h"
+#include "../Game/Worlds/MainWorld.h"
 
 void MyGame::LoadAssets()
 {
@@ -31,6 +32,7 @@ void MyGame::LoadAssets()
     resourceManager->LoadModel(("pine.obj"),"pine");
     resourceManager->LoadModel(("ghost1.obj"),"ghost");
     resourceManager->LoadModel(("dragon.obj"),"dragon");
+    resourceManager->LoadModel(("floatingRock.obj"),"floatingRock");
 
     resourceManager->LoadTexture("container.png","containerDiffuse");
     resourceManager->LoadTexture("containerSpecular.png","containerSpecular");
@@ -46,7 +48,8 @@ void MyGame::Init()
 
     //Set the world here!
 
-    SetWorld(new XmlTestWorld());
+    SetWorld(new MainWorld());
+    //SetWorld(new XmlTestWorld());
     //SetWorld(new TranslucentMaterialTestWorld());
     //SetWorld(new RotatingGunsWorld());
     //SetWorld(new SpriteRenderingWorld());

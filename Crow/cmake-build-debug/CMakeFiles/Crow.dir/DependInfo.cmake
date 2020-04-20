@@ -39,6 +39,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/SpriteRendererSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/TextRenderingSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/TransformHierarchySystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/Game/Worlds/MainWorld.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Component.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/OOP_Engine/Component.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Gameobject.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/OOP_Engine/Gameobject.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/OOPEngine.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/OOP_Engine/OOPEngine.cpp.o"

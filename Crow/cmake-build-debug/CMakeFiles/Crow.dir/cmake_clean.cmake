@@ -34,6 +34,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.o"
+  "CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o"
   "CMakeFiles/Crow.dir/OOP_Engine/Component.cpp.o"
   "CMakeFiles/Crow.dir/OOP_Engine/Gameobject.cpp.o"
   "CMakeFiles/Crow.dir/OOP_Engine/OOPEngine.cpp.o"

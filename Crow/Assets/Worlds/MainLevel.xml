@@ -1,0 +1,36 @@
+<root>
+  <GameObject name="CrowCamera" position="(1.5800, 31.0800, 25.1700)" rotation="(-0.3397, 0.0043, -0.0015, 0.9405)" scale="(1.0000, 1.0000, 1.0000)">
+    <Components>
+      <Camera FOV="60" aspectRatio="1.777778" nearClipPlane="0.1" farClipPlane="1000" />
+    </Components>
+    <GameObject name="UnityCamera" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 1.0000, 0.0000, 0.0000)" scale="(1.0000, 1.0000, 1.0000)">
+      <Components />
+    </GameObject>
+  </GameObject>
+  <GameObject name="CrowDirLight" position="(-3.3300, 4.7100, -3.3300)" rotation="(0.6994, 0.1040, 0.1040, 0.6994)" scale="(1.0000, 1.0000, 1.0000)">
+    <Components>
+      <Light type="DIRECTIONAL" color="(1.0000, 1.0000, 0.9804)" intensity="1.0000" attenuationConstants="(1.0000, 0.0900, 0.0320)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
+    </Components>
+  </GameObject>
+  <GameObject name="base" position="(-15.1100, -3.5800, 11.5800)" rotation="(0.0000, 0.1129, 0.0000, 0.9936)" scale="(6.0000, 6.0000, 6.0000)" mesh="floatingRock">
+    <Components />
+  </GameObject>
+  <GameObject name="enemyBase" position="(23.2000, 0.0000, -72.0000)" rotation="(0.0000, -0.1894, 0.0000, 0.9819)" scale="(235.8769, 3.0000, 89.0203)" mesh="cube">
+    <Components />
+  </GameObject>
+  <GameObject name="middleBridge" position="(-6.3900, 1.3000, -11.3300)" rotation="(0.0000, -0.1685, 0.0000, 0.9857)" scale="(5.1580, 0.2063, 44.9448)" mesh="cube">
+    <Components>
+      <ColorMaterial materialName="bridgeMaterial" mainColor="(0.4000, 0.4039, 0.4039)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" />
+    </Components>
+  </GameObject>
+  <GameObject name="rightBridge" position="(6.7000, 1.3000, -6.1000)" rotation="(0.0000, -0.4038, 0.0000, 0.9148)" scale="(5.1580, 0.2063, 55.1328)" mesh="cube">
+    <Components>
+      <ColorMaterial materialName="bridgeMaterial" mainColor="(0.4000, 0.4039, 0.4039)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" />
+    </Components>
+  </GameObject>
+  <GameObject name="leftBridge" position="(-22.7000, 1.3000, -18.3000)" rotation="(0.0000, 0.0973, 0.0000, 0.9953)" scale="(5.1580, 0.2063, 63.9077)" mesh="cube">
+    <Components>
+      <ColorMaterial materialName="bridgeMaterial" mainColor="(0.4000, 0.4039, 0.4039)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" />
+    </Components>
+  </GameObject>
+</root>

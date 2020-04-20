@@ -1068,6 +1068,33 @@ Engine/Systems/TransformHierarchySystem.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.s
 .PHONY : Engine/Systems/TransformHierarchySystem.cpp.s
 
+Game/Worlds/MainWorld.o: Game/Worlds/MainWorld.cpp.o
+
+.PHONY : Game/Worlds/MainWorld.o
+
+# target to build an object file
+Game/Worlds/MainWorld.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o
+.PHONY : Game/Worlds/MainWorld.cpp.o
+
+Game/Worlds/MainWorld.i: Game/Worlds/MainWorld.cpp.i
+
+.PHONY : Game/Worlds/MainWorld.i
+
+# target to preprocess a source file
+Game/Worlds/MainWorld.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.i
+.PHONY : Game/Worlds/MainWorld.cpp.i
+
+Game/Worlds/MainWorld.s: Game/Worlds/MainWorld.cpp.s
+
+.PHONY : Game/Worlds/MainWorld.s
+
+# target to generate assembly for a file
+Game/Worlds/MainWorld.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.s
+.PHONY : Game/Worlds/MainWorld.cpp.s
+
 OOP_Engine/Component.o: OOP_Engine/Component.cpp.o
 
 .PHONY : OOP_Engine/Component.o
@@ -1560,6 +1587,9 @@ help:
 	@echo "... Engine/Systems/TransformHierarchySystem.o"
 	@echo "... Engine/Systems/TransformHierarchySystem.i"
 	@echo "... Engine/Systems/TransformHierarchySystem.s"
+	@echo "... Game/Worlds/MainWorld.o"
+	@echo "... Game/Worlds/MainWorld.i"
+	@echo "... Game/Worlds/MainWorld.s"
 	@echo "... OOP_Engine/Component.o"
 	@echo "... OOP_Engine/Component.i"
 	@echo "... OOP_Engine/Component.s"

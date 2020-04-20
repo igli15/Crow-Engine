@@ -48,7 +48,7 @@ void Game::Run()
 
     while(window->isOpen())
     {
-        window->ClearColor(0.6,0.6,0.6,1);
+        window->ClearColor(0.17,0.17,0.17,1);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         double  current = glfwGetTime();
