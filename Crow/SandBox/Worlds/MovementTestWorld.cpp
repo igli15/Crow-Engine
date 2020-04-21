@@ -42,8 +42,7 @@ void MovementTestWorld::Build()
     cubeMeshInfo.model = cubeModel;
     cubeMeshInfo.material = material;
     cubeEntity.AddComponent(cubeMeshInfo);
-    cubeEntity.AddComponent(RigidBody{glm::vec3(0),glm::vec3(1)});
-    cubeEntity.AddComponent(MoveComponent{0.002f});
+    cubeEntity.AddComponent(RigidBody{});
 
 
     EntityHandle lightEntity = CreateEntity();

@@ -1284,6 +1284,33 @@ SandBox/Components/RotateComponent.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Components/RotateComponent.cpp.s
 .PHONY : SandBox/Components/RotateComponent.cpp.s
 
+SandBox/Components/SteeringComponent.o: SandBox/Components/SteeringComponent.cpp.o
+
+.PHONY : SandBox/Components/SteeringComponent.o
+
+# target to build an object file
+SandBox/Components/SteeringComponent.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Components/SteeringComponent.cpp.o
+.PHONY : SandBox/Components/SteeringComponent.cpp.o
+
+SandBox/Components/SteeringComponent.i: SandBox/Components/SteeringComponent.cpp.i
+
+.PHONY : SandBox/Components/SteeringComponent.i
+
+# target to preprocess a source file
+SandBox/Components/SteeringComponent.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Components/SteeringComponent.cpp.i
+.PHONY : SandBox/Components/SteeringComponent.cpp.i
+
+SandBox/Components/SteeringComponent.s: SandBox/Components/SteeringComponent.cpp.s
+
+.PHONY : SandBox/Components/SteeringComponent.s
+
+# target to generate assembly for a file
+SandBox/Components/SteeringComponent.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Components/SteeringComponent.cpp.s
+.PHONY : SandBox/Components/SteeringComponent.cpp.s
+
 SandBox/MyGame.o: SandBox/MyGame.cpp.o
 
 .PHONY : SandBox/MyGame.o
@@ -1364,6 +1391,60 @@ SandBox/Systems/RotateSystem.s: SandBox/Systems/RotateSystem.cpp.s
 SandBox/Systems/RotateSystem.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.s
 .PHONY : SandBox/Systems/RotateSystem.cpp.s
+
+SandBox/Systems/SeekingSystem.o: SandBox/Systems/SeekingSystem.cpp.o
+
+.PHONY : SandBox/Systems/SeekingSystem.o
+
+# target to build an object file
+SandBox/Systems/SeekingSystem.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/SeekingSystem.cpp.o
+.PHONY : SandBox/Systems/SeekingSystem.cpp.o
+
+SandBox/Systems/SeekingSystem.i: SandBox/Systems/SeekingSystem.cpp.i
+
+.PHONY : SandBox/Systems/SeekingSystem.i
+
+# target to preprocess a source file
+SandBox/Systems/SeekingSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/SeekingSystem.cpp.i
+.PHONY : SandBox/Systems/SeekingSystem.cpp.i
+
+SandBox/Systems/SeekingSystem.s: SandBox/Systems/SeekingSystem.cpp.s
+
+.PHONY : SandBox/Systems/SeekingSystem.s
+
+# target to generate assembly for a file
+SandBox/Systems/SeekingSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/SeekingSystem.cpp.s
+.PHONY : SandBox/Systems/SeekingSystem.cpp.s
+
+SandBox/Systems/SteeringSystem.o: SandBox/Systems/SteeringSystem.cpp.o
+
+.PHONY : SandBox/Systems/SteeringSystem.o
+
+# target to build an object file
+SandBox/Systems/SteeringSystem.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/SteeringSystem.cpp.o
+.PHONY : SandBox/Systems/SteeringSystem.cpp.o
+
+SandBox/Systems/SteeringSystem.i: SandBox/Systems/SteeringSystem.cpp.i
+
+.PHONY : SandBox/Systems/SteeringSystem.i
+
+# target to preprocess a source file
+SandBox/Systems/SteeringSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/SteeringSystem.cpp.i
+.PHONY : SandBox/Systems/SteeringSystem.cpp.i
+
+SandBox/Systems/SteeringSystem.s: SandBox/Systems/SteeringSystem.cpp.s
+
+.PHONY : SandBox/Systems/SteeringSystem.s
+
+# target to generate assembly for a file
+SandBox/Systems/SteeringSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/SteeringSystem.cpp.s
+.PHONY : SandBox/Systems/SteeringSystem.cpp.s
 
 SandBox/Worlds/MovementTestWorld.o: SandBox/Worlds/MovementTestWorld.cpp.o
 
@@ -1665,6 +1746,9 @@ help:
 	@echo "... SandBox/Components/RotateComponent.o"
 	@echo "... SandBox/Components/RotateComponent.i"
 	@echo "... SandBox/Components/RotateComponent.s"
+	@echo "... SandBox/Components/SteeringComponent.o"
+	@echo "... SandBox/Components/SteeringComponent.i"
+	@echo "... SandBox/Components/SteeringComponent.s"
 	@echo "... SandBox/MyGame.o"
 	@echo "... SandBox/MyGame.i"
 	@echo "... SandBox/MyGame.s"
@@ -1674,6 +1758,12 @@ help:
 	@echo "... SandBox/Systems/RotateSystem.o"
 	@echo "... SandBox/Systems/RotateSystem.i"
 	@echo "... SandBox/Systems/RotateSystem.s"
+	@echo "... SandBox/Systems/SeekingSystem.o"
+	@echo "... SandBox/Systems/SeekingSystem.i"
+	@echo "... SandBox/Systems/SeekingSystem.s"
+	@echo "... SandBox/Systems/SteeringSystem.o"
+	@echo "... SandBox/Systems/SteeringSystem.i"
+	@echo "... SandBox/Systems/SteeringSystem.s"
 	@echo "... SandBox/Worlds/MovementTestWorld.o"
 	@echo "... SandBox/Worlds/MovementTestWorld.i"
 	@echo "... SandBox/Worlds/MovementTestWorld.s"

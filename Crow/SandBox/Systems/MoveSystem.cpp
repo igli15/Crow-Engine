@@ -15,19 +15,16 @@ void MoveSystem::Update()
 {
     System::Update();
 
-    auto entities = world->EntitiesWith<Transform,MoveComponent,RigidBody>();
+    auto entities = world->EntitiesWith<Transform,RigidBody>();
 
     for (int i = 0; i < entities.size(); ++i)
     {
-        MoveComponent& moveComponent = world->GetComponent<MoveComponent>(entities[i]);
         RigidBody& rigidBody = world->GetComponent<RigidBody>(entities[i]);
         Transform& transform = world->GetComponent<Transform>(entities[i]);
 
 
         transform.Translate(rigidBody.velocity);
         rigidBody.velocity += rigidBody.acceleration;
-        rigidBody.velocity = glm::clamp(rigidBody.velocity,-moveComponent.speed,moveComponent.speed);
-
     }
 
 }

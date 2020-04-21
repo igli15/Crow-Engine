@@ -733,6 +733,45 @@ CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/MovementTestWorld.cpp" -o CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.s
 
+CMakeFiles/Crow.dir/SandBox/Components/SteeringComponent.cpp.o: CMakeFiles/Crow.dir/flags.make
+CMakeFiles/Crow.dir/SandBox/Components/SteeringComponent.cpp.o: ../SandBox/Components/SteeringComponent.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/Crow.dir/SandBox/Components/SteeringComponent.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/SandBox/Components/SteeringComponent.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/SteeringComponent.cpp"
+
+CMakeFiles/Crow.dir/SandBox/Components/SteeringComponent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/SandBox/Components/SteeringComponent.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/SteeringComponent.cpp" > CMakeFiles/Crow.dir/SandBox/Components/SteeringComponent.cpp.i
+
+CMakeFiles/Crow.dir/SandBox/Components/SteeringComponent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/SandBox/Components/SteeringComponent.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/SteeringComponent.cpp" -o CMakeFiles/Crow.dir/SandBox/Components/SteeringComponent.cpp.s
+
+CMakeFiles/Crow.dir/SandBox/Systems/SeekingSystem.cpp.o: CMakeFiles/Crow.dir/flags.make
+CMakeFiles/Crow.dir/SandBox/Systems/SeekingSystem.cpp.o: ../SandBox/Systems/SeekingSystem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/Crow.dir/SandBox/Systems/SeekingSystem.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/SandBox/Systems/SeekingSystem.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/SeekingSystem.cpp"
+
+CMakeFiles/Crow.dir/SandBox/Systems/SeekingSystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/SandBox/Systems/SeekingSystem.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/SeekingSystem.cpp" > CMakeFiles/Crow.dir/SandBox/Systems/SeekingSystem.cpp.i
+
+CMakeFiles/Crow.dir/SandBox/Systems/SeekingSystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/SandBox/Systems/SeekingSystem.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/SeekingSystem.cpp" -o CMakeFiles/Crow.dir/SandBox/Systems/SeekingSystem.cpp.s
+
+CMakeFiles/Crow.dir/SandBox/Systems/SteeringSystem.cpp.o: CMakeFiles/Crow.dir/flags.make
+CMakeFiles/Crow.dir/SandBox/Systems/SteeringSystem.cpp.o: ../SandBox/Systems/SteeringSystem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/Crow.dir/SandBox/Systems/SteeringSystem.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/SandBox/Systems/SteeringSystem.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/SteeringSystem.cpp"
+
+CMakeFiles/Crow.dir/SandBox/Systems/SteeringSystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/SandBox/Systems/SteeringSystem.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/SteeringSystem.cpp" > CMakeFiles/Crow.dir/SandBox/Systems/SteeringSystem.cpp.i
+
+CMakeFiles/Crow.dir/SandBox/Systems/SteeringSystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/SandBox/Systems/SteeringSystem.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/SteeringSystem.cpp" -o CMakeFiles/Crow.dir/SandBox/Systems/SteeringSystem.cpp.s
+
 # Object files for target Crow
 Crow_OBJECTS = \
 "CMakeFiles/Crow.dir/main.cpp.o" \
@@ -786,7 +825,10 @@ Crow_OBJECTS = \
 "CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o" \
 "CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.o" \
-"CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o"
+"CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o" \
+"CMakeFiles/Crow.dir/SandBox/Components/SteeringComponent.cpp.o" \
+"CMakeFiles/Crow.dir/SandBox/Systems/SeekingSystem.cpp.o" \
+"CMakeFiles/Crow.dir/SandBox/Systems/SteeringSystem.cpp.o"
 
 # External object files for target Crow
 Crow_EXTERNAL_OBJECTS =
@@ -843,13 +885,16 @@ Crow: CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o
 Crow: CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.o
 Crow: CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o
+Crow: CMakeFiles/Crow.dir/SandBox/Components/SteeringComponent.cpp.o
+Crow: CMakeFiles/Crow.dir/SandBox/Systems/SeekingSystem.cpp.o
+Crow: CMakeFiles/Crow.dir/SandBox/Systems/SteeringSystem.cpp.o
 Crow: CMakeFiles/Crow.dir/build.make
 Crow: /usr/local/lib/libglfw.dylib
 Crow: /usr/local/lib/libassimp.dylib
 Crow: /usr/local/lib/libGLEW.dylib
 Crow: /usr/local/lib/libfreetype.dylib
 Crow: CMakeFiles/Crow.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_53) "Linking CXX executable Crow"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_56) "Linking CXX executable Crow"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Crow.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
