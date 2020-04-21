@@ -44,11 +44,11 @@ void World::InitAllSystems()
     }
 }
 
-void World::UpdateAllSystems()
+void World::UpdateAllSystems(float dt)
 {
     for (int i = 0; i < m_allRegisteredSystems.size(); ++i)
     {
-        m_allRegisteredSystems[i]->Update();
+        m_allRegisteredSystems[i]->Update(dt);
     }
 }
 

@@ -13,9 +13,9 @@ void SteeringSystem::Init()
     System::Init();
 }
 
-void SteeringSystem::Update()
+void SteeringSystem::Update(float dt)
 {
-    System::Update();
+    System::Update(0);
 
     auto entities = world->EntitiesWith<RigidBody,SteeringComponent>();
 

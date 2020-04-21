@@ -15,7 +15,7 @@ struct CollisionEvent;
 class MoveSystem : public System {
 
     void Init() override;
-    void Update() override;
+    void Update(float dt) override;
 
 };
 

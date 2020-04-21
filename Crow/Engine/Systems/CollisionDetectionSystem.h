@@ -32,7 +32,7 @@ private:
 
         void ThrowCollisionEvents();
 public:
-    void Update() override;
+    void Update(float dt) override;
 };
 
 

@@ -11,9 +11,9 @@
 #include "../../Engine/Rendering/Materials/ColorMaterial.h"
 #include "../../Engine/Components/RigidBody.h"
 
-void MoveSystem::Update()
+void MoveSystem::Update(float dt)
 {
-    System::Update();
+    System::Update(0);
 
     auto entities = world->EntitiesWith<Transform,RigidBody>();
 

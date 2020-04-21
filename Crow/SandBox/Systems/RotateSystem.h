@@ -14,7 +14,7 @@ class RotateSystem : public System {
 
     std::vector<Entity> entities;
     void Init() override;
-    void Update() override;
+    void Update(float dt) override;
 
 };
 

@@ -3,13 +3,15 @@
 //
 
 #include "SeekingSystem.h"
+#include "../../Engine/Debug/Debug.h"
 
 void SeekingSystem::Init()
 {
     System::Init();
 }
 
-void SeekingSystem::Update()
+void SeekingSystem::Update(float dt)
 {
-    System::Update();
+    System::Update(dt);
+
 }

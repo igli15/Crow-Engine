@@ -55,7 +55,7 @@ public:
         }
     }
 
-    void Update()override
+    void Update(float dt) override
     {
         for (auto const& handle : handleCache)
         {
@@ -106,7 +106,7 @@ public:
         }
     }
 
-    void Update()override
+    void Update(float dt) override
     {
         for (int i = 0; i< m_entities.size() ; i++)
         {
@@ -144,7 +144,7 @@ public:
         }
     }
 
-    void Update()override
+    void Update(float dt) override
     {
         for (int i = 0; i< m_entities.size() ; i++)
         {
@@ -236,7 +236,7 @@ public:
 
     void Update()
     {
-        feather->UpdateAllSystems();
+        feather->UpdateAllSystems(0);
     }
 
 };

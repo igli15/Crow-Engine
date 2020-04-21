@@ -45,7 +45,7 @@ public:
     void InitAllSystems();
 
     ///Calls "Update" on all the registered systems.
-    void UpdateAllSystems();
+    void UpdateAllSystems(float dt);
 
     ///Calls "Render" on all the registered systems.
     void RenderAllSystems();

@@ -10,9 +10,9 @@
 #include "../Events/CollisionEnterEvent.h"
 #include "../Events/CollisionExitEvent.h"
 
-void CollisionDetectionSystem::Update()
+void CollisionDetectionSystem::Update(float dt)
 {
-    System::Update();
+    System::Update(0);
 
     m_frameCounter += 1;
 

@@ -14,18 +14,6 @@ Engine/Debug/Debug.h
 string
 -
 
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.h
-glm/glm.hpp
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/glm/glm.hpp
-glm/gtx/projection.hpp
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/glm/gtx/projection.hpp
-glm/gtc/matrix_transform.hpp
--
-
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h
-glm/glm.hpp
--
-
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
 ../Rendering/Model.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
@@ -51,46 +39,6 @@ glm/gtx/quaternion.hpp
 -
 vector
 -
-
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
-../Rendering/Window.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
-../Feather/World.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
-freetype2/ft2build.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/freetype2/ft2build.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
-unordered_map
--
-../Debug/Debug.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Renderer.h
-vector
--
-unordered_map
--
-../Rendering/AbstractMaterial.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
-../Components/MeshInfo.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h
-map
--
-../Rendering/Texture.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
-../Rendering/Shader.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
-../Rendering/Model.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
-../Rendering/AbstractMaterial.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
-Game.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
-Renderer.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Renderer.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
 string.h
@@ -125,6 +73,12 @@ Event.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEnterEvent.h
+../Feather/EntityHandle.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEvent.h
+../EventQueue/Event.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
 ../Feather/EntityHandle.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
 
@@ -266,21 +220,27 @@ iostream
 glm/ext.hpp
 -
 
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
-GL/glew.h
--
-
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
-GL/glew.h
--
-GLFW/glfw3.h
--
-../Core/Input.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
-
 /Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/MoveComponent.h
 glm/glm.hpp
 -
+
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/MoveSystem.cpp
+MoveSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/MoveSystem.h
+../../Engine/Feather/World.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
+../Components/MoveComponent.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/MoveComponent.h
+../../Engine/Components/Transform.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
+../../Engine/Events/CollisionEvent.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEvent.h
+../../Engine/Components/MeshInfo.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
+../../Engine/Rendering/Materials/ColorMaterial.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h
+../../Engine/Components/RigidBody.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/RigidBody.h
 
 /Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/MoveSystem.h
 ../../Engine/Feather/System.h
@@ -288,35 +248,15 @@ glm/glm.hpp
 ../../Engine/Events/CollisionEnterEvent.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEnterEvent.h
 
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/MovementTestWorld.cpp
-MovementTestWorld.h
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/MovementTestWorld.h
-../../Engine/Rendering/Model.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
-../../Engine/Core/ResourceManager.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h
-../../Engine/Core/Game.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
-../../Engine/Rendering/Materials/ColorMaterial.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h
-../../Engine/Components/Transform.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
-../../Engine/Components/Camera.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.h
-../../Engine/Feather/EntityHandle.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
-../../Engine/Components/Light.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h
-../../Engine/Components/RigidBody.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/RigidBody.h
-../Components/MoveComponent.h
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/MoveComponent.h
-../Systems/MoveSystem.h
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/MoveSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/SeekingSystem.cpp
+SeekingSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/SeekingSystem.h
+../../Engine/Debug/Debug.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
 
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/MovementTestWorld.h
-../../Engine/Feather/World.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/SeekingSystem.h
+../../Engine/Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
 
 /usr/local/include/GL/glew.h
 stddef.h
@@ -333,56 +273,6 @@ OpenGL/glu.h
 -
 GL/glu.h
 -
-
-/usr/local/include/GLFW/glfw3.h
-stddef.h
--
-stdint.h
--
-vulkan/vulkan.h
--
-GLES/gl.h
--
-GLES/glext.h
--
-GLES2/gl2.h
--
-GLES2/gl2ext.h
--
-GLES3/gl3.h
--
-GLES2/gl2ext.h
--
-GLES3/gl31.h
--
-GLES2/gl2ext.h
--
-GLES3/gl32.h
--
-GLES2/gl2ext.h
--
-OpenGL/gl3.h
--
-OpenGL/gl3ext.h
--
-GL/glcorearb.h
--
-OpenGL/gl.h
--
-OpenGL/glu.h
--
-GL/gl.h
--
-GL/glext.h
--
-GL/glu.h
--
-
-/usr/local/include/freetype2/freetype/config/ftheader.h
-
-/usr/local/include/freetype2/ft2build.h
-freetype/config/ftheader.h
-/usr/local/include/freetype2/freetype/config/ftheader.h
 
 /usr/local/include/glm/common.hpp
 detail/qualifier.hpp

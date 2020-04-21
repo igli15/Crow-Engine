@@ -17,9 +17,9 @@ void RotateSystem::Init()
     std::cout<<"Initialising System"<<std::endl;
 }
 
-void RotateSystem::Update()
+void RotateSystem::Update(float dt)
 {
-    System::Update();
+    System::Update(0);
 
     entities = world->EntitiesWith<Transform,RotateComponent>();
 

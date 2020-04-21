@@ -63,7 +63,7 @@ void Game::Run()
 
         while (lag >= MS_PER_UPDATE)
         {
-            currentWorld->UpdateAllSystems();
+            currentWorld->UpdateAllSystems(elapsed);
             lag -= MS_PER_UPDATE;
         }
 
