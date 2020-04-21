@@ -390,6 +390,12 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/RotateComponent.h">
 			<Option target="Crow"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/SeekComponent.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/SeekComponent.h">
+			<Option target="Crow"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/SteeringComponent.cpp">
 			<Option target="Crow"/>
 		</Unit>

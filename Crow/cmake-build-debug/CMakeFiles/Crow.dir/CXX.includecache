@@ -224,6 +224,10 @@ glm/ext.hpp
 glm/glm.hpp
 -
 
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/SteeringComponent.h
+glm/vec3.hpp
+-
+
 /Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/MoveSystem.cpp
 MoveSystem.h
 /Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/MoveSystem.h
@@ -248,13 +252,19 @@ MoveSystem.h
 ../../Engine/Events/CollisionEnterEvent.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEnterEvent.h
 
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/SeekingSystem.cpp
-SeekingSystem.h
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/SeekingSystem.h
-../../Engine/Debug/Debug.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/SteeringSystem.cpp
+SteeringSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/SteeringSystem.h
+../../Engine/Feather/World.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
+../../Engine/Components/Transform.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
+../../Engine/Components/RigidBody.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/RigidBody.h
+../Components/SteeringComponent.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/SteeringComponent.h
 
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/SeekingSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/SteeringSystem.h
 ../../Engine/Feather/System.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
 

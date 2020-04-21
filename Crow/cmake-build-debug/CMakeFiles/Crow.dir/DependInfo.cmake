@@ -47,6 +47,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/igli/Desktop/Crow Engine/Crow/Plugins/stb_image.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Plugins/stb_image.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/MoveComponent.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/SandBox/Components/MoveComponent.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/RotateComponent.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/SandBox/Components/RotateComponent.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/SeekComponent.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/SandBox/Components/SeekComponent.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/SteeringComponent.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/SandBox/Components/SteeringComponent.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/MyGame.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/MoveSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.o"

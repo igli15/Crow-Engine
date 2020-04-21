@@ -13,7 +13,7 @@
 
 void MoveSystem::Update(float dt)
 {
-    System::Update(0);
+    System::Update(dt);
 
     auto entities = world->EntitiesWith<Transform,RigidBody>();
 
@@ -23,8 +23,16 @@ void MoveSystem::Update(float dt)
         Transform& transform = world->GetComponent<Transform>(entities[i]);
 
 
-        transform.Translate(rigidBody.velocity);
         rigidBody.velocity += rigidBody.acceleration;
+
+        float velocityLength = glm::length(rigidBody.velocity);
+        if(velocityLength > rigidBody.maxSpeed)
+        {
+            rigidBody.velocity = glm::normalize(rigidBody.velocity) * rigidBody.maxSpeed;
+        }
+
+        transform.Translate(rigidBody.velocity);
+        //rigidBody.acceleration = glm::vec3(0);
     }
 
 }

@@ -4,6 +4,11 @@
 
 #include "SeekingSystem.h"
 #include "../../Engine/Debug/Debug.h"
+#include "../../Engine/Feather/World.h"
+#include "../../Engine/Components/Transform.h"
+#include "../../Engine/Components/RigidBody.h"
+#include "../Components/SteeringComponent.h"
+#include "../Components/SeekComponent.h"
 
 void SeekingSystem::Init()
 {
@@ -14,4 +19,35 @@ void SeekingSystem::Update(float dt)
 {
     System::Update(dt);
 
+    auto entities = world->EntitiesWith<Transform,RigidBody,SteeringComponent,SeekComponent>();
+
+    for (int i = 0; i < entities.size(); ++i)
+    {
+        Transform& transform = world->GetComponent<Transform>(entities[i]);
+        SteeringComponent& steeringComponent = world->GetComponent<SteeringComponent>(entities[i]);
+        SeekComponent& seekComponent = world->GetComponent<SeekComponent>(entities[i]);
+        RigidBody& rigidBody = world->GetComponent<RigidBody>(entities[i]);
+
+        steeringComponent.steering += DoSeek(transform,rigidBody,seekComponent.targetPos,0);
+    }
+}
+
+glm::vec3 SeekingSystem::DoSeek(Transform& ownerTransform,RigidBody& ownerRigidBody,glm::vec3 target, float slowingRadius)
+{
+    glm::vec3 resultForce = glm::vec3(0);
+
+    glm::vec3 toTarget = target - ownerTransform.WorldPosition();
+    glm::vec3 desiredVelocity = glm::normalize(toTarget) * ownerRigidBody.maxSpeed;
+
+
+    float distance = glm::length(toTarget);
+
+    if(distance < slowingRadius)
+    {
+        desiredVelocity *= distance/slowingRadius;
+    }
+
+    resultForce = desiredVelocity - ownerRigidBody.velocity;
+
+    return resultForce;
 }

@@ -10,7 +10,6 @@
 
 struct SteeringComponent
 {
-    float maxSpeed = 6.0f;
     float maxSteeringForce = 10.0f;
 
     glm::vec3 steering = glm::vec3(0);

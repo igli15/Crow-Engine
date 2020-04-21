@@ -21,11 +21,25 @@ void SteeringSystem::Update(float dt)
 
     for (int entityIndex = 0; entityIndex < entities.size(); ++entityIndex)
     {
+
         RigidBody &rigidBody = world->GetComponent<RigidBody>(entities[entityIndex]);
         SteeringComponent &steeringComponent = world->GetComponent<SteeringComponent>(entities[entityIndex]);
 
-        rigidBody.acceleration = steeringComponent.steering;
-        rigidBody.velocity = glm::clamp(rigidBody.velocity,0.0f,steeringComponent.maxSpeed);
+        //Clamp steering
+        if(steeringComponent.maxSteeringForce > 0)
+        {
+
+            float steeringLength = glm::length(steeringComponent.steering);
+            if(steeringLength > steeringComponent.maxSteeringForce)
+            {
+                steeringComponent.steering = glm::normalize(steeringComponent.steering) * steeringComponent.maxSteeringForce;
+            }
+
+        }
+
+        //add steering to the acceleration
+        rigidBody.acceleration += steeringComponent.steering;
+
         steeringComponent.steering = glm::vec3(0);
     }
 }

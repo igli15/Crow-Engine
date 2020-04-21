@@ -14,12 +14,18 @@
 #include "../../Engine/Components/RigidBody.h"
 #include "../Components/MoveComponent.h"
 #include "../Systems/MoveSystem.h"
+#include "../Systems/SteeringSystem.h"
+#include "../Components/SteeringComponent.h"
+#include "../Components/SeekComponent.h"
+#include "../Systems/SeekingSystem.h"
 
 void MovementTestWorld::Build()
 {
     World::Build();
 
     RegisterSystem<MoveSystem>();
+    RegisterSystem<SteeringSystem>();
+    RegisterSystem<SeekingSystem>();
 
     ResourceManager* resourceManager = Game::Instance()->resourceManager;
 
@@ -42,8 +48,18 @@ void MovementTestWorld::Build()
     cubeMeshInfo.model = cubeModel;
     cubeMeshInfo.material = material;
     cubeEntity.AddComponent(cubeMeshInfo);
-    cubeEntity.AddComponent(RigidBody{});
 
+    RigidBody rb;
+    rb.maxSpeed = 0.01;
+    cubeEntity.AddComponent(rb);
+
+    SteeringComponent steeringComponent;
+
+    SeekComponent seekComponent{};
+    seekComponent.targetPos = glm::vec3 (3,2,0);
+
+    cubeEntity.AddComponent(steeringComponent);
+    cubeEntity.AddComponent(seekComponent);
 
     EntityHandle lightEntity = CreateEntity();
     auto dirLightTransform = lightEntity.AddComponent(Transform{});

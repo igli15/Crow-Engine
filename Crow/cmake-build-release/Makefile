@@ -1284,6 +1284,33 @@ SandBox/Components/RotateComponent.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Components/RotateComponent.cpp.s
 .PHONY : SandBox/Components/RotateComponent.cpp.s
 
+SandBox/Components/SeekComponent.o: SandBox/Components/SeekComponent.cpp.o
+
+.PHONY : SandBox/Components/SeekComponent.o
+
+# target to build an object file
+SandBox/Components/SeekComponent.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Components/SeekComponent.cpp.o
+.PHONY : SandBox/Components/SeekComponent.cpp.o
+
+SandBox/Components/SeekComponent.i: SandBox/Components/SeekComponent.cpp.i
+
+.PHONY : SandBox/Components/SeekComponent.i
+
+# target to preprocess a source file
+SandBox/Components/SeekComponent.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Components/SeekComponent.cpp.i
+.PHONY : SandBox/Components/SeekComponent.cpp.i
+
+SandBox/Components/SeekComponent.s: SandBox/Components/SeekComponent.cpp.s
+
+.PHONY : SandBox/Components/SeekComponent.s
+
+# target to generate assembly for a file
+SandBox/Components/SeekComponent.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Components/SeekComponent.cpp.s
+.PHONY : SandBox/Components/SeekComponent.cpp.s
+
 SandBox/Components/SteeringComponent.o: SandBox/Components/SteeringComponent.cpp.o
 
 .PHONY : SandBox/Components/SteeringComponent.o
@@ -1746,6 +1773,9 @@ help:
 	@echo "... SandBox/Components/RotateComponent.o"
 	@echo "... SandBox/Components/RotateComponent.i"
 	@echo "... SandBox/Components/RotateComponent.s"
+	@echo "... SandBox/Components/SeekComponent.o"
+	@echo "... SandBox/Components/SeekComponent.i"
+	@echo "... SandBox/Components/SeekComponent.s"
 	@echo "... SandBox/Components/SteeringComponent.o"
 	@echo "... SandBox/Components/SteeringComponent.i"
 	@echo "... SandBox/Components/SteeringComponent.s"

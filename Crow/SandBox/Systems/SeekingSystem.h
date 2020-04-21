@@ -6,13 +6,17 @@
 #define CROW_SEEKINGSYSTEM_H
 
 
+#include <glm/vec3.hpp>
 #include "../../Engine/Feather/System.h"
+#include "../../Engine/Components/Transform.h"
+#include "../../Engine/Components/RigidBody.h"
 
 class SeekingSystem : public System
 {
     void Init() override;
     void Update(float dt) override;
 
+    glm::vec3 DoSeek(Transform& ownerTransform,RigidBody& ownerRigidBody ,glm::vec3 target,float slowingRadius = 0.0f);
 
 };
 
