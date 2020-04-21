@@ -16,7 +16,7 @@
 #include "../Rendering/Materials/TranslucentColorMat.h"
 #include "../Rendering/Materials/TextureMaterial.h"
 
-void UnitySceneParser::ParseUnityScene(const std::string &fileName, World *currentWorld)
+void UnitySceneParser::ParseUnityScene(const std::string &fileName, World *currentWorld,customComponentFunction function )
 {
     //Reads the xml file and gets the root node
     std::ifstream myXml(SCENE_PATH + fileName);
@@ -34,11 +34,11 @@ void UnitySceneParser::ParseUnityScene(const std::string &fileName, World *curre
         ENGINE_LOG_ERROR("XML Node is null!");
     }
 
-    ParseAllEntities(rootNode,currentWorld);
+    ParseAllEntities(rootNode,currentWorld,function);
 
 }
 
-void UnitySceneParser::ParseAllEntities(rapidxml::xml_node<> *node, World *world)
+void UnitySceneParser::ParseAllEntities(rapidxml::xml_node<> *node, World *world,customComponentFunction function )
 {
     for (rapidxml::xml_node<> *currentObjectNode = node->first_node();
          currentObjectNode != nullptr; currentObjectNode = currentObjectNode->next_sibling())
@@ -46,29 +46,13 @@ void UnitySceneParser::ParseAllEntities(rapidxml::xml_node<> *node, World *world
         if (strcmp(currentObjectNode->name(), "GameObject") == 0)
         {
             EntityHandle currentNode = ParseEntity(currentObjectNode,world);
-
-            if (currentObjectNode->first_node()->next_sibling() != nullptr)
-            {
-                rapidxml::xml_node<> *childNode = currentObjectNode->first_node()->next_sibling();
-                for (rapidxml::xml_node<> *com = childNode; com != nullptr; com = com->next_sibling())
-                {
-                    if (strcmp(com->name(), "GameObject") == 0)
-                    {
-                        EntityHandle child = ParseEntity(com,world);
-                        Transform *childTransform = child.GetComponent<Transform>().component;
-                        Transform *parentTransform = currentNode.GetComponent<Transform>().component;
-
-                        childTransform->SetParent(parentTransform);
-                    }
-                }
-
-            }
+            ParseChildrenEntities(currentObjectNode,currentNode,world,function);
         }
 
     }
 }
 
-EntityHandle UnitySceneParser::ParseEntity(rapidxml::xml_node<> *node, World *world)
+EntityHandle UnitySceneParser::ParseEntity(rapidxml::xml_node<> *node, World *world,customComponentFunction function)
 {
     EntityHandle entity = world->CreateEntity();
 
@@ -77,14 +61,39 @@ EntityHandle UnitySceneParser::ParseEntity(rapidxml::xml_node<> *node, World *wo
     if (strcmp(node->first_node()->name(), "Components") == 0) {
         rapidxml::xml_node<> *compNode = node->first_node();
         for (rapidxml::xml_node<> *com = compNode->first_node(); com != nullptr; com = com->next_sibling()) {
-            ParseComponents(com, entity);
+            ParseComponents(com, entity,function);
         }
     }
 
     return entity;
 }
 
-void UnitySceneParser::ParseComponents(rapidxml::xml_node<> *com, EntityHandle newNode)
+void UnitySceneParser::ParseChildrenEntities(rapidxml::xml_node<> *node, EntityHandle entity,World* world,customComponentFunction function)
+{
+    if (node->first_node()->next_sibling() != nullptr)
+    {
+        rapidxml::xml_node<> *childNode = node->first_node()->next_sibling();
+        for (rapidxml::xml_node<> *com = childNode; com != nullptr; com = com->next_sibling())
+        {
+            if (strcmp(com->name(), "GameObject") == 0)
+            {
+                EntityHandle child = ParseEntity(com,world,function);
+                Transform *childTransform = child.GetComponent<Transform>().component;
+                Transform *parentTransform = entity.GetComponent<Transform>().component;
+
+                childTransform->SetParent(parentTransform);
+
+                //Parse the children of children recursively!
+                ParseChildrenEntities(com,child,world,function);
+            }
+        }
+
+    }
+}
+
+
+
+void UnitySceneParser::ParseComponents(rapidxml::xml_node<> *com, EntityHandle newNode,customComponentFunction function)
 {
     if (strcmp(com->name(), "Camera") == 0)
     {
@@ -106,6 +115,8 @@ void UnitySceneParser::ParseComponents(rapidxml::xml_node<> *com, EntityHandle n
     {
         ParseTextureMaterial(com,newNode);
     }
+
+    if(function) function(com,newNode);
 }
 
 void UnitySceneParser::ParseEntityCore(rapidxml::xml_node<> *node, EntityHandle entityHandle)

@@ -109,8 +109,5 @@ void TranslucentMaterialTestWorld::Build()
     dirLight->intensity = 1;
     dirLight->type = dirLight->DIRECTIONAL;
 
-    ENGINE_LOG(dirLightTransform->GetLocalTransform()[2].x);
-    ENGINE_LOG(dirLightTransform->GetLocalTransform()[2].y);
-    ENGINE_LOG(dirLightTransform->GetLocalTransform()[2].z);
 
 }

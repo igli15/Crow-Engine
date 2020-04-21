@@ -10,7 +10,6 @@
 
 struct MoveComponent {
 
-    glm::vec3 direction = glm::vec3(1,0,0);
     float speed = 0.2;
 
 };

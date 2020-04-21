@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/Components/Camera.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/RigidBody.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o"
@@ -49,6 +50,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/MyGame.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/MoveSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RotateSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/MovementTestWorld.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/RotatingGunsWorld.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/SpriteRenderingWorld.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/TranslucentMaterialTestWorld.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o"

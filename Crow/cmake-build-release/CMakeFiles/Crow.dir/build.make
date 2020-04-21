@@ -707,6 +707,32 @@ CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Game/Worlds/MainWorld.cpp" -o CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.s
 
+CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.o: CMakeFiles/Crow.dir/flags.make
+CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.o: ../Engine/Components/RigidBody.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/RigidBody.cpp"
+
+CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/RigidBody.cpp" > CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.i
+
+CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/RigidBody.cpp" -o CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.s
+
+CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o: CMakeFiles/Crow.dir/flags.make
+CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o: ../SandBox/Worlds/MovementTestWorld.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/MovementTestWorld.cpp"
+
+CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/MovementTestWorld.cpp" > CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.i
+
+CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/MovementTestWorld.cpp" -o CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.s
+
 # Object files for target Crow
 Crow_OBJECTS = \
 "CMakeFiles/Crow.dir/main.cpp.o" \
@@ -758,7 +784,9 @@ Crow_OBJECTS = \
 "CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o" \
-"CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o"
+"CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o" \
+"CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.o" \
+"CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o"
 
 # External object files for target Crow
 Crow_EXTERNAL_OBJECTS =
@@ -813,13 +841,15 @@ Crow: CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o
 Crow: CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o
+Crow: CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.o
+Crow: CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o
 Crow: CMakeFiles/Crow.dir/build.make
 Crow: /usr/local/lib/libglfw.dylib
 Crow: /usr/local/lib/libassimp.dylib
 Crow: /usr/local/lib/libGLEW.dylib
 Crow: /usr/local/lib/libfreetype.dylib
 Crow: CMakeFiles/Crow.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_51) "Linking CXX executable Crow"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_53) "Linking CXX executable Crow"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Crow.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

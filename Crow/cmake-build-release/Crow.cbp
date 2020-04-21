@@ -99,6 +99,12 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h">
 			<Option target="Crow"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/RigidBody.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/RigidBody.h">
+			<Option target="Crow"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/SphereCollider.h">
 			<Option target="Crow"/>
 		</Unit>
@@ -400,6 +406,12 @@
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RotateSystem.h">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/MovementTestWorld.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/MovementTestWorld.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/RotatingGunsWorld.cpp">

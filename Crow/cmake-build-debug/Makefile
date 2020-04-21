@@ -150,6 +150,33 @@ Engine/Components/Camera.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Components/Camera.cpp.s
 .PHONY : Engine/Components/Camera.cpp.s
 
+Engine/Components/RigidBody.o: Engine/Components/RigidBody.cpp.o
+
+.PHONY : Engine/Components/RigidBody.o
+
+# target to build an object file
+Engine/Components/RigidBody.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.o
+.PHONY : Engine/Components/RigidBody.cpp.o
+
+Engine/Components/RigidBody.i: Engine/Components/RigidBody.cpp.i
+
+.PHONY : Engine/Components/RigidBody.i
+
+# target to preprocess a source file
+Engine/Components/RigidBody.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.i
+.PHONY : Engine/Components/RigidBody.cpp.i
+
+Engine/Components/RigidBody.s: Engine/Components/RigidBody.cpp.s
+
+.PHONY : Engine/Components/RigidBody.s
+
+# target to generate assembly for a file
+Engine/Components/RigidBody.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.s
+.PHONY : Engine/Components/RigidBody.cpp.s
+
 Engine/Components/Transform.o: Engine/Components/Transform.cpp.o
 
 .PHONY : Engine/Components/Transform.o
@@ -1338,6 +1365,33 @@ SandBox/Systems/RotateSystem.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.s
 .PHONY : SandBox/Systems/RotateSystem.cpp.s
 
+SandBox/Worlds/MovementTestWorld.o: SandBox/Worlds/MovementTestWorld.cpp.o
+
+.PHONY : SandBox/Worlds/MovementTestWorld.o
+
+# target to build an object file
+SandBox/Worlds/MovementTestWorld.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o
+.PHONY : SandBox/Worlds/MovementTestWorld.cpp.o
+
+SandBox/Worlds/MovementTestWorld.i: SandBox/Worlds/MovementTestWorld.cpp.i
+
+.PHONY : SandBox/Worlds/MovementTestWorld.i
+
+# target to preprocess a source file
+SandBox/Worlds/MovementTestWorld.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.i
+.PHONY : SandBox/Worlds/MovementTestWorld.cpp.i
+
+SandBox/Worlds/MovementTestWorld.s: SandBox/Worlds/MovementTestWorld.cpp.s
+
+.PHONY : SandBox/Worlds/MovementTestWorld.s
+
+# target to generate assembly for a file
+SandBox/Worlds/MovementTestWorld.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.s
+.PHONY : SandBox/Worlds/MovementTestWorld.cpp.s
+
 SandBox/Worlds/RotatingGunsWorld.o: SandBox/Worlds/RotatingGunsWorld.cpp.o
 
 .PHONY : SandBox/Worlds/RotatingGunsWorld.o
@@ -1485,6 +1539,9 @@ help:
 	@echo "... Engine/Components/Camera.o"
 	@echo "... Engine/Components/Camera.i"
 	@echo "... Engine/Components/Camera.s"
+	@echo "... Engine/Components/RigidBody.o"
+	@echo "... Engine/Components/RigidBody.i"
+	@echo "... Engine/Components/RigidBody.s"
 	@echo "... Engine/Components/Transform.o"
 	@echo "... Engine/Components/Transform.i"
 	@echo "... Engine/Components/Transform.s"
@@ -1617,6 +1674,9 @@ help:
 	@echo "... SandBox/Systems/RotateSystem.o"
 	@echo "... SandBox/Systems/RotateSystem.i"
 	@echo "... SandBox/Systems/RotateSystem.s"
+	@echo "... SandBox/Worlds/MovementTestWorld.o"
+	@echo "... SandBox/Worlds/MovementTestWorld.i"
+	@echo "... SandBox/Worlds/MovementTestWorld.s"
 	@echo "... SandBox/Worlds/RotatingGunsWorld.o"
 	@echo "... SandBox/Worlds/RotatingGunsWorld.i"
 	@echo "... SandBox/Worlds/RotatingGunsWorld.s"

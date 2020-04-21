@@ -11,17 +11,21 @@
 #include "../../Plugins/RapidXML/rapidxml.hpp"
 #include "../Feather/EntityHandle.h"
 
+using customComponentFunction = std::function<void(rapidxml::xml_node<>*,EntityHandle)>;
 
 class UnitySceneParser
 {
+
+
 public:
-    static void ParseUnityScene(const std::string& fileName, World* currentWorld);
+    static void ParseUnityScene(const std::string& fileName, World* currentWorld,customComponentFunction function = {});
 
 private:
 
-    static void ParseAllEntities(rapidxml::xml_node<> *node,World* world);
-    static EntityHandle ParseEntity(rapidxml::xml_node<>* node,World* world);
-    static void ParseComponents(rapidxml::xml_node<>* com,EntityHandle newNode);
+    static void ParseAllEntities(rapidxml::xml_node<> *node,World* world,customComponentFunction function = {});
+    static EntityHandle ParseEntity(rapidxml::xml_node<>* node,World* world,customComponentFunction function = {});
+    static void ParseComponents(rapidxml::xml_node<>* com,EntityHandle newNode,customComponentFunction function = {});
+    static void ParseChildrenEntities(rapidxml::xml_node<>* com,EntityHandle entity,World* world,customComponentFunction function = {});
 
     static void ParseEntityCore(rapidxml::xml_node<>* node,EntityHandle entityHandle);
     static void ParseLightComponent(rapidxml::xml_node<>* node,EntityHandle entityHandle);

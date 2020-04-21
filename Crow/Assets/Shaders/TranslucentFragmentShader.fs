@@ -104,7 +104,7 @@ vec3 CalcDirLight(DirLight light, vec3 normal, vec3 viewDir)
 {
     vec3 lightDir = normalize(light.direction);
 
-    vec3 transLightDir = lightDir + normal * translucentDistortion;
+    vec3 transLightDir = -lightDir + normal * translucentDistortion;
     float transDot =  pow ( max (0, dot ( viewDir, -transLightDir ) ), translucentPower ) * translucentScale;
     vec3 transLight = (transDot) * translucentColor;
     vec3 transAlbedo = light.color * transLight;

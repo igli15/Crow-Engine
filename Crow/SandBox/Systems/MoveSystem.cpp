@@ -9,20 +9,25 @@
 #include "../../Engine/Events/CollisionEvent.h"
 #include "../../Engine/Components/MeshInfo.h"
 #include "../../Engine/Rendering/Materials/ColorMaterial.h"
+#include "../../Engine/Components/RigidBody.h"
 
 void MoveSystem::Update()
 {
     System::Update();
 
-    auto entities = world->EntitiesWith<Transform,MoveComponent>();
+    auto entities = world->EntitiesWith<Transform,MoveComponent,RigidBody>();
 
-    //ENGINE_LOG(entities.size());
     for (int i = 0; i < entities.size(); ++i)
     {
         MoveComponent& moveComponent = world->GetComponent<MoveComponent>(entities[i]);
+        RigidBody& rigidBody = world->GetComponent<RigidBody>(entities[i]);
         Transform& transform = world->GetComponent<Transform>(entities[i]);
 
-        transform.Translate(moveComponent.direction * moveComponent.speed);
+
+        transform.Translate(rigidBody.velocity);
+        rigidBody.velocity += rigidBody.acceleration;
+        rigidBody.velocity = glm::clamp(rigidBody.velocity,-moveComponent.speed,moveComponent.speed);
+
     }
 
 }
@@ -31,13 +36,5 @@ void MoveSystem::Init()
 {
     System::Init();
 
-    EventQueue::Instance().Subscribe(this,&MoveSystem::UpdateMaterials);
 }
 
-void MoveSystem::UpdateMaterials(CollisionEnterEvent* collisionEvent)
-{
-    ENGINE_LOG("CollisionEnter");
-    static_cast<ColorMaterial*>(collisionEvent->entity1.GetComponent<MeshInfo>().component->material)->mainColor = glm::vec3(1,0,0);
-    world->DestroyEntity(collisionEvent->entity1.entity);
-    //world->DestroyEntity(collisionEvent->entity2.entity);
-}

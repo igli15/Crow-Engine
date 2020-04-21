@@ -10,6 +10,7 @@
 #include "../Engine/Rendering/Materials/ColorMaterial.h"
 #include "Worlds/SpriteRenderingWorld.h"
 #include "../Game/Worlds/MainWorld.h"
+#include "Worlds/MovementTestWorld.h"
 
 void MyGame::LoadAssets()
 {
@@ -48,7 +49,8 @@ void MyGame::Init()
 
     //Set the world here!
 
-    SetWorld(new MainWorld());
+    SetWorld(new MovementTestWorld());
+    //SetWorld(new MainWorld());
     //SetWorld(new XmlTestWorld());
     //SetWorld(new TranslucentMaterialTestWorld());
     //SetWorld(new RotatingGunsWorld());

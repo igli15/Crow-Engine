@@ -17,7 +17,6 @@ class MoveSystem : public System {
     void Init() override;
     void Update() override;
 
-    void UpdateMaterials(CollisionEnterEvent* collisionEvent);
 };
 
 
