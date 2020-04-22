@@ -6,12 +6,19 @@
 #define CROW_STEERINGSYSTEM_H
 
 
+#include <glm/ext/quaternion_float.hpp>
 #include "../../Engine/Feather/System.h"
+
+class RigidBody;
+class Transform;
 
 class SteeringSystem : public System
 {
     void Init() override;
     void Update(float dt) override;
+
+    void LookWhereGoing(RigidBody& rigidbody,Transform& transform);
+    glm::quat RotateTowards(const glm::quat from,const glm::quat to,float angleStep);
 };
 
 
