@@ -29,7 +29,7 @@ void MovementTestWorld::Build()
 
     ResourceManager* resourceManager = Game::Instance()->resourceManager;
 
-    Model* cubeModel = resourceManager->GetModel("cube");
+    Model* cubeModel = resourceManager->GetModel("dragon");
     ColorMaterial* material = resourceManager->GetMaterial<ColorMaterial>("defaultMat");
 
 
@@ -56,14 +56,14 @@ void MovementTestWorld::Build()
     SteeringComponent steeringComponent;
 
     SeekComponent seekComponent{};
-    seekComponent.targetPos = glm::vec3 (3,2,0);
+    seekComponent.targetPos = glm::vec3 (3,-2,0);
 
     cubeEntity.AddComponent(steeringComponent);
     cubeEntity.AddComponent(seekComponent);
 
     EntityHandle lightEntity = CreateEntity();
     auto dirLightTransform = lightEntity.AddComponent(Transform{});
-    dirLightTransform->Rotate(45,glm::vec3(1,0,0));
+    dirLightTransform->Rotate(135,glm::vec3(1,0,0));
     Light* dirLight = lightEntity.AddComponent(Light{glm::vec3(0.8,0.8,0.8)});
     dirLight->intensity = 1;
     dirLight->type = dirLight->DIRECTIONAL;

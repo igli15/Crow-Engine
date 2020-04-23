@@ -37,14 +37,16 @@ public:
     void Rotate(const glm::quat& rot);
 
     void SetLocalPosition(const glm::vec3& pos);
-    void SetScale(const glm::vec3& scale);
-
+    void SetLocalScale(const glm::vec3& scale);
+    void SetLocalRotation(const glm::quat& rotation);
 
     ///Rotate around an axis by an angle
     ///@param angle the angle in degrees
     ///@param axis vector3 specifing the axis of rotation
     void Rotate(float angle,const glm::vec3& axis);
 
+
+    inline const glm::quat& getLocalRotation() const {return m_localRotation;}
 
     glm::vec3 LocalPosition();
     glm::vec3 WorldPosition();
@@ -56,13 +58,25 @@ public:
     void DestroyAllChildrenEntities();
 
 private:
+
     std::vector<Entity> m_childrens;
     glm::mat4 m_worldTransform = glm::mat4(1.0f);
     glm::mat4 m_localTransform = glm::mat4(1.0f);
 
+    glm::vec3 m_localPosition {0,0,0};
+    glm::quat m_localRotation  {1,0,0,0};
+    glm::vec3 m_localScale {1,1,1};
+
+
     Transform* m_parentTransform = nullptr;
     World* m_contextWorld;
     Entity owner;
+
+    void MarkLocalTransformDirty();
+    void MarkWorldTransformDirty();
+
+    bool m_isLocalDirty = true;
+    bool m_isWorldDirty = true;
 
     //void SetWorld(World* world);
 };

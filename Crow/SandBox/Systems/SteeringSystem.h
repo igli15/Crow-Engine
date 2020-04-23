@@ -17,8 +17,8 @@ class SteeringSystem : public System
     void Init() override;
     void Update(float dt) override;
 
-    void LookWhereGoing(RigidBody& rigidbody,Transform& transform);
-    glm::quat RotateTowards(const glm::quat from,const glm::quat to,float angleStep);
+    void LookWhereGoing(RigidBody& rigidbody,Transform& transform,float angleStep);
+    glm::quat RotateTowards(glm::quat from,glm::quat to,float angleStep);
 };
 
 

@@ -15,39 +15,61 @@
 
 const glm::mat4& Transform::GetLocalTransform()
 {
+
+    if(m_isLocalDirty)
+    {
+        m_localTransform = glm::translate(glm::mat4(1.0f),m_localPosition) * glm::toMat4(m_localRotation)
+                           * glm::scale(glm::mat4(1.0f),m_localScale);
+
+        m_isLocalDirty = false;
+    }
     return m_localTransform;
 }
 
 void Transform::Translate(const glm::vec3 &translation)
 {
-    m_localTransform = glm::translate(m_localTransform,translation);
+    //m_localTransform = glm::translate(m_localTransform,translation);
+    m_localPosition += translation;
+    MarkLocalTransformDirty();
 }
 
 void Transform::Scale(const glm::vec3& scale)
 {
-    m_localTransform = glm::scale(m_localTransform,scale);
+    //m_localTransform = glm::scale(m_localTransform,scale);
+    m_localScale *= scale;
+    MarkLocalTransformDirty();
 }
 
 void Transform::Rotate(const glm::quat &rot)
 {
-    m_localTransform *= glm::toMat4(rot);
+    //m_localTransform *= glm::toMat4(rot);
+    m_localRotation = rot * m_localRotation;
+    MarkLocalTransformDirty();
 }
 
 void Transform::SetLocalPosition(const glm::vec3 &pos)
 {
-    m_localTransform[3] = glm::vec4(pos, 1);
+    //m_localTransform[3] = glm::vec4(pos, 1);
+    m_localPosition = pos;
+    MarkLocalTransformDirty();
 }
 
-void Transform::SetScale(const glm::vec3& scale)
+void Transform::SetLocalScale(const glm::vec3& scale)
 {
-    m_localTransform[0] = glm::normalize(m_localTransform[0]) *scale.x;
-    m_localTransform[1] = glm::normalize(m_localTransform[1]) *scale.y;
-    m_localTransform[2] = glm::normalize(m_localTransform[2]) *scale.z;
+    m_localScale = scale;
+    MarkLocalTransformDirty();
+}
+
+void Transform::SetLocalRotation(const glm::quat &rotation)
+{
+    m_localRotation = rotation;
+    MarkLocalTransformDirty();
 }
 
 void Transform::Rotate(float angle, const glm::vec3 &axis)
 {
-    m_localTransform = glm::rotate(m_localTransform,glm::radians(angle),axis);
+    Rotate(glm::angleAxis(glm::radians(angle), glm::normalize(axis)));
+    // m_localTransform = glm::rotate(m_localTransform,glm::radians(angle),axis);
 }
 
 glm::vec3 Transform::LocalPosition()
@@ -57,9 +79,18 @@ glm::vec3 Transform::LocalPosition()
 
 const glm::mat4 &Transform::GetWorldTransform()
 {
-    if(m_parentTransform == nullptr) return m_localTransform;
+    if(m_isWorldDirty)
+    {
+        if (m_parentTransform == nullptr)
+        {
+            m_worldTransform = GetLocalTransform();
+        } else
+        {
+            m_worldTransform = m_parentTransform->GetWorldTransform() * GetLocalTransform();
+        }
 
-    m_worldTransform = m_parentTransform->GetWorldTransform() * m_localTransform;
+        m_isWorldDirty = false;
+    }
 
     return m_worldTransform;
 }
@@ -79,7 +110,7 @@ void Transform::SetParent(Transform *transform)
     }
 }
 
-void Transform::DestroyAllChildrenEntities() 
+void Transform::DestroyAllChildrenEntities()
 {
     for (int i = 0; i < m_childrens.size(); ++i)
     {
@@ -97,5 +128,21 @@ glm::vec3 Transform::WorldPosition()
     return glm::vec3(GetWorldTransform()[3]);
 }
 
+void Transform::MarkLocalTransformDirty()
+{
+    m_isLocalDirty = true;
 
+    MarkWorldTransformDirty();
+}
+
+void Transform::MarkWorldTransformDirty()
+{
+    m_isWorldDirty = true;
+
+    for (int i = 0; i < m_childrens.size(); ++i)
+    {
+        Transform& transform = m_contextWorld->GetComponent<Transform>(m_childrens[i]);
+        transform.MarkWorldTransformDirty();
+    }
+}
 
