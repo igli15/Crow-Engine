@@ -7,7 +7,6 @@
 #include "../../Engine/Components/Transform.h"
 #include "../../Engine/Components/RigidBody.h"
 #include "../Components/SteeringComponent.h"
-#include <cmath>
 
 void SteeringSystem::Init()
 {
@@ -44,7 +43,10 @@ void SteeringSystem::Update(float dt)
 
         steeringComponent.steering = glm::vec3(0);
 
-        LookWhereGoing(rigidBody,transform,0.7f * dt);
+        if(steeringComponent.rotateTowardsVelocity)
+        {
+            LookWhereGoing(rigidBody, transform, steeringComponent.rotationAngleStep * dt);
+        }
     }
 }
 
@@ -88,7 +90,6 @@ glm::quat SteeringSystem::RotateTowards(glm::quat q1, glm::quat q2, float maxAng
 
     float angle = acos(cosTheta);
 
-    // If there is only a 2&deg; difference, and we are allowed 5&deg;,
     // then we arrived.
     if (angle < maxAngle){
         return q2;
@@ -97,28 +98,10 @@ glm::quat SteeringSystem::RotateTowards(glm::quat q1, glm::quat q2, float maxAng
     float fT = maxAngle / angle;
     angle = maxAngle;
 
+    //after this part i was lost check the link for the formula
+    //http://www.opengl-tutorial.org/intermediate-tutorials/tutorial-17-quaternions/
     glm::quat res = (sin((1.0f - fT) * angle) * q1 + sin(fT * angle) * q2) / sin(angle);
-    res = normalize(res);
+    res = glm::normalize(res);
     return res;
 
 }
-
-/*
-glm::quat SteeringSystem::RotateTowards(glm::quat from, glm::quat to, float angleStep)
-{
-    float angleBetweenQuaternions = 0;
-
-    float kEpsilon = 0.000001f;
-    float dot = glm::dot(from,to);
-
-    if(dot > 1.0f - kEpsilon) angleBetweenQuaternions = 0;
-    else
-    {
-       angleBetweenQuaternions =  glm::degrees(glm::acos(glm::min(glm::abs(dot),1.0f)) * 2);
-    }
-
-    if(angleBetweenQuaternions == 0) return to;
-
-    return glm::slerp(from,to,glm::min(1.0f,angleStep/angleBetweenQuaternions));
-}
- */
