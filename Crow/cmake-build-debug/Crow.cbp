@@ -426,6 +426,12 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/SeekingSystem.h">
 			<Option target="Crow"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/SpawnSystem.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/SpawnSystem.h">
+			<Option target="Crow"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/SteeringSystem.cpp">
 			<Option target="Crow"/>
 		</Unit>

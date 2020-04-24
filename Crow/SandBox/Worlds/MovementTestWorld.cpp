@@ -18,6 +18,7 @@
 #include "../Components/SteeringComponent.h"
 #include "../Components/SeekComponent.h"
 #include "../Systems/SeekingSystem.h"
+#include "../Systems/SpawnSystem.h"
 
 void MovementTestWorld::Build()
 {
@@ -26,6 +27,7 @@ void MovementTestWorld::Build()
     RegisterSystem<MoveSystem>();
     RegisterSystem<SteeringSystem>();
     RegisterSystem<SeekingSystem>();
+    RegisterSystem<SpawnSystem>();
 
     ResourceManager* resourceManager = Game::Instance()->resourceManager;
 

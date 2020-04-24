@@ -1446,6 +1446,33 @@ SandBox/Systems/SeekingSystem.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/SeekingSystem.cpp.s
 .PHONY : SandBox/Systems/SeekingSystem.cpp.s
 
+SandBox/Systems/SpawnSystem.o: SandBox/Systems/SpawnSystem.cpp.o
+
+.PHONY : SandBox/Systems/SpawnSystem.o
+
+# target to build an object file
+SandBox/Systems/SpawnSystem.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/SpawnSystem.cpp.o
+.PHONY : SandBox/Systems/SpawnSystem.cpp.o
+
+SandBox/Systems/SpawnSystem.i: SandBox/Systems/SpawnSystem.cpp.i
+
+.PHONY : SandBox/Systems/SpawnSystem.i
+
+# target to preprocess a source file
+SandBox/Systems/SpawnSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/SpawnSystem.cpp.i
+.PHONY : SandBox/Systems/SpawnSystem.cpp.i
+
+SandBox/Systems/SpawnSystem.s: SandBox/Systems/SpawnSystem.cpp.s
+
+.PHONY : SandBox/Systems/SpawnSystem.s
+
+# target to generate assembly for a file
+SandBox/Systems/SpawnSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/SpawnSystem.cpp.s
+.PHONY : SandBox/Systems/SpawnSystem.cpp.s
+
 SandBox/Systems/SteeringSystem.o: SandBox/Systems/SteeringSystem.cpp.o
 
 .PHONY : SandBox/Systems/SteeringSystem.o
@@ -1791,6 +1818,9 @@ help:
 	@echo "... SandBox/Systems/SeekingSystem.o"
 	@echo "... SandBox/Systems/SeekingSystem.i"
 	@echo "... SandBox/Systems/SeekingSystem.s"
+	@echo "... SandBox/Systems/SpawnSystem.o"
+	@echo "... SandBox/Systems/SpawnSystem.i"
+	@echo "... SandBox/Systems/SpawnSystem.s"
 	@echo "... SandBox/Systems/SteeringSystem.o"
 	@echo "... SandBox/Systems/SteeringSystem.i"
 	@echo "... SandBox/Systems/SteeringSystem.s"

@@ -53,6 +53,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/MoveSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RotateSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/SeekingSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/SandBox/Systems/SeekingSystem.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/SpawnSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/SandBox/Systems/SpawnSystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/SteeringSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/SandBox/Systems/SteeringSystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/MovementTestWorld.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/RotatingGunsWorld.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o"

@@ -48,6 +48,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.o"
   "CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.o"
   "CMakeFiles/Crow.dir/SandBox/Systems/SeekingSystem.cpp.o"
+  "CMakeFiles/Crow.dir/SandBox/Systems/SpawnSystem.cpp.o"
   "CMakeFiles/Crow.dir/SandBox/Systems/SteeringSystem.cpp.o"
   "CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o"
   "CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o"
