@@ -5,7 +5,7 @@
 #include "SteeringSystem.h"
 #include "../../Engine/Feather/World.h"
 #include "../../Engine/Components/Transform.h"
-#include "../../Engine/Components/RigidBody.h"
+#include "../../Engine/Components/Rigidbody.h"
 #include "../Components/SteeringComponent.h"
 
 void SteeringSystem::Init()
@@ -17,12 +17,12 @@ void SteeringSystem::Update(float dt)
 {
     System::Update(0);
 
-    auto entities = world->EntitiesWith<RigidBody,SteeringComponent>();
+    auto entities = world->EntitiesWith<Rigidbody,SteeringComponent>();
 
     for (int entityIndex = 0; entityIndex < entities.size(); ++entityIndex)
     {
 
-        RigidBody &rigidBody = world->GetComponent<RigidBody>(entities[entityIndex]);
+        Rigidbody &rigidBody = world->GetComponent<Rigidbody>(entities[entityIndex]);
         Transform &transform = world->GetComponent<Transform>(entities[entityIndex]);
         SteeringComponent &steeringComponent = world->GetComponent<SteeringComponent>(entities[entityIndex]);
 
@@ -50,7 +50,7 @@ void SteeringSystem::Update(float dt)
     }
 }
 
-void SteeringSystem::LookWhereGoing(RigidBody& rigidbody,Transform& transform,float angleStep)
+void SteeringSystem::LookWhereGoing(Rigidbody& rigidbody, Transform& transform, float angleStep)
 {
     if(rigidbody.velocity != glm::vec3(0))
     {

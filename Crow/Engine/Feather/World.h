@@ -185,7 +185,7 @@ public:
     ///Queries for all entities which contain the specified component types in one line.
     ///EntitiesWith will get the smallest array from the specified component types and then search the rest of the arrays
     ///based on the entities of that array only.
-    ///e.g EntitesWith<Transform,RigidBody...>();
+    ///e.g EntitesWith<Transform,Rigidbody...>();
     ///@return Returns a std::vector of Entities.
     template <typename ...Args>
     std::vector<Entity> EntitiesWith()

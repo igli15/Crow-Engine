@@ -2,8 +2,8 @@
 // Created by Igli milaqi on 25/03/2020.
 //
 
-#ifndef CROW_MOVESYSTEM_H
-#define CROW_MOVESYSTEM_H
+#ifndef CROW_RIGIDBODYSYSTEM_H
+#define CROW_RIGIDBODYSYSTEM_H
 
 
 #include "../../Engine/Feather/System.h"
@@ -12,7 +12,7 @@
 struct CollisionEvent;
 
 
-class MoveSystem : public System {
+class RigidbodySystem : public System {
 
     void Init() override;
     void Update(float dt) override;
@@ -20,4 +20,4 @@ class MoveSystem : public System {
 };
 
 
-#endif //CROW_MOVESYSTEM_H
+#endif //CROW_RIGIDBODYSYSTEM_H

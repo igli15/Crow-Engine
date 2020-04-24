@@ -14,19 +14,20 @@
 #include "../../Engine/Core/ResourceManager.h"
 #include "../../Engine/Rendering/Materials/ColorMaterial.h"
 #include "GLFW/glfw3.h"
-#include "../../Engine/Components/RigidBody.h"
+#include "../../Engine/Components/Rigidbody.h"
 
 void SpawnSystem::Update(float dt)
 {
     System::Update(dt);
 
+    ///spawn the units on the bridge and make them go forward till the end
     if(Input::GetKeyDown(GLFW_KEY_SPACE))
     {
         EntityHandle unitEntity = world->CreateEntity();
         unitEntity.AddComponent<Transform>(Transform{});
         unitEntity.AddComponent<SteeringComponent>(SteeringComponent{});
         unitEntity.AddComponent<SeekComponent>(SeekComponent{glm::vec3 (-3,-2,0)});
-        unitEntity.AddComponent<RigidBody>(RigidBody{});
+        unitEntity.AddComponent<Rigidbody>(Rigidbody{});
 
         unitEntity.AddComponent<MeshInfo>(MeshInfo{m_resourceManager->GetModel("cube"),m_resourceManager->GetMaterial<ColorMaterial>("defaultMat")});
 

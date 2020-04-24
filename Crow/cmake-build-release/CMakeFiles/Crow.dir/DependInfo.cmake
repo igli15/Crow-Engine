@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Components/Camera.cpp.o"
-  "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/RigidBody.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Rigidbody.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Components/Rigidbody.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o"
@@ -50,7 +50,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/SeekComponent.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Components/SeekComponent.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/SteeringComponent.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Components/SteeringComponent.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/MyGame.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o"
-  "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/MoveSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RigidbodySystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Systems/RigidbodySystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RotateSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/SeekingSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Systems/SeekingSystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/SpawnSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Systems/SpawnSystem.cpp.o"

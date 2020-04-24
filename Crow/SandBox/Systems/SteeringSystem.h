@@ -9,7 +9,7 @@
 #include <glm/ext/quaternion_float.hpp>
 #include "../../Engine/Feather/System.h"
 
-class RigidBody;
+class Rigidbody;
 class Transform;
 
 class SteeringSystem : public System
@@ -17,7 +17,7 @@ class SteeringSystem : public System
     void Init() override;
     void Update(float dt) override;
 
-    void LookWhereGoing(RigidBody& rigidbody,Transform& transform,float angleStep);
+    void LookWhereGoing(Rigidbody& rigidbody, Transform& transform, float angleStep);
     glm::quat RotateTowards(glm::quat from,glm::quat to,float angleStep);
 };
 

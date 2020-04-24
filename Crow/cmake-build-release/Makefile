@@ -150,32 +150,32 @@ Engine/Components/Camera.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Components/Camera.cpp.s
 .PHONY : Engine/Components/Camera.cpp.s
 
-Engine/Components/RigidBody.o: Engine/Components/RigidBody.cpp.o
+Engine/Components/Rigidbody.o: Engine/Components/Rigidbody.cpp.o
 
-.PHONY : Engine/Components/RigidBody.o
+.PHONY : Engine/Components/Rigidbody.o
 
 # target to build an object file
-Engine/Components/RigidBody.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.o
-.PHONY : Engine/Components/RigidBody.cpp.o
+Engine/Components/Rigidbody.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Components/Rigidbody.cpp.o
+.PHONY : Engine/Components/Rigidbody.cpp.o
 
-Engine/Components/RigidBody.i: Engine/Components/RigidBody.cpp.i
+Engine/Components/Rigidbody.i: Engine/Components/Rigidbody.cpp.i
 
-.PHONY : Engine/Components/RigidBody.i
+.PHONY : Engine/Components/Rigidbody.i
 
 # target to preprocess a source file
-Engine/Components/RigidBody.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.i
-.PHONY : Engine/Components/RigidBody.cpp.i
+Engine/Components/Rigidbody.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Components/Rigidbody.cpp.i
+.PHONY : Engine/Components/Rigidbody.cpp.i
 
-Engine/Components/RigidBody.s: Engine/Components/RigidBody.cpp.s
+Engine/Components/Rigidbody.s: Engine/Components/Rigidbody.cpp.s
 
-.PHONY : Engine/Components/RigidBody.s
+.PHONY : Engine/Components/Rigidbody.s
 
 # target to generate assembly for a file
-Engine/Components/RigidBody.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.s
-.PHONY : Engine/Components/RigidBody.cpp.s
+Engine/Components/Rigidbody.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Components/Rigidbody.cpp.s
+.PHONY : Engine/Components/Rigidbody.cpp.s
 
 Engine/Components/Transform.o: Engine/Components/Transform.cpp.o
 
@@ -1365,32 +1365,32 @@ SandBox/MyGame.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/MyGame.cpp.s
 .PHONY : SandBox/MyGame.cpp.s
 
-SandBox/Systems/MoveSystem.o: SandBox/Systems/MoveSystem.cpp.o
+SandBox/Systems/RigidbodySystem.o: SandBox/Systems/RigidbodySystem.cpp.o
 
-.PHONY : SandBox/Systems/MoveSystem.o
+.PHONY : SandBox/Systems/RigidbodySystem.o
 
 # target to build an object file
-SandBox/Systems/MoveSystem.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.o
-.PHONY : SandBox/Systems/MoveSystem.cpp.o
+SandBox/Systems/RigidbodySystem.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/RigidbodySystem.cpp.o
+.PHONY : SandBox/Systems/RigidbodySystem.cpp.o
 
-SandBox/Systems/MoveSystem.i: SandBox/Systems/MoveSystem.cpp.i
+SandBox/Systems/RigidbodySystem.i: SandBox/Systems/RigidbodySystem.cpp.i
 
-.PHONY : SandBox/Systems/MoveSystem.i
+.PHONY : SandBox/Systems/RigidbodySystem.i
 
 # target to preprocess a source file
-SandBox/Systems/MoveSystem.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.i
-.PHONY : SandBox/Systems/MoveSystem.cpp.i
+SandBox/Systems/RigidbodySystem.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/RigidbodySystem.cpp.i
+.PHONY : SandBox/Systems/RigidbodySystem.cpp.i
 
-SandBox/Systems/MoveSystem.s: SandBox/Systems/MoveSystem.cpp.s
+SandBox/Systems/RigidbodySystem.s: SandBox/Systems/RigidbodySystem.cpp.s
 
-.PHONY : SandBox/Systems/MoveSystem.s
+.PHONY : SandBox/Systems/RigidbodySystem.s
 
 # target to generate assembly for a file
-SandBox/Systems/MoveSystem.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.s
-.PHONY : SandBox/Systems/MoveSystem.cpp.s
+SandBox/Systems/RigidbodySystem.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/RigidbodySystem.cpp.s
+.PHONY : SandBox/Systems/RigidbodySystem.cpp.s
 
 SandBox/Systems/RotateSystem.o: SandBox/Systems/RotateSystem.cpp.o
 
@@ -1674,9 +1674,9 @@ help:
 	@echo "... Engine/Components/Camera.o"
 	@echo "... Engine/Components/Camera.i"
 	@echo "... Engine/Components/Camera.s"
-	@echo "... Engine/Components/RigidBody.o"
-	@echo "... Engine/Components/RigidBody.i"
-	@echo "... Engine/Components/RigidBody.s"
+	@echo "... Engine/Components/Rigidbody.o"
+	@echo "... Engine/Components/Rigidbody.i"
+	@echo "... Engine/Components/Rigidbody.s"
 	@echo "... Engine/Components/Transform.o"
 	@echo "... Engine/Components/Transform.i"
 	@echo "... Engine/Components/Transform.s"
@@ -1809,9 +1809,9 @@ help:
 	@echo "... SandBox/MyGame.o"
 	@echo "... SandBox/MyGame.i"
 	@echo "... SandBox/MyGame.s"
-	@echo "... SandBox/Systems/MoveSystem.o"
-	@echo "... SandBox/Systems/MoveSystem.i"
-	@echo "... SandBox/Systems/MoveSystem.s"
+	@echo "... SandBox/Systems/RigidbodySystem.o"
+	@echo "... SandBox/Systems/RigidbodySystem.i"
+	@echo "... SandBox/Systems/RigidbodySystem.s"
 	@echo "... SandBox/Systems/RotateSystem.o"
 	@echo "... SandBox/Systems/RotateSystem.i"
 	@echo "... SandBox/Systems/RotateSystem.s"

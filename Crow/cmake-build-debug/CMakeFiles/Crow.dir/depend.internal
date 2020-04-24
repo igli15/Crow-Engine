@@ -165,9 +165,9 @@ CMakeFiles/Crow.dir/Engine/Components/Camera.cpp.o
  /usr/local/include/glm/vec3.hpp
  /usr/local/include/glm/vec4.hpp
  /usr/local/include/glm/vector_relational.hpp
-CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.o
- /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/RigidBody.cpp
- /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/RigidBody.h
+CMakeFiles/Crow.dir/Engine/Components/Rigidbody.cpp.o
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Rigidbody.cpp
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Rigidbody.h
  /usr/local/include/glm/common.hpp
  /usr/local/include/glm/detail/_fixes.hpp
  /usr/local/include/glm/detail/_swizzle.hpp
@@ -9269,10 +9269,10 @@ CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o
  /usr/local/include/spdlog/spdlog.h
  /usr/local/include/spdlog/tweakme.h
  /usr/local/include/spdlog/version.h
-CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.o
+CMakeFiles/Crow.dir/SandBox/Systems/RigidbodySystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Crow.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
- /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/RigidBody.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Rigidbody.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
@@ -9299,8 +9299,8 @@ CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
  /Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/MoveComponent.h
- /Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/MoveSystem.cpp
- /Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/MoveSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RigidbodySystem.cpp
+ /Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RigidbodySystem.h
  /usr/local/include/GL/glew.h
  /usr/local/include/glm/common.hpp
  /usr/local/include/glm/detail/_fixes.hpp
@@ -9927,7 +9927,7 @@ CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.o
  /usr/local/include/spdlog/version.h
 CMakeFiles/Crow.dir/SandBox/Systems/SeekingSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Crow.h
- /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/RigidBody.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Rigidbody.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
@@ -10181,7 +10181,7 @@ CMakeFiles/Crow.dir/SandBox/Systems/SeekingSystem.cpp.o
 CMakeFiles/Crow.dir/SandBox/Systems/SpawnSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Crow.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
- /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/RigidBody.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Rigidbody.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
@@ -10592,7 +10592,7 @@ CMakeFiles/Crow.dir/SandBox/Systems/SpawnSystem.cpp.o
  /usr/local/include/spdlog/version.h
 CMakeFiles/Crow.dir/SandBox/Systems/SteeringSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Crow.h
- /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/RigidBody.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Rigidbody.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
@@ -10847,7 +10847,7 @@ CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
- /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/RigidBody.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Rigidbody.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
@@ -10881,7 +10881,7 @@ CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/MoveComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/SeekComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/SteeringComponent.h
- /Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/MoveSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RigidbodySystem.h
  /Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/SeekingSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/SpawnSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/SteeringSystem.h

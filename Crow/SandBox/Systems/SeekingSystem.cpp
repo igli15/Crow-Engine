@@ -6,7 +6,7 @@
 #include "../../Engine/Debug/Debug.h"
 #include "../../Engine/Feather/World.h"
 #include "../../Engine/Components/Transform.h"
-#include "../../Engine/Components/RigidBody.h"
+#include "../../Engine/Components/Rigidbody.h"
 #include "../Components/SteeringComponent.h"
 #include "../Components/SeekComponent.h"
 
@@ -19,20 +19,20 @@ void SeekingSystem::Update(float dt)
 {
     System::Update(dt);
 
-    auto entities = world->EntitiesWith<Transform,RigidBody,SteeringComponent,SeekComponent>();
+    auto entities = world->EntitiesWith<Transform,Rigidbody,SteeringComponent,SeekComponent>();
 
     for (int i = 0; i < entities.size(); ++i)
     {
         Transform& transform = world->GetComponent<Transform>(entities[i]);
         SteeringComponent& steeringComponent = world->GetComponent<SteeringComponent>(entities[i]);
         SeekComponent& seekComponent = world->GetComponent<SeekComponent>(entities[i]);
-        RigidBody& rigidBody = world->GetComponent<RigidBody>(entities[i]);
+        Rigidbody& rigidBody = world->GetComponent<Rigidbody>(entities[i]);
 
         steeringComponent.steering += DoSeek(transform,rigidBody,seekComponent.targetPos,0);
     }
 }
 
-glm::vec3 SeekingSystem::DoSeek(Transform& ownerTransform,RigidBody& ownerRigidBody,glm::vec3 target, float slowingRadius)
+glm::vec3 SeekingSystem::DoSeek(Transform& ownerTransform, Rigidbody& ownerRigidBody, glm::vec3 target, float slowingRadius)
 {
     glm::vec3 resultForce = glm::vec3(0);
 

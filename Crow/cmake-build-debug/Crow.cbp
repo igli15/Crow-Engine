@@ -99,10 +99,10 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/RigidBody.cpp">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Rigidbody.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/RigidBody.h">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Rigidbody.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/SphereCollider.h">
@@ -408,10 +408,10 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/MyGame.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/MoveSystem.cpp">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RigidbodySystem.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/MoveSystem.h">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RigidbodySystem.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RotateSystem.cpp">

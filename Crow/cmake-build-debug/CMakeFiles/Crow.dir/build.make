@@ -486,18 +486,18 @@ CMakeFiles/Crow.dir/SandBox/Components/MoveComponent.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/SandBox/Components/MoveComponent.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/MoveComponent.cpp" -o CMakeFiles/Crow.dir/SandBox/Components/MoveComponent.cpp.s
 
-CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.o: CMakeFiles/Crow.dir/flags.make
-CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.o: ../SandBox/Systems/MoveSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/MoveSystem.cpp"
+CMakeFiles/Crow.dir/SandBox/Systems/RigidbodySystem.cpp.o: CMakeFiles/Crow.dir/flags.make
+CMakeFiles/Crow.dir/SandBox/Systems/RigidbodySystem.cpp.o: ../SandBox/Systems/RigidbodySystem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/Crow.dir/SandBox/Systems/RigidbodySystem.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/SandBox/Systems/RigidbodySystem.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RigidbodySystem.cpp"
 
-CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/MoveSystem.cpp" > CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.i
+CMakeFiles/Crow.dir/SandBox/Systems/RigidbodySystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/SandBox/Systems/RigidbodySystem.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RigidbodySystem.cpp" > CMakeFiles/Crow.dir/SandBox/Systems/RigidbodySystem.cpp.i
 
-CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/MoveSystem.cpp" -o CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.s
+CMakeFiles/Crow.dir/SandBox/Systems/RigidbodySystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/SandBox/Systems/RigidbodySystem.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RigidbodySystem.cpp" -o CMakeFiles/Crow.dir/SandBox/Systems/RigidbodySystem.cpp.s
 
 CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o: ../Engine/Systems/CollisionDetectionSystem.cpp
@@ -707,18 +707,18 @@ CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Game/Worlds/MainWorld.cpp" -o CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.s
 
-CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.o: CMakeFiles/Crow.dir/flags.make
-CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.o: ../Engine/Components/RigidBody.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/RigidBody.cpp"
+CMakeFiles/Crow.dir/Engine/Components/Rigidbody.cpp.o: CMakeFiles/Crow.dir/flags.make
+CMakeFiles/Crow.dir/Engine/Components/Rigidbody.cpp.o: ../Engine/Components/Rigidbody.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/Crow.dir/Engine/Components/Rigidbody.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Components/Rigidbody.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Rigidbody.cpp"
 
-CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/RigidBody.cpp" > CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.i
+CMakeFiles/Crow.dir/Engine/Components/Rigidbody.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Engine/Components/Rigidbody.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Rigidbody.cpp" > CMakeFiles/Crow.dir/Engine/Components/Rigidbody.cpp.i
 
-CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/RigidBody.cpp" -o CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.s
+CMakeFiles/Crow.dir/Engine/Components/Rigidbody.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Components/Rigidbody.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Rigidbody.cpp" -o CMakeFiles/Crow.dir/Engine/Components/Rigidbody.cpp.s
 
 CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o: ../SandBox/Worlds/MovementTestWorld.cpp
@@ -833,7 +833,7 @@ Crow_OBJECTS = \
 "CMakeFiles/Crow.dir/Engine/EventQueue/EventQueue.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/EventQueue/MemberFunctionHandler.cpp.o" \
 "CMakeFiles/Crow.dir/SandBox/Components/MoveComponent.cpp.o" \
-"CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.o" \
+"CMakeFiles/Crow.dir/SandBox/Systems/RigidbodySystem.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.o" \
 "CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o" \
@@ -850,7 +850,7 @@ Crow_OBJECTS = \
 "CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o" \
 "CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o" \
-"CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.o" \
+"CMakeFiles/Crow.dir/Engine/Components/Rigidbody.cpp.o" \
 "CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o" \
 "CMakeFiles/Crow.dir/SandBox/Components/SteeringComponent.cpp.o" \
 "CMakeFiles/Crow.dir/SandBox/Systems/SeekingSystem.cpp.o" \
@@ -894,7 +894,7 @@ Crow: CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/EventQueue/EventQueue.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/EventQueue/MemberFunctionHandler.cpp.o
 Crow: CMakeFiles/Crow.dir/SandBox/Components/MoveComponent.cpp.o
-Crow: CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.o
+Crow: CMakeFiles/Crow.dir/SandBox/Systems/RigidbodySystem.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.o
 Crow: CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o
@@ -911,7 +911,7 @@ Crow: CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o
 Crow: CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o
-Crow: CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.o
+Crow: CMakeFiles/Crow.dir/Engine/Components/Rigidbody.cpp.o
 Crow: CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o
 Crow: CMakeFiles/Crow.dir/SandBox/Components/SteeringComponent.cpp.o
 Crow: CMakeFiles/Crow.dir/SandBox/Systems/SeekingSystem.cpp.o

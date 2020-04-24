@@ -11,9 +11,9 @@
 #include "../../Engine/Components/Camera.h"
 #include "../../Engine/Feather/EntityHandle.h"
 #include "../../Engine/Components/Light.h"
-#include "../../Engine/Components/RigidBody.h"
+#include "../../Engine/Components/Rigidbody.h"
 #include "../Components/MoveComponent.h"
-#include "../Systems/MoveSystem.h"
+#include "../Systems/RigidbodySystem.h"
 #include "../Systems/SteeringSystem.h"
 #include "../Components/SteeringComponent.h"
 #include "../Components/SeekComponent.h"
@@ -24,7 +24,7 @@ void MovementTestWorld::Build()
 {
     World::Build();
 
-    RegisterSystem<MoveSystem>();
+    RegisterSystem<RigidbodySystem>();
     RegisterSystem<SteeringSystem>();
     RegisterSystem<SeekingSystem>();
     RegisterSystem<SpawnSystem>();
@@ -51,7 +51,7 @@ void MovementTestWorld::Build()
     cubeMeshInfo.material = material;
     cubeEntity.AddComponent(cubeMeshInfo);
 
-    RigidBody rb;
+    Rigidbody rb;
     rb.maxSpeed = 0.01;
     cubeEntity.AddComponent(rb);
 

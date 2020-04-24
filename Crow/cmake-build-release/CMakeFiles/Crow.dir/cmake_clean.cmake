@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Crow.dir/Engine/Components/Camera.cpp.o"
-  "CMakeFiles/Crow.dir/Engine/Components/RigidBody.cpp.o"
+  "CMakeFiles/Crow.dir/Engine/Components/Rigidbody.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o"
@@ -45,7 +45,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Crow.dir/SandBox/Components/SeekComponent.cpp.o"
   "CMakeFiles/Crow.dir/SandBox/Components/SteeringComponent.cpp.o"
   "CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o"
-  "CMakeFiles/Crow.dir/SandBox/Systems/MoveSystem.cpp.o"
+  "CMakeFiles/Crow.dir/SandBox/Systems/RigidbodySystem.cpp.o"
   "CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.o"
   "CMakeFiles/Crow.dir/SandBox/Systems/SeekingSystem.cpp.o"
   "CMakeFiles/Crow.dir/SandBox/Systems/SpawnSystem.cpp.o"
