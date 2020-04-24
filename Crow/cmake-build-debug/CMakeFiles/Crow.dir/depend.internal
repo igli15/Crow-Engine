@@ -8413,11 +8413,14 @@ CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.o
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Crow.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Rigidbody.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Editor/UnitySceneParser.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEnterEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
@@ -8434,6 +8437,11 @@ CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Game/Worlds/MainWorld.h
  /Users/igli/Desktop/Crow Engine/Crow/Plugins/RapidXML/rapidxml.hpp
  /Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/BridgeComponent.h
+ /Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/BridgeSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RigidbodySystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/SeekingSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/SpawnSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/SteeringSystem.h
  /usr/local/include/glm/common.hpp
  /usr/local/include/glm/detail/_fixes.hpp
  /usr/local/include/glm/detail/_swizzle.hpp
@@ -8535,11 +8543,23 @@ CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o
  /usr/local/include/glm/ext/matrix_projection.hpp
  /usr/local/include/glm/ext/matrix_projection.inl
  /usr/local/include/glm/ext/matrix_transform.hpp
+ /usr/local/include/glm/ext/quaternion_common.hpp
+ /usr/local/include/glm/ext/quaternion_common.inl
+ /usr/local/include/glm/ext/quaternion_common_simd.inl
+ /usr/local/include/glm/ext/quaternion_double.hpp
+ /usr/local/include/glm/ext/quaternion_double_precision.hpp
+ /usr/local/include/glm/ext/quaternion_exponential.hpp
+ /usr/local/include/glm/ext/quaternion_exponential.inl
  /usr/local/include/glm/ext/quaternion_float.hpp
+ /usr/local/include/glm/ext/quaternion_float_precision.hpp
  /usr/local/include/glm/ext/quaternion_geometric.hpp
  /usr/local/include/glm/ext/quaternion_geometric.inl
  /usr/local/include/glm/ext/quaternion_relational.hpp
  /usr/local/include/glm/ext/quaternion_relational.inl
+ /usr/local/include/glm/ext/quaternion_transform.hpp
+ /usr/local/include/glm/ext/quaternion_transform.inl
+ /usr/local/include/glm/ext/quaternion_trigonometric.hpp
+ /usr/local/include/glm/ext/quaternion_trigonometric.inl
  /usr/local/include/glm/ext/scalar_constants.hpp
  /usr/local/include/glm/ext/scalar_constants.inl
  /usr/local/include/glm/ext/vector_bool2.hpp
@@ -8579,8 +8599,16 @@ CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o
  /usr/local/include/glm/glm.hpp
  /usr/local/include/glm/gtc/constants.hpp
  /usr/local/include/glm/gtc/constants.inl
+ /usr/local/include/glm/gtc/epsilon.hpp
+ /usr/local/include/glm/gtc/epsilon.inl
  /usr/local/include/glm/gtc/matrix_transform.hpp
  /usr/local/include/glm/gtc/matrix_transform.inl
+ /usr/local/include/glm/gtc/quaternion.hpp
+ /usr/local/include/glm/gtc/quaternion.inl
+ /usr/local/include/glm/gtc/quaternion_simd.inl
+ /usr/local/include/glm/gtx/norm.hpp
+ /usr/local/include/glm/gtx/norm.inl
+ /usr/local/include/glm/gtx/quaternion.hpp
  /usr/local/include/glm/integer.hpp
  /usr/local/include/glm/mat2x2.hpp
  /usr/local/include/glm/mat2x3.hpp
@@ -9257,6 +9285,87 @@ CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o
  /usr/local/include/glm/vec3.hpp
  /usr/local/include/glm/vec4.hpp
  /usr/local/include/glm/vector_relational.hpp
+ /usr/local/include/spdlog/common-inl.h
+ /usr/local/include/spdlog/common.h
+ /usr/local/include/spdlog/details/backtracer-inl.h
+ /usr/local/include/spdlog/details/backtracer.h
+ /usr/local/include/spdlog/details/circular_q.h
+ /usr/local/include/spdlog/details/console_globals.h
+ /usr/local/include/spdlog/details/fmt_helper.h
+ /usr/local/include/spdlog/details/log_msg-inl.h
+ /usr/local/include/spdlog/details/log_msg.h
+ /usr/local/include/spdlog/details/log_msg_buffer-inl.h
+ /usr/local/include/spdlog/details/log_msg_buffer.h
+ /usr/local/include/spdlog/details/null_mutex.h
+ /usr/local/include/spdlog/details/os-inl.h
+ /usr/local/include/spdlog/details/os.h
+ /usr/local/include/spdlog/details/pattern_formatter-inl.h
+ /usr/local/include/spdlog/details/pattern_formatter.h
+ /usr/local/include/spdlog/details/periodic_worker-inl.h
+ /usr/local/include/spdlog/details/periodic_worker.h
+ /usr/local/include/spdlog/details/registry-inl.h
+ /usr/local/include/spdlog/details/registry.h
+ /usr/local/include/spdlog/details/synchronous_factory.h
+ /usr/local/include/spdlog/fmt/bundled/core.h
+ /usr/local/include/spdlog/fmt/bundled/format-inl.h
+ /usr/local/include/spdlog/fmt/bundled/format.h
+ /usr/local/include/spdlog/fmt/fmt.h
+ /usr/local/include/spdlog/formatter.h
+ /usr/local/include/spdlog/logger-inl.h
+ /usr/local/include/spdlog/logger.h
+ /usr/local/include/spdlog/sinks/ansicolor_sink-inl.h
+ /usr/local/include/spdlog/sinks/ansicolor_sink.h
+ /usr/local/include/spdlog/sinks/sink-inl.h
+ /usr/local/include/spdlog/sinks/sink.h
+ /usr/local/include/spdlog/sinks/stdout_color_sinks-inl.h
+ /usr/local/include/spdlog/sinks/stdout_color_sinks.h
+ /usr/local/include/spdlog/sinks/wincolor_sink-inl.h
+ /usr/local/include/spdlog/sinks/wincolor_sink.h
+ /usr/local/include/spdlog/spdlog-inl.h
+ /usr/local/include/spdlog/spdlog.h
+ /usr/local/include/spdlog/tweakme.h
+ /usr/local/include/spdlog/version.h
+CMakeFiles/Crow.dir/SandBox/Systems/BridgeSystem.cpp.o
+ /Users/igli/Desktop/Crow Engine/Crow/Crow.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/CustomTypeID.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityManager.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemManager.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
+ /Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/BridgeComponent.h
+ /Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/BridgeSystem.cpp
+ /Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/BridgeSystem.h
+ /usr/local/include/GLFW/glfw3.h
+ /usr/local/include/glm/detail/_swizzle.hpp
+ /usr/local/include/glm/detail/_swizzle_func.hpp
+ /usr/local/include/glm/detail/compute_vector_relational.hpp
+ /usr/local/include/glm/detail/qualifier.hpp
+ /usr/local/include/glm/detail/setup.hpp
+ /usr/local/include/glm/detail/type_vec3.hpp
+ /usr/local/include/glm/detail/type_vec3.inl
+ /usr/local/include/glm/ext/vector_bool3.hpp
+ /usr/local/include/glm/ext/vector_bool3_precision.hpp
+ /usr/local/include/glm/ext/vector_double3.hpp
+ /usr/local/include/glm/ext/vector_double3_precision.hpp
+ /usr/local/include/glm/ext/vector_float3.hpp
+ /usr/local/include/glm/ext/vector_float3_precision.hpp
+ /usr/local/include/glm/ext/vector_int3.hpp
+ /usr/local/include/glm/ext/vector_int3_precision.hpp
+ /usr/local/include/glm/ext/vector_uint3.hpp
+ /usr/local/include/glm/ext/vector_uint3_precision.hpp
+ /usr/local/include/glm/simd/platform.h
+ /usr/local/include/glm/vec3.hpp
  /usr/local/include/spdlog/common-inl.h
  /usr/local/include/spdlog/common.h
  /usr/local/include/spdlog/details/backtracer-inl.h
@@ -10239,6 +10348,7 @@ CMakeFiles/Crow.dir/SandBox/Systems/SpawnSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
+ /Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/BridgeComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/SeekComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/SteeringComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/SpawnSystem.cpp

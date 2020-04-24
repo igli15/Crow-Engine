@@ -7,8 +7,10 @@
 
 
 #include "../../Engine/Feather/System.h"
+#include <vector>
 
 class ResourceManager;
+class BridgeComponent;
 
 class SpawnSystem : public System
 {
@@ -18,6 +20,7 @@ public:
 
 private:
     ResourceManager* m_resourceManager;
+    std::vector<BridgeComponent*> m_bridges;
 };
 
 

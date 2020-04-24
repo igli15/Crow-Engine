@@ -51,6 +51,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/SeekComponent.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Components/SeekComponent.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/SteeringComponent.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Components/SteeringComponent.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/MyGame.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/BridgeSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Systems/BridgeSystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RigidbodySystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Systems/RigidbodySystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RotateSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/SeekingSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Systems/SeekingSystem.cpp.o"

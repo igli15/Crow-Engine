@@ -46,6 +46,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Crow.dir/SandBox/Components/SeekComponent.cpp.o"
   "CMakeFiles/Crow.dir/SandBox/Components/SteeringComponent.cpp.o"
   "CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o"
+  "CMakeFiles/Crow.dir/SandBox/Systems/BridgeSystem.cpp.o"
   "CMakeFiles/Crow.dir/SandBox/Systems/RigidbodySystem.cpp.o"
   "CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.o"
   "CMakeFiles/Crow.dir/SandBox/Systems/SeekingSystem.cpp.o"

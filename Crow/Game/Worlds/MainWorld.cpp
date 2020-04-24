@@ -7,12 +7,23 @@
 #include "../../Engine/Components/Light.h"
 #include "../../SandBox/Components/BridgeComponent.h"
 #include "../../Engine/Feather/EntityHandle.h"
+#include "../../SandBox/Systems/BridgeSystem.h"
+#include "../../SandBox/Systems/SpawnSystem.h"
+#include "../../SandBox/Systems/SeekingSystem.h"
+#include "../../SandBox/Systems/SteeringSystem.h"
+#include "../../SandBox/Systems/RigidbodySystem.h"
 
 void MainWorld::Build()
 {
     World::Build();
 
     UnitySceneParser::ParseUnityScene("MainLevel.xml",this,&(MainWorld::ParseGameComponents));
+
+    RegisterSystem<RigidbodySystem>();
+    RegisterSystem<SteeringSystem>();
+    RegisterSystem<SeekingSystem>();
+    RegisterSystem<SpawnSystem>();
+    RegisterSystem<BridgeSystem>();
 
 }
 

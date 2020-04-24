@@ -15,6 +15,7 @@
 #include "../../Engine/Rendering/Materials/ColorMaterial.h"
 #include "GLFW/glfw3.h"
 #include "../../Engine/Components/Rigidbody.h"
+#include "../Components/BridgeComponent.h"
 
 void SpawnSystem::Update(float dt)
 {
@@ -23,10 +24,27 @@ void SpawnSystem::Update(float dt)
     ///spawn the units on the bridge and make them go forward till the end
     if(Input::GetKeyDown(GLFW_KEY_SPACE))
     {
+        BridgeComponent* activeBridge = nullptr;
+
+        for (int i = 0; i < m_bridges.size(); ++i)
+        {
+            if(m_bridges[i]->isSelected)
+            {
+                activeBridge = m_bridges[i];
+            }
+        }
+
         EntityHandle unitEntity = world->CreateEntity();
-        unitEntity.AddComponent<Transform>(Transform{});
+        Transform* unitTransform = unitEntity.AddComponent<Transform>(Transform{});
+
+        unitTransform->Translate(activeBridge->startPos);
+
+        ENGINE_LOG(activeBridge->startPos.x);
+        ENGINE_LOG(activeBridge->startPos.y);
+        ENGINE_LOG(activeBridge->startPos.z);
+
         unitEntity.AddComponent<SteeringComponent>(SteeringComponent{});
-        unitEntity.AddComponent<SeekComponent>(SeekComponent{glm::vec3 (-3,-2,0)});
+        unitEntity.AddComponent<SeekComponent>(SeekComponent{activeBridge->endPos});
         unitEntity.AddComponent<Rigidbody>(Rigidbody{});
 
         unitEntity.AddComponent<MeshInfo>(MeshInfo{m_resourceManager->GetModel("cube"),m_resourceManager->GetMaterial<ColorMaterial>("defaultMat")});
@@ -38,4 +56,11 @@ void SpawnSystem::Update(float dt)
 void SpawnSystem::Init()
 {
     m_resourceManager = Game::Instance()->resourceManager;
+    auto bridgeEntities = world->EntitiesWith<BridgeComponent>();
+
+    for (int i = 0; i < bridgeEntities.size(); ++i)
+    {
+        BridgeComponent* bridgeComponent = &world->GetComponent<BridgeComponent>(bridgeEntities[i]);
+        m_bridges.push_back(bridgeComponent);
+    }
 }

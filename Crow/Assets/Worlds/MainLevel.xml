@@ -25,7 +25,7 @@
   <GameObject name="middleBridge" position="(-16.7000, -2.9000, -13.8000)" rotation="(0.0000, -0.1685, 0.0000, 0.9857)" scale="(11.8721, 0.2063, 87.7322)" mesh="cube">
     <Components>
       <ColorMaterial materialName="bridgeMaterial" mainColor="(0.4000, 0.4039, 0.4039)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" />
-      <BridgeComponent startPos="(28.2147, -2.9000, 18.8852)" endPos="(8.9458, -2.9000, -35.8108)" />
+      <BridgeComponent startPos="(-28.2147, -2.9000, 18.8852)" endPos="(-8.9458, -2.9000, -35.8108)" />
     </Components>
     <GameObject name="startTransform" position="(0.0000, 0.0000, 0.3950)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)">
       <Components />
@@ -37,7 +37,7 @@
   <GameObject name="rightBridge" position="(8.3000, -3.7000, 6.4000)" rotation="(0.0000, -0.3827, 0.0000, 0.9239)" scale="(10.3857, 0.2063, 97.0338)" mesh="cube">
     <Components>
       <ColorMaterial materialName="bridgeMaterial" mainColor="(0.4000, 0.4039, 0.4039)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" />
-      <BridgeComponent startPos="(16.4008, -3.7000, 31.1008)" endPos="(-31.9716, -3.7000, -17.2716)" />
+      <BridgeComponent startPos="(-16.4008, -3.7000, 31.1008)" endPos="(31.9716, -3.7000, -17.2716)" />
     </Components>
     <GameObject name="startTransform" position="(0.0000, 0.0000, 0.3600)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)">
       <Components />
@@ -49,7 +49,7 @@
   <GameObject name="leftBridge" position="(-52.6000, -3.6000, -25.8000)" rotation="(0.0009, 0.0329, -0.0030, 0.9995)" scale="(17.0310, 0.2063, 98.7246)" mesh="cube">
     <Components>
       <ColorMaterial materialName="bridgeMaterial" mainColor="(0.4000, 0.4039, 0.4039)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" />
-      <BridgeComponent startPos="(49.8665, -3.6803, 15.6730)" endPos="(54.4050, -3.5470, -53.1860)" />
+      <BridgeComponent startPos="(-49.8665, -3.6803, 15.6730)" endPos="(-54.4050, -3.5470, -53.1860)" />
     </Components>
     <GameObject name="startTransform" position="(0.0000, 0.0000, 0.4210)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)">
       <Components />

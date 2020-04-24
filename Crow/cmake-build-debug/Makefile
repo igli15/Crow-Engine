@@ -1392,6 +1392,33 @@ SandBox/MyGame.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/MyGame.cpp.s
 .PHONY : SandBox/MyGame.cpp.s
 
+SandBox/Systems/BridgeSystem.o: SandBox/Systems/BridgeSystem.cpp.o
+
+.PHONY : SandBox/Systems/BridgeSystem.o
+
+# target to build an object file
+SandBox/Systems/BridgeSystem.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/BridgeSystem.cpp.o
+.PHONY : SandBox/Systems/BridgeSystem.cpp.o
+
+SandBox/Systems/BridgeSystem.i: SandBox/Systems/BridgeSystem.cpp.i
+
+.PHONY : SandBox/Systems/BridgeSystem.i
+
+# target to preprocess a source file
+SandBox/Systems/BridgeSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/BridgeSystem.cpp.i
+.PHONY : SandBox/Systems/BridgeSystem.cpp.i
+
+SandBox/Systems/BridgeSystem.s: SandBox/Systems/BridgeSystem.cpp.s
+
+.PHONY : SandBox/Systems/BridgeSystem.s
+
+# target to generate assembly for a file
+SandBox/Systems/BridgeSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/BridgeSystem.cpp.s
+.PHONY : SandBox/Systems/BridgeSystem.cpp.s
+
 SandBox/Systems/RigidbodySystem.o: SandBox/Systems/RigidbodySystem.cpp.o
 
 .PHONY : SandBox/Systems/RigidbodySystem.o
@@ -1839,6 +1866,9 @@ help:
 	@echo "... SandBox/MyGame.o"
 	@echo "... SandBox/MyGame.i"
 	@echo "... SandBox/MyGame.s"
+	@echo "... SandBox/Systems/BridgeSystem.o"
+	@echo "... SandBox/Systems/BridgeSystem.i"
+	@echo "... SandBox/Systems/BridgeSystem.s"
 	@echo "... SandBox/Systems/RigidbodySystem.o"
 	@echo "... SandBox/Systems/RigidbodySystem.i"
 	@echo "... SandBox/Systems/RigidbodySystem.s"
