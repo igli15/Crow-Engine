@@ -7,12 +7,14 @@
 
 
 #include "../Engine/Core/Game.h"
+#include "../Plugins/RapidXML/rapidxml.hpp"
 
 class MyGame : public Game {
 
 public:
     void Init() override;
     void LoadAssets() override;
+
 };
 
 

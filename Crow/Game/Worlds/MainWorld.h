@@ -7,11 +7,14 @@
 
 
 #include "../../Engine/Feather/World.h"
+#include "../../Plugins/RapidXML/rapidxml.hpp"
 
 class MainWorld : public World
 {
 public:
     void Build() override;
+
+    static void ParseGameComponents(rapidxml::xml_node<>* node,EntityHandle entity);
 };
 
 

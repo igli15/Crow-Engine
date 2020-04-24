@@ -1230,6 +1230,33 @@ Plugins/stb_image.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Plugins/stb_image.cpp.s
 .PHONY : Plugins/stb_image.cpp.s
 
+SandBox/Components/BridgeComponent.o: SandBox/Components/BridgeComponent.cpp.o
+
+.PHONY : SandBox/Components/BridgeComponent.o
+
+# target to build an object file
+SandBox/Components/BridgeComponent.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Components/BridgeComponent.cpp.o
+.PHONY : SandBox/Components/BridgeComponent.cpp.o
+
+SandBox/Components/BridgeComponent.i: SandBox/Components/BridgeComponent.cpp.i
+
+.PHONY : SandBox/Components/BridgeComponent.i
+
+# target to preprocess a source file
+SandBox/Components/BridgeComponent.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Components/BridgeComponent.cpp.i
+.PHONY : SandBox/Components/BridgeComponent.cpp.i
+
+SandBox/Components/BridgeComponent.s: SandBox/Components/BridgeComponent.cpp.s
+
+.PHONY : SandBox/Components/BridgeComponent.s
+
+# target to generate assembly for a file
+SandBox/Components/BridgeComponent.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Components/BridgeComponent.cpp.s
+.PHONY : SandBox/Components/BridgeComponent.cpp.s
+
 SandBox/Components/MoveComponent.o: SandBox/Components/MoveComponent.cpp.o
 
 .PHONY : SandBox/Components/MoveComponent.o
@@ -1794,6 +1821,9 @@ help:
 	@echo "... Plugins/stb_image.o"
 	@echo "... Plugins/stb_image.i"
 	@echo "... Plugins/stb_image.s"
+	@echo "... SandBox/Components/BridgeComponent.o"
+	@echo "... SandBox/Components/BridgeComponent.i"
+	@echo "... SandBox/Components/BridgeComponent.s"
 	@echo "... SandBox/Components/MoveComponent.o"
 	@echo "... SandBox/Components/MoveComponent.i"
 	@echo "... SandBox/Components/MoveComponent.s"

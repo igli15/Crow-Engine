@@ -45,6 +45,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Gameobject.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/OOP_Engine/Gameobject.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/OOPEngine.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/OOP_Engine/OOPEngine.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Plugins/stb_image.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Plugins/stb_image.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/BridgeComponent.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Components/BridgeComponent.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/MoveComponent.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Components/MoveComponent.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/RotateComponent.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Components/RotateComponent.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/SeekComponent.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Components/SeekComponent.cpp.o"

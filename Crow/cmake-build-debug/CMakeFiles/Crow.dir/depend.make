@@ -8432,6 +8432,7 @@ CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Feather/World.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Game/Worlds/MainWorld.cpp
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Game/Worlds/MainWorld.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Plugins/RapidXML/rapidxml.hpp
+CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../SandBox/Components/BridgeComponent.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: /usr/local/include/glm/common.hpp
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: /usr/local/include/glm/detail/_fixes.hpp
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: /usr/local/include/glm/detail/_swizzle.hpp
@@ -8658,6 +8659,28 @@ CMakeFiles/Crow.dir/OOP_Engine/OOPEngine.cpp.o: ../OOP\ Engine/OOPEngine.h
 CMakeFiles/Crow.dir/Plugins/stb_image.cpp.o: ../Plugins/stb_image.cpp
 CMakeFiles/Crow.dir/Plugins/stb_image.cpp.o: ../Plugins/stb_image.h
 
+CMakeFiles/Crow.dir/SandBox/Components/BridgeComponent.cpp.o: ../SandBox/Components/BridgeComponent.cpp
+CMakeFiles/Crow.dir/SandBox/Components/BridgeComponent.cpp.o: ../SandBox/Components/BridgeComponent.h
+CMakeFiles/Crow.dir/SandBox/Components/BridgeComponent.cpp.o: /usr/local/include/glm/detail/_swizzle.hpp
+CMakeFiles/Crow.dir/SandBox/Components/BridgeComponent.cpp.o: /usr/local/include/glm/detail/_swizzle_func.hpp
+CMakeFiles/Crow.dir/SandBox/Components/BridgeComponent.cpp.o: /usr/local/include/glm/detail/compute_vector_relational.hpp
+CMakeFiles/Crow.dir/SandBox/Components/BridgeComponent.cpp.o: /usr/local/include/glm/detail/qualifier.hpp
+CMakeFiles/Crow.dir/SandBox/Components/BridgeComponent.cpp.o: /usr/local/include/glm/detail/setup.hpp
+CMakeFiles/Crow.dir/SandBox/Components/BridgeComponent.cpp.o: /usr/local/include/glm/detail/type_vec3.hpp
+CMakeFiles/Crow.dir/SandBox/Components/BridgeComponent.cpp.o: /usr/local/include/glm/detail/type_vec3.inl
+CMakeFiles/Crow.dir/SandBox/Components/BridgeComponent.cpp.o: /usr/local/include/glm/ext/vector_bool3.hpp
+CMakeFiles/Crow.dir/SandBox/Components/BridgeComponent.cpp.o: /usr/local/include/glm/ext/vector_bool3_precision.hpp
+CMakeFiles/Crow.dir/SandBox/Components/BridgeComponent.cpp.o: /usr/local/include/glm/ext/vector_double3.hpp
+CMakeFiles/Crow.dir/SandBox/Components/BridgeComponent.cpp.o: /usr/local/include/glm/ext/vector_double3_precision.hpp
+CMakeFiles/Crow.dir/SandBox/Components/BridgeComponent.cpp.o: /usr/local/include/glm/ext/vector_float3.hpp
+CMakeFiles/Crow.dir/SandBox/Components/BridgeComponent.cpp.o: /usr/local/include/glm/ext/vector_float3_precision.hpp
+CMakeFiles/Crow.dir/SandBox/Components/BridgeComponent.cpp.o: /usr/local/include/glm/ext/vector_int3.hpp
+CMakeFiles/Crow.dir/SandBox/Components/BridgeComponent.cpp.o: /usr/local/include/glm/ext/vector_int3_precision.hpp
+CMakeFiles/Crow.dir/SandBox/Components/BridgeComponent.cpp.o: /usr/local/include/glm/ext/vector_uint3.hpp
+CMakeFiles/Crow.dir/SandBox/Components/BridgeComponent.cpp.o: /usr/local/include/glm/ext/vector_uint3_precision.hpp
+CMakeFiles/Crow.dir/SandBox/Components/BridgeComponent.cpp.o: /usr/local/include/glm/simd/platform.h
+CMakeFiles/Crow.dir/SandBox/Components/BridgeComponent.cpp.o: /usr/local/include/glm/vec3.hpp
+
 CMakeFiles/Crow.dir/SandBox/Components/MoveComponent.cpp.o: ../SandBox/Components/MoveComponent.cpp
 CMakeFiles/Crow.dir/SandBox/Components/MoveComponent.cpp.o: ../SandBox/Components/MoveComponent.h
 CMakeFiles/Crow.dir/SandBox/Components/MoveComponent.cpp.o: /usr/local/include/glm/common.hpp
@@ -8857,12 +8880,14 @@ CMakeFiles/Crow.dir/SandBox/Components/SteeringComponent.cpp.o: /usr/local/inclu
 CMakeFiles/Crow.dir/SandBox/Components/SteeringComponent.cpp.o: /usr/local/include/glm/vec3.hpp
 
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Crow.h
+CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Components/Camera.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Components/MeshInfo.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Core/Game.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Core/Input.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Core/Renderer.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Core/ResourceManager.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Debug/Debug.h
+CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Editor/UnitySceneParser.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/EventQueue/Event.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/EventQueue/EventQueue.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
@@ -8873,6 +8898,7 @@ CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Feather/ComponentManager.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Feather/CustomTypeID.h
+CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Feather/EntityHandle.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Feather/EntityManager.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Feather/SystemManager.h
@@ -8886,6 +8912,8 @@ CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Rendering/Shader.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Rendering/Texture.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Rendering/Window.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Game/Worlds/MainWorld.h
+CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Plugins/RapidXML/rapidxml.hpp
+CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../SandBox/Components/BridgeComponent.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../SandBox/MyGame.cpp
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../SandBox/MyGame.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../SandBox/Worlds/MovementTestWorld.h
@@ -12783,6 +12811,7 @@ CMakeFiles/Crow.dir/main.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Engine/Feather/Types.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Engine/Feather/World.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Engine/Rendering/Window.h
+CMakeFiles/Crow.dir/main.cpp.o: ../Plugins/RapidXML/rapidxml.hpp
 CMakeFiles/Crow.dir/main.cpp.o: ../SandBox/MyGame.h
 CMakeFiles/Crow.dir/main.cpp.o: ../main.cpp
 CMakeFiles/Crow.dir/main.cpp.o: /usr/local/include/GL/glew.h

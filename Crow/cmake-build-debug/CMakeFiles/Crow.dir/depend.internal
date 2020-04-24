@@ -8433,6 +8433,7 @@ CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Game/Worlds/MainWorld.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Game/Worlds/MainWorld.h
  /Users/igli/Desktop/Crow Engine/Crow/Plugins/RapidXML/rapidxml.hpp
+ /Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/BridgeComponent.h
  /usr/local/include/glm/common.hpp
  /usr/local/include/glm/detail/_fixes.hpp
  /usr/local/include/glm/detail/_swizzle.hpp
@@ -8658,6 +8659,28 @@ CMakeFiles/Crow.dir/OOP_Engine/OOPEngine.cpp.o
 CMakeFiles/Crow.dir/Plugins/stb_image.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Plugins/stb_image.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Plugins/stb_image.h
+CMakeFiles/Crow.dir/SandBox/Components/BridgeComponent.cpp.o
+ /Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/BridgeComponent.cpp
+ /Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/BridgeComponent.h
+ /usr/local/include/glm/detail/_swizzle.hpp
+ /usr/local/include/glm/detail/_swizzle_func.hpp
+ /usr/local/include/glm/detail/compute_vector_relational.hpp
+ /usr/local/include/glm/detail/qualifier.hpp
+ /usr/local/include/glm/detail/setup.hpp
+ /usr/local/include/glm/detail/type_vec3.hpp
+ /usr/local/include/glm/detail/type_vec3.inl
+ /usr/local/include/glm/ext/vector_bool3.hpp
+ /usr/local/include/glm/ext/vector_bool3_precision.hpp
+ /usr/local/include/glm/ext/vector_double3.hpp
+ /usr/local/include/glm/ext/vector_double3_precision.hpp
+ /usr/local/include/glm/ext/vector_float3.hpp
+ /usr/local/include/glm/ext/vector_float3_precision.hpp
+ /usr/local/include/glm/ext/vector_int3.hpp
+ /usr/local/include/glm/ext/vector_int3_precision.hpp
+ /usr/local/include/glm/ext/vector_uint3.hpp
+ /usr/local/include/glm/ext/vector_uint3_precision.hpp
+ /usr/local/include/glm/simd/platform.h
+ /usr/local/include/glm/vec3.hpp
 CMakeFiles/Crow.dir/SandBox/Components/MoveComponent.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/MoveComponent.cpp
  /Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/MoveComponent.h
@@ -8858,12 +8881,14 @@ CMakeFiles/Crow.dir/SandBox/Components/SteeringComponent.cpp.o
  /usr/local/include/glm/vec3.hpp
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Crow.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Renderer.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Editor/UnitySceneParser.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
@@ -8874,6 +8899,7 @@ CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/CustomTypeID.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityManager.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemManager.h
@@ -8887,6 +8913,8 @@ CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Worlds/MainWorld.h
+ /Users/igli/Desktop/Crow Engine/Crow/Plugins/RapidXML/rapidxml.hpp
+ /Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/BridgeComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/SandBox/MyGame.cpp
  /Users/igli/Desktop/Crow Engine/Crow/SandBox/MyGame.h
  /Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/MovementTestWorld.h
@@ -12784,6 +12812,7 @@ CMakeFiles/Crow.dir/main.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
+ /Users/igli/Desktop/Crow Engine/Crow/Plugins/RapidXML/rapidxml.hpp
  /Users/igli/Desktop/Crow Engine/Crow/SandBox/MyGame.h
  /Users/igli/Desktop/Crow Engine/Crow/main.cpp
  /usr/local/include/GL/glew.h

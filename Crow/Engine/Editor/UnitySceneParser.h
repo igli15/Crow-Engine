@@ -11,21 +11,27 @@
 #include "../../Plugins/RapidXML/rapidxml.hpp"
 #include "../Feather/EntityHandle.h"
 
-using customComponentFunction = std::function<void(rapidxml::xml_node<>*,EntityHandle)>;
+//bool (*comparisonFcn)(int, int)
+//using customComponentFunction = std::function<void(rapidxml::xml_node<>*,EntityHandle)>;
+using customComponentFunction =  void (*)(rapidxml::xml_node<>*, EntityHandle);
 
 class UnitySceneParser
 {
 
 
 public:
-    static void ParseUnityScene(const std::string& fileName, World* currentWorld,customComponentFunction function = {});
+    static void ParseUnityScene(const std::string& fileName, World* currentWorld,customComponentFunction function = nullptr);
+
+    //XML Util functions
+    static glm::vec3 ScanVector3f(const char* charLine);
+    static glm::quat ScanQuaternion(const char* charLine);
 
 private:
 
-    static void ParseAllEntities(rapidxml::xml_node<> *node,World* world,customComponentFunction function = {});
-    static EntityHandle ParseEntity(rapidxml::xml_node<>* node,World* world,customComponentFunction function = {});
-    static void ParseComponents(rapidxml::xml_node<>* com,EntityHandle newNode,customComponentFunction function = {});
-    static void ParseChildrenEntities(rapidxml::xml_node<>* com,EntityHandle entity,World* world,customComponentFunction function = {});
+    static void ParseAllEntities(rapidxml::xml_node<> *node,World* world,customComponentFunction function = nullptr);
+    static EntityHandle ParseEntity(rapidxml::xml_node<>* node,World* world,customComponentFunction function = nullptr);
+    static void ParseComponents(rapidxml::xml_node<>* com,EntityHandle newNode,customComponentFunction function = nullptr);
+    static void ParseChildrenEntities(rapidxml::xml_node<>* com,EntityHandle entity,World* world,customComponentFunction function = nullptr);
 
     static void ParseEntityCore(rapidxml::xml_node<>* node,EntityHandle entityHandle);
     static void ParseLightComponent(rapidxml::xml_node<>* node,EntityHandle entityHandle);
@@ -34,9 +40,6 @@ private:
     static void ParseColorMaterial(rapidxml::xml_node<>* node,EntityHandle entityHandle);
     static void ParseTextureMaterial(rapidxml::xml_node<>* node,EntityHandle entityHandle);
 
-    //XML Util functions
-    static glm::vec3 ScanVector3f(const char* charLine);
-    static glm::quat ScanQuaternion(const char* charLine);
 
 
 };

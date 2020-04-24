@@ -11,6 +11,10 @@
 #include "Worlds/SpriteRenderingWorld.h"
 #include "../Game/Worlds/MainWorld.h"
 #include "Worlds/MovementTestWorld.h"
+#include "../Engine/Feather/EntityHandle.h"
+#include "../Engine/Components/Camera.h"
+#include "Components/BridgeComponent.h"
+#include "../Engine/Editor/UnitySceneParser.h"
 
 void MyGame::LoadAssets()
 {
@@ -45,15 +49,21 @@ void MyGame::LoadAssets()
 
 void MyGame::Init()
 {
+
     Game::Init();
+
+
+    MainWorld* mainWorld = new MainWorld();
+    SetWorld(mainWorld);
 
     //Set the world here!
 
-    SetWorld(new MovementTestWorld());
-    //SetWorld(new MainWorld());
+
+    //SetWorld(new MovementTestWorld());
+
     //SetWorld(new XmlTestWorld());
     //SetWorld(new TranslucentMaterialTestWorld());
     //SetWorld(new RotatingGunsWorld());
     //SetWorld(new SpriteRenderingWorld());
-}
 
+}

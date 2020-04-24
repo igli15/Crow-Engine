@@ -45,7 +45,7 @@ void UnitySceneParser::ParseAllEntities(rapidxml::xml_node<> *node, World *world
     {
         if (strcmp(currentObjectNode->name(), "GameObject") == 0)
         {
-            EntityHandle currentNode = ParseEntity(currentObjectNode,world);
+            EntityHandle currentNode = ParseEntity(currentObjectNode,world,function);
             ParseChildrenEntities(currentObjectNode,currentNode,world,function);
         }
 
@@ -116,7 +116,10 @@ void UnitySceneParser::ParseComponents(rapidxml::xml_node<> *com, EntityHandle n
         ParseTextureMaterial(com,newNode);
     }
 
-    if(function) function(com,newNode);
+    if(function != nullptr)
+    {
+        function(com, newNode);
+    }
 }
 
 void UnitySceneParser::ParseEntityCore(rapidxml::xml_node<> *node, EntityHandle entityHandle)

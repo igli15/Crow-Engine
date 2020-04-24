@@ -378,6 +378,12 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Plugins/stb_image.h">
 			<Option target="Crow"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/BridgeComponent.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/BridgeComponent.h">
+			<Option target="Crow"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/MoveComponent.cpp">
 			<Option target="Crow"/>
 		</Unit>

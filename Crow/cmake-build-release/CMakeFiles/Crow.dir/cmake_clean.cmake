@@ -40,6 +40,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Crow.dir/OOP_Engine/Gameobject.cpp.o"
   "CMakeFiles/Crow.dir/OOP_Engine/OOPEngine.cpp.o"
   "CMakeFiles/Crow.dir/Plugins/stb_image.cpp.o"
+  "CMakeFiles/Crow.dir/SandBox/Components/BridgeComponent.cpp.o"
   "CMakeFiles/Crow.dir/SandBox/Components/MoveComponent.cpp.o"
   "CMakeFiles/Crow.dir/SandBox/Components/RotateComponent.cpp.o"
   "CMakeFiles/Crow.dir/SandBox/Components/SeekComponent.cpp.o"
