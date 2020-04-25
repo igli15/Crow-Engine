@@ -4,7 +4,7 @@
 
 #include "RigidbodySystem.h"
 #include "../../Engine/Feather/World.h"
-#include "../Components/MoveComponent.h"
+#include "../../SandBox/Components/MoveComponent.h"
 #include "../../Engine/Components/Transform.h"
 #include "../../Engine/Events/CollisionEvent.h"
 #include "../../Engine/Components/MeshInfo.h"

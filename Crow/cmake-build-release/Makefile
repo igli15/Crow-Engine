@@ -1095,6 +1095,222 @@ Engine/Systems/TransformHierarchySystem.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.s
 .PHONY : Engine/Systems/TransformHierarchySystem.cpp.s
 
+Game/Components/BridgeComponent.o: Game/Components/BridgeComponent.cpp.o
+
+.PHONY : Game/Components/BridgeComponent.o
+
+# target to build an object file
+Game/Components/BridgeComponent.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Components/BridgeComponent.cpp.o
+.PHONY : Game/Components/BridgeComponent.cpp.o
+
+Game/Components/BridgeComponent.i: Game/Components/BridgeComponent.cpp.i
+
+.PHONY : Game/Components/BridgeComponent.i
+
+# target to preprocess a source file
+Game/Components/BridgeComponent.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Components/BridgeComponent.cpp.i
+.PHONY : Game/Components/BridgeComponent.cpp.i
+
+Game/Components/BridgeComponent.s: Game/Components/BridgeComponent.cpp.s
+
+.PHONY : Game/Components/BridgeComponent.s
+
+# target to generate assembly for a file
+Game/Components/BridgeComponent.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Components/BridgeComponent.cpp.s
+.PHONY : Game/Components/BridgeComponent.cpp.s
+
+Game/Components/SeekComponent.o: Game/Components/SeekComponent.cpp.o
+
+.PHONY : Game/Components/SeekComponent.o
+
+# target to build an object file
+Game/Components/SeekComponent.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Components/SeekComponent.cpp.o
+.PHONY : Game/Components/SeekComponent.cpp.o
+
+Game/Components/SeekComponent.i: Game/Components/SeekComponent.cpp.i
+
+.PHONY : Game/Components/SeekComponent.i
+
+# target to preprocess a source file
+Game/Components/SeekComponent.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Components/SeekComponent.cpp.i
+.PHONY : Game/Components/SeekComponent.cpp.i
+
+Game/Components/SeekComponent.s: Game/Components/SeekComponent.cpp.s
+
+.PHONY : Game/Components/SeekComponent.s
+
+# target to generate assembly for a file
+Game/Components/SeekComponent.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Components/SeekComponent.cpp.s
+.PHONY : Game/Components/SeekComponent.cpp.s
+
+Game/Components/SteeringComponent.o: Game/Components/SteeringComponent.cpp.o
+
+.PHONY : Game/Components/SteeringComponent.o
+
+# target to build an object file
+Game/Components/SteeringComponent.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Components/SteeringComponent.cpp.o
+.PHONY : Game/Components/SteeringComponent.cpp.o
+
+Game/Components/SteeringComponent.i: Game/Components/SteeringComponent.cpp.i
+
+.PHONY : Game/Components/SteeringComponent.i
+
+# target to preprocess a source file
+Game/Components/SteeringComponent.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Components/SteeringComponent.cpp.i
+.PHONY : Game/Components/SteeringComponent.cpp.i
+
+Game/Components/SteeringComponent.s: Game/Components/SteeringComponent.cpp.s
+
+.PHONY : Game/Components/SteeringComponent.s
+
+# target to generate assembly for a file
+Game/Components/SteeringComponent.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Components/SteeringComponent.cpp.s
+.PHONY : Game/Components/SteeringComponent.cpp.s
+
+Game/Systems/BridgeSystem.o: Game/Systems/BridgeSystem.cpp.o
+
+.PHONY : Game/Systems/BridgeSystem.o
+
+# target to build an object file
+Game/Systems/BridgeSystem.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o
+.PHONY : Game/Systems/BridgeSystem.cpp.o
+
+Game/Systems/BridgeSystem.i: Game/Systems/BridgeSystem.cpp.i
+
+.PHONY : Game/Systems/BridgeSystem.i
+
+# target to preprocess a source file
+Game/Systems/BridgeSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.i
+.PHONY : Game/Systems/BridgeSystem.cpp.i
+
+Game/Systems/BridgeSystem.s: Game/Systems/BridgeSystem.cpp.s
+
+.PHONY : Game/Systems/BridgeSystem.s
+
+# target to generate assembly for a file
+Game/Systems/BridgeSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.s
+.PHONY : Game/Systems/BridgeSystem.cpp.s
+
+Game/Systems/RigidbodySystem.o: Game/Systems/RigidbodySystem.cpp.o
+
+.PHONY : Game/Systems/RigidbodySystem.o
+
+# target to build an object file
+Game/Systems/RigidbodySystem.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/RigidbodySystem.cpp.o
+.PHONY : Game/Systems/RigidbodySystem.cpp.o
+
+Game/Systems/RigidbodySystem.i: Game/Systems/RigidbodySystem.cpp.i
+
+.PHONY : Game/Systems/RigidbodySystem.i
+
+# target to preprocess a source file
+Game/Systems/RigidbodySystem.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/RigidbodySystem.cpp.i
+.PHONY : Game/Systems/RigidbodySystem.cpp.i
+
+Game/Systems/RigidbodySystem.s: Game/Systems/RigidbodySystem.cpp.s
+
+.PHONY : Game/Systems/RigidbodySystem.s
+
+# target to generate assembly for a file
+Game/Systems/RigidbodySystem.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/RigidbodySystem.cpp.s
+.PHONY : Game/Systems/RigidbodySystem.cpp.s
+
+Game/Systems/SeekingSystem.o: Game/Systems/SeekingSystem.cpp.o
+
+.PHONY : Game/Systems/SeekingSystem.o
+
+# target to build an object file
+Game/Systems/SeekingSystem.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/SeekingSystem.cpp.o
+.PHONY : Game/Systems/SeekingSystem.cpp.o
+
+Game/Systems/SeekingSystem.i: Game/Systems/SeekingSystem.cpp.i
+
+.PHONY : Game/Systems/SeekingSystem.i
+
+# target to preprocess a source file
+Game/Systems/SeekingSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/SeekingSystem.cpp.i
+.PHONY : Game/Systems/SeekingSystem.cpp.i
+
+Game/Systems/SeekingSystem.s: Game/Systems/SeekingSystem.cpp.s
+
+.PHONY : Game/Systems/SeekingSystem.s
+
+# target to generate assembly for a file
+Game/Systems/SeekingSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/SeekingSystem.cpp.s
+.PHONY : Game/Systems/SeekingSystem.cpp.s
+
+Game/Systems/SpawnSystem.o: Game/Systems/SpawnSystem.cpp.o
+
+.PHONY : Game/Systems/SpawnSystem.o
+
+# target to build an object file
+Game/Systems/SpawnSystem.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o
+.PHONY : Game/Systems/SpawnSystem.cpp.o
+
+Game/Systems/SpawnSystem.i: Game/Systems/SpawnSystem.cpp.i
+
+.PHONY : Game/Systems/SpawnSystem.i
+
+# target to preprocess a source file
+Game/Systems/SpawnSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.i
+.PHONY : Game/Systems/SpawnSystem.cpp.i
+
+Game/Systems/SpawnSystem.s: Game/Systems/SpawnSystem.cpp.s
+
+.PHONY : Game/Systems/SpawnSystem.s
+
+# target to generate assembly for a file
+Game/Systems/SpawnSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.s
+.PHONY : Game/Systems/SpawnSystem.cpp.s
+
+Game/Systems/SteeringSystem.o: Game/Systems/SteeringSystem.cpp.o
+
+.PHONY : Game/Systems/SteeringSystem.o
+
+# target to build an object file
+Game/Systems/SteeringSystem.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/SteeringSystem.cpp.o
+.PHONY : Game/Systems/SteeringSystem.cpp.o
+
+Game/Systems/SteeringSystem.i: Game/Systems/SteeringSystem.cpp.i
+
+.PHONY : Game/Systems/SteeringSystem.i
+
+# target to preprocess a source file
+Game/Systems/SteeringSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/SteeringSystem.cpp.i
+.PHONY : Game/Systems/SteeringSystem.cpp.i
+
+Game/Systems/SteeringSystem.s: Game/Systems/SteeringSystem.cpp.s
+
+.PHONY : Game/Systems/SteeringSystem.s
+
+# target to generate assembly for a file
+Game/Systems/SteeringSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/SteeringSystem.cpp.s
+.PHONY : Game/Systems/SteeringSystem.cpp.s
+
 Game/Worlds/MainWorld.o: Game/Worlds/MainWorld.cpp.o
 
 .PHONY : Game/Worlds/MainWorld.o
@@ -1230,33 +1446,6 @@ Plugins/stb_image.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Plugins/stb_image.cpp.s
 .PHONY : Plugins/stb_image.cpp.s
 
-SandBox/Components/BridgeComponent.o: SandBox/Components/BridgeComponent.cpp.o
-
-.PHONY : SandBox/Components/BridgeComponent.o
-
-# target to build an object file
-SandBox/Components/BridgeComponent.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Components/BridgeComponent.cpp.o
-.PHONY : SandBox/Components/BridgeComponent.cpp.o
-
-SandBox/Components/BridgeComponent.i: SandBox/Components/BridgeComponent.cpp.i
-
-.PHONY : SandBox/Components/BridgeComponent.i
-
-# target to preprocess a source file
-SandBox/Components/BridgeComponent.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Components/BridgeComponent.cpp.i
-.PHONY : SandBox/Components/BridgeComponent.cpp.i
-
-SandBox/Components/BridgeComponent.s: SandBox/Components/BridgeComponent.cpp.s
-
-.PHONY : SandBox/Components/BridgeComponent.s
-
-# target to generate assembly for a file
-SandBox/Components/BridgeComponent.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Components/BridgeComponent.cpp.s
-.PHONY : SandBox/Components/BridgeComponent.cpp.s
-
 SandBox/Components/MoveComponent.o: SandBox/Components/MoveComponent.cpp.o
 
 .PHONY : SandBox/Components/MoveComponent.o
@@ -1311,60 +1500,6 @@ SandBox/Components/RotateComponent.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Components/RotateComponent.cpp.s
 .PHONY : SandBox/Components/RotateComponent.cpp.s
 
-SandBox/Components/SeekComponent.o: SandBox/Components/SeekComponent.cpp.o
-
-.PHONY : SandBox/Components/SeekComponent.o
-
-# target to build an object file
-SandBox/Components/SeekComponent.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Components/SeekComponent.cpp.o
-.PHONY : SandBox/Components/SeekComponent.cpp.o
-
-SandBox/Components/SeekComponent.i: SandBox/Components/SeekComponent.cpp.i
-
-.PHONY : SandBox/Components/SeekComponent.i
-
-# target to preprocess a source file
-SandBox/Components/SeekComponent.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Components/SeekComponent.cpp.i
-.PHONY : SandBox/Components/SeekComponent.cpp.i
-
-SandBox/Components/SeekComponent.s: SandBox/Components/SeekComponent.cpp.s
-
-.PHONY : SandBox/Components/SeekComponent.s
-
-# target to generate assembly for a file
-SandBox/Components/SeekComponent.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Components/SeekComponent.cpp.s
-.PHONY : SandBox/Components/SeekComponent.cpp.s
-
-SandBox/Components/SteeringComponent.o: SandBox/Components/SteeringComponent.cpp.o
-
-.PHONY : SandBox/Components/SteeringComponent.o
-
-# target to build an object file
-SandBox/Components/SteeringComponent.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Components/SteeringComponent.cpp.o
-.PHONY : SandBox/Components/SteeringComponent.cpp.o
-
-SandBox/Components/SteeringComponent.i: SandBox/Components/SteeringComponent.cpp.i
-
-.PHONY : SandBox/Components/SteeringComponent.i
-
-# target to preprocess a source file
-SandBox/Components/SteeringComponent.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Components/SteeringComponent.cpp.i
-.PHONY : SandBox/Components/SteeringComponent.cpp.i
-
-SandBox/Components/SteeringComponent.s: SandBox/Components/SteeringComponent.cpp.s
-
-.PHONY : SandBox/Components/SteeringComponent.s
-
-# target to generate assembly for a file
-SandBox/Components/SteeringComponent.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Components/SteeringComponent.cpp.s
-.PHONY : SandBox/Components/SteeringComponent.cpp.s
-
 SandBox/MyGame.o: SandBox/MyGame.cpp.o
 
 .PHONY : SandBox/MyGame.o
@@ -1392,60 +1527,6 @@ SandBox/MyGame.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/MyGame.cpp.s
 .PHONY : SandBox/MyGame.cpp.s
 
-SandBox/Systems/BridgeSystem.o: SandBox/Systems/BridgeSystem.cpp.o
-
-.PHONY : SandBox/Systems/BridgeSystem.o
-
-# target to build an object file
-SandBox/Systems/BridgeSystem.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/BridgeSystem.cpp.o
-.PHONY : SandBox/Systems/BridgeSystem.cpp.o
-
-SandBox/Systems/BridgeSystem.i: SandBox/Systems/BridgeSystem.cpp.i
-
-.PHONY : SandBox/Systems/BridgeSystem.i
-
-# target to preprocess a source file
-SandBox/Systems/BridgeSystem.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/BridgeSystem.cpp.i
-.PHONY : SandBox/Systems/BridgeSystem.cpp.i
-
-SandBox/Systems/BridgeSystem.s: SandBox/Systems/BridgeSystem.cpp.s
-
-.PHONY : SandBox/Systems/BridgeSystem.s
-
-# target to generate assembly for a file
-SandBox/Systems/BridgeSystem.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/BridgeSystem.cpp.s
-.PHONY : SandBox/Systems/BridgeSystem.cpp.s
-
-SandBox/Systems/RigidbodySystem.o: SandBox/Systems/RigidbodySystem.cpp.o
-
-.PHONY : SandBox/Systems/RigidbodySystem.o
-
-# target to build an object file
-SandBox/Systems/RigidbodySystem.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/RigidbodySystem.cpp.o
-.PHONY : SandBox/Systems/RigidbodySystem.cpp.o
-
-SandBox/Systems/RigidbodySystem.i: SandBox/Systems/RigidbodySystem.cpp.i
-
-.PHONY : SandBox/Systems/RigidbodySystem.i
-
-# target to preprocess a source file
-SandBox/Systems/RigidbodySystem.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/RigidbodySystem.cpp.i
-.PHONY : SandBox/Systems/RigidbodySystem.cpp.i
-
-SandBox/Systems/RigidbodySystem.s: SandBox/Systems/RigidbodySystem.cpp.s
-
-.PHONY : SandBox/Systems/RigidbodySystem.s
-
-# target to generate assembly for a file
-SandBox/Systems/RigidbodySystem.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/RigidbodySystem.cpp.s
-.PHONY : SandBox/Systems/RigidbodySystem.cpp.s
-
 SandBox/Systems/RotateSystem.o: SandBox/Systems/RotateSystem.cpp.o
 
 .PHONY : SandBox/Systems/RotateSystem.o
@@ -1472,87 +1553,6 @@ SandBox/Systems/RotateSystem.s: SandBox/Systems/RotateSystem.cpp.s
 SandBox/Systems/RotateSystem.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.s
 .PHONY : SandBox/Systems/RotateSystem.cpp.s
-
-SandBox/Systems/SeekingSystem.o: SandBox/Systems/SeekingSystem.cpp.o
-
-.PHONY : SandBox/Systems/SeekingSystem.o
-
-# target to build an object file
-SandBox/Systems/SeekingSystem.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/SeekingSystem.cpp.o
-.PHONY : SandBox/Systems/SeekingSystem.cpp.o
-
-SandBox/Systems/SeekingSystem.i: SandBox/Systems/SeekingSystem.cpp.i
-
-.PHONY : SandBox/Systems/SeekingSystem.i
-
-# target to preprocess a source file
-SandBox/Systems/SeekingSystem.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/SeekingSystem.cpp.i
-.PHONY : SandBox/Systems/SeekingSystem.cpp.i
-
-SandBox/Systems/SeekingSystem.s: SandBox/Systems/SeekingSystem.cpp.s
-
-.PHONY : SandBox/Systems/SeekingSystem.s
-
-# target to generate assembly for a file
-SandBox/Systems/SeekingSystem.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/SeekingSystem.cpp.s
-.PHONY : SandBox/Systems/SeekingSystem.cpp.s
-
-SandBox/Systems/SpawnSystem.o: SandBox/Systems/SpawnSystem.cpp.o
-
-.PHONY : SandBox/Systems/SpawnSystem.o
-
-# target to build an object file
-SandBox/Systems/SpawnSystem.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/SpawnSystem.cpp.o
-.PHONY : SandBox/Systems/SpawnSystem.cpp.o
-
-SandBox/Systems/SpawnSystem.i: SandBox/Systems/SpawnSystem.cpp.i
-
-.PHONY : SandBox/Systems/SpawnSystem.i
-
-# target to preprocess a source file
-SandBox/Systems/SpawnSystem.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/SpawnSystem.cpp.i
-.PHONY : SandBox/Systems/SpawnSystem.cpp.i
-
-SandBox/Systems/SpawnSystem.s: SandBox/Systems/SpawnSystem.cpp.s
-
-.PHONY : SandBox/Systems/SpawnSystem.s
-
-# target to generate assembly for a file
-SandBox/Systems/SpawnSystem.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/SpawnSystem.cpp.s
-.PHONY : SandBox/Systems/SpawnSystem.cpp.s
-
-SandBox/Systems/SteeringSystem.o: SandBox/Systems/SteeringSystem.cpp.o
-
-.PHONY : SandBox/Systems/SteeringSystem.o
-
-# target to build an object file
-SandBox/Systems/SteeringSystem.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/SteeringSystem.cpp.o
-.PHONY : SandBox/Systems/SteeringSystem.cpp.o
-
-SandBox/Systems/SteeringSystem.i: SandBox/Systems/SteeringSystem.cpp.i
-
-.PHONY : SandBox/Systems/SteeringSystem.i
-
-# target to preprocess a source file
-SandBox/Systems/SteeringSystem.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/SteeringSystem.cpp.i
-.PHONY : SandBox/Systems/SteeringSystem.cpp.i
-
-SandBox/Systems/SteeringSystem.s: SandBox/Systems/SteeringSystem.cpp.s
-
-.PHONY : SandBox/Systems/SteeringSystem.s
-
-# target to generate assembly for a file
-SandBox/Systems/SteeringSystem.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/SteeringSystem.cpp.s
-.PHONY : SandBox/Systems/SteeringSystem.cpp.s
 
 SandBox/Worlds/MovementTestWorld.o: SandBox/Worlds/MovementTestWorld.cpp.o
 
@@ -1833,6 +1833,30 @@ help:
 	@echo "... Engine/Systems/TransformHierarchySystem.o"
 	@echo "... Engine/Systems/TransformHierarchySystem.i"
 	@echo "... Engine/Systems/TransformHierarchySystem.s"
+	@echo "... Game/Components/BridgeComponent.o"
+	@echo "... Game/Components/BridgeComponent.i"
+	@echo "... Game/Components/BridgeComponent.s"
+	@echo "... Game/Components/SeekComponent.o"
+	@echo "... Game/Components/SeekComponent.i"
+	@echo "... Game/Components/SeekComponent.s"
+	@echo "... Game/Components/SteeringComponent.o"
+	@echo "... Game/Components/SteeringComponent.i"
+	@echo "... Game/Components/SteeringComponent.s"
+	@echo "... Game/Systems/BridgeSystem.o"
+	@echo "... Game/Systems/BridgeSystem.i"
+	@echo "... Game/Systems/BridgeSystem.s"
+	@echo "... Game/Systems/RigidbodySystem.o"
+	@echo "... Game/Systems/RigidbodySystem.i"
+	@echo "... Game/Systems/RigidbodySystem.s"
+	@echo "... Game/Systems/SeekingSystem.o"
+	@echo "... Game/Systems/SeekingSystem.i"
+	@echo "... Game/Systems/SeekingSystem.s"
+	@echo "... Game/Systems/SpawnSystem.o"
+	@echo "... Game/Systems/SpawnSystem.i"
+	@echo "... Game/Systems/SpawnSystem.s"
+	@echo "... Game/Systems/SteeringSystem.o"
+	@echo "... Game/Systems/SteeringSystem.i"
+	@echo "... Game/Systems/SteeringSystem.s"
 	@echo "... Game/Worlds/MainWorld.o"
 	@echo "... Game/Worlds/MainWorld.i"
 	@echo "... Game/Worlds/MainWorld.s"
@@ -1848,42 +1872,18 @@ help:
 	@echo "... Plugins/stb_image.o"
 	@echo "... Plugins/stb_image.i"
 	@echo "... Plugins/stb_image.s"
-	@echo "... SandBox/Components/BridgeComponent.o"
-	@echo "... SandBox/Components/BridgeComponent.i"
-	@echo "... SandBox/Components/BridgeComponent.s"
 	@echo "... SandBox/Components/MoveComponent.o"
 	@echo "... SandBox/Components/MoveComponent.i"
 	@echo "... SandBox/Components/MoveComponent.s"
 	@echo "... SandBox/Components/RotateComponent.o"
 	@echo "... SandBox/Components/RotateComponent.i"
 	@echo "... SandBox/Components/RotateComponent.s"
-	@echo "... SandBox/Components/SeekComponent.o"
-	@echo "... SandBox/Components/SeekComponent.i"
-	@echo "... SandBox/Components/SeekComponent.s"
-	@echo "... SandBox/Components/SteeringComponent.o"
-	@echo "... SandBox/Components/SteeringComponent.i"
-	@echo "... SandBox/Components/SteeringComponent.s"
 	@echo "... SandBox/MyGame.o"
 	@echo "... SandBox/MyGame.i"
 	@echo "... SandBox/MyGame.s"
-	@echo "... SandBox/Systems/BridgeSystem.o"
-	@echo "... SandBox/Systems/BridgeSystem.i"
-	@echo "... SandBox/Systems/BridgeSystem.s"
-	@echo "... SandBox/Systems/RigidbodySystem.o"
-	@echo "... SandBox/Systems/RigidbodySystem.i"
-	@echo "... SandBox/Systems/RigidbodySystem.s"
 	@echo "... SandBox/Systems/RotateSystem.o"
 	@echo "... SandBox/Systems/RotateSystem.i"
 	@echo "... SandBox/Systems/RotateSystem.s"
-	@echo "... SandBox/Systems/SeekingSystem.o"
-	@echo "... SandBox/Systems/SeekingSystem.i"
-	@echo "... SandBox/Systems/SeekingSystem.s"
-	@echo "... SandBox/Systems/SpawnSystem.o"
-	@echo "... SandBox/Systems/SpawnSystem.i"
-	@echo "... SandBox/Systems/SpawnSystem.s"
-	@echo "... SandBox/Systems/SteeringSystem.o"
-	@echo "... SandBox/Systems/SteeringSystem.i"
-	@echo "... SandBox/Systems/SteeringSystem.s"
 	@echo "... SandBox/Worlds/MovementTestWorld.o"
 	@echo "... SandBox/Worlds/MovementTestWorld.i"
 	@echo "... SandBox/Worlds/MovementTestWorld.s"

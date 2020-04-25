@@ -5,13 +5,13 @@
 #include "MainWorld.h"
 #include "../../Engine/Editor/UnitySceneParser.h"
 #include "../../Engine/Components/Light.h"
-#include "../../SandBox/Components/BridgeComponent.h"
+#include "../Components/BridgeComponent.h"
 #include "../../Engine/Feather/EntityHandle.h"
-#include "../../SandBox/Systems/BridgeSystem.h"
-#include "../../SandBox/Systems/SpawnSystem.h"
-#include "../../SandBox/Systems/SeekingSystem.h"
-#include "../../SandBox/Systems/SteeringSystem.h"
-#include "../../SandBox/Systems/RigidbodySystem.h"
+#include "../Systems/BridgeSystem.h"
+#include "../Systems/SpawnSystem.h"
+#include "../Systems/SeekingSystem.h"
+#include "../Systems/SteeringSystem.h"
+#include "../Systems/RigidbodySystem.h"
 
 void MainWorld::Build()
 {

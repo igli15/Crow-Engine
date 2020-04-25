@@ -13,7 +13,7 @@
 #include "Worlds/MovementTestWorld.h"
 #include "../Engine/Feather/EntityHandle.h"
 #include "../Engine/Components/Camera.h"
-#include "Components/BridgeComponent.h"
+#include "../Game/Components/BridgeComponent.h"
 #include "../Engine/Editor/UnitySceneParser.h"
 
 void MyGame::LoadAssets()

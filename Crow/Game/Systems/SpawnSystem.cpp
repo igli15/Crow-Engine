@@ -21,7 +21,6 @@ void SpawnSystem::Update(float dt)
 {
     System::Update(dt);
 
-    ///spawn the units on the bridge and make them go forward till the end
     if(Input::GetKeyDown(GLFW_KEY_SPACE))
     {
         BridgeComponent* activeBridge = nullptr;
@@ -38,17 +37,14 @@ void SpawnSystem::Update(float dt)
         Transform* unitTransform = unitEntity.AddComponent<Transform>(Transform{});
 
         unitTransform->Translate(activeBridge->startPos);
-
-        ENGINE_LOG(activeBridge->startPos.x);
-        ENGINE_LOG(activeBridge->startPos.y);
-        ENGINE_LOG(activeBridge->startPos.z);
-
+        unitTransform->Scale(glm::vec3(0.1,0.1,0.1));
         unitEntity.AddComponent<SteeringComponent>(SteeringComponent{});
         unitEntity.AddComponent<SeekComponent>(SeekComponent{activeBridge->endPos});
-        unitEntity.AddComponent<Rigidbody>(Rigidbody{});
+        Rigidbody* rb = unitEntity.AddComponent<Rigidbody>(Rigidbody{});
+        rb->maxSpeed = 0.06f;
 
-        unitEntity.AddComponent<MeshInfo>(MeshInfo{m_resourceManager->GetModel("cube"),m_resourceManager->GetMaterial<ColorMaterial>("defaultMat")});
-
+        unitEntity.AddComponent<MeshInfo>(MeshInfo{m_resourceManager->GetModel("ghost"),m_resourceManager->GetMaterial<ColorMaterial>("translucentMaterial")});
+        
     }
 
 }

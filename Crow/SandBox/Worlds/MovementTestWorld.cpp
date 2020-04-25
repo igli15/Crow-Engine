@@ -13,12 +13,12 @@
 #include "../../Engine/Components/Light.h"
 #include "../../Engine/Components/Rigidbody.h"
 #include "../Components/MoveComponent.h"
-#include "../Systems/RigidbodySystem.h"
-#include "../Systems/SteeringSystem.h"
-#include "../Components/SteeringComponent.h"
-#include "../Components/SeekComponent.h"
-#include "../Systems/SeekingSystem.h"
-#include "../Systems/SpawnSystem.h"
+#include "../../Game/Systems/RigidbodySystem.h"
+#include "../../Game/Systems/SteeringSystem.h"
+#include "../../Game/Components/SteeringComponent.h"
+#include "../../Game/Components/SeekComponent.h"
+#include "../../Game/Systems/SeekingSystem.h"
+#include "../../Game/Systems/SpawnSystem.h"
 
 void MovementTestWorld::Build()
 {
