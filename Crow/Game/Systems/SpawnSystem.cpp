@@ -44,7 +44,8 @@ void SpawnSystem::Update(float dt)
         rb->maxSpeed = 0.06f;
 
         unitEntity.AddComponent<MeshInfo>(MeshInfo{m_resourceManager->GetModel("ghost"),m_resourceManager->GetMaterial<ColorMaterial>("translucentMaterial")});
-        
+
+        activeBridge->entitiesOnBridge.push_back(unitEntity.entity);
     }
 
 }

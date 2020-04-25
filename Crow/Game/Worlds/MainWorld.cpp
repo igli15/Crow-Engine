@@ -13,6 +13,8 @@
 #include "../Systems/SteeringSystem.h"
 #include "../Systems/RigidbodySystem.h"
 
+#include "../UnitGroupArchetypes/UnitGroupArchetype.h"
+
 void MainWorld::Build()
 {
     World::Build();
@@ -24,6 +26,8 @@ void MainWorld::Build()
     RegisterSystem<SeekingSystem>();
     RegisterSystem<SpawnSystem>();
     RegisterSystem<BridgeSystem>();
+
+    CreateUnitGroupArchetype("ghosts");
 
 }
 
@@ -47,4 +51,34 @@ void MainWorld::ParseGameComponents(rapidxml::xml_node<> *node, EntityHandle ent
             }
         }
     }
+}
+
+UnitGroupArchetype *MainWorld::CreateUnitGroupArchetype(const std::string& name)
+{
+    auto iterator = m_unitArchetypeMap.find(name);
+
+    if (iterator != m_unitArchetypeMap.end())
+    {
+        ENGINE_LOG_ERROR("There is already a model with name: " + name);
+        throw;
+    }
+
+    UnitGroupArchetype* unitGroupArchetype = new UnitGroupArchetype();
+    m_unitArchetypeMap.insert(iterator,std::make_pair(name,unitGroupArchetype));
+    return unitGroupArchetype;
+}
+
+UnitGroupArchetype *MainWorld::GetUnitGroupArchetype(const std::string &name)
+{
+    auto iterator = m_unitArchetypeMap.find(name);
+
+    if (iterator == m_unitArchetypeMap.end())
+    {
+        return nullptr;
+    }
+    else
+    {
+        return iterator->second;
+    }
+
 }

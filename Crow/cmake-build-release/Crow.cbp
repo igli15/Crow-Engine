@@ -396,6 +396,12 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SteeringSystem.h">
 			<Option target="Crow"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/UnitGroupArchetype.h">
+			<Option target="Crow"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Worlds/MainWorld.cpp">
 			<Option target="Crow"/>
 		</Unit>

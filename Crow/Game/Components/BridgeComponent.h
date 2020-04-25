@@ -8,9 +8,13 @@
 
 #include <glm/vec3.hpp>
 
+#include <vector>
+#include "../../Engine/Feather/Types.h"
 
 struct BridgeComponent
 {
+    std::vector<Entity> entitiesOnBridge;
+
     glm::vec3 startPos = {0,0,0};
     glm::vec3 endPos = {0,0,0};
     bool isSelected = false;

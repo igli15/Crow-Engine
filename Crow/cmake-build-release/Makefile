@@ -1311,6 +1311,33 @@ Game/Systems/SteeringSystem.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/SteeringSystem.cpp.s
 .PHONY : Game/Systems/SteeringSystem.cpp.s
 
+Game/UnitGroupArchetypes/UnitGroupArchetype.o: Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o
+
+.PHONY : Game/UnitGroupArchetypes/UnitGroupArchetype.o
+
+# target to build an object file
+Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o
+.PHONY : Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o
+
+Game/UnitGroupArchetypes/UnitGroupArchetype.i: Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.i
+
+.PHONY : Game/UnitGroupArchetypes/UnitGroupArchetype.i
+
+# target to preprocess a source file
+Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.i
+.PHONY : Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.i
+
+Game/UnitGroupArchetypes/UnitGroupArchetype.s: Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.s
+
+.PHONY : Game/UnitGroupArchetypes/UnitGroupArchetype.s
+
+# target to generate assembly for a file
+Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.s
+.PHONY : Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.s
+
 Game/Worlds/MainWorld.o: Game/Worlds/MainWorld.cpp.o
 
 .PHONY : Game/Worlds/MainWorld.o
@@ -1857,6 +1884,9 @@ help:
 	@echo "... Game/Systems/SteeringSystem.o"
 	@echo "... Game/Systems/SteeringSystem.i"
 	@echo "... Game/Systems/SteeringSystem.s"
+	@echo "... Game/UnitGroupArchetypes/UnitGroupArchetype.o"
+	@echo "... Game/UnitGroupArchetypes/UnitGroupArchetype.i"
+	@echo "... Game/UnitGroupArchetypes/UnitGroupArchetype.s"
 	@echo "... Game/Worlds/MainWorld.o"
 	@echo "... Game/Worlds/MainWorld.i"
 	@echo "... Game/Worlds/MainWorld.s"

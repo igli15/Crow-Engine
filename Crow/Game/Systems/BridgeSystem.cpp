@@ -47,4 +47,15 @@ void BridgeSystem::Update(float dt)
         m_bridges[2]->isSelected = true;
     }
 
+    //just for testing destruction of entities. TODO remove this in the end
+    if(Input::GetKeyDown(GLFW_KEY_BACKSPACE))
+    {
+        for (int i = 0; i < m_currentSelectedBridge->entitiesOnBridge.size(); ++i)
+        {
+            world->DestroyEntity(m_currentSelectedBridge->entitiesOnBridge[i]);
+        }
+        m_currentSelectedBridge->entitiesOnBridge.clear();
+    }
+
+
 }
