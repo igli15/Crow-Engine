@@ -26,9 +26,8 @@ public:
 
     Model* unitModel = nullptr;
     AbstractMaterial* unitMaterial = nullptr;
-    BridgeComponent* bridge = nullptr;
 
-    EntityHandle Build(World* world);
+    EntityHandle Build(World* world,BridgeComponent* bridge);
 
 };
 

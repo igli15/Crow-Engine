@@ -16,6 +16,9 @@
 #include "GLFW/glfw3.h"
 #include "../../Engine/Components/Rigidbody.h"
 #include "../Components/BridgeComponent.h"
+#include "../Components/Player.h"
+#include "../../Engine/Components/SphereCollider.h"
+#include "../UnitGroupArchetypes/UnitGroupArchetype.h"
 
 void SpawnSystem::Update(float dt)
 {
@@ -33,6 +36,10 @@ void SpawnSystem::Update(float dt)
             }
         }
 
+
+        EntityHandle unitGroupEntity = m_playerComponent->selectedUnitArchetype->Build(world,activeBridge);
+
+    /*
         EntityHandle unitEntity = world->CreateEntity();
         Transform* unitTransform = unitEntity.AddComponent<Transform>(Transform{});
 
@@ -44,8 +51,8 @@ void SpawnSystem::Update(float dt)
         rb->maxSpeed = 0.06f;
 
         unitEntity.AddComponent<MeshInfo>(MeshInfo{m_resourceManager->GetModel("ghost"),m_resourceManager->GetMaterial<ColorMaterial>("translucentMaterial")});
-
-        activeBridge->entitiesOnBridge.push_back(unitEntity.entity);
+*/
+        activeBridge->entitiesOnBridge.push_back(unitGroupEntity.entity);
     }
 
 }
@@ -60,4 +67,8 @@ void SpawnSystem::Init()
         BridgeComponent* bridgeComponent = &world->GetComponent<BridgeComponent>(bridgeEntities[i]);
         m_bridges.push_back(bridgeComponent);
     }
+
+    Entity playerEntity = world->EntitiesWith<Player>()[0];
+    m_playerComponent = &world->GetComponent<Player>(playerEntity);
+
 }

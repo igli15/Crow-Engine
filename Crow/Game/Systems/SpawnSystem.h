@@ -11,6 +11,7 @@
 
 class ResourceManager;
 class BridgeComponent;
+class Player;
 
 class SpawnSystem : public System
 {
@@ -21,6 +22,7 @@ public:
 private:
     ResourceManager* m_resourceManager;
     std::vector<BridgeComponent*> m_bridges;
+    Player* m_playerComponent = nullptr;
 };
 
 

@@ -1122,6 +1122,33 @@ Game/Components/BridgeComponent.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Components/BridgeComponent.cpp.s
 .PHONY : Game/Components/BridgeComponent.cpp.s
 
+Game/Components/Player.o: Game/Components/Player.cpp.o
+
+.PHONY : Game/Components/Player.o
+
+# target to build an object file
+Game/Components/Player.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Components/Player.cpp.o
+.PHONY : Game/Components/Player.cpp.o
+
+Game/Components/Player.i: Game/Components/Player.cpp.i
+
+.PHONY : Game/Components/Player.i
+
+# target to preprocess a source file
+Game/Components/Player.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Components/Player.cpp.i
+.PHONY : Game/Components/Player.cpp.i
+
+Game/Components/Player.s: Game/Components/Player.cpp.s
+
+.PHONY : Game/Components/Player.s
+
+# target to generate assembly for a file
+Game/Components/Player.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Components/Player.cpp.s
+.PHONY : Game/Components/Player.cpp.s
+
 Game/Components/SeekComponent.o: Game/Components/SeekComponent.cpp.o
 
 .PHONY : Game/Components/SeekComponent.o
@@ -1310,6 +1337,33 @@ Game/Systems/SteeringSystem.s: Game/Systems/SteeringSystem.cpp.s
 Game/Systems/SteeringSystem.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/SteeringSystem.cpp.s
 .PHONY : Game/Systems/SteeringSystem.cpp.s
+
+Game/Systems/UnitSelectionSystem.o: Game/Systems/UnitSelectionSystem.cpp.o
+
+.PHONY : Game/Systems/UnitSelectionSystem.o
+
+# target to build an object file
+Game/Systems/UnitSelectionSystem.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.o
+.PHONY : Game/Systems/UnitSelectionSystem.cpp.o
+
+Game/Systems/UnitSelectionSystem.i: Game/Systems/UnitSelectionSystem.cpp.i
+
+.PHONY : Game/Systems/UnitSelectionSystem.i
+
+# target to preprocess a source file
+Game/Systems/UnitSelectionSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.i
+.PHONY : Game/Systems/UnitSelectionSystem.cpp.i
+
+Game/Systems/UnitSelectionSystem.s: Game/Systems/UnitSelectionSystem.cpp.s
+
+.PHONY : Game/Systems/UnitSelectionSystem.s
+
+# target to generate assembly for a file
+Game/Systems/UnitSelectionSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.s
+.PHONY : Game/Systems/UnitSelectionSystem.cpp.s
 
 Game/UnitGroupArchetypes/UnitGroupArchetype.o: Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o
 
@@ -1863,6 +1917,9 @@ help:
 	@echo "... Game/Components/BridgeComponent.o"
 	@echo "... Game/Components/BridgeComponent.i"
 	@echo "... Game/Components/BridgeComponent.s"
+	@echo "... Game/Components/Player.o"
+	@echo "... Game/Components/Player.i"
+	@echo "... Game/Components/Player.s"
 	@echo "... Game/Components/SeekComponent.o"
 	@echo "... Game/Components/SeekComponent.i"
 	@echo "... Game/Components/SeekComponent.s"
@@ -1884,6 +1941,9 @@ help:
 	@echo "... Game/Systems/SteeringSystem.o"
 	@echo "... Game/Systems/SteeringSystem.i"
 	@echo "... Game/Systems/SteeringSystem.s"
+	@echo "... Game/Systems/UnitSelectionSystem.o"
+	@echo "... Game/Systems/UnitSelectionSystem.i"
+	@echo "... Game/Systems/UnitSelectionSystem.s"
 	@echo "... Game/UnitGroupArchetypes/UnitGroupArchetype.o"
 	@echo "... Game/UnitGroupArchetypes/UnitGroupArchetype.i"
 	@echo "... Game/UnitGroupArchetypes/UnitGroupArchetype.s"

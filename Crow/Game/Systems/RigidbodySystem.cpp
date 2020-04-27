@@ -34,7 +34,6 @@ void RigidbodySystem::Update(float dt)
         transform.Translate(rigidBody.velocity);
         //rigidBody.acceleration = glm::vec3(0);
     }
-
 }
 
 void RigidbodySystem::Init()

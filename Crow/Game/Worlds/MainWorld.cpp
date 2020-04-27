@@ -14,10 +14,16 @@
 #include "../Systems/RigidbodySystem.h"
 
 #include "../UnitGroupArchetypes/UnitGroupArchetype.h"
+#include "../Components/Player.h"
+#include "../../Engine/Core/Game.h"
+#include "../../Engine/Core/ResourceManager.h"
+#include "../../Engine/Rendering/Materials/TranslucentColorMat.h"
 
 void MainWorld::Build()
 {
     World::Build();
+
+    ResourceManager* resourceManager = Game::Instance()->resourceManager;
 
     UnitySceneParser::ParseUnityScene("MainLevel.xml",this,&(MainWorld::ParseGameComponents));
 
@@ -27,7 +33,18 @@ void MainWorld::Build()
     RegisterSystem<SpawnSystem>();
     RegisterSystem<BridgeSystem>();
 
-    CreateUnitGroupArchetype("ghosts");
+
+    EntityHandle playerEntity = CreateEntity();
+    Player* playerComponent = playerEntity.AddComponent<Player>(Player{});
+
+    UnitGroupArchetype* ghostArchetype = CreateUnitGroupArchetype("ghosts");
+    ghostArchetype->maxSpeed = 0.05f;
+    ghostArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("translucentMaterial");
+    ghostArchetype->unitModel = resourceManager->GetModel("ghost");
+    ghostArchetype->scaleFactor = 0.1f;
+
+    playerComponent->selectedUnitArchetype = ghostArchetype;
+
 
 }
 
