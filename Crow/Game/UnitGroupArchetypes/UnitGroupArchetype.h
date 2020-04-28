@@ -16,9 +16,9 @@ class UnitGroupArchetype
 public:
     unsigned int rows = 1;
     unsigned int columns = 1;
-    unsigned int horizontalDistance = 1;
-    unsigned int verticalDistance = 1;
-    unsigned int nrOfUnits = 1;
+    float horizontalDistance = 1;
+    float  verticalDistance = 1;
+    //unsigned int nrOfUnits = 1;
 
     float scaleFactor = 1.0f;
     float maxSpeed = 0.05f;

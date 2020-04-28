@@ -15,24 +15,25 @@ EntityHandle UnitGroupArchetype::Build(World* world,BridgeComponent* bridge)
 
     EntityHandle unitGroupEntity = world->CreateEntity();
     Transform* unitGroupTransform = unitGroupEntity.AddComponent<Transform>(Transform{});
-
-
-    EntityHandle unitEntity = world->CreateEntity();
-
-    Transform* transform = unitEntity.AddComponent<Transform>(Transform{});
-    transform->SetParent(unitGroupTransform);
-
-    transform->Scale(glm::vec3(scaleFactor));
-
     unitGroupTransform->Translate(bridge->startPos);
+    for (int i = 0; i < rows; ++i)
+    {
+        for (int j = 0; j < columns; ++j)
+        {
+            EntityHandle unitEntity = world->CreateEntity();
+            Transform *unitTransform = unitEntity.AddComponent<Transform>(Transform{});
+            unitTransform->SetParent(unitGroupTransform);
+            unitEntity.AddComponent<MeshInfo>(MeshInfo{unitModel, unitMaterial});
+            unitTransform->Scale(glm::vec3(scaleFactor));
+            unitTransform->SetLocalPosition(glm::vec3((i) * horizontalDistance,0,(j) * verticalDistance));
+        }
+    }
 
     unitGroupEntity.AddComponent<SteeringComponent>(SteeringComponent{});
     unitGroupEntity.AddComponent<SeekComponent>(SeekComponent{bridge->endPos});
     Rigidbody* rb = unitGroupEntity.AddComponent<Rigidbody>(Rigidbody{});
 
-    unitEntity.AddComponent<MeshInfo>(MeshInfo{unitModel,unitMaterial});
-
     rb->maxSpeed = maxSpeed;
 
-    return unitEntity;
+    return unitGroupEntity;
 }

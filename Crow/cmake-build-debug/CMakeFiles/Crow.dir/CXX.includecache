@@ -14,6 +14,18 @@ Engine/Debug/Debug.h
 string
 -
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.h
+glm/glm.hpp
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/glm/glm.hpp
+glm/gtx/projection.hpp
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/glm/gtx/projection.hpp
+glm/gtc/matrix_transform.hpp
+-
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h
+glm/glm.hpp
+-
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
 ../Rendering/Model.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
@@ -113,6 +125,10 @@ typeindex
 /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
 Event.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEnterEvent.h
+../Feather/EntityHandle.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
 ../Feather/Types.h
@@ -280,9 +296,45 @@ vector
 glm/vec3.hpp
 -
 
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/SteeringComponent.cpp
+SteeringComponent.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/SteeringComponent.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Game/Components/SteeringComponent.h
 glm/vec3.hpp
 -
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/RigidbodySystem.h
+../../Engine/Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+../../Engine/Events/CollisionEnterEvent.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEnterEvent.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SeekingSystem.cpp
+SeekingSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SeekingSystem.h
+../../Engine/Debug/Debug.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
+../../Engine/Feather/World.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
+../../Engine/Components/Transform.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
+../../Engine/Components/Rigidbody.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Rigidbody.h
+../Components/SteeringComponent.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/SteeringComponent.h
+../Components/SeekComponent.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/SeekComponent.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SeekingSystem.h
+glm/vec3.hpp
+-
+../../Engine/Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+../../Engine/Components/Transform.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
+../../Engine/Components/Rigidbody.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Rigidbody.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SpawnSystem.cpp
 SpawnSystem.h
@@ -326,6 +378,24 @@ GLFW/glfw3.h
 vector
 -
 
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SteeringSystem.cpp
+SteeringSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SteeringSystem.h
+../../Engine/Feather/World.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
+../../Engine/Components/Transform.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
+../../Engine/Components/Rigidbody.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Rigidbody.h
+../Components/SteeringComponent.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/SteeringComponent.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SteeringSystem.h
+glm/ext/quaternion_float.hpp
+-
+../../Engine/Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp
 UnitGroupArchetype.h
 /Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/UnitGroupArchetype.h
@@ -345,6 +415,50 @@ UnitGroupArchetype.h
 /Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/UnitGroupArchetype.h
 ../../Engine/Feather/EntityHandle.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
+
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/MoveComponent.h
+glm/glm.hpp
+-
+
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/MovementTestWorld.cpp
+MovementTestWorld.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/MovementTestWorld.h
+../../Engine/Rendering/Model.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
+../../Engine/Core/ResourceManager.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h
+../../Engine/Core/Game.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
+../../Engine/Rendering/Materials/ColorMaterial.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h
+../../Engine/Components/Transform.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
+../../Engine/Components/Camera.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.h
+../../Engine/Feather/EntityHandle.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
+../../Engine/Components/Light.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h
+../../Engine/Components/Rigidbody.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Rigidbody.h
+../Components/MoveComponent.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/MoveComponent.h
+../../Game/Systems/RigidbodySystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/RigidbodySystem.h
+../../Game/Systems/SteeringSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SteeringSystem.h
+../../Game/Components/SteeringComponent.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/SteeringComponent.h
+../../Game/Components/SeekComponent.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/SeekComponent.h
+../../Game/Systems/SeekingSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SeekingSystem.h
+../../Game/Systems/SpawnSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SpawnSystem.h
+
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/MovementTestWorld.h
+../../Engine/Feather/World.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
 
 /usr/local/include/GL/glew.h
 stddef.h

@@ -42,6 +42,11 @@ void MainWorld::Build()
     ghostArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("translucentMaterial");
     ghostArchetype->unitModel = resourceManager->GetModel("ghost");
     ghostArchetype->scaleFactor = 0.1f;
+    ghostArchetype->horizontalDistance = 0.2f;
+    ghostArchetype->verticalDistance = 0.2f;
+    ghostArchetype->rows = 2;
+    ghostArchetype->columns = 2;
+
 
     playerComponent->selectedUnitArchetype = ghostArchetype;
 
