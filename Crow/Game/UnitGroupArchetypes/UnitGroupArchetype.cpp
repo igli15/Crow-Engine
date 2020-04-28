@@ -16,16 +16,17 @@ EntityHandle UnitGroupArchetype::Build(World* world,BridgeComponent* bridge)
     EntityHandle unitGroupEntity = world->CreateEntity();
     Transform* unitGroupTransform = unitGroupEntity.AddComponent<Transform>(Transform{});
     unitGroupTransform->Translate(bridge->startPos);
-    for (int i = 0; i < rows; ++i)
+
+    for (int columnIndex = 0; columnIndex < columns; ++columnIndex)
     {
-        for (int j = 0; j < columns; ++j)
+        for (int rowIndex = 0; rowIndex < rows; ++rowIndex)
         {
             EntityHandle unitEntity = world->CreateEntity();
             Transform *unitTransform = unitEntity.AddComponent<Transform>(Transform{});
             unitTransform->SetParent(unitGroupTransform);
             unitEntity.AddComponent<MeshInfo>(MeshInfo{unitModel, unitMaterial});
             unitTransform->Scale(glm::vec3(scaleFactor));
-            unitTransform->SetLocalPosition(glm::vec3((i) * horizontalDistance,0,(j) * verticalDistance));
+            unitTransform->SetLocalPosition(glm::vec3((columnIndex) * horizontalDistance, 0, (rowIndex) * verticalDistance));
         }
     }
 

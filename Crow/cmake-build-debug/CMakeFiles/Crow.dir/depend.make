@@ -9907,6 +9907,8 @@ CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.o: ../Engine/Feather/Wo
 CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.o: ../Game/Components/Player.h
 CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.o: ../Game/Systems/UnitSelectionSystem.cpp
 CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.o: ../Game/Systems/UnitSelectionSystem.h
+CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.o: ../Game/Worlds/MainWorld.h
+CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.o: ../Plugins/RapidXML/rapidxml.hpp
 CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.o: /usr/local/include/GLFW/glfw3.h
 CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.o: /usr/local/include/spdlog/common-inl.h
 CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.o: /usr/local/include/spdlog/common.h
@@ -10394,6 +10396,7 @@ CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Game/Systems/RigidbodySystem
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Game/Systems/SeekingSystem.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Game/Systems/SpawnSystem.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Game/Systems/SteeringSystem.h
+CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Game/Systems/UnitSelectionSystem.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Game/UnitGroupArchetypes/UnitGroupArchetype.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Game/Worlds/MainWorld.cpp
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Game/Worlds/MainWorld.h

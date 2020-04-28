@@ -9908,6 +9908,8 @@ CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/Player.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitSelectionSystem.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitSelectionSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Worlds/MainWorld.h
+ /Users/igli/Desktop/Crow Engine/Crow/Plugins/RapidXML/rapidxml.hpp
  /usr/local/include/GLFW/glfw3.h
  /usr/local/include/spdlog/common-inl.h
  /usr/local/include/spdlog/common.h
@@ -10395,6 +10397,7 @@ CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SeekingSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SpawnSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SteeringSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitSelectionSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/UnitGroupArchetype.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Worlds/MainWorld.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Game/Worlds/MainWorld.h

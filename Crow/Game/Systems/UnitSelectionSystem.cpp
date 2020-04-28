@@ -6,6 +6,7 @@
 #include "../../Engine/Feather/World.h"
 #include "../../Engine/Core/Input.h"
 #include "GLFW/glfw3.h"
+#include "../Worlds/MainWorld.h"
 
 void UnitSelectionSystem::Init()
 {
@@ -22,5 +23,11 @@ void UnitSelectionSystem::Update(float dt)
     if(Input::GetKeyDown(GLFW_KEY_Q))
     {
        //TODO set player archetype here based on input
+
+       m_player->selectedUnitArchetype = static_cast<MainWorld*>(world)->GetUnitGroupArchetype("ghosts");
+    }
+    else if(Input::GetKeyDown(GLFW_KEY_W))
+    {
+        m_player->selectedUnitArchetype = static_cast<MainWorld*>(world)->GetUnitGroupArchetype("cubes");
     }
 }

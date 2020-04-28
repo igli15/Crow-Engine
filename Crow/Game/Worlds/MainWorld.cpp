@@ -18,6 +18,7 @@
 #include "../../Engine/Core/Game.h"
 #include "../../Engine/Core/ResourceManager.h"
 #include "../../Engine/Rendering/Materials/TranslucentColorMat.h"
+#include "../Systems/UnitSelectionSystem.h"
 
 void MainWorld::Build()
 {
@@ -32,6 +33,7 @@ void MainWorld::Build()
     RegisterSystem<SeekingSystem>();
     RegisterSystem<SpawnSystem>();
     RegisterSystem<BridgeSystem>();
+    RegisterSystem<UnitSelectionSystem>();
 
 
     EntityHandle playerEntity = CreateEntity();
@@ -46,6 +48,16 @@ void MainWorld::Build()
     ghostArchetype->verticalDistance = 0.2f;
     ghostArchetype->rows = 2;
     ghostArchetype->columns = 2;
+
+    UnitGroupArchetype* cubeArchetype = CreateUnitGroupArchetype("cubes");
+    cubeArchetype->maxSpeed = 0.05f;
+    cubeArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("translucentMaterial");
+    cubeArchetype->unitModel = resourceManager->GetModel("cube");
+    cubeArchetype->scaleFactor = 0.1f;
+    cubeArchetype->horizontalDistance = 0.3f;
+    cubeArchetype->verticalDistance = 0.3f;
+    cubeArchetype->rows = 3;
+    cubeArchetype->columns = 2;
 
 
     playerComponent->selectedUnitArchetype = ghostArchetype;
