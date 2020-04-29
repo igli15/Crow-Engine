@@ -11,6 +11,9 @@
 ///Entity is just an std::uint32
 using Entity = std::uint32_t;
 
+///Entity 0 is invalid the entities start from 1.
+const Entity InvalidEntity = 0;
+
 ///Type dummy used as a seed to generate all component ids
 struct ComponentTypeDummy
 {
@@ -31,5 +34,6 @@ const int MAX_COMPONENTS = 32;
 ///Entity signature is just a std::bitset<MAX_COMPONENTS>
 ///when a component of ID 2 is added 2nd bitset is marked active and when removed is marked inactive
 using EntitySignature = std::bitset<MAX_COMPONENTS>;
+
 
 #endif //CROW_TYPES_H

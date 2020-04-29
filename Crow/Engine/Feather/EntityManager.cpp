@@ -8,7 +8,7 @@
 
 EntityManager::EntityManager()
 {
-    for (Entity e = 0; e < MAX_ENTITIES; ++e)
+    for (Entity e = 1; e < MAX_ENTITIES; ++e)
     {
         m_entityQueue.push(e);
     }

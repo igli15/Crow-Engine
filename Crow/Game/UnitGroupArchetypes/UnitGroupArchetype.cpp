@@ -23,7 +23,7 @@ EntityHandle UnitGroupArchetype::Build(World* world,BridgeComponent* bridge)
         {
             EntityHandle unitEntity = world->CreateEntity();
             Transform *unitTransform = unitEntity.AddComponent<Transform>(Transform{});
-            unitTransform->SetParent(unitGroupTransform);
+            unitTransform->SetParent(unitGroupEntity.entity);
             unitEntity.AddComponent<MeshInfo>(MeshInfo{unitModel, unitMaterial});
             unitTransform->Scale(glm::vec3(scaleFactor));
             unitTransform->SetLocalPosition(glm::vec3((columnIndex) * horizontalDistance, 0, (rowIndex) * verticalDistance));

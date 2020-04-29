@@ -81,12 +81,13 @@ const glm::mat4 &Transform::GetWorldTransform()
 {
     if(m_isWorldDirty)
     {
-        if (m_parentTransform == nullptr)
+        if (parentEntity == InvalidEntity)
         {
             m_worldTransform = GetLocalTransform();
         } else
         {
-            m_worldTransform = m_parentTransform->GetWorldTransform() * GetLocalTransform();
+            Transform& t = m_contextWorld->GetComponent<Transform>(parentEntity);
+            m_worldTransform = t.GetWorldTransform() * GetLocalTransform();
         }
 
         m_isWorldDirty = false;
@@ -95,18 +96,20 @@ const glm::mat4 &Transform::GetWorldTransform()
     return m_worldTransform;
 }
 
-void Transform::SetParent(Transform *transform)
+void Transform::SetParent(Entity newParentEntity)
 {
-    if(m_parentTransform != nullptr)
+    if(parentEntity != InvalidEntity)
     {
-        m_parentTransform->m_childrens.erase(std::find(m_childrens.begin(),m_childrens.end(),owner));
+        Transform& t = m_contextWorld->GetComponent<Transform>(parentEntity);
+        t.m_childrens.erase(std::find(m_childrens.begin(),m_childrens.end(),owner));
     }
 
-    m_parentTransform = transform;
+    parentEntity = newParentEntity;
 
-    if(transform!= nullptr) {
-
-        transform->m_childrens.push_back(this->owner);
+    if(newParentEntity != InvalidEntity)
+    {
+        Transform& t = m_contextWorld->GetComponent<Transform>(newParentEntity);
+        t.m_childrens.push_back(this->owner);
     }
 }
 

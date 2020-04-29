@@ -81,7 +81,7 @@ void UnitySceneParser::ParseChildrenEntities(rapidxml::xml_node<> *node, EntityH
                 Transform *childTransform = child.GetComponent<Transform>().component;
                 Transform *parentTransform = entity.GetComponent<Transform>().component;
 
-                childTransform->SetParent(parentTransform);
+                childTransform->SetParent(entity.entity);
 
                 //Parse the children of children recursively!
                 ParseChildrenEntities(com,child,world,function);

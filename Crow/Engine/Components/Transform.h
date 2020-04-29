@@ -51,7 +51,7 @@ public:
     glm::vec3 LocalPosition();
     glm::vec3 WorldPosition();
 
-    void SetParent(Transform* transform);
+    void SetParent(Entity newParentEntity);
     int GetChildCount();
 
     ///Marks all the children entities attached to the transform for destruction.
@@ -68,9 +68,10 @@ private:
     glm::vec3 m_localScale {1,1,1};
 
 
-    Transform* m_parentTransform = nullptr;
+    //Transform* m_parentTransform = nullptr;
     World* m_contextWorld;
-    Entity owner;
+    Entity owner = InvalidEntity;
+    Entity parentEntity = InvalidEntity;
 
     void MarkLocalTransformDirty();
     void MarkWorldTransformDirty();
