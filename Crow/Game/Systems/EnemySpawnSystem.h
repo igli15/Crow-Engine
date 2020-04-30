@@ -7,8 +7,9 @@
 
 
 #include "../../Engine/Feather/System.h"
+#include <vector>
 
-
+class BridgeComponent;
 
 class EnemySpawnSystem : public System
 {
@@ -17,6 +18,7 @@ public:
     void Update(float dt) override;
 
 private:
+    std::vector<BridgeComponent*> m_bridges;
     float counter = 0.0f;
 
 };

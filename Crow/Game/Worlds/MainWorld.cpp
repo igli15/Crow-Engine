@@ -21,6 +21,7 @@
 #include "../../Engine/Rendering/Materials/TranslucentColorMat.h"
 #include "../Systems/UnitSelectionSystem.h"
 #include "../Systems/EnemySpawnSystem.h"
+#include "../UnitGroupArchetypes/EnemyGroupArchetype.h"
 
 void MainWorld::Build()
 {
@@ -42,7 +43,7 @@ void MainWorld::Build()
     EntityHandle playerEntity = CreateEntity();
     Player* playerComponent = playerEntity.AddComponent<Player>(Player{});
 
-    UnitGroupArchetype* ghostArchetype = static_cast<UnitGroupArchetype*>(CreateUnitGroupArchetype("ghosts"));
+    UnitGroupArchetype* ghostArchetype = CreateUnitGroupArchetype<UnitGroupArchetype>("ghosts");
     ghostArchetype->maxSpeed = 0.01f;
     ghostArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("translucentMaterial");
     ghostArchetype->unitModel = resourceManager->GetModel("ghost");
@@ -52,7 +53,7 @@ void MainWorld::Build()
     ghostArchetype->rows = 2;
     ghostArchetype->columns = 2;
 
-    UnitGroupArchetype* cubeArchetype = static_cast<UnitGroupArchetype*>(CreateUnitGroupArchetype("cubes"));
+    EnemyGroupArchetype* cubeArchetype = CreateUnitGroupArchetype<EnemyGroupArchetype>("cubes");
     cubeArchetype->maxSpeed = 0.01f;
     cubeArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("translucentMaterial");
     cubeArchetype->unitModel = resourceManager->GetModel("golem");
@@ -88,34 +89,4 @@ void MainWorld::ParseGameComponents(rapidxml::xml_node<> *node, EntityHandle ent
             }
         }
     }
-}
-
-AbstractGroupArchetype *MainWorld::CreateUnitGroupArchetype(const std::string& name)
-{
-    auto iterator = m_unitArchetypeMap.find(name);
-
-    if (iterator != m_unitArchetypeMap.end())
-    {
-        ENGINE_LOG_ERROR("There is already a model with name: " + name);
-        throw;
-    }
-
-    UnitGroupArchetype* unitGroupArchetype = new UnitGroupArchetype();
-    m_unitArchetypeMap.insert(iterator,std::make_pair(name,unitGroupArchetype));
-    return unitGroupArchetype;
-}
-
-AbstractGroupArchetype *MainWorld::GetUnitGroupArchetype(const std::string &name)
-{
-    auto iterator = m_unitArchetypeMap.find(name);
-
-    if (iterator == m_unitArchetypeMap.end())
-    {
-        return nullptr;
-    }
-    else
-    {
-        return iterator->second;
-    }
-
 }

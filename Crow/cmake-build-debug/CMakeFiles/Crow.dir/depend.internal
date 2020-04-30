@@ -8626,11 +8626,32 @@ CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Utils/Random.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Components/BridgeComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/EnemySpawnSystem.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/EnemySpawnSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/AbstractGroupArchetype.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/EnemyGroupArchetype.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Worlds/MainWorld.h
  /Users/igli/Desktop/Crow Engine/Crow/Plugins/RapidXML/rapidxml.hpp
+ /usr/local/include/glm/detail/_swizzle.hpp
+ /usr/local/include/glm/detail/_swizzle_func.hpp
+ /usr/local/include/glm/detail/compute_vector_relational.hpp
+ /usr/local/include/glm/detail/qualifier.hpp
+ /usr/local/include/glm/detail/setup.hpp
+ /usr/local/include/glm/detail/type_vec3.hpp
+ /usr/local/include/glm/detail/type_vec3.inl
+ /usr/local/include/glm/ext/vector_bool3.hpp
+ /usr/local/include/glm/ext/vector_bool3_precision.hpp
+ /usr/local/include/glm/ext/vector_double3.hpp
+ /usr/local/include/glm/ext/vector_double3_precision.hpp
+ /usr/local/include/glm/ext/vector_float3.hpp
+ /usr/local/include/glm/ext/vector_float3_precision.hpp
+ /usr/local/include/glm/ext/vector_int3.hpp
+ /usr/local/include/glm/ext/vector_int3_precision.hpp
+ /usr/local/include/glm/ext/vector_uint3.hpp
+ /usr/local/include/glm/ext/vector_uint3_precision.hpp
+ /usr/local/include/glm/simd/platform.h
+ /usr/local/include/glm/vec3.hpp
  /usr/local/include/spdlog/common-inl.h
  /usr/local/include/spdlog/common.h
  /usr/local/include/spdlog/details/backtracer-inl.h
@@ -10010,6 +10031,7 @@ CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/CustomTypeID.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityManager.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemManager.h
@@ -10018,6 +10040,8 @@ CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/Player.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitSelectionSystem.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitSelectionSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/AbstractGroupArchetype.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/UnitGroupArchetype.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Worlds/MainWorld.h
  /Users/igli/Desktop/Crow Engine/Crow/Plugins/RapidXML/rapidxml.hpp
  /usr/local/include/GLFW/glfw3.h
@@ -10975,6 +10999,7 @@ CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SteeringSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitSelectionSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/AbstractGroupArchetype.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/EnemyGroupArchetype.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/UnitGroupArchetype.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Worlds/MainWorld.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Game/Worlds/MainWorld.h

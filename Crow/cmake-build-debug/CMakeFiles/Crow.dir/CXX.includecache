@@ -14,6 +14,12 @@ Engine/Debug/Debug.h
 string
 -
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
+unordered_map
+-
+../Debug/Debug.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
 string.h
 -
@@ -138,33 +144,39 @@ EntityManager.h
 ../Events/ComponentAddedEvent.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
 
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Utils/Random.h
-cstdlib
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/Player.h
+vector
 -
-ctime
--
-../Debug/Debug.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
 
-/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/EnemySpawnSystem.cpp
-EnemySpawnSystem.h
-/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/EnemySpawnSystem.h
-../../Engine/Debug/Debug.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitSelectionSystem.cpp
+UnitSelectionSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitSelectionSystem.h
+../../Engine/Feather/World.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
+../../Engine/Core/Input.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
+GLFW/glfw3.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GLFW/glfw3.h
 ../Worlds/MainWorld.h
 /Users/igli/Desktop/Crow Engine/Crow/Game/Worlds/MainWorld.h
-../UnitGroupArchetypes/AbstractGroupArchetype.h
-/Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/AbstractGroupArchetype.h
-../../Engine/Utils/Random.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Utils/Random.h
+../UnitGroupArchetypes/UnitGroupArchetype.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/UnitGroupArchetype.h
 
-/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/EnemySpawnSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitSelectionSystem.h
 ../../Engine/Feather/System.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+../Components/Player.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/Player.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/AbstractGroupArchetype.h
 ../../Engine/Feather/EntityHandle.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/UnitGroupArchetype.h
+../../Engine/Feather/EntityHandle.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
+AbstractGroupArchetype.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/AbstractGroupArchetype.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Game/Worlds/MainWorld.h
 ../../Engine/Feather/World.h
@@ -182,6 +194,50 @@ cassert
 new
 -
 exception
+-
+
+/usr/local/include/GLFW/glfw3.h
+stddef.h
+-
+stdint.h
+-
+vulkan/vulkan.h
+-
+GLES/gl.h
+-
+GLES/glext.h
+-
+GLES2/gl2.h
+-
+GLES2/gl2ext.h
+-
+GLES3/gl3.h
+-
+GLES2/gl2ext.h
+-
+GLES3/gl31.h
+-
+GLES2/gl2ext.h
+-
+GLES3/gl32.h
+-
+GLES2/gl2ext.h
+-
+OpenGL/gl3.h
+-
+OpenGL/gl3ext.h
+-
+GL/glcorearb.h
+-
+OpenGL/gl.h
+-
+OpenGL/glu.h
+-
+GL/gl.h
+-
+GL/glext.h
+-
+GL/glu.h
 -
 
 /usr/local/include/spdlog/common-inl.h

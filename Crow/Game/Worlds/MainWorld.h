@@ -18,8 +18,36 @@ class MainWorld : public World
 public:
     void Build() override;
 
-    AbstractGroupArchetype* CreateUnitGroupArchetype(const std::string& name);
-    AbstractGroupArchetype* GetUnitGroupArchetype(const std::string& name);
+    template<typename T>
+    T* CreateUnitGroupArchetype(const std::string& name)
+    {
+        auto iterator = m_unitArchetypeMap.find(name);
+
+        if (iterator != m_unitArchetypeMap.end())
+        {
+            ENGINE_LOG_ERROR("There is already a model with name: " + name);
+            throw;
+        }
+
+        T* unitGroupArchetype = new T();
+        m_unitArchetypeMap.insert(iterator,std::make_pair(name,unitGroupArchetype));
+        return unitGroupArchetype;
+    }
+
+    template<typename T>
+    T* GetUnitGroupArchetype(const std::string& name)
+    {
+        auto iterator = m_unitArchetypeMap.find(name);
+
+        if (iterator == m_unitArchetypeMap.end())
+        {
+            return nullptr;
+        }
+        else
+        {
+            return static_cast<T*>(iterator->second);
+        }
+    }
 
 
     static void ParseGameComponents(rapidxml::xml_node<>* node,EntityHandle entity);
