@@ -38,20 +38,6 @@ void SpawnSystem::Update(float dt)
 
 
         EntityHandle unitGroupEntity = m_playerComponent->selectedUnitArchetype->Build(world,activeBridge);
-
-    /*
-        EntityHandle unitEntity = world->CreateEntity();
-        Transform* unitTransform = unitEntity.AddComponent<Transform>(Transform{});
-
-        unitTransform->Translate(activeBridge->startPos);
-        unitTransform->Scale(glm::vec3(0.1,0.1,0.1));
-        unitEntity.AddComponent<SteeringComponent>(SteeringComponent{});
-        unitEntity.AddComponent<SeekComponent>(SeekComponent{activeBridge->endPos});
-        Rigidbody* rb = unitEntity.AddComponent<Rigidbody>(Rigidbody{});
-        rb->maxSpeed = 0.06f;
-
-        unitEntity.AddComponent<MeshInfo>(MeshInfo{m_resourceManager->GetModel("ghost"),m_resourceManager->GetMaterial<ColorMaterial>("translucentMaterial")});
-*/
         activeBridge->entitiesOnBridge.push_back(unitGroupEntity.entity);
     }
 

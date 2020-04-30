@@ -20,6 +20,7 @@
 #include "../../Engine/Core/ResourceManager.h"
 #include "../../Engine/Rendering/Materials/TranslucentColorMat.h"
 #include "../Systems/UnitSelectionSystem.h"
+#include "../Systems/EnemySpawnSystem.h"
 
 void MainWorld::Build()
 {
@@ -35,6 +36,7 @@ void MainWorld::Build()
     RegisterSystem<SpawnSystem>();
     RegisterSystem<BridgeSystem>();
     RegisterSystem<UnitSelectionSystem>();
+    RegisterSystem<EnemySpawnSystem>();
 
 
     EntityHandle playerEntity = CreateEntity();

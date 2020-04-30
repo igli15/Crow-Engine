@@ -10,6 +10,7 @@
 #include "ResourceManager.h"
 #include "Input.h"
 #include "Renderer.h"
+#include "../Utils/Random.h"
 
 Game* Game::m_instance;
 
@@ -26,6 +27,7 @@ void Game::Init()
 
     InitFreeTypeLibrary();
 
+    Random::GenerateSeed();
 }
 
 void Game::InitWorld()
