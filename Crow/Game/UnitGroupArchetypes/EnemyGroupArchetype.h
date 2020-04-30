@@ -6,9 +6,12 @@
 #define CROW_ENEMYGROUPARCHETYPE_H
 
 
-class EnemyGroupArchetype
-{
+#include "AbstractGroupArchetype.h"
 
+class EnemyGroupArchetype : public AbstractGroupArchetype
+{
+public:
+    virtual EntityHandle Build(World* world,BridgeComponent* bridgeComponent) override;
 };
 
 
