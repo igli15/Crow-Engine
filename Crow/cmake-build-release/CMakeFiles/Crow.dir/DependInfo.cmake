@@ -50,6 +50,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SpawnSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SteeringSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Game/Systems/SteeringSystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitSelectionSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/AbstractGroupArchetype.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/AbstractGroupArchetype.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/EnemyGroupArchetype.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/EnemyGroupArchetype.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Game/Worlds/MainWorld.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Component.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/OOP_Engine/Component.cpp.o"

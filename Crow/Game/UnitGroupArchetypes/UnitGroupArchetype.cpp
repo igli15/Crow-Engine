@@ -16,6 +16,7 @@ EntityHandle UnitGroupArchetype::Build(World* world,BridgeComponent* bridge)
     EntityHandle unitGroupEntity = world->CreateEntity();
     Transform* unitGroupTransform = unitGroupEntity.AddComponent<Transform>(Transform{});
     unitGroupTransform->Translate(bridge->startPos);
+    unitGroupTransform->Translate(glm::vec3(0,1,0));
 
     for (int columnIndex = 0; columnIndex < columns; ++columnIndex)
     {

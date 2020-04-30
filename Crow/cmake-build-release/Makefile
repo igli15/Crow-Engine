@@ -1365,6 +1365,60 @@ Game/Systems/UnitSelectionSystem.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.s
 .PHONY : Game/Systems/UnitSelectionSystem.cpp.s
 
+Game/UnitGroupArchetypes/AbstractGroupArchetype.o: Game/UnitGroupArchetypes/AbstractGroupArchetype.cpp.o
+
+.PHONY : Game/UnitGroupArchetypes/AbstractGroupArchetype.o
+
+# target to build an object file
+Game/UnitGroupArchetypes/AbstractGroupArchetype.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/AbstractGroupArchetype.cpp.o
+.PHONY : Game/UnitGroupArchetypes/AbstractGroupArchetype.cpp.o
+
+Game/UnitGroupArchetypes/AbstractGroupArchetype.i: Game/UnitGroupArchetypes/AbstractGroupArchetype.cpp.i
+
+.PHONY : Game/UnitGroupArchetypes/AbstractGroupArchetype.i
+
+# target to preprocess a source file
+Game/UnitGroupArchetypes/AbstractGroupArchetype.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/AbstractGroupArchetype.cpp.i
+.PHONY : Game/UnitGroupArchetypes/AbstractGroupArchetype.cpp.i
+
+Game/UnitGroupArchetypes/AbstractGroupArchetype.s: Game/UnitGroupArchetypes/AbstractGroupArchetype.cpp.s
+
+.PHONY : Game/UnitGroupArchetypes/AbstractGroupArchetype.s
+
+# target to generate assembly for a file
+Game/UnitGroupArchetypes/AbstractGroupArchetype.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/AbstractGroupArchetype.cpp.s
+.PHONY : Game/UnitGroupArchetypes/AbstractGroupArchetype.cpp.s
+
+Game/UnitGroupArchetypes/EnemyGroupArchetype.o: Game/UnitGroupArchetypes/EnemyGroupArchetype.cpp.o
+
+.PHONY : Game/UnitGroupArchetypes/EnemyGroupArchetype.o
+
+# target to build an object file
+Game/UnitGroupArchetypes/EnemyGroupArchetype.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/EnemyGroupArchetype.cpp.o
+.PHONY : Game/UnitGroupArchetypes/EnemyGroupArchetype.cpp.o
+
+Game/UnitGroupArchetypes/EnemyGroupArchetype.i: Game/UnitGroupArchetypes/EnemyGroupArchetype.cpp.i
+
+.PHONY : Game/UnitGroupArchetypes/EnemyGroupArchetype.i
+
+# target to preprocess a source file
+Game/UnitGroupArchetypes/EnemyGroupArchetype.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/EnemyGroupArchetype.cpp.i
+.PHONY : Game/UnitGroupArchetypes/EnemyGroupArchetype.cpp.i
+
+Game/UnitGroupArchetypes/EnemyGroupArchetype.s: Game/UnitGroupArchetypes/EnemyGroupArchetype.cpp.s
+
+.PHONY : Game/UnitGroupArchetypes/EnemyGroupArchetype.s
+
+# target to generate assembly for a file
+Game/UnitGroupArchetypes/EnemyGroupArchetype.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/EnemyGroupArchetype.cpp.s
+.PHONY : Game/UnitGroupArchetypes/EnemyGroupArchetype.cpp.s
+
 Game/UnitGroupArchetypes/UnitGroupArchetype.o: Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o
 
 .PHONY : Game/UnitGroupArchetypes/UnitGroupArchetype.o
@@ -1944,6 +1998,12 @@ help:
 	@echo "... Game/Systems/UnitSelectionSystem.o"
 	@echo "... Game/Systems/UnitSelectionSystem.i"
 	@echo "... Game/Systems/UnitSelectionSystem.s"
+	@echo "... Game/UnitGroupArchetypes/AbstractGroupArchetype.o"
+	@echo "... Game/UnitGroupArchetypes/AbstractGroupArchetype.i"
+	@echo "... Game/UnitGroupArchetypes/AbstractGroupArchetype.s"
+	@echo "... Game/UnitGroupArchetypes/EnemyGroupArchetype.o"
+	@echo "... Game/UnitGroupArchetypes/EnemyGroupArchetype.i"
+	@echo "... Game/UnitGroupArchetypes/EnemyGroupArchetype.s"
 	@echo "... Game/UnitGroupArchetypes/UnitGroupArchetype.o"
 	@echo "... Game/UnitGroupArchetypes/UnitGroupArchetype.i"
 	@echo "... Game/UnitGroupArchetypes/UnitGroupArchetype.s"

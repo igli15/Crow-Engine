@@ -28,7 +28,7 @@ void SeekingSystem::Update(float dt)
         SeekComponent& seekComponent = world->GetComponent<SeekComponent>(entities[i]);
         Rigidbody& rigidBody = world->GetComponent<Rigidbody>(entities[i]);
 
-        steeringComponent.steering += DoSeek(transform,rigidBody,seekComponent.targetPos,0);
+        steeringComponent.steering += DoSeek(transform,rigidBody,seekComponent.targetPos,2);
     }
 }
 

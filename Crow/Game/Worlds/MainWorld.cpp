@@ -13,6 +13,7 @@
 #include "../Systems/SteeringSystem.h"
 #include "../Systems/RigidbodySystem.h"
 
+#include "../UnitGroupArchetypes/AbstractGroupArchetype.h"
 #include "../UnitGroupArchetypes/UnitGroupArchetype.h"
 #include "../Components/Player.h"
 #include "../../Engine/Core/Game.h"
@@ -39,25 +40,25 @@ void MainWorld::Build()
     EntityHandle playerEntity = CreateEntity();
     Player* playerComponent = playerEntity.AddComponent<Player>(Player{});
 
-    UnitGroupArchetype* ghostArchetype = CreateUnitGroupArchetype("ghosts");
-    ghostArchetype->maxSpeed = 0.05f;
+    UnitGroupArchetype* ghostArchetype = static_cast<UnitGroupArchetype*>(CreateUnitGroupArchetype("ghosts"));
+    ghostArchetype->maxSpeed = 0.01f;
     ghostArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("translucentMaterial");
     ghostArchetype->unitModel = resourceManager->GetModel("ghost");
-    ghostArchetype->scaleFactor = 0.1f;
+    ghostArchetype->scaleFactor = 0.1;
     ghostArchetype->horizontalDistance = 0.2f;
     ghostArchetype->verticalDistance = 0.2f;
     ghostArchetype->rows = 2;
     ghostArchetype->columns = 2;
 
-    UnitGroupArchetype* cubeArchetype = CreateUnitGroupArchetype("cubes");
-    cubeArchetype->maxSpeed = 0.05f;
+    UnitGroupArchetype* cubeArchetype = static_cast<UnitGroupArchetype*>(CreateUnitGroupArchetype("cubes"));
+    cubeArchetype->maxSpeed = 0.01f;
     cubeArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("translucentMaterial");
-    cubeArchetype->unitModel = resourceManager->GetModel("cube");
-    cubeArchetype->scaleFactor = 0.1f;
+    cubeArchetype->unitModel = resourceManager->GetModel("golem");
+    cubeArchetype->scaleFactor = 0.07f;
     cubeArchetype->horizontalDistance = 0.3f;
-    cubeArchetype->verticalDistance = 0.3f;
-    cubeArchetype->rows = 3;
-    cubeArchetype->columns = 2;
+    cubeArchetype->verticalDistance = 0.3;
+    cubeArchetype->rows = 1;
+    cubeArchetype->columns = 1;
 
 
     playerComponent->selectedUnitArchetype = ghostArchetype;
@@ -87,7 +88,7 @@ void MainWorld::ParseGameComponents(rapidxml::xml_node<> *node, EntityHandle ent
     }
 }
 
-UnitGroupArchetype *MainWorld::CreateUnitGroupArchetype(const std::string& name)
+AbstractGroupArchetype *MainWorld::CreateUnitGroupArchetype(const std::string& name)
 {
     auto iterator = m_unitArchetypeMap.find(name);
 
@@ -102,7 +103,7 @@ UnitGroupArchetype *MainWorld::CreateUnitGroupArchetype(const std::string& name)
     return unitGroupArchetype;
 }
 
-UnitGroupArchetype *MainWorld::GetUnitGroupArchetype(const std::string &name)
+AbstractGroupArchetype *MainWorld::GetUnitGroupArchetype(const std::string &name)
 {
     auto iterator = m_unitArchetypeMap.find(name);
 

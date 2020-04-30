@@ -8,12 +8,12 @@
 
 #include <vector>
 
-class UnitGroupArchetype;
+class AbstractGroupArchetype;
 
 struct Player
 {
     float money = 0.0f;
-    UnitGroupArchetype* selectedUnitArchetype = nullptr;
+    AbstractGroupArchetype* selectedUnitArchetype = nullptr;
 
 };
 

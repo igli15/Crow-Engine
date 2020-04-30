@@ -6,28 +6,17 @@
 #define CROW_UNITGROUPARCHETYPE_H
 
 #include "../../Engine/Feather/EntityHandle.h"
+#include "AbstractGroupArchetype.h"
 
 class Model;
 class AbstractMaterial;
 class BridgeComponent;
 
-class UnitGroupArchetype
+class UnitGroupArchetype : public AbstractGroupArchetype
 {
 public:
-    unsigned int rows = 1;
-    unsigned int columns = 1;
-    float horizontalDistance = 1;
-    float  verticalDistance = 1;
-    //unsigned int nrOfUnits = 1;
 
-    float scaleFactor = 1.0f;
-    float maxSpeed = 0.05f;
-
-
-    Model* unitModel = nullptr;
-    AbstractMaterial* unitMaterial = nullptr;
-
-    EntityHandle Build(World* world,BridgeComponent* bridge);
+    EntityHandle Build(World* world,BridgeComponent* bridge) override;
 
 };
 

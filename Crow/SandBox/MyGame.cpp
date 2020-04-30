@@ -38,6 +38,9 @@ void MyGame::LoadAssets()
     resourceManager->LoadModel(("ghost1.obj"),"ghost");
     resourceManager->LoadModel(("dragon.obj"),"dragon");
     resourceManager->LoadModel(("floatingRock.obj"),"floatingRock");
+    resourceManager->LoadModel(("Golem.fbx"),"golem");
+    resourceManager->LoadModel(("rockMonster.fbx"),"rockMonster");
+    resourceManager->LoadModel(("woodenMonster.fbx"),"woodenMonster");
 
     resourceManager->LoadTexture("container.png","containerDiffuse");
     resourceManager->LoadTexture("containerSpecular.png","containerSpecular");
