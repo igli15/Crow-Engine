@@ -429,6 +429,12 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitCollisionSystem.h">
 			<Option target="Crow"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitFightingSystem.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitFightingSystem.h">
+			<Option target="Crow"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitSelectionSystem.cpp">
 			<Option target="Crow"/>
 		</Unit>

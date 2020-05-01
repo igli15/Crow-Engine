@@ -9,6 +9,7 @@
 #include "../../Engine/Components/Rigidbody.h"
 #include "../../Game/Components/BridgeComponent.h"
 #include "../../Engine/Components/MeshInfo.h"
+#include "../Components/PlayerUnitCollider.h"
 
 EntityHandle UnitGroupArchetype::Build(World* world,BridgeComponent* bridge)
 {
@@ -16,6 +17,7 @@ EntityHandle UnitGroupArchetype::Build(World* world,BridgeComponent* bridge)
     Transform* unitGroupTransform = unitGroupEntity.AddComponent<Transform>(Transform{});
     unitGroupTransform->Translate(bridge->startPos);
     unitGroupTransform->Translate(glm::vec3(0,1,0));
+    unitGroupEntity.AddComponent<PlayerUnitCollider>(PlayerUnitCollider{1});
 
     for (int columnIndex = 0; columnIndex < columns; ++columnIndex)
     {

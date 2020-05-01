@@ -19,8 +19,8 @@ void UnitCollisionSystem::Update(float dt)
 
     m_frameCounter += 1;
 
-    auto playerUnitEntities  = world->EntitiesWith<PlayerUnitCollider>();
-    auto enemyUnitEntities = world->EntitiesWith<EnemyUnitCollider>();
+    auto playerUnitEntities  = world->EntitiesWith<Transform,PlayerUnitCollider>();
+    auto enemyUnitEntities = world->EntitiesWith<Transform,EnemyUnitCollider>();
 
     for (int playerUnitIndex = 0; playerUnitIndex < playerUnitEntities.size(); ++playerUnitIndex)
     {

@@ -47,6 +47,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o"
   "CMakeFiles/Crow.dir/Game/Systems/SteeringSystem.cpp.o"
   "CMakeFiles/Crow.dir/Game/Systems/UnitCollisionSystem.cpp.o"
+  "CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o"
   "CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.o"
   "CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/AbstractGroupArchetype.cpp.o"
   "CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/EnemyGroupArchetype.cpp.o"

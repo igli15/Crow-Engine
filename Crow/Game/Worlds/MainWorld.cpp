@@ -22,6 +22,8 @@
 #include "../Systems/UnitSelectionSystem.h"
 #include "../Systems/EnemySpawnSystem.h"
 #include "../UnitGroupArchetypes/EnemyGroupArchetype.h"
+#include "../Systems/UnitCollisionSystem.h"
+#include "../Systems/UnitFightingSystem.h"
 
 void MainWorld::Build()
 {
@@ -38,7 +40,8 @@ void MainWorld::Build()
     RegisterSystem<BridgeSystem>();
     RegisterSystem<UnitSelectionSystem>();
     RegisterSystem<EnemySpawnSystem>();
-
+    RegisterSystem<UnitCollisionSystem>();
+    RegisterSystem<UnitFightingSystem>();
 
     EntityHandle playerEntity = CreateEntity();
     Player* playerComponent = playerEntity.AddComponent<Player>(Player{});
