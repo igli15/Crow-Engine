@@ -28,7 +28,7 @@ void CollisionDetectionSystem::Update(float dt)
 
             SphereCollider& s2 = world->GetComponent<SphereCollider>(entities[nextEntityIndex]);
 
-            glm::vec3 distanceVector = t1.LocalPosition() - t2.LocalPosition();
+            glm::vec3 distanceVector = t1.WorldPosition() - t2.WorldPosition();
             float distance = glm::length(distanceVector);
 
             if(distance<= s1.radius * s2.radius)

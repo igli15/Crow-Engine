@@ -360,10 +360,16 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/BridgeComponent.h">
 			<Option target="Crow"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/EnemyUnitCollider.h">
+			<Option target="Crow"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/Player.cpp">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/Player.h">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/PlayerUnitCollider.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/SeekComponent.cpp">
@@ -376,6 +382,9 @@
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/SteeringComponent.h">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Events/UnitCollisionEvents.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/BridgeSystem.cpp">
@@ -412,6 +421,12 @@
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SteeringSystem.h">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitCollisionSystem.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitCollisionSystem.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitSelectionSystem.cpp">
