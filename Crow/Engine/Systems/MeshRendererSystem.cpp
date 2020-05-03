@@ -13,17 +13,22 @@ void MeshRendererSystem::OnCreate() {
     System::OnCreate();
 
     renderer = Game::Instance()->renderer;
+
+}
+
+void MeshRendererSystem::Init()
+{
+    System::Init();
+    Entity cameraEntity = world->EntitiesWith<Camera>()[0];
+    cameraTransform =  &world->GetComponent<Transform>(cameraEntity);
+    cameraComponent = &world->GetComponent<Camera>(cameraEntity);
 }
 
 void MeshRendererSystem::Render() {
     System::Render();
 
-    Entity cameraEntity = world->EntitiesWith<Camera>()[0];
-    Transform& cameraTransform = world->GetComponent<Transform>(cameraEntity);
-    Camera& camera=  world->GetComponent<Camera>(cameraEntity);
-
-    glm::mat4 camInverseMat = glm::inverse(cameraTransform.GetWorldTransform());
-    glm::mat4 projection = camera.GetProjection();
+    glm::mat4 camInverseMat = glm::inverse(cameraTransform->GetWorldTransform());
+    glm::mat4 projection = cameraComponent->GetProjection();
 
 
     m_matIdToModelsMap.clear();
@@ -61,7 +66,7 @@ void MeshRendererSystem::Render() {
         AbstractMaterial* material = renderer->materialMap[pair.first];
 
         material->GetShader()->Use();
-        material->BufferShaderUniforms(camInverseMat, projection,cameraTransform.WorldPosition(), world);
+        material->BufferShaderUniforms(camInverseMat, projection,cameraTransform->WorldPosition(), world);
         material->BufferMaterialUniforms();
 
         for (const auto& model : pair.second)
@@ -77,3 +82,4 @@ int MeshRendererSystem::Hash(int x,int y)
 {
     return  (x+y) * (x+y+1) / 2 + y;
 }
+

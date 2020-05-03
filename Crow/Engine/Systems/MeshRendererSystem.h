@@ -14,6 +14,7 @@
 #include <set>
 #include "../Components/MeshInfo.h"
 
+class Camera;
 /*
 struct MeshInstancedData
 {
@@ -40,6 +41,7 @@ class MeshRendererSystem : public System{
 
 public:
     void OnCreate() override;
+    void Init() override;
     void Render() override;
 private:
     std::unordered_map<int,std::set<Model*>> m_matIdToModelsMap;
@@ -49,6 +51,8 @@ private:
 
    std::set<AbstractMaterial*> m_activeMaterials;
     Renderer* renderer;
+    Transform* cameraTransform;
+    Camera* cameraComponent;
 
 };
 
