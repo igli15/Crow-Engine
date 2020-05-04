@@ -10,6 +10,8 @@
 #include "../../Game/Components/BridgeComponent.h"
 #include "../../Engine/Components/MeshInfo.h"
 #include "../Components/PlayerUnitCollider.h"
+#include "../Components/HealthComponent.h"
+#include "../Components/DamageDealer.h"
 
 EntityHandle UnitGroupArchetype::Build(World* world,BridgeComponent* bridge)
 {
@@ -18,6 +20,9 @@ EntityHandle UnitGroupArchetype::Build(World* world,BridgeComponent* bridge)
     unitGroupTransform->Translate(bridge->startPos);
     unitGroupTransform->Translate(glm::vec3(0,1,0));
     unitGroupEntity.AddComponent<PlayerUnitCollider>(PlayerUnitCollider{1});
+
+    unitGroupEntity.AddComponent<HealthComponent>(HealthComponent{maxHealth,maxHealth});
+    unitGroupEntity.AddComponent<DamageDealer>(DamageDealer{damageRate,unitType,strongAgainstType});
 
     for (int columnIndex = 0; columnIndex < columns; ++columnIndex)
     {

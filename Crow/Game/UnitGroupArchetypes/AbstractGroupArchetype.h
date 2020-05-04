@@ -6,6 +6,7 @@
 #define CROW_ABSTRACTGROUPARCHETYPE_H
 
 #include "../../Engine/Feather/EntityHandle.h"
+#include "../Components/DamageDealer.h"
 
 class Model;
 class AbstractMaterial;
@@ -23,6 +24,11 @@ public:
     float  verticalDistance = 1;
     float scaleFactor = 1.0f;
     float maxSpeed = 0.05f;
+    float maxHealth = 100;
+    float damageRate = 0.05f;
+    DamageDealer::Type unitType = DamageDealer::Type::NONE;
+    DamageDealer::Type strongAgainstType = DamageDealer::Type::NONE;
+
 
     Model* unitModel = nullptr;
     AbstractMaterial* unitMaterial = nullptr;

@@ -3,12 +3,17 @@
 //
 
 #include "UnitFightingSystem.h"
+#include "../Components/DamageDealer.h"
+#include "../Components/HealthComponent.h"
+#include "../../Engine/Components/Rigidbody.h"
 
 void UnitFightingSystem::Init()
 {
     System::Init();
 
     EventQueue::Instance().Subscribe(this,&UnitFightingSystem::OnUnitCollisionEnter);
+    EventQueue::Instance().Subscribe(this,&UnitFightingSystem::OnUnitCollisionStay);
+    EventQueue::Instance().Subscribe(this,&UnitFightingSystem::OnUnitCollisionExit);
 }
 
 void UnitFightingSystem::Update(float dt)
@@ -16,13 +21,97 @@ void UnitFightingSystem::Update(float dt)
     System::Update(dt);
 }
 
-void UnitFightingSystem::OnUnitCollisionEnter(UnitCollisionEnterEvent * event)
+void UnitFightingSystem::OnUnitCollisionStay(UnitCollisionStayEvent *event)
 {
-    ENGINE_LOG("here");
-
     EntityHandle playerUnitEntity = event->playerEntity;
     EntityHandle enemyUnitHandle = event->enemyEntity;
 
-    world->DestroyEntity(playerUnitEntity.entity);
-    world->DestroyEntity(enemyUnitHandle.entity);
+    Fight(playerUnitEntity,enemyUnitHandle);
 }
+
+void UnitFightingSystem::OnUnitCollisionEnter(UnitCollisionEnterEvent * event)
+{
+    EntityHandle playerUnitEntity = event->playerEntity;
+    EntityHandle enemyUnitHandle = event->enemyEntity;
+
+    ComponentHandle<Rigidbody> playerRb =  playerUnitEntity.GetComponent<Rigidbody>();
+    ComponentHandle<Rigidbody> enemyRb =  enemyUnitHandle.GetComponent<Rigidbody>();
+
+    playerRb.component->oldSpeed = playerRb.component->maxSpeed;
+    enemyRb.component->oldSpeed = enemyRb.component->maxSpeed;
+
+    playerRb.component->maxSpeed = 0;
+    enemyRb.component->maxSpeed = 0;
+}
+
+void UnitFightingSystem::OnUnitCollisionExit(UnitCollisionExitEvent* event)
+{
+    EntityHandle playerUnitEntity = event->playerEntity;
+    EntityHandle enemyUnitHandle = event->enemyEntity;
+
+    ComponentHandle<Rigidbody> playerRb =  playerUnitEntity.GetComponent<Rigidbody>();
+    ComponentHandle<Rigidbody> enemyRb =  enemyUnitHandle.GetComponent<Rigidbody>();
+
+    if(playerRb.component != nullptr)
+    {
+        playerRb.component->maxSpeed = playerRb.component->oldSpeed;
+    }
+
+    if(enemyRb.component != nullptr)
+    {
+        enemyRb.component->maxSpeed = enemyRb.component->oldSpeed;
+    }
+
+}
+
+
+void UnitFightingSystem::Fight(EntityHandle firstEntity, EntityHandle secondEntity)
+{
+    ComponentHandle<DamageDealer> firstDamageDealer = firstEntity.GetComponent<DamageDealer>();
+    ComponentHandle<DamageDealer> secondDamageDealer = secondEntity.GetComponent<DamageDealer>();
+
+    if(firstDamageDealer.component->damageDealerType == DamageDealer::NONE)
+    {
+        APP_LOG_WARNING("Damage dealer is of none type returning.....");
+        return;
+    }
+
+    if(secondDamageDealer.component->damageDealerType == DamageDealer::NONE)
+    {
+        APP_LOG_WARNING("Damage dealer is of none type returning.....");
+        return;
+    }
+
+
+    float firstDmg = firstDamageDealer.component->damageRate;
+    float secondDmg = secondDamageDealer.component->damageRate;
+
+    if(firstDamageDealer.component->strongAgainst == secondDamageDealer.component->damageDealerType)
+    {
+        firstDmg *= 2;
+    }
+
+    if(secondDamageDealer.component->strongAgainst == firstDamageDealer.component->damageDealerType)
+    {
+        secondDmg *= 2;
+    }
+
+    ComponentHandle<HealthComponent> firstEntityHealth = firstEntity.GetComponent<HealthComponent>();
+    ComponentHandle<HealthComponent> secondEntityHealth = secondEntity.GetComponent<HealthComponent>();
+
+    firstEntityHealth.component->currentHealth -= secondDmg;
+    secondEntityHealth.component->currentHealth -= firstDmg;
+
+    if(firstEntityHealth.component->currentHealth <= 0)
+    {
+        world->DestroyEntity(firstEntity.entity);
+    }
+
+    if(secondEntityHealth.component->currentHealth <= 0)
+    {
+        world->DestroyEntity(secondEntity.entity);
+    }
+
+}
+
+

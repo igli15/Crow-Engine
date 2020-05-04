@@ -106,6 +106,21 @@ public:
         return m_componentsArray[it->second];
     }
 
+    ///Finds a component for a specified entity and returns a POINTER to it.
+    ///@param entity the entity which component will be looked for.
+    ///@return T* the pointer to the component.
+    T* GetComponentPtr(Entity entity)
+    {
+        auto it = m_entityToIndexMap.find(entity);
+
+        if(it == m_entityToIndexMap.end())
+        {
+            return nullptr;
+        }
+
+        return &(m_componentsArray[it->second]);
+    }
+
     void OnEntityDestroyed(Entity entity) override
     {
         if (m_entityToIndexMap.find(entity) != m_entityToIndexMap.end())

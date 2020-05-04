@@ -26,15 +26,7 @@ struct ComponentHandle {
         owner = pE;
         manager = pManager;
 
-        if(manager != nullptr)
-        {
-            component = &(manager->GetComponentData(owner));
-        }
-        else
-        {
-            ENGINE_LOG_CRITICAL("ComponentHandle couldn't find component data of the owner");
-            component = nullptr;
-        }
+        component = pManager->GetComponentPtr(pE);
     }
 
 

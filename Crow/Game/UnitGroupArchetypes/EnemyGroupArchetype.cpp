@@ -10,6 +10,7 @@
 #include "../../Engine/Components/Rigidbody.h"
 #include "../../Game/Components/BridgeComponent.h"
 #include "../Components/EnemyUnitCollider.h"
+#include "../Components/HealthComponent.h"
 
 
 EntityHandle EnemyGroupArchetype::Build(World *world, BridgeComponent *bridge)
@@ -19,6 +20,9 @@ EntityHandle EnemyGroupArchetype::Build(World *world, BridgeComponent *bridge)
     unitGroupTransform->Translate(bridge->endPos);
     unitGroupTransform->Translate(glm::vec3(0,1,0));
     unitGroupEntity.AddComponent<EnemyUnitCollider>(EnemyUnitCollider{1});
+
+    unitGroupEntity.AddComponent<HealthComponent>(HealthComponent{maxHealth,maxHealth});
+    unitGroupEntity.AddComponent<DamageDealer>(DamageDealer{damageRate,unitType,strongAgainstType});
 
     for (int columnIndex = 0; columnIndex < columns; ++columnIndex)
     {

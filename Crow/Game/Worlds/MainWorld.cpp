@@ -55,6 +55,9 @@ void MainWorld::Build()
     ghostArchetype->verticalDistance = 0.2f;
     ghostArchetype->rows = 2;
     ghostArchetype->columns = 2;
+    ghostArchetype->unitType = DamageDealer::Sword;
+    ghostArchetype->strongAgainstType = DamageDealer::Arrow;
+
 
     EnemyGroupArchetype* cubeArchetype = CreateUnitGroupArchetype<EnemyGroupArchetype>("cubes");
     cubeArchetype->maxSpeed = 0.01f;
@@ -65,6 +68,8 @@ void MainWorld::Build()
     cubeArchetype->verticalDistance = 0.3;
     cubeArchetype->rows = 1;
     cubeArchetype->columns = 1;
+    cubeArchetype->unitType = DamageDealer::Pike;
+    cubeArchetype->strongAgainstType = DamageDealer::Sword;
 
 
     playerComponent->selectedUnitArchetype = ghostArchetype;

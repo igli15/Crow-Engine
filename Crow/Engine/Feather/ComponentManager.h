@@ -27,10 +27,16 @@ public:
     template <typename T>
     void RemoveComponent(Entity entity);
 
-    ///Finds an component array of Type "T" and remove the component
-    ///@param entity the entity which the component will be removed from
+    ///Finds an component array of Type "T" and get the component
+    ///@param entity the entity which the component will be taken from
     template <typename T>
     T& GetComponent(Entity entity);
+
+
+    ///Finds an component array of Type "T" and get the component pointer
+    ///@param entity the entity which the component pointer will be searched for
+    template <typename T>
+    T* GetComponentPtr(Entity entity);
 
     ///Notifies all the active component arrays if an Entity got destroyed
     ///and if so update them accordingly
@@ -95,6 +101,15 @@ T &ComponentManager::GetComponent(Entity entity)
     return GetComponentArray<T>()->GetComponentData(entity);
 }
 
+template<typename T>
+T *ComponentManager::GetComponentPtr(Entity entity)
+{
+    ComponentArray<T>* arrayPtr = GetComponentArray<T>();
+
+    if(arrayPtr == nullptr) return nullptr;
+
+    return arrayPtr->GetComponentPtr(entity);
+}
 
 
 #endif //CROW_COMPONENTMANAGER_H

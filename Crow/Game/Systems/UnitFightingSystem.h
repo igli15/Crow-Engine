@@ -16,6 +16,10 @@ public:
         void Update(float dt) override;
 
         void OnUnitCollisionEnter(UnitCollisionEnterEvent* event);
+        void OnUnitCollisionStay(UnitCollisionStayEvent* event);
+        void OnUnitCollisionExit(UnitCollisionExitEvent* event);
+
+        void Fight(EntityHandle firstEntity,EntityHandle secondEntity);
 
 };
 

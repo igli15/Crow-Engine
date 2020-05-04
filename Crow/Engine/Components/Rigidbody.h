@@ -12,7 +12,8 @@ struct Rigidbody
 {
     glm::vec3 velocity = glm::vec3(0);
     glm::vec3 acceleration = glm::vec3(0);
-    float maxSpeed = 0.01;
+    float maxSpeed = 0.01f;
+    float oldSpeed = 0.0f;
 };
 
 

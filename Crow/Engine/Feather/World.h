@@ -95,6 +95,15 @@ public:
         return m_componentManager->GetComponent<T>(entity);
     }
 
+    ///Get a component pointer of type "T" from an entity.
+    ///@param entity Entity which contains the component.
+    ///@return Returns a pointer to the found component (returns nullptr if not found).
+    template <typename T>
+    T* GetComponentPtr(Entity entity)
+    {
+        return m_componentManager->GetComponentPtr<T>(entity);
+    }
+
     ///Get a component array of type "T".
     ///@return returns a pointer to the component array. nullptr will be returned if it wasn't found.
     template <typename T>
