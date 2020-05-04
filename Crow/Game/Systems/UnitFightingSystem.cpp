@@ -61,7 +61,6 @@ void UnitFightingSystem::OnUnitCollisionExit(UnitCollisionExitEvent* event)
     {
         enemyRb.component->maxSpeed = enemyRb.component->oldSpeed;
     }
-
 }
 
 
