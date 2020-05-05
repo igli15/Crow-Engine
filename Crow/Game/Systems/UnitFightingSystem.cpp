@@ -26,22 +26,44 @@ void UnitFightingSystem::OnUnitCollisionStay(UnitCollisionStayEvent *event)
     EntityHandle playerUnitEntity = event->playerEntity;
     EntityHandle enemyUnitHandle = event->enemyEntity;
 
+    ComponentHandle<Rigidbody> playerRb =  playerUnitEntity.GetComponent<Rigidbody>();
+    ComponentHandle<Rigidbody> enemyRb =  enemyUnitHandle.GetComponent<Rigidbody>();
+
+    if(playerRb.component->maxSpeed>0) {
+        playerRb.component->oldSpeed = playerRb.component->maxSpeed;
+    }
+    if(enemyRb.component->maxSpeed>0) {
+        enemyRb.component->oldSpeed = enemyRb.component->maxSpeed;
+    }
+
+    playerRb.component->maxSpeed = 0;
+    enemyRb.component->maxSpeed = 0;
+
     Fight(playerUnitEntity,enemyUnitHandle);
 }
 
 void UnitFightingSystem::OnUnitCollisionEnter(UnitCollisionEnterEvent * event)
 {
+    //TODO maybe find a better way to resolve fighting collisions. like rn we cant do this here since it might get skipped if there are multiple units so we
+    // have to do it oncollisionstay.
+    
+    /*
     EntityHandle playerUnitEntity = event->playerEntity;
     EntityHandle enemyUnitHandle = event->enemyEntity;
 
     ComponentHandle<Rigidbody> playerRb =  playerUnitEntity.GetComponent<Rigidbody>();
     ComponentHandle<Rigidbody> enemyRb =  enemyUnitHandle.GetComponent<Rigidbody>();
 
-    playerRb.component->oldSpeed = playerRb.component->maxSpeed;
-    enemyRb.component->oldSpeed = enemyRb.component->maxSpeed;
+    if(playerRb.component->maxSpeed>0) {
+        playerRb.component->oldSpeed = playerRb.component->maxSpeed;
+    }
+    if(enemyRb.component->maxSpeed>0) {
+        enemyRb.component->oldSpeed = enemyRb.component->maxSpeed;
+    }
 
     playerRb.component->maxSpeed = 0;
     enemyRb.component->maxSpeed = 0;
+     */
 }
 
 void UnitFightingSystem::OnUnitCollisionExit(UnitCollisionExitEvent* event)

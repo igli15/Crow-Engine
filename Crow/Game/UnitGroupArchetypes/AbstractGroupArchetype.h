@@ -25,7 +25,7 @@ public:
     float scaleFactor = 1.0f;
     float maxSpeed = 0.05f;
     float maxHealth = 100;
-    float damageRate = 0.05f;
+    float damageRate = 0.5f;
     DamageDealer::Type unitType = DamageDealer::Type::NONE;
     DamageDealer::Type strongAgainstType = DamageDealer::Type::NONE;
 

@@ -47,7 +47,7 @@ void MainWorld::Build()
     Player* playerComponent = playerEntity.AddComponent<Player>(Player{});
 
     UnitGroupArchetype* ghostArchetype = CreateUnitGroupArchetype<UnitGroupArchetype>("ghosts");
-    ghostArchetype->maxSpeed = 0.01f;
+    ghostArchetype->maxSpeed = 1.0f;
     ghostArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("translucentMaterial");
     ghostArchetype->unitModel = resourceManager->GetModel("ghost");
     ghostArchetype->scaleFactor = 0.1;
@@ -56,11 +56,11 @@ void MainWorld::Build()
     ghostArchetype->rows = 2;
     ghostArchetype->columns = 2;
     ghostArchetype->unitType = DamageDealer::Sword;
-    ghostArchetype->strongAgainstType = DamageDealer::Arrow;
+    ghostArchetype->strongAgainstType = DamageDealer::NONE;
 
 
     EnemyGroupArchetype* cubeArchetype = CreateUnitGroupArchetype<EnemyGroupArchetype>("cubes");
-    cubeArchetype->maxSpeed = 0.01f;
+    cubeArchetype->maxSpeed = 1.0f;
     cubeArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("translucentMaterial");
     cubeArchetype->unitModel = resourceManager->GetModel("golem");
     cubeArchetype->scaleFactor = 0.07f;
@@ -69,7 +69,7 @@ void MainWorld::Build()
     cubeArchetype->rows = 1;
     cubeArchetype->columns = 1;
     cubeArchetype->unitType = DamageDealer::Pike;
-    cubeArchetype->strongAgainstType = DamageDealer::Sword;
+    cubeArchetype->strongAgainstType = DamageDealer::NONE;
 
 
     playerComponent->selectedUnitArchetype = ghostArchetype;

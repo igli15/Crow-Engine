@@ -31,7 +31,7 @@ void RigidbodySystem::Update(float dt)
             rigidBody.velocity = glm::normalize(rigidBody.velocity) * rigidBody.maxSpeed;
         }
 
-        transform.Translate(rigidBody.velocity);
+        transform.Translate(rigidBody.velocity * dt);
         //rigidBody.acceleration = glm::vec3(0);
     }
 }

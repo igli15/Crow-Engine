@@ -75,6 +75,7 @@ void UnitCollisionSystem::ThrowCollisionEvents()
         {
             EventQueue::Instance().Publish(new UnitCollisionExitEvent{i->first.first,i->first.second});
             i = m_collisionMap.erase(i);
+
         }
     }
 }
