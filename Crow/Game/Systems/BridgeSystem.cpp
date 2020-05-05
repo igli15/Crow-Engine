@@ -7,6 +7,7 @@
 #include "../Components/BridgeComponent.h"
 #include "../../Engine/Core/Input.h"
 #include "GLFW/glfw3.h"
+#include "../Events/BridgeSelectedEvent.h"
 
 void BridgeSystem::Init()
 {
@@ -20,8 +21,9 @@ void BridgeSystem::Init()
         m_bridges.push_back(bridgeComponent);
     }
 
-    m_bridges[0]->isSelected = true;
     m_currentSelectedBridge = m_bridges[0];
+
+    EventQueue::Instance().Publish(new BridgeSelectedEvent(m_bridges[0]));
 }
 
 void BridgeSystem::Update(float dt)
@@ -30,21 +32,18 @@ void BridgeSystem::Update(float dt)
 
     if(Input::GetKeyDown(GLFW_KEY_1))
     {
-        m_currentSelectedBridge->isSelected = false;
-        m_currentSelectedBridge =  m_bridges[0];
-        m_bridges[0]->isSelected = true;
+        m_currentSelectedBridge = m_bridges[0];
+        EventQueue::Instance().Publish(new BridgeSelectedEvent(m_bridges[0]));
     }
     else if(Input::GetKeyDown(GLFW_KEY_2))
     {
-        m_currentSelectedBridge->isSelected = false;
-        m_currentSelectedBridge =  m_bridges[1];
-        m_bridges[1]->isSelected = true;
+        m_currentSelectedBridge = m_bridges[1];
+        EventQueue::Instance().Publish(new BridgeSelectedEvent(m_bridges[1]));
     }
     else if(Input::GetKeyDown(GLFW_KEY_3))
     {
-        m_currentSelectedBridge->isSelected = false;
-        m_currentSelectedBridge =  m_bridges[2];
-        m_bridges[2]->isSelected = true;
+        m_currentSelectedBridge = m_bridges[2];
+        EventQueue::Instance().Publish(new BridgeSelectedEvent(m_bridges[2]));
     }
 
     //just for testing destruction of entities. TODO remove this in the end

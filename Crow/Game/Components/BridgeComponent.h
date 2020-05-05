@@ -17,7 +17,6 @@ struct BridgeComponent
 
     glm::vec3 startPos = {0,0,0};
     glm::vec3 endPos = {0,0,0};
-    bool isSelected = false;
 };
 
 

@@ -8545,6 +8545,7 @@ CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/BridgeComponent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Events/BridgeSelectedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/BridgeSystem.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/BridgeSystem.h
  /usr/local/include/GLFW/glfw3.h
@@ -9389,6 +9390,7 @@ CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/Player.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/SeekComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/SteeringComponent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Events/BridgeSelectedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SpawnSystem.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SpawnSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/AbstractGroupArchetype.h

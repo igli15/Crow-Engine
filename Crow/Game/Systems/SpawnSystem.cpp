@@ -19,6 +19,7 @@
 #include "../Components/Player.h"
 #include "../../Engine/Components/SphereCollider.h"
 #include "../UnitGroupArchetypes/UnitGroupArchetype.h"
+#include "../Events/BridgeSelectedEvent.h"
 
 void SpawnSystem::Update(float dt)
 {
@@ -26,35 +27,25 @@ void SpawnSystem::Update(float dt)
 
     if(Input::GetKeyDown(GLFW_KEY_SPACE))
     {
-        BridgeComponent* activeBridge = nullptr;
-
-        for (int i = 0; i < m_bridges.size(); ++i)
-        {
-            if(m_bridges[i]->isSelected)
-            {
-                activeBridge = m_bridges[i];
-            }
-        }
-
-
-        EntityHandle unitGroupEntity = m_playerComponent->selectedUnitArchetype->Build(world,activeBridge);
-        activeBridge->entitiesOnBridge.push_back(unitGroupEntity.entity);
+        EntityHandle unitGroupEntity = m_playerComponent->selectedUnitArchetype->Build(world,m_selectedBridge);
+        m_selectedBridge->entitiesOnBridge.push_back(unitGroupEntity.entity);
     }
 
 }
 
 void SpawnSystem::Init()
 {
-    m_resourceManager = Game::Instance()->resourceManager;
-    auto bridgeEntities = world->EntitiesWith<BridgeComponent>();
-
-    for (int i = 0; i < bridgeEntities.size(); ++i)
-    {
-        BridgeComponent* bridgeComponent = &world->GetComponent<BridgeComponent>(bridgeEntities[i]);
-        m_bridges.push_back(bridgeComponent);
-    }
-
     Entity playerEntity = world->EntitiesWith<Player>()[0];
     m_playerComponent = &world->GetComponent<Player>(playerEntity);
+}
 
+void SpawnSystem::OnCreate()
+{
+    System::OnCreate();
+    EventQueue::Instance().Subscribe(this,&SpawnSystem::OnBridgeSelected);
+}
+
+void SpawnSystem::OnBridgeSelected(BridgeSelectedEvent *event)
+{
+    m_selectedBridge = event->bridge;
 }

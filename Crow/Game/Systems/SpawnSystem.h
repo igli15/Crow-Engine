@@ -12,16 +12,18 @@
 class ResourceManager;
 class BridgeComponent;
 class Player;
+class BridgeSelectedEvent;
 
 class SpawnSystem : public System
 {
 public:
+    void OnCreate() override;
     void Init() override;
     void Update(float dt) override;
 
 private:
-    ResourceManager* m_resourceManager;
-    std::vector<BridgeComponent*> m_bridges;
+    void OnBridgeSelected(BridgeSelectedEvent* event);
+    BridgeComponent* m_selectedBridge = nullptr;
     Player* m_playerComponent = nullptr;
 };
 

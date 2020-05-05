@@ -8544,6 +8544,7 @@ CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: ../Engine/Feather/SystemMan
 CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: ../Engine/Feather/Types.h
 CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: ../Engine/Feather/World.h
 CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: ../Game/Components/BridgeComponent.h
+CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: ../Game/Events/BridgeSelectedEvent.h
 CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: ../Game/Systems/BridgeSystem.cpp
 CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: ../Game/Systems/BridgeSystem.h
 CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: /usr/local/include/GLFW/glfw3.h
@@ -9388,6 +9389,7 @@ CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o: ../Game/Components/DamageDea
 CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o: ../Game/Components/Player.h
 CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o: ../Game/Components/SeekComponent.h
 CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o: ../Game/Components/SteeringComponent.h
+CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o: ../Game/Events/BridgeSelectedEvent.h
 CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o: ../Game/Systems/SpawnSystem.cpp
 CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o: ../Game/Systems/SpawnSystem.h
 CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o: ../Game/UnitGroupArchetypes/AbstractGroupArchetype.h

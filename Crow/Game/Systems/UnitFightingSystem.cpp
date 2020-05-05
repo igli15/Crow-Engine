@@ -46,7 +46,7 @@ void UnitFightingSystem::OnUnitCollisionEnter(UnitCollisionEnterEvent * event)
 {
     //TODO maybe find a better way to resolve fighting collisions. like rn we cant do this here since it might get skipped if there are multiple units so we
     // have to do it oncollisionstay.
-    
+
     /*
     EntityHandle playerUnitEntity = event->playerEntity;
     EntityHandle enemyUnitHandle = event->enemyEntity;
