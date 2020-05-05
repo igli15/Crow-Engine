@@ -53,11 +53,11 @@ void MainWorld::Build()
     ghostArchetype->maxSpeed = 1.0f;
     ghostArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("translucentMaterial");
     ghostArchetype->unitModel = resourceManager->GetModel("ghost");
-    ghostArchetype->scaleFactor = 0.1;
+    ghostArchetype->scaleFactor = 0.05;
     ghostArchetype->horizontalDistance = 0.2f;
     ghostArchetype->verticalDistance = 0.2f;
-    ghostArchetype->rows = 2;
-    ghostArchetype->columns = 2;
+    ghostArchetype->rows = 5;
+    ghostArchetype->columns = 5;
     ghostArchetype->unitType = DamageDealer::Sword;
     ghostArchetype->strongAgainstType = DamageDealer::NONE;
 
