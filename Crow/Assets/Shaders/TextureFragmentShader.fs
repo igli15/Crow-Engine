@@ -111,7 +111,7 @@ vec3 CalcDirLight(DirLight light, vec3 normal, vec3 viewDir)
 
     float spec = pow(max(dot(normal, halfwayDir), 0.0), material.shininess);
 
-    vec3 ambient  = material.ambientIntensity * light.color;
+    vec3 ambient  = material.ambientIntensity * light.color * vec3(texture(material.diffuseTexture, TexCoords));;
 
     vec3 diffuseTex = vec3(texture(material.diffuseTexture,TexCoords));
     vec3 diffuse  = diff * light.color * diffuseTex;

@@ -8,7 +8,7 @@
 
 struct SelectedBridgeIndicator
 {
-    float verticalOffset = 3.0f;
+    float verticalOffset = 2.0f;
     float horizontalOffset = 0.0f;
 };
 

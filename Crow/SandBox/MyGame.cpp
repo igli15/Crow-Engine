@@ -25,7 +25,7 @@ void MyGame::LoadAssets()
     resourceManager->CreateShader("SpriteVertexShader.vs","SpriteFragmentShader.fs","spriteShader");
     resourceManager->CreateShader("TextureVertexShader.vs","TextureFragmentShader.fs","textureShader");
     resourceManager->CreateMaterial<ColorMaterial>("defaultMat");
-    //resourceManager->CreateMaterial<ColorMaterial>("cyanMaterial");
+    // resourceManager->CreateMaterial<ColorMaterial>("cyanMaterial");
 
     resourceManager->LoadModel(("cube.obj"),"cube");
     resourceManager->LoadModel(("cone.obj"),"cone");
@@ -43,11 +43,16 @@ void MyGame::LoadAssets()
     resourceManager->LoadModel(("rockMonster.fbx"),"rockMonster");
     resourceManager->LoadModel(("woodenMonster.fbx"),"woodenMonster");
 
+    resourceManager->LoadModel(("bridgeTile.fbx"),"bridge");
+    resourceManager->LoadModel(("bridgeTileBegin.fbx"),"bridgeBegin");
+
     resourceManager->LoadTexture("container.png","containerDiffuse");
     resourceManager->LoadTexture("containerSpecular.png","containerSpecular");
 
     resourceManager->LoadTexture("crowIcon.png","crowTexture");
     resourceManager->LoadTexture("matrix.jpg","matrixTexture");
+
+    resourceManager->LoadTexture("bridgeDiffuse.png","bridgeTexture");
 
 }
 

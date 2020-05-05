@@ -81,7 +81,7 @@ void MainWorld::Build()
     EntityHandle bridgeIndicatorEntity = CreateEntity();
     Transform* transform = bridgeIndicatorEntity.AddComponent(Transform{});
     transform->Rotate(180,glm::vec3(1,0,0));
-    transform->Scale(glm::vec3(0.2f,0.2f,0.2f));
+    transform->Scale(glm::vec3(0.1f,0.2f,0.1f));
     bridgeIndicatorEntity.AddComponent(MeshInfo{resourceManager->GetModel("cone"),resourceManager->GetMaterial<TranslucentColorMat>("defaultMat")});
     bridgeIndicatorEntity.AddComponent(SelectedBridgeIndicator{});
 
