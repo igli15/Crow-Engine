@@ -1203,6 +1203,33 @@ Game/Components/SeekComponent.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Components/SeekComponent.cpp.s
 .PHONY : Game/Components/SeekComponent.cpp.s
 
+Game/Components/SelectedBridgeIndicator.o: Game/Components/SelectedBridgeIndicator.cpp.o
+
+.PHONY : Game/Components/SelectedBridgeIndicator.o
+
+# target to build an object file
+Game/Components/SelectedBridgeIndicator.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Components/SelectedBridgeIndicator.cpp.o
+.PHONY : Game/Components/SelectedBridgeIndicator.cpp.o
+
+Game/Components/SelectedBridgeIndicator.i: Game/Components/SelectedBridgeIndicator.cpp.i
+
+.PHONY : Game/Components/SelectedBridgeIndicator.i
+
+# target to preprocess a source file
+Game/Components/SelectedBridgeIndicator.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Components/SelectedBridgeIndicator.cpp.i
+.PHONY : Game/Components/SelectedBridgeIndicator.cpp.i
+
+Game/Components/SelectedBridgeIndicator.s: Game/Components/SelectedBridgeIndicator.cpp.s
+
+.PHONY : Game/Components/SelectedBridgeIndicator.s
+
+# target to generate assembly for a file
+Game/Components/SelectedBridgeIndicator.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Components/SelectedBridgeIndicator.cpp.s
+.PHONY : Game/Components/SelectedBridgeIndicator.cpp.s
+
 Game/Components/SteeringComponent.o: Game/Components/SteeringComponent.cpp.o
 
 .PHONY : Game/Components/SteeringComponent.o
@@ -1337,6 +1364,33 @@ Game/Systems/SeekingSystem.s: Game/Systems/SeekingSystem.cpp.s
 Game/Systems/SeekingSystem.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/SeekingSystem.cpp.s
 .PHONY : Game/Systems/SeekingSystem.cpp.s
+
+Game/Systems/SelectedBridgeIndicatorSystem.o: Game/Systems/SelectedBridgeIndicatorSystem.cpp.o
+
+.PHONY : Game/Systems/SelectedBridgeIndicatorSystem.o
+
+# target to build an object file
+Game/Systems/SelectedBridgeIndicatorSystem.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/SelectedBridgeIndicatorSystem.cpp.o
+.PHONY : Game/Systems/SelectedBridgeIndicatorSystem.cpp.o
+
+Game/Systems/SelectedBridgeIndicatorSystem.i: Game/Systems/SelectedBridgeIndicatorSystem.cpp.i
+
+.PHONY : Game/Systems/SelectedBridgeIndicatorSystem.i
+
+# target to preprocess a source file
+Game/Systems/SelectedBridgeIndicatorSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/SelectedBridgeIndicatorSystem.cpp.i
+.PHONY : Game/Systems/SelectedBridgeIndicatorSystem.cpp.i
+
+Game/Systems/SelectedBridgeIndicatorSystem.s: Game/Systems/SelectedBridgeIndicatorSystem.cpp.s
+
+.PHONY : Game/Systems/SelectedBridgeIndicatorSystem.s
+
+# target to generate assembly for a file
+Game/Systems/SelectedBridgeIndicatorSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/SelectedBridgeIndicatorSystem.cpp.s
+.PHONY : Game/Systems/SelectedBridgeIndicatorSystem.cpp.s
 
 Game/Systems/SpawnSystem.o: Game/Systems/SpawnSystem.cpp.o
 
@@ -2088,6 +2142,9 @@ help:
 	@echo "... Game/Components/SeekComponent.o"
 	@echo "... Game/Components/SeekComponent.i"
 	@echo "... Game/Components/SeekComponent.s"
+	@echo "... Game/Components/SelectedBridgeIndicator.o"
+	@echo "... Game/Components/SelectedBridgeIndicator.i"
+	@echo "... Game/Components/SelectedBridgeIndicator.s"
 	@echo "... Game/Components/SteeringComponent.o"
 	@echo "... Game/Components/SteeringComponent.i"
 	@echo "... Game/Components/SteeringComponent.s"
@@ -2103,6 +2160,9 @@ help:
 	@echo "... Game/Systems/SeekingSystem.o"
 	@echo "... Game/Systems/SeekingSystem.i"
 	@echo "... Game/Systems/SeekingSystem.s"
+	@echo "... Game/Systems/SelectedBridgeIndicatorSystem.o"
+	@echo "... Game/Systems/SelectedBridgeIndicatorSystem.i"
+	@echo "... Game/Systems/SelectedBridgeIndicatorSystem.s"
 	@echo "... Game/Systems/SpawnSystem.o"
 	@echo "... Game/Systems/SpawnSystem.i"
 	@echo "... Game/Systems/SpawnSystem.s"

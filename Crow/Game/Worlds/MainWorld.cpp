@@ -24,6 +24,8 @@
 #include "../UnitGroupArchetypes/EnemyGroupArchetype.h"
 #include "../Systems/UnitCollisionSystem.h"
 #include "../Systems/UnitFightingSystem.h"
+#include "../Components/SelectedBridgeIndicator.h"
+#include "../Systems/SelectedBridgeIndicatorSystem.h"
 
 void MainWorld::Build()
 {
@@ -37,6 +39,7 @@ void MainWorld::Build()
     RegisterSystem<SteeringSystem>();
     RegisterSystem<SeekingSystem>();
     RegisterSystem<SpawnSystem>();
+    RegisterSystem<SelectedBridgeIndicatorSystem>();
     RegisterSystem<BridgeSystem>();
     RegisterSystem<UnitSelectionSystem>();
     RegisterSystem<EnemySpawnSystem>();
@@ -74,6 +77,13 @@ void MainWorld::Build()
 
     playerComponent->selectedUnitArchetype = ghostArchetype;
 
+
+    EntityHandle bridgeIndicatorEntity = CreateEntity();
+    Transform* transform = bridgeIndicatorEntity.AddComponent(Transform{});
+    transform->Rotate(180,glm::vec3(1,0,0));
+    transform->Scale(glm::vec3(0.2f,0.2f,0.2f));
+    bridgeIndicatorEntity.AddComponent(MeshInfo{resourceManager->GetModel("cone"),resourceManager->GetMaterial<TranslucentColorMat>("defaultMat")});
+    bridgeIndicatorEntity.AddComponent(SelectedBridgeIndicator{});
 
 }
 

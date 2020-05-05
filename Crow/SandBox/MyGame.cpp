@@ -28,6 +28,7 @@ void MyGame::LoadAssets()
     //resourceManager->CreateMaterial<ColorMaterial>("cyanMaterial");
 
     resourceManager->LoadModel(("cube.obj"),"cube");
+    resourceManager->LoadModel(("cone.obj"),"cone");
     resourceManager->LoadModel(("sphere.obj"),"sphere");
     resourceManager->LoadModel(("axis.obj"),"axis");
     resourceManager->LoadModel(("plane.obj"),"plane");
