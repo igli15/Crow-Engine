@@ -1176,6 +1176,33 @@ Game/Components/Player.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Components/Player.cpp.s
 .PHONY : Game/Components/Player.cpp.s
 
+Game/Components/ProjectileComponent.o: Game/Components/ProjectileComponent.cpp.o
+
+.PHONY : Game/Components/ProjectileComponent.o
+
+# target to build an object file
+Game/Components/ProjectileComponent.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Components/ProjectileComponent.cpp.o
+.PHONY : Game/Components/ProjectileComponent.cpp.o
+
+Game/Components/ProjectileComponent.i: Game/Components/ProjectileComponent.cpp.i
+
+.PHONY : Game/Components/ProjectileComponent.i
+
+# target to preprocess a source file
+Game/Components/ProjectileComponent.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Components/ProjectileComponent.cpp.i
+.PHONY : Game/Components/ProjectileComponent.cpp.i
+
+Game/Components/ProjectileComponent.s: Game/Components/ProjectileComponent.cpp.s
+
+.PHONY : Game/Components/ProjectileComponent.s
+
+# target to generate assembly for a file
+Game/Components/ProjectileComponent.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Components/ProjectileComponent.cpp.s
+.PHONY : Game/Components/ProjectileComponent.cpp.s
+
 Game/Components/SeekComponent.o: Game/Components/SeekComponent.cpp.o
 
 .PHONY : Game/Components/SeekComponent.o
@@ -1310,6 +1337,33 @@ Game/Systems/EnemySpawnSystem.s: Game/Systems/EnemySpawnSystem.cpp.s
 Game/Systems/EnemySpawnSystem.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.s
 .PHONY : Game/Systems/EnemySpawnSystem.cpp.s
+
+Game/Systems/ProjectileSystem.o: Game/Systems/ProjectileSystem.cpp.o
+
+.PHONY : Game/Systems/ProjectileSystem.o
+
+# target to build an object file
+Game/Systems/ProjectileSystem.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.o
+.PHONY : Game/Systems/ProjectileSystem.cpp.o
+
+Game/Systems/ProjectileSystem.i: Game/Systems/ProjectileSystem.cpp.i
+
+.PHONY : Game/Systems/ProjectileSystem.i
+
+# target to preprocess a source file
+Game/Systems/ProjectileSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.i
+.PHONY : Game/Systems/ProjectileSystem.cpp.i
+
+Game/Systems/ProjectileSystem.s: Game/Systems/ProjectileSystem.cpp.s
+
+.PHONY : Game/Systems/ProjectileSystem.s
+
+# target to generate assembly for a file
+Game/Systems/ProjectileSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.s
+.PHONY : Game/Systems/ProjectileSystem.cpp.s
 
 Game/Systems/RigidbodySystem.o: Game/Systems/RigidbodySystem.cpp.o
 
@@ -2139,6 +2193,9 @@ help:
 	@echo "... Game/Components/Player.o"
 	@echo "... Game/Components/Player.i"
 	@echo "... Game/Components/Player.s"
+	@echo "... Game/Components/ProjectileComponent.o"
+	@echo "... Game/Components/ProjectileComponent.i"
+	@echo "... Game/Components/ProjectileComponent.s"
 	@echo "... Game/Components/SeekComponent.o"
 	@echo "... Game/Components/SeekComponent.i"
 	@echo "... Game/Components/SeekComponent.s"
@@ -2154,6 +2211,9 @@ help:
 	@echo "... Game/Systems/EnemySpawnSystem.o"
 	@echo "... Game/Systems/EnemySpawnSystem.i"
 	@echo "... Game/Systems/EnemySpawnSystem.s"
+	@echo "... Game/Systems/ProjectileSystem.o"
+	@echo "... Game/Systems/ProjectileSystem.i"
+	@echo "... Game/Systems/ProjectileSystem.s"
 	@echo "... Game/Systems/RigidbodySystem.o"
 	@echo "... Game/Systems/RigidbodySystem.i"
 	@echo "... Game/Systems/RigidbodySystem.s"

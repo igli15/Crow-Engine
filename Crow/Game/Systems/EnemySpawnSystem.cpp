@@ -34,7 +34,7 @@ void EnemySpawnSystem::Update(float dt)
     int randomIndex = Random::RandomRange(0,3);
     BridgeComponent* randomBridge = m_bridges[randomIndex];
 
-    if(counter > 1)
+    if(counter > 3)
     {
         mainWorld->GetUnitGroupArchetype<EnemyGroupArchetype>("cubes")->Build(world,randomBridge);
         counter = 0;

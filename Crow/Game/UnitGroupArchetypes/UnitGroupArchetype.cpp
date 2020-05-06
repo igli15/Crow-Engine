@@ -18,7 +18,7 @@ EntityHandle UnitGroupArchetype::Build(World* world,BridgeComponent* bridge)
     EntityHandle unitGroupEntity = world->CreateEntity();
     Transform* unitGroupTransform = unitGroupEntity.AddComponent<Transform>(Transform{});
     unitGroupTransform->Translate(bridge->startPos);
-    unitGroupTransform->Translate(glm::vec3(-(float)columns * horizontalDistance/2,1,(float )rows * verticalDistance/2));
+    unitGroupTransform->Translate(glm::vec3(-(float)columns * horizontalDistance/2,0.5f,(float )rows * verticalDistance/2));
     unitGroupEntity.AddComponent<PlayerUnitCollider>(PlayerUnitCollider{1});
 
     unitGroupEntity.AddComponent<HealthComponent>(HealthComponent{maxHealth,maxHealth});

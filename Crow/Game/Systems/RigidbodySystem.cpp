@@ -23,7 +23,7 @@ void RigidbodySystem::Update(float dt)
         Transform& transform = world->GetComponent<Transform>(entities[i]);
 
 
-        rigidBody.velocity += rigidBody.acceleration;
+        rigidBody.velocity += rigidBody.acceleration * dt;
 
         float velocityLength = glm::length(rigidBody.velocity);
         if(velocityLength > rigidBody.maxSpeed)
@@ -31,7 +31,7 @@ void RigidbodySystem::Update(float dt)
             rigidBody.velocity = glm::normalize(rigidBody.velocity) * rigidBody.maxSpeed;
         }
 
-        transform.Translate(rigidBody.velocity * dt);
+        transform.Translate(rigidBody.velocity );
         //rigidBody.acceleration = glm::vec3(0);
     }
 }

@@ -26,6 +26,8 @@
 #include "../Systems/UnitFightingSystem.h"
 #include "../Components/SelectedBridgeIndicator.h"
 #include "../Systems/SelectedBridgeIndicatorSystem.h"
+#include "../Components/ProjectileComponent.h"
+#include "../Systems/ProjectileSystem.h"
 
 void MainWorld::Build()
 {
@@ -45,12 +47,13 @@ void MainWorld::Build()
     RegisterSystem<EnemySpawnSystem>();
     RegisterSystem<UnitCollisionSystem>();
     RegisterSystem<UnitFightingSystem>();
+    RegisterSystem<ProjectileSystem>();
 
     EntityHandle playerEntity = CreateEntity();
     Player* playerComponent = playerEntity.AddComponent<Player>(Player{});
 
     UnitGroupArchetype* ghostArchetype = CreateUnitGroupArchetype<UnitGroupArchetype>("ghosts");
-    ghostArchetype->maxSpeed = 1.0f;
+    ghostArchetype->maxSpeed = 0.02f;
     ghostArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("translucentMaterial");
     ghostArchetype->unitModel = resourceManager->GetModel("ghost");
     ghostArchetype->scaleFactor = 0.05;
@@ -63,7 +66,7 @@ void MainWorld::Build()
 
 
     EnemyGroupArchetype* cubeArchetype = CreateUnitGroupArchetype<EnemyGroupArchetype>("cubes");
-    cubeArchetype->maxSpeed = 1.0f;
+    cubeArchetype->maxSpeed = 0.02f;
     cubeArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("translucentMaterial");
     cubeArchetype->unitModel = resourceManager->GetModel("golem");
     cubeArchetype->scaleFactor = 0.07f;
@@ -84,6 +87,25 @@ void MainWorld::Build()
     transform->Scale(glm::vec3(0.1f,0.2f,0.1f));
     bridgeIndicatorEntity.AddComponent(MeshInfo{resourceManager->GetModel("cone"),resourceManager->GetMaterial<TranslucentColorMat>("defaultMat")});
     bridgeIndicatorEntity.AddComponent(SelectedBridgeIndicator{});
+
+
+    EntityHandle testProjectileEntity = CreateEntity();
+    testProjectileEntity.AddComponent(Transform{});
+
+    Rigidbody rb{};
+    rb.maxSpeed = 0.2f;
+    testProjectileEntity.AddComponent(rb);
+
+    testProjectileEntity.AddComponent(MeshInfo{resourceManager->GetModel("sphere"),resourceManager->GetMaterial<TranslucentColorMat>("defaultMat")});
+
+    ProjectileComponent projectileComponent{};
+    projectileComponent.targetPos = glm::vec3 (6,3,-2);
+    testProjectileEntity.AddComponent(projectileComponent);
+
+    EntityHandle targetEntity = CreateEntity();
+    Transform* t = targetEntity.AddComponent(Transform{});
+    t->Translate(glm::vec3(projectileComponent.targetPos));
+    targetEntity.AddComponent(MeshInfo{resourceManager->GetModel("cube"),resourceManager->GetMaterial<TranslucentColorMat>("defaultMat")});
 
 }
 
