@@ -65,17 +65,32 @@ void MainWorld::Build()
     ghostArchetype->strongAgainstType = DamageDealer::NONE;
 
 
-    EnemyGroupArchetype* cubeArchetype = CreateUnitGroupArchetype<EnemyGroupArchetype>("cubes");
-    cubeArchetype->maxSpeed = 0.7f;
-    cubeArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("translucentMaterial");
-    cubeArchetype->unitModel = resourceManager->GetModel("golem");
-    cubeArchetype->scaleFactor = 0.07f;
-    cubeArchetype->horizontalDistance = 0.3f;
-    cubeArchetype->verticalDistance = 0.3;
-    cubeArchetype->rows = 1;
-    cubeArchetype->columns = 1;
-    cubeArchetype->unitType = DamageDealer::Pike;
-    cubeArchetype->strongAgainstType = DamageDealer::NONE;
+    EnemyGroupArchetype* enemyGolemArchetype = CreateUnitGroupArchetype<EnemyGroupArchetype>("golem");
+    enemyGolemArchetype->maxSpeed = 0.7f;
+    enemyGolemArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("translucentMaterial");
+    enemyGolemArchetype->unitModel = resourceManager->GetModel("golem");
+    enemyGolemArchetype->scaleFactor = 0.07f;
+    enemyGolemArchetype->horizontalDistance = 0.3f;
+    enemyGolemArchetype->verticalDistance = 0.3;
+    enemyGolemArchetype->rows = 1;
+    enemyGolemArchetype->columns = 1;
+    enemyGolemArchetype->unitType = DamageDealer::Pike;
+    enemyGolemArchetype->strongAgainstType = DamageDealer::NONE;
+
+
+    UnitGroupArchetype* playerCanon = CreateUnitGroupArchetype<UnitGroupArchetype>("canon");
+    playerCanon->maxSpeed = 0.7f;
+    playerCanon->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("translucentMaterial");
+    playerCanon->unitModel = resourceManager->GetModel("cube");
+    playerCanon->scaleFactor = 0.07f;
+    playerCanon->horizontalDistance = 0.3f;
+    playerCanon->verticalDistance = 0.3;
+    playerCanon->rows = 1;
+    playerCanon->columns = 1;
+    playerCanon->unitType = DamageDealer::Arrow;
+    playerCanon->strongAgainstType = DamageDealer::NONE;
+    playerCanon->damageRate = 0;
+
 
 
     playerComponent->selectedUnitArchetype = ghostArchetype;
@@ -88,7 +103,7 @@ void MainWorld::Build()
     bridgeIndicatorEntity.AddComponent(MeshInfo{resourceManager->GetModel("cone"),resourceManager->GetMaterial<TranslucentColorMat>("defaultMat")});
     bridgeIndicatorEntity.AddComponent(SelectedBridgeIndicator{});
 
-
+    /*
     EntityHandle testProjectileEntity = CreateEntity();
     testProjectileEntity.AddComponent(Transform{});
 
@@ -106,7 +121,7 @@ void MainWorld::Build()
     Transform* t = targetEntity.AddComponent(Transform{});
     t->Translate(glm::vec3(projectileComponent.targetPos));
     targetEntity.AddComponent(MeshInfo{resourceManager->GetModel("cube"),resourceManager->GetMaterial<TranslucentColorMat>("defaultMat")});
-
+    */
 }
 
 void MainWorld::ParseGameComponents(rapidxml::xml_node<> *node, EntityHandle entityHandle)

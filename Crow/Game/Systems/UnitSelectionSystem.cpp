@@ -29,6 +29,6 @@ void UnitSelectionSystem::Update(float dt)
     }
     else if(Input::GetKeyDown(GLFW_KEY_W))
     {
-        m_player->selectedUnitArchetype = static_cast<MainWorld*>(world)->GetUnitGroupArchetype<UnitGroupArchetype>("cubes");
+        m_player->selectedUnitArchetype = static_cast<MainWorld*>(world)->GetUnitGroupArchetype<UnitGroupArchetype>("canon");
     }
 }

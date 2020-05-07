@@ -36,7 +36,7 @@ void EnemySpawnSystem::Update(float dt)
 
     if(counter > 3)
     {
-        mainWorld->GetUnitGroupArchetype<EnemyGroupArchetype>("cubes")->Build(world,randomBridge);
+        mainWorld->GetUnitGroupArchetype<EnemyGroupArchetype>("golem")->Build(world,randomBridge);
         counter = 0;
     }
 }

@@ -36,8 +36,11 @@ void UnitFightingSystem::OnUnitCollisionStay(UnitCollisionStayEvent *event)
         enemyRb.component->oldSpeed = enemyRb.component->maxSpeed;
     }
 
-    playerRb.component->maxSpeed = 0;
-    enemyRb.component->maxSpeed = 0;
+    playerRb.component->velocity = glm::vec3(0);
+    enemyRb.component->velocity = glm::vec3(0);
+
+    playerRb.component->acceleration = glm::vec3(0);
+    enemyRb.component->acceleration = glm::vec3(0);
 
     Fight(playerUnitEntity,enemyUnitHandle);
 }
@@ -68,6 +71,7 @@ void UnitFightingSystem::OnUnitCollisionEnter(UnitCollisionEnterEvent * event)
 
 void UnitFightingSystem::OnUnitCollisionExit(UnitCollisionExitEvent* event)
 {
+    /*
     EntityHandle playerUnitEntity = event->playerEntity;
     EntityHandle enemyUnitHandle = event->enemyEntity;
 
@@ -83,6 +87,7 @@ void UnitFightingSystem::OnUnitCollisionExit(UnitCollisionExitEvent* event)
     {
         enemyRb.component->maxSpeed = enemyRb.component->oldSpeed;
     }
+     */
 }
 
 
@@ -90,6 +95,8 @@ void UnitFightingSystem::Fight(EntityHandle firstEntity, EntityHandle secondEnti
 {
     ComponentHandle<DamageDealer> firstDamageDealer = firstEntity.GetComponent<DamageDealer>();
     ComponentHandle<DamageDealer> secondDamageDealer = secondEntity.GetComponent<DamageDealer>();
+
+    if(firstDamageDealer.component == nullptr || secondDamageDealer.component == nullptr) return;
 
     if(firstDamageDealer.component->damageDealerType == DamageDealer::NONE)
     {

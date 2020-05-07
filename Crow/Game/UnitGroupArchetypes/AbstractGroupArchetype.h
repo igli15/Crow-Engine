@@ -20,12 +20,13 @@ class AbstractGroupArchetype
 public:
     unsigned int rows = 1;
     unsigned int columns = 1;
-    float horizontalDistance = 1;
-    float  verticalDistance = 1;
+    float horizontalDistance = 1.0f;
+    float  verticalDistance = 1.0f;
     float scaleFactor = 1.0f;
     float maxSpeed = 0.05f;
     float maxHealth = 100;
     float damageRate = 0.5f;
+    float colliderRadius = 1.0f;
     DamageDealer::Type unitType = DamageDealer::Type::NONE;
     DamageDealer::Type strongAgainstType = DamageDealer::Type::NONE;
 
