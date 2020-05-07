@@ -13,7 +13,8 @@
 
 struct BridgeComponent
 {
-    std::vector<Entity> entitiesOnBridge;
+    std::vector<Entity> playerEntitiesOnBridge;
+    std::vector<Entity> enemyEntitiesOnBridge;
 
     glm::vec3 startPos = {0,0,0};
     glm::vec3 endPos = {0,0,0};

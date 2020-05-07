@@ -42,12 +42,9 @@ public:
     ///and if so update them accordingly
     void OnEntityDestroyed(Entity entity)
     {
-        for (int i = 0; i<arrayCount ; ++i)
+        for (auto& pair: m_componentArraysMap)
         {
-            if(m_allComponentArrays[i] != nullptr)
-            {
-                m_allComponentArrays[i]->OnEntityDestroyed(entity);
-            }
+            pair.second->OnEntityDestroyed(entity);
         }
     }
 
@@ -57,8 +54,10 @@ public:
 
 private:
 
-    ///All the component array pointers. size = max number of components
-    std::array<IComponentArray*,MAX_COMPONENTS> m_allComponentArrays;
+    ///All the component array pointers
+    std::map<int,IComponentArray*> m_componentArraysMap;
+
+    //std::array<IComponentArray*,MAX_COMPONENTS> m_allComponentArrays;
 
     ///The active count for the "m_allComponentArrays" array.
     int arrayCount = 0;
@@ -68,17 +67,16 @@ private:
 template<typename T>
 ComponentArray<T> *ComponentManager::GetComponentArray()
 {
-    auto array = static_cast<ComponentArray<T>*>(m_allComponentArrays[ComponentIDGenerator::index<T>]);
+    auto iterator = m_componentArraysMap.find(ComponentIDGenerator::index<T>);
 
-    if(array == nullptr)
+    if(iterator == m_componentArraysMap.end())
     {
-        array = new ComponentArray<T>;
-        m_allComponentArrays[ComponentIDGenerator::index<T>] = array;
-        arrayCount++;
+        ComponentArray<T>* array = new ComponentArray<T>;
+        m_componentArraysMap.insert(iterator,std::make_pair(ComponentIDGenerator::index<T>,array));
         return array;
     } else
     {
-        return array;
+        return static_cast<ComponentArray<T>*>(iterator->second);
     }
 
 }

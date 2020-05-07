@@ -22,6 +22,8 @@ void UnitCollisionSystem::Update(float dt)
     auto playerUnitEntities  = world->EntitiesWith<Transform,PlayerUnitCollider>();
     auto enemyUnitEntities = world->EntitiesWith<Transform,EnemyUnitCollider>();
 
+    //ENGINE_LOG(world->EntitiesWith<EnemyUnitCollider>().size());
+
     for (int playerUnitIndex = 0; playerUnitIndex < playerUnitEntities.size(); ++playerUnitIndex)
     {
         Transform& playerUnitTransform = world->GetComponent<Transform>(playerUnitEntities[playerUnitIndex]);

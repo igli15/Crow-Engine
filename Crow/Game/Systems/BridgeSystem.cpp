@@ -9,6 +9,17 @@
 #include "GLFW/glfw3.h"
 #include "../Events/BridgeSelectedEvent.h"
 
+void BridgeSystem::OnCreate()
+{
+    System::OnCreate();
+
+    EventQueue::Instance().Subscribe(this,&BridgeSystem::OnEnemyUnitDestroyed);
+    EventQueue::Instance().Subscribe(this,&BridgeSystem::OnPlayerUnitDestroyed);
+
+}
+
+
+
 void BridgeSystem::Init()
 {
     System::Init();
@@ -49,12 +60,35 @@ void BridgeSystem::Update(float dt)
     //just for testing destruction of entities. TODO remove this in the end
     if(Input::GetKeyDown(GLFW_KEY_BACKSPACE))
     {
-        for (int i = 0; i < m_currentSelectedBridge->entitiesOnBridge.size(); ++i)
+        for (int i = 0; i < m_currentSelectedBridge->playerEntitiesOnBridge.size(); ++i)
         {
-            world->DestroyEntity(m_currentSelectedBridge->entitiesOnBridge[i]);
+            world->DestroyEntity(m_currentSelectedBridge->playerEntitiesOnBridge[i]);
         }
-        m_currentSelectedBridge->entitiesOnBridge.clear();
+        m_currentSelectedBridge->playerEntitiesOnBridge.clear();
     }
 
 
+}
+
+void BridgeSystem::OnEnemyUnitDestroyed(ComponentRemovedEvent<EnemyUnitCollider> *event)
+{
+   auto iterator = std::find(m_currentSelectedBridge->enemyEntitiesOnBridge.begin(),m_currentSelectedBridge->enemyEntitiesOnBridge.end(),event->entity);
+
+   if(iterator != m_currentSelectedBridge->enemyEntitiesOnBridge.end())
+   {
+       m_currentSelectedBridge->enemyEntitiesOnBridge.erase(iterator);
+   }
+   ENGINE_LOG("enemy ded");
+}
+
+void BridgeSystem::OnPlayerUnitDestroyed(ComponentRemovedEvent<PlayerUnitCollider> *event)
+{
+    auto iterator = std::find(m_currentSelectedBridge->playerEntitiesOnBridge.begin(),m_currentSelectedBridge->playerEntitiesOnBridge.end(),event->entity);
+
+    if(iterator != m_currentSelectedBridge->playerEntitiesOnBridge.end())
+    {
+        m_currentSelectedBridge->playerEntitiesOnBridge.erase(iterator);
+    }
+
+    //ENGINE_LOG("player ded");
 }

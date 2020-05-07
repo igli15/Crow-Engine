@@ -82,7 +82,7 @@ void MainWorld::Build()
     playerCanon->maxSpeed = 0.7f;
     playerCanon->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("translucentMaterial");
     playerCanon->unitModel = resourceManager->GetModel("cube");
-    playerCanon->scaleFactor = 0.07f;
+    playerCanon->scaleFactor = 0.2f;
     playerCanon->horizontalDistance = 0.3f;
     playerCanon->verticalDistance = 0.3;
     playerCanon->rows = 1;
@@ -90,7 +90,7 @@ void MainWorld::Build()
     playerCanon->unitType = DamageDealer::Arrow;
     playerCanon->strongAgainstType = DamageDealer::NONE;
     playerCanon->damageRate = 0;
-
+    playerCanon->colliderRadius = 3.0f;
 
 
     playerComponent->selectedUnitArchetype = ghostArchetype;

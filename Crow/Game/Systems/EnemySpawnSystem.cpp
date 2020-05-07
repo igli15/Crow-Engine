@@ -36,7 +36,8 @@ void EnemySpawnSystem::Update(float dt)
 
     if(counter > 3)
     {
-        mainWorld->GetUnitGroupArchetype<EnemyGroupArchetype>("golem")->Build(world,randomBridge);
+        EntityHandle entityHandle = mainWorld->GetUnitGroupArchetype<EnemyGroupArchetype>("golem")->Build(world,randomBridge);
+        randomBridge->enemyEntitiesOnBridge.push_back(entityHandle.entity);
         counter = 0;
     }
 }

@@ -29,13 +29,6 @@ void UnitFightingSystem::OnUnitCollisionStay(UnitCollisionStayEvent *event)
     ComponentHandle<Rigidbody> playerRb =  playerUnitEntity.GetComponent<Rigidbody>();
     ComponentHandle<Rigidbody> enemyRb =  enemyUnitHandle.GetComponent<Rigidbody>();
 
-    if(playerRb.component->maxSpeed>0) {
-        playerRb.component->oldSpeed = playerRb.component->maxSpeed;
-    }
-    if(enemyRb.component->maxSpeed>0) {
-        enemyRb.component->oldSpeed = enemyRb.component->maxSpeed;
-    }
-
     playerRb.component->velocity = glm::vec3(0);
     enemyRb.component->velocity = glm::vec3(0);
 

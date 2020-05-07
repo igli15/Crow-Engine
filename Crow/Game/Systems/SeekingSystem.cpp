@@ -6,9 +6,11 @@
 #include "../../Engine/Debug/Debug.h"
 #include "../../Engine/Feather/World.h"
 #include "../../Engine/Components/Transform.h"
+#include "../../Engine/Components/MeshInfo.h"
 #include "../../Engine/Components/Rigidbody.h"
 #include "../Components/SteeringComponent.h"
 #include "../Components/SeekComponent.h"
+#include "../../Game/Components/EnemyUnitCollider.h"
 
 void SeekingSystem::Init()
 {

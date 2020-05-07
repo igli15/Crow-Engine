@@ -16,10 +16,10 @@
 EntityHandle EnemyGroupArchetype::Build(World *world, BridgeComponent *bridge)
 {
     EntityHandle unitGroupEntity = world->CreateEntity();
+    unitGroupEntity.AddComponent<EnemyUnitCollider>(EnemyUnitCollider{colliderRadius});
     Transform* unitGroupTransform = unitGroupEntity.AddComponent<Transform>(Transform{});
     unitGroupTransform->Translate(bridge->endPos);
     unitGroupTransform->Translate(glm::vec3(0,1,0));
-    unitGroupEntity.AddComponent<EnemyUnitCollider>(EnemyUnitCollider{colliderRadius});
 
     unitGroupEntity.AddComponent<HealthComponent>(HealthComponent{maxHealth,maxHealth});
     unitGroupEntity.AddComponent<DamageDealer>(DamageDealer{damageRate,unitType,strongAgainstType});

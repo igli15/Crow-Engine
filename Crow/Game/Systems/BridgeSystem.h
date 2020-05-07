@@ -7,6 +7,9 @@
 
 
 #include "../../Engine/Feather/System.h"
+#include "../../Engine/Events/ComponentRemovedEvent.h"
+#include "../Components/PlayerUnitCollider.h"
+#include "../Components/EnemyUnitCollider.h"
 #include <vector>
 
 class BridgeComponent;
@@ -16,6 +19,10 @@ class BridgeSystem : public System
 public:
     void Init() override;
     void Update(float dt) override;
+    void OnCreate() override;
+
+    void OnEnemyUnitDestroyed(ComponentRemovedEvent<EnemyUnitCollider>* event);
+    void OnPlayerUnitDestroyed(ComponentRemovedEvent<PlayerUnitCollider>* event);
 
 private:
     std::vector<BridgeComponent*> m_bridges;
