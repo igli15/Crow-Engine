@@ -30,8 +30,6 @@ void ProjectileSystem::OnProjectileComponentAdded(ComponentAddedEvent<Projectile
 
     ProjectileComponent& projectile = world->GetComponent<ProjectileComponent>(entity);
 
-    ENGINE_LOG(projectile.targetPos.x);
-
     rb->acceleration = glm::vec3(0,projectile.gravity,0);
 
     glm::vec3 initialVelocity = glm::vec3(0);
@@ -52,7 +50,7 @@ void ProjectileSystem::OnProjectileComponentAdded(ComponentAddedEvent<Projectile
 
     initialVelocity = initHorizontalVelocity + initUpVelocity;
 
-    rb->velocity = initialVelocity;
+    rb->velocity = initialVelocity * -glm::sign(projectile.gravity);
 
 }
 

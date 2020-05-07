@@ -296,10 +296,6 @@ vector
 vector
 -
 
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/ProjectileComponent.cpp
-ProjectileComponent.h
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/ProjectileComponent.h
-
 /Users/igli/Desktop/Crow Engine/Crow/Game/Components/ProjectileComponent.h
 glm/vec3.hpp
 -
@@ -323,18 +319,6 @@ vector
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
 vector
 -
-
-/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/ProjectileSystem.cpp
-ProjectileSystem.h
-/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/ProjectileSystem.h
-../../Engine/EventQueue/EventQueue.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
-../../Engine/Components/Rigidbody.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Rigidbody.h
-../../Engine/Feather/World.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
-../../Engine/Components/Transform.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/ProjectileSystem.h
 ../../Engine/Feather/System.h

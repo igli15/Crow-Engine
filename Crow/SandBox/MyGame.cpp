@@ -58,15 +58,12 @@ void MyGame::LoadAssets()
 
 void MyGame::Init()
 {
-
     Game::Init();
-
 
     MainWorld* mainWorld = new MainWorld();
     SetWorld(mainWorld);
 
     //Set the world here!
-
 
     //SetWorld(new MovementTestWorld());
 

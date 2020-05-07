@@ -53,7 +53,7 @@ void MainWorld::Build()
     Player* playerComponent = playerEntity.AddComponent<Player>(Player{});
 
     UnitGroupArchetype* ghostArchetype = CreateUnitGroupArchetype<UnitGroupArchetype>("ghosts");
-    ghostArchetype->maxSpeed = 0.02f;
+    ghostArchetype->maxSpeed = 0.7f;
     ghostArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("translucentMaterial");
     ghostArchetype->unitModel = resourceManager->GetModel("ghost");
     ghostArchetype->scaleFactor = 0.05;
@@ -66,7 +66,7 @@ void MainWorld::Build()
 
 
     EnemyGroupArchetype* cubeArchetype = CreateUnitGroupArchetype<EnemyGroupArchetype>("cubes");
-    cubeArchetype->maxSpeed = 0.02f;
+    cubeArchetype->maxSpeed = 0.7f;
     cubeArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("translucentMaterial");
     cubeArchetype->unitModel = resourceManager->GetModel("golem");
     cubeArchetype->scaleFactor = 0.07f;
@@ -99,7 +99,7 @@ void MainWorld::Build()
     testProjectileEntity.AddComponent(MeshInfo{resourceManager->GetModel("sphere"),resourceManager->GetMaterial<TranslucentColorMat>("defaultMat")});
 
     ProjectileComponent projectileComponent{};
-    projectileComponent.targetPos = glm::vec3 (6,3,-2);
+    projectileComponent.targetPos = glm::vec3 (5,0,-5);
     testProjectileEntity.AddComponent(projectileComponent);
 
     EntityHandle targetEntity = CreateEntity();

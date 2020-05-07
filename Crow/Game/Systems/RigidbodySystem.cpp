@@ -26,12 +26,8 @@ void RigidbodySystem::Update(float dt)
         rigidBody.velocity += rigidBody.acceleration * dt;
 
         float velocityLength = glm::length(rigidBody.velocity);
-        if(velocityLength > rigidBody.maxSpeed)
-        {
-            rigidBody.velocity = glm::normalize(rigidBody.velocity) * rigidBody.maxSpeed;
-        }
 
-        transform.Translate(rigidBody.velocity );
+        transform.Translate(rigidBody.velocity * dt);
         //rigidBody.acceleration = glm::vec3(0);
     }
 }

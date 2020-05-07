@@ -47,6 +47,13 @@ void SteeringSystem::Update(float dt)
         {
             LookWhereGoing(rigidBody, transform, steeringComponent.rotationAngleStep * dt);
         }
+
+        float velocityLength = glm::length(rigidBody.velocity);
+
+        if(velocityLength > rigidBody.maxSpeed)
+        {
+            rigidBody.velocity = glm::normalize(rigidBody.velocity) * rigidBody.maxSpeed;
+        }
     }
 }
 
