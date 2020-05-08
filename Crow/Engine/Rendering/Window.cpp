@@ -22,6 +22,8 @@ int Window::CreateWindow(int windowWidth, int windowHeight, const char *windowNa
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, majorVersion);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, minorVersion);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    glfwWindowHint(GLFW_SAMPLES, 4);
+//
 
     //only for apple
 #ifdef __APPLE__
@@ -54,6 +56,7 @@ int Window::CreateWindow(int windowWidth, int windowHeight, const char *windowNa
     glCullFace(GL_BACK);
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    glEnable(GL_MULTISAMPLE);
 
     Input::instance = new Input();
     Input::instance->window = this;
