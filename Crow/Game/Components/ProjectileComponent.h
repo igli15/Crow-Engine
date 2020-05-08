@@ -11,8 +11,8 @@
 struct ProjectileComponent
 {
     glm::vec3 targetPos = {0,0,0};
-    float gravity = -1.5f;
-    float height = 4;
+    float gravity = -3.0f;
+    float height = 1.5f;
 
 };
 

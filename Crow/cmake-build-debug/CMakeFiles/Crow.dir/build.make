@@ -993,6 +993,45 @@ CMakeFiles/Crow.dir/Game/Components/ProjectileComponent.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Game/Components/ProjectileComponent.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Game/Components/ProjectileComponent.cpp" -o CMakeFiles/Crow.dir/Game/Components/ProjectileComponent.cpp.s
 
+CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o: CMakeFiles/Crow.dir/flags.make
+CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o: ../Game/Systems/CannonSystem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/CannonSystem.cpp"
+
+CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/CannonSystem.cpp" > CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.i
+
+CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/CannonSystem.cpp" -o CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.s
+
+CMakeFiles/Crow.dir/Game/Components/CannonComponent.cpp.o: CMakeFiles/Crow.dir/flags.make
+CMakeFiles/Crow.dir/Game/Components/CannonComponent.cpp.o: ../Game/Components/CannonComponent.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object CMakeFiles/Crow.dir/Game/Components/CannonComponent.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Game/Components/CannonComponent.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Game/Components/CannonComponent.cpp"
+
+CMakeFiles/Crow.dir/Game/Components/CannonComponent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Game/Components/CannonComponent.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/Game/Components/CannonComponent.cpp" > CMakeFiles/Crow.dir/Game/Components/CannonComponent.cpp.i
+
+CMakeFiles/Crow.dir/Game/Components/CannonComponent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Game/Components/CannonComponent.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Game/Components/CannonComponent.cpp" -o CMakeFiles/Crow.dir/Game/Components/CannonComponent.cpp.s
+
+CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/CannonGroupArchetype.cpp.o: CMakeFiles/Crow.dir/flags.make
+CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/CannonGroupArchetype.cpp.o: ../Game/UnitGroupArchetypes/CannonGroupArchetype.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_75) "Building CXX object CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/CannonGroupArchetype.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/CannonGroupArchetype.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/CannonGroupArchetype.cpp"
+
+CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/CannonGroupArchetype.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/CannonGroupArchetype.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/CannonGroupArchetype.cpp" > CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/CannonGroupArchetype.cpp.i
+
+CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/CannonGroupArchetype.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/CannonGroupArchetype.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/CannonGroupArchetype.cpp" -o CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/CannonGroupArchetype.cpp.s
+
 # Object files for target Crow
 Crow_OBJECTS = \
 "CMakeFiles/Crow.dir/main.cpp.o" \
@@ -1066,7 +1105,10 @@ Crow_OBJECTS = \
 "CMakeFiles/Crow.dir/Game/Systems/SelectedBridgeIndicatorSystem.cpp.o" \
 "CMakeFiles/Crow.dir/Game/Components/SelectedBridgeIndicator.cpp.o" \
 "CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.o" \
-"CMakeFiles/Crow.dir/Game/Components/ProjectileComponent.cpp.o"
+"CMakeFiles/Crow.dir/Game/Components/ProjectileComponent.cpp.o" \
+"CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o" \
+"CMakeFiles/Crow.dir/Game/Components/CannonComponent.cpp.o" \
+"CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/CannonGroupArchetype.cpp.o"
 
 # External object files for target Crow
 Crow_EXTERNAL_OBJECTS =
@@ -1143,13 +1185,16 @@ Crow: CMakeFiles/Crow.dir/Game/Systems/SelectedBridgeIndicatorSystem.cpp.o
 Crow: CMakeFiles/Crow.dir/Game/Components/SelectedBridgeIndicator.cpp.o
 Crow: CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.o
 Crow: CMakeFiles/Crow.dir/Game/Components/ProjectileComponent.cpp.o
+Crow: CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o
+Crow: CMakeFiles/Crow.dir/Game/Components/CannonComponent.cpp.o
+Crow: CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/CannonGroupArchetype.cpp.o
 Crow: CMakeFiles/Crow.dir/build.make
 Crow: /usr/local/lib/libglfw.dylib
 Crow: /usr/local/lib/libassimp.dylib
 Crow: /usr/local/lib/libGLEW.dylib
 Crow: /usr/local/lib/libfreetype.dylib
 Crow: CMakeFiles/Crow.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_73) "Linking CXX executable Crow"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_76) "Linking CXX executable Crow"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Crow.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

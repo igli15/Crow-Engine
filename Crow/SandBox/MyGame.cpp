@@ -31,17 +31,12 @@ void MyGame::LoadAssets()
     resourceManager->LoadModel(("cone.obj"),"cone");
     resourceManager->LoadModel(("sphere.obj"),"sphere");
     resourceManager->LoadModel(("axis.obj"),"axis");
-    resourceManager->LoadModel(("plane.obj"),"plane");
-    resourceManager->LoadModel(("lanternCandle.obj"),"lantern");
-    resourceManager->LoadModel(("gravestone.obj"),"gravestone");
-    resourceManager->LoadModel(("skeleton.obj"),"skeleton");
     resourceManager->LoadModel(("pine.obj"),"pine");
     resourceManager->LoadModel(("ghost1.obj"),"ghost");
     resourceManager->LoadModel(("dragon.obj"),"dragon");
     resourceManager->LoadModel(("floatingRock.obj"),"floatingRock");
     resourceManager->LoadModel(("Golem.fbx"),"golem");
-    resourceManager->LoadModel(("rockMonster.fbx"),"rockMonster");
-    resourceManager->LoadModel(("woodenMonster.fbx"),"woodenMonster");
+    resourceManager->LoadModel("canon.fbx","canon");
 
     resourceManager->LoadModel(("bridgeTile.fbx"),"bridge");
     resourceManager->LoadModel(("bridgeTileBegin.fbx"),"bridgeBegin");

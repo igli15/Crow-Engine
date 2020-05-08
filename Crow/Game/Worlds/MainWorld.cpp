@@ -28,6 +28,8 @@
 #include "../Systems/SelectedBridgeIndicatorSystem.h"
 #include "../Components/ProjectileComponent.h"
 #include "../Systems/ProjectileSystem.h"
+#include "../Systems/CannonSystem.h"
+#include "../UnitGroupArchetypes/CannonGroupArchetype.h"
 
 void MainWorld::Build()
 {
@@ -48,6 +50,7 @@ void MainWorld::Build()
     RegisterSystem<UnitCollisionSystem>();
     RegisterSystem<UnitFightingSystem>();
     RegisterSystem<ProjectileSystem>();
+    RegisterSystem<CannonSystem>();
 
     EntityHandle playerEntity = CreateEntity();
     Player* playerComponent = playerEntity.AddComponent<Player>(Player{});
@@ -78,11 +81,11 @@ void MainWorld::Build()
     enemyGolemArchetype->strongAgainstType = DamageDealer::NONE;
 
 
-    UnitGroupArchetype* playerCanon = CreateUnitGroupArchetype<UnitGroupArchetype>("canon");
+    CannonGroupArchetype* playerCanon = CreateUnitGroupArchetype<CannonGroupArchetype>("canon");
     playerCanon->maxSpeed = 0.7f;
     playerCanon->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("translucentMaterial");
-    playerCanon->unitModel = resourceManager->GetModel("cube");
-    playerCanon->scaleFactor = 0.2f;
+    playerCanon->unitModel = resourceManager->GetModel("canon");
+    playerCanon->scaleFactor =1.0f;
     playerCanon->horizontalDistance = 0.3f;
     playerCanon->verticalDistance = 0.3;
     playerCanon->rows = 1;
@@ -90,7 +93,7 @@ void MainWorld::Build()
     playerCanon->unitType = DamageDealer::Arrow;
     playerCanon->strongAgainstType = DamageDealer::NONE;
     playerCanon->damageRate = 0;
-    playerCanon->colliderRadius = 3.0f;
+    playerCanon->colliderRadius = 1.0f;
 
 
     playerComponent->selectedUnitArchetype = ghostArchetype;
@@ -120,7 +123,7 @@ void MainWorld::Build()
     EntityHandle targetEntity = CreateEntity();
     Transform* t = targetEntity.AddComponent(Transform{});
     t->Translate(glm::vec3(projectileComponent.targetPos));
-    targetEntity.AddComponent(MeshInfo{resourceManager->GetModel("cube"),resourceManager->GetMaterial<TranslucentColorMat>("defaultMat")});
+    targetEntity.AddComponent(MeshInfo{resourceManager->GetModel("cube"),resourceManager->GetMaterial<ColorMaterial>("defaultMat")});
     */
 }
 

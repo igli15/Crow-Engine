@@ -52,13 +52,13 @@ void MovementTestWorld::Build()
     cubeEntity.AddComponent(cubeMeshInfo);
 
     Rigidbody rb;
-    rb.maxSpeed = 0.01;
+    rb.maxSpeed = 1.0f;
     cubeEntity.AddComponent(rb);
 
     SteeringComponent steeringComponent;
 
     SeekComponent seekComponent{};
-    seekComponent.targetPos = glm::vec3 (3,-2,0);
+    seekComponent.targetPos = glm::vec3 (3,2,2);
 
     cubeEntity.AddComponent(steeringComponent);
     cubeEntity.AddComponent(seekComponent);

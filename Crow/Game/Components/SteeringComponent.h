@@ -10,7 +10,7 @@
 
 struct SteeringComponent
 {
-    glm::vec3 steering = glm::vec3(0);
+    glm::vec3 steering = glm::vec3(0.0f);
     float maxSteeringForce = 10.0f;
     float rotationAngleStep = 30.0f;
     bool rotateTowardsVelocity = true;

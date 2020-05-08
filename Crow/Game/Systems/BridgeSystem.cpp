@@ -70,6 +70,7 @@ void BridgeSystem::Update(float dt)
 
 }
 
+//TODO: This is dumb fix this.... The active bridge is not the bridge the enemy might be on... the units should also know about the bridge maybe?!
 void BridgeSystem::OnEnemyUnitDestroyed(ComponentRemovedEvent<EnemyUnitCollider> *event)
 {
    auto iterator = std::find(m_currentSelectedBridge->enemyEntitiesOnBridge.begin(),m_currentSelectedBridge->enemyEntitiesOnBridge.end(),event->entity);
@@ -78,7 +79,8 @@ void BridgeSystem::OnEnemyUnitDestroyed(ComponentRemovedEvent<EnemyUnitCollider>
    {
        m_currentSelectedBridge->enemyEntitiesOnBridge.erase(iterator);
    }
-   ENGINE_LOG("enemy ded");
+
+  // ENGINE_LOG("enemy ded");
 }
 
 void BridgeSystem::OnPlayerUnitDestroyed(ComponentRemovedEvent<PlayerUnitCollider> *event)
