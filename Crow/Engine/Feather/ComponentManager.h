@@ -63,7 +63,7 @@ private:
     int arrayCount = 0;
 };
 
-
+//TODO: Just register the componets yourself
 template<typename T>
 ComponentArray<T> *ComponentManager::GetComponentArray()
 {

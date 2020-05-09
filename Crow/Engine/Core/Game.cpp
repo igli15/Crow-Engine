@@ -22,8 +22,16 @@ void Game::Init()
     resourceManager = new ResourceManager();
 
     window = new Window();
+    window->CreateWindow(1920, 1080, "Crow");
 
-    window->CreateWindow(1920,1080,"Crow");
+
+    //TODO: doing post processing stuff here move to window class later
+
+    m_postProcessingShader = resourceManager->CreateShader("PostProcessingShader.vs","PostProcessingShader.fs","postProcessingShader");
+
+    m_postProcessingShader->Use();
+    m_postProcessingShader->SetInt("screenTexture", 0);
+    window->SetUpPostProcessingFrameBuffer(m_postProcessingShader);
 
     InitFreeTypeLibrary();
 
@@ -50,8 +58,8 @@ void Game::Run()
 
     while(window->isOpen())
     {
-        window->ClearColor(0.17,0.17,0.17,1);
-        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+        //window->ClearColor(0.17,0.17,0.17,1);
+        //glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         double  current = glfwGetTime();
         double elapsed = (double)(current - previous);
@@ -69,8 +77,26 @@ void Game::Run()
             lag -= MS_PER_UPDATE;
         }
 
+
+        glBindFramebuffer(GL_FRAMEBUFFER, window->internalFrameBuffer);
+        glEnable(GL_DEPTH_TEST);
+        glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+
         currentWorld->PreRenderAllSystems();
         currentWorld->RenderAllSystems();
+
+        glBindFramebuffer(GL_FRAMEBUFFER, 0);
+        glDisable(GL_DEPTH_TEST);
+        glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
+        glClear(GL_COLOR_BUFFER_BIT);
+
+        m_postProcessingShader->Use();
+        glBindVertexArray(window->quadVAO);
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, window->internalTextureColorBuffer);
+        glDrawArrays(GL_TRIANGLES, 0, 6);
 
         window->SwapBuffers();
         window->PollEvents();
@@ -78,7 +104,7 @@ void Game::Run()
 
         double currentTime = glfwGetTime();
         nbFrames++;
-        if ( currentTime - lastTime >= 1.0 ){ // If last prinf() was more than 1 sec ago
+        if ( currentTime - lastTime >= 1.0 ){ // If last printf() was more than 1 sec ago
             // printf and reset timer
             printf("%f ms/frame\n", 1000.0/double(nbFrames));
             printf("%f FPS\n", double(nbFrames));

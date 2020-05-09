@@ -14,6 +14,7 @@
 
 class Renderer;
 class ResourceManager;
+class Shader;
 
 ///The game class handles all the internal setup for a "game" program to run.
 ///It's the parent class of "MyGame" which is what the user should use and create.
@@ -27,6 +28,8 @@ private:
 
     ///Initializes the FreeType Library used to load fonts
     void InitFreeTypeLibrary();
+
+    Shader* m_postProcessingShader = nullptr;
 public:
     virtual void Init();
 

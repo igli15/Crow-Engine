@@ -6,6 +6,8 @@
 #include "Window.h"
 #include "../Core/Input.h"
 #include "../Debug/Debug.h"
+#include "../Rendering/Shader.h"
+
 #include <unordered_map>
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
@@ -13,6 +15,10 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height)
     // make sure the viewport matches the new window dimensions; note that width and
     // height will be significantly larger than specified on retina displays.
     glViewport(0, 0, width, height);
+
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, NULL);
+    glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH24_STENCIL8, width, height);
+
 }
 
 int Window::CreateWindow(int windowWidth, int windowHeight, const char *windowName, int majorVersion, int minorVersion)
@@ -132,5 +138,78 @@ void Window::InputKeyCallback(GLFWwindow* window, int key, int scancode, int act
         keyIterator->second = state;
     }
 
+}
+
+void Window::SetUpPostProcessingFrameBuffer(Shader* screenShader)
+{
+    screenShader->Use();
+   GenerateScreenQuad();
+   GenerateFrameBuffer();
+   GenerateFrameBufferTexture();
+   GenerateFrameBufferRBO();
+
+    if (glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE)
+    {
+        ENGINE_LOG_ERROR("Framebuffer is not complete!");
+        throw;
+    }
+
+    glBindFramebuffer(GL_FRAMEBUFFER, 0);
+
+}
+
+
+void Window::GenerateScreenQuad()
+{
+    float quadVertices[] = { // vertex attributes for a quad that fills the entire screen in Normalized Device Coordinates.
+            // positions   // texCoords
+            -1.0f,  1.0f,  0.0f, 1.0f,
+            -1.0f, -1.0f,  0.0f, 0.0f,
+            1.0f, -1.0f,  1.0f, 0.0f,
+
+            -1.0f,  1.0f,  0.0f, 1.0f,
+            1.0f, -1.0f,  1.0f, 0.0f,
+            1.0f,  1.0f,  1.0f, 1.0f
+    };
+
+    // screen quad VAO
+    glGenVertexArrays(1, &quadVAO);
+    glGenBuffers(1, &m_quadVBO);
+    glBindVertexArray(quadVAO);
+    glBindBuffer(GL_ARRAY_BUFFER, m_quadVBO);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(quadVertices), &quadVertices, GL_STATIC_DRAW);
+    glEnableVertexAttribArray(0);
+    glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 4 * sizeof(float), (void*)0);
+    glEnableVertexAttribArray(1);
+    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 4 * sizeof(float), (void*)(2 * sizeof(float)));
+    glBindVertexArray(0);
+}
+
+void Window::GenerateFrameBuffer()
+{
+    glGenFramebuffers(1, &internalFrameBuffer);
+    glBindFramebuffer(GL_FRAMEBUFFER, internalFrameBuffer);
+}
+
+void Window::GenerateFrameBufferTexture()
+{
+    glGenTextures(1, &internalTextureColorBuffer);
+    glBindTexture(GL_TEXTURE_2D, internalTextureColorBuffer);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, 1920, 1080, 0, GL_RGB, GL_UNSIGNED_BYTE, NULL);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, internalTextureColorBuffer, 0);
+}
+
+void Window::GenerateFrameBufferRBO()
+{
+    //Generate render buffer objects for the depth and stencil testing
+
+    glGenRenderbuffers(1, &internalRBO);
+    glBindRenderbuffer(GL_RENDERBUFFER, internalRBO);
+    glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH24_STENCIL8, 1920, 1080);
+    glBindRenderbuffer(GL_RENDERBUFFER, 0);
+
+    glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_STENCIL_ATTACHMENT, GL_RENDERBUFFER, internalRBO);
 }
 

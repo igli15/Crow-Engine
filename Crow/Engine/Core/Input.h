@@ -7,6 +7,7 @@
 
 #include <unordered_map>
 #include "../Debug/Debug.h"
+#include "../Rendering/Window.h"
 
 
 class Window;
