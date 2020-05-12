@@ -798,6 +798,33 @@ Engine/Rendering/Materials/TranslucentColorMat.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/TranslucentColorMat.cpp.s
 .PHONY : Engine/Rendering/Materials/TranslucentColorMat.cpp.s
 
+Engine/Rendering/Materials/WaterMaterial.o: Engine/Rendering/Materials/WaterMaterial.cpp.o
+
+.PHONY : Engine/Rendering/Materials/WaterMaterial.o
+
+# target to build an object file
+Engine/Rendering/Materials/WaterMaterial.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o
+.PHONY : Engine/Rendering/Materials/WaterMaterial.cpp.o
+
+Engine/Rendering/Materials/WaterMaterial.i: Engine/Rendering/Materials/WaterMaterial.cpp.i
+
+.PHONY : Engine/Rendering/Materials/WaterMaterial.i
+
+# target to preprocess a source file
+Engine/Rendering/Materials/WaterMaterial.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.i
+.PHONY : Engine/Rendering/Materials/WaterMaterial.cpp.i
+
+Engine/Rendering/Materials/WaterMaterial.s: Engine/Rendering/Materials/WaterMaterial.cpp.s
+
+.PHONY : Engine/Rendering/Materials/WaterMaterial.s
+
+# target to generate assembly for a file
+Engine/Rendering/Materials/WaterMaterial.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.s
+.PHONY : Engine/Rendering/Materials/WaterMaterial.cpp.s
+
 Engine/Rendering/Mesh.o: Engine/Rendering/Mesh.cpp.o
 
 .PHONY : Engine/Rendering/Mesh.o
@@ -2232,6 +2259,9 @@ help:
 	@echo "... Engine/Rendering/Materials/TranslucentColorMat.o"
 	@echo "... Engine/Rendering/Materials/TranslucentColorMat.i"
 	@echo "... Engine/Rendering/Materials/TranslucentColorMat.s"
+	@echo "... Engine/Rendering/Materials/WaterMaterial.o"
+	@echo "... Engine/Rendering/Materials/WaterMaterial.i"
+	@echo "... Engine/Rendering/Materials/WaterMaterial.s"
 	@echo "... Engine/Rendering/Mesh.o"
 	@echo "... Engine/Rendering/Mesh.i"
 	@echo "... Engine/Rendering/Mesh.s"

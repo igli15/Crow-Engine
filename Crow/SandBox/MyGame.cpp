@@ -15,6 +15,7 @@
 #include "../Engine/Components/Camera.h"
 #include "../Game/Components/BridgeComponent.h"
 #include "../Engine/Editor/UnitySceneParser.h"
+#include "../Engine/Rendering/Materials/WaterMaterial.h"
 
 void MyGame::LoadAssets()
 {
@@ -24,7 +25,9 @@ void MyGame::LoadAssets()
     resourceManager->CreateShader("VertexShader.vs","FragmentShader.fs","litShader");
     resourceManager->CreateShader("SpriteVertexShader.vs","SpriteFragmentShader.fs","spriteShader");
     resourceManager->CreateShader("TextureVertexShader.vs","TextureFragmentShader.fs","textureShader");
+    resourceManager->CreateShader("WaterVertexShader.vs","WaterFragmentShader.fs","waterShader");
     resourceManager->CreateMaterial<ColorMaterial>("defaultMat");
+    resourceManager->CreateMaterial<WaterMaterial>("waterMaterial");
     // resourceManager->CreateMaterial<ColorMaterial>("cyanMaterial");
 
     resourceManager->LoadModel(("cube.obj"),"cube");
@@ -37,9 +40,12 @@ void MyGame::LoadAssets()
     resourceManager->LoadModel(("floatingRock.obj"),"floatingRock");
     resourceManager->LoadModel(("Golem.fbx"),"golem");
     resourceManager->LoadModel("canon.fbx","canon");
+    resourceManager->LoadModel("plane.obj","plane");
 
     resourceManager->LoadModel(("bridgeTile.fbx"),"bridge");
     resourceManager->LoadModel(("bridgeTileBegin.fbx"),"bridgeBegin");
+
+    resourceManager->LoadModel(("curvedBridge.fbx"),"curvedBridge");
 
     resourceManager->LoadTexture("container.png","containerDiffuse");
     resourceManager->LoadTexture("containerSpecular.png","containerSpecular");
@@ -48,21 +54,27 @@ void MyGame::LoadAssets()
 
     resourceManager->LoadTexture("bridgeDiffuse.png","bridgeTexture");
     resourceManager->LoadTexture("matrix.jpg","matrixTexture");
+
+    resourceManager->LoadTexture("PerlinNoise.png","perlinNoise");
+    resourceManager->LoadTexture("gradientMap.png","gradientMap");
+
+    resourceManager->LoadTexture("causticsTex.jpeg","causticsTexture");
+    resourceManager->LoadTexture("foamGradient.png","foamGradient");
 }
 
 void MyGame::Init()
 {
     Game::Init();
 
-    MainWorld* mainWorld = new MainWorld();
-    SetWorld(mainWorld);
+    //MainWorld* mainWorld = new MainWorld();
+    //SetWorld(mainWorld);
 
     //Set the world here!
 
     //SetWorld(new MovementTestWorld());
 
     //SetWorld(new XmlTestWorld());
-    //SetWorld(new TranslucentMaterialTestWorld());
+    SetWorld(new TranslucentMaterialTestWorld());
     //SetWorld(new RotatingGunsWorld());
     //SetWorld(new SpriteRenderingWorld());
 

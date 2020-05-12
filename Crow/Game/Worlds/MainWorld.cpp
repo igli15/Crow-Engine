@@ -37,7 +37,8 @@ void MainWorld::Build()
 
     ResourceManager* resourceManager = Game::Instance()->resourceManager;
 
-    UnitySceneParser::ParseUnityScene("MainLevel.xml",this,&(MainWorld::ParseGameComponents));
+    //UnitySceneParser::ParseUnityScene("MainLevel.xml",this,&(MainWorld::ParseGameComponents));
+    UnitySceneParser::ParseUnityScene("MainLevel2.xml",this,&(MainWorld::ParseGameComponents));
 
     RegisterSystem<RigidbodySystem>();
     RegisterSystem<SteeringSystem>();

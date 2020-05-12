@@ -16,7 +16,6 @@ TranslucentColorMat::TranslucentColorMat() : AbstractMaterial("translucentShader
 
 void TranslucentColorMat::Initialize()
 {
-    m_uModelMatrix = m_shader->GetUniformLocation("model");
     m_uViewMatrix = m_shader->GetUniformLocation("view");
     m_uProjectionMatrix = m_shader->GetUniformLocation("projection");
 

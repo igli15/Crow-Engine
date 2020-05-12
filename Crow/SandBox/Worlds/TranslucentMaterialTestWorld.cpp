@@ -16,6 +16,7 @@
 #include "../../Engine/Rendering/Materials/TranslucentColorMat.h"
 #include "../../Engine/Components/Camera.h"
 #include "../../Engine/Rendering/Materials/TextureMaterial.h"
+#include "../../Engine/Rendering/Materials/WaterMaterial.h"
 
 void TranslucentMaterialTestWorld::Build()
 {
@@ -42,10 +43,15 @@ void TranslucentMaterialTestWorld::Build()
     translucentMat2->translucentColor = glm::vec3(1,0,1);
     translucentMat2->shininess = 16;
 
-    ColorMaterial* mat = resourceManager->CreateMaterial<ColorMaterial>("planeColorMat");
-    mat->mainColor = glm::vec3(0.7,0.7,0.7);
-    mat->specularColor = glm::vec3(1);
-    mat->shininess = 16;
+    WaterMaterial* mat = resourceManager->GetMaterial<WaterMaterial>("waterMaterial");
+    //mat->mainColor = glm::vec3(0.425, 0.807, 0.971);
+    mat->mainColor = glm::vec3(0.18, 0.32, 0.45);
+
+    mat->waveNoiseTexture = resourceManager->GetTexture("perlinNoise");
+    mat->depthGradientTexture = resourceManager->GetTexture("gradientMap");
+    mat->foamGradientTexture= resourceManager->GetTexture("foamGradient");
+    mat->causticsTexture = resourceManager->GetTexture("causticsTexture");
+
 
     TextureMaterial* textureMaterial = resourceManager->CreateMaterial<TextureMaterial>("containerMat");
     Texture* containerDiffuse = resourceManager->GetTexture("containerDiffuse");
@@ -60,15 +66,16 @@ void TranslucentMaterialTestWorld::Build()
     EntityHandle cameraEntity = CreateEntity();
     cameraEntity.AddComponent(Camera{});
     Transform* camTransform = cameraEntity.AddComponent(Transform{});
-    camTransform->Translate(glm::vec3(0,4,5));
-    camTransform->Rotate(-45,glm::vec3(1,0,0));
+    camTransform->Translate(glm::vec3(0,9,10));
+    camTransform->Rotate(-60,glm::vec3(1,0,0));
 
     EntityHandle plane = CreateEntity();
     Transform* planeTransform = plane.AddComponent(Transform{});
     plane.AddComponent(MeshInfo{planeModel,mat});
     planeTransform->Translate(glm::vec3(0,-2,0));
-    planeTransform->Scale(glm::vec3(20,10,10));
+    planeTransform->Scale(glm::vec3(4,1,14));
 
+    /*
     {
         EntityHandle cubeEntity = CreateEntity();
         cubeEntity.AddComponent(Transform{});
@@ -98,7 +105,7 @@ void TranslucentMaterialTestWorld::Build()
         //cubeMeshInfo.material = mat;
         cubeEntity.AddComponent(cubeMeshInfo);
     }
-
+*/
 
 
     EntityHandle lightEntity = CreateEntity();
