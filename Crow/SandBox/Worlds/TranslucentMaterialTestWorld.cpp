@@ -73,7 +73,7 @@ void TranslucentMaterialTestWorld::Build()
     Transform* planeTransform = plane.AddComponent(Transform{});
     plane.AddComponent(MeshInfo{planeModel,mat});
     planeTransform->Translate(glm::vec3(0,-2,0));
-    planeTransform->Scale(glm::vec3(4,1,14));
+    planeTransform->Scale(glm::vec3(4,1,20));
 
     /*
     {

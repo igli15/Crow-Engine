@@ -73,4 +73,9 @@
       <TranslucentMaterial materialName="translucentMaterial" mainColor="(0.6039, 0.6039, 0.6039)" specularColor="(1.0000, 1.0000, 1.0000)" translucencyColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" translucentPower="0.8000" translucentScale="1.0000" translucentDistortion="1.2000" />
     </Components>
   </GameObject>
+  <GameObject name="water" position="(-0.2000, 0.1500, 0.7200)" rotation="(0.0000, 0.4176, 0.0000, 0.9086)" scale="(2.9161, 0.1000, 24.2742)" mesh="plane">
+    <Components>
+      <WaterMaterial materialName="waterMaterial" waveNoiseTexName="perlinNoise" depthGradientTexName="gradientMap" foamGradientTexName="foamGradient" causticsTexName="causticsTexture" mainColor="(0.1333, 0.2275, 0.3176)" foamColor="(0.3000, 0.3000, 0.3000)" noiseScale="0.8600" distanceScale="0.0700" causticsSpeed="0.0300" noiseSpeed="0.0500" />
+    </Components>
+  </GameObject>
 </root>

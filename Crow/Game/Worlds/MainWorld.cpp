@@ -30,6 +30,7 @@
 #include "../Systems/ProjectileSystem.h"
 #include "../Systems/CannonSystem.h"
 #include "../UnitGroupArchetypes/CannonGroupArchetype.h"
+#include "../../Engine/Rendering/Materials/WaterMaterial.h"
 
 void MainWorld::Build()
 {
@@ -147,5 +148,75 @@ void MainWorld::ParseGameComponents(rapidxml::xml_node<> *node, EntityHandle ent
                 bridgeComponent->endPos =  UnitySceneParser::ScanVector3f(a->value());
             }
         }
+    }
+    else if(strcmp(node->name(), "WaterMaterial") == 0)
+    {
+        WaterMaterial* waterMaterial = nullptr;
+        for (rapidxml::xml_attribute<> *a = node->first_attribute();
+             a != nullptr;
+             a = a->next_attribute())
+        {
+            std::string attributeName = a->name();
+
+            if (attributeName == "materialName")
+            {
+                std::string value(a->value());
+                auto material = Game::Instance()->resourceManager->GetMaterial<WaterMaterial>(value);
+                if(material == nullptr)
+                {
+                    waterMaterial = Game::Instance()->resourceManager->CreateMaterial<WaterMaterial>(value);
+                }
+                else
+                {
+                    waterMaterial = material;
+                }
+
+            }
+            else if(attributeName == "waveNoiseTexName")
+            {
+                std::string value(a->value());
+                waterMaterial->waveNoiseTexture = Game::Instance()->resourceManager->GetTexture(value);
+            }
+            else if(attributeName == "depthGradientTexName")
+            {
+                std::string value(a->value());
+                waterMaterial->depthGradientTexture = Game::Instance()->resourceManager->GetTexture(value);
+            }
+            else if(attributeName == "foamGradientTexName")
+            {
+                std::string value(a->value());
+                waterMaterial->foamGradientTexture = Game::Instance()->resourceManager->GetTexture(value);
+            }
+            else if(attributeName == "causticsTexName")
+            {
+                std::string value(a->value());
+                waterMaterial->causticsTexture = Game::Instance()->resourceManager->GetTexture(value);
+            }
+            else if(attributeName == "mainColor")
+            {
+                waterMaterial->mainColor = UnitySceneParser::ScanVector3f(a->value());
+            }
+            else if(attributeName == "foamColor")
+            {
+                waterMaterial->foamColor = UnitySceneParser::ScanVector3f(a->value());
+            }
+            else if(attributeName == "noiseSpeed")
+            {
+                waterMaterial->noiseSpeed = strtof(a->value(), 0);
+            }
+            else if(attributeName == "causticSpeed")
+            {
+                waterMaterial->causticSpeed = strtof(a->value(), 0);
+            }
+            else if(attributeName == "noiseScale")
+            {
+                waterMaterial->noiseScale = strtof(a->value(), 0);
+            }
+            else if(attributeName == "distanceScale")
+            {
+                waterMaterial->distanceScale = strtof(a->value(), 0);
+            }
+        }
+        entityHandle.GetComponent<MeshInfo>().component->material = waterMaterial;
     }
 }

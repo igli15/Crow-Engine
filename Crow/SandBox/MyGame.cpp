@@ -27,7 +27,7 @@ void MyGame::LoadAssets()
     resourceManager->CreateShader("TextureVertexShader.vs","TextureFragmentShader.fs","textureShader");
     resourceManager->CreateShader("WaterVertexShader.vs","WaterFragmentShader.fs","waterShader");
     resourceManager->CreateMaterial<ColorMaterial>("defaultMat");
-    resourceManager->CreateMaterial<WaterMaterial>("waterMaterial");
+    //resourceManager->CreateMaterial<WaterMaterial>("waterMaterial");
     // resourceManager->CreateMaterial<ColorMaterial>("cyanMaterial");
 
     resourceManager->LoadModel(("cube.obj"),"cube");
@@ -66,15 +66,15 @@ void MyGame::Init()
 {
     Game::Init();
 
-    //MainWorld* mainWorld = new MainWorld();
-    //SetWorld(mainWorld);
+    MainWorld* mainWorld = new MainWorld();
+    SetWorld(mainWorld);
 
     //Set the world here!
 
     //SetWorld(new MovementTestWorld());
 
     //SetWorld(new XmlTestWorld());
-    SetWorld(new TranslucentMaterialTestWorld());
+    //SetWorld(new TranslucentMaterialTestWorld());
     //SetWorld(new RotatingGunsWorld());
     //SetWorld(new SpriteRenderingWorld());
 

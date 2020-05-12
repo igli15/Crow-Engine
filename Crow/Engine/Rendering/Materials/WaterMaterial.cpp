@@ -22,6 +22,13 @@ void WaterMaterial::Initialize()
     m_uFoamTexture = m_shader->GetUniformLocation("foamGradientTex");
     m_uCausticsTexture = m_shader->GetUniformLocation("causticsTex");
     m_uTime = m_shader->GetUniformLocation("time");
+
+    m_uDistanceScale = m_shader->GetUniformLocation("distanceScale");
+    m_uNoiseScale = m_shader->GetUniformLocation("noiseScale");
+    m_uCausticSpeed = m_shader->GetUniformLocation("causticSpeed");
+    m_uNoiseSpeed = m_shader->GetUniformLocation("noiseSpeed");
+
+    m_uFoamColor = m_shader->GetUniformLocation("foamColor");
 }
 
 void WaterMaterial::BufferMaterialUniforms()
@@ -46,7 +53,14 @@ void WaterMaterial::BufferMaterialUniforms()
 
 
     glUniform3fv(m_uMainColor,1,glm::value_ptr(mainColor));
+    glUniform3fv(m_uFoamColor,1,glm::value_ptr(foamColor));
+
     glUniform1f(m_uTime,glfwGetTime());
+
+    glUniform1f(m_uCausticSpeed,causticSpeed);
+    glUniform1f(m_uNoiseSpeed,noiseSpeed);
+    glUniform1f(m_uDistanceScale,distanceScale);
+    glUniform1f(m_uNoiseScale,noiseScale);
 }
 
 void WaterMaterial::BufferShaderUniforms(const glm::mat4 &pViewMatrix, const glm::mat4 &pPerspectiveMatrix,

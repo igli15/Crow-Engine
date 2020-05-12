@@ -24,7 +24,13 @@ public:
 
     void BufferMaterialUniforms() override;
 
-    glm::vec3 mainColor = glm::vec3(1);
+    glm::vec3 mainColor = glm::vec3(0.18f, 0.32f, 0.45f);
+    glm::vec3 foamColor = glm::vec3(0.3f, 0.3f, 0.3f);
+
+    float noiseScale = 0.86f;
+    float distanceScale = 0.07f;
+    float noiseSpeed = 0.03f;
+    float causticSpeed = 0.05f;
 
     Texture* waveNoiseTexture = nullptr;
     Texture* depthGradientTexture = nullptr;
@@ -33,7 +39,7 @@ public:
 
 private:
     GLint  m_uMainColor,m_uViewMatrix,m_uProjectionMatrix,m_uWaveNoiseTexture,m_uDepthGradientTexture,m_uFoamTexture,m_uCausticsTexture;
-    GLint  m_uTime;
+    GLint  m_uTime,m_uNoiseScale,m_uDistanceScale,m_uNoiseSpeed,m_uCausticSpeed,m_uFoamColor;
 };
 
 
