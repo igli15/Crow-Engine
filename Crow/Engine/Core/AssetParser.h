@@ -103,7 +103,7 @@ static Token GetToken(Tokenizer* tokenizer)
 
     switch (tokenizer->at[0])
     {
-        case '@': {token.tokenType = IDENTIFIER;}
+        case '#': {token.tokenType = IDENTIFIER;}
         {
         } break;
         case ':': {token.tokenType = COLUMN;} break;
@@ -149,12 +149,12 @@ static char* ParseAssetType(Tokenizer* tokenizer)
 
 static char* ParseAssetPath(Tokenizer* tokenizer)
 {
-    char* first = tokenizer->at + 1;
+    char* first = tokenizer->at +1;
 
     int whiteSpaceCount = 0;
 
     //here we need to get the path
-    while(tokenizer->at[0] != ':')
+    while(tokenizer->at[0] != ';')
     {
         if(IsWhiteSpace(tokenizer->at[0])) whiteSpaceCount++;
 
@@ -164,7 +164,7 @@ static char* ParseAssetPath(Tokenizer* tokenizer)
     size_t length = tokenizer->at - first;
     size_t realLength = length - whiteSpaceCount;
 
-    char* path = (char*)(malloc(realLength +1));
+    char* path = (char*)(malloc(realLength ));
 
     int index = 0;
     for (int i = 0; i < length; ++i)
@@ -175,19 +175,19 @@ static char* ParseAssetPath(Tokenizer* tokenizer)
         }
     }
 
-    path[realLength + 1 ] = '\0';
+    path[realLength  ] = '\0';
 
     return path;
 }
 
 static char* ParseAssetName(Tokenizer* tokenizer)
 {
-    char* first = tokenizer->at + 1;
+    char* first = tokenizer->at ;
 
     int whiteSpaceCount = 0;
 
     //here we need to get the path
-    while(tokenizer->at[0] != ';')
+    while(tokenizer->at[0] != ':')
     {
         if(IsWhiteSpace(tokenizer->at[0])) whiteSpaceCount++;
 
@@ -236,12 +236,12 @@ static void ParseFile(char* fileName)
            case IDENTIFIER:
            {
                assetToken.assetType = ParseAssetType(&tokenizer);
-               assetToken.assetPath = ParseAssetPath(&tokenizer);
                assetToken.assetName = ParseAssetName(&tokenizer);
+               assetToken.assetPath = ParseAssetPath(&tokenizer);
 
                std::cout<<assetToken.assetType<<std::endl;
-               std::cout<<assetToken.assetPath<<std::endl;
                std::cout<<assetToken.assetName<<std::endl;
+               std::cout<<assetToken.assetPath<<std::endl;
 
            }break;
            case SEMICOLUMN:
