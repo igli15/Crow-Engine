@@ -120,6 +120,9 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h">
 			<Option target="Crow"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/AssetParser.h">
+			<Option target="Crow"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.cpp">
 			<Option target="Crow"/>
 		</Unit>

@@ -27,7 +27,7 @@ void MyGame::LoadAssets()
     resourceManager->CreateShader("TextureVertexShader.vs","TextureFragmentShader.fs","textureShader");
     resourceManager->CreateShader("WaterVertexShader.vs","WaterFragmentShader.fs","waterShader");
     resourceManager->CreateMaterial<ColorMaterial>("defaultMat");
-    //resourceManager->CreateMaterial<WaterMaterial>("waterMaterial");
+    resourceManager->CreateMaterial<WaterMaterial>("waterMaterial");
     // resourceManager->CreateMaterial<ColorMaterial>("cyanMaterial");
 
     resourceManager->LoadModel(("cube.obj"),"cube");

@@ -1,0 +1,5 @@
+
+@texture crow.png : crow;
+@model   cube.obj : cube;
+@texture container.png : container;
+@model cone.obj :  cone;

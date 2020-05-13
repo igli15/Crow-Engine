@@ -12,6 +12,11 @@
       <Light type="DIRECTIONAL" color="(1.0000, 1.0000, 0.9804)" intensity="1.0000" attenuationConstants="(1.0000, 0.0900, 0.0320)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
     </Components>
   </GameObject>
+  <GameObject name="CrowDirLight (1)" position="(-3.3300, 4.7100, -3.3300)" rotation="(0.6428, 0.0000, 0.0000, 0.7660)" scale="(1.0000, 1.0000, 1.0000)">
+    <Components>
+      <Light type="DIRECTIONAL" color="(1.0000, 1.0000, 0.9804)" intensity="0.5000" attenuationConstants="(1.0000, 0.0900, 0.0320)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
+    </Components>
+  </GameObject>
   <GameObject name="path" position="(3.0151, 0.2340, 4.1682)" rotation="(0.0000, 0.4145, 0.0000, 0.9101)" scale="(46.5621, 0.0000, 1.4617)" mesh="cube">
     <Components>
       <ColorMaterial materialName="roadMat" mainColor="(0.3882, 0.3882, 0.3882)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.2000" />
@@ -27,9 +32,9 @@
       <ColorMaterial materialName="roadMat" mainColor="(0.3882, 0.3882, 0.3882)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.2000" />
     </Components>
   </GameObject>
-  <GameObject name="TopBridge" position="(-3.7530, 0.1655, -2.4652)" rotation="(-0.6645, -0.2418, -0.2418, 0.6645)" scale="(0.7280, 0.7280, 0.8190)" mesh="curvedBridge">
+  <GameObject name="TopBridge" position="(-4.0800, 0.1655, -2.7400)" rotation="(-0.6645, -0.2418, -0.2418, 0.6645)" scale="(0.7280, 0.7280, 0.8190)" mesh="curvedBridge">
     <Components>
-      <BridgeComponent startPos="(-8.0556, 1.4300, 2.7531)" endPos="(3.4649, 1.4300, -10.8633)" />
+      <BridgeComponent startPos="(-8.3826, 1.4300, 2.4783)" endPos="(3.1379, 1.4300, -11.1381)" />
       <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.3000" emissionScale="1.0000" />
     </Components>
     <GameObject name="endTransform" position="(0.0018, 0.1521, 0.0154)" rotation="(0.7070, 0.0103, 0.0103, 0.7070)" scale="(0.0150, 0.0010, 0.0705)">
@@ -39,9 +44,9 @@
       <Components />
     </GameObject>
   </GameObject>
-  <GameObject name="MiddleBridge" position="(-0.1676, 0.1655, 0.5469)" rotation="(-0.6645, -0.2418, -0.2418, 0.6645)" scale="(0.7280, 0.7280, 0.8190)" mesh="curvedBridge">
+  <GameObject name="MiddleBridge" position="(-0.1000, 0.1655, 0.6000)" rotation="(-0.6645, -0.2418, -0.2418, 0.6645)" scale="(0.7280, 0.7280, 0.8190)" mesh="curvedBridge">
     <Components>
-      <BridgeComponent startPos="(-4.4702, 1.4300, 5.7652)" endPos="(7.0503, 1.4300, -7.8512)" />
+      <BridgeComponent startPos="(-4.4026, 1.4300, 5.8183)" endPos="(7.1179, 1.4300, -7.7981)" />
       <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.3000" emissionScale="1.0000" />
     </Components>
     <GameObject name="endTransform" position="(0.0018, 0.1521, 0.0154)" rotation="(0.7070, 0.0103, 0.0103, 0.7070)" scale="(0.0150, 0.0010, 0.0705)">
@@ -51,9 +56,9 @@
       <Components />
     </GameObject>
   </GameObject>
-  <GameObject name="BottomBridge" position="(3.0811, 0.1655, 3.2769)" rotation="(-0.6645, -0.2418, -0.2418, 0.6645)" scale="(0.7280, 0.7280, 0.8190)" mesh="curvedBridge">
+  <GameObject name="BottomBridge" position="(3.4800, 0.1655, 3.6200)" rotation="(-0.6645, -0.2418, -0.2418, 0.6645)" scale="(0.7280, 0.7280, 0.8190)" mesh="curvedBridge">
     <Components>
-      <BridgeComponent startPos="(-1.2215, 1.4300, 8.4952)" endPos="(10.2990, 1.4300, -5.1212)" />
+      <BridgeComponent startPos="(-0.8226, 1.4300, 8.8383)" endPos="(10.6979, 1.4300, -4.7781)" />
       <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.3000" emissionScale="1.0000" />
     </Components>
     <GameObject name="endTransform" position="(0.0018, 0.1521, 0.0154)" rotation="(0.7070, 0.0103, 0.0103, 0.7070)" scale="(0.0150, 0.0010, 0.0705)">
