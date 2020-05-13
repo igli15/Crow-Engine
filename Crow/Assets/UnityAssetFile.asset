@@ -1,3 +1,13 @@
-#texture ground: ground.jpg;
-#model Mausoleum: Mausoleum.fbx;
+#texture GraveyardPropAlbedo: GraveyardPropAlbedo.png;
+#texture GroundBaseColor: GroundBaseColor.png;
+#texture MausoleumDiffuse: MausoleumDiffuse.png;
+#texture MausoleumSpecular: MausoleumSpecular.png;
+#texture brickTex: brickTex.png;
+#model FenceGate: FenceGate.obj;
+#model HeadStone: HeadStone.obj;
+#model HeadStone2: HeadStone2.obj;
+#model HeadStoneBroken: HeadStoneBroken.obj;
+#model Mausoleum: Mausoleum.obj;
+#model crookedTree: crookedTree.obj;
 #model curvedBridge: curvedBridge.fbx;
+#model statue: statue.obj;

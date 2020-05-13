@@ -1,14 +1,11 @@
 <root>
-  <GameObject name="CrowCamera" position="(6.4300, 13.2300, 7.6800)" rotation="(-0.4108, 0.3496, 0.2059, 0.8165)" scale="(1.0000, 1.0000, 1.0000)">
+  <GameObject name="CrowCamera" position="(6.8800, 12.1100, 8.0000)" rotation="(-0.3991, 0.3525, 0.2008, 0.8223)" scale="(1.0000, 1.0000, 1.0000)">
     <Components>
       <Camera FOV="60" aspectRatio="1.777778" nearClipPlane="0.1" farClipPlane="1000" />
     </Components>
     <GameObject name="UnityCamera" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 1.0000, 0.0000, 0.0000)" scale="(1.0000, 1.0000, 1.0000)">
       <Components />
     </GameObject>
-  </GameObject>
-  <GameObject name="Mausoleum" position="(-8.2100, 1.7200, -6.2200)" rotation="(0.0000, 0.4212, 0.0000, 0.9070)" scale="(0.0042, 0.0042, 0.0042)" mesh="Mausoleum">
-    <Components />
   </GameObject>
   <GameObject name="CrowDirLight" position="(-3.3300, 17.9600, -3.3300)" rotation="(-0.3258, 0.1229, 0.3056, 0.8862)" scale="(1.0000, 1.0000, 1.0000)">
     <Components>
@@ -20,24 +17,29 @@
       <Light type="DIRECTIONAL" color="(1.0000, 1.0000, 0.9804)" intensity="0.5000" attenuationConstants="(1.0000, 0.0900, 0.0320)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
     </Components>
   </GameObject>
-  <GameObject name="path" position="(3.0151, 0.2340, 4.1682)" rotation="(0.0000, 0.4145, 0.0000, 0.9101)" scale="(46.5621, 0.0000, 1.4617)" mesh="cube">
+  <GameObject name="path" position="(4.4351, 0.2340, 5.5482)" rotation="(0.0000, 0.4145, 0.0000, 0.9101)" scale="(67.8969, 0.0000, 1.4617)" mesh="cube">
     <Components>
       <ColorMaterial materialName="roadMat" mainColor="(0.3882, 0.3882, 0.3882)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.2000" />
     </Components>
   </GameObject>
-  <GameObject name="path" position="(-0.5539, 0.1890, 1.1671)" rotation="(0.0000, 0.4226, 0.0000, 0.9063)" scale="(46.5621, 0.0000, 1.4617)" mesh="cube">
+  <GameObject name="path" position="(0.8661, 0.1890, 2.5471)" rotation="(0.0000, 0.4226, 0.0000, 0.9063)" scale="(68.2368, 0.0000, 1.4617)" mesh="cube">
     <Components>
       <ColorMaterial materialName="roadMat" mainColor="(0.3882, 0.3882, 0.3882)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.2000" />
     </Components>
   </GameObject>
-  <GameObject name="path" position="(-4.4930, 0.2340, -2.1440)" rotation="(0.0000, 0.4320, 0.0000, 0.9019)" scale="(46.5621, 0.0000, 1.4617)" mesh="cube">
+  <GameObject name="path" position="(-1.7500, 0.1300, -2.4100)" rotation="(0.0000, 0.4320, 0.0000, 0.9019)" scale="(62.7052, 0.0000, 1.4617)" mesh="cube">
     <Components>
       <ColorMaterial materialName="roadMat" mainColor="(0.3882, 0.3882, 0.3882)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.2000" />
     </Components>
   </GameObject>
-  <GameObject name="TopBridge" position="(-4.0800, 0.1655, -2.7400)" rotation="(-0.6645, -0.2418, -0.2418, 0.6645)" scale="(0.7280, 0.7280, 0.8190)" mesh="curvedBridge">
+  <GameObject name="Mausoleum" position="(-8.5400, 0.0000, -6.3800)" rotation="(0.0000, 0.4266, 0.0000, 0.9044)" scale="(0.6641, 0.5506, 0.5753)" mesh="Mausoleum">
     <Components>
-      <BridgeComponent startPos="(-8.3826, 1.4300, 2.4783)" endPos="(3.1379, 1.4300, -11.1381)" />
+      <TextureMaterial materialName="mausoleumMat" diffuseTextureName="MausoleumDiffuse" specularTextureName="MausoleumSpecular" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.3000" emissionScale="1.0000" />
+    </Components>
+  </GameObject>
+  <GameObject name="TopBridge" position="(-2.6600, 0.1655, -1.3600)" rotation="(-0.6645, -0.2418, -0.2418, 0.6645)" scale="(0.7280, 0.7280, 0.8190)" mesh="curvedBridge">
+    <Components>
+      <BridgeComponent startPos="(-6.9626, 1.4300, 3.8583)" endPos="(4.5579, 1.4300, -9.7581)" />
       <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.3000" emissionScale="1.0000" />
     </Components>
     <GameObject name="endTransform" position="(0.0018, 0.1521, 0.0154)" rotation="(0.7070, 0.0103, 0.0103, 0.7070)" scale="(0.0150, 0.0010, 0.0705)">
@@ -47,9 +49,9 @@
       <Components />
     </GameObject>
   </GameObject>
-  <GameObject name="MiddleBridge" position="(-0.1000, 0.1655, 0.6000)" rotation="(-0.6645, -0.2418, -0.2418, 0.6645)" scale="(0.7280, 0.7280, 0.8190)" mesh="curvedBridge">
+  <GameObject name="MiddleBridge" position="(1.3200, 0.1655, 1.9800)" rotation="(-0.6645, -0.2418, -0.2418, 0.6645)" scale="(0.7280, 0.7280, 0.8190)" mesh="curvedBridge">
     <Components>
-      <BridgeComponent startPos="(-4.4026, 1.4300, 5.8183)" endPos="(7.1179, 1.4300, -7.7981)" />
+      <BridgeComponent startPos="(-2.9826, 1.4300, 7.1983)" endPos="(8.5379, 1.4300, -6.4181)" />
       <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.3000" emissionScale="1.0000" />
     </Components>
     <GameObject name="endTransform" position="(0.0018, 0.1521, 0.0154)" rotation="(0.7070, 0.0103, 0.0103, 0.7070)" scale="(0.0150, 0.0010, 0.0705)">
@@ -59,9 +61,9 @@
       <Components />
     </GameObject>
   </GameObject>
-  <GameObject name="BottomBridge" position="(3.4800, 0.1655, 3.6200)" rotation="(-0.6645, -0.2418, -0.2418, 0.6645)" scale="(0.7280, 0.7280, 0.8190)" mesh="curvedBridge">
+  <GameObject name="BottomBridge" position="(4.9000, 0.1655, 5.0000)" rotation="(-0.6645, -0.2418, -0.2418, 0.6645)" scale="(0.7280, 0.7280, 0.8190)" mesh="curvedBridge">
     <Components>
-      <BridgeComponent startPos="(-0.8226, 1.4300, 8.8383)" endPos="(10.6979, 1.4300, -4.7781)" />
+      <BridgeComponent startPos="(0.5974, 1.4300, 10.2183)" endPos="(12.1179, 1.4300, -3.3981)" />
       <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.3000" emissionScale="1.0000" />
     </Components>
     <GameObject name="endTransform" position="(0.0018, 0.1521, 0.0154)" rotation="(0.7070, 0.0103, 0.0103, 0.7070)" scale="(0.0150, 0.0010, 0.0705)">
@@ -71,9 +73,10 @@
       <Components />
     </GameObject>
   </GameObject>
-  <GameObject name="Cube (3)" position="(0.8400, 0.0000, 0.1200)" rotation="(0.0000, -0.3342, 0.0000, 0.9425)" scale="(45.3081, 0.1934, 71.0604)" mesh="cube">
+  <GameObject name="Cube (3)" position="(7.9484, -0.0618, 4.7929)" rotation="(0.0000, -0.3420, 0.0000, 0.9397)" scale="(74.2690, 0.3170, 116.4823)" mesh="cube">
     <Components>
       <ColorMaterial materialName="enemyBaseMat" mainColor="(0.2627, 0.2627, 0.2627)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.2000" />
+      <TextureMaterial materialName="groundMat" diffuseTextureName="GroundBaseColor" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.1412, 0.1412, 0.1412)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.5000" emissionScale="1.0000" />
     </Components>
   </GameObject>
   <GameObject name="Cube (1)" position="(11.8261, -19.7185, 16.9186)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="cube">
@@ -81,9 +84,79 @@
       <TranslucentMaterial materialName="translucentMaterial" mainColor="(0.6039, 0.6039, 0.6039)" specularColor="(1.0000, 1.0000, 1.0000)" translucencyColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" translucentPower="0.8000" translucentScale="1.0000" translucentDistortion="1.2000" />
     </Components>
   </GameObject>
-  <GameObject name="water" position="(-0.2000, 0.1500, 0.7200)" rotation="(0.0000, 0.4176, 0.0000, 0.9086)" scale="(2.9161, 0.1000, 24.2742)" mesh="plane">
-    <Components>
-      <WaterMaterial materialName="waterMaterial" waveNoiseTexName="perlinNoise" depthGradientTexName="gradientMap" foamGradientTexName="foamGradient" causticsTexName="causticsTexture" mainColor="(0.1333, 0.2275, 0.3176)" foamColor="(0.3000, 0.3000, 0.3000)" noiseScale="0.8600" distanceScale="0.0700" causticsSpeed="0.0300" noiseSpeed="0.0500" />
-    </Components>
+  <GameObject name="Enviorement" position="(-4.3475, 0.8307, 4.6424)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)">
+    <Components />
+    <GameObject name="FenceGate" position="(-2.3133, 0.0969, -8.1128)" rotation="(0.0000, 0.4979, 0.0000, 0.8672)" scale="(0.3484, 0.3484, 0.3484)">
+      <Components />
+      <GameObject name="Gate_1_1" position="(0.1200, -2.1800, -3.1600)" rotation="(0.0000, -0.0725, 0.0000, 0.9974)" scale="(1.0000, 1.0000, 1.0000)" mesh="FenceGate">
+        <Components>
+          <TextureMaterial materialName="graveyardPropMat" diffuseTextureName="GraveyardPropAlbedo" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+        </Components>
+      </GameObject>
+    </GameObject>
+    <GameObject name="FenceGate (1)" position="(-1.6800, 0.0969, -8.9500)" rotation="(0.0000, 0.4979, 0.0000, 0.8672)" scale="(0.3484, 0.3484, 0.3484)">
+      <Components />
+      <GameObject name="Gate_1_1" position="(0.1200, -2.1800, -3.1600)" rotation="(0.0000, -0.0725, 0.0000, 0.9974)" scale="(1.0000, 1.0000, 1.0000)" mesh="FenceGate">
+        <Components>
+          <TextureMaterial materialName="graveyardPropMat" diffuseTextureName="GraveyardPropAlbedo" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+        </Components>
+      </GameObject>
+    </GameObject>
+    <GameObject name="HeadStoneBroken" position="(-0.2425, -0.7107, -0.0624)" rotation="(0.0000, 0.4072, 0.0000, 0.9133)" scale="(1.0000, 1.0000, 1.0000)">
+      <Components />
+      <GameObject name="Headstone_6_1_group2" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="HeadStoneBroken">
+        <Components>
+          <TextureMaterial materialName="graveyardPropMat" diffuseTextureName="GraveyardPropAlbedo" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+        </Components>
+      </GameObject>
+    </GameObject>
+    <GameObject name="HeadStone" position="(-0.6015, -0.6967, 1.1846)" rotation="(0.0000, 0.6225, 0.0000, 0.7826)" scale="(1.0000, 1.0000, 1.0000)">
+      <Components />
+      <GameObject name="Headstone_4_1_group1" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="HeadStone">
+        <Components>
+          <TextureMaterial materialName="graveyardPropMat" diffuseTextureName="GraveyardPropAlbedo" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+        </Components>
+      </GameObject>
+    </GameObject>
+    <GameObject name="HeadStone2" position="(0.7675, -0.7340, -0.9324)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)">
+      <Components />
+      <GameObject name="Headstone_2_5" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="HeadStone2">
+        <Components>
+          <TextureMaterial materialName="graveyardPropMat" diffuseTextureName="GraveyardPropAlbedo" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+        </Components>
+      </GameObject>
+    </GameObject>
+    <GameObject name="Enviorement_Trees" position="(-3.6525, 1.8516, -1.9613)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)">
+      <Components />
+      <GameObject name="crookedTree" position="(-0.7681, -2.5856, -1.3772)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)">
+        <Components />
+        <GameObject name="Broad_leaved_trees_A_group" position="(0.0000, 0.2600, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="crookedTree">
+          <Components>
+            <ColorMaterial materialName="defaultMaterial" mainColor="(0.4275, 0.3804, 0.2941)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" />
+          </Components>
+        </GameObject>
+      </GameObject>
+    </GameObject>
+    <GameObject name="water" position="(7.0375, -0.5507, -1.4424)" rotation="(0.0000, 0.4238, 0.0000, 0.9058)" scale="(3.0000, 0.1000, 24.2742)" mesh="plane">
+      <Components>
+        <WaterMaterial materialName="waterMaterial" waveNoiseTexName="perlinNoise" depthGradientTexName="gradientMap" foamGradientTexName="foamGradient" causticsTexName="causticsTexture" mainColor="(0.1333, 0.2275, 0.3176)" foamColor="(0.3000, 0.3000, 0.3000)" noiseScale="0.8600" distanceScale="0.0700" causticsSpeed="0.0300" noiseSpeed="0.0500" />
+      </Components>
+    </GameObject>
+    <GameObject name="FenceGate (2)" position="(-0.9700, 0.0969, -9.8000)" rotation="(0.0000, 0.4979, 0.0000, 0.8672)" scale="(0.3484, 0.3484, 0.3484)">
+      <Components />
+      <GameObject name="Gate_1_1" position="(0.1200, -2.1800, -3.1600)" rotation="(0.0000, -0.0725, 0.0000, 0.9974)" scale="(1.0000, 1.0000, 1.0000)" mesh="FenceGate">
+        <Components>
+          <TextureMaterial materialName="graveyardPropMat" diffuseTextureName="GraveyardPropAlbedo" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+        </Components>
+      </GameObject>
+    </GameObject>
+    <GameObject name="FenceGate (3)" position="(-0.2994, 0.0969, -11.0751)" rotation="(0.0000, 0.6486, 0.0000, 0.7612)" scale="(0.3484, 0.3484, 0.3484)">
+      <Components />
+      <GameObject name="Gate_1_1" position="(0.1200, -2.1800, -3.1600)" rotation="(0.0000, -0.0725, 0.0000, 0.9974)" scale="(1.0000, 1.0000, 1.0000)" mesh="FenceGate">
+        <Components>
+          <TextureMaterial materialName="graveyardPropMat" diffuseTextureName="GraveyardPropAlbedo" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+        </Components>
+      </GameObject>
+    </GameObject>
   </GameObject>
 </root>
