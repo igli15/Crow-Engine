@@ -68,6 +68,8 @@ int Window::CreateWindow(int windowWidth, int windowHeight, const char *windowNa
     Input::instance->window = this;
     glfwSetKeyCallback(m_internalWindow,Window::InputKeyCallback);
 
+    glewExperimental = GL_TRUE;
+
     return 1;
 }
 
