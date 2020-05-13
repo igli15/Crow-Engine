@@ -168,7 +168,7 @@ static char* ParseAssetPath(Tokenizer* tokenizer)
     size_t length = tokenizer->at - first;
     size_t realLength = length - whiteSpaceCount;
 
-    char* path = (char*)(malloc(realLength ));
+    char* path = (char*)(malloc(realLength +1 ));
 
     int index = 0;
     for (int i = 0; i < length; ++i)

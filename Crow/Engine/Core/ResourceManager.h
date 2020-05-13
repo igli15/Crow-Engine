@@ -142,7 +142,7 @@ public:
     ///Used internally by the font rendering system.
     const std::map<std::string,Font*>& InternalGetFontMap();
 
-    void LoadAssetFromAssetsFile(const std::string& filename,int maxNrOfAssets = 100);
+    void LoadAssetFromAssetsFile(const std::string& filename,size_t maxNrOfAssets = 100);
 };
 
 

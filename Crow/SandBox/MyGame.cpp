@@ -21,6 +21,7 @@ void MyGame::LoadAssets()
 {
     Game::LoadAssets();
 
+
     resourceManager->CreateShader("TranslucentVertexShader.vs","TranslucentFragmentShader.fs","translucentShader");
     resourceManager->CreateShader("VertexShader.vs","FragmentShader.fs","litShader");
     resourceManager->CreateShader("SpriteVertexShader.vs","SpriteFragmentShader.fs","spriteShader");
@@ -28,6 +29,7 @@ void MyGame::LoadAssets()
     resourceManager->CreateShader("WaterVertexShader.vs","WaterFragmentShader.fs","waterShader");
     resourceManager->CreateMaterial<ColorMaterial>("defaultMat");
     resourceManager->CreateMaterial<WaterMaterial>("waterMaterial");
+    // resourceManager->CreateMaterial<ColorMaterial>("cyanMaterial");
 
     resourceManager->LoadModel(("cube.obj"),"cube");
     resourceManager->LoadModel(("cone.obj"),"cone");
@@ -35,8 +37,33 @@ void MyGame::LoadAssets()
     resourceManager->LoadModel(("axis.obj"),"axis");
     resourceManager->LoadModel("plane.obj","plane");
 
+/*
+    resourceManager->LoadModel(("pine.obj"),"pine");
+    resourceManager->LoadModel(("ghost1.obj"),"ghost");
+    resourceManager->LoadModel(("dragon.obj"),"dragon");
+    resourceManager->LoadModel(("floatingRock.obj"),"floatingRock");
+    resourceManager->LoadModel(("Golem.fbx"),"golem");
+    resourceManager->LoadModel("canon.fbx","canon");
+
+    resourceManager->LoadModel(("bridgeTile.fbx"),"bridge");
+    resourceManager->LoadModel(("bridgeTileBegin.fbx"),"bridgeBegin");
+
+    resourceManager->LoadModel(("curvedBridge.fbx"),"curvedBridge");
+
+    resourceManager->LoadTexture("container.png","containerDiffuse");
+    resourceManager->LoadTexture("containerSpecular.png","containerSpecular");
+
     resourceManager->LoadTexture("crowIcon.png","crowTexture");
 
+    resourceManager->LoadTexture("bridgeDiffuse.png","bridgeTexture");
+    resourceManager->LoadTexture("matrix.jpg","matrixTexture");
+
+    resourceManager->LoadTexture("PerlinNoise.png","perlinNoise");
+    resourceManager->LoadTexture("gradientMap.png","gradientMap");
+
+    //resourceManager->LoadTexture("causticsTex.jpeg","causticsTexture");
+    //resourceManager->LoadTexture("foamGradient.png","foamGradient");
+*/
     resourceManager->LoadAssetFromAssetsFile("allAssets.asset");
 }
 

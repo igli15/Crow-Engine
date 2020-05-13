@@ -201,7 +201,7 @@ Sprite *ResourceManager::GetSprite(const std::string &name)
     return iterator->second;
 }
 
-void ResourceManager::LoadAssetFromAssetsFile(const std::string& filename,int maxAssets)
+void ResourceManager::LoadAssetFromAssetsFile(const std::string& filename,size_t maxAssets)
 {
     AssetCollection assetCollection = ParseAssetFile((ASSET_PATH + filename).data(),maxAssets);
 
