@@ -14,4 +14,3 @@
 #model canon : canon.fbx;
 #model bridge : bridgeTile.fbx;
 #model bridgeBegin : bridgeTileBegin.fbx;
-#model curvedBridge : curvedBridge.fbx;

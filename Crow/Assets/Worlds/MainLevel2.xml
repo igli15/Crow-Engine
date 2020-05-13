@@ -1,11 +1,14 @@
 <root>
-  <GameObject name="CrowCamera" position="(5.5000, 11.0600, 6.7000)" rotation="(-0.4359, 0.3430, 0.2166, 0.8034)" scale="(1.0000, 1.0000, 1.0000)">
+  <GameObject name="CrowCamera" position="(6.4300, 13.2300, 7.6800)" rotation="(-0.4108, 0.3496, 0.2059, 0.8165)" scale="(1.0000, 1.0000, 1.0000)">
     <Components>
       <Camera FOV="60" aspectRatio="1.777778" nearClipPlane="0.1" farClipPlane="1000" />
     </Components>
     <GameObject name="UnityCamera" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 1.0000, 0.0000, 0.0000)" scale="(1.0000, 1.0000, 1.0000)">
       <Components />
     </GameObject>
+  </GameObject>
+  <GameObject name="Mausoleum" position="(-8.2100, 1.7200, -6.2200)" rotation="(0.0000, 0.4212, 0.0000, 0.9070)" scale="(0.0042, 0.0042, 0.0042)" mesh="Mausoleum">
+    <Components />
   </GameObject>
   <GameObject name="CrowDirLight" position="(-3.3300, 17.9600, -3.3300)" rotation="(-0.3258, 0.1229, 0.3056, 0.8862)" scale="(1.0000, 1.0000, 1.0000)">
     <Components>
@@ -68,7 +71,7 @@
       <Components />
     </GameObject>
   </GameObject>
-  <GameObject name="Cube (3)" position="(0.8400, 0.0000, 0.1200)" rotation="(0.0000, -0.3342, 0.0000, 0.9425)" scale="(28.4313, 0.1214, 44.5911)" mesh="cube">
+  <GameObject name="Cube (3)" position="(0.8400, 0.0000, 0.1200)" rotation="(0.0000, -0.3342, 0.0000, 0.9425)" scale="(45.3081, 0.1934, 71.0604)" mesh="cube">
     <Components>
       <ColorMaterial materialName="enemyBaseMat" mainColor="(0.2627, 0.2627, 0.2627)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.2000" />
     </Components>

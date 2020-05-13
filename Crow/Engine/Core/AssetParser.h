@@ -140,14 +140,14 @@ static char* ParseAssetType(Tokenizer* tokenizer)
     //minus one here because we advanced one past ur alpha token in the end again.
     size_t textLength = (tokenizer->at-1) - first;
 
-    char* assetType = (char*)(malloc(textLength ));
+    char* assetType = (char*)(malloc(textLength + 1));
     for (int i = 0; i < textLength; ++i)
     {
         if(first[i+1] != ' ')
             assetType[i] = first[i+1];
     }
 
-    assetType[textLength ] = '\0';
+    assetType[textLength] = '\0';
     return assetType;
 }
 
@@ -201,7 +201,7 @@ static char* ParseAssetName(Tokenizer* tokenizer)
     size_t length = tokenizer->at - first;
     size_t realLength = length - whiteSpaceCount;
 
-    char* path = (char*)(malloc(realLength ));
+    char* path = (char*)(malloc(realLength +1));
 
     int index = 0;
     for (int i = 0; i < length; ++i)
