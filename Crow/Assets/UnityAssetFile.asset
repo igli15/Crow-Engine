@@ -1,0 +1,8 @@
+#texture ground: ground.jpg;
+#model curvedBridge: curvedBridge.fbx;
+#model floatingRock: floatingRock.obj;
+#model ghost1: ghost1.obj;
+#model ghost_puppets: ghost_puppets.fbx;
+#model model: model.obj;
+#model pine: pine.obj;
+#model plane: plane.obj;

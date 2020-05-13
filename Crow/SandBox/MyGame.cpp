@@ -65,6 +65,7 @@ void MyGame::LoadAssets()
     //resourceManager->LoadTexture("foamGradient.png","foamGradient");
 */
     resourceManager->LoadAssetFromAssetsFile("allAssets.asset");
+    resourceManager->LoadAssetFromAssetsFile("UnityAssetFile.asset");
 }
 
 void MyGame::Init()
