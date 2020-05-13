@@ -8,6 +8,7 @@
 
 #include "../Rendering/Font.h"
 #include "../Rendering/Sprite.h"
+#include "AssetParser.h"
 
 
 Texture *ResourceManager::LoadTexture(const std::string &path, const std::string &name)
@@ -198,4 +199,28 @@ Sprite *ResourceManager::GetSprite(const std::string &name)
     }
 
     return iterator->second;
+}
+
+void ResourceManager::LoadAssetFromAssetsFile(const std::string& filename,int maxAssets)
+{
+    AssetCollection assetCollection = ParseAssetFile((ASSET_PATH + filename).data(),maxAssets);
+
+    for (int i = 0; i <assetCollection.validCount; ++i)
+    {
+        AssetToken assetToken = assetCollection.assetTokens[i];
+
+        if(strcmp(assetToken.assetType,"texture") == 0)
+        {
+            LoadTexture(assetToken.assetPath,assetToken.assetName);
+        }
+        else if (strcmp(assetToken.assetType,"model") == 0)
+        {
+            LoadModel(assetToken.assetPath,assetToken.assetName);
+        }
+        /*
+        std::cout<<assetToken.assetType<<std::endl;
+        std::cout<<assetToken.assetName<<std::endl;
+        std::cout<<assetToken.assetPath<<std::endl;
+         */
+    }
 }

@@ -570,7 +570,6 @@ CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o: /usr/local/include/spdlog
 
 CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: ../Engine/Components/MeshInfo.h
-CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: ../Engine/Core/AssetParser.h
 CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: ../Engine/Core/Game.cpp
 CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: ../Engine/Core/Game.h
 CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: ../Engine/Core/Input.h
@@ -1421,6 +1420,7 @@ CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.o: /usr/local/include/spdlog/versio
 
 CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o: ../Engine/Components/MeshInfo.h
+CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o: ../Engine/Core/AssetParser.h
 CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o: ../Engine/Core/Game.h
 CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o: ../Engine/Core/Input.h
 CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o: ../Engine/Core/Renderer.h

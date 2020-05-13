@@ -48,7 +48,6 @@ static char* ReadEntireFileIntoMemoryAndNullTerminate(char* fileName)
 enum TokenType
 {
     IDENTIFIER,
-    COLUMN,
     SEMICOLUMN,
     ENDOFSTREAM,
     UNKOWN
@@ -106,7 +105,6 @@ static Token GetToken(Tokenizer* tokenizer)
         case '#': {token.tokenType = IDENTIFIER;}
         {
         } break;
-        case ':': {token.tokenType = COLUMN;} break;
         case ';': {token.tokenType = SEMICOLUMN;} break;
         case '\0': {token.tokenType = ENDOFSTREAM;} break;
         default: {token.tokenType = UNKOWN;} break;
@@ -122,6 +120,12 @@ struct AssetToken
     char* assetType;
     char* assetPath;
     char* assetName;
+};
+
+struct AssetCollection
+{
+    AssetToken* assetTokens;
+    size_t validCount = 0;
 };
 
 static char* ParseAssetType(Tokenizer* tokenizer)
@@ -213,7 +217,7 @@ static char* ParseAssetName(Tokenizer* tokenizer)
     return path;
 }
 
-static void ParseFile(char* fileName)
+static AssetCollection ParseAssetFile(char* fileName, size_t maxNrOfAssets = 100)
 {
    char* fileContent =  ReadEntireFileIntoMemoryAndNullTerminate(fileName);
 
@@ -222,26 +226,22 @@ static void ParseFile(char* fileName)
    Tokenizer tokenizer {};
    tokenizer.at = fileContent;
 
-   AssetToken*  assetTokens = (AssetToken*)(malloc(100 * sizeof(AssetToken)));
+   AssetToken* assetTokens = (AssetToken*)(malloc(maxNrOfAssets * sizeof(AssetToken)));
    int validSize = 0;
 
    while (parsing)
    {
        Token token = GetToken(& tokenizer);
 
-       AssetToken assetToken = assetTokens[validSize];
+       AssetToken* assetToken = &assetTokens[validSize];
 
        switch (token.tokenType)
        {
            case IDENTIFIER:
            {
-               assetToken.assetType = ParseAssetType(&tokenizer);
-               assetToken.assetName = ParseAssetName(&tokenizer);
-               assetToken.assetPath = ParseAssetPath(&tokenizer);
-
-               std::cout<<assetToken.assetType<<std::endl;
-               std::cout<<assetToken.assetName<<std::endl;
-               std::cout<<assetToken.assetPath<<std::endl;
+               assetToken->assetType = ParseAssetType(&tokenizer);
+               assetToken->assetName = ParseAssetName(&tokenizer);
+               assetToken->assetPath = ParseAssetPath(&tokenizer);
 
            }break;
            case SEMICOLUMN:
@@ -253,8 +253,19 @@ static void ParseFile(char* fileName)
                 parsing = false;
 
            }break;
+           case UNKOWN:
+           {
+               //printf("%d: %. *s\n",token.tokenType,token.textLength,token.text);
+           }
+           break;
        }
    }
+
+   AssetCollection assetCollection{};
+   assetCollection.assetTokens = assetTokens;
+   assetCollection.validCount = validSize;
+   return assetCollection;
+
 };
 
 #endif //CROW_ASSETPARSER_H

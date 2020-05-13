@@ -1,4 +1,17 @@
 
-#texture crow : crow.png;
-#model   cube : cube.obj;
-#texture container : container.png;
+#texture bridgeTexture : bridgeDiffuse.png;
+#texture containerDiffuse : container.png;
+#texture containerSpecular : containerSpecular.png;
+#texture matrixTexture : matrix.jpg;
+#texture perlinNoise : PerlinNoise.png;
+#texture gradientMap : gradientMap.png;
+#texture causticsTexture : causticsTex.jpeg;
+#texture foamGradient : foamGradient.png;
+
+#model dragon : dragon.obj;
+#model ghost : ghost1.obj;
+#model golem : Golem.fbx;
+#model canon : canon.fbx;
+#model bridge : bridgeTile.fbx;
+#model bridgeBegin : bridgeTileBegin.fbx;
+#model curvedBridge : curvedBridge.fbx;

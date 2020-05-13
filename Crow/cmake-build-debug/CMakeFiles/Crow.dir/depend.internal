@@ -571,7 +571,6 @@ CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o
 CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Crow.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
- /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/AssetParser.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
@@ -1422,6 +1421,7 @@ CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.o
 CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Crow.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/AssetParser.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Renderer.h

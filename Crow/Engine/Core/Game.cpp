@@ -12,7 +12,6 @@
 #include "Renderer.h"
 #include "../Utils/Random.h"
 
-#include "AssetParser.h"
 #include "../../Crow.h"
 
 Game* Game::m_instance;
@@ -47,7 +46,6 @@ void Game::InitWorld()
     currentWorld->Build();
     currentWorld->InitAllSystems();
 
-    ParseFile((ASSET_PATH + "allAssets.asset").data());
 }
 
 
