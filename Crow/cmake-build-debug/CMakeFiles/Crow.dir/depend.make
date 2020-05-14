@@ -3944,6 +3944,7 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: ../Engine/R
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: ../Engine/Rendering/Materials/PortalMaterial.cpp
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: ../Engine/Rendering/Materials/PortalMaterial.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: ../Engine/Rendering/Shader.h
+CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: ../Engine/Rendering/Texture.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: /usr/local/include/GL/glew.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: /usr/local/include/GLFW/glfw3.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: /usr/local/include/glm/common.hpp

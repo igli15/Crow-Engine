@@ -7,6 +7,7 @@
 
 
 #include "../AbstractMaterial.h"
+#include "../Texture.h"
 
 class PortalMaterial : public AbstractMaterial
 {
@@ -23,9 +24,13 @@ public:
     void BufferMaterialUniforms() override;
 
     glm::vec3 mainColor = {1,1,1};
+    glm::vec3 secondColor = {1,1,1};
+    Texture* noiseTexture = nullptr;
+    Texture* rotationMaskTexture = nullptr;
+    Texture* portalGlowMask = nullptr;
 
 private:
-    GLint  m_uMainColor,m_uViewMatrix,m_uProjectionMatrix,m_uTime;
+    GLint  m_uMainColor,m_uSecondColor,m_uViewMatrix,m_uProjectionMatrix,m_uTime,m_uNoiseTex,m_uRotationMask,m_uGlowMask;
 };
 
 

@@ -3945,6 +3945,7 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/PortalMaterial.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/PortalMaterial.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
  /usr/local/include/GL/glew.h
  /usr/local/include/GLFW/glfw3.h
  /usr/local/include/glm/common.hpp

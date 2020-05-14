@@ -7,6 +7,9 @@
 #texture gradientMap : gradientMap.png;
 #texture causticsTexture : causticsTex.jpeg;
 #texture foamGradient : foamGradient.png;
+#texture gridPatternTexture : gridPattern.jpg;
+#texture portalRotationMask : portalRotationMask.png;
+#texture portalGlowMap : portalGlowMap.png;
 
 #model dragon : dragon.obj;
 #model ghost : ghost1.obj;
