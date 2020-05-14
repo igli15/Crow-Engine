@@ -7,6 +7,11 @@
       <Components />
     </GameObject>
   </GameObject>
+  <GameObject name="CrowDirLight" position="(-4.9100, 27.0900, 5.6600)" rotation="(-0.0427, -0.8685, 0.4880, -0.0760)" scale="(1.0000, 1.0000, 1.0000)">
+    <Components>
+      <Light type="DIRECTIONAL" color="(0.4390, 0.5250, 0.6120)" intensity="0.3000" attenuationConstants="(1.0000, 0.0900, 0.0320)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
+    </Components>
+  </GameObject>
   <GameObject name="path" position="(4.4351, 0.1200, 5.5482)" rotation="(0.0000, 0.4145, 0.0000, 0.9101)" scale="(67.8969, 0.0100, 1.4617)" mesh="cube">
     <Components>
       <TextureMaterial materialName="pathMat" diffuseTextureName="Sand" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.1137, 0.1137, 0.1137)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="256.0000" ambientIntensity="0.3000" emissionScale="1.0000" />
@@ -24,10 +29,10 @@
   </GameObject>
   <GameObject name="TopBridge" position="(-2.6600, 0.1655, -1.3600)" rotation="(-0.6645, -0.2418, -0.2418, 0.6645)" scale="(0.7280, 0.7280, 0.8190)" mesh="curvedBridge">
     <Components>
-      <BridgeComponent startPos="(-6.9626, 1.4300, 3.8583)" endPos="(4.5579, 1.4300, -9.7581)" />
+      <BridgeComponent startPos="(-6.9626, 1.4300, 3.8583)" endPos="(3.4505, 1.4300, -8.3590)" />
       <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.3059, 0.3059, 0.3059)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
     </Components>
-    <GameObject name="endTransform" position="(0.0018, 0.1521, 0.0154)" rotation="(0.7070, 0.0103, 0.0103, 0.7070)" scale="(0.0150, 0.0010, 0.0705)">
+    <GameObject name="endTransform" position="(0.0025, 0.1276, 0.0154)" rotation="(0.7070, 0.0103, 0.0103, 0.7070)" scale="(0.0150, 0.0010, 0.0705)">
       <Components />
     </GameObject>
     <GameObject name="startTransform" position="(0.0008, -0.0929, 0.0154)" rotation="(0.7070, 0.0103, 0.0103, 0.7070)" scale="(0.0150, 0.0010, 0.0705)">
@@ -36,10 +41,10 @@
   </GameObject>
   <GameObject name="MiddleBridge" position="(1.3200, 0.1655, 1.9800)" rotation="(-0.6645, -0.2418, -0.2418, 0.6645)" scale="(0.7280, 0.7280, 0.8190)" mesh="curvedBridge">
     <Components>
-      <BridgeComponent startPos="(-2.9826, 1.4300, 7.1983)" endPos="(8.5379, 1.4300, -6.4181)" />
+      <BridgeComponent startPos="(-2.9826, 1.4300, 7.1983)" endPos="(7.1842, 1.4300, -4.7029)" />
       <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.3059, 0.3059, 0.3059)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
     </Components>
-    <GameObject name="endTransform" position="(0.0018, 0.1521, 0.0154)" rotation="(0.7070, 0.0103, 0.0103, 0.7070)" scale="(0.0150, 0.0010, 0.0705)">
+    <GameObject name="endTransform" position="(0.0027, 0.1221, 0.0154)" rotation="(0.7070, 0.0103, 0.0103, 0.7070)" scale="(0.0150, 0.0010, 0.0705)">
       <Components />
     </GameObject>
     <GameObject name="startTransform" position="(0.0008, -0.0929, 0.0154)" rotation="(0.7070, 0.0103, 0.0103, 0.7070)" scale="(0.0150, 0.0010, 0.0705)">
@@ -48,10 +53,10 @@
   </GameObject>
   <GameObject name="BottomBridge" position="(4.9000, 0.1655, 5.0000)" rotation="(-0.6645, -0.2418, -0.2418, 0.6645)" scale="(0.7280, 0.7280, 0.8190)" mesh="curvedBridge">
     <Components>
-      <BridgeComponent startPos="(0.5974, 1.4300, 10.2183)" endPos="(12.1179, 1.4300, -3.3981)" />
+      <BridgeComponent startPos="(0.5974, 1.4300, 10.2183)" endPos="(11.0011, 1.4300, -1.9879)" />
       <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.3059, 0.3059, 0.3059)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
     </Components>
-    <GameObject name="endTransform" position="(0.0018, 0.1521, 0.0154)" rotation="(0.7070, 0.0103, 0.0103, 0.7070)" scale="(0.0150, 0.0010, 0.0705)">
+    <GameObject name="endTransform" position="(0.0025, 0.1274, 0.0154)" rotation="(0.7070, 0.0103, 0.0103, 0.7070)" scale="(0.0150, 0.0010, 0.0705)">
       <Components />
     </GameObject>
     <GameObject name="startTransform" position="(0.0008, -0.0929, 0.0154)" rotation="(0.7070, 0.0103, 0.0103, 0.7070)" scale="(0.0150, 0.0010, 0.0705)">
@@ -148,10 +153,15 @@
       </GameObject>
     </GameObject>
   </GameObject>
-  <GameObject name="Portals" position="(-4.9864, 1.4560, -2.8067)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)">
+  <GameObject name="PlayerPortals" position="(-4.9864, 1.4560, -2.8067)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)">
     <Components />
     <GameObject name="PortalFrame" position="(3.6500, -1.0600, 14.6200)" rotation="(0.0000, 0.9478, 0.0000, 0.3189)" scale="(1.0000, 1.0000, 1.0000)">
       <Components />
+      <GameObject name="CrowPointLight" position="(0.0000, 0.8000, 0.8000)" rotation="(0.0000, -0.9478, 0.0000, 0.3189)" scale="(1.0000, 1.0000, 1.0000)">
+        <Components>
+          <Light type="POINT" color="(0.0196, 0.1961, 0.2588)" intensity="0.7000" attenuationConstants="(1.0000, 0.1000, 0.2000)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
+        </Components>
+      </GameObject>
       <GameObject name="PortalFrame" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="PortalFrame">
         <Components>
           <ColorMaterial materialName="portalFrameMat" mainColor="(0.3608, 0.3608, 0.3608)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" />
@@ -161,13 +171,18 @@
         <Components />
         <GameObject name="PortalPlane" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="PortalPlane">
           <Components>
-            <PortalMaterial materialName="playerPortalMat" noiseTextureName="perlinNoise" rotationMaskTextureName="portalRotationMask" glowMaskTextureName="portalGlowMap" mainColor="(0.0000, 0.0549, 0.5137)" secondColor="(0.0196, 0.1961, 0.2588)" swirlAmount="0.4000" rotationSpeed="5.0000" scalingSpeed="5.0000" />
+            <PortalMaterial materialName="playerPortalMat" noiseTextureName="perlinNoise" rotationMaskTextureName="portalRotationMask" glowMaskTextureName="portalGlowMap" mainColor="(0.0000, 0.0549, 0.5137)" secondColor="(0.1373, 0.1373, 0.1373)" swirlAmount="0.4000" rotationSpeed="5.0000" scalingSpeed="5.0000" />
           </Components>
         </GameObject>
       </GameObject>
     </GameObject>
     <GameObject name="PortalFrame (1)" position="(0.2800, -1.0600, 12.0600)" rotation="(0.0000, 0.9478, 0.0000, 0.3189)" scale="(1.0000, 1.0000, 1.0000)">
       <Components />
+      <GameObject name="CrowPointLight" position="(0.0000, 0.8000, 0.8000)" rotation="(0.0000, -0.9478, 0.0000, 0.3189)" scale="(1.0000, 1.0000, 1.0000)">
+        <Components>
+          <Light type="POINT" color="(0.0196, 0.1961, 0.2588)" intensity="0.7000" attenuationConstants="(1.0000, 0.1000, 0.2000)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
+        </Components>
+      </GameObject>
       <GameObject name="PortalFrame" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="PortalFrame">
         <Components>
           <ColorMaterial materialName="portalFrameMat" mainColor="(0.3608, 0.3608, 0.3608)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" />
@@ -177,13 +192,18 @@
         <Components />
         <GameObject name="PortalPlane" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="PortalPlane">
           <Components>
-            <PortalMaterial materialName="playerPortalMat" noiseTextureName="perlinNoise" rotationMaskTextureName="portalRotationMask" glowMaskTextureName="portalGlowMap" mainColor="(0.0000, 0.0549, 0.5137)" secondColor="(0.0196, 0.1961, 0.2588)" swirlAmount="0.4000" rotationSpeed="5.0000" scalingSpeed="5.0000" />
+            <PortalMaterial materialName="playerPortalMat" noiseTextureName="perlinNoise" rotationMaskTextureName="portalRotationMask" glowMaskTextureName="portalGlowMap" mainColor="(0.0000, 0.0549, 0.5137)" secondColor="(0.1373, 0.1373, 0.1373)" swirlAmount="0.4000" rotationSpeed="5.0000" scalingSpeed="5.0000" />
           </Components>
         </GameObject>
       </GameObject>
     </GameObject>
     <GameObject name="PortalFrame (2)" position="(-3.5900, -1.0600, 9.1200)" rotation="(0.0000, 0.9478, 0.0000, 0.3189)" scale="(1.0000, 1.0000, 1.0000)">
       <Components />
+      <GameObject name="CrowPointLight" position="(0.0000, 0.8000, 0.8000)" rotation="(0.0000, -0.9478, 0.0000, 0.3189)" scale="(1.0000, 1.0000, 1.0000)">
+        <Components>
+          <Light type="POINT" color="(0.0196, 0.1961, 0.2588)" intensity="0.7000" attenuationConstants="(1.0000, 0.1000, 0.2000)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
+        </Components>
+      </GameObject>
       <GameObject name="PortalFrame" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="PortalFrame">
         <Components>
           <ColorMaterial materialName="portalFrameMat" mainColor="(0.3608, 0.3608, 0.3608)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" />
@@ -193,15 +213,76 @@
         <Components />
         <GameObject name="PortalPlane" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="PortalPlane">
           <Components>
-            <PortalMaterial materialName="playerPortalMat" noiseTextureName="perlinNoise" rotationMaskTextureName="portalRotationMask" glowMaskTextureName="portalGlowMap" mainColor="(0.0000, 0.0549, 0.5137)" secondColor="(0.0196, 0.1961, 0.2588)" swirlAmount="0.4000" rotationSpeed="5.0000" scalingSpeed="5.0000" />
+            <PortalMaterial materialName="playerPortalMat" noiseTextureName="perlinNoise" rotationMaskTextureName="portalRotationMask" glowMaskTextureName="portalGlowMap" mainColor="(0.0000, 0.0549, 0.5137)" secondColor="(0.1373, 0.1373, 0.1373)" swirlAmount="0.4000" rotationSpeed="5.0000" scalingSpeed="5.0000" />
           </Components>
         </GameObject>
       </GameObject>
     </GameObject>
   </GameObject>
-  <GameObject name="CrowPointLight" position="(-1.1413, 1.3260, 11.2584)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)">
-    <Components>
-      <Light type="POINT" color="(0.0000, 0.0549, 0.5137)" intensity="1.0000" attenuationConstants="(1.0000, 0.0900, 0.0320)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
-    </Components>
+  <GameObject name="EnemyPortals" position="(7.8585, 1.4560, 5.0852)" rotation="(0.0000, -0.9995, 0.0000, -0.0320)" scale="(1.0000, 1.0000, 1.0000)">
+    <Components />
+    <GameObject name="PortalFrame" position="(4.9900, -1.0600, 13.9500)" rotation="(0.0000, 0.9478, 0.0000, 0.3189)" scale="(1.0000, 1.0000, 1.0000)">
+      <Components />
+      <GameObject name="CrowPointLight" position="(0.0000, 0.8000, 0.8000)" rotation="(0.0000, -0.9478, 0.0000, 0.3189)" scale="(1.0000, 1.0000, 1.0000)">
+        <Components>
+          <Light type="POINT" color="(0.6392, 0.3922, 0.1490)" intensity="0.7000" attenuationConstants="(1.0000, 0.1000, 0.2000)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
+        </Components>
+      </GameObject>
+      <GameObject name="PortalFrame" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="PortalFrame">
+        <Components>
+          <ColorMaterial materialName="portalFrameMat" mainColor="(0.3608, 0.3608, 0.3608)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" />
+        </Components>
+      </GameObject>
+      <GameObject name="PortalPlane" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)">
+        <Components />
+        <GameObject name="PortalPlane" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="PortalPlane">
+          <Components>
+            <PortalMaterial materialName="enemyPortalMat" noiseTextureName="perlinNoise" rotationMaskTextureName="portalRotationMask" glowMaskTextureName="portalGlowMap" mainColor="(0.6392, 0.3922, 0.1490)" secondColor="(0.1373, 0.1373, 0.1373)" swirlAmount="0.4000" rotationSpeed="5.0000" scalingSpeed="5.0000" />
+          </Components>
+        </GameObject>
+      </GameObject>
+    </GameObject>
+    <GameObject name="PortalFrame (1)" position="(0.8400, -1.0600, 10.8000)" rotation="(0.0000, 0.9478, 0.0000, 0.3189)" scale="(1.0000, 1.0000, 1.0000)">
+      <Components />
+      <GameObject name="CrowPointLight" position="(0.0000, 0.8000, 0.8000)" rotation="(0.0000, -0.9478, 0.0000, 0.3189)" scale="(1.0000, 1.0000, 1.0000)">
+        <Components>
+          <Light type="POINT" color="(0.6392, 0.3922, 0.1490)" intensity="0.7000" attenuationConstants="(1.0000, 0.1000, 0.2000)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
+        </Components>
+      </GameObject>
+      <GameObject name="PortalFrame" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="PortalFrame">
+        <Components>
+          <ColorMaterial materialName="portalFrameMat" mainColor="(0.3608, 0.3608, 0.3608)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" />
+        </Components>
+      </GameObject>
+      <GameObject name="PortalPlane" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)">
+        <Components />
+        <GameObject name="PortalPlane" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="PortalPlane">
+          <Components>
+            <PortalMaterial materialName="enemyPortalMat" noiseTextureName="perlinNoise" rotationMaskTextureName="portalRotationMask" glowMaskTextureName="portalGlowMap" mainColor="(0.6392, 0.3922, 0.1490)" secondColor="(0.1373, 0.1373, 0.1373)" swirlAmount="0.4000" rotationSpeed="5.0000" scalingSpeed="5.0000" />
+          </Components>
+        </GameObject>
+      </GameObject>
+    </GameObject>
+    <GameObject name="PortalFrame (2)" position="(-3.0100, -1.0600, 7.8800)" rotation="(0.0000, 0.9478, 0.0000, 0.3189)" scale="(1.0000, 1.0000, 1.0000)">
+      <Components />
+      <GameObject name="CrowPointLight" position="(0.0000, 0.8000, 0.8000)" rotation="(0.0000, -0.9478, 0.0000, 0.3189)" scale="(1.0000, 1.0000, 1.0000)">
+        <Components>
+          <Light type="POINT" color="(0.6392, 0.3922, 0.1490)" intensity="0.7000" attenuationConstants="(1.0000, 0.1000, 0.2000)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
+        </Components>
+      </GameObject>
+      <GameObject name="PortalFrame" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="PortalFrame">
+        <Components>
+          <ColorMaterial materialName="portalFrameMat" mainColor="(0.3608, 0.3608, 0.3608)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" />
+        </Components>
+      </GameObject>
+      <GameObject name="PortalPlane" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)">
+        <Components />
+        <GameObject name="PortalPlane" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="PortalPlane">
+          <Components>
+            <PortalMaterial materialName="enemyPortalMat" noiseTextureName="perlinNoise" rotationMaskTextureName="portalRotationMask" glowMaskTextureName="portalGlowMap" mainColor="(0.6392, 0.3922, 0.1490)" secondColor="(0.1373, 0.1373, 0.1373)" swirlAmount="0.4000" rotationSpeed="5.0000" scalingSpeed="5.0000" />
+          </Components>
+        </GameObject>
+      </GameObject>
+    </GameObject>
   </GameObject>
 </root>
