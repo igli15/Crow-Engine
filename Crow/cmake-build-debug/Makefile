@@ -717,6 +717,33 @@ Engine/Rendering/Materials/ColorMaterial.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.s
 .PHONY : Engine/Rendering/Materials/ColorMaterial.cpp.s
 
+Engine/Rendering/Materials/PortalMaterial.o: Engine/Rendering/Materials/PortalMaterial.cpp.o
+
+.PHONY : Engine/Rendering/Materials/PortalMaterial.o
+
+# target to build an object file
+Engine/Rendering/Materials/PortalMaterial.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o
+.PHONY : Engine/Rendering/Materials/PortalMaterial.cpp.o
+
+Engine/Rendering/Materials/PortalMaterial.i: Engine/Rendering/Materials/PortalMaterial.cpp.i
+
+.PHONY : Engine/Rendering/Materials/PortalMaterial.i
+
+# target to preprocess a source file
+Engine/Rendering/Materials/PortalMaterial.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.i
+.PHONY : Engine/Rendering/Materials/PortalMaterial.cpp.i
+
+Engine/Rendering/Materials/PortalMaterial.s: Engine/Rendering/Materials/PortalMaterial.cpp.s
+
+.PHONY : Engine/Rendering/Materials/PortalMaterial.s
+
+# target to generate assembly for a file
+Engine/Rendering/Materials/PortalMaterial.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.s
+.PHONY : Engine/Rendering/Materials/PortalMaterial.cpp.s
+
 Engine/Rendering/Materials/SpriteMaterial.o: Engine/Rendering/Materials/SpriteMaterial.cpp.o
 
 .PHONY : Engine/Rendering/Materials/SpriteMaterial.o
@@ -2250,6 +2277,9 @@ help:
 	@echo "... Engine/Rendering/Materials/ColorMaterial.o"
 	@echo "... Engine/Rendering/Materials/ColorMaterial.i"
 	@echo "... Engine/Rendering/Materials/ColorMaterial.s"
+	@echo "... Engine/Rendering/Materials/PortalMaterial.o"
+	@echo "... Engine/Rendering/Materials/PortalMaterial.i"
+	@echo "... Engine/Rendering/Materials/PortalMaterial.s"
 	@echo "... Engine/Rendering/Materials/SpriteMaterial.o"
 	@echo "... Engine/Rendering/Materials/SpriteMaterial.i"
 	@echo "... Engine/Rendering/Materials/SpriteMaterial.s"

@@ -17,6 +17,7 @@
 #include "../../Engine/Components/Camera.h"
 #include "../../Engine/Rendering/Materials/TextureMaterial.h"
 #include "../../Engine/Rendering/Materials/WaterMaterial.h"
+#include "../../Engine/Rendering/Materials/PortalMaterial.h"
 
 void TranslucentMaterialTestWorld::Build()
 {
@@ -74,6 +75,14 @@ void TranslucentMaterialTestWorld::Build()
     plane.AddComponent(MeshInfo{planeModel,mat});
     planeTransform->Translate(glm::vec3(0,-2,0));
     planeTransform->Scale(glm::vec3(4,1,20));
+
+    EntityHandle portalPlane = CreateEntity();
+    Transform* portalPlaneTransform = portalPlane.AddComponent(Transform{});
+
+    PortalMaterial* portalMaterial = resourceManager->GetMaterial<PortalMaterial>("portalMaterial");
+    portalPlane.AddComponent(MeshInfo{resourceManager->GetModel("PortalPlane"),portalMaterial});
+    portalPlaneTransform->Translate(glm::vec3(0,2,3));
+    portalPlaneTransform->Rotate(90,glm::vec3(0,0,1));
 
     /*
     {

@@ -9,6 +9,8 @@
 #model HeadStone2: HeadStone2.obj;
 #model HeadStoneBroken: HeadStoneBroken.obj;
 #model Mausoleum: Mausoleum.obj;
+#model PortalFrame: PortalFrame.obj;
+#model PortalPlane: PortalPlane.obj;
 #model SphereGemLarge: SphereGemLarge.fbx;
 #model crookedTree: crookedTree.obj;
 #model curvedBridge: curvedBridge.fbx;

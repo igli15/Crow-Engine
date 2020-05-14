@@ -16,6 +16,7 @@
 #include "../Game/Components/BridgeComponent.h"
 #include "../Engine/Editor/UnitySceneParser.h"
 #include "../Engine/Rendering/Materials/WaterMaterial.h"
+#include "../Engine/Rendering/Materials/PortalMaterial.h"
 
 void MyGame::LoadAssets()
 {
@@ -27,8 +28,10 @@ void MyGame::LoadAssets()
     resourceManager->CreateShader("SpriteVertexShader.vs","SpriteFragmentShader.fs","spriteShader");
     resourceManager->CreateShader("TextureVertexShader.vs","TextureFragmentShader.fs","textureShader");
     resourceManager->CreateShader("WaterVertexShader.vs","WaterFragmentShader.fs","waterShader");
+    resourceManager->CreateShader("PortalVertexShader.vs","PortalFragmentShader.fs","portalShader");
     resourceManager->CreateMaterial<ColorMaterial>("defaultMat");
     resourceManager->CreateMaterial<WaterMaterial>("waterMaterial");
+    resourceManager->CreateMaterial<PortalMaterial>("portalMaterial");
     // resourceManager->CreateMaterial<ColorMaterial>("cyanMaterial");
 
     resourceManager->LoadModel(("cube.obj"),"cube");
@@ -72,15 +75,15 @@ void MyGame::Init()
 {
     Game::Init();
 
-    MainWorld* mainWorld = new MainWorld();
-    SetWorld(mainWorld);
+    //MainWorld* mainWorld = new MainWorld();
+    //SetWorld(mainWorld);
 
     //Set the world here!
 
     //SetWorld(new MovementTestWorld());
 
     //SetWorld(new XmlTestWorld());
-    //SetWorld(new TranslucentMaterialTestWorld());
+    SetWorld(new TranslucentMaterialTestWorld());
     //SetWorld(new RotatingGunsWorld());
     //SetWorld(new SpriteRenderingWorld());
 
