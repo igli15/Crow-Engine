@@ -33,6 +33,7 @@
 #include "../../Engine/Rendering/Materials/WaterMaterial.h"
 #include "../Components/RotateComponent.h"
 #include "../Systems/RotateSystem.h"
+#include "../../Engine/Rendering/Materials/PortalMaterial.h"
 
 void MainWorld::Build()
 {
@@ -240,5 +241,67 @@ void MainWorld::ParseGameComponents(rapidxml::xml_node<> *node, EntityHandle ent
             }
         }
         entityHandle.GetComponent<MeshInfo>().component->material = waterMaterial;
+    }
+    else if(strcmp(node->name(), "PortalMaterial") == 0)
+    {
+        PortalMaterial* portalMaterial = nullptr;
+        for (rapidxml::xml_attribute<> *a = node->first_attribute();
+             a != nullptr;
+             a = a->next_attribute())
+        {
+            std::string attributeName = a->name();
+
+            if (attributeName == "materialName")
+            {
+                std::string value(a->value());
+                auto material = Game::Instance()->resourceManager->GetMaterial<PortalMaterial>(value);
+                if(material == nullptr)
+                {
+                    portalMaterial = Game::Instance()->resourceManager->CreateMaterial<PortalMaterial>(value);
+                }
+                else
+                {
+                    portalMaterial = material;
+                }
+
+            }
+            else if(attributeName == "noiseTextureName")
+            {
+                std::string value(a->value());
+                portalMaterial->noiseTexture = Game::Instance()->resourceManager->GetTexture(value);
+            }
+            else if(attributeName == "rotationMaskTextureName")
+            {
+                std::string value(a->value());
+                portalMaterial->rotationMaskTexture = Game::Instance()->resourceManager->GetTexture(value);
+            }
+            else if(attributeName == "glowMaskTextureName")
+            {
+                std::string value(a->value());
+                portalMaterial->portalGlowMask = Game::Instance()->resourceManager->GetTexture(value);
+            }
+            else if(attributeName == "mainColor")
+            {
+                portalMaterial->mainColor = UnitySceneParser::ScanVector3f(a->value());
+            }
+            else if(attributeName == "secondColor")
+            {
+                portalMaterial->secondColor = UnitySceneParser::ScanVector3f(a->value());
+            }
+            else if(attributeName == "swirlAmount")
+            {
+                portalMaterial->swirlAmount = strtof(a->value(), 0);
+            }
+            else if(attributeName == "rotationSpeed")
+            {
+                portalMaterial->rotationSpeed = strtof(a->value(), 0);
+            }
+            else if(attributeName == "scalingSpeed")
+            {
+                portalMaterial->scalingSpeed = strtof(a->value(), 0);
+            }
+
+        }
+        entityHandle.GetComponent<MeshInfo>().component->material = portalMaterial;
     }
 }

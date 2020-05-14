@@ -80,7 +80,7 @@ void TranslucentMaterialTestWorld::Build()
     Transform* portalPlaneTransform = portalPlane.AddComponent(Transform{});
 
     PortalMaterial* portalMaterial = resourceManager->GetMaterial<PortalMaterial>("portalMaterial");
-    portalMaterial->mainColor = glm::vec3(0.9f,0.6f,0.2);
+    portalMaterial->mainColor = glm::vec3(0.9f,0.7f,0.2);
     portalMaterial->secondColor = glm::vec3(0.96f,0.9f,0.255);
     portalMaterial->noiseTexture = resourceManager->GetTexture("perlinNoise");
     portalMaterial->rotationMaskTexture = resourceManager->GetTexture("portalRotationMask");

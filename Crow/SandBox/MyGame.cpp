@@ -75,15 +75,15 @@ void MyGame::Init()
 {
     Game::Init();
 
-    //MainWorld* mainWorld = new MainWorld();
-    //SetWorld(mainWorld);
+    MainWorld* mainWorld = new MainWorld();
+    SetWorld(mainWorld);
 
     //Set the world here!
 
     //SetWorld(new MovementTestWorld());
 
     //SetWorld(new XmlTestWorld());
-    SetWorld(new TranslucentMaterialTestWorld());
+    //SetWorld(new TranslucentMaterialTestWorld());
     //SetWorld(new RotatingGunsWorld());
     //SetWorld(new SpriteRenderingWorld());
 

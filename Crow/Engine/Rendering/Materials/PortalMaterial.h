@@ -25,12 +25,18 @@ public:
 
     glm::vec3 mainColor = {1,1,1};
     glm::vec3 secondColor = {1,1,1};
+
+    float swirlAmount = 0.7f;
+    float rotationSpeed = 5.0f;
+    float scalingSpeed = 5.0f;
+
     Texture* noiseTexture = nullptr;
     Texture* rotationMaskTexture = nullptr;
     Texture* portalGlowMask = nullptr;
 
 private:
     GLint  m_uMainColor,m_uSecondColor,m_uViewMatrix,m_uProjectionMatrix,m_uTime,m_uNoiseTex,m_uRotationMask,m_uGlowMask;
+    GLint  m_uSwirlAmount, m_uRotationSpeed, m_uScalingSpeed;
 };
 
 

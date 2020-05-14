@@ -13,10 +13,11 @@ uniform sampler2D noiseTex;
 uniform sampler2D rotationMask;
 uniform sampler2D portalGlowMask;
 
+uniform float rotationSpeed;
+uniform float scaleSpeed;
+uniform float swirlAmount;
+
 vec4 pivot = vec4(0.5,0.5,1,1);
-float speed = 5;
-float swirl = 0.8;
-float rotation = 5;
 
 vec2 rotate( float magnitude , vec2 p )
  {
@@ -35,8 +36,8 @@ void main()
 
     vec2 p = TexCoords - pivot.xy;
 
-    p = rotate((rotationMaskValue * time/10), p);
-    p = rotate(rotation * time/10 * speed, p);
+    //p = rotate((rotationMaskValue * time/10), p);
+    //p = rotate(time/10 * speed, p);
 
     float angle = atan(p.y,p.x) * 0.5;
 
@@ -44,14 +45,18 @@ void main()
 
     vec2 uvs;
 
-    uvs.x = (time/10 * speed) - 1/(r + swirl);
+    uvs.x = (time/10 * scaleSpeed) - 1/(r + swirlAmount);
+
     uvs.y = pivot.z *angle/3.1416;
+    uvs.y += time/10 * rotationSpeed;
 
     vec3 noise = texture(noiseTex, uvs).rgb;
 
-    vec3 finalColor = mix(mainColor,secondColor,noise.r);
-    finalColor = smoothstep(0.3,1,finalColor);
+    vec3 finalColor = mainColor;
 
-    FragColor = vec4(finalColor,1.0) ;
+    finalColor += secondColor * step(0.5,noise.r);
+
+
+    FragColor = vec4(finalColor + glow * 1.4,1.0) ;
 
 }

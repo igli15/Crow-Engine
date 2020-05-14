@@ -21,6 +21,10 @@ void PortalMaterial::Initialize()
     m_uNoiseTex = m_shader->GetUniformLocation("noiseTex");
     m_uRotationMask = m_shader->GetUniformLocation("rotationMask");
     m_uGlowMask = m_shader->GetUniformLocation("portalGlowMask");
+
+    m_uRotationSpeed =  m_shader->GetUniformLocation("rotationSpeed");
+    m_uScalingSpeed =  m_shader->GetUniformLocation("scalingSpeed");
+    m_uSwirlAmount =  m_shader->GetUniformLocation("swirlAmount");
 }
 
 void PortalMaterial::BufferMaterialUniforms()
@@ -42,6 +46,10 @@ void PortalMaterial::BufferMaterialUniforms()
     glActiveTexture(GL_TEXTURE2);
     glBindTexture(GL_TEXTURE_2D, portalGlowMask->ID);
     glUniform1i(m_uGlowMask, 2);
+
+    glUniform1f(m_uRotationSpeed,rotationSpeed);
+    glUniform1f(m_uScalingSpeed,scalingSpeed);
+    glUniform1f(m_uSwirlAmount,swirlAmount);
 
 }
 
