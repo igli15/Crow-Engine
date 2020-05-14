@@ -265,18 +265,18 @@ CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/RotatingGunsWorld.cpp" -o CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.s
 
-CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.o: CMakeFiles/Crow.dir/flags.make
-CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.o: ../SandBox/Systems/RotateSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RotateSystem.cpp"
+CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.o: CMakeFiles/Crow.dir/flags.make
+CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.o: ../Game/Systems/RotateSystem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/RotateSystem.cpp"
 
-CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RotateSystem.cpp" > CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.i
+CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/RotateSystem.cpp" > CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.i
 
-CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RotateSystem.cpp" -o CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.s
+CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/RotateSystem.cpp" -o CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.s
 
 CMakeFiles/Crow.dir/Engine/Rendering/Shader.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Engine/Rendering/Shader.cpp.o: ../Engine/Rendering/Shader.cpp
@@ -408,18 +408,18 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/TranslucentColorMat.cpp.s: cmake_
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Rendering/Materials/TranslucentColorMat.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/TranslucentColorMat.cpp" -o CMakeFiles/Crow.dir/Engine/Rendering/Materials/TranslucentColorMat.cpp.s
 
-CMakeFiles/Crow.dir/SandBox/Components/RotateComponent.cpp.o: CMakeFiles/Crow.dir/flags.make
-CMakeFiles/Crow.dir/SandBox/Components/RotateComponent.cpp.o: ../SandBox/Components/RotateComponent.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/Crow.dir/SandBox/Components/RotateComponent.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/SandBox/Components/RotateComponent.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/RotateComponent.cpp"
+CMakeFiles/Crow.dir/Game/Components/RotateComponent.cpp.o: CMakeFiles/Crow.dir/flags.make
+CMakeFiles/Crow.dir/Game/Components/RotateComponent.cpp.o: ../Game/Components/RotateComponent.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/Crow.dir/Game/Components/RotateComponent.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Game/Components/RotateComponent.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Game/Components/RotateComponent.cpp"
 
-CMakeFiles/Crow.dir/SandBox/Components/RotateComponent.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/SandBox/Components/RotateComponent.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/RotateComponent.cpp" > CMakeFiles/Crow.dir/SandBox/Components/RotateComponent.cpp.i
+CMakeFiles/Crow.dir/Game/Components/RotateComponent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Game/Components/RotateComponent.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/Game/Components/RotateComponent.cpp" > CMakeFiles/Crow.dir/Game/Components/RotateComponent.cpp.i
 
-CMakeFiles/Crow.dir/SandBox/Components/RotateComponent.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/SandBox/Components/RotateComponent.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/RotateComponent.cpp" -o CMakeFiles/Crow.dir/SandBox/Components/RotateComponent.cpp.s
+CMakeFiles/Crow.dir/Game/Components/RotateComponent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Game/Components/RotateComponent.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Game/Components/RotateComponent.cpp" -o CMakeFiles/Crow.dir/Game/Components/RotateComponent.cpp.s
 
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../SandBox/MyGame.cpp
@@ -1063,7 +1063,7 @@ Crow_OBJECTS = \
 "CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o" \
 "CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o" \
-"CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.o" \
+"CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Rendering/Shader.cpp.o" \
 "CMakeFiles/Crow.dir/Plugins/stb_image.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o" \
@@ -1074,7 +1074,7 @@ Crow_OBJECTS = \
 "CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Rendering/Materials/TranslucentColorMat.cpp.o" \
-"CMakeFiles/Crow.dir/SandBox/Components/RotateComponent.cpp.o" \
+"CMakeFiles/Crow.dir/Game/Components/RotateComponent.cpp.o" \
 "CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o" \
 "CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/EventQueue/EventQueue.cpp.o" \
@@ -1143,7 +1143,7 @@ Crow: CMakeFiles/Crow.dir/Engine/Feather/ComponentHandle.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o
 Crow: CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o
-Crow: CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.o
+Crow: CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Rendering/Shader.cpp.o
 Crow: CMakeFiles/Crow.dir/Plugins/stb_image.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o
@@ -1154,7 +1154,7 @@ Crow: CMakeFiles/Crow.dir/Engine/Components/Camera.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Rendering/Materials/TranslucentColorMat.cpp.o
-Crow: CMakeFiles/Crow.dir/SandBox/Components/RotateComponent.cpp.o
+Crow: CMakeFiles/Crow.dir/Game/Components/RotateComponent.cpp.o
 Crow: CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o
 Crow: CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/EventQueue/EventQueue.cpp.o

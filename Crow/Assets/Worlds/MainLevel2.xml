@@ -7,40 +7,30 @@
       <Components />
     </GameObject>
   </GameObject>
-  <GameObject name="CrowDirLight" position="(-3.3300, 17.9600, -3.3300)" rotation="(-0.3258, 0.1229, 0.3056, 0.8862)" scale="(1.0000, 1.0000, 1.0000)">
+  <GameObject name="CrowDirLight" position="(-4.9100, 27.0900, 5.6600)" rotation="(-0.0427, -0.8685, 0.4880, -0.0760)" scale="(1.0000, 1.0000, 1.0000)">
     <Components>
-      <Light type="DIRECTIONAL" color="(1.0000, 1.0000, 0.9804)" intensity="1.0000" attenuationConstants="(1.0000, 0.0900, 0.0320)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
+      <Light type="DIRECTIONAL" color="(0.6824, 0.6784, 0.6667)" intensity="0.3000" attenuationConstants="(1.0000, 0.0900, 0.0320)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
     </Components>
   </GameObject>
-  <GameObject name="CrowDirLight (1)" position="(-3.3300, 4.7100, -3.3300)" rotation="(0.6428, 0.0000, 0.0000, 0.7660)" scale="(1.0000, 1.0000, 1.0000)">
+  <GameObject name="path" position="(4.4351, 0.1200, 5.5482)" rotation="(0.0000, 0.4145, 0.0000, 0.9101)" scale="(67.8969, 0.0100, 1.4617)" mesh="cube">
     <Components>
-      <Light type="DIRECTIONAL" color="(1.0000, 1.0000, 0.9804)" intensity="0.5000" attenuationConstants="(1.0000, 0.0900, 0.0320)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
-    </Components>
-  </GameObject>
-  <GameObject name="path" position="(4.4351, 0.2340, 5.5482)" rotation="(0.0000, 0.4145, 0.0000, 0.9101)" scale="(67.8969, 0.0000, 1.4617)" mesh="cube">
-    <Components>
-      <ColorMaterial materialName="roadMat" mainColor="(0.3882, 0.3882, 0.3882)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.2000" />
+      <TextureMaterial materialName="pathMat" diffuseTextureName="Sand" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.1137, 0.1137, 0.1137)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="256.0000" ambientIntensity="0.3000" emissionScale="1.0000" />
     </Components>
   </GameObject>
   <GameObject name="path" position="(0.8661, 0.1890, 2.5471)" rotation="(0.0000, 0.4226, 0.0000, 0.9063)" scale="(68.2368, 0.0000, 1.4617)" mesh="cube">
     <Components>
-      <ColorMaterial materialName="roadMat" mainColor="(0.3882, 0.3882, 0.3882)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.2000" />
+      <TextureMaterial materialName="pathMat" diffuseTextureName="Sand" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.1137, 0.1137, 0.1137)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="256.0000" ambientIntensity="0.3000" emissionScale="1.0000" />
     </Components>
   </GameObject>
   <GameObject name="path" position="(-1.7500, 0.1300, -2.4100)" rotation="(0.0000, 0.4320, 0.0000, 0.9019)" scale="(62.7052, 0.0000, 1.4617)" mesh="cube">
     <Components>
-      <ColorMaterial materialName="roadMat" mainColor="(0.3882, 0.3882, 0.3882)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.2000" />
-    </Components>
-  </GameObject>
-  <GameObject name="Mausoleum" position="(-8.5400, 0.0000, -6.3800)" rotation="(0.0000, 0.4266, 0.0000, 0.9044)" scale="(0.6641, 0.5506, 0.5753)" mesh="Mausoleum">
-    <Components>
-      <TextureMaterial materialName="mausoleumMat" diffuseTextureName="MausoleumDiffuse" specularTextureName="MausoleumSpecular" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.3000" emissionScale="1.0000" />
+      <TextureMaterial materialName="pathMat" diffuseTextureName="Sand" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.1137, 0.1137, 0.1137)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="256.0000" ambientIntensity="0.3000" emissionScale="1.0000" />
     </Components>
   </GameObject>
   <GameObject name="TopBridge" position="(-2.6600, 0.1655, -1.3600)" rotation="(-0.6645, -0.2418, -0.2418, 0.6645)" scale="(0.7280, 0.7280, 0.8190)" mesh="curvedBridge">
     <Components>
       <BridgeComponent startPos="(-6.9626, 1.4300, 3.8583)" endPos="(4.5579, 1.4300, -9.7581)" />
-      <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.3000" emissionScale="1.0000" />
+      <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.3059, 0.3059, 0.3059)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
     </Components>
     <GameObject name="endTransform" position="(0.0018, 0.1521, 0.0154)" rotation="(0.7070, 0.0103, 0.0103, 0.7070)" scale="(0.0150, 0.0010, 0.0705)">
       <Components />
@@ -52,7 +42,7 @@
   <GameObject name="MiddleBridge" position="(1.3200, 0.1655, 1.9800)" rotation="(-0.6645, -0.2418, -0.2418, 0.6645)" scale="(0.7280, 0.7280, 0.8190)" mesh="curvedBridge">
     <Components>
       <BridgeComponent startPos="(-2.9826, 1.4300, 7.1983)" endPos="(8.5379, 1.4300, -6.4181)" />
-      <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.3000" emissionScale="1.0000" />
+      <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.3059, 0.3059, 0.3059)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
     </Components>
     <GameObject name="endTransform" position="(0.0018, 0.1521, 0.0154)" rotation="(0.7070, 0.0103, 0.0103, 0.7070)" scale="(0.0150, 0.0010, 0.0705)">
       <Components />
@@ -64,7 +54,7 @@
   <GameObject name="BottomBridge" position="(4.9000, 0.1655, 5.0000)" rotation="(-0.6645, -0.2418, -0.2418, 0.6645)" scale="(0.7280, 0.7280, 0.8190)" mesh="curvedBridge">
     <Components>
       <BridgeComponent startPos="(0.5974, 1.4300, 10.2183)" endPos="(12.1179, 1.4300, -3.3981)" />
-      <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.3000" emissionScale="1.0000" />
+      <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.3059, 0.3059, 0.3059)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
     </Components>
     <GameObject name="endTransform" position="(0.0018, 0.1521, 0.0154)" rotation="(0.7070, 0.0103, 0.0103, 0.7070)" scale="(0.0150, 0.0010, 0.0705)">
       <Components />
@@ -73,19 +63,23 @@
       <Components />
     </GameObject>
   </GameObject>
-  <GameObject name="Cube (3)" position="(7.9484, -0.0618, 4.7929)" rotation="(0.0000, -0.3420, 0.0000, 0.9397)" scale="(74.2690, 0.3170, 116.4823)" mesh="cube">
-    <Components>
-      <ColorMaterial materialName="enemyBaseMat" mainColor="(0.2627, 0.2627, 0.2627)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.2000" />
-      <TextureMaterial materialName="groundMat" diffuseTextureName="GroundBaseColor" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.1412, 0.1412, 0.1412)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.5000" emissionScale="1.0000" />
-    </Components>
-  </GameObject>
   <GameObject name="Cube (1)" position="(11.8261, -19.7185, 16.9186)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="cube">
     <Components>
-      <TranslucentMaterial materialName="translucentMaterial" mainColor="(0.6039, 0.6039, 0.6039)" specularColor="(1.0000, 1.0000, 1.0000)" translucencyColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" translucentPower="0.8000" translucentScale="1.0000" translucentDistortion="1.2000" />
+      <TranslucentMaterial materialName="translucentMaterial" mainColor="(0.3137, 0.3137, 0.3137)" specularColor="(0.2588, 0.2588, 0.2588)" translucencyColor="(0.2588, 0.2588, 0.2588)" shininess="16.0000" ambientIntensity="0.1000" translucentPower="0.6000" translucentScale="1.0000" translucentDistortion="1.2000" />
     </Components>
   </GameObject>
   <GameObject name="Enviorement" position="(-4.3475, 0.8307, 4.6424)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)">
     <Components />
+    <GameObject name="Mausoleum" position="(-4.1925, -0.8307, -11.0224)" rotation="(0.0000, 0.4266, 0.0000, 0.9044)" scale="(0.6641, 0.5506, 0.5753)" mesh="Mausoleum">
+      <Components>
+        <TextureMaterial materialName="mausoleumMat" diffuseTextureName="MausoleumDiffuse" specularTextureName="MausoleumSpecular" emissionTextureName="blackTexture" mainColor="(0.2039, 0.2039, 0.2039)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.6000" emissionScale="1.0000" />
+      </Components>
+    </GameObject>
+    <GameObject name="Ground" position="(12.2959, -0.8925, 0.1505)" rotation="(0.0000, -0.3420, 0.0000, 0.9397)" scale="(74.2691, 0.3170, 116.4823)" mesh="cube">
+      <Components>
+        <TextureMaterial materialName="groundMat" diffuseTextureName="GroundBaseColor" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.2000" emissionScale="1.0000" />
+      </Components>
+    </GameObject>
     <GameObject name="FenceGate" position="(-2.3133, 0.0969, -8.1128)" rotation="(0.0000, 0.4979, 0.0000, 0.8672)" scale="(0.3484, 0.3484, 0.3484)">
       <Components />
       <GameObject name="Gate_1_1" position="(0.1200, -2.1800, -3.1600)" rotation="(0.0000, -0.0725, 0.0000, 0.9974)" scale="(1.0000, 1.0000, 1.0000)" mesh="FenceGate">
@@ -128,11 +122,11 @@
     </GameObject>
     <GameObject name="Enviorement_Trees" position="(-3.6525, 1.8516, -1.9613)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)">
       <Components />
-      <GameObject name="crookedTree" position="(-0.7681, -2.5856, -1.3772)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)">
+      <GameObject name="crookedTree" position="(-3.3600, -2.5856, -0.1100)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)">
         <Components />
         <GameObject name="Broad_leaved_trees_A_group" position="(0.0000, 0.2600, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="crookedTree">
           <Components>
-            <ColorMaterial materialName="defaultMaterial" mainColor="(0.4275, 0.3804, 0.2941)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" />
+            <ColorMaterial materialName="defaultMaterial" mainColor="(0.1804, 0.1608, 0.1294)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" />
           </Components>
         </GameObject>
       </GameObject>
@@ -155,6 +149,93 @@
       <GameObject name="Gate_1_1" position="(0.1200, -2.1800, -3.1600)" rotation="(0.0000, -0.0725, 0.0000, 0.9974)" scale="(1.0000, 1.0000, 1.0000)" mesh="FenceGate">
         <Components>
           <TextureMaterial materialName="graveyardPropMat" diffuseTextureName="GraveyardPropAlbedo" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+        </Components>
+      </GameObject>
+    </GameObject>
+    <GameObject name="Lights" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)">
+      <Components />
+      <GameObject name="SphereGemLarge" position="(7.1560, 0.8130, 1.4210)" rotation="(-0.7071, 0.0000, 0.0000, 0.7071)" scale="(0.1384, 0.1384, 0.1384)" mesh="SphereGemLarge">
+        <Components>
+          <Light type="POINT" color="(0.4392, 0.5255, 0.6118)" intensity="0.3000" attenuationConstants="(1.0000, 0.0900, 0.0320)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
+          <ColorMaterial materialName="lightMat" mainColor="(0.4392, 0.5255, 0.6118)" specularColor="(0.4392, 0.5255, 0.6118)" shininess="12.0000" ambientIntensity="2.0000" />
+          <RotateComponent axisOfRotation="(0.0000, 1.0000, 1.0000)" rotationSpeed="50.0000" />
+        </Components>
+      </GameObject>
+      <GameObject name="SphereGemLarge (1)" position="(9.8500, 0.8100, -1.8500)" rotation="(-0.7071, 0.0000, 0.0000, 0.7071)" scale="(0.1384, 0.1384, 0.1384)" mesh="SphereGemLarge">
+        <Components>
+          <Light type="POINT" color="(0.4392, 0.5255, 0.6118)" intensity="0.3000" attenuationConstants="(1.0000, 0.0900, 0.0320)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
+          <ColorMaterial materialName="lightMat" mainColor="(0.4392, 0.5255, 0.6118)" specularColor="(0.4392, 0.5255, 0.6118)" shininess="12.0000" ambientIntensity="2.0000" />
+          <RotateComponent axisOfRotation="(0.0000, 1.0000, 1.0000)" rotationSpeed="50.0000" />
+        </Components>
+      </GameObject>
+      <GameObject name="SphereGemLarge (2)" position="(11.2000, 0.8100, -0.6600)" rotation="(-0.7071, 0.0000, 0.0000, 0.7071)" scale="(0.1384, 0.1384, 0.1384)" mesh="SphereGemLarge">
+        <Components>
+          <Light type="POINT" color="(0.4392, 0.5255, 0.6118)" intensity="0.3000" attenuationConstants="(1.0000, 0.0900, 0.0320)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
+          <ColorMaterial materialName="lightMat" mainColor="(0.4392, 0.5255, 0.6118)" specularColor="(0.4392, 0.5255, 0.6118)" shininess="12.0000" ambientIntensity="2.0000" />
+          <RotateComponent axisOfRotation="(0.0000, 1.0000, 1.0000)" rotationSpeed="50.0000" />
+        </Components>
+      </GameObject>
+      <GameObject name="SphereGemLarge (3)" position="(8.4500, 0.8100, 2.5300)" rotation="(-0.7071, 0.0000, 0.0000, 0.7071)" scale="(0.1384, 0.1384, 0.1384)" mesh="SphereGemLarge">
+        <Components>
+          <Light type="POINT" color="(0.4392, 0.5255, 0.6118)" intensity="0.3000" attenuationConstants="(1.0000, 0.0900, 0.0320)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
+          <ColorMaterial materialName="lightMat" mainColor="(0.4392, 0.5255, 0.6118)" specularColor="(0.4392, 0.5255, 0.6118)" shininess="12.0000" ambientIntensity="2.0000" />
+          <RotateComponent axisOfRotation="(0.0000, 1.0000, 1.0000)" rotationSpeed="50.0000" />
+        </Components>
+      </GameObject>
+      <GameObject name="SphereGemLarge (4)" position="(3.6200, 0.8100, -1.6700)" rotation="(-0.7071, 0.0000, 0.0000, 0.7071)" scale="(0.1384, 0.1384, 0.1384)" mesh="SphereGemLarge">
+        <Components>
+          <Light type="POINT" color="(0.4392, 0.5255, 0.6118)" intensity="0.3000" attenuationConstants="(1.0000, 0.0900, 0.0320)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
+          <ColorMaterial materialName="lightMat" mainColor="(0.4392, 0.5255, 0.6118)" specularColor="(0.4392, 0.5255, 0.6118)" shininess="12.0000" ambientIntensity="2.0000" />
+          <RotateComponent axisOfRotation="(0.0000, 1.0000, 1.0000)" rotationSpeed="50.0000" />
+        </Components>
+      </GameObject>
+      <GameObject name="SphereGemLarge (5)" position="(6.2540, 0.8070, -4.8910)" rotation="(-0.7071, 0.0000, 0.0000, 0.7071)" scale="(0.1384, 0.1384, 0.1384)" mesh="SphereGemLarge">
+        <Components>
+          <Light type="POINT" color="(0.4392, 0.5255, 0.6118)" intensity="0.3000" attenuationConstants="(1.0000, 0.0900, 0.0320)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
+          <ColorMaterial materialName="lightMat" mainColor="(0.4392, 0.5255, 0.6118)" specularColor="(0.4392, 0.5255, 0.6118)" shininess="12.0000" ambientIntensity="2.0000" />
+          <RotateComponent axisOfRotation="(0.0000, 1.0000, 1.0000)" rotationSpeed="50.0000" />
+        </Components>
+      </GameObject>
+      <GameObject name="SphereGemLarge (6)" position="(7.6040, 0.8070, -3.7010)" rotation="(-0.7071, 0.0000, 0.0000, 0.7071)" scale="(0.1384, 0.1384, 0.1384)" mesh="SphereGemLarge">
+        <Components>
+          <Light type="POINT" color="(0.4392, 0.5255, 0.6118)" intensity="0.3000" attenuationConstants="(1.0000, 0.0900, 0.0320)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
+          <ColorMaterial materialName="lightMat" mainColor="(0.4392, 0.5255, 0.6118)" specularColor="(0.4392, 0.5255, 0.6118)" shininess="12.0000" ambientIntensity="2.0000" />
+          <RotateComponent axisOfRotation="(0.0000, 1.0000, 1.0000)" rotationSpeed="50.0000" />
+        </Components>
+      </GameObject>
+      <GameObject name="SphereGemLarge (7)" position="(4.8540, 0.8070, -0.5110)" rotation="(-0.7071, 0.0000, 0.0000, 0.7071)" scale="(0.1384, 0.1384, 0.1384)" mesh="SphereGemLarge">
+        <Components>
+          <Light type="POINT" color="(0.4392, 0.5255, 0.6118)" intensity="0.3000" attenuationConstants="(1.0000, 0.0900, 0.0320)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
+          <ColorMaterial materialName="lightMat" mainColor="(0.4392, 0.5255, 0.6118)" specularColor="(0.4392, 0.5255, 0.6118)" shininess="12.0000" ambientIntensity="2.0000" />
+          <RotateComponent axisOfRotation="(0.0000, 1.0000, 1.0000)" rotationSpeed="50.0000" />
+        </Components>
+      </GameObject>
+      <GameObject name="SphereGemLarge (8)" position="(-0.4440, 0.8130, -4.9590)" rotation="(-0.7071, 0.0000, 0.0000, 0.7071)" scale="(0.1384, 0.1384, 0.1384)" mesh="SphereGemLarge">
+        <Components>
+          <Light type="POINT" color="(0.4392, 0.5255, 0.6118)" intensity="0.3000" attenuationConstants="(1.0000, 0.0900, 0.0320)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
+          <ColorMaterial materialName="lightMat" mainColor="(0.4392, 0.5255, 0.6118)" specularColor="(0.4392, 0.5255, 0.6118)" shininess="12.0000" ambientIntensity="2.0000" />
+          <RotateComponent axisOfRotation="(0.0000, 1.0000, 1.0000)" rotationSpeed="50.0000" />
+        </Components>
+      </GameObject>
+      <GameObject name="SphereGemLarge (9)" position="(2.2500, 0.8100, -8.2300)" rotation="(-0.7071, 0.0000, 0.0000, 0.7071)" scale="(0.1384, 0.1384, 0.1384)" mesh="SphereGemLarge">
+        <Components>
+          <Light type="POINT" color="(0.4392, 0.5255, 0.6118)" intensity="0.3000" attenuationConstants="(1.0000, 0.0900, 0.0320)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
+          <ColorMaterial materialName="lightMat" mainColor="(0.4392, 0.5255, 0.6118)" specularColor="(0.4392, 0.5255, 0.6118)" shininess="12.0000" ambientIntensity="2.0000" />
+          <RotateComponent axisOfRotation="(0.0000, 1.0000, 1.0000)" rotationSpeed="50.0000" />
+        </Components>
+      </GameObject>
+      <GameObject name="SphereGemLarge (10)" position="(3.6000, 0.8100, -7.0400)" rotation="(-0.7071, 0.0000, 0.0000, 0.7071)" scale="(0.1384, 0.1384, 0.1384)" mesh="SphereGemLarge">
+        <Components>
+          <Light type="POINT" color="(0.4392, 0.5255, 0.6118)" intensity="0.3000" attenuationConstants="(1.0000, 0.0900, 0.0320)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
+          <ColorMaterial materialName="lightMat" mainColor="(0.4392, 0.5255, 0.6118)" specularColor="(0.4392, 0.5255, 0.6118)" shininess="12.0000" ambientIntensity="2.0000" />
+          <RotateComponent axisOfRotation="(0.0000, 1.0000, 1.0000)" rotationSpeed="50.0000" />
+        </Components>
+      </GameObject>
+      <GameObject name="SphereGemLarge (11)" position="(0.8500, 0.8100, -3.8500)" rotation="(-0.7071, 0.0000, 0.0000, 0.7071)" scale="(0.1384, 0.1384, 0.1384)" mesh="SphereGemLarge">
+        <Components>
+          <Light type="POINT" color="(0.4392, 0.5255, 0.6118)" intensity="0.3000" attenuationConstants="(1.0000, 0.0900, 0.0320)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
+          <ColorMaterial materialName="lightMat" mainColor="(0.4392, 0.5255, 0.6118)" specularColor="(0.4392, 0.5255, 0.6118)" shininess="12.0000" ambientIntensity="2.0000" />
+          <RotateComponent axisOfRotation="(0.0000, 1.0000, 1.0000)" rotationSpeed="50.0000" />
         </Components>
       </GameObject>
     </GameObject>

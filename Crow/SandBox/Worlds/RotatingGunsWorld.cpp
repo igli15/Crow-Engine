@@ -11,8 +11,8 @@
 #include "../../Engine/Core/Game.h"
 #include "../../Engine/Core/ResourceManager.h"
 #include "../../Engine/Rendering/Materials/ColorMaterial.h"
-#include "../Systems/RotateSystem.h"
-#include "../Components/RotateComponent.h"
+#include "../../Game/Systems/RotateSystem.h"
+#include "../../Game/Components/RotateComponent.h"
 #include "../../Engine/Feather/EntityHandle.h"
 #include "../../Engine/Components/SphereCollider.h"
 #include "../../Engine/Components/Camera.h"
@@ -61,11 +61,10 @@ void RotatingGunsWorld::Build()
             mat->mainColor = glm::vec3(0.8f,0.8f,0.8f);
             gunMeshInfo.material = mat;
             gunEntity.AddComponent(gunMeshInfo);
-            gunEntity.AddComponent(RotateComponent{5});
+            gunEntity.AddComponent(RotateComponent{glm::vec3(0,1,0),5});
             //gunEntity.AddComponent(SphereCollider{1});
         }
     }
-
 
     EntityHandle textEntity = CreateEntity();
     Transform* textTransform = textEntity.AddComponent(Transform{});

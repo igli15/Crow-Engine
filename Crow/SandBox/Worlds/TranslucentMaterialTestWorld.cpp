@@ -3,12 +3,12 @@
 //
 
 #include "TranslucentMaterialTestWorld.h"
-#include "../Systems/RotateSystem.h"
+#include "../../Game/Systems/RotateSystem.h"
 #include "../../Engine/Rendering/Materials/ColorMaterial.h"
 #include "../../Engine/Rendering/Model.h"
 #include "../../Engine/Core/Game.h"
 #include "../../Engine/Components/Transform.h"
-#include "../Components/RotateComponent.h"
+#include "../../Game/Components/RotateComponent.h"
 #include "../../Engine/Core/ResourceManager.h"
 #include "../../Engine/Feather/EntityHandle.h"
 #include "../../Engine/Components/MeshInfo.h"

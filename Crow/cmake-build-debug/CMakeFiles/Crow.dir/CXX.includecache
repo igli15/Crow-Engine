@@ -14,14 +14,6 @@ Engine/Debug/Debug.h
 string
 -
 
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.h
-glm/glm.hpp
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/glm/glm.hpp
-glm/gtx/projection.hpp
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/glm/gtx/projection.hpp
-glm/gtc/matrix_transform.hpp
--
-
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h
 glm/glm.hpp
 -
@@ -107,34 +99,6 @@ spdlog/sinks/stdout_color_sinks.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/spdlog/sinks/stdout_color_sinks.h
 memory
 -
-
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Editor/UnitySceneParser.cpp
-fstream
--
-UnitySceneParser.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Editor/UnitySceneParser.h
-../Feather/World.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
-../Components/Transform.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
-../Rendering/Model.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
-../Core/Game.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
-../Components/MeshInfo.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
-../Core/ResourceManager.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h
-../Rendering/Materials/ColorMaterial.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h
-../Components/Camera.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.h
-../Components/Light.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h
-../Rendering/Materials/TranslucentColorMat.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/TranslucentColorMat.h
-../Rendering/Materials/TextureMaterial.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/TextureMaterial.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Editor/UnitySceneParser.h
 string
@@ -278,28 +242,6 @@ Shader.h
 ../Feather/World.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
 
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h
-../AbstractMaterial.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/TextureMaterial.cpp
-TextureMaterial.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/TextureMaterial.h
-../../Components/Light.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h
-../../Components/Transform.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
-../../Core/Game.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
-../../Core/ResourceManager.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/TextureMaterial.h
-../AbstractMaterial.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
-../Texture.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
-
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/TranslucentColorMat.h
 ../AbstractMaterial.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
@@ -368,6 +310,10 @@ vector
 glm/vec3.hpp
 -
 
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/RotateComponent.h
+glm/vec3.hpp
+-
+
 /Users/igli/Desktop/Crow Engine/Crow/Game/Components/SelectedBridgeIndicator.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Game/Events/UnitCollisionEvents.h
@@ -413,6 +359,12 @@ vector
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
 ../../Engine/Events/CollisionEnterEvent.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEnterEvent.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/RotateSystem.h
+../../Engine/Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+vector
+-
 
 /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SeekingSystem.h
 glm/vec3.hpp
@@ -535,6 +487,10 @@ MainWorld.h
 /Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/CannonGroupArchetype.h
 ../../Engine/Rendering/Materials/WaterMaterial.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/WaterMaterial.h
+../Components/RotateComponent.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/RotateComponent.h
+../Systems/RotateSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/RotateSystem.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Game/Worlds/MainWorld.h
 ../../Engine/Feather/World.h
@@ -553,116 +509,6 @@ new
 -
 exception
 -
-
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/RotateComponent.h
-
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/MyGame.cpp
-MyGame.h
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/MyGame.h
-Worlds/RotatingGunsWorld.h
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/RotatingGunsWorld.h
-Worlds/TranslucentMaterialTestWorld.h
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/TranslucentMaterialTestWorld.h
-Worlds/XmlTestWorld.h
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/XmlTestWorld.h
-../Engine/Core/ResourceManager.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h
-../Engine/Rendering/Materials/ColorMaterial.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h
-Worlds/SpriteRenderingWorld.h
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/SpriteRenderingWorld.h
-../Game/Worlds/MainWorld.h
-/Users/igli/Desktop/Crow Engine/Crow/Game/Worlds/MainWorld.h
-Worlds/MovementTestWorld.h
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/MovementTestWorld.h
-../Engine/Feather/EntityHandle.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
-../Engine/Components/Camera.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.h
-../Game/Components/BridgeComponent.h
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/BridgeComponent.h
-../Engine/Editor/UnitySceneParser.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Editor/UnitySceneParser.h
-../Engine/Rendering/Materials/WaterMaterial.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/WaterMaterial.h
-
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/MyGame.h
-../Engine/Core/Game.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
-../Plugins/RapidXML/rapidxml.hpp
-/Users/igli/Desktop/Crow Engine/Crow/Plugins/RapidXML/rapidxml.hpp
-
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RotateSystem.h
-../../Engine/Feather/System.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
-vector
--
-
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/MovementTestWorld.h
-../../Engine/Feather/World.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
-
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/RotatingGunsWorld.h
-../../Engine/Feather/World.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
-
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/SpriteRenderingWorld.h
-../../Engine/Feather/World.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
-
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/TranslucentMaterialTestWorld.cpp
-TranslucentMaterialTestWorld.h
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/TranslucentMaterialTestWorld.h
-../Systems/RotateSystem.h
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Systems/RotateSystem.h
-../../Engine/Rendering/Materials/ColorMaterial.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h
-../../Engine/Rendering/Model.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
-../../Engine/Core/Game.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
-../../Engine/Components/Transform.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
-../Components/RotateComponent.h
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/RotateComponent.h
-../../Engine/Core/ResourceManager.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h
-../../Engine/Feather/EntityHandle.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
-../../Engine/Components/MeshInfo.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
-../../Engine/Components/Light.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h
-../../Engine/Rendering/Materials/TranslucentColorMat.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/TranslucentColorMat.h
-../../Engine/Components/Camera.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.h
-../../Engine/Rendering/Materials/TextureMaterial.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/TextureMaterial.h
-../../Engine/Rendering/Materials/WaterMaterial.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/WaterMaterial.h
-
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/TranslucentMaterialTestWorld.h
-../../Engine/Feather/World.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
-
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/XmlTestWorld.cpp
-XmlTestWorld.h
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/XmlTestWorld.h
-../../Engine/Feather/EntityHandle.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
-../../Engine/Feather/World.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
-../../Engine/Editor/UnitySceneParser.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Editor/UnitySceneParser.h
-../../Engine/Components/Light.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h
-../../Engine/Components/Transform.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
-
-/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/XmlTestWorld.h
-../../Engine/Feather/World.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
 
 /usr/local/include/GL/glew.h
 stddef.h

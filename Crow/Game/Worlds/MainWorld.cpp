@@ -31,6 +31,8 @@
 #include "../Systems/CannonSystem.h"
 #include "../UnitGroupArchetypes/CannonGroupArchetype.h"
 #include "../../Engine/Rendering/Materials/WaterMaterial.h"
+#include "../Components/RotateComponent.h"
+#include "../Systems/RotateSystem.h"
 
 void MainWorld::Build()
 {
@@ -53,6 +55,7 @@ void MainWorld::Build()
     RegisterSystem<UnitFightingSystem>();
     RegisterSystem<ProjectileSystem>();
     RegisterSystem<CannonSystem>();
+    RegisterSystem<RotateSystem>();
 
     EntityHandle playerEntity = CreateEntity();
     Player* playerComponent = playerEntity.AddComponent<Player>(Player{});
@@ -148,6 +151,25 @@ void MainWorld::ParseGameComponents(rapidxml::xml_node<> *node, EntityHandle ent
                 bridgeComponent->endPos =  UnitySceneParser::ScanVector3f(a->value());
             }
         }
+    }
+    else if(strcmp(node->name(), "RotateComponent") == 0)
+    {
+        RotateComponent* rotateComponent = entityHandle.AddComponent(RotateComponent{});
+
+        for (rapidxml::xml_attribute<> *a = node->first_attribute();
+             a != nullptr;
+             a = a->next_attribute()) {
+            std::string attributeName = a->name();
+            if (attributeName == "axisOfRotation")
+            {
+                rotateComponent->axisOfRotation =  UnitySceneParser::ScanVector3f(a->value());
+            }
+            else if(attributeName == "rotationSpeed")
+            {
+                rotateComponent->rotateSpeed = strtof(a->value(), 0);
+            }
+        }
+
     }
     else if(strcmp(node->name(), "WaterMaterial") == 0)
     {

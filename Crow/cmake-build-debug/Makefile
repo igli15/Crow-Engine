@@ -1257,6 +1257,33 @@ Game/Components/ProjectileComponent.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Components/ProjectileComponent.cpp.s
 .PHONY : Game/Components/ProjectileComponent.cpp.s
 
+Game/Components/RotateComponent.o: Game/Components/RotateComponent.cpp.o
+
+.PHONY : Game/Components/RotateComponent.o
+
+# target to build an object file
+Game/Components/RotateComponent.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Components/RotateComponent.cpp.o
+.PHONY : Game/Components/RotateComponent.cpp.o
+
+Game/Components/RotateComponent.i: Game/Components/RotateComponent.cpp.i
+
+.PHONY : Game/Components/RotateComponent.i
+
+# target to preprocess a source file
+Game/Components/RotateComponent.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Components/RotateComponent.cpp.i
+.PHONY : Game/Components/RotateComponent.cpp.i
+
+Game/Components/RotateComponent.s: Game/Components/RotateComponent.cpp.s
+
+.PHONY : Game/Components/RotateComponent.s
+
+# target to generate assembly for a file
+Game/Components/RotateComponent.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Components/RotateComponent.cpp.s
+.PHONY : Game/Components/RotateComponent.cpp.s
+
 Game/Components/SeekComponent.o: Game/Components/SeekComponent.cpp.o
 
 .PHONY : Game/Components/SeekComponent.o
@@ -1472,6 +1499,33 @@ Game/Systems/RigidbodySystem.s: Game/Systems/RigidbodySystem.cpp.s
 Game/Systems/RigidbodySystem.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/RigidbodySystem.cpp.s
 .PHONY : Game/Systems/RigidbodySystem.cpp.s
+
+Game/Systems/RotateSystem.o: Game/Systems/RotateSystem.cpp.o
+
+.PHONY : Game/Systems/RotateSystem.o
+
+# target to build an object file
+Game/Systems/RotateSystem.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.o
+.PHONY : Game/Systems/RotateSystem.cpp.o
+
+Game/Systems/RotateSystem.i: Game/Systems/RotateSystem.cpp.i
+
+.PHONY : Game/Systems/RotateSystem.i
+
+# target to preprocess a source file
+Game/Systems/RotateSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.i
+.PHONY : Game/Systems/RotateSystem.cpp.i
+
+Game/Systems/RotateSystem.s: Game/Systems/RotateSystem.cpp.s
+
+.PHONY : Game/Systems/RotateSystem.s
+
+# target to generate assembly for a file
+Game/Systems/RotateSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.s
+.PHONY : Game/Systems/RotateSystem.cpp.s
 
 Game/Systems/SeekingSystem.o: Game/Systems/SeekingSystem.cpp.o
 
@@ -1932,33 +1986,6 @@ SandBox/Components/MoveComponent.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Components/MoveComponent.cpp.s
 .PHONY : SandBox/Components/MoveComponent.cpp.s
 
-SandBox/Components/RotateComponent.o: SandBox/Components/RotateComponent.cpp.o
-
-.PHONY : SandBox/Components/RotateComponent.o
-
-# target to build an object file
-SandBox/Components/RotateComponent.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Components/RotateComponent.cpp.o
-.PHONY : SandBox/Components/RotateComponent.cpp.o
-
-SandBox/Components/RotateComponent.i: SandBox/Components/RotateComponent.cpp.i
-
-.PHONY : SandBox/Components/RotateComponent.i
-
-# target to preprocess a source file
-SandBox/Components/RotateComponent.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Components/RotateComponent.cpp.i
-.PHONY : SandBox/Components/RotateComponent.cpp.i
-
-SandBox/Components/RotateComponent.s: SandBox/Components/RotateComponent.cpp.s
-
-.PHONY : SandBox/Components/RotateComponent.s
-
-# target to generate assembly for a file
-SandBox/Components/RotateComponent.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Components/RotateComponent.cpp.s
-.PHONY : SandBox/Components/RotateComponent.cpp.s
-
 SandBox/MyGame.o: SandBox/MyGame.cpp.o
 
 .PHONY : SandBox/MyGame.o
@@ -1985,33 +2012,6 @@ SandBox/MyGame.s: SandBox/MyGame.cpp.s
 SandBox/MyGame.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/MyGame.cpp.s
 .PHONY : SandBox/MyGame.cpp.s
-
-SandBox/Systems/RotateSystem.o: SandBox/Systems/RotateSystem.cpp.o
-
-.PHONY : SandBox/Systems/RotateSystem.o
-
-# target to build an object file
-SandBox/Systems/RotateSystem.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.o
-.PHONY : SandBox/Systems/RotateSystem.cpp.o
-
-SandBox/Systems/RotateSystem.i: SandBox/Systems/RotateSystem.cpp.i
-
-.PHONY : SandBox/Systems/RotateSystem.i
-
-# target to preprocess a source file
-SandBox/Systems/RotateSystem.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.i
-.PHONY : SandBox/Systems/RotateSystem.cpp.i
-
-SandBox/Systems/RotateSystem.s: SandBox/Systems/RotateSystem.cpp.s
-
-.PHONY : SandBox/Systems/RotateSystem.s
-
-# target to generate assembly for a file
-SandBox/Systems/RotateSystem.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/SandBox/Systems/RotateSystem.cpp.s
-.PHONY : SandBox/Systems/RotateSystem.cpp.s
 
 SandBox/Worlds/MovementTestWorld.o: SandBox/Worlds/MovementTestWorld.cpp.o
 
@@ -2310,6 +2310,9 @@ help:
 	@echo "... Game/Components/ProjectileComponent.o"
 	@echo "... Game/Components/ProjectileComponent.i"
 	@echo "... Game/Components/ProjectileComponent.s"
+	@echo "... Game/Components/RotateComponent.o"
+	@echo "... Game/Components/RotateComponent.i"
+	@echo "... Game/Components/RotateComponent.s"
 	@echo "... Game/Components/SeekComponent.o"
 	@echo "... Game/Components/SeekComponent.i"
 	@echo "... Game/Components/SeekComponent.s"
@@ -2334,6 +2337,9 @@ help:
 	@echo "... Game/Systems/RigidbodySystem.o"
 	@echo "... Game/Systems/RigidbodySystem.i"
 	@echo "... Game/Systems/RigidbodySystem.s"
+	@echo "... Game/Systems/RotateSystem.o"
+	@echo "... Game/Systems/RotateSystem.i"
+	@echo "... Game/Systems/RotateSystem.s"
 	@echo "... Game/Systems/SeekingSystem.o"
 	@echo "... Game/Systems/SeekingSystem.i"
 	@echo "... Game/Systems/SeekingSystem.s"
@@ -2385,15 +2391,9 @@ help:
 	@echo "... SandBox/Components/MoveComponent.o"
 	@echo "... SandBox/Components/MoveComponent.i"
 	@echo "... SandBox/Components/MoveComponent.s"
-	@echo "... SandBox/Components/RotateComponent.o"
-	@echo "... SandBox/Components/RotateComponent.i"
-	@echo "... SandBox/Components/RotateComponent.s"
 	@echo "... SandBox/MyGame.o"
 	@echo "... SandBox/MyGame.i"
 	@echo "... SandBox/MyGame.s"
-	@echo "... SandBox/Systems/RotateSystem.o"
-	@echo "... SandBox/Systems/RotateSystem.i"
-	@echo "... SandBox/Systems/RotateSystem.s"
 	@echo "... SandBox/Worlds/MovementTestWorld.o"
 	@echo "... SandBox/Worlds/MovementTestWorld.i"
 	@echo "... SandBox/Worlds/MovementTestWorld.s"

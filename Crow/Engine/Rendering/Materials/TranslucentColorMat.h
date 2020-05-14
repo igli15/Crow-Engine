@@ -32,9 +32,9 @@ public:
 
 private:
 
-    const static int MAX_DIR_LIGHT_COUNT = 10;
-    const static int MAX_POINT_LIGHT_COUNT = 10;
-    const static int MAX_SPOT_LIGHT_COUNT = 10;
+    const static int MAX_DIR_LIGHT_COUNT = 20;
+    const static int MAX_POINT_LIGHT_COUNT = 20;
+    const static int MAX_SPOT_LIGHT_COUNT = 20;
 
     GLint m_uProjectionMatrix = 0;
     GLint m_uViewMatrix = 0;
