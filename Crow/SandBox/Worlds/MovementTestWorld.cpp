@@ -27,11 +27,11 @@ void MovementTestWorld::Build()
     RegisterSystem<RigidbodySystem>();
     RegisterSystem<SteeringSystem>();
     RegisterSystem<SeekingSystem>();
-    RegisterSystem<SpawnSystem>();
+    //RegisterSystem<SpawnSystem>();
 
     ResourceManager* resourceManager = Game::Instance()->resourceManager;
 
-    Model* cubeModel = resourceManager->GetModel("dragon");
+    Model* cubeModel = resourceManager->GetModel("basicUnit");
     ColorMaterial* material = resourceManager->GetMaterial<ColorMaterial>("defaultMat");
 
 

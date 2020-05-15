@@ -25,6 +25,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Rendering/Materials/TranslucentColorMat.cpp.o"
+  "CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Rendering/Mesh.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Rendering/Model.cpp.o"

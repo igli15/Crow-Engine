@@ -63,22 +63,22 @@ void MainWorld::Build()
 
     UnitGroupArchetype* ghostArchetype = CreateUnitGroupArchetype<UnitGroupArchetype>("ghosts");
     ghostArchetype->maxSpeed = 0.7f;
-    ghostArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("translucentMaterial");
-    ghostArchetype->unitModel = resourceManager->GetModel("ghost");
-    ghostArchetype->scaleFactor = 0.05;
+    ghostArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("whiteUnlitMat");
+    ghostArchetype->unitModel = resourceManager->GetModel("basicUnit");
+    ghostArchetype->scaleFactor = 0.1;
     ghostArchetype->horizontalDistance = 0.2f;
     ghostArchetype->verticalDistance = 0.2f;
-    ghostArchetype->rows = 5;
-    ghostArchetype->columns = 5;
+    ghostArchetype->rows = 4;
+    ghostArchetype->columns = 4;
     ghostArchetype->unitType = DamageDealer::Sword;
     ghostArchetype->strongAgainstType = DamageDealer::NONE;
 
 
     EnemyGroupArchetype* enemyGolemArchetype = CreateUnitGroupArchetype<EnemyGroupArchetype>("golem");
     enemyGolemArchetype->maxSpeed = 0.7f;
-    enemyGolemArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("translucentMaterial");
-    enemyGolemArchetype->unitModel = resourceManager->GetModel("golem");
-    enemyGolemArchetype->scaleFactor = 0.07f;
+    enemyGolemArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("blackUnlitMat");
+    enemyGolemArchetype->unitModel = resourceManager->GetModel("basicUnit");
+    enemyGolemArchetype->scaleFactor = 0.5f;
     enemyGolemArchetype->horizontalDistance = 0.3f;
     enemyGolemArchetype->verticalDistance = 0.3;
     enemyGolemArchetype->rows = 1;
@@ -109,7 +109,7 @@ void MainWorld::Build()
     Transform* transform = bridgeIndicatorEntity.AddComponent(Transform{});
     transform->Rotate(180,glm::vec3(1,0,0));
     transform->Scale(glm::vec3(0.1f,0.2f,0.1f));
-    bridgeIndicatorEntity.AddComponent(MeshInfo{resourceManager->GetModel("cone"),resourceManager->GetMaterial<TranslucentColorMat>("defaultMat")});
+    bridgeIndicatorEntity.AddComponent(MeshInfo{resourceManager->GetModel("cone"),resourceManager->GetMaterial<TranslucentColorMat>("whiteUnlitMat")});
     bridgeIndicatorEntity.AddComponent(SelectedBridgeIndicator{});
 
     /*

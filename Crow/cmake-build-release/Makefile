@@ -825,6 +825,33 @@ Engine/Rendering/Materials/TranslucentColorMat.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/TranslucentColorMat.cpp.s
 .PHONY : Engine/Rendering/Materials/TranslucentColorMat.cpp.s
 
+Engine/Rendering/Materials/UnlitMaterial.o: Engine/Rendering/Materials/UnlitMaterial.cpp.o
+
+.PHONY : Engine/Rendering/Materials/UnlitMaterial.o
+
+# target to build an object file
+Engine/Rendering/Materials/UnlitMaterial.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.o
+.PHONY : Engine/Rendering/Materials/UnlitMaterial.cpp.o
+
+Engine/Rendering/Materials/UnlitMaterial.i: Engine/Rendering/Materials/UnlitMaterial.cpp.i
+
+.PHONY : Engine/Rendering/Materials/UnlitMaterial.i
+
+# target to preprocess a source file
+Engine/Rendering/Materials/UnlitMaterial.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.i
+.PHONY : Engine/Rendering/Materials/UnlitMaterial.cpp.i
+
+Engine/Rendering/Materials/UnlitMaterial.s: Engine/Rendering/Materials/UnlitMaterial.cpp.s
+
+.PHONY : Engine/Rendering/Materials/UnlitMaterial.s
+
+# target to generate assembly for a file
+Engine/Rendering/Materials/UnlitMaterial.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.s
+.PHONY : Engine/Rendering/Materials/UnlitMaterial.cpp.s
+
 Engine/Rendering/Materials/WaterMaterial.o: Engine/Rendering/Materials/WaterMaterial.cpp.o
 
 .PHONY : Engine/Rendering/Materials/WaterMaterial.o
@@ -2289,6 +2316,9 @@ help:
 	@echo "... Engine/Rendering/Materials/TranslucentColorMat.o"
 	@echo "... Engine/Rendering/Materials/TranslucentColorMat.i"
 	@echo "... Engine/Rendering/Materials/TranslucentColorMat.s"
+	@echo "... Engine/Rendering/Materials/UnlitMaterial.o"
+	@echo "... Engine/Rendering/Materials/UnlitMaterial.i"
+	@echo "... Engine/Rendering/Materials/UnlitMaterial.s"
 	@echo "... Engine/Rendering/Materials/WaterMaterial.o"
 	@echo "... Engine/Rendering/Materials/WaterMaterial.i"
 	@echo "... Engine/Rendering/Materials/WaterMaterial.s"

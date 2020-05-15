@@ -291,6 +291,12 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/TranslucentColorMat.h">
 			<Option target="Crow"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/UnlitMaterial.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/UnlitMaterial.h">
+			<Option target="Crow"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/WaterMaterial.cpp">
 			<Option target="Crow"/>
 		</Unit>

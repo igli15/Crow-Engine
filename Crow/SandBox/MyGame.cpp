@@ -17,6 +17,7 @@
 #include "../Engine/Editor/UnitySceneParser.h"
 #include "../Engine/Rendering/Materials/WaterMaterial.h"
 #include "../Engine/Rendering/Materials/PortalMaterial.h"
+#include "../Engine/Rendering/Materials/UnlitMaterial.h"
 
 void MyGame::LoadAssets()
 {
@@ -29,9 +30,12 @@ void MyGame::LoadAssets()
     resourceManager->CreateShader("TextureVertexShader.vs","TextureFragmentShader.fs","textureShader");
     resourceManager->CreateShader("WaterVertexShader.vs","WaterFragmentShader.fs","waterShader");
     resourceManager->CreateShader("PortalVertexShader.vs","PortalFragmentShader.fs","portalShader");
+    resourceManager->CreateShader("UnlitVertexShader.vs","UnlitFragmentShader.fs","unlitShader");
+
     resourceManager->CreateMaterial<ColorMaterial>("defaultMat");
     resourceManager->CreateMaterial<WaterMaterial>("waterMaterial");
     resourceManager->CreateMaterial<PortalMaterial>("portalMaterial");
+
     // resourceManager->CreateMaterial<ColorMaterial>("cyanMaterial");
 
     resourceManager->LoadModel(("cube.obj"),"cube");
@@ -69,6 +73,12 @@ void MyGame::LoadAssets()
 */
     resourceManager->LoadAssetFromAssetsFile("allAssets.asset");
     resourceManager->LoadAssetFromAssetsFile("UnityAssetFile.asset");
+
+    UnlitMaterial* playerBasicUnitMat = resourceManager->CreateMaterial<UnlitMaterial>("whiteUnlitMat");
+    playerBasicUnitMat->diffuseTexture = resourceManager->GetTexture("playerBasicUnitDiffuse");
+
+    UnlitMaterial* enemyBasicUnitMat = resourceManager->CreateMaterial<UnlitMaterial>("blackUnlitMat");
+    enemyBasicUnitMat->diffuseTexture = resourceManager->GetTexture("enemyBasicUnitDiffuse");
 }
 
 void MyGame::Init()

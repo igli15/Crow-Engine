@@ -65,7 +65,7 @@ void SteeringSystem::LookWhereGoing(Rigidbody& rigidbody, Transform& transform, 
         glm::vec3 upAxis = glm::normalize(transform.GetWorldTransform()[1]);
 
         //Target rotation is lookat our velocity
-        glm::quat targetRot = glm::quatLookAt(glm::normalize(rigidbody.velocity),upAxis);
+        glm::quat targetRot = glm::quatLookAt(glm::normalize(-rigidbody.velocity),upAxis);
 
         //Smoothly rotate towards the target rotation
         glm::quat smoothedRotation = RotateTowards(transform.getLocalRotation(),targetRot,angleStep);
