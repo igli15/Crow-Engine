@@ -34,6 +34,7 @@
 #include "../Components/RotateComponent.h"
 #include "../Systems/RotateSystem.h"
 #include "../../Engine/Rendering/Materials/PortalMaterial.h"
+#include "../Systems/PathSystem.h"
 
 void MainWorld::Build()
 {
@@ -57,6 +58,7 @@ void MainWorld::Build()
     RegisterSystem<ProjectileSystem>();
     RegisterSystem<CannonSystem>();
     RegisterSystem<RotateSystem>();
+    RegisterSystem<PathSystem>();
 
     EntityHandle playerEntity = CreateEntity();
     Player* playerComponent = playerEntity.AddComponent<Player>(Player{});

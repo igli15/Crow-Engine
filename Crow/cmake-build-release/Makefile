@@ -1419,6 +1419,33 @@ Game/Components/SteeringComponent.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Components/SteeringComponent.cpp.s
 .PHONY : Game/Components/SteeringComponent.cpp.s
 
+Game/Events/TargetSeekedEvent.o: Game/Events/TargetSeekedEvent.cpp.o
+
+.PHONY : Game/Events/TargetSeekedEvent.o
+
+# target to build an object file
+Game/Events/TargetSeekedEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Events/TargetSeekedEvent.cpp.o
+.PHONY : Game/Events/TargetSeekedEvent.cpp.o
+
+Game/Events/TargetSeekedEvent.i: Game/Events/TargetSeekedEvent.cpp.i
+
+.PHONY : Game/Events/TargetSeekedEvent.i
+
+# target to preprocess a source file
+Game/Events/TargetSeekedEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Events/TargetSeekedEvent.cpp.i
+.PHONY : Game/Events/TargetSeekedEvent.cpp.i
+
+Game/Events/TargetSeekedEvent.s: Game/Events/TargetSeekedEvent.cpp.s
+
+.PHONY : Game/Events/TargetSeekedEvent.s
+
+# target to generate assembly for a file
+Game/Events/TargetSeekedEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Events/TargetSeekedEvent.cpp.s
+.PHONY : Game/Events/TargetSeekedEvent.cpp.s
+
 Game/Systems/BridgeSystem.o: Game/Systems/BridgeSystem.cpp.o
 
 .PHONY : Game/Systems/BridgeSystem.o
@@ -1499,6 +1526,33 @@ Game/Systems/EnemySpawnSystem.s: Game/Systems/EnemySpawnSystem.cpp.s
 Game/Systems/EnemySpawnSystem.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.s
 .PHONY : Game/Systems/EnemySpawnSystem.cpp.s
+
+Game/Systems/PathSystem.o: Game/Systems/PathSystem.cpp.o
+
+.PHONY : Game/Systems/PathSystem.o
+
+# target to build an object file
+Game/Systems/PathSystem.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.o
+.PHONY : Game/Systems/PathSystem.cpp.o
+
+Game/Systems/PathSystem.i: Game/Systems/PathSystem.cpp.i
+
+.PHONY : Game/Systems/PathSystem.i
+
+# target to preprocess a source file
+Game/Systems/PathSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.i
+.PHONY : Game/Systems/PathSystem.cpp.i
+
+Game/Systems/PathSystem.s: Game/Systems/PathSystem.cpp.s
+
+.PHONY : Game/Systems/PathSystem.s
+
+# target to generate assembly for a file
+Game/Systems/PathSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.s
+.PHONY : Game/Systems/PathSystem.cpp.s
 
 Game/Systems/ProjectileSystem.o: Game/Systems/ProjectileSystem.cpp.o
 
@@ -2382,6 +2436,9 @@ help:
 	@echo "... Game/Components/SteeringComponent.o"
 	@echo "... Game/Components/SteeringComponent.i"
 	@echo "... Game/Components/SteeringComponent.s"
+	@echo "... Game/Events/TargetSeekedEvent.o"
+	@echo "... Game/Events/TargetSeekedEvent.i"
+	@echo "... Game/Events/TargetSeekedEvent.s"
 	@echo "... Game/Systems/BridgeSystem.o"
 	@echo "... Game/Systems/BridgeSystem.i"
 	@echo "... Game/Systems/BridgeSystem.s"
@@ -2391,6 +2448,9 @@ help:
 	@echo "... Game/Systems/EnemySpawnSystem.o"
 	@echo "... Game/Systems/EnemySpawnSystem.i"
 	@echo "... Game/Systems/EnemySpawnSystem.s"
+	@echo "... Game/Systems/PathSystem.o"
+	@echo "... Game/Systems/PathSystem.i"
+	@echo "... Game/Systems/PathSystem.s"
 	@echo "... Game/Systems/ProjectileSystem.o"
 	@echo "... Game/Systems/ProjectileSystem.i"
 	@echo "... Game/Systems/ProjectileSystem.s"

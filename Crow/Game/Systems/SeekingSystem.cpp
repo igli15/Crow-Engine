@@ -5,12 +5,10 @@
 #include "SeekingSystem.h"
 #include "../../Engine/Debug/Debug.h"
 #include "../../Engine/Feather/World.h"
-#include "../../Engine/Components/Transform.h"
-#include "../../Engine/Components/MeshInfo.h"
-#include "../../Engine/Components/Rigidbody.h"
 #include "../Components/SteeringComponent.h"
 #include "../Components/SeekComponent.h"
-#include "../../Game/Components/EnemyUnitCollider.h"
+#include "../../Engine/EventQueue/EventQueue.h"
+#include "../Events/TargetSeekedEvent.h"
 
 void SeekingSystem::Init()
 {
@@ -30,11 +28,11 @@ void SeekingSystem::Update(float dt)
         SeekComponent& seekComponent = world->GetComponent<SeekComponent>(entities[i]);
         Rigidbody& rigidBody = world->GetComponent<Rigidbody>(entities[i]);
 
-        steeringComponent.steering += DoSeek(transform,rigidBody,seekComponent.targetPos,2);
+        steeringComponent.steering += DoSeek(entities[i],transform,rigidBody,seekComponent.targetPos,0.2f);
     }
 }
 
-glm::vec3 SeekingSystem::DoSeek(Transform& ownerTransform, Rigidbody& ownerRigidBody, glm::vec3 target, float slowingRadius)
+glm::vec3 SeekingSystem::DoSeek(Entity entity,Transform& ownerTransform, Rigidbody& ownerRigidBody, glm::vec3 target, float slowingRadius)
 {
     glm::vec3 resultForce = glm::vec3(0);
 
@@ -43,6 +41,11 @@ glm::vec3 SeekingSystem::DoSeek(Transform& ownerTransform, Rigidbody& ownerRigid
 
 
     float distance = glm::length(toTarget);
+
+    if(distance <= 0.2f)
+    {
+        EventQueue::Instance().Publish(new TargetSeekedEvent(EntityHandle{entity,world}));
+    }
 
     if(distance < slowingRadius)
     {

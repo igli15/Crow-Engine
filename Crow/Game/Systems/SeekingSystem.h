@@ -16,7 +16,7 @@ class SeekingSystem : public System
     void Init() override;
     void Update(float dt) override;
 
-    glm::vec3 DoSeek(Transform& ownerTransform, Rigidbody& ownerRigidBody , glm::vec3 target, float slowingRadius = 0.0f);
+    glm::vec3 DoSeek(Entity entity,Transform& ownerTransform, Rigidbody& ownerRigidBody , glm::vec3 target, float slowingRadius = 0.0f);
 
 };
 
