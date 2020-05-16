@@ -13,6 +13,7 @@
 #include "../Components/SeekComponent.h"
 #include "../../Engine/Components/Rigidbody.h"
 #include "../Components/CannonComponent.h"
+#include "../Components/UnitComponent.h"
 
 EntityHandle CannonGroupArchetype::Build(World *world, BridgeComponent *bridgeComponent)
 {
@@ -29,7 +30,7 @@ EntityHandle CannonGroupArchetype::Build(World *world, BridgeComponent *bridgeCo
     cannonEntity.AddComponent<HealthComponent>(HealthComponent{maxHealth, maxHealth});
     cannonEntity.AddComponent<DamageDealer>(DamageDealer{damageRate, unitType, strongAgainstType});
     CannonComponent* cannonComponent = cannonEntity.AddComponent<CannonComponent>(CannonComponent{});
-    cannonComponent->bridgeComponent = bridgeComponent;
+    cannonEntity.AddComponent(UnitComponent{bridgeComponent});
 
     for (int columnIndex = 0; columnIndex < columns; ++columnIndex)
     {

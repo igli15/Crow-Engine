@@ -10175,6 +10175,7 @@ CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/BridgeComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/EnemyUnitCollider.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/PlayerUnitCollider.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Events/BridgeSelectedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/BridgeSystem.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/BridgeSystem.h
@@ -10275,6 +10276,7 @@ CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/BridgeComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/CannonComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/ProjectileComponent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/CannonSystem.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/CannonSystem.h
  /usr/local/include/GL/glew.h
@@ -13516,6 +13518,7 @@ CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/CannonGroupArchetype.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/PlayerUnitCollider.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/SeekComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/SteeringComponent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/AbstractGroupArchetype.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/CannonGroupArchetype.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/CannonGroupArchetype.h
@@ -13923,6 +13926,7 @@ CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/EnemyGroupArchetype.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/HealthComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/SeekComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/SteeringComponent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/AbstractGroupArchetype.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/EnemyGroupArchetype.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/EnemyGroupArchetype.h
@@ -14330,6 +14334,7 @@ CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/PlayerUnitCollider.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/SeekComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/SteeringComponent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/AbstractGroupArchetype.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/UnitGroupArchetype.h

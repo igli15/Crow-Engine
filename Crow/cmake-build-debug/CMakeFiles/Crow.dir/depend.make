@@ -10174,6 +10174,7 @@ CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: ../Engine/Rendering/Window.
 CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: ../Game/Components/BridgeComponent.h
 CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: ../Game/Components/EnemyUnitCollider.h
 CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: ../Game/Components/PlayerUnitCollider.h
+CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: ../Game/Components/UnitComponent.h
 CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: ../Game/Events/BridgeSelectedEvent.h
 CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: ../Game/Systems/BridgeSystem.cpp
 CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: ../Game/Systems/BridgeSystem.h
@@ -10274,6 +10275,7 @@ CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o: ../Engine/Rendering/Window.
 CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o: ../Game/Components/BridgeComponent.h
 CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o: ../Game/Components/CannonComponent.h
 CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o: ../Game/Components/ProjectileComponent.h
+CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o: ../Game/Components/UnitComponent.h
 CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o: ../Game/Systems/CannonSystem.cpp
 CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o: ../Game/Systems/CannonSystem.h
 CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o: /usr/local/include/GL/glew.h
@@ -13515,6 +13517,7 @@ CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/CannonGroupArchetype.cpp.o: ../Game
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/CannonGroupArchetype.cpp.o: ../Game/Components/PlayerUnitCollider.h
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/CannonGroupArchetype.cpp.o: ../Game/Components/SeekComponent.h
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/CannonGroupArchetype.cpp.o: ../Game/Components/SteeringComponent.h
+CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/CannonGroupArchetype.cpp.o: ../Game/Components/UnitComponent.h
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/CannonGroupArchetype.cpp.o: ../Game/UnitGroupArchetypes/AbstractGroupArchetype.h
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/CannonGroupArchetype.cpp.o: ../Game/UnitGroupArchetypes/CannonGroupArchetype.cpp
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/CannonGroupArchetype.cpp.o: ../Game/UnitGroupArchetypes/CannonGroupArchetype.h
@@ -13922,6 +13925,7 @@ CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/EnemyGroupArchetype.cpp.o: ../Game/
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/EnemyGroupArchetype.cpp.o: ../Game/Components/HealthComponent.h
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/EnemyGroupArchetype.cpp.o: ../Game/Components/SeekComponent.h
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/EnemyGroupArchetype.cpp.o: ../Game/Components/SteeringComponent.h
+CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/EnemyGroupArchetype.cpp.o: ../Game/Components/UnitComponent.h
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/EnemyGroupArchetype.cpp.o: ../Game/UnitGroupArchetypes/AbstractGroupArchetype.h
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/EnemyGroupArchetype.cpp.o: ../Game/UnitGroupArchetypes/EnemyGroupArchetype.cpp
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/EnemyGroupArchetype.cpp.o: ../Game/UnitGroupArchetypes/EnemyGroupArchetype.h
@@ -14329,6 +14333,7 @@ CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Game/C
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Game/Components/PlayerUnitCollider.h
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Game/Components/SeekComponent.h
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Game/Components/SteeringComponent.h
+CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Game/Components/UnitComponent.h
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Game/UnitGroupArchetypes/AbstractGroupArchetype.h
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Game/UnitGroupArchetypes/UnitGroupArchetype.cpp
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Game/UnitGroupArchetypes/UnitGroupArchetype.h

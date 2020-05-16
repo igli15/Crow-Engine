@@ -13,6 +13,7 @@
 #include <vector>
 
 class BridgeComponent;
+class UnitComponent;
 
 class BridgeSystem : public System
 {
@@ -21,8 +22,7 @@ public:
     void Update(float dt) override;
     void OnCreate() override;
 
-    void OnEnemyUnitDestroyed(ComponentRemovedEvent<EnemyUnitCollider>* event);
-    void OnPlayerUnitDestroyed(ComponentRemovedEvent<PlayerUnitCollider>* event);
+    void OnUnitComponentRemoved(ComponentRemovedEvent<UnitComponent>* event);
 
 private:
     std::vector<BridgeComponent*> m_bridges;

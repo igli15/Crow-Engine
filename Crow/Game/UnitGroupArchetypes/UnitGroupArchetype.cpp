@@ -12,6 +12,7 @@
 #include "../Components/PlayerUnitCollider.h"
 #include "../Components/HealthComponent.h"
 #include "../Components/DamageDealer.h"
+#include "../Components/UnitComponent.h"
 
 EntityHandle UnitGroupArchetype::Build(World* world,BridgeComponent* bridge)
 {
@@ -23,6 +24,7 @@ EntityHandle UnitGroupArchetype::Build(World* world,BridgeComponent* bridge)
 
     unitGroupEntity.AddComponent<HealthComponent>(HealthComponent{maxHealth,maxHealth});
     unitGroupEntity.AddComponent<DamageDealer>(DamageDealer{damageRate,unitType,strongAgainstType});
+    unitGroupEntity.AddComponent(UnitComponent{bridge});
 
     for (int columnIndex = 0; columnIndex < columns; ++columnIndex)
     {

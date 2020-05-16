@@ -32,7 +32,7 @@ void SeekingSystem::Update(float dt)
     }
 }
 
-glm::vec3 SeekingSystem::DoSeek(Entity entity,Transform& ownerTransform, Rigidbody& ownerRigidBody, glm::vec3 target, float slowingRadius)
+glm::vec3 SeekingSystem::DoSeek(Entity entity,Transform& ownerTransform, Rigidbody& ownerRigidBody, glm::vec3 target, float endRadius)
 {
     glm::vec3 resultForce = glm::vec3(0);
 
@@ -42,14 +42,9 @@ glm::vec3 SeekingSystem::DoSeek(Entity entity,Transform& ownerTransform, Rigidbo
 
     float distance = glm::length(toTarget);
 
-    if(distance <= 0.2f)
+    if(distance < endRadius)
     {
         EventQueue::Instance().Publish(new TargetSeekedEvent(EntityHandle{entity,world}));
-    }
-
-    if(distance < slowingRadius)
-    {
-        desiredVelocity *= distance/slowingRadius;
     }
 
     resultForce = desiredVelocity - ownerRigidBody.velocity;

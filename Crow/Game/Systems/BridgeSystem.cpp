@@ -8,14 +8,13 @@
 #include "../../Engine/Core/Input.h"
 #include "GLFW/glfw3.h"
 #include "../Events/BridgeSelectedEvent.h"
+#include "../Components/UnitComponent.h"
 
 void BridgeSystem::OnCreate()
 {
     System::OnCreate();
 
-    EventQueue::Instance().Subscribe(this,&BridgeSystem::OnEnemyUnitDestroyed);
-    EventQueue::Instance().Subscribe(this,&BridgeSystem::OnPlayerUnitDestroyed);
-
+    EventQueue::Instance().Subscribe(this, &BridgeSystem::OnUnitComponentRemoved);
 }
 
 
@@ -70,27 +69,15 @@ void BridgeSystem::Update(float dt)
 
 }
 
-//TODO: This is dumb fix this.... The active bridge is not the bridge the enemy might be on... the units should also know about the bridge maybe?!
-void BridgeSystem::OnEnemyUnitDestroyed(ComponentRemovedEvent<EnemyUnitCollider> *event)
+void BridgeSystem::OnUnitComponentRemoved(ComponentRemovedEvent<UnitComponent> *event)
 {
-   auto iterator = std::find(m_currentSelectedBridge->enemyEntitiesOnBridge.begin(),m_currentSelectedBridge->enemyEntitiesOnBridge.end(),event->entity);
+    UnitComponent unitComponent = event->component;
 
-   if(iterator != m_currentSelectedBridge->enemyEntitiesOnBridge.end())
+   auto iterator = std::find(unitComponent.bridge->enemyEntitiesOnBridge.begin(),unitComponent.bridge->enemyEntitiesOnBridge.end(),event->entity);
+
+   if(iterator != unitComponent.bridge->enemyEntitiesOnBridge.end())
    {
-       m_currentSelectedBridge->enemyEntitiesOnBridge.erase(iterator);
+       unitComponent.bridge->enemyEntitiesOnBridge.erase(iterator);
    }
-
-  // ENGINE_LOG("enemy ded");
 }
 
-void BridgeSystem::OnPlayerUnitDestroyed(ComponentRemovedEvent<PlayerUnitCollider> *event)
-{
-    auto iterator = std::find(m_currentSelectedBridge->playerEntitiesOnBridge.begin(),m_currentSelectedBridge->playerEntitiesOnBridge.end(),event->entity);
-
-    if(iterator != m_currentSelectedBridge->playerEntitiesOnBridge.end())
-    {
-        m_currentSelectedBridge->playerEntitiesOnBridge.erase(iterator);
-    }
-
-    //ENGINE_LOG("player ded");
-}

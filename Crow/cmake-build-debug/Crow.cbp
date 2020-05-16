@@ -435,6 +435,9 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/SteeringComponent.h">
 			<Option target="Crow"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitComponent.h">
+			<Option target="Crow"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Events/BridgeSelectedEvent.h">
 			<Option target="Crow"/>
 		</Unit>

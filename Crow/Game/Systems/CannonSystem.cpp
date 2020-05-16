@@ -14,6 +14,7 @@
 #include "../../Engine/Core/Game.h"
 #include "../../Engine/Core/ResourceManager.h"
 #include "../../Game/Components/BridgeComponent.h"
+#include "../Components/UnitComponent.h"
 
 void CannonSystem::OnCreate()
 {
@@ -30,14 +31,17 @@ void CannonSystem::Update(float dt)
     for (int i = 0; i < cannonEntities.size(); ++i)
     {
         CannonComponent &cannonComponent = world->GetComponent<CannonComponent>(cannonEntities[i]);
+        UnitComponent& unitComponent = world->GetComponent<UnitComponent>(cannonEntities[i]);
         Transform& transform = world->GetComponent<Transform>(cannonEntities[i]);
         cannonComponent.reloadCounter += dt;
 
         if(cannonComponent.reloadCounter >= cannonComponent.reloadTime)
         {
-            if(cannonComponent.bridgeComponent->enemyEntitiesOnBridge.empty()) continue;
+            if(unitComponent.bridge->enemyEntitiesOnBridge.empty()) continue;
 
-            Entity closestEnemyEntity = *cannonComponent.bridgeComponent->enemyEntitiesOnBridge.begin();
+            //derefrence a ptr to the first enemy on the list
+            Entity closestEnemyEntity = *(unitComponent.bridge->enemyEntitiesOnBridge.begin());
+
             Transform& closestTransform = world->GetComponent<Transform>(closestEnemyEntity);
             SpawnProjectile(transform.WorldPosition(),closestTransform.WorldPosition());
             cannonComponent.reloadCounter = 0;

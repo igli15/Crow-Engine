@@ -9,7 +9,6 @@ class BridgeComponent;
 
 struct CannonComponent
 {
-    BridgeComponent* bridgeComponent = nullptr;
     float reloadTime = 4.0f;
     float reloadCounter = 0.0f;
 };
