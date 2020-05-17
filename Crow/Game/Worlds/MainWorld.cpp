@@ -140,18 +140,32 @@ void MainWorld::ParseGameComponents(rapidxml::xml_node<> *node, EntityHandle ent
     if(strcmp(node->name(), "BridgeComponent") == 0)
     {
         BridgeComponent *bridgeComponent = entityHandle.AddComponent(BridgeComponent{});
-
+        int pathCount = 0;
         for (rapidxml::xml_attribute<> *a = node->first_attribute();
              a != nullptr;
              a = a->next_attribute()) {
             std::string attributeName = a->name();
             if (attributeName == "startPos")
             {
-                bridgeComponent->startPos =  UnitySceneParser::ScanVector3f(a->value());
+                //bridgeComponent->startPos =  UnitySceneParser::ScanVector3f(a->value());
             }
             else if(attributeName == "endPos")
             {
-                bridgeComponent->endPos =  UnitySceneParser::ScanVector3f(a->value());
+                //bridgeComponent->endPos =  UnitySceneParser::ScanVector3f(a->value());
+            }
+            else if(attributeName == "pathCount")
+            {
+               pathCount = atoi(a->value());
+            } else
+            {
+                 for (int i = 0; i < pathCount; ++i)
+                {
+                    if (attributeName == "Path" + std::to_string(i))
+                    {
+                        ENGINE_LOG(a->value());
+                        bridgeComponent->pathPoints.push_back( UnitySceneParser::ScanVector3f(a->value()));
+                    }
+                }
             }
         }
     }

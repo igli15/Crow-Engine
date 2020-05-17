@@ -13,18 +13,22 @@
 #include "../Components/HealthComponent.h"
 #include "../Components/DamageDealer.h"
 #include "../Components/UnitComponent.h"
+#include "../Components/UnitPathComponent.h"
 
 EntityHandle UnitGroupArchetype::Build(World* world,BridgeComponent* bridge)
 {
     EntityHandle unitGroupEntity = world->CreateEntity();
     Transform* unitGroupTransform = unitGroupEntity.AddComponent<Transform>(Transform{});
-    unitGroupTransform->Translate(bridge->startPos);
+    unitGroupTransform->Translate(bridge->pathPoints[0]);
     unitGroupTransform->Translate(glm::vec3(-(float)columns * horizontalDistance/2,0.5f,(float )rows * verticalDistance/2));
     unitGroupEntity.AddComponent<PlayerUnitCollider>(PlayerUnitCollider{colliderRadius});
 
     unitGroupEntity.AddComponent<HealthComponent>(HealthComponent{maxHealth,maxHealth});
     unitGroupEntity.AddComponent<DamageDealer>(DamageDealer{damageRate,unitType,strongAgainstType});
     unitGroupEntity.AddComponent(UnitComponent{bridge});
+
+    std::vector<glm::vec3> pathPoints = bridge->pathPoints;
+    unitGroupEntity.AddComponent<UnitPathComponent>(UnitPathComponent{pathPoints});
 
     for (int columnIndex = 0; columnIndex < columns; ++columnIndex)
     {
@@ -40,7 +44,8 @@ EntityHandle UnitGroupArchetype::Build(World* world,BridgeComponent* bridge)
     }
 
     unitGroupEntity.AddComponent<SteeringComponent>(SteeringComponent{});
-    unitGroupEntity.AddComponent<SeekComponent>(SeekComponent{bridge->endPos});
+
+    unitGroupEntity.AddComponent<SeekComponent>(SeekComponent{bridge->pathPoints[1]});
     Rigidbody* rb = unitGroupEntity.AddComponent<Rigidbody>(Rigidbody{});
 
     rb->maxSpeed = maxSpeed;

@@ -62,7 +62,7 @@ void SteeringSystem::LookWhereGoing(Rigidbody& rigidbody, Transform& transform, 
     if(rigidbody.velocity != glm::vec3(0))
     {
         //avoids the directional vector to be parallel to the up axis
-        glm::vec3 upAxis = glm::normalize(transform.GetWorldTransform()[1]);
+        glm::vec3 upAxis = glm::normalize(glm::vec3(0,1,0));
 
         //Target rotation is lookat our velocity
         glm::quat targetRot = glm::quatLookAt(glm::normalize(-rigidbody.velocity),upAxis);

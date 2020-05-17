@@ -5,6 +5,8 @@
 #include "PathSystem.h"
 #include "../../Engine/EventQueue/EventQueue.h"
 #include "../../Game/Events/TargetSeekedEvent.h"
+#include "../Components/SeekComponent.h"
+#include "../Components/UnitPathComponent.h"
 
 void PathSystem::Init()
 {
@@ -14,5 +16,20 @@ void PathSystem::Init()
 
 void PathSystem::OnPathSeeked(TargetSeekedEvent* event)
 {
-    world->DestroyEntity(event->entity.entity);
+    ComponentHandle<UnitPathComponent> pathComponentHandle = event->entity.GetComponent<UnitPathComponent>();
+    ComponentHandle<SeekComponent> seekComponentHandle = event->entity.GetComponent<SeekComponent>();
+
+    pathComponentHandle.component->currentPathIndex++;
+    int pathIndex = pathComponentHandle.component->currentPathIndex ;
+
+    if(pathIndex >= pathComponentHandle.component->pathPoints.size())
+    {
+        world->DestroyEntity(event->entity.entity);
+    }
+    else
+    {
+        seekComponentHandle.component->targetPos = pathComponentHandle.component->pathPoints[pathIndex];
+    }
+
+    //world->DestroyEntity(event->entity.entity);
 }

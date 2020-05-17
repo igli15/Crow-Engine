@@ -31,6 +31,6 @@ void SelectedBridgeIndicatorSystem::Init()
 
 void SelectedBridgeIndicatorSystem::OnBridgeSelected(BridgeSelectedEvent *event)
 {
-    bridgeIndicatorTransform->SetLocalPosition((event->bridge->startPos + event->bridge->endPos)/ 2.0f);
+    bridgeIndicatorTransform->SetLocalPosition((event->bridge->pathPoints[event->bridge->pathPoints.size()/2]));
     bridgeIndicatorTransform->Translate(glm::vec3(0,1,0) *selectedBridgeIndicator->verticalOffset);
 }

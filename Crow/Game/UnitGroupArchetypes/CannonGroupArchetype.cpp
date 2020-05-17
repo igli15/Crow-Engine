@@ -14,13 +14,14 @@
 #include "../../Engine/Components/Rigidbody.h"
 #include "../Components/CannonComponent.h"
 #include "../Components/UnitComponent.h"
+#include "../Components/UnitPathComponent.h"
 
 EntityHandle CannonGroupArchetype::Build(World *world, BridgeComponent *bridgeComponent)
 {
 
     EntityHandle cannonEntity = world->CreateEntity();
     Transform* cannonTransform = cannonEntity.AddComponent<Transform>(Transform{});
-    cannonTransform->Translate(bridgeComponent->startPos);
+    cannonTransform->Translate(bridgeComponent->pathPoints[0]);
     cannonTransform->Translate(glm::vec3(-(float)columns * horizontalDistance / 2, 0.5f, (float )rows * verticalDistance / 2));
     cannonTransform->Scale(glm::vec3(0.06f));
     cannonTransform->Rotate(90,glm::vec3(0,0,1));
@@ -31,6 +32,9 @@ EntityHandle CannonGroupArchetype::Build(World *world, BridgeComponent *bridgeCo
     cannonEntity.AddComponent<DamageDealer>(DamageDealer{damageRate, unitType, strongAgainstType});
     CannonComponent* cannonComponent = cannonEntity.AddComponent<CannonComponent>(CannonComponent{});
     cannonEntity.AddComponent(UnitComponent{bridgeComponent});
+
+    std::vector<glm::vec3> pathPoints = bridgeComponent->pathPoints;
+    cannonEntity.AddComponent<UnitPathComponent>(UnitPathComponent{pathPoints});
 
     for (int columnIndex = 0; columnIndex < columns; ++columnIndex)
     {
@@ -46,7 +50,7 @@ EntityHandle CannonGroupArchetype::Build(World *world, BridgeComponent *bridgeCo
     }
 
     cannonEntity.AddComponent<SteeringComponent>(SteeringComponent{});
-    cannonEntity.AddComponent<SeekComponent>(SeekComponent{bridgeComponent->endPos});
+    cannonEntity.AddComponent<SeekComponent>(SeekComponent{bridgeComponent->pathPoints.back()});
     Rigidbody* rb = cannonEntity.AddComponent<Rigidbody>(Rigidbody{});
 
     rb->maxSpeed = maxSpeed;
