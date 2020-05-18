@@ -64,6 +64,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SelectedBridgeIndicatorSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Game/Systems/SelectedBridgeIndicatorSystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SpawnSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SteeringSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Game/Systems/SteeringSystem.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitAnimationSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Game/Systems/UnitAnimationSystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitCollisionSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Game/Systems/UnitCollisionSystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitFightingSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitSelectionSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.o"

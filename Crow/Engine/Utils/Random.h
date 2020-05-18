@@ -19,9 +19,9 @@ public:
 
     inline static float RandomRange(float min,float max)
     {
-       if(max > min)
+       if(min > max)
        {
-           ENGINE_LOG_WARNING("max > min, returning min...");
+           ENGINE_LOG_WARNING("min > max, returning min...");
            return min;
        }
 

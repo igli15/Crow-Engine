@@ -1743,6 +1743,33 @@ Game/Systems/SteeringSystem.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/SteeringSystem.cpp.s
 .PHONY : Game/Systems/SteeringSystem.cpp.s
 
+Game/Systems/UnitAnimationSystem.o: Game/Systems/UnitAnimationSystem.cpp.o
+
+.PHONY : Game/Systems/UnitAnimationSystem.o
+
+# target to build an object file
+Game/Systems/UnitAnimationSystem.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/UnitAnimationSystem.cpp.o
+.PHONY : Game/Systems/UnitAnimationSystem.cpp.o
+
+Game/Systems/UnitAnimationSystem.i: Game/Systems/UnitAnimationSystem.cpp.i
+
+.PHONY : Game/Systems/UnitAnimationSystem.i
+
+# target to preprocess a source file
+Game/Systems/UnitAnimationSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/UnitAnimationSystem.cpp.i
+.PHONY : Game/Systems/UnitAnimationSystem.cpp.i
+
+Game/Systems/UnitAnimationSystem.s: Game/Systems/UnitAnimationSystem.cpp.s
+
+.PHONY : Game/Systems/UnitAnimationSystem.s
+
+# target to generate assembly for a file
+Game/Systems/UnitAnimationSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/UnitAnimationSystem.cpp.s
+.PHONY : Game/Systems/UnitAnimationSystem.cpp.s
+
 Game/Systems/UnitCollisionSystem.o: Game/Systems/UnitCollisionSystem.cpp.o
 
 .PHONY : Game/Systems/UnitCollisionSystem.o
@@ -2472,6 +2499,9 @@ help:
 	@echo "... Game/Systems/SteeringSystem.o"
 	@echo "... Game/Systems/SteeringSystem.i"
 	@echo "... Game/Systems/SteeringSystem.s"
+	@echo "... Game/Systems/UnitAnimationSystem.o"
+	@echo "... Game/Systems/UnitAnimationSystem.i"
+	@echo "... Game/Systems/UnitAnimationSystem.s"
 	@echo "... Game/Systems/UnitCollisionSystem.o"
 	@echo "... Game/Systems/UnitCollisionSystem.i"
 	@echo "... Game/Systems/UnitCollisionSystem.s"

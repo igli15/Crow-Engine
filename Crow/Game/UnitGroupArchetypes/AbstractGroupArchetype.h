@@ -24,9 +24,14 @@ public:
     float  verticalDistance = 1.0f;
     float scaleFactor = 1.0f;
     float maxSpeed = 0.05f;
-    float maxHealth = 100;
+    float maxHealth = 100.0f;
     float damageRate = 0.5f;
     float colliderRadius = 1.0f;
+
+    float animationMinSpeed = 8.0f;
+    float animationMaxSpeed = 12.0f;
+    float animationHeight = 0.003f;
+
     DamageDealer::Type unitType = DamageDealer::Type::NONE;
     DamageDealer::Type strongAgainstType = DamageDealer::Type::NONE;
 

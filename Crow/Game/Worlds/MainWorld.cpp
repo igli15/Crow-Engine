@@ -35,6 +35,7 @@
 #include "../Systems/RotateSystem.h"
 #include "../../Engine/Rendering/Materials/PortalMaterial.h"
 #include "../Systems/PathSystem.h"
+#include "../Systems/UnitAnimationSystem.h"
 
 void MainWorld::Build()
 {
@@ -59,6 +60,7 @@ void MainWorld::Build()
     RegisterSystem<CannonSystem>();
     RegisterSystem<RotateSystem>();
     RegisterSystem<PathSystem>();
+    RegisterSystem<UnitAnimationSystem>();
 
     EntityHandle playerEntity = CreateEntity();
     Player* playerComponent = playerEntity.AddComponent<Player>(Player{});
@@ -68,8 +70,8 @@ void MainWorld::Build()
     ghostArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("whiteUnlitMat");
     ghostArchetype->unitModel = resourceManager->GetModel("basicUnit");
     ghostArchetype->scaleFactor = 0.1;
-    ghostArchetype->horizontalDistance = 0.2f;
-    ghostArchetype->verticalDistance = 0.2f;
+    ghostArchetype->horizontalDistance = 0.25f;
+    ghostArchetype->verticalDistance = 0.25f;
     ghostArchetype->rows = 4;
     ghostArchetype->columns = 4;
     ghostArchetype->unitType = DamageDealer::Sword;

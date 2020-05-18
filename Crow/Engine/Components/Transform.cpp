@@ -74,7 +74,7 @@ void Transform::Rotate(float angle, const glm::vec3 &axis)
 
 glm::vec3 Transform::LocalPosition()
 {
-    return glm::vec3(m_localTransform[3]);
+    return GetLocalTransform()[3];
 }
 
 const glm::mat4 &Transform::GetWorldTransform()

@@ -40,6 +40,8 @@ public:
     void SetLocalScale(const glm::vec3& scale);
     void SetLocalRotation(const glm::quat& rotation);
 
+    //void SetWorldPosition(const glm::vec3& pos);
+
     ///Rotate around an axis by an angle
     ///@param angle the angle in degrees
     ///@param axis vector3 specifing the axis of rotation

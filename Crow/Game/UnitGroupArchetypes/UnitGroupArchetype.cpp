@@ -14,6 +14,8 @@
 #include "../Components/DamageDealer.h"
 #include "../Components/UnitComponent.h"
 #include "../Components/UnitPathComponent.h"
+#include "../Components/UnitAnimationComponent.h"
+#include "../../Engine/Utils/Random.h"
 
 EntityHandle UnitGroupArchetype::Build(World* world,BridgeComponent* bridge)
 {
@@ -40,6 +42,11 @@ EntityHandle UnitGroupArchetype::Build(World* world,BridgeComponent* bridge)
             unitEntity.AddComponent<MeshInfo>(MeshInfo{unitModel, unitMaterial});
             unitTransform->Scale(glm::vec3(scaleFactor));
             unitTransform->SetLocalPosition(glm::vec3((columnIndex) * horizontalDistance, 0, (rowIndex) * verticalDistance));
+
+            //float randomHeight = Random::RandomRange(5.0f,20.0f)/1000.0f;
+            float randomSpeed = Random::RandomRange(animationMinSpeed,animationMaxSpeed);
+            unitEntity.AddComponent<UnitAnimationComponent>(UnitAnimationComponent{randomSpeed,animationHeight});
+
         }
     }
 

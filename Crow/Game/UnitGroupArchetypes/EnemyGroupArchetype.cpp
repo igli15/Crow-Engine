@@ -13,6 +13,8 @@
 #include "../Components/HealthComponent.h"
 #include "../Components/UnitComponent.h"
 #include "../Components/UnitPathComponent.h"
+#include "../../Engine/Utils/Random.h"
+#include "../Components/UnitAnimationComponent.h"
 
 
 EntityHandle EnemyGroupArchetype::Build(World *world, BridgeComponent *bridge)
@@ -47,6 +49,9 @@ EntityHandle EnemyGroupArchetype::Build(World *world, BridgeComponent *bridge)
             unitEntity.AddComponent<MeshInfo>(MeshInfo{unitModel, unitMaterial});
             unitTransform->Scale(glm::vec3(scaleFactor));
             unitTransform->SetLocalPosition(glm::vec3((columnIndex) * horizontalDistance, 0, (rowIndex) * verticalDistance));
+
+            float randomSpeed = Random::RandomRange(animationMinSpeed,animationMaxSpeed);
+            unitEntity.AddComponent<UnitAnimationComponent>(UnitAnimationComponent{randomSpeed,animationHeight});
         }
     }
 
