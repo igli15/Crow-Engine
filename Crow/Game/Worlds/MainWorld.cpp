@@ -36,6 +36,7 @@
 #include "../../Engine/Rendering/Materials/PortalMaterial.h"
 #include "../Systems/PathSystem.h"
 #include "../Systems/UnitAnimationSystem.h"
+#include "../../Engine/Components/SpriteInfo.h"
 
 void MainWorld::Build()
 {
@@ -116,25 +117,7 @@ void MainWorld::Build()
     bridgeIndicatorEntity.AddComponent(MeshInfo{resourceManager->GetModel("cone"),resourceManager->GetMaterial<TranslucentColorMat>("whiteUnlitMat")});
     bridgeIndicatorEntity.AddComponent(SelectedBridgeIndicator{});
 
-    /*
-    EntityHandle testProjectileEntity = CreateEntity();
-    testProjectileEntity.AddComponent(Transform{});
-
-    Rigidbody rb{};
-    rb.maxSpeed = 0.2f;
-    testProjectileEntity.AddComponent(rb);
-
-    testProjectileEntity.AddComponent(MeshInfo{resourceManager->GetModel("sphere"),resourceManager->GetMaterial<TranslucentColorMat>("defaultMat")});
-
-    ProjectileComponent projectileComponent{};
-    projectileComponent.targetPos = glm::vec3 (5,0,-5);
-    testProjectileEntity.AddComponent(projectileComponent);
-
-    EntityHandle targetEntity = CreateEntity();
-    Transform* t = targetEntity.AddComponent(Transform{});
-    t->Translate(glm::vec3(projectileComponent.targetPos));
-    targetEntity.AddComponent(MeshInfo{resourceManager->GetModel("cube"),resourceManager->GetMaterial<ColorMaterial>("defaultMat")});
-    */
+    CreateUIEntities(resourceManager);
 }
 
 void MainWorld::ParseGameComponents(rapidxml::xml_node<> *node, EntityHandle entityHandle)
@@ -147,15 +130,7 @@ void MainWorld::ParseGameComponents(rapidxml::xml_node<> *node, EntityHandle ent
              a != nullptr;
              a = a->next_attribute()) {
             std::string attributeName = a->name();
-            if (attributeName == "startPos")
-            {
-                //bridgeComponent->startPos =  UnitySceneParser::ScanVector3f(a->value());
-            }
-            else if(attributeName == "endPos")
-            {
-                //bridgeComponent->endPos =  UnitySceneParser::ScanVector3f(a->value());
-            }
-            else if(attributeName == "pathCount")
+            if(attributeName == "pathCount")
             {
                pathCount = atoi(a->value());
             } else
@@ -164,7 +139,6 @@ void MainWorld::ParseGameComponents(rapidxml::xml_node<> *node, EntityHandle ent
                 {
                     if (attributeName == "Path" + std::to_string(i))
                     {
-                        ENGINE_LOG(a->value());
                         bridgeComponent->pathPoints.push_back( UnitySceneParser::ScanVector3f(a->value()));
                     }
                 }
@@ -322,4 +296,40 @@ void MainWorld::ParseGameComponents(rapidxml::xml_node<> *node, EntityHandle ent
         }
         entityHandle.GetComponent<MeshInfo>().component->material = portalMaterial;
     }
+}
+
+void MainWorld::CreateUIEntities(ResourceManager* resourceManager)
+{
+    Game* game = Game::Instance();
+
+    const int screenWidth = game->screenData.screenWidth;
+    const int screenHeight = game->screenData.screenHeight;
+
+    const glm::vec2 borderSize{700,150};
+    const int borderBottomPadding = 180;
+
+    const int iconSize = 92;
+    const int iconBottomPadding = 140;
+
+    EntityHandle borderQEntity = CreateEntity();
+    Transform* borderQTransform = borderQEntity.AddComponent<Transform>(Transform{});
+    borderQTransform->SetLocalPosition(glm::vec3(screenWidth/2 - 250,screenHeight - iconBottomPadding,1));
+    borderQTransform->Scale(glm::vec3(iconSize,iconSize,1));
+    borderQEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("uiBorderQSprite"),resourceManager->GetMaterial<SpriteMaterial>("uiBorderQMat")});
+
+
+    EntityHandle uiBackgroundEntity = CreateEntity();
+    Transform* uiBackgroundTransform = uiBackgroundEntity.AddComponent<Transform>(Transform{});
+    uiBackgroundTransform->SetLocalPosition(glm::vec3(screenWidth/2 - borderSize.x/2 ,screenHeight - borderBottomPadding,0));
+    uiBackgroundTransform->Scale(glm::vec3(borderSize.x,borderSize.y,1));
+    uiBackgroundEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("uiBackgroundSprite"),resourceManager->GetMaterial<SpriteMaterial>("uiBackgroundMat")});
+
+    /*
+    EntityHandle unitGroupUIEntity = CreateEntity();
+    Transform* unitGroupUITransform = unitGroupUIEntity.AddComponent<Transform>(Transform{});
+    unitGroupUITransform->SetLocalPosition(glm::vec3(screenWidth/2 - 300,screenHeight - iconBottomPadding,0));
+    unitGroupUITransform->Scale(glm::vec3(iconSize,iconSize,1));
+    unitGroupUIEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("playerUnitGroupUISprite"),resourceManager->GetMaterial<SpriteMaterial>("playerUnitGroupUIMat")});
+*/
+
 }

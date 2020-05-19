@@ -42,7 +42,5 @@ void SpriteRendererSystem::Render()
         spriteInfo.material->BufferMaterialUniforms();
         spriteInfo.sprite->Render();
     }
-
-
 }
 

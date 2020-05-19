@@ -16,6 +16,12 @@ class Renderer;
 class ResourceManager;
 class Shader;
 
+struct ScreenData
+{
+    int screenWidth = 1920;
+    int screenHeight = 1080;
+};
+
 ///The game class handles all the internal setup for a "game" program to run.
 ///It's the parent class of "MyGame" which is what the user should use and create.
 class Game {
@@ -49,6 +55,8 @@ public:
     ///Returns the singelton instance of "Game" class.
     ///@return A pointer to the Game class instance
     static Game* Instance();
+
+    ScreenData screenData{1920,1080};
 
     FT_Library* ftLibrary;
     ResourceManager* resourceManager;

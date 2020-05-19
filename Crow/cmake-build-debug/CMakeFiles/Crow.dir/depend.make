@@ -14994,6 +14994,7 @@ CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Components/Light.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Components/MeshInfo.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Components/Rigidbody.h
+CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Components/SpriteInfo.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Components/Transform.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Core/Game.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Core/Input.h
@@ -15020,11 +15021,13 @@ CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Feather/Types.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Feather/World.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Rendering/AbstractMaterial.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Rendering/Materials/PortalMaterial.h
+CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Rendering/Materials/SpriteMaterial.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Rendering/Materials/TranslucentColorMat.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Rendering/Materials/WaterMaterial.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Rendering/Mesh.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Rendering/Model.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Rendering/Shader.h
+CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Rendering/Sprite.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Rendering/Texture.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Rendering/Window.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Game/Components/BridgeComponent.h
@@ -15628,6 +15631,7 @@ CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Feather/World.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Rendering/AbstractMaterial.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Rendering/Materials/ColorMaterial.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Rendering/Materials/PortalMaterial.h
+CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Rendering/Materials/SpriteMaterial.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Rendering/Materials/UnlitMaterial.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Rendering/Materials/WaterMaterial.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Rendering/Mesh.h

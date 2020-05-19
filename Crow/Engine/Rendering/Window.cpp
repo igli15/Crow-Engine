@@ -62,6 +62,7 @@ int Window::CreateWindow(int windowWidth, int windowHeight, const char *windowNa
     glCullFace(GL_BACK);
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    //glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
     glEnable(GL_MULTISAMPLE);
 
     Input::instance = new Input();

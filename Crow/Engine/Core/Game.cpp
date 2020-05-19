@@ -24,7 +24,7 @@ void Game::Init()
     resourceManager = new ResourceManager();
 
     window = new Window();
-    window->CreateWindow(1920, 1080, "Crow");
+    window->CreateWindow(screenData.screenWidth, screenData.screenHeight, "Crow");
 
 
     //TODO: doing post processing stuff here move to window class later

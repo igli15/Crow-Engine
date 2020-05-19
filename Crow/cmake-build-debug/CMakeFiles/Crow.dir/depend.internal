@@ -14995,6 +14995,7 @@ CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Rigidbody.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/SpriteInfo.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
@@ -15021,11 +15022,13 @@ CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/PortalMaterial.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/SpriteMaterial.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/TranslucentColorMat.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/WaterMaterial.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Mesh.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Sprite.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/BridgeComponent.h
@@ -15629,6 +15632,7 @@ CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/PortalMaterial.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/SpriteMaterial.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/UnlitMaterial.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/WaterMaterial.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Mesh.h

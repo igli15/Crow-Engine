@@ -18,6 +18,7 @@
 #include "../Engine/Rendering/Materials/WaterMaterial.h"
 #include "../Engine/Rendering/Materials/PortalMaterial.h"
 #include "../Engine/Rendering/Materials/UnlitMaterial.h"
+#include "../Engine/Rendering/Materials/SpriteMaterial.h"
 
 void MyGame::LoadAssets()
 {
@@ -79,6 +80,15 @@ void MyGame::LoadAssets()
 
     UnlitMaterial* enemyBasicUnitMat = resourceManager->CreateMaterial<UnlitMaterial>("blackUnlitMat");
     enemyBasicUnitMat->diffuseTexture = resourceManager->GetTexture("enemyBasicUnitDiffuse");
+
+    resourceManager->CreateSprite("playerUnitGroupUISprite",resourceManager->GetTexture("PlayerUnitGroupUI"));
+    resourceManager->CreateMaterial<SpriteMaterial>("playerUnitGroupUIMat");
+
+    resourceManager->CreateSprite("uiBackgroundSprite",resourceManager->GetTexture("uiBackground"));
+    resourceManager->CreateMaterial<SpriteMaterial>("uiBackgroundMat");
+
+    resourceManager->CreateSprite("uiBorderQSprite",resourceManager->GetTexture("uiBorderQ"));
+    resourceManager->CreateMaterial<SpriteMaterial>("uiBorderQMat");
 }
 
 void MyGame::Init()

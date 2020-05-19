@@ -10,6 +10,9 @@
 #texture gridPatternTexture : gridPattern.jpg;
 #texture portalRotationMask : portalRotationMask.png;
 #texture portalGlowMap : portalGlowMap.png;
+#texture PlayerUnitGroupUI : PlayerUnitGroupUI.png;
+#texture uiBackground : uiBackground.png;
+#texture uiBorderQ : uiBorderQ.png;
 
 #model dragon : dragon.obj;
 #model ghost : ghost1.obj;

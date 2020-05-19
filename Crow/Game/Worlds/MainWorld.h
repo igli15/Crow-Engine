@@ -12,7 +12,7 @@
 #include <unordered_map>
 
 class AbstractGroupArchetype;
-
+class ResourceManager;
 class MainWorld : public World
 {
 public:
@@ -49,10 +49,10 @@ public:
         }
     }
 
-
     static void ParseGameComponents(rapidxml::xml_node<>* node,EntityHandle entity);
 
 private:
+    void CreateUIEntities(ResourceManager* resourceManager);
     std::unordered_map<std::string,AbstractGroupArchetype*> m_unitArchetypeMap;
 };
 
