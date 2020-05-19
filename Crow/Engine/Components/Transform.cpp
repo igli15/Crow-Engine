@@ -149,3 +149,13 @@ void Transform::MarkWorldTransformDirty()
     }
 }
 
+const std::vector<Entity> &Transform::GetChildren()
+{
+    return m_childrens;
+}
+
+Entity Transform::GetChildAt(int index)
+{
+    return m_childrens[index];
+}
+

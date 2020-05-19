@@ -54,6 +54,9 @@ public:
     glm::vec3 WorldPosition();
 
     void SetParent(Entity newParentEntity);
+
+    const std::vector<Entity>& GetChildren();
+    Entity GetChildAt(int index);
     int GetChildCount();
 
     ///Marks all the children entities attached to the transform for destruction.
