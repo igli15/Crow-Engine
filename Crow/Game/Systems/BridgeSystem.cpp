@@ -73,11 +73,18 @@ void BridgeSystem::OnUnitComponentRemoved(ComponentRemovedEvent<UnitComponent> *
 {
     UnitComponent unitComponent = event->component;
 
-   auto iterator = std::find(unitComponent.bridge->enemyEntitiesOnBridge.begin(),unitComponent.bridge->enemyEntitiesOnBridge.end(),event->entity);
+   auto enemyUnitIterator = std::find(unitComponent.bridge->enemyEntitiesOnBridge.begin(),unitComponent.bridge->enemyEntitiesOnBridge.end(),event->entity);
 
-   if(iterator != unitComponent.bridge->enemyEntitiesOnBridge.end())
+   if(enemyUnitIterator != unitComponent.bridge->enemyEntitiesOnBridge.end())
    {
-       unitComponent.bridge->enemyEntitiesOnBridge.erase(iterator);
+       unitComponent.bridge->enemyEntitiesOnBridge.erase(enemyUnitIterator);
    }
+
+    auto playerUnitIterator = std::find(unitComponent.bridge->playerEntitiesOnBridge.begin(), unitComponent.bridge->playerEntitiesOnBridge.end(), event->entity);
+
+    if(playerUnitIterator != unitComponent.bridge->playerEntitiesOnBridge.end())
+    {
+        unitComponent.bridge->playerEntitiesOnBridge.erase(playerUnitIterator);
+    }
 }
 

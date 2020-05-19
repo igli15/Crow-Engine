@@ -1527,6 +1527,33 @@ Game/Systems/EnemySpawnSystem.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.s
 .PHONY : Game/Systems/EnemySpawnSystem.cpp.s
 
+Game/Systems/FlockSeparationSystem.o: Game/Systems/FlockSeparationSystem.cpp.o
+
+.PHONY : Game/Systems/FlockSeparationSystem.o
+
+# target to build an object file
+Game/Systems/FlockSeparationSystem.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.o
+.PHONY : Game/Systems/FlockSeparationSystem.cpp.o
+
+Game/Systems/FlockSeparationSystem.i: Game/Systems/FlockSeparationSystem.cpp.i
+
+.PHONY : Game/Systems/FlockSeparationSystem.i
+
+# target to preprocess a source file
+Game/Systems/FlockSeparationSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.i
+.PHONY : Game/Systems/FlockSeparationSystem.cpp.i
+
+Game/Systems/FlockSeparationSystem.s: Game/Systems/FlockSeparationSystem.cpp.s
+
+.PHONY : Game/Systems/FlockSeparationSystem.s
+
+# target to generate assembly for a file
+Game/Systems/FlockSeparationSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.s
+.PHONY : Game/Systems/FlockSeparationSystem.cpp.s
+
 Game/Systems/PathSystem.o: Game/Systems/PathSystem.cpp.o
 
 .PHONY : Game/Systems/PathSystem.o
@@ -2475,6 +2502,9 @@ help:
 	@echo "... Game/Systems/EnemySpawnSystem.o"
 	@echo "... Game/Systems/EnemySpawnSystem.i"
 	@echo "... Game/Systems/EnemySpawnSystem.s"
+	@echo "... Game/Systems/FlockSeparationSystem.o"
+	@echo "... Game/Systems/FlockSeparationSystem.i"
+	@echo "... Game/Systems/FlockSeparationSystem.s"
 	@echo "... Game/Systems/PathSystem.o"
 	@echo "... Game/Systems/PathSystem.i"
 	@echo "... Game/Systems/PathSystem.s"

@@ -56,6 +56,8 @@ EntityHandle UnitGroupArchetype::Build(World* world,BridgeComponent* bridge)
 
             rb->maxSpeed = maxSpeed;
 
+            bridge->playerEntitiesOnBridge.push_back(unitEntity.entity);
+
         }
     }
 

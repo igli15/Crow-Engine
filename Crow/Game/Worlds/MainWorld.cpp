@@ -37,6 +37,7 @@
 #include "../Systems/PathSystem.h"
 #include "../Systems/UnitAnimationSystem.h"
 #include "../../Engine/Components/SpriteInfo.h"
+#include "../Systems/FlockSeparationSystem.h"
 
 void MainWorld::Build()
 {
@@ -62,6 +63,7 @@ void MainWorld::Build()
     RegisterSystem<RotateSystem>();
     RegisterSystem<PathSystem>();
     RegisterSystem<UnitAnimationSystem>();
+    RegisterSystem<FlockSeparationSystem>();
 
     EntityHandle playerEntity = CreateEntity();
     Player* playerComponent = playerEntity.AddComponent<Player>(Player{});
