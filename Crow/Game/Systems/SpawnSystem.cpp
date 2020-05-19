@@ -27,7 +27,7 @@ void SpawnSystem::Update(float dt)
 
     if(Input::GetKeyDown(GLFW_KEY_SPACE))
     {
-        EntityHandle unitGroupEntity = m_playerComponent->selectedUnitArchetype->Build(world,m_selectedBridge);
+        m_playerComponent->selectedUnitArchetype->Build(world,m_selectedBridge);
     }
 
 }

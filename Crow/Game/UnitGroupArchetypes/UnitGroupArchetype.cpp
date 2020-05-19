@@ -23,14 +23,9 @@ EntityHandle UnitGroupArchetype::Build(World* world,BridgeComponent* bridge)
     Transform* unitGroupTransform = unitGroupEntity.AddComponent<Transform>(Transform{});
     unitGroupTransform->Translate(bridge->pathPoints[0]);
     unitGroupTransform->Translate(glm::vec3(-(float)columns * horizontalDistance/2,0.5f,(float )rows * verticalDistance/2));
-    unitGroupEntity.AddComponent<PlayerUnitCollider>(PlayerUnitCollider{colliderRadius});
-
-    unitGroupEntity.AddComponent<HealthComponent>(HealthComponent{maxHealth,maxHealth});
-    unitGroupEntity.AddComponent<DamageDealer>(DamageDealer{damageRate,unitType,strongAgainstType});
-    unitGroupEntity.AddComponent(UnitComponent{bridge});
 
     std::vector<glm::vec3> pathPoints = bridge->pathPoints;
-    unitGroupEntity.AddComponent<UnitPathComponent>(UnitPathComponent{pathPoints});
+    //unitGroupEntity.AddComponent<UnitPathComponent>(UnitPathComponent{pathPoints});
 
     for (int columnIndex = 0; columnIndex < columns; ++columnIndex)
     {
@@ -46,16 +41,24 @@ EntityHandle UnitGroupArchetype::Build(World* world,BridgeComponent* bridge)
             //float randomHeight = Random::RandomRange(5.0f,20.0f)/1000.0f;
             float randomSpeed = Random::RandomRange(animationMinSpeed,animationMaxSpeed);
             unitEntity.AddComponent<UnitAnimationComponent>(UnitAnimationComponent{randomSpeed,animationHeight});
+            unitEntity.AddComponent<UnitPathComponent>(UnitPathComponent{pathPoints});
+
+            unitEntity.AddComponent<SteeringComponent>(SteeringComponent{});
+
+            unitEntity.AddComponent<SeekComponent>(SeekComponent{bridge->pathPoints[1]});
+            Rigidbody* rb = unitEntity.AddComponent<Rigidbody>(Rigidbody{});
+
+            unitEntity.AddComponent<PlayerUnitCollider>(PlayerUnitCollider{colliderRadius});
+
+            unitEntity.AddComponent<HealthComponent>(HealthComponent{maxHealth/(rows*columns),maxHealth/(rows*columns)});
+            unitEntity.AddComponent<DamageDealer>(DamageDealer{damageRate,unitType,strongAgainstType});
+            unitEntity.AddComponent(UnitComponent{bridge});
+
+            rb->maxSpeed = maxSpeed;
 
         }
     }
 
-    unitGroupEntity.AddComponent<SteeringComponent>(SteeringComponent{});
-
-    unitGroupEntity.AddComponent<SeekComponent>(SeekComponent{bridge->pathPoints[1]});
-    Rigidbody* rb = unitGroupEntity.AddComponent<Rigidbody>(Rigidbody{});
-
-    rb->maxSpeed = maxSpeed;
 
     return unitGroupEntity;
 }
