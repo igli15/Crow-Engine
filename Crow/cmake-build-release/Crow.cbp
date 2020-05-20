@@ -375,13 +375,7 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Utils/Random.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/BridgeComponent.cpp">
-			<Option target="Crow"/>
-		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/BridgeComponent.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/CannonComponent.cpp">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/CannonComponent.h">
@@ -399,40 +393,22 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/HealthComponent.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/Player.cpp">
-			<Option target="Crow"/>
-		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/Player.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/PlayerUnitCollider.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/ProjectileComponent.cpp">
-			<Option target="Crow"/>
-		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/ProjectileComponent.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/RotateComponent.cpp">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/RotateComponent.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/SeekComponent.cpp">
-			<Option target="Crow"/>
-		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/SeekComponent.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/SelectedBridgeIndicator.cpp">
-			<Option target="Crow"/>
-		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/SelectedBridgeIndicator.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/SteeringComponent.cpp">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/SteeringComponent.h">

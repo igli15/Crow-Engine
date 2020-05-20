@@ -56,17 +56,6 @@ void BridgeSystem::Update(float dt)
         EventQueue::Instance().Publish(new BridgeSelectedEvent(m_bridges[2]));
     }
 
-    //just for testing destruction of entities. TODO remove this in the end
-    if(Input::GetKeyDown(GLFW_KEY_BACKSPACE))
-    {
-        for (int i = 0; i < m_currentSelectedBridge->playerEntitiesOnBridge.size(); ++i)
-        {
-            world->DestroyEntity(m_currentSelectedBridge->playerEntitiesOnBridge[i]);
-        }
-        m_currentSelectedBridge->playerEntitiesOnBridge.clear();
-    }
-
-
 }
 
 void BridgeSystem::OnUnitComponentRemoved(ComponentRemovedEvent<UnitComponent> *event)
