@@ -13,9 +13,6 @@ void TransformHierarchySystem::OnCreate()
     EventQueue::Instance().Subscribe(this,&TransformHierarchySystem::OnTransformRemoved);
 }
 
-//TODO: Add ComponentRemovedEvent<Transform>
-
-
 void TransformHierarchySystem::OnTransformRemoved(ComponentRemovedEvent<Transform>* event)
 {
     event->component.DestroyAllChildrenEntities();

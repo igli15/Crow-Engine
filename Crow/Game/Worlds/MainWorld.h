@@ -11,7 +11,7 @@
 
 #include <unordered_map>
 
-class AbstractGroupArchetype;
+class UnitGroupArchetype;
 class ResourceManager;
 class MainWorld : public World
 {
@@ -53,7 +53,7 @@ public:
 
 private:
     void CreateUIEntities(ResourceManager* resourceManager);
-    std::unordered_map<std::string,AbstractGroupArchetype*> m_unitArchetypeMap;
+    std::unordered_map<std::string,UnitGroupArchetype*> m_unitArchetypeMap;
 };
 
 

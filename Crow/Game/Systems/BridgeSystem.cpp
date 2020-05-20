@@ -56,28 +56,24 @@ void BridgeSystem::Update(float dt)
         EventQueue::Instance().Publish(new BridgeSelectedEvent(m_bridges[2]));
     }
 
-    //just for testing destruction of entities. TODO remove this in the end
-    if(Input::GetKeyDown(GLFW_KEY_BACKSPACE))
-    {
-        for (int i = 0; i < m_currentSelectedBridge->playerEntitiesOnBridge.size(); ++i)
-        {
-            world->DestroyEntity(m_currentSelectedBridge->playerEntitiesOnBridge[i]);
-        }
-        m_currentSelectedBridge->playerEntitiesOnBridge.clear();
-    }
-
-
 }
 
 void BridgeSystem::OnUnitComponentRemoved(ComponentRemovedEvent<UnitComponent> *event)
 {
     UnitComponent unitComponent = event->component;
 
-   auto iterator = std::find(unitComponent.bridge->enemyEntitiesOnBridge.begin(),unitComponent.bridge->enemyEntitiesOnBridge.end(),event->entity);
+   auto enemyUnitIterator = std::find(unitComponent.bridge->enemyEntitiesOnBridge.begin(),unitComponent.bridge->enemyEntitiesOnBridge.end(),event->entity);
 
-   if(iterator != unitComponent.bridge->enemyEntitiesOnBridge.end())
+   if(enemyUnitIterator != unitComponent.bridge->enemyEntitiesOnBridge.end())
    {
-       unitComponent.bridge->enemyEntitiesOnBridge.erase(iterator);
+       unitComponent.bridge->enemyEntitiesOnBridge.erase(enemyUnitIterator);
    }
+
+    auto playerUnitIterator = std::find(unitComponent.bridge->playerEntitiesOnBridge.begin(), unitComponent.bridge->playerEntitiesOnBridge.end(), event->entity);
+
+    if(playerUnitIterator != unitComponent.bridge->playerEntitiesOnBridge.end())
+    {
+        unitComponent.bridge->playerEntitiesOnBridge.erase(playerUnitIterator);
+    }
 }
 

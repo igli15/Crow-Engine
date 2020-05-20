@@ -1,36 +1,38 @@
 //
-// Created by Igli milaqi on 25/04/2020.
+// Created by Igli milaqi on 30/04/2020.
 //
 
 #include "UnitGroupArchetype.h"
 #include "../../Engine/Components/Transform.h"
-#include "../Components/SteeringComponent.h"
-#include "../Components/SeekComponent.h"
-#include "../../Engine/Components/Rigidbody.h"
-#include "../../Game/Components/BridgeComponent.h"
 #include "../../Engine/Components/MeshInfo.h"
-#include "../Components/PlayerUnitCollider.h"
-#include "../Components/HealthComponent.h"
-#include "../Components/DamageDealer.h"
-#include "../Components/UnitComponent.h"
-#include "../Components/UnitPathComponent.h"
 #include "../Components/UnitAnimationComponent.h"
 #include "../../Engine/Utils/Random.h"
+#include "../Components/SteeringComponent.h"
+#include "../Components/UnitPathComponent.h"
+#include "../Components/SeekComponent.h"
+#include "../../Engine/Components/Rigidbody.h"
+#include "../Components/PlayerUnitCollider.h"
+#include "../Components/HealthComponent.h"
+#include "../Components/UnitComponent.h"
+#include "../Components/EnemyUnitCollider.h"
+#include "../Components/CannonComponent.h"
+#include "../Components/FloatingComponent.h"
 
-EntityHandle UnitGroupArchetype::Build(World* world,BridgeComponent* bridge)
+void UnitGroupArchetype::Build(World *world, BridgeComponent *bridge)
 {
-    EntityHandle unitGroupEntity = world->CreateEntity();
-    Transform* unitGroupTransform = unitGroupEntity.AddComponent<Transform>(Transform{});
-    unitGroupTransform->Translate(bridge->pathPoints[0]);
-    unitGroupTransform->Translate(glm::vec3(-(float)columns * horizontalDistance/2,0.5f,(float )rows * verticalDistance/2));
-    unitGroupEntity.AddComponent<PlayerUnitCollider>(PlayerUnitCollider{colliderRadius});
+    std::vector<glm::vec3> pathPoints;
 
-    unitGroupEntity.AddComponent<HealthComponent>(HealthComponent{maxHealth,maxHealth});
-    unitGroupEntity.AddComponent<DamageDealer>(DamageDealer{damageRate,unitType,strongAgainstType});
-    unitGroupEntity.AddComponent(UnitComponent{bridge});
-
-    std::vector<glm::vec3> pathPoints = bridge->pathPoints;
-    unitGroupEntity.AddComponent<UnitPathComponent>(UnitPathComponent{pathPoints});
+    if(!isPlayerUnit)
+    {
+        for (int i =  bridge->pathPoints.size() -1 ; i >= 0; --i)
+        {
+            pathPoints.push_back(bridge->pathPoints[i]);
+        }
+    }
+    else
+    {
+        pathPoints = bridge->pathPoints;
+    }
 
     for (int columnIndex = 0; columnIndex < columns; ++columnIndex)
     {
@@ -38,24 +40,51 @@ EntityHandle UnitGroupArchetype::Build(World* world,BridgeComponent* bridge)
         {
             EntityHandle unitEntity = world->CreateEntity();
             Transform *unitTransform = unitEntity.AddComponent<Transform>(Transform{});
-            unitTransform->SetParent(unitGroupEntity.entity);
+            //unitTransform->SetParent(unitGroupEntity.entity);
             unitEntity.AddComponent<MeshInfo>(MeshInfo{unitModel, unitMaterial});
             unitTransform->Scale(glm::vec3(scaleFactor));
-            unitTransform->SetLocalPosition(glm::vec3((columnIndex) * horizontalDistance, 0, (rowIndex) * verticalDistance));
 
             //float randomHeight = Random::RandomRange(5.0f,20.0f)/1000.0f;
             float randomSpeed = Random::RandomRange(animationMinSpeed,animationMaxSpeed);
             unitEntity.AddComponent<UnitAnimationComponent>(UnitAnimationComponent{randomSpeed,animationHeight});
+            unitEntity.AddComponent<UnitPathComponent> (UnitPathComponent{pathPoints});
+
+            unitEntity.AddComponent<SteeringComponent>(SteeringComponent{});
+
+            unitEntity.AddComponent<SeekComponent>(SeekComponent{pathPoints[1]});
+
+            Rigidbody* rb = unitEntity.AddComponent<Rigidbody>(Rigidbody{});
+
+            if(isPlayerUnit) {
+                unitEntity.AddComponent<PlayerUnitCollider>(PlayerUnitCollider{colliderRadius});
+                bridge->playerEntitiesOnBridge.push_back(unitEntity.entity);
+                unitTransform->Translate(bridge->pathPoints[0]);
+            } else
+            {
+                unitEntity.AddComponent<EnemyUnitCollider>(EnemyUnitCollider{colliderRadius});
+                bridge->enemyEntitiesOnBridge.push_back(unitEntity.entity);
+                unitTransform->Translate(bridge->pathPoints.back());
+            }
+
+            float randomHorizontal = Random::RandomRange(-maxHorizontalDistance,maxHorizontalDistance);
+            float randomVertical = Random::RandomRange(-maxVerticalDistance,maxVerticalDistance);
+
+            //unitTransform->Translate(glm::vec3(-(float)columnIndex * randomHorizontal ,0.5f,(float )rowIndex * randomVertical));
+            unitTransform->Translate(glm::vec3((columnIndex) * randomHorizontal, 0.2f, (rowIndex) * randomVertical));
+
+            unitEntity.AddComponent<HealthComponent>(HealthComponent{maxHealth,maxHealth});
+            unitEntity.AddComponent<DamageDealer>(DamageDealer{damageRate,unitType,strongAgainstType});
+            unitEntity.AddComponent(UnitComponent{bridge});
+
+            unitEntity.AddComponent<FloatingComponent>(FloatingComponent{});
+            rb->maxSpeed = maxSpeed;
+
+            if(unitType == DamageDealer::Arrow)
+            {
+                unitEntity.AddComponent<CannonComponent>(CannonComponent{});
+            }
 
         }
     }
 
-    unitGroupEntity.AddComponent<SteeringComponent>(SteeringComponent{});
-
-    unitGroupEntity.AddComponent<SeekComponent>(SeekComponent{bridge->pathPoints[1]});
-    Rigidbody* rb = unitGroupEntity.AddComponent<Rigidbody>(Rigidbody{});
-
-    rb->maxSpeed = maxSpeed;
-
-    return unitGroupEntity;
 }

@@ -18,8 +18,8 @@
 #include "../Components/BridgeComponent.h"
 #include "../Components/Player.h"
 #include "../../Engine/Components/SphereCollider.h"
-#include "../UnitGroupArchetypes/UnitGroupArchetype.h"
 #include "../Events/BridgeSelectedEvent.h"
+#include "../UnitGroupArchetypes/UnitGroupArchetype.h"
 
 void SpawnSystem::Update(float dt)
 {
@@ -27,7 +27,7 @@ void SpawnSystem::Update(float dt)
 
     if(Input::GetKeyDown(GLFW_KEY_SPACE))
     {
-        EntityHandle unitGroupEntity = m_playerComponent->selectedUnitArchetype->Build(world,m_selectedBridge);
+        m_playerComponent->selectedUnitArchetype->Build(world,m_selectedBridge);
     }
 
 }
