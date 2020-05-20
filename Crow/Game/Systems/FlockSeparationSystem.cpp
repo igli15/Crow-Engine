@@ -6,6 +6,7 @@
 #include "../../Engine/Feather/World.h"
 #include "../Components/BridgeComponent.h"
 #include "../../Engine/Components/Transform.h"
+#include "../../Engine/Core/Input.h"
 
 void FlockSeparationSystem::Init()
 {
@@ -24,21 +25,28 @@ void FlockSeparationSystem::Update(float dt)
 {
     System::Update(dt);
 
-    for (int i = 0; i < m_bridges.size(); ++i)
-    {
-        BridgeComponent* bridge = m_bridges[i];
+    //m_timeCounter+= dt;
+    //if(m_timeCounter >= 0.5f) {
 
-        //ENGINE_LOG(bridge->playerEntitiesOnBridge.size());
-        for (int j = 0; j < bridge->playerEntitiesOnBridge.size(); ++j)
-        {
-            SteeringComponent& steeringComponent = world->GetComponent<SteeringComponent>(bridge->playerEntitiesOnBridge[j]);
-            steeringComponent.steering +=  DoFlockingSeparation(bridge->playerEntitiesOnBridge[j],bridge->playerEntitiesOnBridge,0.2f,20);
+        for (int i = 0; i < m_bridges.size(); ++i) {
+            BridgeComponent *bridge = m_bridges[i];
+
+            if(Input::GetKeyDown(GLFW_KEY_A)) ENGINE_LOG(m_bridges[i]->playerEntitiesOnBridge.size());
+
+            //ENGINE_LOG(bridge->playerEntitiesOnBridge.size());
+            for (int j = 0; j < bridge->playerEntitiesOnBridge.size(); ++j) {
+                SteeringComponent &steeringComponent = world->GetComponent<SteeringComponent>(
+                        bridge->playerEntitiesOnBridge[j]);
+                steeringComponent.steering += DoFlockingSeparation(bridge->playerEntitiesOnBridge[j],
+                                                                   bridge->playerEntitiesOnBridge, 0.2f, 40);
+            }
+
+            //std::vector<SteeringComponent*> enemySteerings;
+
+
         }
-
-        //std::vector<SteeringComponent*> enemySteerings;
-
-
-    }
+        m_timeCounter = 0;
+   // }
 }
 
 glm::vec3 FlockSeparationSystem::DoFlockingSeparation(Entity currentEntity, const std::vector<Entity>& others,
@@ -57,8 +65,8 @@ glm::vec3 FlockSeparationSystem::DoFlockingSeparation(Entity currentEntity, cons
 
         Transform& otherTransform = world->GetComponent<Transform>(other);
 
-        glm::vec3 pos = ownTransform.WorldPosition();
-        glm::vec3 otherPos = otherTransform.WorldPosition();
+        glm::vec3 pos = ownTransform.LocalPosition();
+        glm::vec3 otherPos = otherTransform.LocalPosition();
 
         glm::vec3 delta = pos - otherPos;
         if (glm::length2(delta) <= sqrSeparationDistance)

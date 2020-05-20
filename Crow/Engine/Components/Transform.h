@@ -50,7 +50,7 @@ public:
 
     inline const glm::quat& getLocalRotation() const {return m_localRotation;}
 
-    glm::vec3 LocalPosition();
+    inline const glm::vec3& LocalPosition() {return  m_localPosition;};
     glm::vec3 WorldPosition();
 
     void SetParent(Entity newParentEntity);

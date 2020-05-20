@@ -72,10 +72,6 @@ void Transform::Rotate(float angle, const glm::vec3 &axis)
     // m_localTransform = glm::rotate(m_localTransform,glm::radians(angle),axis);
 }
 
-glm::vec3 Transform::LocalPosition()
-{
-    return GetLocalTransform()[3];
-}
 
 const glm::mat4 &Transform::GetWorldTransform()
 {

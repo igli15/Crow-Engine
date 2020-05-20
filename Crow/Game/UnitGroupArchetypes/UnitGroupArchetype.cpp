@@ -33,10 +33,11 @@ EntityHandle UnitGroupArchetype::Build(World* world,BridgeComponent* bridge)
         {
             EntityHandle unitEntity = world->CreateEntity();
             Transform *unitTransform = unitEntity.AddComponent<Transform>(Transform{});
-            unitTransform->SetParent(unitGroupEntity.entity);
+            unitTransform->Translate(bridge->pathPoints[0]);
+            //unitTransform->SetParent(unitGroupEntity.entity);
             unitEntity.AddComponent<MeshInfo>(MeshInfo{unitModel, unitMaterial});
             unitTransform->Scale(glm::vec3(scaleFactor));
-            unitTransform->SetLocalPosition(glm::vec3((columnIndex) * horizontalDistance, 0, (rowIndex) * verticalDistance));
+            unitTransform->Translate(glm::vec3((columnIndex) * horizontalDistance, 0, (rowIndex) * verticalDistance));
 
             //float randomHeight = Random::RandomRange(5.0f,20.0f)/1000.0f;
             float randomSpeed = Random::RandomRange(animationMinSpeed,animationMaxSpeed);

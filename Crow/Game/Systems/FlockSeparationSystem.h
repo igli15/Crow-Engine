@@ -20,6 +20,8 @@ public:
     glm::vec3 DoFlockingSeparation(Entity currentEntity, const std::vector<Entity>& others,float separationDistance,float separationFactor =1);
 private:
     std::vector<BridgeComponent*> m_bridges;
+
+    float m_timeCounter = 1.5f;
 };
 
 
