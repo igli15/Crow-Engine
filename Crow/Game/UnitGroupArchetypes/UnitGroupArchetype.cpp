@@ -16,6 +16,7 @@
 #include "../Components/UnitComponent.h"
 #include "../Components/EnemyUnitCollider.h"
 #include "../Components/CannonComponent.h"
+#include "../Components/FloatingComponent.h"
 
 void UnitGroupArchetype::Build(World *world, BridgeComponent *bridge)
 {
@@ -75,6 +76,7 @@ void UnitGroupArchetype::Build(World *world, BridgeComponent *bridge)
             unitEntity.AddComponent<DamageDealer>(DamageDealer{damageRate,unitType,strongAgainstType});
             unitEntity.AddComponent(UnitComponent{bridge});
 
+            unitEntity.AddComponent<FloatingComponent>(FloatingComponent{});
             rb->maxSpeed = maxSpeed;
 
             if(unitType == DamageDealer::Arrow)

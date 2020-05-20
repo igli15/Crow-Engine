@@ -40,14 +40,6 @@ glm/gtx/quaternion.hpp
 vector
 -
 
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
-unordered_map
--
-../Debug/Debug.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
-../Rendering/Window.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
-
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
 string.h
 -
@@ -214,14 +206,6 @@ iostream
 glm/ext.hpp
 -
 
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
-GL/glew.h
--
-GLFW/glfw3.h
--
-../Core/Input.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
-
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Utils/Random.h
 cstdlib
 -
@@ -243,6 +227,8 @@ vector
 /Users/igli/Desktop/Crow Engine/Crow/Game/Components/DamageDealer.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Game/Components/EnemyUnitCollider.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/FloatingComponent.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Game/Components/HealthComponent.h
 
@@ -268,25 +254,21 @@ vector
 glm/vec3.hpp
 -
 
-/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/FlockSeparationSystem.cpp
-FlockSeparationSystem.h
-/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/FlockSeparationSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/FloatingSystem.cpp
+FloatingSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/FloatingSystem.h
 ../../Engine/Feather/World.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
-../Components/BridgeComponent.h
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/BridgeComponent.h
 ../../Engine/Components/Transform.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
-../../Engine/Core/Input.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/FlockSeparationSystem.h
-../../Engine/Feather/System.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+../Components/FloatingComponent.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/FloatingComponent.h
 ../Components/SteeringComponent.h
 /Users/igli/Desktop/Crow Engine/Crow/Game/Components/SteeringComponent.h
-vector
--
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/FloatingSystem.h
+../../Engine/Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp
 UnitGroupArchetype.h
@@ -317,6 +299,8 @@ UnitGroupArchetype.h
 /Users/igli/Desktop/Crow Engine/Crow/Game/Components/EnemyUnitCollider.h
 ../Components/CannonComponent.h
 /Users/igli/Desktop/Crow Engine/Crow/Game/Components/CannonComponent.h
+../Components/FloatingComponent.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/FloatingComponent.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/UnitGroupArchetype.h
 ../../Engine/Feather/EntityHandle.h
@@ -336,50 +320,6 @@ inttypes.h
 Availability.h
 -
 OpenGL/glu.h
--
-GL/glu.h
--
-
-/usr/local/include/GLFW/glfw3.h
-stddef.h
--
-stdint.h
--
-vulkan/vulkan.h
--
-GLES/gl.h
--
-GLES/glext.h
--
-GLES2/gl2.h
--
-GLES2/gl2ext.h
--
-GLES3/gl3.h
--
-GLES2/gl2ext.h
--
-GLES3/gl31.h
--
-GLES2/gl2ext.h
--
-GLES3/gl32.h
--
-GLES2/gl2ext.h
--
-OpenGL/gl3.h
--
-OpenGL/gl3ext.h
--
-GL/glcorearb.h
--
-OpenGL/gl.h
--
-OpenGL/glu.h
--
-GL/gl.h
--
-GL/glext.h
 -
 GL/glu.h
 -

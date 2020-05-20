@@ -1527,6 +1527,33 @@ Game/Systems/EnemySpawnSystem.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.s
 .PHONY : Game/Systems/EnemySpawnSystem.cpp.s
 
+Game/Systems/FloatingSystem.o: Game/Systems/FloatingSystem.cpp.o
+
+.PHONY : Game/Systems/FloatingSystem.o
+
+# target to build an object file
+Game/Systems/FloatingSystem.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/FloatingSystem.cpp.o
+.PHONY : Game/Systems/FloatingSystem.cpp.o
+
+Game/Systems/FloatingSystem.i: Game/Systems/FloatingSystem.cpp.i
+
+.PHONY : Game/Systems/FloatingSystem.i
+
+# target to preprocess a source file
+Game/Systems/FloatingSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/FloatingSystem.cpp.i
+.PHONY : Game/Systems/FloatingSystem.cpp.i
+
+Game/Systems/FloatingSystem.s: Game/Systems/FloatingSystem.cpp.s
+
+.PHONY : Game/Systems/FloatingSystem.s
+
+# target to generate assembly for a file
+Game/Systems/FloatingSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/FloatingSystem.cpp.s
+.PHONY : Game/Systems/FloatingSystem.cpp.s
+
 Game/Systems/FlockSeparationSystem.o: Game/Systems/FlockSeparationSystem.cpp.o
 
 .PHONY : Game/Systems/FlockSeparationSystem.o
@@ -2421,6 +2448,9 @@ help:
 	@echo "... Game/Systems/EnemySpawnSystem.o"
 	@echo "... Game/Systems/EnemySpawnSystem.i"
 	@echo "... Game/Systems/EnemySpawnSystem.s"
+	@echo "... Game/Systems/FloatingSystem.o"
+	@echo "... Game/Systems/FloatingSystem.i"
+	@echo "... Game/Systems/FloatingSystem.s"
 	@echo "... Game/Systems/FlockSeparationSystem.o"
 	@echo "... Game/Systems/FlockSeparationSystem.i"
 	@echo "... Game/Systems/FlockSeparationSystem.s"

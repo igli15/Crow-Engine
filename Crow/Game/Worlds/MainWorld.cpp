@@ -35,6 +35,7 @@
 #include "../Systems/UnitAnimationSystem.h"
 #include "../../Engine/Components/SpriteInfo.h"
 #include "../Systems/FlockSeparationSystem.h"
+#include "../Systems/FloatingSystem.h"
 
 void MainWorld::Build()
 {
@@ -60,6 +61,7 @@ void MainWorld::Build()
     RegisterSystem<RotateSystem>();
     RegisterSystem<PathSystem>();
     RegisterSystem<UnitAnimationSystem>();
+    RegisterSystem<FloatingSystem>();
     RegisterSystem<FlockSeparationSystem>();
 
     EntityHandle playerEntity = CreateEntity();
