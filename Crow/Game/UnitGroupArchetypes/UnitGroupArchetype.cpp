@@ -50,7 +50,8 @@ void UnitGroupArchetype::Build(World *world, BridgeComponent *bridge)
 
             unitEntity.AddComponent<SteeringComponent>(SteeringComponent{});
 
-            unitEntity.AddComponent<SeekComponent>(SeekComponent{bridge->pathPoints[1]});
+            unitEntity.AddComponent<SeekComponent>(SeekComponent{pathPoints[1]});
+
             Rigidbody* rb = unitEntity.AddComponent<Rigidbody>(Rigidbody{});
 
             if(isPlayerUnit) {
@@ -64,8 +65,13 @@ void UnitGroupArchetype::Build(World *world, BridgeComponent *bridge)
                 unitTransform->Translate(bridge->pathPoints.back());
             }
 
-            unitTransform->Translate(glm::vec3((columnIndex) * maxHorizontalDistance, 0, (rowIndex) * maxVerticalDistance));
-            unitEntity.AddComponent<HealthComponent>(HealthComponent{maxHealth/(rows*columns),maxHealth/(rows*columns)});
+            float randomHorizontal = Random::RandomRange(-maxHorizontalDistance,maxHorizontalDistance);
+            float randomVertical = Random::RandomRange(-maxVerticalDistance,maxVerticalDistance);
+
+            //unitTransform->Translate(glm::vec3(-(float)columnIndex * randomHorizontal ,0.5f,(float )rowIndex * randomVertical));
+            unitTransform->Translate(glm::vec3((columnIndex) * randomHorizontal, 0.2f, (rowIndex) * randomVertical));
+
+            unitEntity.AddComponent<HealthComponent>(HealthComponent{maxHealth,maxHealth});
             unitEntity.AddComponent<DamageDealer>(DamageDealer{damageRate,unitType,strongAgainstType});
             unitEntity.AddComponent(UnitComponent{bridge});
 

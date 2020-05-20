@@ -70,8 +70,8 @@ void MainWorld::Build()
     ghostArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("whiteUnlitMat");
     ghostArchetype->unitModel = resourceManager->GetModel("basicUnit");
     ghostArchetype->scaleFactor = 0.1;
-    ghostArchetype->maxHorizontalDistance = 0.25f;
-    ghostArchetype->maxVerticalDistance = 0.25f;
+    ghostArchetype->maxHorizontalDistance = 0.4f;
+    ghostArchetype->maxVerticalDistance = 0.4f;
     ghostArchetype->rows = 4;
     ghostArchetype->columns = 4;
     ghostArchetype->unitType = DamageDealer::Sword;
@@ -97,8 +97,8 @@ void MainWorld::Build()
     playerCanon->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("translucentMaterial");
     playerCanon->unitModel = resourceManager->GetModel("canon");
     playerCanon->scaleFactor =0.2f;
-    playerCanon->maxHorizontalDistance = 0.3f;
-    playerCanon->maxVerticalDistance = 0.3;
+    playerCanon->maxHorizontalDistance = 0.8f;
+    playerCanon->maxVerticalDistance = 0.8;
     playerCanon->rows = 1;
     playerCanon->columns = 1;
     playerCanon->unitType = DamageDealer::Arrow;

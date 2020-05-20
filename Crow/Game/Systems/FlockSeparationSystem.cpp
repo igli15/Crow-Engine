@@ -35,7 +35,7 @@ void FlockSeparationSystem::Update(float dt)
                 SteeringComponent &steeringComponent = world->GetComponent<SteeringComponent>(
                         bridge->playerEntitiesOnBridge[j]);
                 steeringComponent.steering += DoFlockingSeparation(bridge->playerEntitiesOnBridge[j],
-                                                                   bridge->playerEntitiesOnBridge, 0.2f, 20);
+                                                                   bridge->playerEntitiesOnBridge, 0.2f, 10);
             }
 
             //std::vector<SteeringComponent*> enemySteerings;

@@ -20,8 +20,10 @@ class UnitGroupArchetype
 public:
     unsigned int rows = 1;
     unsigned int columns = 1;
-    float  maxHorizontalDistance = 1.0f;
-    float  maxVerticalDistance = 1.0f;
+
+    float maxHorizontalDistance = 1.0f;
+    float maxVerticalDistance = 1.0f;
+
     float scaleFactor = 1.0f;
     float maxSpeed = 0.05f;
     float maxHealth = 100.0f;
