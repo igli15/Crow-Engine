@@ -7,7 +7,6 @@
 #include "../../Engine/Core/Input.h"
 #include "GLFW/glfw3.h"
 #include "../Worlds/MainWorld.h"
-#include "../UnitGroupArchetypes/UnitGroupArchetype.h"
 
 void UnitSelectionSystem::Init()
 {

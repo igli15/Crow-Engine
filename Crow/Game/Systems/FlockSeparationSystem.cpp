@@ -31,14 +31,11 @@ void FlockSeparationSystem::Update(float dt)
         for (int i = 0; i < m_bridges.size(); ++i) {
             BridgeComponent *bridge = m_bridges[i];
 
-            if(Input::GetKeyDown(GLFW_KEY_A)) ENGINE_LOG(m_bridges[i]->playerEntitiesOnBridge.size());
-
-            //ENGINE_LOG(bridge->playerEntitiesOnBridge.size());
             for (int j = 0; j < bridge->playerEntitiesOnBridge.size(); ++j) {
                 SteeringComponent &steeringComponent = world->GetComponent<SteeringComponent>(
                         bridge->playerEntitiesOnBridge[j]);
                 steeringComponent.steering += DoFlockingSeparation(bridge->playerEntitiesOnBridge[j],
-                                                                   bridge->playerEntitiesOnBridge, 0.2f, 40);
+                                                                   bridge->playerEntitiesOnBridge, 0.2f, 20);
             }
 
             //std::vector<SteeringComponent*> enemySteerings;

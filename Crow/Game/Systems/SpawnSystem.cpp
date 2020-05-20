@@ -18,8 +18,8 @@
 #include "../Components/BridgeComponent.h"
 #include "../Components/Player.h"
 #include "../../Engine/Components/SphereCollider.h"
-#include "../UnitGroupArchetypes/UnitGroupArchetype.h"
 #include "../Events/BridgeSelectedEvent.h"
+#include "../UnitGroupArchetypes/UnitGroupArchetype.h"
 
 void SpawnSystem::Update(float dt)
 {

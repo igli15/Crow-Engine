@@ -5,10 +5,9 @@
 #include "EnemySpawnSystem.h"
 #include "../../Engine/Debug/Debug.h"
 #include "../Worlds/MainWorld.h"
-#include "../UnitGroupArchetypes/AbstractGroupArchetype.h"
+#include "../UnitGroupArchetypes/UnitGroupArchetype.h"
 #include "../../Engine/Utils/Random.h"
 #include "../../Game/Components/BridgeComponent.h"
-#include "../UnitGroupArchetypes/EnemyGroupArchetype.h"
 
 void EnemySpawnSystem::Init()
 {
@@ -36,8 +35,7 @@ void EnemySpawnSystem::Update(float dt)
 
     if(counter > 3)
     {
-        EntityHandle entityHandle = mainWorld->GetUnitGroupArchetype<EnemyGroupArchetype>("golem")->Build(world,randomBridge);
-        randomBridge->enemyEntitiesOnBridge.push_back(entityHandle.entity);
+        mainWorld->GetUnitGroupArchetype<UnitGroupArchetype>("golem")->Build(world, randomBridge);
         counter = 0;
     }
 }

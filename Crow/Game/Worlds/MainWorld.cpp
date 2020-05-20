@@ -13,7 +13,6 @@
 #include "../Systems/SteeringSystem.h"
 #include "../Systems/RigidbodySystem.h"
 
-#include "../UnitGroupArchetypes/AbstractGroupArchetype.h"
 #include "../UnitGroupArchetypes/UnitGroupArchetype.h"
 #include "../Components/Player.h"
 #include "../../Engine/Core/Game.h"
@@ -21,7 +20,6 @@
 #include "../../Engine/Rendering/Materials/TranslucentColorMat.h"
 #include "../Systems/UnitSelectionSystem.h"
 #include "../Systems/EnemySpawnSystem.h"
-#include "../UnitGroupArchetypes/EnemyGroupArchetype.h"
 #include "../Systems/UnitCollisionSystem.h"
 #include "../Systems/UnitFightingSystem.h"
 #include "../Components/SelectedBridgeIndicator.h"
@@ -29,7 +27,6 @@
 #include "../Components/ProjectileComponent.h"
 #include "../Systems/ProjectileSystem.h"
 #include "../Systems/CannonSystem.h"
-#include "../UnitGroupArchetypes/CannonGroupArchetype.h"
 #include "../../Engine/Rendering/Materials/WaterMaterial.h"
 #include "../Components/RotateComponent.h"
 #include "../Systems/RotateSystem.h"
@@ -73,34 +70,35 @@ void MainWorld::Build()
     ghostArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("whiteUnlitMat");
     ghostArchetype->unitModel = resourceManager->GetModel("basicUnit");
     ghostArchetype->scaleFactor = 0.1;
-    ghostArchetype->horizontalDistance = 0.25f;
-    ghostArchetype->verticalDistance = 0.25f;
+    ghostArchetype->maxHorizontalDistance = 0.25f;
+    ghostArchetype->maxVerticalDistance = 0.25f;
     ghostArchetype->rows = 4;
     ghostArchetype->columns = 4;
     ghostArchetype->unitType = DamageDealer::Sword;
     ghostArchetype->strongAgainstType = DamageDealer::NONE;
 
 
-    EnemyGroupArchetype* enemyGolemArchetype = CreateUnitGroupArchetype<EnemyGroupArchetype>("golem");
+    UnitGroupArchetype* enemyGolemArchetype = CreateUnitGroupArchetype<UnitGroupArchetype>("golem");
     enemyGolemArchetype->maxSpeed = 0.7f;
     enemyGolemArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("blackUnlitMat");
     enemyGolemArchetype->unitModel = resourceManager->GetModel("basicUnit");
     enemyGolemArchetype->scaleFactor = 0.5f;
-    enemyGolemArchetype->horizontalDistance = 0.3f;
-    enemyGolemArchetype->verticalDistance = 0.3;
+    enemyGolemArchetype->maxHorizontalDistance = 0.3f;
+    enemyGolemArchetype->maxVerticalDistance = 0.3;
     enemyGolemArchetype->rows = 1;
     enemyGolemArchetype->columns = 1;
     enemyGolemArchetype->unitType = DamageDealer::Pike;
     enemyGolemArchetype->strongAgainstType = DamageDealer::NONE;
+    enemyGolemArchetype->isPlayerUnit = false;
 
 
-    CannonGroupArchetype* playerCanon = CreateUnitGroupArchetype<CannonGroupArchetype>("canon");
+    UnitGroupArchetype* playerCanon = CreateUnitGroupArchetype<UnitGroupArchetype>("canon");
     playerCanon->maxSpeed = 0.7f;
     playerCanon->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("translucentMaterial");
     playerCanon->unitModel = resourceManager->GetModel("canon");
-    playerCanon->scaleFactor =1.0f;
-    playerCanon->horizontalDistance = 0.3f;
-    playerCanon->verticalDistance = 0.3;
+    playerCanon->scaleFactor =0.2f;
+    playerCanon->maxHorizontalDistance = 0.3f;
+    playerCanon->maxVerticalDistance = 0.3;
     playerCanon->rows = 1;
     playerCanon->columns = 1;
     playerCanon->unitType = DamageDealer::Arrow;
