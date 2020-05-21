@@ -34,6 +34,9 @@ public:
     float animationMaxSpeed = 12.0f;
     float animationHeight = 0.003f;
 
+    float moneyDrop = 0.0f;
+    float unitPrice = 0.0f;
+
     DamageDealer::Type unitType = DamageDealer::Type::NONE;
     DamageDealer::Type strongAgainstType = DamageDealer::Type::NONE;
 

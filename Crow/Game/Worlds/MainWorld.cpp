@@ -18,7 +18,6 @@
 #include "../../Engine/Core/Game.h"
 #include "../../Engine/Core/ResourceManager.h"
 #include "../../Engine/Rendering/Materials/TranslucentColorMat.h"
-#include "../Systems/UnitSelectionSystem.h"
 #include "../Systems/EnemySpawnSystem.h"
 #include "../Systems/UnitCollisionSystem.h"
 #include "../Systems/UnitFightingSystem.h"
@@ -54,7 +53,6 @@ void MainWorld::Build()
     RegisterSystem<SpawnSystem>();
     RegisterSystem<SelectedBridgeIndicatorSystem>();
     RegisterSystem<BridgeSystem>();
-    RegisterSystem<UnitSelectionSystem>();
     RegisterSystem<EnemySpawnSystem>();
     RegisterSystem<UnitCollisionSystem>();
     RegisterSystem<UnitFightingSystem>();
@@ -70,7 +68,7 @@ void MainWorld::Build()
     EntityHandle playerEntity = CreateEntity();
     Player* playerComponent = playerEntity.AddComponent<Player>(Player{});
 
-    UnitGroupArchetype* ghostArchetype = CreateUnitGroupArchetype<UnitGroupArchetype>("ghosts");
+    UnitGroupArchetype* ghostArchetype = CreateUnitGroupArchetype<UnitGroupArchetype>("playerMelee");
     ghostArchetype->maxSpeed = 0.7f;
     ghostArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("whiteUnlitMat");
     ghostArchetype->unitModel = resourceManager->GetModel("basicUnit");
@@ -81,7 +79,35 @@ void MainWorld::Build()
     ghostArchetype->columns = 4;
     ghostArchetype->unitType = DamageDealer::MeleeGroup;
     ghostArchetype->strongAgainstType = DamageDealer::NONE;
+    ghostArchetype->unitPrice = 35.0f;
 
+    UnitGroupArchetype* playerTankArchetype = CreateUnitGroupArchetype<UnitGroupArchetype>("playerTank");
+    playerTankArchetype->maxSpeed = 0.7f;
+    playerTankArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("whiteUnlitMat");
+    playerTankArchetype->unitModel = resourceManager->GetModel("basicUnit");
+    playerTankArchetype->scaleFactor = 0.5f;
+    playerTankArchetype->maxHorizontalDistance = 0.3f;
+    playerTankArchetype->maxVerticalDistance = 0.3;
+    playerTankArchetype->rows = 1;
+    playerTankArchetype->columns = 1;
+    playerTankArchetype->unitType = DamageDealer::Tank;
+    playerTankArchetype->strongAgainstType = DamageDealer::NONE;
+    playerTankArchetype->moneyDrop = 25.0f;
+
+    UnitGroupArchetype* playerCanon = CreateUnitGroupArchetype<UnitGroupArchetype>("playerCannon");
+    playerCanon->maxSpeed = 0.7f;
+    playerCanon->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("whiteUnlitMat");
+    playerCanon->unitModel = resourceManager->GetModel("basicUnit");
+    playerCanon->scaleFactor =0.2f;
+    playerCanon->maxHorizontalDistance = 1.5f;
+    playerCanon->maxVerticalDistance = 1.5f;
+    playerCanon->rows = 1;
+    playerCanon->columns = 2;
+    playerCanon->unitType = DamageDealer::Jumping;
+    playerCanon->strongAgainstType = DamageDealer::NONE;
+    playerCanon->damageRate = 50;
+    playerCanon->colliderRadius = 1.0f;
+    playerCanon->unitPrice = 65.0f;
 
     UnitGroupArchetype* enemyGolemArchetype = CreateUnitGroupArchetype<UnitGroupArchetype>("golem");
     enemyGolemArchetype->maxSpeed = 0.7f;
@@ -95,21 +121,7 @@ void MainWorld::Build()
     enemyGolemArchetype->unitType = DamageDealer::Tank;
     enemyGolemArchetype->strongAgainstType = DamageDealer::NONE;
     enemyGolemArchetype->isPlayerUnit = false;
-
-
-    UnitGroupArchetype* playerCanon = CreateUnitGroupArchetype<UnitGroupArchetype>("canon");
-    playerCanon->maxSpeed = 0.7f;
-    playerCanon->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("whiteUnlitMat");
-    playerCanon->unitModel = resourceManager->GetModel("basicUnit");
-    playerCanon->scaleFactor =0.2f;
-    playerCanon->maxHorizontalDistance = 1.5f;
-    playerCanon->maxVerticalDistance = 1.5f;
-    playerCanon->rows = 1;
-    playerCanon->columns = 2;
-    playerCanon->unitType = DamageDealer::Jumping;
-    playerCanon->strongAgainstType = DamageDealer::NONE;
-    playerCanon->damageRate = 50;
-    playerCanon->colliderRadius = 1.0f;
+    enemyGolemArchetype->moneyDrop = 25.0f;
 
 
     playerComponent->selectedUnitArchetype = ghostArchetype;

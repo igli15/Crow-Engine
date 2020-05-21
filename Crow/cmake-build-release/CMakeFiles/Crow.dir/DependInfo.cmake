@@ -62,7 +62,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitAnimationSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Game/Systems/UnitAnimationSystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitCollisionSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Game/Systems/UnitCollisionSystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitFightingSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o"
-  "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitSelectionSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Game/Worlds/MainWorld.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Component.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/OOP_Engine/Component.cpp.o"

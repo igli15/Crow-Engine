@@ -20,22 +20,31 @@
 #include "../../Engine/Components/SphereCollider.h"
 #include "../Events/BridgeSelectedEvent.h"
 #include "../UnitGroupArchetypes/UnitGroupArchetype.h"
+#include "../Worlds/MainWorld.h"
 
 void SpawnSystem::Update(float dt)
 {
     System::Update(dt);
 
-    if(Input::GetKeyDown(GLFW_KEY_SPACE))
+    if(Input::GetKeyDown(GLFW_KEY_Q))
     {
-        m_playerComponent->selectedUnitArchetype->Build(world,m_selectedBridge);
+        UnitGroupArchetype* meleeArchetype = static_cast<MainWorld*>(world)->GetUnitGroupArchetype<UnitGroupArchetype>("playerMelee");
+        meleeArchetype->Build(world,m_selectedBridge);
     }
-
+    else if(Input::GetKeyDown(GLFW_KEY_W))
+    {
+        UnitGroupArchetype* tankArchetype = static_cast<MainWorld*>(world)->GetUnitGroupArchetype<UnitGroupArchetype>("playerTank");
+        tankArchetype->Build(world,m_selectedBridge);
+    }
+    else if(Input::GetKeyDown(GLFW_KEY_E))
+    {
+        UnitGroupArchetype* cannonArchetype = static_cast<MainWorld*>(world)->GetUnitGroupArchetype<UnitGroupArchetype>("playerCannon");
+        cannonArchetype->Build(world,m_selectedBridge);
+    }
 }
 
 void SpawnSystem::Init()
 {
-    Entity playerEntity = world->EntitiesWith<Player>()[0];
-    m_playerComponent = &world->GetComponent<Player>(playerEntity);
 }
 
 void SpawnSystem::OnCreate()

@@ -57,7 +57,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Crow.dir/Game/Systems/UnitAnimationSystem.cpp.o"
   "CMakeFiles/Crow.dir/Game/Systems/UnitCollisionSystem.cpp.o"
   "CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o"
-  "CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.o"
   "CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o"
   "CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o"
   "CMakeFiles/Crow.dir/OOP_Engine/Component.cpp.o"

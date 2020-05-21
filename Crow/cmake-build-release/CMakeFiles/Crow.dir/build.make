@@ -772,22 +772,9 @@ CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/BridgeSystem.cpp" -o CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.s
 
-CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.o: CMakeFiles/Crow.dir/flags.make
-CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.o: ../Game/Systems/UnitSelectionSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitSelectionSystem.cpp"
-
-CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitSelectionSystem.cpp" > CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.i
-
-CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitSelectionSystem.cpp" -o CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.s
-
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Game/UnitGroupArchetypes/UnitGroupArchetype.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp"
 
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.i: cmake_force
@@ -800,7 +787,7 @@ CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.s: cmake_for
 
 CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.o: ../Game/Systems/EnemySpawnSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/EnemySpawnSystem.cpp"
 
 CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.i: cmake_force
@@ -813,7 +800,7 @@ CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.s: cmake_force
 
 CMakeFiles/Crow.dir/Engine/Utils/Random.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Engine/Utils/Random.cpp.o: ../Engine/Utils/Random.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/Crow.dir/Engine/Utils/Random.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/Crow.dir/Engine/Utils/Random.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Utils/Random.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Utils/Random.cpp"
 
 CMakeFiles/Crow.dir/Engine/Utils/Random.cpp.i: cmake_force
@@ -826,7 +813,7 @@ CMakeFiles/Crow.dir/Engine/Utils/Random.cpp.s: cmake_force
 
 CMakeFiles/Crow.dir/Game/Systems/UnitCollisionSystem.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Game/Systems/UnitCollisionSystem.cpp.o: ../Game/Systems/UnitCollisionSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/Crow.dir/Game/Systems/UnitCollisionSystem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/Crow.dir/Game/Systems/UnitCollisionSystem.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Game/Systems/UnitCollisionSystem.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitCollisionSystem.cpp"
 
 CMakeFiles/Crow.dir/Game/Systems/UnitCollisionSystem.cpp.i: cmake_force
@@ -839,7 +826,7 @@ CMakeFiles/Crow.dir/Game/Systems/UnitCollisionSystem.cpp.s: cmake_force
 
 CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o: ../Game/Systems/UnitFightingSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitFightingSystem.cpp"
 
 CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.i: cmake_force
@@ -852,7 +839,7 @@ CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.s: cmake_force
 
 CMakeFiles/Crow.dir/Game/Systems/SelectedBridgeIndicatorSystem.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Game/Systems/SelectedBridgeIndicatorSystem.cpp.o: ../Game/Systems/SelectedBridgeIndicatorSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/Crow.dir/Game/Systems/SelectedBridgeIndicatorSystem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/Crow.dir/Game/Systems/SelectedBridgeIndicatorSystem.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Game/Systems/SelectedBridgeIndicatorSystem.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SelectedBridgeIndicatorSystem.cpp"
 
 CMakeFiles/Crow.dir/Game/Systems/SelectedBridgeIndicatorSystem.cpp.i: cmake_force
@@ -865,7 +852,7 @@ CMakeFiles/Crow.dir/Game/Systems/SelectedBridgeIndicatorSystem.cpp.s: cmake_forc
 
 CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.o: ../Game/Systems/ProjectileSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/ProjectileSystem.cpp"
 
 CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.i: cmake_force
@@ -878,7 +865,7 @@ CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.s: cmake_force
 
 CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o: ../Game/Systems/CannonSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/CannonSystem.cpp"
 
 CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.i: cmake_force
@@ -891,7 +878,7 @@ CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.s: cmake_force
 
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: ../Engine/Rendering/Materials/WaterMaterial.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/WaterMaterial.cpp"
 
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.i: cmake_force
@@ -904,7 +891,7 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.s: cmake_force
 
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: ../Engine/Rendering/Materials/PortalMaterial.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/PortalMaterial.cpp"
 
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.i: cmake_force
@@ -917,7 +904,7 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.s: cmake_force
 
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.o: ../Engine/Rendering/Materials/UnlitMaterial.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/UnlitMaterial.cpp"
 
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.i: cmake_force
@@ -930,7 +917,7 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.s: cmake_force
 
 CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.o: ../Game/Systems/PathSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/PathSystem.cpp"
 
 CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.i: cmake_force
@@ -943,7 +930,7 @@ CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.s: cmake_force
 
 CMakeFiles/Crow.dir/Game/Events/TargetSeekedEvent.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Game/Events/TargetSeekedEvent.cpp.o: ../Game/Events/TargetSeekedEvent.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object CMakeFiles/Crow.dir/Game/Events/TargetSeekedEvent.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/Crow.dir/Game/Events/TargetSeekedEvent.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Game/Events/TargetSeekedEvent.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Game/Events/TargetSeekedEvent.cpp"
 
 CMakeFiles/Crow.dir/Game/Events/TargetSeekedEvent.cpp.i: cmake_force
@@ -956,7 +943,7 @@ CMakeFiles/Crow.dir/Game/Events/TargetSeekedEvent.cpp.s: cmake_force
 
 CMakeFiles/Crow.dir/Game/Systems/UnitAnimationSystem.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Game/Systems/UnitAnimationSystem.cpp.o: ../Game/Systems/UnitAnimationSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object CMakeFiles/Crow.dir/Game/Systems/UnitAnimationSystem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object CMakeFiles/Crow.dir/Game/Systems/UnitAnimationSystem.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Game/Systems/UnitAnimationSystem.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitAnimationSystem.cpp"
 
 CMakeFiles/Crow.dir/Game/Systems/UnitAnimationSystem.cpp.i: cmake_force
@@ -969,7 +956,7 @@ CMakeFiles/Crow.dir/Game/Systems/UnitAnimationSystem.cpp.s: cmake_force
 
 CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.o: ../Game/Systems/FlockSeparationSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/FlockSeparationSystem.cpp"
 
 CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.i: cmake_force
@@ -982,7 +969,7 @@ CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.s: cmake_force
 
 CMakeFiles/Crow.dir/Game/Systems/FloatingSystem.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Game/Systems/FloatingSystem.cpp.o: ../Game/Systems/FloatingSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object CMakeFiles/Crow.dir/Game/Systems/FloatingSystem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object CMakeFiles/Crow.dir/Game/Systems/FloatingSystem.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Game/Systems/FloatingSystem.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/FloatingSystem.cpp"
 
 CMakeFiles/Crow.dir/Game/Systems/FloatingSystem.cpp.i: cmake_force
@@ -995,7 +982,7 @@ CMakeFiles/Crow.dir/Game/Systems/FloatingSystem.cpp.s: cmake_force
 
 CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Game/Systems/PlayerMoneySystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/PlayerMoneySystem.cpp"
 
 CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.i: cmake_force
@@ -1063,7 +1050,6 @@ Crow_OBJECTS = \
 "CMakeFiles/Crow.dir/Game/Systems/SteeringSystem.cpp.o" \
 "CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o" \
 "CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o" \
-"CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.o" \
 "CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o" \
 "CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Utils/Random.cpp.o" \
@@ -1140,7 +1126,6 @@ Crow: CMakeFiles/Crow.dir/Game/Systems/SeekingSystem.cpp.o
 Crow: CMakeFiles/Crow.dir/Game/Systems/SteeringSystem.cpp.o
 Crow: CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o
 Crow: CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o
-Crow: CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.o
 Crow: CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o
 Crow: CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Utils/Random.cpp.o
@@ -1164,7 +1149,7 @@ Crow: /usr/local/lib/libassimp.dylib
 Crow: /usr/local/lib/libGLEW.dylib
 Crow: /usr/local/lib/libfreetype.dylib
 Crow: CMakeFiles/Crow.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_74) "Linking CXX executable Crow"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_73) "Linking CXX executable Crow"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Crow.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

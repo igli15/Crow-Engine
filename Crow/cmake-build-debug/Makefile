@@ -1689,33 +1689,6 @@ Game/Systems/UnitFightingSystem.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.s
 .PHONY : Game/Systems/UnitFightingSystem.cpp.s
 
-Game/Systems/UnitSelectionSystem.o: Game/Systems/UnitSelectionSystem.cpp.o
-
-.PHONY : Game/Systems/UnitSelectionSystem.o
-
-# target to build an object file
-Game/Systems/UnitSelectionSystem.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.o
-.PHONY : Game/Systems/UnitSelectionSystem.cpp.o
-
-Game/Systems/UnitSelectionSystem.i: Game/Systems/UnitSelectionSystem.cpp.i
-
-.PHONY : Game/Systems/UnitSelectionSystem.i
-
-# target to preprocess a source file
-Game/Systems/UnitSelectionSystem.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.i
-.PHONY : Game/Systems/UnitSelectionSystem.cpp.i
-
-Game/Systems/UnitSelectionSystem.s: Game/Systems/UnitSelectionSystem.cpp.s
-
-.PHONY : Game/Systems/UnitSelectionSystem.s
-
-# target to generate assembly for a file
-Game/Systems/UnitSelectionSystem.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/UnitSelectionSystem.cpp.s
-.PHONY : Game/Systems/UnitSelectionSystem.cpp.s
-
 Game/UnitGroupArchetypes/UnitGroupArchetype.o: Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o
 
 .PHONY : Game/UnitGroupArchetypes/UnitGroupArchetype.o
@@ -2277,9 +2250,6 @@ help:
 	@echo "... Game/Systems/UnitFightingSystem.o"
 	@echo "... Game/Systems/UnitFightingSystem.i"
 	@echo "... Game/Systems/UnitFightingSystem.s"
-	@echo "... Game/Systems/UnitSelectionSystem.o"
-	@echo "... Game/Systems/UnitSelectionSystem.i"
-	@echo "... Game/Systems/UnitSelectionSystem.s"
 	@echo "... Game/UnitGroupArchetypes/UnitGroupArchetype.o"
 	@echo "... Game/UnitGroupArchetypes/UnitGroupArchetype.i"
 	@echo "... Game/UnitGroupArchetypes/UnitGroupArchetype.s"

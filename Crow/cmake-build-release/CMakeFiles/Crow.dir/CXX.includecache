@@ -18,14 +18,6 @@ string
 glm/glm.hpp
 -
 
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Text.h
-string
--
-glm/glm.hpp
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/glm/glm.hpp
-../Rendering/Font.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Font.h
-
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
 string.h
 -
@@ -156,49 +148,15 @@ EntityManager.h
 ../Events/ComponentAddedEvent.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
 
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Font.h
-freetype2/ft2build.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/freetype2/ft2build.h
-string
--
-
 /Users/igli/Desktop/Crow Engine/Crow/Game/Components/DamageDealer.h
 
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/EnemyUnitCollider.h
-
 /Users/igli/Desktop/Crow Engine/Crow/Game/Components/HealthComponent.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/MoneySourceComponent.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/Player.h
-vector
--
 
 /Users/igli/Desktop/Crow Engine/Crow/Game/Events/UnitCollisionEvents.h
 ../../Engine/Feather/EntityHandle.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
 ../../Engine/EventQueue/Event.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/PlayerMoneySystem.cpp
-PlayerMoneySystem.h
-/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/PlayerMoneySystem.h
-../../Engine/Feather/World.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
-../../Engine/Components/Text.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Text.h
-../Components/Player.h
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/Player.h
-../Components/MoneySourceComponent.h
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/MoneySourceComponent.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/PlayerMoneySystem.h
-../../Engine/Feather/System.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
-../Components/EnemyUnitCollider.h
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/EnemyUnitCollider.h
-../../Engine/Events/OnUnitDefeatedEvent.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/OnUnitDefeatedEvent.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitFightingSystem.cpp
 UnitFightingSystem.h
@@ -217,12 +175,6 @@ UnitFightingSystem.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
 ../Events/UnitCollisionEvents.h
 /Users/igli/Desktop/Crow Engine/Crow/Game/Events/UnitCollisionEvents.h
-
-/usr/local/include/freetype2/freetype/config/ftheader.h
-
-/usr/local/include/freetype2/ft2build.h
-freetype/config/ftheader.h
-/usr/local/include/freetype2/freetype/config/ftheader.h
 
 /usr/local/include/glm/common.hpp
 detail/qualifier.hpp

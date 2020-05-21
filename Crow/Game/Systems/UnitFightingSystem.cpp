@@ -136,7 +136,6 @@ void UnitFightingSystem::Fight(EntityHandle firstEntity, EntityHandle secondEnti
 
     if(firstEntityHealth.component->currentHealth <= 0)
     {
-        ENGINE_LOG("here");
         EventQueue::Instance().Publish(new OnUnitDefeatedEvent(firstEntity.entity));
         world->DestroyEntity(firstEntity.entity);
 
@@ -144,7 +143,6 @@ void UnitFightingSystem::Fight(EntityHandle firstEntity, EntityHandle secondEnti
 
     if(secondEntityHealth.component->currentHealth <= 0)
     {
-        ENGINE_LOG("here");
         EventQueue::Instance().Publish(new OnUnitDefeatedEvent(secondEntity.entity));
         world->DestroyEntity(secondEntity.entity);
     }
