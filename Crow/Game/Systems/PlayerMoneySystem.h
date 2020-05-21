@@ -8,7 +8,7 @@
 
 #include "../../Engine/Feather/System.h"
 #include "../Components/EnemyUnitCollider.h"
-#include "../../Engine/Events/ComponentRemovedEvent.h"
+#include "../../Engine/Events/OnUnitDefeatedEvent.h"
 
 class Player;
 class PlayerMoneySystem : public System
@@ -17,7 +17,7 @@ public:
     void Init() override;
     void Update(float dt) override;
 
-    void OnEnemyDeath(ComponentRemovedEvent<EnemyUnitCollider>* event);
+    void OnEnemyDeath(OnUnitDefeatedEvent* event);
 
 private:
     Player* m_playerComponent = nullptr;

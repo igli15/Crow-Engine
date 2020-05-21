@@ -11221,6 +11221,7 @@ CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/OnUnitDefeatedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
@@ -11232,6 +11233,7 @@ CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Font.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/EnemyUnitCollider.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Components/MoneySourceComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/Player.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/PlayerMoneySystem.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/PlayerMoneySystem.h
@@ -14026,6 +14028,7 @@ CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/OnUnitDefeatedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
@@ -14329,6 +14332,7 @@ CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/FloatingComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/FlockComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/HealthComponent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Components/MoneySourceComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/PlayerUnitCollider.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/SeekComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/SteeringComponent.h
@@ -14730,6 +14734,7 @@ CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/MaterialAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/OnUnitDefeatedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h

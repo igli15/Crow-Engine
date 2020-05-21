@@ -11220,6 +11220,7 @@ CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Engine/EventQueue/E
 CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
 CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
+CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Engine/Events/OnUnitDefeatedEvent.h
 CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Engine/Feather/ComponentManager.h
@@ -11231,6 +11232,7 @@ CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Engine/Feather/Type
 CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Engine/Feather/World.h
 CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Engine/Rendering/Font.h
 CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Game/Components/EnemyUnitCollider.h
+CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Game/Components/MoneySourceComponent.h
 CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Game/Components/Player.h
 CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Game/Systems/PlayerMoneySystem.cpp
 CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Game/Systems/PlayerMoneySystem.h
@@ -14025,6 +14027,7 @@ CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o: ../Engine/EventQueue/
 CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
 CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
+CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o: ../Engine/Events/OnUnitDefeatedEvent.h
 CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o: ../Engine/Feather/ComponentManager.h
@@ -14328,6 +14331,7 @@ CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Game/C
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Game/Components/FloatingComponent.h
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Game/Components/FlockComponent.h
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Game/Components/HealthComponent.h
+CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Game/Components/MoneySourceComponent.h
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Game/Components/PlayerUnitCollider.h
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Game/Components/SeekComponent.h
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Game/Components/SteeringComponent.h
@@ -14729,6 +14733,7 @@ CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Events/CollisionEnter
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Events/MaterialAddedEvent.h
+CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Events/OnUnitDefeatedEvent.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Feather/ComponentManager.h

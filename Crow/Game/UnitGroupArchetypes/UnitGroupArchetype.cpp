@@ -18,6 +18,7 @@
 #include "../Components/CannonComponent.h"
 #include "../Components/FloatingComponent.h"
 #include "../Components/FlockComponent.h"
+#include "../Components/MoneySourceComponent.h"
 
 void UnitGroupArchetype::Build(World *world, BridgeComponent *bridge)
 {
@@ -71,6 +72,7 @@ void UnitGroupArchetype::Build(World *world, BridgeComponent *bridge)
                 bridge->enemyEntitiesOnBridge.push_back(unitEntity.entity);
                 unitTransform->Translate(bridge->pathPoints.back());
                 unitComponent->isPlayerUnit = false;
+                unitEntity.AddComponent<MoneySourceComponent>(MoneySourceComponent{});
             }
 
             float randomHorizontal = Random::RandomRange(-maxHorizontalDistance,maxHorizontalDistance);

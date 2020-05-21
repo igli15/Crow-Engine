@@ -8,6 +8,7 @@
 #include "../../Engine/Feather/World.h"
 #include "../../Engine/Components/Text.h"
 #include "../Components/Player.h"
+#include "../Components/MoneySourceComponent.h"
 
 void PlayerMoneySystem::Init()
 {
@@ -28,12 +29,12 @@ void PlayerMoneySystem::Update(float dt)
     m_playerComponent->textComponent->textString = std::to_string((int)m_playerComponent->money);
 }
 
-void PlayerMoneySystem::OnEnemyDeath(ComponentRemovedEvent<EnemyUnitCollider>* event)
+void PlayerMoneySystem::OnEnemyDeath(OnUnitDefeatedEvent* event)
 {
-    //TODO here take the money from the enemy unit.
-    // maybe make another component which is a money component and whn that is destroyed player gets money.
+    MoneySourceComponent* moneySourceComponent = world->GetComponentPtr<MoneySourceComponent>(event->entity);
 
-    //TODO this has a bug when the enemy gets destroyed cuz of the teleporter you gain money. To fix this
-    // add a new event on enemy dead which is only when player units kill an enemy unit!
-    m_playerComponent->money += 25.0f;
+    if(moneySourceComponent != nullptr) {
+        m_playerComponent->money += moneySourceComponent->moneyDrop;
+        world->RemoveComponent<MoneySourceComponent>(event->entity);
+    }
 }

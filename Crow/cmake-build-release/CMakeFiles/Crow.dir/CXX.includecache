@@ -14,6 +14,10 @@ Engine/Debug/Debug.h
 string
 -
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Rigidbody.h
+glm/glm.hpp
+-
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Text.h
 string
 -
@@ -66,6 +70,12 @@ Event.h
 ../Feather/Types.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/OnUnitDefeatedEvent.h
+../EventQueue/Event.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
+../Feather/Types.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
 ../../Crow.h
 /Users/igli/Desktop/Crow Engine/Crow/Crow.h
@@ -97,6 +107,12 @@ ComponentHandle.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/CustomTypeID.h
 numeric
 -
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
+Types.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
+World.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityManager.h
 queue
@@ -146,11 +162,23 @@ freetype2/ft2build.h
 string
 -
 
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/DamageDealer.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Game/Components/EnemyUnitCollider.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/HealthComponent.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/MoneySourceComponent.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Game/Components/Player.h
 vector
 -
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Events/UnitCollisionEvents.h
+../../Engine/Feather/EntityHandle.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
+../../Engine/EventQueue/Event.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/PlayerMoneySystem.cpp
 PlayerMoneySystem.h
@@ -161,14 +189,34 @@ PlayerMoneySystem.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Text.h
 ../Components/Player.h
 /Users/igli/Desktop/Crow Engine/Crow/Game/Components/Player.h
+../Components/MoneySourceComponent.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/MoneySourceComponent.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/PlayerMoneySystem.h
 ../../Engine/Feather/System.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
 ../Components/EnemyUnitCollider.h
 /Users/igli/Desktop/Crow Engine/Crow/Game/Components/EnemyUnitCollider.h
-../../Engine/Events/ComponentRemovedEvent.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
+../../Engine/Events/OnUnitDefeatedEvent.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/OnUnitDefeatedEvent.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitFightingSystem.cpp
+UnitFightingSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitFightingSystem.h
+../Components/DamageDealer.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/DamageDealer.h
+../Components/HealthComponent.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/HealthComponent.h
+../../Engine/Components/Rigidbody.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Rigidbody.h
+../../Engine/Events/OnUnitDefeatedEvent.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/OnUnitDefeatedEvent.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitFightingSystem.h
+../../Engine/Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+../Events/UnitCollisionEvents.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Events/UnitCollisionEvents.h
 
 /usr/local/include/freetype2/freetype/config/ftheader.h
 

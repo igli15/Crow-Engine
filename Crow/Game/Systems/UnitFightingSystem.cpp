@@ -6,6 +6,7 @@
 #include "../Components/DamageDealer.h"
 #include "../Components/HealthComponent.h"
 #include "../../Engine/Components/Rigidbody.h"
+#include "../../Engine/Events/OnUnitDefeatedEvent.h"
 
 void UnitFightingSystem::Init()
 {
@@ -135,11 +136,16 @@ void UnitFightingSystem::Fight(EntityHandle firstEntity, EntityHandle secondEnti
 
     if(firstEntityHealth.component->currentHealth <= 0)
     {
+        ENGINE_LOG("here");
+        EventQueue::Instance().Publish(new OnUnitDefeatedEvent(firstEntity.entity));
         world->DestroyEntity(firstEntity.entity);
+
     }
 
     if(secondEntityHealth.component->currentHealth <= 0)
     {
+        ENGINE_LOG("here");
+        EventQueue::Instance().Publish(new OnUnitDefeatedEvent(secondEntity.entity));
         world->DestroyEntity(secondEntity.entity);
     }
 
