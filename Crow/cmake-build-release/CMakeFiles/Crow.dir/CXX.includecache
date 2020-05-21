@@ -368,6 +368,10 @@ glm/vec3.hpp
 glm/vec3.hpp
 -
 
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitIconComponent.h
+../../Engine/Rendering/Sprite.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Sprite.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Game/Events/UnitCollisionEvents.h
 ../../Engine/Feather/EntityHandle.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
@@ -409,6 +413,10 @@ vector
 /Users/igli/Desktop/Crow Engine/Crow/Game/Components/SteeringComponent.h
 vector
 -
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameUISystem.h
+../../Engine/Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/PathSystem.h
 ../../Engine/Feather/System.h
@@ -559,6 +567,10 @@ MainWorld.h
 /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/PlayerMoneySystem.h
 ../../Engine/Components/Text.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Text.h
+../Components/UnitIconComponent.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitIconComponent.h
+../Systems/GameUISystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameUISystem.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Game/Worlds/MainWorld.h
 ../../Engine/Feather/World.h

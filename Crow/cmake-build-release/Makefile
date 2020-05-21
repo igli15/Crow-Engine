@@ -1365,6 +1365,33 @@ Game/Systems/FlockSeparationSystem.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.s
 .PHONY : Game/Systems/FlockSeparationSystem.cpp.s
 
+Game/Systems/GameUISystem.o: Game/Systems/GameUISystem.cpp.o
+
+.PHONY : Game/Systems/GameUISystem.o
+
+# target to build an object file
+Game/Systems/GameUISystem.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/GameUISystem.cpp.o
+.PHONY : Game/Systems/GameUISystem.cpp.o
+
+Game/Systems/GameUISystem.i: Game/Systems/GameUISystem.cpp.i
+
+.PHONY : Game/Systems/GameUISystem.i
+
+# target to preprocess a source file
+Game/Systems/GameUISystem.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/GameUISystem.cpp.i
+.PHONY : Game/Systems/GameUISystem.cpp.i
+
+Game/Systems/GameUISystem.s: Game/Systems/GameUISystem.cpp.s
+
+.PHONY : Game/Systems/GameUISystem.s
+
+# target to generate assembly for a file
+Game/Systems/GameUISystem.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/GameUISystem.cpp.s
+.PHONY : Game/Systems/GameUISystem.cpp.s
+
 Game/Systems/PathSystem.o: Game/Systems/PathSystem.cpp.o
 
 .PHONY : Game/Systems/PathSystem.o
@@ -2214,6 +2241,9 @@ help:
 	@echo "... Game/Systems/FlockSeparationSystem.o"
 	@echo "... Game/Systems/FlockSeparationSystem.i"
 	@echo "... Game/Systems/FlockSeparationSystem.s"
+	@echo "... Game/Systems/GameUISystem.o"
+	@echo "... Game/Systems/GameUISystem.i"
+	@echo "... Game/Systems/GameUISystem.s"
 	@echo "... Game/Systems/PathSystem.o"
 	@echo "... Game/Systems/PathSystem.i"
 	@echo "... Game/Systems/PathSystem.s"

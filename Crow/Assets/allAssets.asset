@@ -1,4 +1,3 @@
-
 #texture bridgeTexture : bridgeDiffuse.png;
 #texture containerDiffuse : container.png;
 #texture containerSpecular : containerSpecular.png;
@@ -12,9 +11,14 @@
 #texture portalGlowMap : portalGlowMap.png;
 #texture PlayerUnitGroupUI : PlayerUnitGroupUI.png;
 #texture uiBackground : uiBackground.png;
+
 #texture uiBorderQ : uiBorderQ.png;
 #texture uiBorderW : uiBorderW.png;
 #texture uiBorderE : uiBorderE.png;
+
+#texture uiBorderQAvaiable : uiBorderQAvaiable.png;
+#texture uiBorderWAvaiable : uiBorderWAvaiable.png;
+#texture uiBorderEAvaiable : uiBorderEAvaiable.png;
 
 #model dragon : dragon.obj;
 #model ghost : ghost1.obj;

@@ -37,6 +37,8 @@
 #include "../Systems/FloatingSystem.h"
 #include "../Systems/PlayerMoneySystem.h"
 #include "../../Engine/Components/Text.h"
+#include "../Components/UnitIconComponent.h"
+#include "../Systems/GameUISystem.h"
 
 void MainWorld::Build()
 {
@@ -64,9 +66,11 @@ void MainWorld::Build()
     RegisterSystem<FloatingSystem>();
     RegisterSystem<FlockSeparationSystem>();
     RegisterSystem<PlayerMoneySystem>();
+    RegisterSystem<GameUISystem>();
 
     EntityHandle playerEntity = CreateEntity();
     Player* playerComponent = playerEntity.AddComponent<Player>(Player{});
+    playerComponent->money = 50;
 
     UnitGroupArchetype* ghostArchetype = CreateUnitGroupArchetype<UnitGroupArchetype>("playerMelee");
     ghostArchetype->maxSpeed = 0.7f;
@@ -123,9 +127,7 @@ void MainWorld::Build()
     enemyGolemArchetype->isPlayerUnit = false;
     enemyGolemArchetype->moneyDrop = 25.0f;
 
-
     playerComponent->selectedUnitArchetype = ghostArchetype;
-
 
     EntityHandle bridgeIndicatorEntity = CreateEntity();
     Transform* transform = bridgeIndicatorEntity.AddComponent(Transform{});
@@ -322,6 +324,7 @@ void MainWorld::ParseGameComponents(rapidxml::xml_node<> *node, EntityHandle ent
 
 void MainWorld::CreateUIEntities(ResourceManager* resourceManager)
 {
+    //TODO clean this mess
     Game* game = Game::Instance();
 
     const int screenWidth = game->screenData.screenWidth;
@@ -335,23 +338,30 @@ void MainWorld::CreateUIEntities(ResourceManager* resourceManager)
     const int iconBottomPadding = 150;
     const int iconHorizontalPadding = 200;
 
+    UnitGroupArchetype* meleeArchetype = GetUnitGroupArchetype<UnitGroupArchetype>("playerMelee");
+    UnitGroupArchetype* tankArchetype = GetUnitGroupArchetype<UnitGroupArchetype>("playerTank");
+    UnitGroupArchetype* cannonArchetype = GetUnitGroupArchetype<UnitGroupArchetype>("playerCannon");
+
     EntityHandle borderQEntity = CreateEntity();
     Transform* borderQTransform = borderQEntity.AddComponent<Transform>(Transform{});
     borderQTransform->SetLocalPosition(glm::vec3(screenWidth/2 - iconSize/2 - iconHorizontalPadding,screenHeight - iconBottomPadding,1));
     borderQTransform->Scale(glm::vec3(iconSize,iconSize,1));
     borderQEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("uiBorderQSprite"),resourceManager->GetMaterial<SpriteMaterial>("uiBorderQMat")});
+    borderQEntity.AddComponent<UnitIconComponent>(UnitIconComponent{meleeArchetype->unitPrice,resourceManager->GetSprite("uiBorderQSpriteAvaiable"),resourceManager->GetSprite("uiBorderQSprite")});
 
     EntityHandle borderWEntity = CreateEntity();
     Transform* borderWTransform = borderWEntity.AddComponent<Transform>(Transform{});
     borderWTransform->SetLocalPosition(glm::vec3(screenWidth/2 - iconSize/2,screenHeight - iconBottomPadding,1));
     borderWTransform->Scale(glm::vec3(iconSize,iconSize,1));
     borderWEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("uiBorderWSprite"),resourceManager->GetMaterial<SpriteMaterial>("uiBorderWMat")});
+    borderWEntity.AddComponent<UnitIconComponent>(UnitIconComponent{tankArchetype->unitPrice,resourceManager->GetSprite("uiBorderWSpriteAvaiable"),resourceManager->GetSprite("uiBorderWSprite")});
 
     EntityHandle borderEEntity = CreateEntity();
     Transform* borderETransform = borderEEntity.AddComponent<Transform>(Transform{});
     borderETransform->SetLocalPosition(glm::vec3(screenWidth/2 - iconSize/2 + iconHorizontalPadding,screenHeight - iconBottomPadding,1));
     borderETransform->Scale(glm::vec3(iconSize,iconSize,1));
     borderEEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("uiBorderESprite"),resourceManager->GetMaterial<SpriteMaterial>("uiBorderEMat")});
+    borderEEntity.AddComponent<UnitIconComponent>(UnitIconComponent{cannonArchetype->unitPrice,resourceManager->GetSprite("uiBorderESpriteAvaiable"),resourceManager->GetSprite("uiBorderESprite")});
 
     EntityHandle uiBackgroundEntity = CreateEntity();
     Transform* uiBackgroundTransform = uiBackgroundEntity.AddComponent<Transform>(Transform{});
@@ -359,12 +369,6 @@ void MainWorld::CreateUIEntities(ResourceManager* resourceManager)
     uiBackgroundTransform->Scale(glm::vec3(borderSize.x,borderSize.y,1));
     uiBackgroundEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("uiBackgroundSprite"),resourceManager->GetMaterial<SpriteMaterial>("uiBackgroundMat")});
 
-    /*
-    EntityHandle unitGroupUIEntity = CreateEntity();
-    Transform* unitGroupUITransform = unitGroupUIEntity.AddComponent<Transform>(Transform{});
-    unitGroupUITransform->SetLocalPosition(glm::vec3(screenWidth/2 - 300,screenHeight - iconBottomPadding,0));
-    unitGroupUITransform->Scale(glm::vec3(iconSize,iconSize,1));
-    unitGroupUIEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("playerUnitGroupUISprite"),resourceManager->GetMaterial<SpriteMaterial>("playerUnitGroupUIMat")});
-*/
+
 
 }

@@ -45,6 +45,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.o"
   "CMakeFiles/Crow.dir/Game/Systems/FloatingSystem.cpp.o"
   "CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.o"
+  "CMakeFiles/Crow.dir/Game/Systems/GameUISystem.cpp.o"
   "CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.o"
   "CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o"
   "CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.o"
