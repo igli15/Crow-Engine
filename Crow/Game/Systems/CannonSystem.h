@@ -17,6 +17,7 @@ public:
 
 private:
     void SpawnProjectile(const glm::vec3& spawnPos,const glm::vec3& target);
+    void Jump(Entity  entity,const glm::vec3& target);
 };
 
 

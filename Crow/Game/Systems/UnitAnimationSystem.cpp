@@ -24,7 +24,6 @@ void UnitAnimationSystem::Update(float dt)
         UnitAnimationComponent& animationComponent = world->GetComponent<UnitAnimationComponent>(units[unitIndex]);
 
         glm::vec3 pos = unitTransform.LocalPosition();
-        //ENGINE_LOG(glm::sin(glfwGetTime() ));
-        unitTransform.SetLocalPosition(glm::vec3(pos.x,glm::sin(glm::sin(glfwGetTime() * animationComponent.maxSpeed)) * animationComponent.height + pos.y,pos.z));
+        unitTransform.SetLocalPosition(glm::vec3(pos.x,glm::sin(glfwGetTime() * animationComponent.maxSpeed) * animationComponent.height + pos.y,pos.z));
     }
 }

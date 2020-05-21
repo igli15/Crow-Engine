@@ -96,13 +96,13 @@ void MainWorld::Build()
 
     UnitGroupArchetype* playerCanon = CreateUnitGroupArchetype<UnitGroupArchetype>("canon");
     playerCanon->maxSpeed = 0.7f;
-    playerCanon->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("translucentMaterial");
-    playerCanon->unitModel = resourceManager->GetModel("canon");
+    playerCanon->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("whiteUnlitMat");
+    playerCanon->unitModel = resourceManager->GetModel("basicUnit");
     playerCanon->scaleFactor =0.2f;
     playerCanon->maxHorizontalDistance = 0.8f;
     playerCanon->maxVerticalDistance = 0.8;
-    playerCanon->rows = 1;
-    playerCanon->columns = 1;
+    playerCanon->rows = 2;
+    playerCanon->columns = 2;
     playerCanon->unitType = DamageDealer::Arrow;
     playerCanon->strongAgainstType = DamageDealer::NONE;
     playerCanon->damageRate = 0;

@@ -15,6 +15,8 @@
 #include "../../Engine/Core/ResourceManager.h"
 #include "../../Game/Components/BridgeComponent.h"
 #include "../Components/UnitComponent.h"
+#include "../Components/SteeringComponent.h"
+#include "../Components/UnitPathComponent.h"
 
 void CannonSystem::OnCreate()
 {
@@ -43,7 +45,8 @@ void CannonSystem::Update(float dt)
             Entity closestEnemyEntity = *(unitComponent.bridge->enemyEntitiesOnBridge.begin());
 
             Transform& closestTransform = world->GetComponent<Transform>(closestEnemyEntity);
-            SpawnProjectile(transform.WorldPosition(),closestTransform.WorldPosition());
+            //SpawnProjectile(transform.WorldPosition(),closestTransform.WorldPosition());
+            Jump(cannonEntities[i],closestTransform.LocalPosition());
             cannonComponent.reloadCounter = 0;
         }
     }
@@ -66,4 +69,15 @@ void CannonSystem::SpawnProjectile(const glm::vec3& spawnPos,const glm::vec3& ta
     ProjectileComponent projectileComponent{};
     projectileComponent.targetPos = glm::vec3 (target);
     projectileEntity.AddComponent(projectileComponent);
+}
+
+void CannonSystem::Jump(Entity entity,const glm::vec3& target)
+{
+    world->RemoveComponent<CannonComponent>(entity);
+    world->RemoveComponent<SteeringComponent>(entity);
+
+
+    ProjectileComponent projectileComponent{};
+    projectileComponent.targetPos = glm::vec3 (target);
+    world->AddComponent<ProjectileComponent>(entity,projectileComponent);
 }

@@ -11,6 +11,7 @@
 struct UnitComponent
 {
     BridgeComponent* bridge = nullptr;
+    bool isPlayerUnit = true;
 };
 
 

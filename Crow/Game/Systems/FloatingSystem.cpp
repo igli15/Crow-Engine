@@ -12,7 +12,7 @@ void FloatingSystem::Update(float dt)
 {
     System::Update(dt);
 
-    auto entities = world->EntitiesWith<Transform,FloatingComponent>();
+    auto entities = world->EntitiesWith<Transform,FloatingComponent,SteeringComponent>();
 
     for (int i = 0; i < entities.size(); ++i)
     {

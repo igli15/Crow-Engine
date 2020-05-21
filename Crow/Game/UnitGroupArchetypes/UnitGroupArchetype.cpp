@@ -17,6 +17,7 @@
 #include "../Components/EnemyUnitCollider.h"
 #include "../Components/CannonComponent.h"
 #include "../Components/FloatingComponent.h"
+#include "../Components/FlockComponent.h"
 
 void UnitGroupArchetype::Build(World *world, BridgeComponent *bridge)
 {
@@ -55,15 +56,21 @@ void UnitGroupArchetype::Build(World *world, BridgeComponent *bridge)
 
             Rigidbody* rb = unitEntity.AddComponent<Rigidbody>(Rigidbody{});
 
+            UnitComponent* unitComponent = unitEntity.AddComponent(UnitComponent{});
+            unitComponent->bridge = bridge;
+
             if(isPlayerUnit) {
                 unitEntity.AddComponent<PlayerUnitCollider>(PlayerUnitCollider{colliderRadius});
                 bridge->playerEntitiesOnBridge.push_back(unitEntity.entity);
                 unitTransform->Translate(bridge->pathPoints[0]);
+                unitComponent->isPlayerUnit = true;
+
             } else
             {
                 unitEntity.AddComponent<EnemyUnitCollider>(EnemyUnitCollider{colliderRadius});
                 bridge->enemyEntitiesOnBridge.push_back(unitEntity.entity);
                 unitTransform->Translate(bridge->pathPoints.back());
+                unitComponent->isPlayerUnit = false;
             }
 
             float randomHorizontal = Random::RandomRange(-maxHorizontalDistance,maxHorizontalDistance);
@@ -74,9 +81,9 @@ void UnitGroupArchetype::Build(World *world, BridgeComponent *bridge)
 
             unitEntity.AddComponent<HealthComponent>(HealthComponent{maxHealth,maxHealth});
             unitEntity.AddComponent<DamageDealer>(DamageDealer{damageRate,unitType,strongAgainstType});
-            unitEntity.AddComponent(UnitComponent{bridge});
 
             unitEntity.AddComponent<FloatingComponent>(FloatingComponent{});
+            unitEntity.AddComponent<FlockComponent>(FlockComponent{});
             rb->maxSpeed = maxSpeed;
 
             if(unitType == DamageDealer::Arrow)

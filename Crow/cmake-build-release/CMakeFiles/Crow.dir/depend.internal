@@ -10155,7 +10155,9 @@ CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/BridgeComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/CannonComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/ProjectileComponent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Components/SteeringComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitComponent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitPathComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/CannonSystem.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/CannonSystem.h
  /usr/local/include/GL/glew.h
@@ -10891,7 +10893,9 @@ CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/BridgeComponent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Components/FlockComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/SteeringComponent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/FlockSeparationSystem.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/FlockSeparationSystem.h
  /usr/local/include/GL/glew.h
@@ -14110,6 +14114,7 @@ CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/DamageDealer.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/EnemyUnitCollider.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/FloatingComponent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Components/FlockComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/HealthComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/PlayerUnitCollider.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/SeekComponent.h
