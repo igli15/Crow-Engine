@@ -103,7 +103,6 @@ void UnitFightingSystem::Fight(EntityHandle firstEntity, EntityHandle secondEnti
         return;
     }
 
-
     float firstDmg = firstDamageDealer.component->damageRate;
     float secondDmg = secondDamageDealer.component->damageRate;
 
@@ -122,6 +121,17 @@ void UnitFightingSystem::Fight(EntityHandle firstEntity, EntityHandle secondEnti
 
     firstEntityHealth.component->currentHealth -= secondDmg;
     secondEntityHealth.component->currentHealth -= firstDmg;
+
+    if(firstDamageDealer.component->damageDealerType == DamageDealer::Arrow)
+    {
+        firstEntityHealth.component->currentHealth = 0;
+    }
+
+    if(secondDamageDealer.component->damageDealerType == DamageDealer::Arrow)
+    {
+        secondEntityHealth.component->currentHealth = 0;
+    }
+
 
     if(firstEntityHealth.component->currentHealth <= 0)
     {

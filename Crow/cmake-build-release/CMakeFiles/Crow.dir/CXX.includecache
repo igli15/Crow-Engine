@@ -14,6 +14,34 @@ Engine/Debug/Debug.h
 string
 -
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h
+glm/glm.hpp
+-
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
+../Rendering/Model.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
+../Rendering/AbstractMaterial.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+../EventQueue/EventQueue.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
+../Events/MaterialAddedEvent.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/MaterialAddedEvent.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Rigidbody.h
+glm/glm.hpp
+-
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/SpriteInfo.h
+glm/glm.hpp
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/glm/glm.hpp
+../Rendering/Sprite.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Sprite.h
+../Rendering/AbstractMaterial.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+../Rendering/Materials/SpriteMaterial.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/SpriteMaterial.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
 glm/glm.hpp
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/glm/glm.hpp
@@ -25,6 +53,48 @@ glm/gtx/quaternion.hpp
 -
 vector
 -
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
+../Rendering/Window.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
+../Feather/World.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
+freetype2/ft2build.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/freetype2/ft2build.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
+unordered_map
+-
+../Debug/Debug.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
+../Rendering/Window.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Renderer.h
+vector
+-
+unordered_map
+-
+../Rendering/AbstractMaterial.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+../Components/MeshInfo.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h
+map
+-
+../Rendering/Texture.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
+../Rendering/Shader.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
+../Rendering/Model.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
+../Rendering/AbstractMaterial.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+Game.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
+Renderer.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Renderer.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
 string.h
@@ -39,6 +109,18 @@ spdlog/sinks/stdout_color_sinks.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/spdlog/sinks/stdout_color_sinks.h
 memory
 -
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Editor/UnitySceneParser.h
+string
+-
+glm/vec3.hpp
+-
+glm/ext/quaternion_float.hpp
+-
+../../Plugins/RapidXML/rapidxml.hpp
+/Users/igli/Desktop/Crow Engine/Crow/Plugins/RapidXML/rapidxml.hpp
+../Feather/EntityHandle.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
 
@@ -58,6 +140,10 @@ typeindex
 Event.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEnterEvent.h
+../Feather/EntityHandle.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
 ../Feather/Types.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
@@ -69,6 +155,12 @@ Event.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
 ../Feather/Types.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/MaterialAddedEvent.h
+../EventQueue/Event.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
+../Rendering/AbstractMaterial.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
 ../../Crow.h
@@ -101,6 +193,12 @@ ComponentHandle.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/CustomTypeID.h
 numeric
 -
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
+Types.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
+World.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityManager.h
 queue
@@ -144,23 +242,333 @@ EntityManager.h
 ../Events/ComponentAddedEvent.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
 
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitAnimationComponent.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitAnimationSystem.cpp
-UnitAnimationSystem.h
-/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitAnimationSystem.h
-../../Engine/Feather/World.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+glm/glm.hpp
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/glm/glm.hpp
+string
+-
+Shader.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
+../Feather/World.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/PortalMaterial.h
+../AbstractMaterial.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+../Texture.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/SpriteMaterial.h
+glm/glm.hpp
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/glm/glm.hpp
+../AbstractMaterial.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/TranslucentColorMat.h
+../AbstractMaterial.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/WaterMaterial.h
+../AbstractMaterial.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Mesh.h
+glm/glm.hpp
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/glm/glm.hpp
+Shader.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
+vector
+-
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
+Mesh.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Mesh.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
+GL/glew.h
+-
+string
+-
+fstream
+-
+sstream
+-
+iostream
+-
+glm/ext.hpp
+-
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Sprite.h
+vector
+-
+Texture.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
+GL/glew.h
+-
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
+GL/glew.h
+-
+GLFW/glfw3.h
+-
+../Core/Input.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/BridgeComponent.h
+glm/vec3.hpp
+-
+vector
+-
+../../Engine/Feather/Types.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/DamageDealer.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/EnemyUnitCollider.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/Player.h
+vector
+-
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/PlayerUnitCollider.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/ProjectileComponent.h
+glm/vec3.hpp
+-
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/RotateComponent.h
+glm/vec3.hpp
+-
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/SelectedBridgeIndicator.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/SteeringComponent.h
+glm/vec3.hpp
+-
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Events/UnitCollisionEvents.h
+../../Engine/Feather/EntityHandle.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
+../../Engine/EventQueue/Event.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/BridgeSystem.h
+../../Engine/Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+../../Engine/Events/ComponentRemovedEvent.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
+../Components/PlayerUnitCollider.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/PlayerUnitCollider.h
+../Components/EnemyUnitCollider.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/EnemyUnitCollider.h
+vector
+-
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/CannonSystem.h
+glm/vec3.hpp
+-
+../../Engine/Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/EnemySpawnSystem.h
+../../Engine/Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+vector
+-
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/FloatingSystem.h
+../../Engine/Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/FlockSeparationSystem.h
+../../Engine/Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+../Components/SteeringComponent.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/SteeringComponent.h
+vector
+-
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/PathSystem.h
+../../Engine/Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/ProjectileSystem.h
+../../Engine/Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+../Components/ProjectileComponent.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/ProjectileComponent.h
+../../Engine/Events/ComponentAddedEvent.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/RigidbodySystem.h
+../../Engine/Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+../../Engine/Events/CollisionEnterEvent.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEnterEvent.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/RotateSystem.h
+../../Engine/Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+vector
+-
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SeekingSystem.h
+glm/vec3.hpp
+-
+../../Engine/Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
 ../../Engine/Components/Transform.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
-../Components/UnitAnimationComponent.h
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitAnimationComponent.h
-GLFW/glfw3.h
-/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GLFW/glfw3.h
+../../Engine/Components/Rigidbody.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Rigidbody.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SelectedBridgeIndicatorSystem.h
+../../Engine/Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SpawnSystem.h
+../../Engine/Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+vector
+-
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SteeringSystem.h
+glm/ext/quaternion_float.hpp
+-
+../../Engine/Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitAnimationSystem.h
 ../../Engine/Feather/System.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitCollisionSystem.h
+../../Engine/Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+../../Engine/Feather/EntityHandle.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitFightingSystem.h
+../../Engine/Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+../Events/UnitCollisionEvents.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Events/UnitCollisionEvents.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitSelectionSystem.h
+../../Engine/Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+../Components/Player.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/Player.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/UnitGroupArchetype.h
+../../Engine/Feather/EntityHandle.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
+../Components/DamageDealer.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/DamageDealer.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Worlds/MainWorld.cpp
+MainWorld.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Worlds/MainWorld.h
+../../Engine/Editor/UnitySceneParser.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Editor/UnitySceneParser.h
+../../Engine/Components/Light.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h
+../Components/BridgeComponent.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/BridgeComponent.h
+../../Engine/Feather/EntityHandle.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
+../Systems/BridgeSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/BridgeSystem.h
+../Systems/SpawnSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SpawnSystem.h
+../Systems/SeekingSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SeekingSystem.h
+../Systems/SteeringSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SteeringSystem.h
+../Systems/RigidbodySystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/RigidbodySystem.h
+../UnitGroupArchetypes/UnitGroupArchetype.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/UnitGroupArchetype.h
+../Components/Player.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/Player.h
+../../Engine/Core/Game.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
+../../Engine/Core/ResourceManager.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h
+../../Engine/Rendering/Materials/TranslucentColorMat.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/TranslucentColorMat.h
+../Systems/UnitSelectionSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitSelectionSystem.h
+../Systems/EnemySpawnSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/EnemySpawnSystem.h
+../Systems/UnitCollisionSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitCollisionSystem.h
+../Systems/UnitFightingSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitFightingSystem.h
+../Components/SelectedBridgeIndicator.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/SelectedBridgeIndicator.h
+../Systems/SelectedBridgeIndicatorSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SelectedBridgeIndicatorSystem.h
+../Components/ProjectileComponent.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/ProjectileComponent.h
+../Systems/ProjectileSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/ProjectileSystem.h
+../Systems/CannonSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/CannonSystem.h
+../../Engine/Rendering/Materials/WaterMaterial.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/WaterMaterial.h
+../Components/RotateComponent.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/RotateComponent.h
+../Systems/RotateSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/RotateSystem.h
+../../Engine/Rendering/Materials/PortalMaterial.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/PortalMaterial.h
+../Systems/PathSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/PathSystem.h
+../Systems/UnitAnimationSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitAnimationSystem.h
+../../Engine/Components/SpriteInfo.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/SpriteInfo.h
+../Systems/FlockSeparationSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/FlockSeparationSystem.h
+../Systems/FloatingSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/FloatingSystem.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Worlds/MainWorld.h
+../../Engine/Feather/World.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
+../../Plugins/RapidXML/rapidxml.hpp
+/Users/igli/Desktop/Crow Engine/Crow/Plugins/RapidXML/rapidxml.hpp
+unordered_map
+-
+
+/Users/igli/Desktop/Crow Engine/Crow/Plugins/RapidXML/rapidxml.hpp
+cstdlib
+-
+cassert
+-
+new
+-
+exception
+-
+
+/usr/local/include/GL/glew.h
+stddef.h
+-
+inttypes.h
+-
+stdint.h
+-
+inttypes.h
+-
+Availability.h
+-
+OpenGL/glu.h
+-
+GL/glu.h
+-
 
 /usr/local/include/GLFW/glfw3.h
 stddef.h
@@ -206,6 +614,12 @@ GL/glext.h
 GL/glu.h
 -
 
+/usr/local/include/freetype2/freetype/config/ftheader.h
+
+/usr/local/include/freetype2/ft2build.h
+freetype/config/ftheader.h
+/usr/local/include/freetype2/freetype/config/ftheader.h
+
 /usr/local/include/glm/common.hpp
 detail/qualifier.hpp
 /usr/local/include/glm/detail/qualifier.hpp
@@ -217,6 +631,10 @@ detail/func_common.inl
 /usr/local/include/glm/detail/_fixes.hpp
 cmath
 -
+
+/usr/local/include/glm/detail/_noise.hpp
+../common.hpp
+/usr/local/include/glm/common.hpp
 
 /usr/local/include/glm/detail/_swizzle.hpp
 
@@ -626,6 +1044,326 @@ cmath
 detail/func_exponential.inl
 /usr/local/include/glm/detail/func_exponential.inl
 
+/usr/local/include/glm/ext.hpp
+detail/setup.hpp
+/usr/local/include/glm/detail/setup.hpp
+glm.hpp
+/usr/local/include/glm/glm.hpp
+./ext/matrix_double2x2.hpp
+/usr/local/include/glm/ext/matrix_double2x2.hpp
+./ext/matrix_double2x2_precision.hpp
+/usr/local/include/glm/ext/matrix_double2x2_precision.hpp
+./ext/matrix_double2x3.hpp
+/usr/local/include/glm/ext/matrix_double2x3.hpp
+./ext/matrix_double2x3_precision.hpp
+/usr/local/include/glm/ext/matrix_double2x3_precision.hpp
+./ext/matrix_double2x4.hpp
+/usr/local/include/glm/ext/matrix_double2x4.hpp
+./ext/matrix_double2x4_precision.hpp
+/usr/local/include/glm/ext/matrix_double2x4_precision.hpp
+./ext/matrix_double3x2.hpp
+/usr/local/include/glm/ext/matrix_double3x2.hpp
+./ext/matrix_double3x2_precision.hpp
+/usr/local/include/glm/ext/matrix_double3x2_precision.hpp
+./ext/matrix_double3x3.hpp
+/usr/local/include/glm/ext/matrix_double3x3.hpp
+./ext/matrix_double3x3_precision.hpp
+/usr/local/include/glm/ext/matrix_double3x3_precision.hpp
+./ext/matrix_double3x4.hpp
+/usr/local/include/glm/ext/matrix_double3x4.hpp
+./ext/matrix_double3x4_precision.hpp
+/usr/local/include/glm/ext/matrix_double3x4_precision.hpp
+./ext/matrix_double4x2.hpp
+/usr/local/include/glm/ext/matrix_double4x2.hpp
+./ext/matrix_double4x2_precision.hpp
+/usr/local/include/glm/ext/matrix_double4x2_precision.hpp
+./ext/matrix_double4x3.hpp
+/usr/local/include/glm/ext/matrix_double4x3.hpp
+./ext/matrix_double4x3_precision.hpp
+/usr/local/include/glm/ext/matrix_double4x3_precision.hpp
+./ext/matrix_double4x4.hpp
+/usr/local/include/glm/ext/matrix_double4x4.hpp
+./ext/matrix_double4x4_precision.hpp
+/usr/local/include/glm/ext/matrix_double4x4_precision.hpp
+./ext/matrix_float2x2.hpp
+/usr/local/include/glm/ext/matrix_float2x2.hpp
+./ext/matrix_float2x2_precision.hpp
+/usr/local/include/glm/ext/matrix_float2x2_precision.hpp
+./ext/matrix_float2x3.hpp
+/usr/local/include/glm/ext/matrix_float2x3.hpp
+./ext/matrix_float2x3_precision.hpp
+/usr/local/include/glm/ext/matrix_float2x3_precision.hpp
+./ext/matrix_float2x4.hpp
+/usr/local/include/glm/ext/matrix_float2x4.hpp
+./ext/matrix_float2x4_precision.hpp
+/usr/local/include/glm/ext/matrix_float2x4_precision.hpp
+./ext/matrix_float3x2.hpp
+/usr/local/include/glm/ext/matrix_float3x2.hpp
+./ext/matrix_float3x2_precision.hpp
+/usr/local/include/glm/ext/matrix_float3x2_precision.hpp
+./ext/matrix_float3x3.hpp
+/usr/local/include/glm/ext/matrix_float3x3.hpp
+./ext/matrix_float3x3_precision.hpp
+/usr/local/include/glm/ext/matrix_float3x3_precision.hpp
+./ext/matrix_float3x4.hpp
+/usr/local/include/glm/ext/matrix_float3x4.hpp
+./ext/matrix_float3x4_precision.hpp
+/usr/local/include/glm/ext/matrix_float3x4_precision.hpp
+./ext/matrix_float4x2.hpp
+/usr/local/include/glm/ext/matrix_float4x2.hpp
+./ext/matrix_float4x2_precision.hpp
+/usr/local/include/glm/ext/matrix_float4x2_precision.hpp
+./ext/matrix_float4x3.hpp
+/usr/local/include/glm/ext/matrix_float4x3.hpp
+./ext/matrix_float4x3_precision.hpp
+/usr/local/include/glm/ext/matrix_float4x3_precision.hpp
+./ext/matrix_float4x4.hpp
+/usr/local/include/glm/ext/matrix_float4x4.hpp
+./ext/matrix_float4x4_precision.hpp
+/usr/local/include/glm/ext/matrix_float4x4_precision.hpp
+./ext/matrix_relational.hpp
+/usr/local/include/glm/ext/matrix_relational.hpp
+./ext/quaternion_double.hpp
+/usr/local/include/glm/ext/quaternion_double.hpp
+./ext/quaternion_double_precision.hpp
+/usr/local/include/glm/ext/quaternion_double_precision.hpp
+./ext/quaternion_float.hpp
+/usr/local/include/glm/ext/quaternion_float.hpp
+./ext/quaternion_float_precision.hpp
+/usr/local/include/glm/ext/quaternion_float_precision.hpp
+./ext/quaternion_geometric.hpp
+/usr/local/include/glm/ext/quaternion_geometric.hpp
+./ext/quaternion_relational.hpp
+/usr/local/include/glm/ext/quaternion_relational.hpp
+./ext/scalar_constants.hpp
+/usr/local/include/glm/ext/scalar_constants.hpp
+./ext/scalar_int_sized.hpp
+/usr/local/include/glm/ext/scalar_int_sized.hpp
+./ext/scalar_relational.hpp
+/usr/local/include/glm/ext/scalar_relational.hpp
+./ext/vector_bool1.hpp
+/usr/local/include/glm/ext/vector_bool1.hpp
+./ext/vector_bool1_precision.hpp
+/usr/local/include/glm/ext/vector_bool1_precision.hpp
+./ext/vector_bool2.hpp
+/usr/local/include/glm/ext/vector_bool2.hpp
+./ext/vector_bool2_precision.hpp
+/usr/local/include/glm/ext/vector_bool2_precision.hpp
+./ext/vector_bool3.hpp
+/usr/local/include/glm/ext/vector_bool3.hpp
+./ext/vector_bool3_precision.hpp
+/usr/local/include/glm/ext/vector_bool3_precision.hpp
+./ext/vector_bool4.hpp
+/usr/local/include/glm/ext/vector_bool4.hpp
+./ext/vector_bool4_precision.hpp
+/usr/local/include/glm/ext/vector_bool4_precision.hpp
+./ext/vector_double1.hpp
+/usr/local/include/glm/ext/vector_double1.hpp
+./ext/vector_double1_precision.hpp
+/usr/local/include/glm/ext/vector_double1_precision.hpp
+./ext/vector_double2.hpp
+/usr/local/include/glm/ext/vector_double2.hpp
+./ext/vector_double2_precision.hpp
+/usr/local/include/glm/ext/vector_double2_precision.hpp
+./ext/vector_double3.hpp
+/usr/local/include/glm/ext/vector_double3.hpp
+./ext/vector_double3_precision.hpp
+/usr/local/include/glm/ext/vector_double3_precision.hpp
+./ext/vector_double4.hpp
+/usr/local/include/glm/ext/vector_double4.hpp
+./ext/vector_double4_precision.hpp
+/usr/local/include/glm/ext/vector_double4_precision.hpp
+./ext/vector_float1.hpp
+/usr/local/include/glm/ext/vector_float1.hpp
+./ext/vector_float1_precision.hpp
+/usr/local/include/glm/ext/vector_float1_precision.hpp
+./ext/vector_float2.hpp
+/usr/local/include/glm/ext/vector_float2.hpp
+./ext/vector_float2_precision.hpp
+/usr/local/include/glm/ext/vector_float2_precision.hpp
+./ext/vector_float3.hpp
+/usr/local/include/glm/ext/vector_float3.hpp
+./ext/vector_float3_precision.hpp
+/usr/local/include/glm/ext/vector_float3_precision.hpp
+./ext/vector_float4.hpp
+/usr/local/include/glm/ext/vector_float4.hpp
+./ext/vector_float4_precision.hpp
+/usr/local/include/glm/ext/vector_float4_precision.hpp
+./ext/vector_int1.hpp
+/usr/local/include/glm/ext/vector_int1.hpp
+./ext/vector_int1_precision.hpp
+/usr/local/include/glm/ext/vector_int1_precision.hpp
+./ext/vector_int2.hpp
+/usr/local/include/glm/ext/vector_int2.hpp
+./ext/vector_int2_precision.hpp
+/usr/local/include/glm/ext/vector_int2_precision.hpp
+./ext/vector_int3.hpp
+/usr/local/include/glm/ext/vector_int3.hpp
+./ext/vector_int3_precision.hpp
+/usr/local/include/glm/ext/vector_int3_precision.hpp
+./ext/vector_int4.hpp
+/usr/local/include/glm/ext/vector_int4.hpp
+./ext/vector_int4_precision.hpp
+/usr/local/include/glm/ext/vector_int4_precision.hpp
+./ext/vector_relational.hpp
+/usr/local/include/glm/ext/vector_relational.hpp
+./ext/vector_uint1.hpp
+/usr/local/include/glm/ext/vector_uint1.hpp
+./ext/vector_uint1_precision.hpp
+/usr/local/include/glm/ext/vector_uint1_precision.hpp
+./ext/vector_uint2.hpp
+/usr/local/include/glm/ext/vector_uint2.hpp
+./ext/vector_uint2_precision.hpp
+/usr/local/include/glm/ext/vector_uint2_precision.hpp
+./ext/vector_uint3.hpp
+/usr/local/include/glm/ext/vector_uint3.hpp
+./ext/vector_uint3_precision.hpp
+/usr/local/include/glm/ext/vector_uint3_precision.hpp
+./ext/vector_uint4.hpp
+/usr/local/include/glm/ext/vector_uint4.hpp
+./ext/vector_uint4_precision.hpp
+/usr/local/include/glm/ext/vector_uint4_precision.hpp
+./gtc/bitfield.hpp
+/usr/local/include/glm/gtc/bitfield.hpp
+./gtc/color_space.hpp
+/usr/local/include/glm/gtc/color_space.hpp
+./gtc/constants.hpp
+/usr/local/include/glm/gtc/constants.hpp
+./gtc/epsilon.hpp
+/usr/local/include/glm/gtc/epsilon.hpp
+./gtc/integer.hpp
+/usr/local/include/glm/gtc/integer.hpp
+./gtc/matrix_access.hpp
+/usr/local/include/glm/gtc/matrix_access.hpp
+./gtc/matrix_integer.hpp
+/usr/local/include/glm/gtc/matrix_integer.hpp
+./gtc/matrix_inverse.hpp
+/usr/local/include/glm/gtc/matrix_inverse.hpp
+./gtc/matrix_transform.hpp
+/usr/local/include/glm/gtc/matrix_transform.hpp
+./gtc/noise.hpp
+/usr/local/include/glm/gtc/noise.hpp
+./gtc/packing.hpp
+/usr/local/include/glm/gtc/packing.hpp
+./gtc/quaternion.hpp
+/usr/local/include/glm/gtc/quaternion.hpp
+./gtc/random.hpp
+/usr/local/include/glm/gtc/random.hpp
+./gtc/reciprocal.hpp
+/usr/local/include/glm/gtc/reciprocal.hpp
+./gtc/round.hpp
+/usr/local/include/glm/gtc/round.hpp
+./gtc/type_precision.hpp
+/usr/local/include/glm/gtc/type_precision.hpp
+./gtc/type_ptr.hpp
+/usr/local/include/glm/gtc/type_ptr.hpp
+./gtc/ulp.hpp
+/usr/local/include/glm/gtc/ulp.hpp
+./gtc/vec1.hpp
+/usr/local/include/glm/gtc/vec1.hpp
+./gtc/type_aligned.hpp
+/usr/local/include/glm/gtc/type_aligned.hpp
+./gtx/associated_min_max.hpp
+/usr/local/include/glm/gtx/associated_min_max.hpp
+./gtx/bit.hpp
+/usr/local/include/glm/gtx/bit.hpp
+./gtx/closest_point.hpp
+/usr/local/include/glm/gtx/closest_point.hpp
+./gtx/color_encoding.hpp
+/usr/local/include/glm/gtx/color_encoding.hpp
+./gtx/color_space.hpp
+/usr/local/include/glm/gtx/color_space.hpp
+./gtx/color_space_YCoCg.hpp
+/usr/local/include/glm/gtx/color_space_YCoCg.hpp
+./gtx/compatibility.hpp
+/usr/local/include/glm/gtx/compatibility.hpp
+./gtx/component_wise.hpp
+/usr/local/include/glm/gtx/component_wise.hpp
+./gtx/dual_quaternion.hpp
+/usr/local/include/glm/gtx/dual_quaternion.hpp
+./gtx/euler_angles.hpp
+/usr/local/include/glm/gtx/euler_angles.hpp
+./gtx/extend.hpp
+/usr/local/include/glm/gtx/extend.hpp
+./gtx/extended_min_max.hpp
+/usr/local/include/glm/gtx/extended_min_max.hpp
+./gtx/fast_exponential.hpp
+/usr/local/include/glm/gtx/fast_exponential.hpp
+./gtx/fast_square_root.hpp
+/usr/local/include/glm/gtx/fast_square_root.hpp
+./gtx/fast_trigonometry.hpp
+/usr/local/include/glm/gtx/fast_trigonometry.hpp
+./gtx/functions.hpp
+/usr/local/include/glm/gtx/functions.hpp
+./gtx/gradient_paint.hpp
+/usr/local/include/glm/gtx/gradient_paint.hpp
+./gtx/handed_coordinate_space.hpp
+/usr/local/include/glm/gtx/handed_coordinate_space.hpp
+./gtx/integer.hpp
+/usr/local/include/glm/gtx/integer.hpp
+./gtx/intersect.hpp
+/usr/local/include/glm/gtx/intersect.hpp
+./gtx/log_base.hpp
+/usr/local/include/glm/gtx/log_base.hpp
+./gtx/matrix_cross_product.hpp
+/usr/local/include/glm/gtx/matrix_cross_product.hpp
+./gtx/matrix_interpolation.hpp
+/usr/local/include/glm/gtx/matrix_interpolation.hpp
+./gtx/matrix_major_storage.hpp
+/usr/local/include/glm/gtx/matrix_major_storage.hpp
+./gtx/matrix_operation.hpp
+/usr/local/include/glm/gtx/matrix_operation.hpp
+./gtx/matrix_query.hpp
+/usr/local/include/glm/gtx/matrix_query.hpp
+./gtx/mixed_product.hpp
+/usr/local/include/glm/gtx/mixed_product.hpp
+./gtx/norm.hpp
+/usr/local/include/glm/gtx/norm.hpp
+./gtx/normal.hpp
+/usr/local/include/glm/gtx/normal.hpp
+./gtx/normalize_dot.hpp
+/usr/local/include/glm/gtx/normalize_dot.hpp
+./gtx/number_precision.hpp
+/usr/local/include/glm/gtx/number_precision.hpp
+./gtx/optimum_pow.hpp
+/usr/local/include/glm/gtx/optimum_pow.hpp
+./gtx/orthonormalize.hpp
+/usr/local/include/glm/gtx/orthonormalize.hpp
+./gtx/perpendicular.hpp
+/usr/local/include/glm/gtx/perpendicular.hpp
+./gtx/polar_coordinates.hpp
+/usr/local/include/glm/gtx/polar_coordinates.hpp
+./gtx/projection.hpp
+/usr/local/include/glm/gtx/projection.hpp
+./gtx/quaternion.hpp
+/usr/local/include/glm/gtx/quaternion.hpp
+./gtx/raw_data.hpp
+/usr/local/include/glm/gtx/raw_data.hpp
+./gtx/rotate_vector.hpp
+/usr/local/include/glm/gtx/rotate_vector.hpp
+./gtx/spline.hpp
+/usr/local/include/glm/gtx/spline.hpp
+./gtx/std_based_type.hpp
+/usr/local/include/glm/gtx/std_based_type.hpp
+./gtx/string_cast.hpp
+/usr/local/include/glm/gtx/string_cast.hpp
+./gtx/transform.hpp
+/usr/local/include/glm/gtx/transform.hpp
+./gtx/transform2.hpp
+/usr/local/include/glm/gtx/transform2.hpp
+./gtx/vec_swizzle.hpp
+/usr/local/include/glm/gtx/vec_swizzle.hpp
+./gtx/vector_angle.hpp
+/usr/local/include/glm/gtx/vector_angle.hpp
+./gtx/vector_query.hpp
+/usr/local/include/glm/gtx/vector_query.hpp
+./gtx/wrap.hpp
+/usr/local/include/glm/gtx/wrap.hpp
+./gtx/scalar_multiplication.hpp
+/usr/local/include/glm/gtx/scalar_multiplication.hpp
+./gtx/range.hpp
+/usr/local/include/glm/gtx/range.hpp
+
 /usr/local/include/glm/ext/matrix_clip_space.hpp
 ../ext/scalar_constants.hpp
 /usr/local/include/glm/ext/scalar_constants.hpp
@@ -796,6 +1534,18 @@ matrix_projection.inl
 
 /usr/local/include/glm/ext/matrix_projection.inl
 
+/usr/local/include/glm/ext/matrix_relational.hpp
+../detail/qualifier.hpp
+/usr/local/include/glm/detail/qualifier.hpp
+matrix_relational.inl
+/usr/local/include/glm/ext/matrix_relational.inl
+
+/usr/local/include/glm/ext/matrix_relational.inl
+../ext/vector_relational.hpp
+/usr/local/include/glm/ext/vector_relational.hpp
+../common.hpp
+/usr/local/include/glm/common.hpp
+
 /usr/local/include/glm/ext/matrix_transform.hpp
 ../gtc/constants.hpp
 /usr/local/include/glm/gtc/constants.hpp
@@ -918,6 +1668,58 @@ scalar_constants.inl
 limits
 -
 
+/usr/local/include/glm/ext/scalar_int_sized.hpp
+../detail/setup.hpp
+/usr/local/include/glm/detail/setup.hpp
+
+/usr/local/include/glm/ext/scalar_relational.hpp
+../detail/qualifier.hpp
+/usr/local/include/glm/detail/qualifier.hpp
+scalar_relational.inl
+/usr/local/include/glm/ext/scalar_relational.inl
+
+/usr/local/include/glm/ext/scalar_relational.inl
+../common.hpp
+/usr/local/include/glm/common.hpp
+../ext/scalar_int_sized.hpp
+/usr/local/include/glm/ext/scalar_int_sized.hpp
+../ext/scalar_uint_sized.hpp
+/usr/local/include/glm/ext/scalar_uint_sized.hpp
+../detail/type_float.hpp
+/usr/local/include/glm/detail/type_float.hpp
+
+/usr/local/include/glm/ext/scalar_uint_sized.hpp
+../detail/setup.hpp
+/usr/local/include/glm/detail/setup.hpp
+
+/usr/local/include/glm/ext/scalar_ulp.hpp
+../ext/scalar_int_sized.hpp
+/usr/local/include/glm/ext/scalar_int_sized.hpp
+../common.hpp
+/usr/local/include/glm/common.hpp
+../detail/qualifier.hpp
+/usr/local/include/glm/detail/qualifier.hpp
+scalar_ulp.inl
+/usr/local/include/glm/ext/scalar_ulp.inl
+
+/usr/local/include/glm/ext/scalar_ulp.inl
+../detail/type_float.hpp
+/usr/local/include/glm/detail/type_float.hpp
+../ext/scalar_constants.hpp
+/usr/local/include/glm/ext/scalar_constants.hpp
+cmath
+-
+cfloat
+-
+
+/usr/local/include/glm/ext/vector_bool1.hpp
+../detail/type_vec1.hpp
+/usr/local/include/glm/detail/type_vec1.hpp
+
+/usr/local/include/glm/ext/vector_bool1_precision.hpp
+../detail/type_vec1.hpp
+/usr/local/include/glm/detail/type_vec1.hpp
+
 /usr/local/include/glm/ext/vector_bool2.hpp
 ../detail/type_vec2.hpp
 /usr/local/include/glm/detail/type_vec2.hpp
@@ -941,6 +1743,14 @@ limits
 /usr/local/include/glm/ext/vector_bool4_precision.hpp
 ../detail/type_vec4.hpp
 /usr/local/include/glm/detail/type_vec4.hpp
+
+/usr/local/include/glm/ext/vector_double1.hpp
+../detail/type_vec1.hpp
+/usr/local/include/glm/detail/type_vec1.hpp
+
+/usr/local/include/glm/ext/vector_double1_precision.hpp
+../detail/type_vec1.hpp
+/usr/local/include/glm/detail/type_vec1.hpp
 
 /usr/local/include/glm/ext/vector_double2.hpp
 ../detail/type_vec2.hpp
@@ -968,6 +1778,14 @@ limits
 ../detail/type_vec4.hpp
 /usr/local/include/glm/detail/type_vec4.hpp
 
+/usr/local/include/glm/ext/vector_float1.hpp
+../detail/type_vec1.hpp
+/usr/local/include/glm/detail/type_vec1.hpp
+
+/usr/local/include/glm/ext/vector_float1_precision.hpp
+../detail/type_vec1.hpp
+/usr/local/include/glm/detail/type_vec1.hpp
+
 /usr/local/include/glm/ext/vector_float2.hpp
 ../detail/type_vec2.hpp
 /usr/local/include/glm/detail/type_vec2.hpp
@@ -991,6 +1809,14 @@ limits
 /usr/local/include/glm/ext/vector_float4_precision.hpp
 ../detail/type_vec4.hpp
 /usr/local/include/glm/detail/type_vec4.hpp
+
+/usr/local/include/glm/ext/vector_int1.hpp
+../detail/type_vec1.hpp
+/usr/local/include/glm/detail/type_vec1.hpp
+
+/usr/local/include/glm/ext/vector_int1_precision.hpp
+../detail/type_vec1.hpp
+/usr/local/include/glm/detail/type_vec1.hpp
 
 /usr/local/include/glm/ext/vector_int2.hpp
 ../detail/type_vec2.hpp
@@ -1032,6 +1858,14 @@ vector_relational.inl
 ../detail/type_float.hpp
 /usr/local/include/glm/detail/type_float.hpp
 
+/usr/local/include/glm/ext/vector_uint1.hpp
+../detail/type_vec1.hpp
+/usr/local/include/glm/detail/type_vec1.hpp
+
+/usr/local/include/glm/ext/vector_uint1_precision.hpp
+../detail/type_vec1.hpp
+/usr/local/include/glm/detail/type_vec1.hpp
+
 /usr/local/include/glm/ext/vector_uint2.hpp
 ../detail/type_vec2.hpp
 /usr/local/include/glm/detail/type_vec2.hpp
@@ -1055,6 +1889,14 @@ vector_relational.inl
 /usr/local/include/glm/ext/vector_uint4_precision.hpp
 ../detail/type_vec4.hpp
 /usr/local/include/glm/detail/type_vec4.hpp
+
+/usr/local/include/glm/ext/vector_ulp.hpp
+../ext/scalar_ulp.hpp
+/usr/local/include/glm/ext/scalar_ulp.hpp
+vector_ulp.inl
+/usr/local/include/glm/ext/vector_ulp.inl
+
+/usr/local/include/glm/ext/vector_ulp.inl
 
 /usr/local/include/glm/fwd.hpp
 detail/qualifier.hpp
@@ -1124,6 +1966,46 @@ vector_relational.hpp
 integer.hpp
 /usr/local/include/glm/integer.hpp
 
+/usr/local/include/glm/gtc/bitfield.hpp
+../detail/setup.hpp
+/usr/local/include/glm/detail/setup.hpp
+../ext/scalar_int_sized.hpp
+/usr/local/include/glm/ext/scalar_int_sized.hpp
+../ext/scalar_uint_sized.hpp
+/usr/local/include/glm/ext/scalar_uint_sized.hpp
+../detail/qualifier.hpp
+/usr/local/include/glm/detail/qualifier.hpp
+../detail/_vectorize.hpp
+/usr/local/include/glm/detail/_vectorize.hpp
+type_precision.hpp
+/usr/local/include/glm/gtc/type_precision.hpp
+limits
+-
+bitfield.inl
+/usr/local/include/glm/gtc/bitfield.inl
+
+/usr/local/include/glm/gtc/bitfield.inl
+../simd/integer.h
+/usr/local/include/glm/simd/integer.h
+
+/usr/local/include/glm/gtc/color_space.hpp
+../detail/setup.hpp
+/usr/local/include/glm/detail/setup.hpp
+../detail/qualifier.hpp
+/usr/local/include/glm/detail/qualifier.hpp
+../exponential.hpp
+/usr/local/include/glm/exponential.hpp
+../vec3.hpp
+/usr/local/include/glm/vec3.hpp
+../vec4.hpp
+/usr/local/include/glm/vec4.hpp
+limits
+-
+color_space.inl
+/usr/local/include/glm/gtc/color_space.inl
+
+/usr/local/include/glm/gtc/color_space.inl
+
 /usr/local/include/glm/gtc/constants.hpp
 ../ext/scalar_constants.hpp
 /usr/local/include/glm/ext/scalar_constants.hpp
@@ -1145,6 +2027,68 @@ epsilon.inl
 /usr/local/include/glm/vector_relational.hpp
 ../common.hpp
 /usr/local/include/glm/common.hpp
+
+/usr/local/include/glm/gtc/integer.hpp
+../detail/setup.hpp
+/usr/local/include/glm/detail/setup.hpp
+../detail/qualifier.hpp
+/usr/local/include/glm/detail/qualifier.hpp
+../common.hpp
+/usr/local/include/glm/common.hpp
+../integer.hpp
+/usr/local/include/glm/integer.hpp
+../exponential.hpp
+/usr/local/include/glm/exponential.hpp
+limits
+-
+integer.inl
+/usr/local/include/glm/gtc/integer.inl
+
+/usr/local/include/glm/gtc/integer.inl
+
+/usr/local/include/glm/gtc/matrix_access.hpp
+../detail/setup.hpp
+/usr/local/include/glm/detail/setup.hpp
+matrix_access.inl
+/usr/local/include/glm/gtc/matrix_access.inl
+
+/usr/local/include/glm/gtc/matrix_access.inl
+
+/usr/local/include/glm/gtc/matrix_integer.hpp
+../mat2x2.hpp
+/usr/local/include/glm/mat2x2.hpp
+../mat2x3.hpp
+/usr/local/include/glm/mat2x3.hpp
+../mat2x4.hpp
+/usr/local/include/glm/mat2x4.hpp
+../mat3x2.hpp
+/usr/local/include/glm/mat3x2.hpp
+../mat3x3.hpp
+/usr/local/include/glm/mat3x3.hpp
+../mat3x4.hpp
+/usr/local/include/glm/mat3x4.hpp
+../mat4x2.hpp
+/usr/local/include/glm/mat4x2.hpp
+../mat4x3.hpp
+/usr/local/include/glm/mat4x3.hpp
+../mat4x4.hpp
+/usr/local/include/glm/mat4x4.hpp
+
+/usr/local/include/glm/gtc/matrix_inverse.hpp
+../detail/setup.hpp
+/usr/local/include/glm/detail/setup.hpp
+../matrix.hpp
+/usr/local/include/glm/matrix.hpp
+../mat2x2.hpp
+/usr/local/include/glm/mat2x2.hpp
+../mat3x3.hpp
+/usr/local/include/glm/mat3x3.hpp
+../mat4x4.hpp
+/usr/local/include/glm/mat4x4.hpp
+matrix_inverse.inl
+/usr/local/include/glm/gtc/matrix_inverse.inl
+
+/usr/local/include/glm/gtc/matrix_inverse.inl
 
 /usr/local/include/glm/gtc/matrix_transform.hpp
 ../mat4x4.hpp
@@ -1171,6 +2115,56 @@ matrix_transform.inl
 /usr/local/include/glm/trigonometric.hpp
 ../matrix.hpp
 /usr/local/include/glm/matrix.hpp
+
+/usr/local/include/glm/gtc/noise.hpp
+../detail/setup.hpp
+/usr/local/include/glm/detail/setup.hpp
+../detail/qualifier.hpp
+/usr/local/include/glm/detail/qualifier.hpp
+../detail/_noise.hpp
+/usr/local/include/glm/detail/_noise.hpp
+../geometric.hpp
+/usr/local/include/glm/geometric.hpp
+../common.hpp
+/usr/local/include/glm/common.hpp
+../vector_relational.hpp
+/usr/local/include/glm/vector_relational.hpp
+../vec2.hpp
+/usr/local/include/glm/vec2.hpp
+../vec3.hpp
+/usr/local/include/glm/vec3.hpp
+../vec4.hpp
+/usr/local/include/glm/vec4.hpp
+noise.inl
+/usr/local/include/glm/gtc/noise.inl
+
+/usr/local/include/glm/gtc/noise.inl
+
+/usr/local/include/glm/gtc/packing.hpp
+type_precision.hpp
+/usr/local/include/glm/gtc/type_precision.hpp
+packing.inl
+/usr/local/include/glm/gtc/packing.inl
+
+/usr/local/include/glm/gtc/packing.inl
+../ext/scalar_relational.hpp
+/usr/local/include/glm/ext/scalar_relational.hpp
+../ext/vector_relational.hpp
+/usr/local/include/glm/ext/vector_relational.hpp
+../common.hpp
+/usr/local/include/glm/common.hpp
+../vec2.hpp
+/usr/local/include/glm/vec2.hpp
+../vec3.hpp
+/usr/local/include/glm/vec3.hpp
+../vec4.hpp
+/usr/local/include/glm/vec4.hpp
+../detail/type_half.hpp
+/usr/local/include/glm/detail/type_half.hpp
+cstring
+-
+limits
+-
 
 /usr/local/include/glm/gtc/quaternion.hpp
 ../gtc/constants.hpp
@@ -1224,6 +2218,468 @@ quaternion_simd.inl
 
 /usr/local/include/glm/gtc/quaternion_simd.inl
 
+/usr/local/include/glm/gtc/random.hpp
+../ext/scalar_int_sized.hpp
+/usr/local/include/glm/ext/scalar_int_sized.hpp
+../ext/scalar_uint_sized.hpp
+/usr/local/include/glm/ext/scalar_uint_sized.hpp
+../detail/qualifier.hpp
+/usr/local/include/glm/detail/qualifier.hpp
+random.inl
+/usr/local/include/glm/gtc/random.inl
+
+/usr/local/include/glm/gtc/random.inl
+../geometric.hpp
+/usr/local/include/glm/geometric.hpp
+../exponential.hpp
+/usr/local/include/glm/exponential.hpp
+../trigonometric.hpp
+/usr/local/include/glm/trigonometric.hpp
+../detail/type_vec1.hpp
+/usr/local/include/glm/detail/type_vec1.hpp
+cstdlib
+-
+ctime
+-
+cassert
+-
+cmath
+-
+
+/usr/local/include/glm/gtc/reciprocal.hpp
+../detail/setup.hpp
+/usr/local/include/glm/detail/setup.hpp
+reciprocal.inl
+/usr/local/include/glm/gtc/reciprocal.inl
+
+/usr/local/include/glm/gtc/reciprocal.inl
+../trigonometric.hpp
+/usr/local/include/glm/trigonometric.hpp
+limits
+-
+
+/usr/local/include/glm/gtc/round.hpp
+../detail/setup.hpp
+/usr/local/include/glm/detail/setup.hpp
+../detail/qualifier.hpp
+/usr/local/include/glm/detail/qualifier.hpp
+../detail/_vectorize.hpp
+/usr/local/include/glm/detail/_vectorize.hpp
+../vector_relational.hpp
+/usr/local/include/glm/vector_relational.hpp
+../common.hpp
+/usr/local/include/glm/common.hpp
+limits
+-
+round.inl
+/usr/local/include/glm/gtc/round.inl
+
+/usr/local/include/glm/gtc/round.inl
+../integer.hpp
+/usr/local/include/glm/integer.hpp
+
+/usr/local/include/glm/gtc/type_aligned.hpp
+../mat4x4.hpp
+/usr/local/include/glm/mat4x4.hpp
+../mat4x3.hpp
+/usr/local/include/glm/mat4x3.hpp
+../mat4x2.hpp
+/usr/local/include/glm/mat4x2.hpp
+../mat3x4.hpp
+/usr/local/include/glm/mat3x4.hpp
+../mat3x3.hpp
+/usr/local/include/glm/mat3x3.hpp
+../mat3x2.hpp
+/usr/local/include/glm/mat3x2.hpp
+../mat2x4.hpp
+/usr/local/include/glm/mat2x4.hpp
+../mat2x3.hpp
+/usr/local/include/glm/mat2x3.hpp
+../mat2x2.hpp
+/usr/local/include/glm/mat2x2.hpp
+../gtc/vec1.hpp
+/usr/local/include/glm/gtc/vec1.hpp
+../vec2.hpp
+/usr/local/include/glm/vec2.hpp
+../vec3.hpp
+/usr/local/include/glm/vec3.hpp
+../vec4.hpp
+/usr/local/include/glm/vec4.hpp
+
+/usr/local/include/glm/gtc/type_precision.hpp
+../gtc/quaternion.hpp
+/usr/local/include/glm/gtc/quaternion.hpp
+../gtc/vec1.hpp
+/usr/local/include/glm/gtc/vec1.hpp
+../ext/scalar_int_sized.hpp
+/usr/local/include/glm/ext/scalar_int_sized.hpp
+../ext/scalar_uint_sized.hpp
+/usr/local/include/glm/ext/scalar_uint_sized.hpp
+../detail/type_vec2.hpp
+/usr/local/include/glm/detail/type_vec2.hpp
+../detail/type_vec3.hpp
+/usr/local/include/glm/detail/type_vec3.hpp
+../detail/type_vec4.hpp
+/usr/local/include/glm/detail/type_vec4.hpp
+../detail/type_mat2x2.hpp
+/usr/local/include/glm/detail/type_mat2x2.hpp
+../detail/type_mat2x3.hpp
+/usr/local/include/glm/detail/type_mat2x3.hpp
+../detail/type_mat2x4.hpp
+/usr/local/include/glm/detail/type_mat2x4.hpp
+../detail/type_mat3x2.hpp
+/usr/local/include/glm/detail/type_mat3x2.hpp
+../detail/type_mat3x3.hpp
+/usr/local/include/glm/detail/type_mat3x3.hpp
+../detail/type_mat3x4.hpp
+/usr/local/include/glm/detail/type_mat3x4.hpp
+../detail/type_mat4x2.hpp
+/usr/local/include/glm/detail/type_mat4x2.hpp
+../detail/type_mat4x3.hpp
+/usr/local/include/glm/detail/type_mat4x3.hpp
+../detail/type_mat4x4.hpp
+/usr/local/include/glm/detail/type_mat4x4.hpp
+type_precision.inl
+/usr/local/include/glm/gtc/type_precision.inl
+
+/usr/local/include/glm/gtc/type_precision.inl
+
+/usr/local/include/glm/gtc/type_ptr.hpp
+../gtc/quaternion.hpp
+/usr/local/include/glm/gtc/quaternion.hpp
+../gtc/vec1.hpp
+/usr/local/include/glm/gtc/vec1.hpp
+../vec2.hpp
+/usr/local/include/glm/vec2.hpp
+../vec3.hpp
+/usr/local/include/glm/vec3.hpp
+../vec4.hpp
+/usr/local/include/glm/vec4.hpp
+../mat2x2.hpp
+/usr/local/include/glm/mat2x2.hpp
+../mat2x3.hpp
+/usr/local/include/glm/mat2x3.hpp
+../mat2x4.hpp
+/usr/local/include/glm/mat2x4.hpp
+../mat3x2.hpp
+/usr/local/include/glm/mat3x2.hpp
+../mat3x3.hpp
+/usr/local/include/glm/mat3x3.hpp
+../mat3x4.hpp
+/usr/local/include/glm/mat3x4.hpp
+../mat4x2.hpp
+/usr/local/include/glm/mat4x2.hpp
+../mat4x3.hpp
+/usr/local/include/glm/mat4x3.hpp
+../mat4x4.hpp
+/usr/local/include/glm/mat4x4.hpp
+cstring
+-
+type_ptr.inl
+/usr/local/include/glm/gtc/type_ptr.inl
+
+/usr/local/include/glm/gtc/type_ptr.inl
+cstring
+-
+
+/usr/local/include/glm/gtc/ulp.hpp
+../ext/scalar_ulp.hpp
+/usr/local/include/glm/ext/scalar_ulp.hpp
+../ext/vector_ulp.hpp
+/usr/local/include/glm/ext/vector_ulp.hpp
+
+/usr/local/include/glm/gtc/vec1.hpp
+../ext/vector_bool1.hpp
+/usr/local/include/glm/ext/vector_bool1.hpp
+../ext/vector_bool1_precision.hpp
+/usr/local/include/glm/ext/vector_bool1_precision.hpp
+../ext/vector_float1.hpp
+/usr/local/include/glm/ext/vector_float1.hpp
+../ext/vector_float1_precision.hpp
+/usr/local/include/glm/ext/vector_float1_precision.hpp
+../ext/vector_double1.hpp
+/usr/local/include/glm/ext/vector_double1.hpp
+../ext/vector_double1_precision.hpp
+/usr/local/include/glm/ext/vector_double1_precision.hpp
+../ext/vector_int1.hpp
+/usr/local/include/glm/ext/vector_int1.hpp
+../ext/vector_int1_precision.hpp
+/usr/local/include/glm/ext/vector_int1_precision.hpp
+../ext/vector_uint1.hpp
+/usr/local/include/glm/ext/vector_uint1.hpp
+../ext/vector_uint1_precision.hpp
+/usr/local/include/glm/ext/vector_uint1_precision.hpp
+
+/usr/local/include/glm/gtx/associated_min_max.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+associated_min_max.inl
+/usr/local/include/glm/gtx/associated_min_max.inl
+
+/usr/local/include/glm/gtx/associated_min_max.inl
+
+/usr/local/include/glm/gtx/bit.hpp
+../gtc/bitfield.hpp
+/usr/local/include/glm/gtc/bitfield.hpp
+bit.inl
+/usr/local/include/glm/gtx/bit.inl
+
+/usr/local/include/glm/gtx/bit.inl
+
+/usr/local/include/glm/gtx/closest_point.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+closest_point.inl
+/usr/local/include/glm/gtx/closest_point.inl
+
+/usr/local/include/glm/gtx/closest_point.inl
+
+/usr/local/include/glm/gtx/color_encoding.hpp
+../detail/setup.hpp
+/usr/local/include/glm/detail/setup.hpp
+../detail/qualifier.hpp
+/usr/local/include/glm/detail/qualifier.hpp
+../vec3.hpp
+/usr/local/include/glm/vec3.hpp
+limits
+-
+color_encoding.inl
+/usr/local/include/glm/gtx/color_encoding.inl
+
+/usr/local/include/glm/gtx/color_encoding.inl
+
+/usr/local/include/glm/gtx/color_space.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+color_space.inl
+/usr/local/include/glm/gtx/color_space.inl
+
+/usr/local/include/glm/gtx/color_space_YCoCg.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+color_space_YCoCg.inl
+/usr/local/include/glm/gtx/color_space_YCoCg.inl
+
+/usr/local/include/glm/gtx/color_space_YCoCg.inl
+
+/usr/local/include/glm/gtx/compatibility.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+../gtc/quaternion.hpp
+/usr/local/include/glm/gtc/quaternion.hpp
+cfloat
+-
+cmath
+-
+compatibility.inl
+/usr/local/include/glm/gtx/compatibility.inl
+
+/usr/local/include/glm/gtx/compatibility.inl
+limits
+-
+
+/usr/local/include/glm/gtx/component_wise.hpp
+../detail/setup.hpp
+/usr/local/include/glm/detail/setup.hpp
+../detail/qualifier.hpp
+/usr/local/include/glm/detail/qualifier.hpp
+component_wise.inl
+/usr/local/include/glm/gtx/component_wise.inl
+
+/usr/local/include/glm/gtx/component_wise.inl
+limits
+-
+
+/usr/local/include/glm/gtx/dual_quaternion.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+../gtc/constants.hpp
+/usr/local/include/glm/gtc/constants.hpp
+../gtc/quaternion.hpp
+/usr/local/include/glm/gtc/quaternion.hpp
+dual_quaternion.inl
+/usr/local/include/glm/gtx/dual_quaternion.inl
+
+/usr/local/include/glm/gtx/dual_quaternion.inl
+../geometric.hpp
+/usr/local/include/glm/geometric.hpp
+limits
+-
+
+/usr/local/include/glm/gtx/euler_angles.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+euler_angles.inl
+/usr/local/include/glm/gtx/euler_angles.inl
+
+/usr/local/include/glm/gtx/euler_angles.inl
+compatibility.hpp
+/usr/local/include/glm/gtx/compatibility.hpp
+
+/usr/local/include/glm/gtx/extend.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+extend.inl
+/usr/local/include/glm/gtx/extend.inl
+
+/usr/local/include/glm/gtx/extend.inl
+
+/usr/local/include/glm/gtx/extended_min_max.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+extended_min_max.inl
+/usr/local/include/glm/gtx/extended_min_max.inl
+
+/usr/local/include/glm/gtx/extended_min_max.inl
+
+/usr/local/include/glm/gtx/fast_exponential.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+fast_exponential.inl
+/usr/local/include/glm/gtx/fast_exponential.inl
+
+/usr/local/include/glm/gtx/fast_exponential.inl
+
+/usr/local/include/glm/gtx/fast_square_root.hpp
+../common.hpp
+/usr/local/include/glm/common.hpp
+../exponential.hpp
+/usr/local/include/glm/exponential.hpp
+../geometric.hpp
+/usr/local/include/glm/geometric.hpp
+fast_square_root.inl
+/usr/local/include/glm/gtx/fast_square_root.inl
+
+/usr/local/include/glm/gtx/fast_square_root.inl
+
+/usr/local/include/glm/gtx/fast_trigonometry.hpp
+../gtc/constants.hpp
+/usr/local/include/glm/gtc/constants.hpp
+fast_trigonometry.inl
+/usr/local/include/glm/gtx/fast_trigonometry.inl
+
+/usr/local/include/glm/gtx/fast_trigonometry.inl
+
+/usr/local/include/glm/gtx/functions.hpp
+../detail/setup.hpp
+/usr/local/include/glm/detail/setup.hpp
+../detail/qualifier.hpp
+/usr/local/include/glm/detail/qualifier.hpp
+../detail/type_vec2.hpp
+/usr/local/include/glm/detail/type_vec2.hpp
+functions.inl
+/usr/local/include/glm/gtx/functions.inl
+
+/usr/local/include/glm/gtx/functions.inl
+../exponential.hpp
+/usr/local/include/glm/exponential.hpp
+
+/usr/local/include/glm/gtx/gradient_paint.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+../gtx/optimum_pow.hpp
+/usr/local/include/glm/gtx/optimum_pow.hpp
+gradient_paint.inl
+/usr/local/include/glm/gtx/gradient_paint.inl
+
+/usr/local/include/glm/gtx/gradient_paint.inl
+
+/usr/local/include/glm/gtx/handed_coordinate_space.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+handed_coordinate_space.inl
+/usr/local/include/glm/gtx/handed_coordinate_space.inl
+
+/usr/local/include/glm/gtx/handed_coordinate_space.inl
+
+/usr/local/include/glm/gtx/integer.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+../gtc/integer.hpp
+/usr/local/include/glm/gtc/integer.hpp
+integer.inl
+/usr/local/include/glm/gtx/integer.inl
+
+/usr/local/include/glm/gtx/intersect.hpp
+cfloat
+-
+limits
+-
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+../geometric.hpp
+/usr/local/include/glm/geometric.hpp
+../gtx/closest_point.hpp
+/usr/local/include/glm/gtx/closest_point.hpp
+../gtx/vector_query.hpp
+/usr/local/include/glm/gtx/vector_query.hpp
+intersect.inl
+/usr/local/include/glm/gtx/intersect.inl
+
+/usr/local/include/glm/gtx/intersect.inl
+
+/usr/local/include/glm/gtx/log_base.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+log_base.inl
+/usr/local/include/glm/gtx/log_base.inl
+
+/usr/local/include/glm/gtx/log_base.inl
+
+/usr/local/include/glm/gtx/matrix_cross_product.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+matrix_cross_product.inl
+/usr/local/include/glm/gtx/matrix_cross_product.inl
+
+/usr/local/include/glm/gtx/matrix_cross_product.inl
+
+/usr/local/include/glm/gtx/matrix_interpolation.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+matrix_interpolation.inl
+/usr/local/include/glm/gtx/matrix_interpolation.inl
+
+/usr/local/include/glm/gtx/matrix_interpolation.inl
+../gtc/constants.hpp
+/usr/local/include/glm/gtc/constants.hpp
+
+/usr/local/include/glm/gtx/matrix_major_storage.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+matrix_major_storage.inl
+/usr/local/include/glm/gtx/matrix_major_storage.inl
+
+/usr/local/include/glm/gtx/matrix_major_storage.inl
+
+/usr/local/include/glm/gtx/matrix_operation.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+matrix_operation.inl
+/usr/local/include/glm/gtx/matrix_operation.inl
+
+/usr/local/include/glm/gtx/matrix_operation.inl
+
+/usr/local/include/glm/gtx/matrix_query.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+../gtx/vector_query.hpp
+/usr/local/include/glm/gtx/vector_query.hpp
+limits
+-
+matrix_query.inl
+/usr/local/include/glm/gtx/matrix_query.inl
+
+/usr/local/include/glm/gtx/matrix_query.inl
+
+/usr/local/include/glm/gtx/mixed_product.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+mixed_product.inl
+/usr/local/include/glm/gtx/mixed_product.inl
+
+/usr/local/include/glm/gtx/mixed_product.inl
+
 /usr/local/include/glm/gtx/norm.hpp
 ../geometric.hpp
 /usr/local/include/glm/geometric.hpp
@@ -1235,6 +2691,78 @@ norm.inl
 /usr/local/include/glm/gtx/norm.inl
 ../detail/qualifier.hpp
 /usr/local/include/glm/detail/qualifier.hpp
+
+/usr/local/include/glm/gtx/normal.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+normal.inl
+/usr/local/include/glm/gtx/normal.inl
+
+/usr/local/include/glm/gtx/normal.inl
+
+/usr/local/include/glm/gtx/normalize_dot.hpp
+../gtx/fast_square_root.hpp
+/usr/local/include/glm/gtx/fast_square_root.hpp
+normalize_dot.inl
+/usr/local/include/glm/gtx/normalize_dot.inl
+
+/usr/local/include/glm/gtx/normalize_dot.inl
+
+/usr/local/include/glm/gtx/number_precision.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+../gtc/type_precision.hpp
+/usr/local/include/glm/gtc/type_precision.hpp
+number_precision.inl
+/usr/local/include/glm/gtx/number_precision.inl
+
+/usr/local/include/glm/gtx/number_precision.inl
+
+/usr/local/include/glm/gtx/optimum_pow.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+optimum_pow.inl
+/usr/local/include/glm/gtx/optimum_pow.inl
+
+/usr/local/include/glm/gtx/optimum_pow.inl
+
+/usr/local/include/glm/gtx/orthonormalize.hpp
+../vec3.hpp
+/usr/local/include/glm/vec3.hpp
+../mat3x3.hpp
+/usr/local/include/glm/mat3x3.hpp
+../geometric.hpp
+/usr/local/include/glm/geometric.hpp
+orthonormalize.inl
+/usr/local/include/glm/gtx/orthonormalize.inl
+
+/usr/local/include/glm/gtx/orthonormalize.inl
+
+/usr/local/include/glm/gtx/perpendicular.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+../gtx/projection.hpp
+/usr/local/include/glm/gtx/projection.hpp
+perpendicular.inl
+/usr/local/include/glm/gtx/perpendicular.inl
+
+/usr/local/include/glm/gtx/perpendicular.inl
+
+/usr/local/include/glm/gtx/polar_coordinates.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+polar_coordinates.inl
+/usr/local/include/glm/gtx/polar_coordinates.inl
+
+/usr/local/include/glm/gtx/polar_coordinates.inl
+
+/usr/local/include/glm/gtx/projection.hpp
+../geometric.hpp
+/usr/local/include/glm/geometric.hpp
+projection.inl
+/usr/local/include/glm/gtx/projection.inl
+
+/usr/local/include/glm/gtx/projection.inl
 
 /usr/local/include/glm/gtx/quaternion.hpp
 ../glm.hpp
@@ -1249,6 +2777,156 @@ norm.inl
 /usr/local/include/glm/gtx/norm.hpp
 quaternion.inl
 /usr/local/include/glm/gtx/quaternion.inl
+
+/usr/local/include/glm/gtx/range.hpp
+../detail/setup.hpp
+/usr/local/include/glm/detail/setup.hpp
+../gtc/type_ptr.hpp
+/usr/local/include/glm/gtc/type_ptr.hpp
+../gtc/vec1.hpp
+/usr/local/include/glm/gtc/vec1.hpp
+
+/usr/local/include/glm/gtx/raw_data.hpp
+../ext/scalar_uint_sized.hpp
+/usr/local/include/glm/ext/scalar_uint_sized.hpp
+../detail/setup.hpp
+/usr/local/include/glm/detail/setup.hpp
+raw_data.inl
+/usr/local/include/glm/gtx/raw_data.inl
+
+/usr/local/include/glm/gtx/raw_data.inl
+
+/usr/local/include/glm/gtx/rotate_vector.hpp
+../gtx/transform.hpp
+/usr/local/include/glm/gtx/transform.hpp
+../gtc/epsilon.hpp
+/usr/local/include/glm/gtc/epsilon.hpp
+../ext/vector_relational.hpp
+/usr/local/include/glm/ext/vector_relational.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+rotate_vector.inl
+/usr/local/include/glm/gtx/rotate_vector.inl
+
+/usr/local/include/glm/gtx/rotate_vector.inl
+
+/usr/local/include/glm/gtx/scalar_multiplication.hpp
+../detail/setup.hpp
+/usr/local/include/glm/detail/setup.hpp
+../vec2.hpp
+/usr/local/include/glm/vec2.hpp
+../vec3.hpp
+/usr/local/include/glm/vec3.hpp
+../vec4.hpp
+/usr/local/include/glm/vec4.hpp
+../mat2x2.hpp
+/usr/local/include/glm/mat2x2.hpp
+type_traits
+-
+
+/usr/local/include/glm/gtx/spline.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+../gtx/optimum_pow.hpp
+/usr/local/include/glm/gtx/optimum_pow.hpp
+spline.inl
+/usr/local/include/glm/gtx/spline.inl
+
+/usr/local/include/glm/gtx/spline.inl
+
+/usr/local/include/glm/gtx/std_based_type.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+cstdlib
+-
+std_based_type.inl
+/usr/local/include/glm/gtx/std_based_type.inl
+
+/usr/local/include/glm/gtx/std_based_type.inl
+
+/usr/local/include/glm/gtx/string_cast.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+../gtc/type_precision.hpp
+/usr/local/include/glm/gtc/type_precision.hpp
+../gtc/quaternion.hpp
+/usr/local/include/glm/gtc/quaternion.hpp
+../gtx/dual_quaternion.hpp
+/usr/local/include/glm/gtx/dual_quaternion.hpp
+string
+-
+cmath
+-
+string_cast.inl
+/usr/local/include/glm/gtx/string_cast.inl
+
+/usr/local/include/glm/gtx/string_cast.inl
+cstdarg
+-
+cstdio
+-
+
+/usr/local/include/glm/gtx/transform.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+../gtc/matrix_transform.hpp
+/usr/local/include/glm/gtc/matrix_transform.hpp
+transform.inl
+/usr/local/include/glm/gtx/transform.inl
+
+/usr/local/include/glm/gtx/transform.inl
+
+/usr/local/include/glm/gtx/transform2.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+../gtx/transform.hpp
+/usr/local/include/glm/gtx/transform.hpp
+transform2.inl
+/usr/local/include/glm/gtx/transform2.inl
+
+/usr/local/include/glm/gtx/transform2.inl
+
+/usr/local/include/glm/gtx/vec_swizzle.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+
+/usr/local/include/glm/gtx/vector_angle.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+../gtc/epsilon.hpp
+/usr/local/include/glm/gtc/epsilon.hpp
+../gtx/quaternion.hpp
+/usr/local/include/glm/gtx/quaternion.hpp
+../gtx/rotate_vector.hpp
+/usr/local/include/glm/gtx/rotate_vector.hpp
+vector_angle.inl
+/usr/local/include/glm/gtx/vector_angle.inl
+
+/usr/local/include/glm/gtx/vector_angle.inl
+
+/usr/local/include/glm/gtx/vector_query.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+cfloat
+-
+limits
+-
+vector_query.inl
+/usr/local/include/glm/gtx/vector_query.inl
+
+/usr/local/include/glm/gtx/vector_query.inl
+cassert
+-
+
+/usr/local/include/glm/gtx/wrap.hpp
+../glm.hpp
+/usr/local/include/glm/glm.hpp
+../gtc/vec1.hpp
+/usr/local/include/glm/gtc/vec1.hpp
+wrap.inl
+/usr/local/include/glm/gtx/wrap.inl
+
+/usr/local/include/glm/gtx/wrap.inl
 
 /usr/local/include/glm/integer.hpp
 detail/qualifier.hpp

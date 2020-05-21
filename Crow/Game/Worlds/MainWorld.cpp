@@ -105,7 +105,7 @@ void MainWorld::Build()
     playerCanon->columns = 2;
     playerCanon->unitType = DamageDealer::Arrow;
     playerCanon->strongAgainstType = DamageDealer::NONE;
-    playerCanon->damageRate = 0;
+    playerCanon->damageRate = 50;
     playerCanon->colliderRadius = 1.0f;
 
 
