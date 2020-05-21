@@ -1392,6 +1392,33 @@ Game/Systems/PathSystem.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.s
 .PHONY : Game/Systems/PathSystem.cpp.s
 
+Game/Systems/PlayerMoneySystem.o: Game/Systems/PlayerMoneySystem.cpp.o
+
+.PHONY : Game/Systems/PlayerMoneySystem.o
+
+# target to build an object file
+Game/Systems/PlayerMoneySystem.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o
+.PHONY : Game/Systems/PlayerMoneySystem.cpp.o
+
+Game/Systems/PlayerMoneySystem.i: Game/Systems/PlayerMoneySystem.cpp.i
+
+.PHONY : Game/Systems/PlayerMoneySystem.i
+
+# target to preprocess a source file
+Game/Systems/PlayerMoneySystem.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.i
+.PHONY : Game/Systems/PlayerMoneySystem.cpp.i
+
+Game/Systems/PlayerMoneySystem.s: Game/Systems/PlayerMoneySystem.cpp.s
+
+.PHONY : Game/Systems/PlayerMoneySystem.s
+
+# target to generate assembly for a file
+Game/Systems/PlayerMoneySystem.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.s
+.PHONY : Game/Systems/PlayerMoneySystem.cpp.s
+
 Game/Systems/ProjectileSystem.o: Game/Systems/ProjectileSystem.cpp.o
 
 .PHONY : Game/Systems/ProjectileSystem.o
@@ -2217,6 +2244,9 @@ help:
 	@echo "... Game/Systems/PathSystem.o"
 	@echo "... Game/Systems/PathSystem.i"
 	@echo "... Game/Systems/PathSystem.s"
+	@echo "... Game/Systems/PlayerMoneySystem.o"
+	@echo "... Game/Systems/PlayerMoneySystem.i"
+	@echo "... Game/Systems/PlayerMoneySystem.s"
 	@echo "... Game/Systems/ProjectileSystem.o"
 	@echo "... Game/Systems/ProjectileSystem.i"
 	@echo "... Game/Systems/ProjectileSystem.s"

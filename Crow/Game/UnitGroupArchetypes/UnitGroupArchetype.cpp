@@ -86,7 +86,7 @@ void UnitGroupArchetype::Build(World *world, BridgeComponent *bridge)
             unitEntity.AddComponent<FlockComponent>(FlockComponent{});
             rb->maxSpeed = maxSpeed;
 
-            if(unitType == DamageDealer::Arrow)
+            if(unitType == DamageDealer::Jumping)
             {
                 CannonComponent cannonComponent{};
                 cannonComponent.reloadTime = Random::RandomRange(0.5f,4.0f);

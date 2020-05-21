@@ -10,9 +10,9 @@ struct DamageDealer
 {
     enum Type
     {
-        Sword,
-        Pike,
-        Arrow,
+        MeleeGroup,
+        Tank,
+        Jumping,
         NONE
     };
 

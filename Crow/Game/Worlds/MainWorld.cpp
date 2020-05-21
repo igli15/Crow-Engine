@@ -36,6 +36,8 @@
 #include "../../Engine/Components/SpriteInfo.h"
 #include "../Systems/FlockSeparationSystem.h"
 #include "../Systems/FloatingSystem.h"
+#include "../Systems/PlayerMoneySystem.h"
+#include "../../Engine/Components/Text.h"
 
 void MainWorld::Build()
 {
@@ -63,6 +65,7 @@ void MainWorld::Build()
     RegisterSystem<UnitAnimationSystem>();
     RegisterSystem<FloatingSystem>();
     RegisterSystem<FlockSeparationSystem>();
+    RegisterSystem<PlayerMoneySystem>();
 
     EntityHandle playerEntity = CreateEntity();
     Player* playerComponent = playerEntity.AddComponent<Player>(Player{});
@@ -76,7 +79,7 @@ void MainWorld::Build()
     ghostArchetype->maxVerticalDistance = 0.4f;
     ghostArchetype->rows = 4;
     ghostArchetype->columns = 4;
-    ghostArchetype->unitType = DamageDealer::Sword;
+    ghostArchetype->unitType = DamageDealer::MeleeGroup;
     ghostArchetype->strongAgainstType = DamageDealer::NONE;
 
 
@@ -89,7 +92,7 @@ void MainWorld::Build()
     enemyGolemArchetype->maxVerticalDistance = 0.3;
     enemyGolemArchetype->rows = 1;
     enemyGolemArchetype->columns = 1;
-    enemyGolemArchetype->unitType = DamageDealer::Pike;
+    enemyGolemArchetype->unitType = DamageDealer::Tank;
     enemyGolemArchetype->strongAgainstType = DamageDealer::NONE;
     enemyGolemArchetype->isPlayerUnit = false;
 
@@ -103,7 +106,7 @@ void MainWorld::Build()
     playerCanon->maxVerticalDistance = 1.5f;
     playerCanon->rows = 1;
     playerCanon->columns = 2;
-    playerCanon->unitType = DamageDealer::Arrow;
+    playerCanon->unitType = DamageDealer::Jumping;
     playerCanon->strongAgainstType = DamageDealer::NONE;
     playerCanon->damageRate = 50;
     playerCanon->colliderRadius = 1.0f;
@@ -120,6 +123,11 @@ void MainWorld::Build()
     bridgeIndicatorEntity.AddComponent(SelectedBridgeIndicator{});
 
     CreateUIEntities(resourceManager);
+
+    EntityHandle textEntity = CreateEntity();
+    Transform* textTransform = textEntity.AddComponent(Transform{});
+    textTransform->SetLocalPosition(glm::vec3(0,0,0));
+    playerComponent->textComponent = textEntity.AddComponent(Text{"money:",glm::vec3(1),1,Game::Instance()->resourceManager->GetFont("roboto")});
 }
 
 void MainWorld::ParseGameComponents(rapidxml::xml_node<> *node, EntityHandle entityHandle)

@@ -471,6 +471,12 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/PathSystem.h">
 			<Option target="Crow"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/PlayerMoneySystem.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/PlayerMoneySystem.h">
+			<Option target="Crow"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/ProjectileSystem.cpp">
 			<Option target="Crow"/>
 		</Unit>

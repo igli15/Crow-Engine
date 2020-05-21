@@ -9,10 +9,14 @@
 #include <vector>
 
 class UnitGroupArchetype;
+class Text;
 
 struct Player
 {
     float money = 0.0f;
+    float moneyOverTime = 2.0f;
+
+    Text* textComponent = nullptr;
     UnitGroupArchetype* selectedUnitArchetype = nullptr;
 
 };

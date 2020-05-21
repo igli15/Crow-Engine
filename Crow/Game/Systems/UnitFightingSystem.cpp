@@ -122,12 +122,12 @@ void UnitFightingSystem::Fight(EntityHandle firstEntity, EntityHandle secondEnti
     firstEntityHealth.component->currentHealth -= secondDmg;
     secondEntityHealth.component->currentHealth -= firstDmg;
 
-    if(firstDamageDealer.component->damageDealerType == DamageDealer::Arrow)
+    if(firstDamageDealer.component->damageDealerType == DamageDealer::Jumping)
     {
         firstEntityHealth.component->currentHealth = 0;
     }
 
-    if(secondDamageDealer.component->damageDealerType == DamageDealer::Arrow)
+    if(secondDamageDealer.component->damageDealerType == DamageDealer::Jumping)
     {
         secondEntityHealth.component->currentHealth = 0;
     }
