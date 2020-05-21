@@ -13,6 +13,8 @@
 #texture PlayerUnitGroupUI : PlayerUnitGroupUI.png;
 #texture uiBackground : uiBackground.png;
 #texture uiBorderQ : uiBorderQ.png;
+#texture uiBorderW : uiBorderW.png;
+#texture uiBorderE : uiBorderE.png;
 
 #model dragon : dragon.obj;
 #model ghost : ghost1.obj;

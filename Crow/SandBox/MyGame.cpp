@@ -89,6 +89,13 @@ void MyGame::LoadAssets()
 
     resourceManager->CreateSprite("uiBorderQSprite",resourceManager->GetTexture("uiBorderQ"));
     resourceManager->CreateMaterial<SpriteMaterial>("uiBorderQMat");
+
+    resourceManager->CreateSprite("uiBorderWSprite",resourceManager->GetTexture("uiBorderW"));
+    resourceManager->CreateMaterial<SpriteMaterial>("uiBorderWMat");
+
+    resourceManager->CreateSprite("uiBorderESprite",resourceManager->GetTexture("uiBorderE"));
+    resourceManager->CreateMaterial<SpriteMaterial>("uiBorderEMat");
+
 }
 
 void MyGame::Init()

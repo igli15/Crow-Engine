@@ -99,9 +99,9 @@ void MainWorld::Build()
     playerCanon->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("whiteUnlitMat");
     playerCanon->unitModel = resourceManager->GetModel("basicUnit");
     playerCanon->scaleFactor =0.2f;
-    playerCanon->maxHorizontalDistance = 0.8f;
-    playerCanon->maxVerticalDistance = 0.8;
-    playerCanon->rows = 2;
+    playerCanon->maxHorizontalDistance = 1.5f;
+    playerCanon->maxVerticalDistance = 1.5f;
+    playerCanon->rows = 1;
     playerCanon->columns = 2;
     playerCanon->unitType = DamageDealer::Arrow;
     playerCanon->strongAgainstType = DamageDealer::NONE;
@@ -310,15 +310,28 @@ void MainWorld::CreateUIEntities(ResourceManager* resourceManager)
     const glm::vec2 borderSize{700,150};
     const int borderBottomPadding = 180;
 
-    const int iconSize = 92;
-    const int iconBottomPadding = 140;
+    const int iconSize = 115;
+
+    const int iconBottomPadding = 150;
+    const int iconHorizontalPadding = 200;
 
     EntityHandle borderQEntity = CreateEntity();
     Transform* borderQTransform = borderQEntity.AddComponent<Transform>(Transform{});
-    borderQTransform->SetLocalPosition(glm::vec3(screenWidth/2 - 250,screenHeight - iconBottomPadding,1));
+    borderQTransform->SetLocalPosition(glm::vec3(screenWidth/2 - iconSize/2 - iconHorizontalPadding,screenHeight - iconBottomPadding,1));
     borderQTransform->Scale(glm::vec3(iconSize,iconSize,1));
     borderQEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("uiBorderQSprite"),resourceManager->GetMaterial<SpriteMaterial>("uiBorderQMat")});
 
+    EntityHandle borderWEntity = CreateEntity();
+    Transform* borderWTransform = borderWEntity.AddComponent<Transform>(Transform{});
+    borderWTransform->SetLocalPosition(glm::vec3(screenWidth/2 - iconSize/2,screenHeight - iconBottomPadding,1));
+    borderWTransform->Scale(glm::vec3(iconSize,iconSize,1));
+    borderWEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("uiBorderWSprite"),resourceManager->GetMaterial<SpriteMaterial>("uiBorderWMat")});
+
+    EntityHandle borderEEntity = CreateEntity();
+    Transform* borderETransform = borderEEntity.AddComponent<Transform>(Transform{});
+    borderETransform->SetLocalPosition(glm::vec3(screenWidth/2 - iconSize/2 + iconHorizontalPadding,screenHeight - iconBottomPadding,1));
+    borderETransform->Scale(glm::vec3(iconSize,iconSize,1));
+    borderEEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("uiBorderESprite"),resourceManager->GetMaterial<SpriteMaterial>("uiBorderEMat")});
 
     EntityHandle uiBackgroundEntity = CreateEntity();
     Transform* uiBackgroundTransform = uiBackgroundEntity.AddComponent<Transform>(Transform{});
