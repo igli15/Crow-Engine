@@ -92,7 +92,7 @@ void MainWorld::Build()
     playerTankArchetype->columns = 1;
     playerTankArchetype->unitType = DamageDealer::Tank;
     playerTankArchetype->strongAgainstType = DamageDealer::NONE;
-    playerTankArchetype->moneyDrop = 25.0f;
+    playerTankArchetype->unitPrice = 35.0f;
 
     UnitGroupArchetype* playerCanon = CreateUnitGroupArchetype<UnitGroupArchetype>("playerCannon");
     playerCanon->maxSpeed = 0.7f;
