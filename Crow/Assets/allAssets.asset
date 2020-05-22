@@ -20,6 +20,8 @@
 #texture uiBorderWAvaiable : uiBorderWAvaiable.png;
 #texture uiBorderEAvaiable : uiBorderEAvaiable.png;
 
+#texture moneyIcon : SoulsIcon.png;
+
 #model dragon : dragon.obj;
 #model ghost : ghost1.obj;
 #model golem : Golem.fbx;

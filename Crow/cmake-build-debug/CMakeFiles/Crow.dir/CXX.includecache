@@ -370,10 +370,6 @@ glm/vec3.hpp
 glm/vec3.hpp
 -
 
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitComponent.h
-BridgeComponent.h
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/BridgeComponent.h
-
 /Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitIconComponent.h
 ../../Engine/Rendering/Sprite.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Sprite.h
@@ -425,16 +421,6 @@ vector
 /Users/igli/Desktop/Crow Engine/Crow/Game/Components/SteeringComponent.h
 vector
 -
-
-/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameStateSystem.cpp
-GameStateSystem.h
-/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameStateSystem.h
-../Components/UnitComponent.h
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitComponent.h
-../../Engine/Feather/World.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
-../Components/DamageDealer.h
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/DamageDealer.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameStateSystem.h
 ../../Engine/Feather/System.h

@@ -147,10 +147,12 @@ void MainWorld::Build()
 
     CreateUIEntities(resourceManager);
 
+    const glm::vec2 textPos = {1000,20};
     EntityHandle textEntity = CreateEntity();
     Transform* textTransform = textEntity.AddComponent(Transform{});
-    textTransform->SetLocalPosition(glm::vec3(0,0,0));
-    playerComponent->textComponent = textEntity.AddComponent(Text{"money:",glm::vec3(1),1,Game::Instance()->resourceManager->GetFont("roboto")});
+    textTransform->SetLocalPosition(glm::vec3(textPos.x,textPos.y,0));
+
+    playerComponent->textComponent = textEntity.AddComponent(Text{"money:",glm::vec3(1),0.6f,Game::Instance()->resourceManager->GetFont("gameFont")});
 }
 
 void MainWorld::ParseGameComponents(rapidxml::xml_node<> *node, EntityHandle entityHandle)
@@ -340,11 +342,11 @@ void MainWorld::CreateUIEntities(ResourceManager* resourceManager)
     const int screenHeight = game->screenData.screenHeight;
 
     const glm::vec2 borderSize{700,150};
-    const int borderBottomPadding = 180;
+    const int borderBottomPadding = 210;
 
     const int iconSize = 115;
 
-    const int iconBottomPadding = 150;
+    const int iconBottomPadding = 180;
     const int iconHorizontalPadding = 200;
 
     UnitGroupArchetype* meleeArchetype = GetUnitGroupArchetype<UnitGroupArchetype>("playerMelee");
@@ -378,6 +380,10 @@ void MainWorld::CreateUIEntities(ResourceManager* resourceManager)
     uiBackgroundTransform->Scale(glm::vec3(borderSize.x,borderSize.y,1));
     uiBackgroundEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("uiBackgroundSprite"),resourceManager->GetMaterial<SpriteMaterial>("uiBackgroundMat")});
 
-
+    EntityHandle moneyIconEntity = CreateEntity();
+    Transform* moneyIconTransform = moneyIconEntity.AddComponent<Transform>(Transform{});
+    moneyIconTransform->SetLocalPosition(glm::vec3(screenWidth/2 - 20,screenHeight - 50,0));
+    moneyIconTransform->Scale(glm::vec3(56,38,1));
+    moneyIconEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("moneyIconSprite"),resourceManager->GetMaterial<SpriteMaterial>("moneyIconMat")});
 
 }

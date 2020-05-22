@@ -24,6 +24,7 @@ void MyGame::LoadAssets()
 {
     Game::LoadAssets();
 
+    resourceManager->LoadFont("Noteworthy.ttf","gameFont");
 
     resourceManager->CreateShader("TranslucentVertexShader.vs","TranslucentFragmentShader.fs","translucentShader");
     resourceManager->CreateShader("VertexShader.vs","FragmentShader.fs","litShader");
@@ -72,6 +73,10 @@ void MyGame::LoadAssets()
     resourceManager->CreateSprite("uiBorderQSpriteAvaiable",resourceManager->GetTexture("uiBorderQAvaiable"));
     resourceManager->CreateSprite("uiBorderWSpriteAvaiable",resourceManager->GetTexture("uiBorderWAvaiable"));
     resourceManager->CreateSprite("uiBorderESpriteAvaiable",resourceManager->GetTexture("uiBorderEAvaiable"));
+
+
+    resourceManager->CreateSprite("moneyIconSprite",resourceManager->GetTexture("moneyIcon"));
+    resourceManager->CreateMaterial<SpriteMaterial>("moneyIconMat");
 
 }
 

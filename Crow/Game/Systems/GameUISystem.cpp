@@ -26,7 +26,6 @@ void GameUISystem::Update(float dt)
         UnitIconComponent& unitIconComponent = world->GetComponent<UnitIconComponent>(entities[i]);
         SpriteInfo& spriteInfoComponent = world->GetComponent<SpriteInfo>(entities[i]);
 
-
         if(m_playerComponent->money >= unitIconComponent.unitPrice)
         {
             spriteInfoComponent.sprite = unitIconComponent.avaiableSprite;

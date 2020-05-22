@@ -12,24 +12,24 @@
       <Light type="DIRECTIONAL" color="(0.4390, 0.5250, 0.6120)" intensity="0.8000" attenuationConstants="(1.0000, 0.0900, 0.0320)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
     </Components>
   </GameObject>
-  <GameObject name="path" position="(3.6151, 0.1200, 4.8582)" rotation="(0.0000, 0.4145, 0.0000, 0.9101)" scale="(67.8969, 0.0100, 1.4617)" mesh="cube">
+  <GameObject name="path" position="(3.3166, 0.1200, 4.5930)" rotation="(0.0000, 0.4145, 0.0000, 0.9101)" scale="(67.8969, 0.0100, 1.4617)" mesh="cube">
     <Components>
       <TextureMaterial materialName="pathMat" diffuseTextureName="Sand" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.1137, 0.1137, 0.1137)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="256.0000" ambientIntensity="0.3000" emissionScale="1.0000" />
     </Components>
   </GameObject>
-  <GameObject name="path" position="(0.0461, 0.1890, 1.8571)" rotation="(0.0000, 0.4226, 0.0000, 0.9063)" scale="(68.2368, 0.0000, 1.4617)" mesh="cube">
+  <GameObject name="path" position="(-0.2524, 0.1890, 1.5918)" rotation="(0.0000, 0.4226, 0.0000, 0.9063)" scale="(68.2368, 0.0000, 1.4617)" mesh="cube">
     <Components>
       <TextureMaterial materialName="pathMat" diffuseTextureName="Sand" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.1137, 0.1137, 0.1137)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="256.0000" ambientIntensity="0.3000" emissionScale="1.0000" />
     </Components>
   </GameObject>
-  <GameObject name="path" position="(-2.5700, 0.1300, -3.1000)" rotation="(0.0000, 0.4280, 0.0000, 0.9038)" scale="(62.7052, 0.0000, 1.4617)" mesh="cube">
+  <GameObject name="path" position="(-2.8685, 0.1300, -3.3652)" rotation="(0.0000, 0.4280, 0.0000, 0.9038)" scale="(62.7052, 0.0000, 1.4617)" mesh="cube">
     <Components>
       <TextureMaterial materialName="pathMat" diffuseTextureName="Sand" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.1137, 0.1137, 0.1137)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="256.0000" ambientIntensity="0.3000" emissionScale="1.0000" />
     </Components>
   </GameObject>
-  <GameObject name="TopBridge" position="(-3.4800, 0.1655, -2.0500)" rotation="(-0.6645, -0.2418, -0.2418, 0.6645)" scale="(0.7280, 0.7280, 0.8190)" mesh="curvedBridge">
+  <GameObject name="TopBridge" position="(-3.7785, 0.1655, -2.3152)" rotation="(-0.6645, -0.2418, -0.2418, 0.6645)" scale="(0.7280, 0.7280, 0.8190)" mesh="curvedBridge">
     <Components>
-      <BridgeComponent pathCount="5.0000" Path0="(-8.7383, 0.2474, 4.3526)" Path1="(-5.0696, 0.2474, -0.0197)" Path2="(-3.4440, 1.5004, -1.9570)" Path3="(-1.6817, 0.2474, -4.0573)" Path4="(2.4456, 0.2474, -8.9760)" />
+      <BridgeComponent pathCount="5.0000" Path0="(-9.0369, 0.2474, 4.0873)" Path1="(-5.3682, 0.2474, -0.2849)" Path2="(-3.7425, 1.5004, -2.2223)" Path3="(-1.9802, 0.2474, -4.3225)" Path4="(2.1471, 0.2474, -9.2413)" />
       <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.3059, 0.3059, 0.3059)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
     </Components>
     <GameObject name="p0 (1)" position="(0.0012, -0.1138, 0.0010)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(0.0021, 0.0021, 0.0021)" mesh="cube">
@@ -48,9 +48,9 @@
       <Components />
     </GameObject>
   </GameObject>
-  <GameObject name="MiddleBridge" position="(0.5000, 0.1655, 1.2900)" rotation="(-0.6645, -0.2418, -0.2418, 0.6645)" scale="(0.7280, 0.7280, 0.8190)" mesh="curvedBridge">
+  <GameObject name="MiddleBridge" position="(0.2015, 0.1655, 1.0248)" rotation="(-0.6645, -0.2418, -0.2418, 0.6645)" scale="(0.7280, 0.7280, 0.8190)" mesh="curvedBridge">
     <Components>
-      <BridgeComponent pathCount="5.0000" Path0="(-4.7082, 0.3375, 7.7347)" Path1="(-1.0394, 0.3375, 3.3625)" Path2="(0.5235, 1.4267, 1.4998)" Path3="(2.2549, 0.3375, -0.5636)" Path4="(6.4758, 0.3375, -5.5939)" />
+      <BridgeComponent pathCount="5.0000" Path0="(-5.0067, 0.3375, 7.4694)" Path1="(-1.3380, 0.3375, 3.0972)" Path2="(0.2250, 1.4267, 1.2346)" Path3="(1.9564, 0.3375, -0.8289)" Path4="(6.1773, 0.3375, -5.8591)" />
       <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.3059, 0.3059, 0.3059)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
     </Components>
     <GameObject name="p0" position="(0.0021, -0.1138, 0.0021)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(0.0021, 0.0021, 0.0021)" mesh="cube">
@@ -69,9 +69,9 @@
       <Components />
     </GameObject>
   </GameObject>
-  <GameObject name="BottomBridge" position="(4.0800, 0.1655, 4.3100)" rotation="(-0.6645, -0.2418, -0.2418, 0.6645)" scale="(0.7280, 0.7280, 0.8190)" mesh="curvedBridge">
+  <GameObject name="BottomBridge" position="(3.7815, 0.1655, 4.0448)" rotation="(-0.6645, -0.2418, -0.2418, 0.6645)" scale="(0.7280, 0.7280, 0.8190)" mesh="curvedBridge">
     <Components>
-      <BridgeComponent pathCount="5.0000" Path0="(-1.0310, 0.4939, 10.6842)" Path1="(2.6378, 0.4939, 6.3119)" Path2="(4.2007, 1.5840, 4.4493)" Path3="(5.9321, 0.4939, 2.3859)" Path4="(10.1530, 0.4939, -2.6444)" />
+      <BridgeComponent pathCount="5.0000" Path0="(-1.3295, 0.4939, 10.4189)" Path1="(2.3392, 0.4939, 6.0467)" Path2="(3.9022, 1.5840, 4.1840)" Path3="(5.6336, 0.4939, 2.1206)" Path4="(9.8545, 0.4939, -2.9096)" />
       <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.3059, 0.3059, 0.3059)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
     </Components>
     <GameObject name="p0" position="(0.0025, -0.1122, 0.0040)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(0.0021, 0.0021, 0.0021)" mesh="cube">
@@ -123,7 +123,7 @@
         </Components>
       </GameObject>
     </GameObject>
-    <GameObject name="HeadStoneBroken" position="(-0.2425, -0.7107, -0.0624)" rotation="(0.0000, 0.4072, 0.0000, 0.9133)" scale="(1.0000, 1.0000, 1.0000)">
+    <GameObject name="HeadStoneBroken" position="(-0.8700, -0.7107, -1.1500)" rotation="(0.0000, 0.4072, 0.0000, 0.9133)" scale="(1.0000, 1.0000, 1.0000)">
       <Components />
       <GameObject name="Headstone_6_1_group2" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="HeadStoneBroken">
         <Components>
@@ -131,7 +131,7 @@
         </Components>
       </GameObject>
     </GameObject>
-    <GameObject name="HeadStone" position="(-0.6015, -0.6967, 1.1846)" rotation="(0.0000, 0.6225, 0.0000, 0.7826)" scale="(1.0000, 1.0000, 1.0000)">
+    <GameObject name="HeadStone" position="(-1.2290, -0.6967, 0.0970)" rotation="(0.0000, 0.6225, 0.0000, 0.7826)" scale="(1.0000, 1.0000, 1.0000)">
       <Components />
       <GameObject name="Headstone_4_1_group1" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="HeadStone">
         <Components>
@@ -139,7 +139,7 @@
         </Components>
       </GameObject>
     </GameObject>
-    <GameObject name="HeadStone2" position="(0.7675, -0.7340, -0.9324)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)">
+    <GameObject name="HeadStone2" position="(0.1400, -0.7340, -2.0200)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)">
       <Components />
       <GameObject name="Headstone_2_5" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="HeadStone2">
         <Components>
@@ -180,7 +180,7 @@
       </GameObject>
     </GameObject>
   </GameObject>
-  <GameObject name="PlayerPortals" position="(-5.8064, 1.4560, -3.4967)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)">
+  <GameObject name="PlayerPortals" position="(-6.1049, 1.4560, -3.7620)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)">
     <Components />
     <GameObject name="PortalFrame" position="(3.6500, -1.3260, 14.6200)" rotation="(0.0000, 0.9478, 0.0000, 0.3189)" scale="(1.0000, 1.0000, 1.0000)">
       <Components />
@@ -246,7 +246,7 @@
       </GameObject>
     </GameObject>
   </GameObject>
-  <GameObject name="EnemyPortals" position="(7.0385, 1.4560, 4.3952)" rotation="(0.0000, -0.9995, 0.0000, -0.0320)" scale="(1.0000, 1.0000, 1.0000)">
+  <GameObject name="EnemyPortals" position="(6.7400, 1.4560, 4.1300)" rotation="(0.0000, -0.9995, 0.0000, -0.0320)" scale="(1.0000, 1.0000, 1.0000)">
     <Components />
     <GameObject name="PortalFrame" position="(4.9900, -1.0600, 13.9500)" rotation="(0.0000, 0.9478, 0.0000, 0.3189)" scale="(1.0000, 1.0000, 1.0000)">
       <Components />
