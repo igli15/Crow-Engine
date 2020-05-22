@@ -19,6 +19,24 @@
 #include "../Engine/Rendering/Materials/PortalMaterial.h"
 #include "../Engine/Rendering/Materials/UnlitMaterial.h"
 #include "../Engine/Rendering/Materials/SpriteMaterial.h"
+#include "../Game/Components/CannonComponent.h"
+#include "../Game/Components/DamageDealer.h"
+#include "../Game/Components/EnemyUnitCollider.h"
+#include "../Game/Components/Enemy.h"
+#include "../Game/Components/FloatingComponent.h"
+#include "../Game/Components/FlockComponent.h"
+#include "../Game/Components/HealthComponent.h"
+#include "../Game/Components/ProjectileComponent.h"
+#include "../Game/Components/RotateComponent.h"
+#include "../Game/Components/PlayerUnitCollider.h"
+#include "../Game/Components/Player.h"
+#include "../Game/Components/SelectedBridgeIndicator.h"
+#include "../Game/Components/SeekComponent.h"
+#include "../Game/Components/UnitAnimationComponent.h"
+#include "../Game/Components/SteeringComponent.h"
+#include "../Game/Components/UnitComponent.h"
+#include "../Game/Components/UnitPathComponent.h"
+#include "../Game/Components/UnitIconComponent.h"
 
 void MyGame::LoadAssets()
 {
@@ -95,5 +113,31 @@ void MyGame::Init()
     //SetWorld(new TranslucentMaterialTestWorld());
     //SetWorld(new RotatingGunsWorld());
     //SetWorld(new SpriteRenderingWorld());
+
+}
+
+void MyGame::AllocateMemory()
+{
+    Game::AllocateMemory();
+
+    currentWorld->AllocateComponentArray<BridgeComponent>();
+    currentWorld->AllocateComponentArray<CannonComponent>();
+    currentWorld->AllocateComponentArray<DamageDealer>();
+    currentWorld->AllocateComponentArray<Enemy>();
+    currentWorld->AllocateComponentArray<EnemyUnitCollider>();
+    currentWorld->AllocateComponentArray<FloatingComponent>();
+    currentWorld->AllocateComponentArray<FlockComponent>();
+    currentWorld->AllocateComponentArray<HealthComponent>();
+    currentWorld->AllocateComponentArray<Player>();
+    currentWorld->AllocateComponentArray<PlayerUnitCollider>();
+    currentWorld->AllocateComponentArray<ProjectileComponent>();
+    currentWorld->AllocateComponentArray<RotateComponent>();
+    currentWorld->AllocateComponentArray<SeekComponent>();
+    currentWorld->AllocateComponentArray<SelectedBridgeIndicator>();
+    currentWorld->AllocateComponentArray<SteeringComponent>();
+    currentWorld->AllocateComponentArray<UnitAnimationComponent>();
+    currentWorld->AllocateComponentArray<UnitComponent>();
+    currentWorld->AllocateComponentArray<UnitIconComponent>();
+    currentWorld->AllocateComponentArray<UnitPathComponent>();
 
 }

@@ -26,9 +26,12 @@ struct ScreenData
 ///It's the parent class of "MyGame" which is what the user should use and create.
 class Game {
 
+
+protected:
+    World* currentWorld;
+
 private:
     Window* window;
-    World* currentWorld;
 
     static Game* m_instance;
 
@@ -41,6 +44,8 @@ public:
 
     ///Here is where all the assets should be loaded
     virtual void LoadAssets();
+
+    virtual void AllocateMemory();
 
     ///Initializes the current world
     void InitWorld();

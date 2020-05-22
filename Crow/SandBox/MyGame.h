@@ -14,6 +14,7 @@ class MyGame : public Game {
 public:
     void Init() override;
     void LoadAssets() override;
+    void AllocateMemory() override;
 
 };
 

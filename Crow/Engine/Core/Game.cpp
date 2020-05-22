@@ -13,6 +13,13 @@
 #include "../Utils/Random.h"
 
 #include "../../Crow.h"
+#include "../Components/Camera.h"
+#include "../Components/Light.h"
+#include "../Components/Rigidbody.h"
+#include "../Components/SphereCollider.h"
+#include "../Components/SpriteInfo.h"
+#include "../Components/Text.h"
+#include "../Components/Transform.h"
 
 Game* Game::m_instance;
 
@@ -25,9 +32,6 @@ void Game::Init()
 
     window = new Window();
     window->CreateWindow(screenData.screenWidth, screenData.screenHeight, "Crow");
-
-
-    //TODO: doing post processing stuff here move to window class later
 
     m_postProcessingShader = resourceManager->CreateShader("PostProcessingShader.vs","PostProcessingShader.fs","postProcessingShader");
 
@@ -43,6 +47,7 @@ void Game::Init()
 void Game::InitWorld()
 {
     currentWorld->Init();
+    AllocateMemory();
     currentWorld->Build();
     currentWorld->InitAllSystems();
 
@@ -146,5 +151,17 @@ void Game::InitFreeTypeLibrary()
     {
        ENGINE_LOG_CRITICAL("FreeType wasn't initialized correctly!");
     }
+}
+
+void Game::AllocateMemory()
+{
+    currentWorld->AllocateComponentArray<Camera>();
+    currentWorld->AllocateComponentArray<Light>();
+    currentWorld->AllocateComponentArray<MeshInfo>();
+    currentWorld->AllocateComponentArray<Rigidbody>();
+    currentWorld->AllocateComponentArray<SphereCollider>();
+    currentWorld->AllocateComponentArray<SpriteInfo>();
+    currentWorld->AllocateComponentArray<Text>();
+    currentWorld->AllocateComponentArray<Transform>();
 }
 

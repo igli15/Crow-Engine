@@ -26,6 +26,12 @@ public:
     ///Initializes the world.
     void Init();
 
+    template<typename T>
+    void AllocateComponentArray()
+    {
+        m_componentManager->AllocateComponentArray<T>();
+    }
+
     ///Creates an entity and returns a entity handle.
     ///@return EntityHandle of the newly created entity.
     EntityHandle CreateEntity();
