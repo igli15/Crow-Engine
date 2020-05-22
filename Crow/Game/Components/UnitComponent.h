@@ -11,6 +11,8 @@
 struct UnitComponent
 {
     BridgeComponent* bridge = nullptr;
+    float moneyDrop = 0.0f;
+    float moneyDropThroughPortal = 0.0f;
     bool isPlayerUnit = true;
 };
 

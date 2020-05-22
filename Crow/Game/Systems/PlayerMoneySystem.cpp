@@ -8,7 +8,7 @@
 #include "../../Engine/Feather/World.h"
 #include "../../Engine/Components/Text.h"
 #include "../Components/Player.h"
-#include "../Components/MoneySourceComponent.h"
+#include "../Components/UnitComponent.h"
 
 void PlayerMoneySystem::Init()
 {
@@ -31,10 +31,10 @@ void PlayerMoneySystem::Update(float dt)
 
 void PlayerMoneySystem::OnEnemyDeath(OnUnitDefeatedEvent* event)
 {
-    MoneySourceComponent* moneySourceComponent = world->GetComponentPtr<MoneySourceComponent>(event->entity);
+    UnitComponent* unitComponent = world->GetComponentPtr<UnitComponent>(event->entity);
 
-    if(moneySourceComponent != nullptr) {
-        m_playerComponent->money += moneySourceComponent->moneyDrop;
-        world->RemoveComponent<MoneySourceComponent>(event->entity);
+    if(unitComponent != nullptr) {
+        m_playerComponent->money += unitComponent->moneyDrop;
+        world->RemoveComponent<UnitComponent>(event->entity);
     }
 }

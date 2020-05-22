@@ -7,6 +7,7 @@
 #include "../../Game/Events/TargetSeekedEvent.h"
 #include "../Components/SeekComponent.h"
 #include "../Components/UnitPathComponent.h"
+#include "../Events/UnitPathCompleteEvent.h"
 
 void PathSystem::Init()
 {
@@ -24,6 +25,7 @@ void PathSystem::OnPathSeeked(TargetSeekedEvent* event)
 
     if(pathIndex >= pathComponentHandle.component->pathPoints.size())
     {
+        EventQueue::Instance().Publish(new UnitPathCompleteEvent(event->entity.entity));
         world->DestroyEntity(event->entity.entity);
     }
     else

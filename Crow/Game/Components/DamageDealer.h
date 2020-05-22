@@ -18,6 +18,8 @@ struct DamageDealer
 
     float damageRate = 0.5f;
 
+    float damageThroughPortal = 5.0f;
+
     Type damageDealerType = NONE;
     Type strongAgainst = NONE;
 

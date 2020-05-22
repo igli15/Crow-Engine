@@ -1203,33 +1203,6 @@ Engine/Utils/Random.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Utils/Random.cpp.s
 .PHONY : Engine/Utils/Random.cpp.s
 
-Game/Events/TargetSeekedEvent.o: Game/Events/TargetSeekedEvent.cpp.o
-
-.PHONY : Game/Events/TargetSeekedEvent.o
-
-# target to build an object file
-Game/Events/TargetSeekedEvent.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Events/TargetSeekedEvent.cpp.o
-.PHONY : Game/Events/TargetSeekedEvent.cpp.o
-
-Game/Events/TargetSeekedEvent.i: Game/Events/TargetSeekedEvent.cpp.i
-
-.PHONY : Game/Events/TargetSeekedEvent.i
-
-# target to preprocess a source file
-Game/Events/TargetSeekedEvent.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Events/TargetSeekedEvent.cpp.i
-.PHONY : Game/Events/TargetSeekedEvent.cpp.i
-
-Game/Events/TargetSeekedEvent.s: Game/Events/TargetSeekedEvent.cpp.s
-
-.PHONY : Game/Events/TargetSeekedEvent.s
-
-# target to generate assembly for a file
-Game/Events/TargetSeekedEvent.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Events/TargetSeekedEvent.cpp.s
-.PHONY : Game/Events/TargetSeekedEvent.cpp.s
-
 Game/Systems/BridgeSystem.o: Game/Systems/BridgeSystem.cpp.o
 
 .PHONY : Game/Systems/BridgeSystem.o
@@ -1364,6 +1337,33 @@ Game/Systems/FlockSeparationSystem.s: Game/Systems/FlockSeparationSystem.cpp.s
 Game/Systems/FlockSeparationSystem.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.s
 .PHONY : Game/Systems/FlockSeparationSystem.cpp.s
+
+Game/Systems/GameStateSystem.o: Game/Systems/GameStateSystem.cpp.o
+
+.PHONY : Game/Systems/GameStateSystem.o
+
+# target to build an object file
+Game/Systems/GameStateSystem.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/GameStateSystem.cpp.o
+.PHONY : Game/Systems/GameStateSystem.cpp.o
+
+Game/Systems/GameStateSystem.i: Game/Systems/GameStateSystem.cpp.i
+
+.PHONY : Game/Systems/GameStateSystem.i
+
+# target to preprocess a source file
+Game/Systems/GameStateSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/GameStateSystem.cpp.i
+.PHONY : Game/Systems/GameStateSystem.cpp.i
+
+Game/Systems/GameStateSystem.s: Game/Systems/GameStateSystem.cpp.s
+
+.PHONY : Game/Systems/GameStateSystem.s
+
+# target to generate assembly for a file
+Game/Systems/GameStateSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/GameStateSystem.cpp.s
+.PHONY : Game/Systems/GameStateSystem.cpp.s
 
 Game/Systems/GameUISystem.o: Game/Systems/GameUISystem.cpp.o
 
@@ -2223,9 +2223,6 @@ help:
 	@echo "... Engine/Utils/Random.o"
 	@echo "... Engine/Utils/Random.i"
 	@echo "... Engine/Utils/Random.s"
-	@echo "... Game/Events/TargetSeekedEvent.o"
-	@echo "... Game/Events/TargetSeekedEvent.i"
-	@echo "... Game/Events/TargetSeekedEvent.s"
 	@echo "... Game/Systems/BridgeSystem.o"
 	@echo "... Game/Systems/BridgeSystem.i"
 	@echo "... Game/Systems/BridgeSystem.s"
@@ -2241,6 +2238,9 @@ help:
 	@echo "... Game/Systems/FlockSeparationSystem.o"
 	@echo "... Game/Systems/FlockSeparationSystem.i"
 	@echo "... Game/Systems/FlockSeparationSystem.s"
+	@echo "... Game/Systems/GameStateSystem.o"
+	@echo "... Game/Systems/GameStateSystem.i"
+	@echo "... Game/Systems/GameStateSystem.s"
 	@echo "... Game/Systems/GameUISystem.o"
 	@echo "... Game/Systems/GameUISystem.i"
 	@echo "... Game/Systems/GameUISystem.s"

@@ -6,7 +6,6 @@
 #include "../../Engine/Editor/UnitySceneParser.h"
 #include "../../Engine/Components/Light.h"
 #include "../Components/BridgeComponent.h"
-#include "../../Engine/Feather/EntityHandle.h"
 #include "../Systems/BridgeSystem.h"
 #include "../Systems/SpawnSystem.h"
 #include "../Systems/SeekingSystem.h"
@@ -39,6 +38,8 @@
 #include "../../Engine/Components/Text.h"
 #include "../Components/UnitIconComponent.h"
 #include "../Systems/GameUISystem.h"
+#include "../Components/Enemy.h"
+#include "../Systems/GameStateSystem.h"
 
 void MainWorld::Build()
 {
@@ -67,23 +68,28 @@ void MainWorld::Build()
     RegisterSystem<FlockSeparationSystem>();
     RegisterSystem<PlayerMoneySystem>();
     RegisterSystem<GameUISystem>();
+    RegisterSystem<GameStateSystem>();
 
     EntityHandle playerEntity = CreateEntity();
     Player* playerComponent = playerEntity.AddComponent<Player>(Player{});
-    playerComponent->money = 50;
+    playerComponent->money = 500;
 
-    UnitGroupArchetype* ghostArchetype = CreateUnitGroupArchetype<UnitGroupArchetype>("playerMelee");
-    ghostArchetype->maxSpeed = 0.7f;
-    ghostArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("whiteUnlitMat");
-    ghostArchetype->unitModel = resourceManager->GetModel("basicUnit");
-    ghostArchetype->scaleFactor = 0.1;
-    ghostArchetype->maxHorizontalDistance = 0.4f;
-    ghostArchetype->maxVerticalDistance = 0.4f;
-    ghostArchetype->rows = 4;
-    ghostArchetype->columns = 4;
-    ghostArchetype->unitType = DamageDealer::MeleeGroup;
-    ghostArchetype->strongAgainstType = DamageDealer::NONE;
-    ghostArchetype->unitPrice = 35.0f;
+    EntityHandle enemyEntity = CreateEntity();
+    Enemy* enemyComponent = enemyEntity.AddComponent<Enemy>(Enemy{});
+
+    UnitGroupArchetype* playerMeleeArchetype = CreateUnitGroupArchetype<UnitGroupArchetype>("playerMelee");
+    playerMeleeArchetype->maxSpeed = 0.7f;
+    playerMeleeArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("whiteUnlitMat");
+    playerMeleeArchetype->unitModel = resourceManager->GetModel("basicUnit");
+    playerMeleeArchetype->scaleFactor = 0.1;
+    playerMeleeArchetype->maxHorizontalDistance = 0.2f;
+    playerMeleeArchetype->maxVerticalDistance = 0.2f;
+    playerMeleeArchetype->rows = 4;
+    playerMeleeArchetype->columns = 4;
+    playerMeleeArchetype->unitType = DamageDealer::MeleeGroup;
+    playerMeleeArchetype->strongAgainstType = DamageDealer::NONE;
+    playerMeleeArchetype->unitPrice = 35.0f;
+    playerMeleeArchetype->moneyDropThroughPortal = 20.0f;
 
     UnitGroupArchetype* playerTankArchetype = CreateUnitGroupArchetype<UnitGroupArchetype>("playerTank");
     playerTankArchetype->maxSpeed = 0.7f;
@@ -97,6 +103,7 @@ void MainWorld::Build()
     playerTankArchetype->unitType = DamageDealer::Tank;
     playerTankArchetype->strongAgainstType = DamageDealer::NONE;
     playerTankArchetype->unitPrice = 35.0f;
+    playerTankArchetype->moneyDropThroughPortal = 20.0f;
 
     UnitGroupArchetype* playerCanon = CreateUnitGroupArchetype<UnitGroupArchetype>("playerCannon");
     playerCanon->maxSpeed = 0.7f;
@@ -112,6 +119,7 @@ void MainWorld::Build()
     playerCanon->damageRate = 50;
     playerCanon->colliderRadius = 1.0f;
     playerCanon->unitPrice = 65.0f;
+    playerCanon->moneyDropThroughPortal = 20.0f;
 
     UnitGroupArchetype* enemyGolemArchetype = CreateUnitGroupArchetype<UnitGroupArchetype>("golem");
     enemyGolemArchetype->maxSpeed = 0.7f;
@@ -126,8 +134,9 @@ void MainWorld::Build()
     enemyGolemArchetype->strongAgainstType = DamageDealer::NONE;
     enemyGolemArchetype->isPlayerUnit = false;
     enemyGolemArchetype->moneyDrop = 25.0f;
+    enemyGolemArchetype->damageThroughPortal = 20.0f;
 
-    playerComponent->selectedUnitArchetype = ghostArchetype;
+    playerComponent->selectedUnitArchetype = playerMeleeArchetype;
 
     EntityHandle bridgeIndicatorEntity = CreateEntity();
     Transform* transform = bridgeIndicatorEntity.AddComponent(Transform{});

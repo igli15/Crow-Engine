@@ -387,6 +387,9 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/DamageDealer.h">
 			<Option target="Crow"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/Enemy.h">
+			<Option target="Crow"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/EnemyUnitCollider.h">
 			<Option target="Crow"/>
 		</Unit>
@@ -397,9 +400,6 @@
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/HealthComponent.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/MoneySourceComponent.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/Player.h">
@@ -435,13 +435,13 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Events/BridgeSelectedEvent.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Events/TargetSeekedEvent.cpp">
-			<Option target="Crow"/>
-		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Events/TargetSeekedEvent.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Events/UnitCollisionEvents.h">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Events/UnitPathCompleteEvent.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/BridgeSystem.cpp">
@@ -472,6 +472,12 @@
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/FlockSeparationSystem.h">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameStateSystem.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameStateSystem.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameUISystem.cpp">

@@ -15,7 +15,7 @@ struct Player
 {
     float money = 0.0f;
     float moneyOverTime = 2.0f;
-
+    float health = 100.0f;
     Text* textComponent = nullptr;
     UnitGroupArchetype* selectedUnitArchetype = nullptr;
 

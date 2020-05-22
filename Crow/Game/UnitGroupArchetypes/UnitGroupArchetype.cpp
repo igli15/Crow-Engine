@@ -18,7 +18,6 @@
 #include "../Components/CannonComponent.h"
 #include "../Components/FloatingComponent.h"
 #include "../Components/FlockComponent.h"
-#include "../Components/MoneySourceComponent.h"
 
 void UnitGroupArchetype::Build(World *world, BridgeComponent *bridge)
 {
@@ -72,8 +71,11 @@ void UnitGroupArchetype::Build(World *world, BridgeComponent *bridge)
                 bridge->enemyEntitiesOnBridge.push_back(unitEntity.entity);
                 unitTransform->Translate(bridge->pathPoints.back());
                 unitComponent->isPlayerUnit = false;
-                unitEntity.AddComponent<MoneySourceComponent>(MoneySourceComponent{});
             }
+
+            unitComponent->moneyDrop = moneyDrop;
+            unitComponent->moneyDropThroughPortal = moneyDropThroughPortal;
+
 
             float randomHorizontal = Random::RandomRange(-maxHorizontalDistance,maxHorizontalDistance);
             float randomVertical = Random::RandomRange(-maxVerticalDistance,maxVerticalDistance);
@@ -82,7 +84,7 @@ void UnitGroupArchetype::Build(World *world, BridgeComponent *bridge)
             unitTransform->Translate(glm::vec3((columnIndex) * randomHorizontal, 0.2f, (rowIndex) * randomVertical));
 
             unitEntity.AddComponent<HealthComponent>(HealthComponent{maxHealth,maxHealth});
-            unitEntity.AddComponent<DamageDealer>(DamageDealer{damageRate,unitType,strongAgainstType});
+            unitEntity.AddComponent<DamageDealer>(DamageDealer{damageRate, damageThroughPortal, unitType, strongAgainstType});
 
             unitEntity.AddComponent<FloatingComponent>(FloatingComponent{});
             unitEntity.AddComponent<FlockComponent>(FlockComponent{});

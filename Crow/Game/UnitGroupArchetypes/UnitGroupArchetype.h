@@ -35,7 +35,10 @@ public:
     float animationHeight = 0.003f;
 
     float moneyDrop = 0.0f;
+    float moneyDropThroughPortal = 0.0f;
+    float damageThroughPortal = 5.0f;
     float unitPrice = 0.0f;
+
 
     DamageDealer::Type unitType = DamageDealer::Type::NONE;
     DamageDealer::Type strongAgainstType = DamageDealer::Type::NONE;
