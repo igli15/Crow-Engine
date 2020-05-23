@@ -98,11 +98,6 @@ public:
     {
         auto it = m_entityToIndexMap.find(entity);
 
-        if(it == m_entityToIndexMap.end())
-        {
-            ENGINE_LOG_CRITICAL("Component is not added");
-        }
-
         return m_componentsArray[it->second];
     }
 
