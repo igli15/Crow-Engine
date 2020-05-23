@@ -17,6 +17,7 @@
 #include "../Components/UnitComponent.h"
 #include "../Components/SteeringComponent.h"
 #include "../Components/UnitPathComponent.h"
+#include "../Components/AutoDestructComponent.h"
 
 void CannonSystem::OnCreate()
 {
@@ -80,4 +81,5 @@ void CannonSystem::Jump(Entity entity,const glm::vec3& target)
     ProjectileComponent projectileComponent{};
     projectileComponent.targetPos = glm::vec3 (target);
     world->AddComponent<ProjectileComponent>(entity,projectileComponent);
+    world->AddComponent<AutoDestructComponent>(entity,AutoDestructComponent{3.0f});
 }

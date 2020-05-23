@@ -40,6 +40,7 @@
 #include "../Systems/GameUISystem.h"
 #include "../Components/Enemy.h"
 #include "../Systems/GameStateSystem.h"
+#include "../Systems/AutoDestructSystem.h"
 
 void MainWorld::Build()
 {
@@ -69,10 +70,11 @@ void MainWorld::Build()
     RegisterSystem<PlayerMoneySystem>();
     RegisterSystem<GameUISystem>();
     RegisterSystem<GameStateSystem>();
+    RegisterSystem<AutoDestructSystem>();
 
     EntityHandle playerEntity = CreateEntity();
     Player* playerComponent = playerEntity.AddComponent<Player>(Player{});
-    playerComponent->money = 500;
+    playerComponent->money = 500 ;
 
     EntityHandle enemyEntity = CreateEntity();
     Enemy* enemyComponent = enemyEntity.AddComponent<Enemy>(Enemy{});

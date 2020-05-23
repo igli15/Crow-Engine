@@ -39,6 +39,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Utils/Random.cpp.o"
+  "CMakeFiles/Crow.dir/Game/Systems/AutoDestructSystem.cpp.o"
   "CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o"
   "CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o"
   "CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.o"

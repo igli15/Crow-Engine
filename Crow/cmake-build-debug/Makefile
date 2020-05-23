@@ -1203,6 +1203,33 @@ Engine/Utils/Random.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Utils/Random.cpp.s
 .PHONY : Engine/Utils/Random.cpp.s
 
+Game/Systems/AutoDestructSystem.o: Game/Systems/AutoDestructSystem.cpp.o
+
+.PHONY : Game/Systems/AutoDestructSystem.o
+
+# target to build an object file
+Game/Systems/AutoDestructSystem.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/AutoDestructSystem.cpp.o
+.PHONY : Game/Systems/AutoDestructSystem.cpp.o
+
+Game/Systems/AutoDestructSystem.i: Game/Systems/AutoDestructSystem.cpp.i
+
+.PHONY : Game/Systems/AutoDestructSystem.i
+
+# target to preprocess a source file
+Game/Systems/AutoDestructSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/AutoDestructSystem.cpp.i
+.PHONY : Game/Systems/AutoDestructSystem.cpp.i
+
+Game/Systems/AutoDestructSystem.s: Game/Systems/AutoDestructSystem.cpp.s
+
+.PHONY : Game/Systems/AutoDestructSystem.s
+
+# target to generate assembly for a file
+Game/Systems/AutoDestructSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/AutoDestructSystem.cpp.s
+.PHONY : Game/Systems/AutoDestructSystem.cpp.s
+
 Game/Systems/BridgeSystem.o: Game/Systems/BridgeSystem.cpp.o
 
 .PHONY : Game/Systems/BridgeSystem.o
@@ -2223,6 +2250,9 @@ help:
 	@echo "... Engine/Utils/Random.o"
 	@echo "... Engine/Utils/Random.i"
 	@echo "... Engine/Utils/Random.s"
+	@echo "... Game/Systems/AutoDestructSystem.o"
+	@echo "... Game/Systems/AutoDestructSystem.i"
+	@echo "... Game/Systems/AutoDestructSystem.s"
 	@echo "... Game/Systems/BridgeSystem.o"
 	@echo "... Game/Systems/BridgeSystem.i"
 	@echo "... Game/Systems/BridgeSystem.s"

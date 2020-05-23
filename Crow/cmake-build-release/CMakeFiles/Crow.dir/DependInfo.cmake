@@ -44,6 +44,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/TextRenderingSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/TransformHierarchySystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Utils/Random.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Utils/Random.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/AutoDestructSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Game/Systems/AutoDestructSystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/BridgeSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/CannonSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/EnemySpawnSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.o"

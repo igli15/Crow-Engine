@@ -18,6 +18,7 @@
 #include "../Components/CannonComponent.h"
 #include "../Components/FloatingComponent.h"
 #include "../Components/FlockComponent.h"
+#include "../Components/AutoDestructComponent.h"
 
 void UnitGroupArchetype::Build(World *world, BridgeComponent *bridge)
 {

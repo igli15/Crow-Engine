@@ -37,6 +37,7 @@
 #include "../Game/Components/UnitComponent.h"
 #include "../Game/Components/UnitPathComponent.h"
 #include "../Game/Components/UnitIconComponent.h"
+#include "../Game/Components/AutoDestructComponent.h"
 
 void MyGame::LoadAssets()
 {
@@ -139,5 +140,6 @@ void MyGame::AllocateMemory()
     currentWorld->AllocateComponentArray<UnitComponent>();
     currentWorld->AllocateComponentArray<UnitIconComponent>();
     currentWorld->AllocateComponentArray<UnitPathComponent>();
+    currentWorld->AllocateComponentArray<AutoDestructComponent>();
 
 }

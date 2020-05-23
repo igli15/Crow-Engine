@@ -72,6 +72,8 @@ void Game::Run()
         double  current = glfwGetTime();
         double elapsed = (double)(current - previous);
 
+        if(elapsed > 0.25) elapsed = 0.25;
+
         previous = current;
         lag += elapsed;
 
@@ -81,7 +83,7 @@ void Game::Run()
 
         while (lag >= MS_PER_UPDATE)
         {
-            currentWorld->UpdateAllSystems(elapsed);
+            currentWorld->UpdateAllSystems(MS_PER_UPDATE);
             lag -= MS_PER_UPDATE;
         }
 
