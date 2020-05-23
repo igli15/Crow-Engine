@@ -557,7 +557,7 @@
       </GameObject>
       <GameObject name="PortalFrame" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="PortalFrame">
         <Components>
-          <ColorMaterial materialName="portalFrameMat" mainColor="(0.3608, 0.3608, 0.3608)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" />
+          <TextureMaterial materialName="portalFrameMat" diffuseTextureName="whiteTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.3608, 0.3608, 0.3608)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
         </Components>
       </GameObject>
       <GameObject name="PortalPlane" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)">
@@ -578,7 +578,7 @@
       </GameObject>
       <GameObject name="PortalFrame" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, -0.0114, 0.0000, 0.9999)" scale="(1.0000, 1.0000, 1.0000)" mesh="PortalFrame">
         <Components>
-          <ColorMaterial materialName="portalFrameMat" mainColor="(0.3608, 0.3608, 0.3608)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" />
+          <TextureMaterial materialName="portalFrameMat" diffuseTextureName="whiteTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.3608, 0.3608, 0.3608)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
         </Components>
       </GameObject>
       <GameObject name="PortalPlane" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)">
@@ -599,7 +599,7 @@
       </GameObject>
       <GameObject name="PortalFrame" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="PortalFrame">
         <Components>
-          <ColorMaterial materialName="portalFrameMat" mainColor="(0.3608, 0.3608, 0.3608)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" />
+          <TextureMaterial materialName="portalFrameMat" diffuseTextureName="whiteTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.3608, 0.3608, 0.3608)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
         </Components>
       </GameObject>
       <GameObject name="PortalPlane" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)">
@@ -623,7 +623,7 @@
       </GameObject>
       <GameObject name="PortalFrame" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="PortalFrame">
         <Components>
-          <ColorMaterial materialName="portalFrameMat" mainColor="(0.3608, 0.3608, 0.3608)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" />
+          <TextureMaterial materialName="portalFrameMat" diffuseTextureName="whiteTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.3608, 0.3608, 0.3608)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
         </Components>
       </GameObject>
       <GameObject name="PortalPlane" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)">
@@ -644,7 +644,7 @@
       </GameObject>
       <GameObject name="PortalFrame" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="PortalFrame">
         <Components>
-          <ColorMaterial materialName="portalFrameMat" mainColor="(0.3608, 0.3608, 0.3608)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" />
+          <TextureMaterial materialName="portalFrameMat" diffuseTextureName="whiteTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.3608, 0.3608, 0.3608)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
         </Components>
       </GameObject>
       <GameObject name="PortalPlane" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)">
@@ -665,7 +665,7 @@
       </GameObject>
       <GameObject name="PortalFrame" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="PortalFrame">
         <Components>
-          <ColorMaterial materialName="portalFrameMat" mainColor="(0.3608, 0.3608, 0.3608)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" />
+          <TextureMaterial materialName="portalFrameMat" diffuseTextureName="whiteTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.3608, 0.3608, 0.3608)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
         </Components>
       </GameObject>
       <GameObject name="PortalPlane" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)">
