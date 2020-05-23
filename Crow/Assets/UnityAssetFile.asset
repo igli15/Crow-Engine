@@ -1,7 +1,6 @@
 #texture Albedo: Albedo.png;
-#texture GraveyardPropAlbedo: GraveyardPropAlbedo.png;
 #texture GreyRockTexture: GreyRockTexture.png;
-#texture GroundBaseColor: GroundBaseColor.png;
+#texture GroundBaseColor: GroundBaseColor.jpg;
 #texture MausoleumDiffuse: MausoleumDiffuse.png;
 #texture MausoleumSpecular: MausoleumSpecular.png;
 #texture Sand: Sand.png;
@@ -20,6 +19,8 @@
 #model basicUnit: basicUnit.obj;
 #model bush1: bush1.fbx;
 #model bush2: bush2.fbx;
+#model cart: cart.obj;
+#model coffin: coffin.fbx;
 #model crookedTree: crookedTree.obj;
 #model curvedBridge: curvedBridge.fbx;
 #model statue: statue.obj;

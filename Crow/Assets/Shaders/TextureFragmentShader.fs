@@ -5,7 +5,6 @@ in vec2 TexCoords;
 in vec3 FragPos;
 in vec3 Normal;
 
-uniform vec3 mainColor;
 uniform vec3 viewPos;
 
 struct DirLight
