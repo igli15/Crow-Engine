@@ -4,7 +4,6 @@ out vec4 FragColor;
 in vec2 TexCoords;
 in vec3 FragPos;
 in vec3 Normal;
-
 uniform vec3 viewPos;
 
 struct DirLight
@@ -73,9 +72,17 @@ vec3 CalcDirLight(DirLight light, vec3 normal, vec3 viewDir);
 vec3 CalcPointLight(PointLight light, vec3 normal, vec3 fragPos, vec3 viewDir);
 vec3 CalcSpotLight(SpotLight light, vec3 normal, vec3 fragPos, vec3 viewDir);
 
+const float fogDensity = 0.03;
+const float fogGradient = 2.5;
+
 void main()
 {
     vec3 norm = normalize(Normal);
+
+    float distance = length(viewPos - FragPos);
+    float visibility = exp(-pow(distance * fogDensity,fogGradient));
+    clamp(visibility,0.0,1.0);
+
     vec3 viewDir = normalize(viewPos - FragPos);
 
     vec3 result;
@@ -97,6 +104,7 @@ void main()
 
     vec3 emission = material.emissionScale * texture(material.emissionTexture,TexCoords).rgb;
     FragColor = vec4(result + emission, 1.0);
+    FragColor = mix(vec4(0.5,0.5,0.5,1),FragColor,visibility);
 }
 
 vec3 CalcDirLight(DirLight light, vec3 normal, vec3 viewDir)
