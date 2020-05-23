@@ -1,4 +1,6 @@
+#texture Albedo: Albedo.png;
 #texture GraveyardPropAlbedo: GraveyardPropAlbedo.png;
+#texture GreyRockTexture: GreyRockTexture.png;
 #texture GroundBaseColor: GroundBaseColor.png;
 #texture MausoleumDiffuse: MausoleumDiffuse.png;
 #texture MausoleumSpecular: MausoleumSpecular.png;
@@ -6,6 +8,7 @@
 #texture brickTex: brickTex.png;
 #texture enemyBasicUnitDiffuse: enemyBasicUnitDiffuse.png;
 #texture playerBasicUnitDiffuse: playerBasicUnitDiffuse.png;
+#model BigRock: BigRock.obj;
 #model FenceGate: FenceGate.obj;
 #model HeadStone: HeadStone.obj;
 #model HeadStone2: HeadStone2.obj;
@@ -15,6 +18,10 @@
 #model PortalPlane: PortalPlane.obj;
 #model SphereGemLarge: SphereGemLarge.fbx;
 #model basicUnit: basicUnit.obj;
+#model bush1: bush1.fbx;
+#model bush2: bush2.fbx;
 #model crookedTree: crookedTree.obj;
 #model curvedBridge: curvedBridge.fbx;
 #model statue: statue.obj;
+#model tree1: tree1.fbx;
+#model tree2: tree2.fbx;

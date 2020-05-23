@@ -31,12 +31,12 @@ void FlockSeparationSystem::Update(float dt)
 
     auto entities = world->EntitiesWith<FlockComponent, UnitComponent, SteeringComponent>();
 
-    /*
+
     if(Input::GetKeyDown(GLFW_KEY_SPACE))
     {
         APP_LOG(entities.size());
     }
-     */
+
 
     for (int i = 0; i < entities.size(); ++i) {
         SteeringComponent &steeringComponent = world->GetComponent<SteeringComponent>(entities[i]);
