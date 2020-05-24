@@ -2683,6 +2683,7 @@ CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Font.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/SpriteMaterial.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Mesh.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
@@ -2695,6 +2696,8 @@ CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/TextRenderingSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/TransformHierarchySystem.h
  /usr/local/include/GL/glew.h
+ /usr/local/include/freetype2/freetype/config/ftheader.h
+ /usr/local/include/freetype2/ft2build.h
  /usr/local/include/glm/common.hpp
  /usr/local/include/glm/detail/_fixes.hpp
  /usr/local/include/glm/detail/_noise.hpp
@@ -10546,6 +10549,225 @@ CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o
  /usr/local/include/spdlog/spdlog.h
  /usr/local/include/spdlog/tweakme.h
  /usr/local/include/spdlog/version.h
+CMakeFiles/Crow.dir/Game/Systems/DebugTextSystem.cpp.o
+ /Users/igli/Desktop/Crow Engine/Crow/Crow.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Text.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/CustomTypeID.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityManager.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemManager.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Font.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Components/BridgeComponent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Components/DebugTextComponent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitComponent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/DebugTextSystem.cpp
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/DebugTextSystem.h
+ /usr/local/include/GL/glew.h
+ /usr/local/include/GLFW/glfw3.h
+ /usr/local/include/freetype2/freetype/config/ftheader.h
+ /usr/local/include/freetype2/ft2build.h
+ /usr/local/include/glm/common.hpp
+ /usr/local/include/glm/detail/_fixes.hpp
+ /usr/local/include/glm/detail/_swizzle.hpp
+ /usr/local/include/glm/detail/_swizzle_func.hpp
+ /usr/local/include/glm/detail/_vectorize.hpp
+ /usr/local/include/glm/detail/compute_common.hpp
+ /usr/local/include/glm/detail/compute_vector_relational.hpp
+ /usr/local/include/glm/detail/func_common.inl
+ /usr/local/include/glm/detail/func_common_simd.inl
+ /usr/local/include/glm/detail/func_exponential.inl
+ /usr/local/include/glm/detail/func_exponential_simd.inl
+ /usr/local/include/glm/detail/func_geometric.inl
+ /usr/local/include/glm/detail/func_geometric_simd.inl
+ /usr/local/include/glm/detail/func_integer.inl
+ /usr/local/include/glm/detail/func_integer_simd.inl
+ /usr/local/include/glm/detail/func_matrix.inl
+ /usr/local/include/glm/detail/func_matrix_simd.inl
+ /usr/local/include/glm/detail/func_packing.inl
+ /usr/local/include/glm/detail/func_packing_simd.inl
+ /usr/local/include/glm/detail/func_trigonometric.inl
+ /usr/local/include/glm/detail/func_trigonometric_simd.inl
+ /usr/local/include/glm/detail/func_vector_relational.inl
+ /usr/local/include/glm/detail/func_vector_relational_simd.inl
+ /usr/local/include/glm/detail/qualifier.hpp
+ /usr/local/include/glm/detail/setup.hpp
+ /usr/local/include/glm/detail/type_half.hpp
+ /usr/local/include/glm/detail/type_half.inl
+ /usr/local/include/glm/detail/type_mat2x2.hpp
+ /usr/local/include/glm/detail/type_mat2x2.inl
+ /usr/local/include/glm/detail/type_mat2x3.hpp
+ /usr/local/include/glm/detail/type_mat2x3.inl
+ /usr/local/include/glm/detail/type_mat2x4.hpp
+ /usr/local/include/glm/detail/type_mat2x4.inl
+ /usr/local/include/glm/detail/type_mat3x2.hpp
+ /usr/local/include/glm/detail/type_mat3x2.inl
+ /usr/local/include/glm/detail/type_mat3x3.hpp
+ /usr/local/include/glm/detail/type_mat3x3.inl
+ /usr/local/include/glm/detail/type_mat3x4.hpp
+ /usr/local/include/glm/detail/type_mat3x4.inl
+ /usr/local/include/glm/detail/type_mat4x2.hpp
+ /usr/local/include/glm/detail/type_mat4x2.inl
+ /usr/local/include/glm/detail/type_mat4x3.hpp
+ /usr/local/include/glm/detail/type_mat4x3.inl
+ /usr/local/include/glm/detail/type_mat4x4.hpp
+ /usr/local/include/glm/detail/type_mat4x4.inl
+ /usr/local/include/glm/detail/type_mat4x4_simd.inl
+ /usr/local/include/glm/detail/type_vec1.hpp
+ /usr/local/include/glm/detail/type_vec1.inl
+ /usr/local/include/glm/detail/type_vec2.hpp
+ /usr/local/include/glm/detail/type_vec2.inl
+ /usr/local/include/glm/detail/type_vec3.hpp
+ /usr/local/include/glm/detail/type_vec3.inl
+ /usr/local/include/glm/detail/type_vec4.hpp
+ /usr/local/include/glm/detail/type_vec4.inl
+ /usr/local/include/glm/detail/type_vec4_simd.inl
+ /usr/local/include/glm/exponential.hpp
+ /usr/local/include/glm/ext/matrix_double2x2.hpp
+ /usr/local/include/glm/ext/matrix_double2x2_precision.hpp
+ /usr/local/include/glm/ext/matrix_double2x3.hpp
+ /usr/local/include/glm/ext/matrix_double2x3_precision.hpp
+ /usr/local/include/glm/ext/matrix_double2x4.hpp
+ /usr/local/include/glm/ext/matrix_double2x4_precision.hpp
+ /usr/local/include/glm/ext/matrix_double3x2.hpp
+ /usr/local/include/glm/ext/matrix_double3x2_precision.hpp
+ /usr/local/include/glm/ext/matrix_double3x3.hpp
+ /usr/local/include/glm/ext/matrix_double3x3_precision.hpp
+ /usr/local/include/glm/ext/matrix_double3x4.hpp
+ /usr/local/include/glm/ext/matrix_double3x4_precision.hpp
+ /usr/local/include/glm/ext/matrix_double4x2.hpp
+ /usr/local/include/glm/ext/matrix_double4x2_precision.hpp
+ /usr/local/include/glm/ext/matrix_double4x3.hpp
+ /usr/local/include/glm/ext/matrix_double4x3_precision.hpp
+ /usr/local/include/glm/ext/matrix_double4x4.hpp
+ /usr/local/include/glm/ext/matrix_double4x4_precision.hpp
+ /usr/local/include/glm/ext/matrix_float2x2.hpp
+ /usr/local/include/glm/ext/matrix_float2x2_precision.hpp
+ /usr/local/include/glm/ext/matrix_float2x3.hpp
+ /usr/local/include/glm/ext/matrix_float2x3_precision.hpp
+ /usr/local/include/glm/ext/matrix_float2x4.hpp
+ /usr/local/include/glm/ext/matrix_float2x4_precision.hpp
+ /usr/local/include/glm/ext/matrix_float3x2.hpp
+ /usr/local/include/glm/ext/matrix_float3x2_precision.hpp
+ /usr/local/include/glm/ext/matrix_float3x3.hpp
+ /usr/local/include/glm/ext/matrix_float3x3_precision.hpp
+ /usr/local/include/glm/ext/matrix_float3x4.hpp
+ /usr/local/include/glm/ext/matrix_float3x4_precision.hpp
+ /usr/local/include/glm/ext/matrix_float4x2.hpp
+ /usr/local/include/glm/ext/matrix_float4x2_precision.hpp
+ /usr/local/include/glm/ext/matrix_float4x3.hpp
+ /usr/local/include/glm/ext/matrix_float4x3_precision.hpp
+ /usr/local/include/glm/ext/matrix_float4x4.hpp
+ /usr/local/include/glm/ext/matrix_float4x4_precision.hpp
+ /usr/local/include/glm/ext/vector_bool2.hpp
+ /usr/local/include/glm/ext/vector_bool2_precision.hpp
+ /usr/local/include/glm/ext/vector_bool3.hpp
+ /usr/local/include/glm/ext/vector_bool3_precision.hpp
+ /usr/local/include/glm/ext/vector_bool4.hpp
+ /usr/local/include/glm/ext/vector_bool4_precision.hpp
+ /usr/local/include/glm/ext/vector_double2.hpp
+ /usr/local/include/glm/ext/vector_double2_precision.hpp
+ /usr/local/include/glm/ext/vector_double3.hpp
+ /usr/local/include/glm/ext/vector_double3_precision.hpp
+ /usr/local/include/glm/ext/vector_double4.hpp
+ /usr/local/include/glm/ext/vector_double4_precision.hpp
+ /usr/local/include/glm/ext/vector_float2.hpp
+ /usr/local/include/glm/ext/vector_float2_precision.hpp
+ /usr/local/include/glm/ext/vector_float3.hpp
+ /usr/local/include/glm/ext/vector_float3_precision.hpp
+ /usr/local/include/glm/ext/vector_float4.hpp
+ /usr/local/include/glm/ext/vector_float4_precision.hpp
+ /usr/local/include/glm/ext/vector_int2.hpp
+ /usr/local/include/glm/ext/vector_int2_precision.hpp
+ /usr/local/include/glm/ext/vector_int3.hpp
+ /usr/local/include/glm/ext/vector_int3_precision.hpp
+ /usr/local/include/glm/ext/vector_int4.hpp
+ /usr/local/include/glm/ext/vector_int4_precision.hpp
+ /usr/local/include/glm/ext/vector_uint2.hpp
+ /usr/local/include/glm/ext/vector_uint2_precision.hpp
+ /usr/local/include/glm/ext/vector_uint3.hpp
+ /usr/local/include/glm/ext/vector_uint3_precision.hpp
+ /usr/local/include/glm/ext/vector_uint4.hpp
+ /usr/local/include/glm/ext/vector_uint4_precision.hpp
+ /usr/local/include/glm/fwd.hpp
+ /usr/local/include/glm/geometric.hpp
+ /usr/local/include/glm/glm.hpp
+ /usr/local/include/glm/integer.hpp
+ /usr/local/include/glm/mat2x2.hpp
+ /usr/local/include/glm/mat2x3.hpp
+ /usr/local/include/glm/mat2x4.hpp
+ /usr/local/include/glm/mat3x2.hpp
+ /usr/local/include/glm/mat3x3.hpp
+ /usr/local/include/glm/mat3x4.hpp
+ /usr/local/include/glm/mat4x2.hpp
+ /usr/local/include/glm/mat4x3.hpp
+ /usr/local/include/glm/mat4x4.hpp
+ /usr/local/include/glm/matrix.hpp
+ /usr/local/include/glm/packing.hpp
+ /usr/local/include/glm/simd/common.h
+ /usr/local/include/glm/simd/exponential.h
+ /usr/local/include/glm/simd/geometric.h
+ /usr/local/include/glm/simd/integer.h
+ /usr/local/include/glm/simd/matrix.h
+ /usr/local/include/glm/simd/platform.h
+ /usr/local/include/glm/trigonometric.hpp
+ /usr/local/include/glm/vec2.hpp
+ /usr/local/include/glm/vec3.hpp
+ /usr/local/include/glm/vec4.hpp
+ /usr/local/include/glm/vector_relational.hpp
+ /usr/local/include/spdlog/common-inl.h
+ /usr/local/include/spdlog/common.h
+ /usr/local/include/spdlog/details/backtracer-inl.h
+ /usr/local/include/spdlog/details/backtracer.h
+ /usr/local/include/spdlog/details/circular_q.h
+ /usr/local/include/spdlog/details/console_globals.h
+ /usr/local/include/spdlog/details/fmt_helper.h
+ /usr/local/include/spdlog/details/log_msg-inl.h
+ /usr/local/include/spdlog/details/log_msg.h
+ /usr/local/include/spdlog/details/log_msg_buffer-inl.h
+ /usr/local/include/spdlog/details/log_msg_buffer.h
+ /usr/local/include/spdlog/details/null_mutex.h
+ /usr/local/include/spdlog/details/os-inl.h
+ /usr/local/include/spdlog/details/os.h
+ /usr/local/include/spdlog/details/pattern_formatter-inl.h
+ /usr/local/include/spdlog/details/pattern_formatter.h
+ /usr/local/include/spdlog/details/periodic_worker-inl.h
+ /usr/local/include/spdlog/details/periodic_worker.h
+ /usr/local/include/spdlog/details/registry-inl.h
+ /usr/local/include/spdlog/details/registry.h
+ /usr/local/include/spdlog/details/synchronous_factory.h
+ /usr/local/include/spdlog/fmt/bundled/core.h
+ /usr/local/include/spdlog/fmt/bundled/format-inl.h
+ /usr/local/include/spdlog/fmt/bundled/format.h
+ /usr/local/include/spdlog/fmt/fmt.h
+ /usr/local/include/spdlog/formatter.h
+ /usr/local/include/spdlog/logger-inl.h
+ /usr/local/include/spdlog/logger.h
+ /usr/local/include/spdlog/sinks/ansicolor_sink-inl.h
+ /usr/local/include/spdlog/sinks/ansicolor_sink.h
+ /usr/local/include/spdlog/sinks/sink-inl.h
+ /usr/local/include/spdlog/sinks/sink.h
+ /usr/local/include/spdlog/sinks/stdout_color_sinks-inl.h
+ /usr/local/include/spdlog/sinks/stdout_color_sinks.h
+ /usr/local/include/spdlog/sinks/wincolor_sink-inl.h
+ /usr/local/include/spdlog/sinks/wincolor_sink.h
+ /usr/local/include/spdlog/spdlog-inl.h
+ /usr/local/include/spdlog/spdlog.h
+ /usr/local/include/spdlog/tweakme.h
+ /usr/local/include/spdlog/version.h
 CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Crow.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
@@ -15189,8 +15411,10 @@ CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Sprite.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Utils/Random.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/BridgeComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/DamageDealer.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Components/DebugTextComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/Enemy.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/EnemyUnitCollider.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/Player.h
@@ -15199,12 +15423,14 @@ CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/RotateComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/SelectedBridgeIndicator.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/SteeringComponent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitAnimationComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitIconComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Events/UnitCollisionEvents.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Events/UnitPathCompleteEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/AutoDestructSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/BridgeSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/CannonSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/DebugTextSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/EnemySpawnSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/FloatingSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/FlockSeparationSystem.h
@@ -15809,6 +16035,7 @@ CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/BridgeComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/CannonComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/DamageDealer.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Components/DebugTextComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/Enemy.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/EnemyUnitCollider.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/FloatingComponent.h

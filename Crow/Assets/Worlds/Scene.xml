@@ -697,7 +697,7 @@
     </GameObject>
     <GameObject name="water" position="(7.0375, -0.5507, -1.4424)" rotation="(0.0000, 0.4238, 0.0000, 0.9058)" scale="(3.0000, 0.1000, 24.2742)" mesh="plane">
       <Components>
-        <WaterMaterial materialName="waterMaterial" waveNoiseTexName="perlinNoise" depthGradientTexName="gradientMap" foamGradientTexName="foamGradient" causticsTexName="causticsTexture" mainColor="(0.1216, 0.2000, 0.2784)" foamColor="(0.1765, 0.1765, 0.1765)" noiseScale="0.8600" distanceScale="0.0700" causticsSpeed="0.0300" noiseSpeed="0.0500" />
+        <WaterMaterial materialName="waterMaterial" waveNoiseTexName="perlinNoise" depthGradientTexName="gradientMap" foamGradientTexName="foamGradient" causticsTexName="causticsTexture" mainColor="(0.1333, 0.2275, 0.3176)" foamColor="(0.2471, 0.2471, 0.2471)" noiseScale="0.8600" distanceScale="0.0700" causticsSpeed="0.0300" noiseSpeed="0.0500" />
       </Components>
     </GameObject>
   </GameObject>

@@ -25,10 +25,17 @@ float dither(float color) {
     return (distance < d) ? closestColor : secondClosestColor;
 }
 
+const float exposure = 0.7;
 
 void main()
 {
-    vec4 outColor = texture(screenTexture, TexCoords);
-    FragColor = outColor;
+
+    vec3 outColor = texture(screenTexture, TexCoords).rgb;
+
+    // reinhard tone mapping
+    vec3 mapped = vec3(1.0) - exp(-outColor * exposure);
+
+    //FragColor = vec4(mapped, 1.0);
+    FragColor = vec4(outColor, 1.0);
     //FragColor = vec4(vec3(outColor) * dither(outColor.r), 1);
 }
