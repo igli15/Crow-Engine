@@ -1284,6 +1284,33 @@ Game/Systems/CannonSystem.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.s
 .PHONY : Game/Systems/CannonSystem.cpp.s
 
+Game/Systems/DebugTextSystem.o: Game/Systems/DebugTextSystem.cpp.o
+
+.PHONY : Game/Systems/DebugTextSystem.o
+
+# target to build an object file
+Game/Systems/DebugTextSystem.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/DebugTextSystem.cpp.o
+.PHONY : Game/Systems/DebugTextSystem.cpp.o
+
+Game/Systems/DebugTextSystem.i: Game/Systems/DebugTextSystem.cpp.i
+
+.PHONY : Game/Systems/DebugTextSystem.i
+
+# target to preprocess a source file
+Game/Systems/DebugTextSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/DebugTextSystem.cpp.i
+.PHONY : Game/Systems/DebugTextSystem.cpp.i
+
+Game/Systems/DebugTextSystem.s: Game/Systems/DebugTextSystem.cpp.s
+
+.PHONY : Game/Systems/DebugTextSystem.s
+
+# target to generate assembly for a file
+Game/Systems/DebugTextSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/DebugTextSystem.cpp.s
+.PHONY : Game/Systems/DebugTextSystem.cpp.s
+
 Game/Systems/EnemySpawnSystem.o: Game/Systems/EnemySpawnSystem.cpp.o
 
 .PHONY : Game/Systems/EnemySpawnSystem.o
@@ -2259,6 +2286,9 @@ help:
 	@echo "... Game/Systems/CannonSystem.o"
 	@echo "... Game/Systems/CannonSystem.i"
 	@echo "... Game/Systems/CannonSystem.s"
+	@echo "... Game/Systems/DebugTextSystem.o"
+	@echo "... Game/Systems/DebugTextSystem.i"
+	@echo "... Game/Systems/DebugTextSystem.s"
 	@echo "... Game/Systems/EnemySpawnSystem.o"
 	@echo "... Game/Systems/EnemySpawnSystem.i"
 	@echo "... Game/Systems/EnemySpawnSystem.s"

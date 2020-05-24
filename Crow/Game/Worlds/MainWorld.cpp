@@ -43,6 +43,8 @@
 #include "../Systems/GameStateSystem.h"
 #include "../Systems/AutoDestructSystem.h"
 #include "../Components/UnitAnimationComponent.h"
+#include "../Components/DebugTextComponent.h"
+#include "../Systems/DebugTextSystem.h"
 
 void MainWorld::Build()
 {
@@ -73,6 +75,7 @@ void MainWorld::Build()
     RegisterSystem<GameUISystem>();
     RegisterSystem<GameStateSystem>();
     RegisterSystem<AutoDestructSystem>();
+    RegisterSystem<DebugTextSystem>();
 
     EntityHandle playerEntity = CreateEntity();
     Player* playerComponent = playerEntity.AddComponent<Player>(Player{});
@@ -438,10 +441,18 @@ void MainWorld::CreateUIEntities(ResourceManager* resourceManager)
 
 void MainWorld::CreateDebugText()
 {
-    ResourceManager* resourceManager = Game::Instance()->resourceManager;
+    Game* game = Game::Instance();
+    ResourceManager* resourceManager = game->resourceManager;
+
+
     EntityHandle textEntity = CreateEntity();
     Transform* textTransform = textEntity.AddComponent(Transform{});
-    textTransform->SetLocalPosition(glm::vec3(1500,800,0));
-    textEntity.AddComponent(Text{"FPS",glm::vec3(1),0.5f,resourceManager->GetFont("roboto")});
+    textTransform->SetLocalPosition(glm::vec3(game->screenData.screenWidth -= 200,game->screenData.screenHeight - 50,0));
+    Text* fpsText =  textEntity.AddComponent(Text{"FPS:",glm::vec3(1),0.5f,resourceManager->GetFont("roboto")});
 
+    EntityHandle textEntity2 = CreateEntity();
+    Transform* textTransform2 = textEntity2.AddComponent(Transform{});
+    textTransform2->SetLocalPosition(glm::vec3(game->screenData.screenWidth -= 50,game->screenData.screenHeight - 80,0));
+    Text* unitCountText = textEntity2.AddComponent(Text{"Unit Count:",glm::vec3(1),0.5f,resourceManager->GetFont("roboto")});
+    textEntity2.AddComponent(DebugTextComponent{fpsText,unitCountText});
 }

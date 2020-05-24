@@ -22,6 +22,11 @@ struct ScreenData
     int screenHeight = 1080;
 };
 
+struct TimeData
+{
+    int FPS = 0.0f;
+    double msPerFrame = 0.0f;
+};
 ///The game class handles all the internal setup for a "game" program to run.
 ///It's the parent class of "MyGame" which is what the user should use and create.
 class Game {
@@ -62,6 +67,7 @@ public:
     static Game* Instance();
 
     ScreenData screenData{1920,1080};
+    TimeData timeData{};
 
     FT_Library* ftLibrary;
     ResourceManager* resourceManager;

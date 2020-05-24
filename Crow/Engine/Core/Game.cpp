@@ -114,10 +114,13 @@ void Game::Run()
 
         double currentTime = glfwGetTime();
         nbFrames++;
-        if ( currentTime - lastTime >= 1.0 ){ // If last printf() was more than 1 sec ago
+        if ( currentTime - lastTime >= 0.1 ){ // If last printf() was more than 0.1 sec ago
+
+            timeData.FPS = nbFrames;
+            timeData.msPerFrame =  1000.0/double(nbFrames);
             // printf and reset timer
-            printf("%f ms/frame\n", 1000.0/double(nbFrames));
-            printf("%f FPS\n", double(nbFrames));
+            //printf("%f ms/frame\n", 1000.0/double(nbFrames));
+           // printf("%f FPS\n", double(nbFrames));
             nbFrames = 0;
             lastTime += 1.0;
         }
