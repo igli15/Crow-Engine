@@ -15189,6 +15189,7 @@ CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Sprite.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Utils/Random.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/BridgeComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/DamageDealer.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/Enemy.h
@@ -15199,6 +15200,7 @@ CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/RotateComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/SelectedBridgeIndicator.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/SteeringComponent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitAnimationComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitIconComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Events/UnitCollisionEvents.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Events/UnitPathCompleteEvent.h

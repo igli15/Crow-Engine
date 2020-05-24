@@ -8,7 +8,7 @@
 
 struct UnitAnimationComponent
 {
-    float maxSpeed = 5;
+    float maxSpeed = 5.0f;
     float height = 0.01f;
 };
 

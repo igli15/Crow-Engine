@@ -4,6 +4,7 @@
 
 #include "MainWorld.h"
 #include "../../Engine/Editor/UnitySceneParser.h"
+#include "../../Engine/Utils/Random.h"
 #include "../../Engine/Components/Light.h"
 #include "../Components/BridgeComponent.h"
 #include "../Systems/BridgeSystem.h"
@@ -41,6 +42,7 @@
 #include "../Components/Enemy.h"
 #include "../Systems/GameStateSystem.h"
 #include "../Systems/AutoDestructSystem.h"
+#include "../Components/UnitAnimationComponent.h"
 
 void MainWorld::Build()
 {
@@ -181,6 +183,33 @@ void MainWorld::ParseGameComponents(rapidxml::xml_node<> *node, EntityHandle ent
                 }
             }
         }
+    }
+    else if(strcmp(node->name(), "AnimationComponent") == 0)
+    {
+        UnitAnimationComponent* animationComponent = entityHandle.AddComponent(UnitAnimationComponent{});
+
+        float minSpeed = 0.0f;
+        float maxSpeed = 0.0f;
+
+        for (rapidxml::xml_attribute<> *a = node->first_attribute();
+             a != nullptr;
+             a = a->next_attribute()) {
+            std::string attributeName = a->name();
+            if (attributeName == "minSpeed")
+            {
+                minSpeed =  strtof(a->value(), 0);
+            }
+            else if(attributeName == "maxSpeed")
+            {
+                maxSpeed = strtof(a->value(), 0);
+            }
+            else if(attributeName == "height")
+            {
+                animationComponent->height = strtof(a->value(), 0);
+            }
+        }
+
+        animationComponent->maxSpeed = Random::RandomRange(minSpeed,maxSpeed);
     }
     else if(strcmp(node->name(), "RotateComponent") == 0)
     {

@@ -92,20 +92,180 @@
   </GameObject>
   <GameObject name="Enviorement" position="(-4.3475, 0.8307, 4.6424)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)">
     <Components />
-    <GameObject name="Cart" position="(-1.4225, -0.2707, -0.4024)" rotation="(-0.1859, -0.4225, 0.0135, 0.8870)" scale="(0.5286, 0.5286, 0.5286)" mesh="cart">
+    <GameObject name="RunePillar2" position="(10.1165, -0.6997, -6.3984)" rotation="(0.0000, 0.4072, 0.0000, 0.9134)" scale="(0.6000, 0.6000, 0.6000)" mesh="RunePillar2">
       <Components>
-        <TextureMaterial materialName="CartMat" diffuseTextureName="Albedo" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.4784, 0.4784, 0.4784)" specularColor="(0.4588, 0.4588, 0.4588)" shininess="126.0000" ambientIntensity="0.0200" emissionScale="1.0000" />
+        <TextureMaterial materialName="runeMat2" diffuseTextureName="dungeonTexDiffuse" specularTextureName="blackTexture" emissionTextureName="PillarEmmisive2" mainColor="(0.3333, 0.3333, 0.3333)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
       </Components>
+      <GameObject name="roundRune" position="(1.4100, 2.1300, -0.0100)" rotation="(0.7193, 0.0691, 0.0335, 0.6905)" scale="(0.7279, 0.7279, 0.7279)" mesh="RoundRune1">
+        <Components>
+          <TextureMaterial materialName="runeMat2" diffuseTextureName="dungeonTexDiffuse" specularTextureName="blackTexture" emissionTextureName="PillarEmmisive2" mainColor="(0.3333, 0.3333, 0.3333)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+          <AnimationComponent minSpeed="0.5000" maxSpeed="1.2000" height="0.0050" />
+        </Components>
+      </GameObject>
+      <GameObject name="roundRune" position="(-1.4978, 2.0050, 0.0239)" rotation="(0.5286, -0.4466, -0.5131, 0.5077)" scale="(0.7281, 0.7281, 0.7281)" mesh="RoundRune2">
+        <Components>
+          <TextureMaterial materialName="runeMat2" diffuseTextureName="dungeonTexDiffuse" specularTextureName="blackTexture" emissionTextureName="PillarEmmisive2" mainColor="(0.3333, 0.3333, 0.3333)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+          <AnimationComponent minSpeed="0.5000" maxSpeed="1.2000" height="0.0050" />
+        </Components>
+      </GameObject>
     </GameObject>
-    <GameObject name="Coffin_1_2 (1)" position="(-6.1225, -0.7340, -9.3862)" rotation="(0.0000, 0.1265, 0.0000, 0.9920)" scale="(0.6382, 0.6382, 0.6382)" mesh="coffin">
+    <GameObject name="RunePillar1" position="(2.7075, -0.7007, 2.3576)" rotation="(0.0000, 0.3867, 0.0000, 0.9222)" scale="(0.6000, 0.6000, 0.6000)" mesh="RunePillar1">
       <Components>
-        <TextureMaterial materialName="coffinMat" diffuseTextureName="Albedo" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.2745, 0.2745, 0.2745)" specularColor="(0.4588, 0.4588, 0.4588)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+        <TextureMaterial materialName="runeMat" diffuseTextureName="dungeonTexDiffuse" specularTextureName="blackTexture" emissionTextureName="PillarEmmisive1" mainColor="(0.3333, 0.3333, 0.3333)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
       </Components>
+      <GameObject name="roundRune" position="(-1.4970, 2.0667, 0.0224)" rotation="(0.5063, -0.4781, -0.5076, 0.5074)" scale="(0.6223, 0.6223, 0.6223)" mesh="RoundRune1">
+        <Components>
+          <TextureMaterial materialName="runeMat" diffuseTextureName="dungeonTexDiffuse" specularTextureName="blackTexture" emissionTextureName="PillarEmmisive1" mainColor="(0.3333, 0.3333, 0.3333)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+          <AnimationComponent minSpeed="0.5000" maxSpeed="1.2000" height="0.0050" />
+        </Components>
+      </GameObject>
+      <GameObject name="roundRune" position="(1.6490, 2.4240, 0.0160)" rotation="(0.7196, 0.0695, 0.0448, 0.6895)" scale="(0.6635, 0.6635, 0.6635)" mesh="RoundRune2">
+        <Components>
+          <TextureMaterial materialName="runeMat" diffuseTextureName="dungeonTexDiffuse" specularTextureName="blackTexture" emissionTextureName="PillarEmmisive1" mainColor="(0.3333, 0.3333, 0.3333)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+          <AnimationComponent minSpeed="0.5000" maxSpeed="1.2000" height="0.0050" />
+        </Components>
+      </GameObject>
     </GameObject>
-    <GameObject name="Coffin_1_2" position="(-6.9968, -0.7340, -9.3862)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(0.6382, 0.6382, 0.6382)" mesh="coffin">
-      <Components>
-        <TextureMaterial materialName="coffinMat" diffuseTextureName="Albedo" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.2745, 0.2745, 0.2745)" specularColor="(0.4588, 0.4588, 0.4588)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
-      </Components>
+    <GameObject name="Fillers" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)">
+      <Components />
+      <GameObject name="Coffin_1_2" position="(-6.9968, -0.7340, -9.3862)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(0.6382, 0.6382, 0.6382)" mesh="coffin">
+        <Components>
+          <TextureMaterial materialName="coffinMat" diffuseTextureName="Albedo" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.2745, 0.2745, 0.2745)" specularColor="(0.4588, 0.4588, 0.4588)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+        </Components>
+      </GameObject>
+      <GameObject name="Coffin_1_2 (1)" position="(-6.1225, -0.7340, -9.3862)" rotation="(0.0000, 0.1265, 0.0000, 0.9920)" scale="(0.6382, 0.6382, 0.6382)" mesh="coffin">
+        <Components>
+          <TextureMaterial materialName="coffinMat" diffuseTextureName="Albedo" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.2745, 0.2745, 0.2745)" specularColor="(0.4588, 0.4588, 0.4588)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+        </Components>
+      </GameObject>
+      <GameObject name="Box_2_1_group" position="(0.6600, -0.3107, -0.8900)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(0.4257, 0.4257, 0.4257)" mesh="box2">
+        <Components>
+          <TextureMaterial materialName="FillersMat" diffuseTextureName="Albedo" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.3843, 0.3843, 0.3843)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+        </Components>
+      </GameObject>
+      <GameObject name="Box_1_1_group" position="(-0.6600, -0.3607, 0.5318)" rotation="(0.0000, 0.1583, 0.0000, 0.9874)" scale="(0.4240, 0.4240, 0.4240)" mesh="box1">
+        <Components>
+          <TextureMaterial materialName="FillersMat" diffuseTextureName="Albedo" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.3843, 0.3843, 0.3843)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+        </Components>
+      </GameObject>
+      <GameObject name="Barrel_1_5_group" position="(5.9696, -0.7317, -8.7480)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(0.5760, 0.5760, 0.5760)" mesh="barrel">
+        <Components>
+          <TextureMaterial materialName="FillersMat" diffuseTextureName="Albedo" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.3843, 0.3843, 0.3843)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+        </Components>
+      </GameObject>
+      <GameObject name="Barrel_1_5_group" position="(7.5900, -0.7317, -10.2600)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(0.5760, 0.5760, 0.5760)" mesh="barrel">
+        <Components>
+          <TextureMaterial materialName="FillersMat" diffuseTextureName="Albedo" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.3843, 0.3843, 0.3843)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+        </Components>
+      </GameObject>
+      <GameObject name="campFire" position="(6.5944, -0.7340, -9.9563)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(0.3931, 0.3931, 0.3931)" mesh="campFire">
+        <Components>
+          <TextureMaterial materialName="CampFireMat" diffuseTextureName="campFireTex" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.3843, 0.3843, 0.3843)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+        </Components>
+      </GameObject>
+      <GameObject name="chest" position="(6.8575, -0.5191, -10.7024)" rotation="(0.0000, 0.0570, 0.0000, 0.9984)" scale="(0.4711, 0.4711, 0.4711)" mesh="chest">
+        <Components>
+          <TextureMaterial materialName="FillersMat" diffuseTextureName="Albedo" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.3843, 0.3843, 0.3843)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+        </Components>
+      </GameObject>
+      <GameObject name="chest" position="(5.7575, -0.5191, -9.6224)" rotation="(0.0000, 0.6537, 0.0000, 0.7567)" scale="(0.4711, 0.4711, 0.4711)" mesh="chest">
+        <Components>
+          <TextureMaterial materialName="FillersMat" diffuseTextureName="Albedo" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.3843, 0.3843, 0.3843)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+        </Components>
+      </GameObject>
+      <GameObject name="crate" position="(-0.6800, -0.5985, -2.1300)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(0.6066, 0.6066, 0.6066)" mesh="crate">
+        <Components>
+          <TextureMaterial materialName="FillersMat" diffuseTextureName="Albedo" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.3843, 0.3843, 0.3843)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+        </Components>
+      </GameObject>
+      <GameObject name="statue" position="(-2.8319, -0.6417, -12.8566)" rotation="(0.0000, 0.4693, 0.0000, 0.8830)" scale="(0.3300, 0.3300, 0.3300)" mesh="statue">
+        <Components>
+          <TextureMaterial materialName="statueMat" diffuseTextureName="whiteTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.5333, 0.5333, 0.5333)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+        </Components>
+      </GameObject>
+      <GameObject name="Cart" position="(-1.4225, -0.2707, -0.4024)" rotation="(-0.1859, -0.4225, 0.0135, 0.8870)" scale="(0.5286, 0.5286, 0.5286)" mesh="cart">
+        <Components>
+          <TextureMaterial materialName="CartMat" diffuseTextureName="Albedo" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.4784, 0.4784, 0.4784)" specularColor="(0.4588, 0.4588, 0.4588)" shininess="126.0000" ambientIntensity="0.0200" emissionScale="1.0000" />
+        </Components>
+      </GameObject>
+      <GameObject name="Mausoleum" position="(-4.1925, -0.8307, -11.0224)" rotation="(0.0000, 0.4266, 0.0000, 0.9044)" scale="(0.6641, 0.5506, 0.5753)" mesh="Mausoleum">
+        <Components>
+          <TextureMaterial materialName="mausoleumMat" diffuseTextureName="MausoleumDiffuse" specularTextureName="MausoleumSpecular" emissionTextureName="blackTexture" mainColor="(0.2039, 0.2039, 0.2039)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.6000" emissionScale="1.0000" />
+        </Components>
+      </GameObject>
+      <GameObject name="Bones" position="(11.2275, 11.2793, 3.3576)" rotation="(-0.3991, 0.3525, 0.2008, 0.8223)" scale="(1.0000, 1.0000, 1.0000)">
+        <Components />
+        <GameObject name="bones" position="(-6.5509, -1.7918, -13.1900)" rotation="(0.3991, -0.3525, -0.2008, 0.8223)" scale="(0.3148, 0.3148, 0.3148)" mesh="bones">
+          <Components>
+            <TextureMaterial materialName="boneMat" diffuseTextureName="dungeonTexDiffuse" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+          </Components>
+        </GameObject>
+        <GameObject name="bones" position="(-4.5823, -1.4317, -13.6033)" rotation="(0.3983, -0.3529, -0.2034, 0.8219)" scale="(0.3277, 0.3277, 0.3277)" mesh="bones">
+          <Components>
+            <TextureMaterial materialName="boneMat" diffuseTextureName="dungeonTexDiffuse" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+          </Components>
+        </GameObject>
+        <GameObject name="bones" position="(5.0595, -1.7930, -13.9038)" rotation="(0.3991, -0.3525, -0.2008, 0.8223)" scale="(0.3273, 0.3273, 0.3273)" mesh="bones">
+          <Components>
+            <TextureMaterial materialName="boneMat" diffuseTextureName="dungeonTexDiffuse" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+          </Components>
+        </GameObject>
+        <GameObject name="bones (1)" position="(-6.4054, -2.2336, -14.0672)" rotation="(0.3991, -0.3525, -0.2008, 0.8223)" scale="(0.3148, 0.3148, 0.3148)" mesh="bones">
+          <Components>
+            <TextureMaterial materialName="boneMat" diffuseTextureName="dungeonTexDiffuse" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+          </Components>
+        </GameObject>
+        <GameObject name="bones (2)" position="(-6.1853, -2.1251, -12.9614)" rotation="(0.3991, -0.3525, -0.2008, 0.8223)" scale="(0.3148, 0.3148, 0.3148)" mesh="bones">
+          <Components>
+            <TextureMaterial materialName="boneMat" diffuseTextureName="dungeonTexDiffuse" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+          </Components>
+        </GameObject>
+        <GameObject name="bones (3)" position="(-6.1171, -1.7758, -13.2286)" rotation="(0.4461, 0.0043, -0.0252, 0.8946)" scale="(0.3148, 0.3148, 0.3148)" mesh="bones">
+          <Components>
+            <TextureMaterial materialName="boneMat" diffuseTextureName="dungeonTexDiffuse" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+          </Components>
+        </GameObject>
+        <GameObject name="bones (4)" position="(-5.6311, -2.0908, -13.1469)" rotation="(0.2348, -0.3077, -0.2644, 0.8833)" scale="(0.3148, 0.3148, 0.3148)" mesh="bones">
+          <Components>
+            <TextureMaterial materialName="boneMat" diffuseTextureName="dungeonTexDiffuse" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+          </Components>
+        </GameObject>
+        <GameObject name="bones (5)" position="(-5.1283, -2.1242, -13.0269)" rotation="(0.4681, 0.1615, 0.1083, 0.8620)" scale="(0.3148, 0.3148, 0.3148)" mesh="bones">
+          <Components>
+            <TextureMaterial materialName="boneMat" diffuseTextureName="dungeonTexDiffuse" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+          </Components>
+        </GameObject>
+        <GameObject name="bones (6)" position="(-4.9146, -1.7990, -13.3929)" rotation="(0.3946, -0.2236, 0.1432, 0.8796)" scale="(0.3277, 0.3277, 0.3277)" mesh="bones">
+          <Components>
+            <TextureMaterial materialName="boneMat" diffuseTextureName="dungeonTexDiffuse" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+          </Components>
+        </GameObject>
+        <GameObject name="bones (7)" position="(5.4955, -2.1906, -13.6312)" rotation="(0.4465, 0.0202, -0.0143, 0.8944)" scale="(0.3273, 0.3273, 0.3273)" mesh="bones">
+          <Components>
+            <TextureMaterial materialName="boneMat" diffuseTextureName="dungeonTexDiffuse" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+          </Components>
+        </GameObject>
+        <GameObject name="bones (8)" position="(6.6104, -1.8955, -14.0542)" rotation="(0.6541, -0.3997, -0.0695, 0.6384)" scale="(0.3387, 0.3387, 0.3387)" mesh="bones">
+          <Components>
+            <TextureMaterial materialName="boneMat" diffuseTextureName="dungeonTexDiffuse" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+          </Components>
+        </GameObject>
+        <GameObject name="bones (9)" position="(5.2663, -2.0137, -13.8127)" rotation="(0.5052, -0.1684, -0.5063, 0.6783)" scale="(0.3273, 0.3273, 0.3273)" mesh="bones">
+          <Components>
+            <TextureMaterial materialName="boneMat" diffuseTextureName="dungeonTexDiffuse" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+          </Components>
+        </GameObject>
+        <GameObject name="bones" position="(6.9316, -1.4014, -14.3958)" rotation="(0.3991, -0.3525, -0.2008, 0.8223)" scale="(0.3672, 0.3672, 0.3672)" mesh="bones">
+          <Components>
+            <TextureMaterial materialName="boneMat" diffuseTextureName="dungeonTexDiffuse" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+          </Components>
+        </GameObject>
+        <GameObject name="bones" position="(6.1529, -2.0954, -13.7571)" rotation="(0.3991, -0.3525, -0.2008, 0.8223)" scale="(0.3387, 0.3387, 0.3387)" mesh="bones">
+          <Components>
+            <TextureMaterial materialName="boneMat" diffuseTextureName="dungeonTexDiffuse" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
+          </Components>
+        </GameObject>
+      </GameObject>
     </GameObject>
     <GameObject name="BigRocks" position="(-3.9759, -5.5734, 5.4939)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)">
       <Components />
@@ -174,11 +334,6 @@
           <TextureMaterial materialName="BigRockMat" diffuseTextureName="GreyRockTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(0.4235, 0.4235, 0.4235)" specularColor="(0.7098, 0.7098, 0.7098)" shininess="128.0000" ambientIntensity="0.1000" emissionScale="1.0000" />
         </Components>
       </GameObject>
-    </GameObject>
-    <GameObject name="Mausoleum" position="(-4.1925, -0.8307, -11.0224)" rotation="(0.0000, 0.4266, 0.0000, 0.9044)" scale="(0.6641, 0.5506, 0.5753)" mesh="Mausoleum">
-      <Components>
-        <TextureMaterial materialName="mausoleumMat" diffuseTextureName="MausoleumDiffuse" specularTextureName="MausoleumSpecular" emissionTextureName="blackTexture" mainColor="(0.2039, 0.2039, 0.2039)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.6000" emissionScale="1.0000" />
-      </Components>
     </GameObject>
     <GameObject name="Ground" position="(12.2959, -0.8925, 0.1505)" rotation="(0.0000, -0.3420, 0.0000, 0.9397)" scale="(74.2691, 0.3170, 116.4823)" mesh="cube">
       <Components>

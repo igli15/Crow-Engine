@@ -26,7 +26,7 @@ using ComponentType = std::uint32_t;
 using ComponentIDGenerator = CustomTypeID<ComponentTypeDummy>;
 
 ///max number of entities allowed in a world
-const int MAX_ENTITIES = 100000;
+const int MAX_ENTITIES = 10000;
 
 ///max number of component allowed to be attached to a single entity
 const int MAX_COMPONENTS = 32;
