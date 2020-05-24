@@ -2,9 +2,9 @@
 // Created by Igli milaqi on 03/04/2020.
 //
 
+#include "../Core/Game.h"
 #include "Font.h"
 #include "../Debug/Debug.h"
-#include "../Core/Game.h"
 #include "../../Crow.h"
 
 Font::Font(const std::string &path, unsigned int pFontSize) : m_fontSize(pFontSize)

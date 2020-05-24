@@ -166,13 +166,14 @@ void MainWorld::Build()
     bridgeIndicatorEntity.AddComponent(SelectedBridgeIndicator{});
 
     CreateUIEntities(resourceManager);
+    CreateDebugText();
 
     const glm::vec2 textPos = {1000,20};
     EntityHandle textEntity = CreateEntity();
     Transform* textTransform = textEntity.AddComponent(Transform{});
     textTransform->SetLocalPosition(glm::vec3(textPos.x,textPos.y,0));
 
-    playerComponent->textComponent = textEntity.AddComponent(Text{"money:",glm::vec3(1),0.6f,Game::Instance()->resourceManager->GetFont("gameFont")});
+    playerComponent->textComponent = textEntity.AddComponent(Text{"money:",glm::vec3(1),0.6f,resourceManager->GetFont("gameFont")});
 }
 
 void MainWorld::ParseGameComponents(rapidxml::xml_node<> *node, EntityHandle entityHandle)
@@ -432,5 +433,15 @@ void MainWorld::CreateUIEntities(ResourceManager* resourceManager)
     moneyIconTransform->SetLocalPosition(glm::vec3(screenWidth/2 - 20,screenHeight - 50,0));
     moneyIconTransform->Scale(glm::vec3(56,38,1));
     moneyIconEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("moneyIconSprite"),resourceManager->GetMaterial<SpriteMaterial>("moneyIconMat")});
+
+}
+
+void MainWorld::CreateDebugText()
+{
+    ResourceManager* resourceManager = Game::Instance()->resourceManager;
+    EntityHandle textEntity = CreateEntity();
+    Transform* textTransform = textEntity.AddComponent(Transform{});
+    textTransform->SetLocalPosition(glm::vec3(1500,800,0));
+    textEntity.AddComponent(Text{"FPS",glm::vec3(1),0.5f,resourceManager->GetFont("roboto")});
 
 }

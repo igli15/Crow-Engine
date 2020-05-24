@@ -84,7 +84,7 @@ void TextRenderingSystem::BufferAllTextComponents()
                     (GLuint)face->glyph->advance.x
             };
 
-            m_charactersMap.insert(std::pair<GLchar, Character>(c, character));
+            font->m_charactersMap.insert(std::pair<GLchar, Character>(c, character));
             glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
 
         }
@@ -114,7 +114,7 @@ void TextRenderingSystem::RenderText(Text* text,float x,float y)
     std::string::const_iterator c;
     for (c = text->textString.begin(); c != text->textString.end(); c++)
     {
-        Character ch = m_charactersMap[*c];
+        Character ch = text->font->m_charactersMap[*c];
 
         GLfloat xpos = x + ch.bearing.x * text->scale;
         GLfloat ypos = y - (ch.size.y - ch.bearing.y) * text->scale;
