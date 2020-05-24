@@ -29,7 +29,7 @@ void CannonSystem::Update(float dt)
 {
     System::Update(dt);
 
-    auto cannonEntities = world->EntitiesWith<Transform,CannonComponent>();
+    auto cannonEntities = world->EntitiesWith<Transform,CannonComponent,UnitComponent>();
 
     for (int i = 0; i < cannonEntities.size(); ++i)
     {

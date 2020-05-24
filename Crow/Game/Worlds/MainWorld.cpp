@@ -140,6 +140,22 @@ void MainWorld::Build()
     enemyGolemArchetype->moneyDrop = 25.0f;
     enemyGolemArchetype->damageThroughPortal = 20.0f;
 
+    UnitGroupArchetype* enemyMeleeArchetype = CreateUnitGroupArchetype<UnitGroupArchetype>("enemyMelee");
+    enemyMeleeArchetype->maxSpeed = 0.7f;
+    enemyMeleeArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("blackUnlitMat");
+    enemyMeleeArchetype->unitModel = resourceManager->GetModel("basicUnit");
+    enemyMeleeArchetype->scaleFactor = 0.1;
+    enemyMeleeArchetype->maxHorizontalDistance = 0.2f;
+    enemyMeleeArchetype->maxVerticalDistance = 0.2f;
+    enemyMeleeArchetype->rows = 4;
+    enemyMeleeArchetype->columns = 4;
+    enemyMeleeArchetype->unitType = DamageDealer::MeleeGroup;
+    enemyMeleeArchetype->strongAgainstType = DamageDealer::NONE;
+    enemyMeleeArchetype->unitPrice = 35.0f;
+    enemyMeleeArchetype->moneyDrop = 25.0f;
+    enemyMeleeArchetype->isPlayerUnit = false;
+    enemyMeleeArchetype->damageThroughPortal = 2.0f;
+
     playerComponent->selectedUnitArchetype = playerMeleeArchetype;
 
     EntityHandle bridgeIndicatorEntity = CreateEntity();
