@@ -18,6 +18,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Feather/ComponentHandle.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentSparseSet.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Feather/EntityHandle.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityManager.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Feather/EntityManager.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Feather/System.cpp.o"

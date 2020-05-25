@@ -501,6 +501,33 @@ Engine/Feather/ComponentManager.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.s
 .PHONY : Engine/Feather/ComponentManager.cpp.s
 
+Engine/Feather/ComponentSparseSet.o: Engine/Feather/ComponentSparseSet.cpp.o
+
+.PHONY : Engine/Feather/ComponentSparseSet.o
+
+# target to build an object file
+Engine/Feather/ComponentSparseSet.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o
+.PHONY : Engine/Feather/ComponentSparseSet.cpp.o
+
+Engine/Feather/ComponentSparseSet.i: Engine/Feather/ComponentSparseSet.cpp.i
+
+.PHONY : Engine/Feather/ComponentSparseSet.i
+
+# target to preprocess a source file
+Engine/Feather/ComponentSparseSet.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.i
+.PHONY : Engine/Feather/ComponentSparseSet.cpp.i
+
+Engine/Feather/ComponentSparseSet.s: Engine/Feather/ComponentSparseSet.cpp.s
+
+.PHONY : Engine/Feather/ComponentSparseSet.s
+
+# target to generate assembly for a file
+Engine/Feather/ComponentSparseSet.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.s
+.PHONY : Engine/Feather/ComponentSparseSet.cpp.s
+
 Engine/Feather/EntityHandle.o: Engine/Feather/EntityHandle.cpp.o
 
 .PHONY : Engine/Feather/EntityHandle.o
@@ -2199,6 +2226,9 @@ help:
 	@echo "... Engine/Feather/ComponentManager.o"
 	@echo "... Engine/Feather/ComponentManager.i"
 	@echo "... Engine/Feather/ComponentManager.s"
+	@echo "... Engine/Feather/ComponentSparseSet.o"
+	@echo "... Engine/Feather/ComponentSparseSet.i"
+	@echo "... Engine/Feather/ComponentSparseSet.s"
 	@echo "... Engine/Feather/EntityHandle.o"
 	@echo "... Engine/Feather/EntityHandle.i"
 	@echo "... Engine/Feather/EntityHandle.s"

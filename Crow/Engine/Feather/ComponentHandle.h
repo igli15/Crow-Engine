@@ -7,7 +7,7 @@
 
 
 #include "Types.h"
-#include "ComponentArray.h"
+#include "ComponentSparseSet.h"
 
 ///Wrapper around component type.
 ///Contains info about the parent entity, a ptr to the actual component data and a ptr to the array of the component.
@@ -17,11 +17,11 @@ struct ComponentHandle {
 
     Entity owner;
     T* component;
-    ComponentArray<T>* manager;
+    ComponentSparseSet<T>* manager;
 
     ComponentHandle(){};
 
-    ComponentHandle(Entity pE,ComponentArray<T>* pManager)
+    ComponentHandle(Entity pE,ComponentSparseSet<T>* pManager)
     {
         owner = pE;
         manager = pManager;

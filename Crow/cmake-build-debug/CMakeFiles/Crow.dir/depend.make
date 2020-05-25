@@ -316,7 +316,6 @@ CMakeFiles/Crow.dir/Engine/Components/Rigidbody.cpp.o: /usr/local/include/glm/ve
 CMakeFiles/Crow.dir/Engine/Components/Rigidbody.cpp.o: /usr/local/include/glm/vec4.hpp
 CMakeFiles/Crow.dir/Engine/Components/Rigidbody.cpp.o: /usr/local/include/glm/vector_relational.hpp
 
-CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o: ../Engine/Components/Transform.cpp
 CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o: ../Engine/Components/Transform.h
 CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o: ../Engine/Debug/Debug.h
@@ -325,11 +324,12 @@ CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o: ../Engine/EventQueue/Even
 CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
 CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
-CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o: ../Engine/Feather/Types.h
@@ -589,11 +589,12 @@ CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: ../Engine/EventQueue/MemberFunctionH
 CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
 CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: ../Engine/Events/MaterialAddedEvent.h
-CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: ../Engine/Feather/Types.h
@@ -1031,7 +1032,6 @@ CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/spdlog.h
 CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.o: ../Engine/Components/MeshInfo.h
 CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.o: ../Engine/Core/Renderer.cpp
 CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.o: ../Engine/Core/Renderer.h
@@ -1042,11 +1042,12 @@ CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.o: ../Engine/EventQueue/MemberFunct
 CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
 CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.o: ../Engine/Events/MaterialAddedEvent.h
-CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Engine/Core/Renderer.cpp.o: ../Engine/Feather/Types.h
@@ -1443,11 +1444,12 @@ CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o: ../Engine/EventQueue/Memb
 CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
 CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o: ../Engine/Events/MaterialAddedEvent.h
-CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o: ../Engine/Feather/Types.h
@@ -1898,12 +1900,13 @@ CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: ../Engine/EventQueue/M
 CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
 CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: ../Engine/Events/MaterialAddedEvent.h
-CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: ../Engine/Feather/EntityHandle.h
 CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: ../Engine/Feather/Types.h
@@ -2353,6 +2356,7 @@ CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: ../Engine/Events/Compon
 CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: ../Engine/Feather/ComponentArray.cpp
 CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: ../Engine/Feather/CustomTypeID.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: ../Engine/Feather/Types.h
 CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/common-inl.h
 CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/common.h
@@ -2395,16 +2399,16 @@ CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdl
 CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Engine/Feather/ComponentHandle.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Engine/Feather/ComponentHandle.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/Engine/Feather/ComponentHandle.cpp.o: ../Engine/EventQueue/Event.h
 CMakeFiles/Crow.dir/Engine/Feather/ComponentHandle.cpp.o: ../Engine/EventQueue/EventQueue.h
 CMakeFiles/Crow.dir/Engine/Feather/ComponentHandle.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
 CMakeFiles/Crow.dir/Engine/Feather/ComponentHandle.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentHandle.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Engine/Feather/ComponentHandle.cpp.o: ../Engine/Feather/ComponentHandle.cpp
 CMakeFiles/Crow.dir/Engine/Feather/ComponentHandle.cpp.o: ../Engine/Feather/ComponentHandle.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentHandle.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Engine/Feather/ComponentHandle.cpp.o: ../Engine/Feather/CustomTypeID.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentHandle.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Engine/Feather/ComponentHandle.cpp.o: ../Engine/Feather/Types.h
 CMakeFiles/Crow.dir/Engine/Feather/ComponentHandle.cpp.o: /usr/local/include/spdlog/common-inl.h
 CMakeFiles/Crow.dir/Engine/Feather/ComponentHandle.cpp.o: /usr/local/include/spdlog/common.h
@@ -2447,17 +2451,17 @@ CMakeFiles/Crow.dir/Engine/Feather/ComponentHandle.cpp.o: /usr/local/include/spd
 CMakeFiles/Crow.dir/Engine/Feather/ComponentHandle.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Engine/Feather/ComponentHandle.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.o: ../Engine/EventQueue/Event.h
 CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.o: ../Engine/EventQueue/EventQueue.h
 CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
 CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.o: ../Engine/Feather/ComponentManager.cpp
 CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.o: ../Engine/Feather/CustomTypeID.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.o: ../Engine/Feather/Types.h
 CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.o: /usr/local/include/spdlog/common-inl.h
 CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.o: /usr/local/include/spdlog/common.h
@@ -2500,20 +2504,71 @@ CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.o: /usr/local/include/sp
 CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Engine/Feather/EntityHandle.cpp.o: ../Crow.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: ../Engine/Debug/Debug.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: ../Engine/EventQueue/Event.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: ../Engine/EventQueue/EventQueue.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: ../Engine/Feather/ComponentSparseSet.cpp
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: ../Engine/Feather/ComponentSparseSet.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: ../Engine/Feather/CustomTypeID.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: ../Engine/Feather/IComponentSet.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: ../Engine/Feather/Types.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/common-inl.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/common.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/details/backtracer-inl.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/details/backtracer.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/details/circular_q.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/details/console_globals.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/details/fmt_helper.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/details/log_msg-inl.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/details/log_msg.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/details/log_msg_buffer-inl.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/details/log_msg_buffer.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/details/null_mutex.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/details/os-inl.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/details/os.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/details/pattern_formatter-inl.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/details/pattern_formatter.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/details/periodic_worker-inl.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/details/periodic_worker.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/details/registry-inl.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/details/registry.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/details/synchronous_factory.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/fmt/bundled/core.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/fmt/bundled/format-inl.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/fmt/bundled/format.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/fmt/fmt.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/formatter.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/logger-inl.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/logger.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/sinks/ansicolor_sink-inl.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/sinks/ansicolor_sink.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/sinks/sink-inl.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/sinks/sink.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/sinks/stdout_color_sinks-inl.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/sinks/stdout_color_sinks.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/sinks/wincolor_sink-inl.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/sinks/wincolor_sink.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/spdlog-inl.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/spdlog.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/tweakme.h
+CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o: /usr/local/include/spdlog/version.h
+
 CMakeFiles/Crow.dir/Engine/Feather/EntityHandle.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/Engine/Feather/EntityHandle.cpp.o: ../Engine/EventQueue/Event.h
 CMakeFiles/Crow.dir/Engine/Feather/EntityHandle.cpp.o: ../Engine/EventQueue/EventQueue.h
 CMakeFiles/Crow.dir/Engine/Feather/EntityHandle.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
 CMakeFiles/Crow.dir/Engine/Feather/EntityHandle.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Engine/Feather/EntityHandle.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
-CMakeFiles/Crow.dir/Engine/Feather/EntityHandle.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Engine/Feather/EntityHandle.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Engine/Feather/EntityHandle.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Engine/Feather/EntityHandle.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Engine/Feather/EntityHandle.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Engine/Feather/EntityHandle.cpp.o: ../Engine/Feather/EntityHandle.cpp
 CMakeFiles/Crow.dir/Engine/Feather/EntityHandle.cpp.o: ../Engine/Feather/EntityHandle.h
 CMakeFiles/Crow.dir/Engine/Feather/EntityHandle.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Engine/Feather/EntityHandle.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Engine/Feather/EntityHandle.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Engine/Feather/EntityHandle.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Engine/Feather/EntityHandle.cpp.o: ../Engine/Feather/Types.h
@@ -2657,7 +2712,6 @@ CMakeFiles/Crow.dir/Engine/Feather/SystemManager.cpp.o: /usr/local/include/spdlo
 CMakeFiles/Crow.dir/Engine/Feather/SystemManager.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Engine/Feather/SystemManager.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Components/Camera.h
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Components/MeshInfo.h
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Components/SpriteInfo.h
@@ -2670,12 +2724,13 @@ CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Events/ComponentAddedE
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Events/EntityEvents.h
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Events/MaterialAddedEvent.h
-CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Feather/EntityHandle.h
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Feather/Types.h
@@ -3069,7 +3124,6 @@ CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: /usr/local/include/spdlog/spdlog
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o: ../Engine/Components/MeshInfo.h
 CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o: ../Engine/Core/Game.h
 CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o: ../Engine/Core/Input.h
@@ -3082,11 +3136,12 @@ CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o: ../Engine/EventQueu
 CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
 CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o: ../Engine/Events/MaterialAddedEvent.h
-CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o: ../Engine/Feather/Types.h
@@ -3483,11 +3538,12 @@ CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o: ../Engine/EventQueue/EventQueue
 CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
 CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
-CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o: ../Engine/Feather/Types.h
@@ -3540,7 +3596,6 @@ CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o: /usr/local/include/spdlog/spdlo
 CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o: ../Engine/Components/Light.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o: ../Engine/Components/Transform.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o: ../Engine/Debug/Debug.h
@@ -3549,11 +3604,12 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o: ../Engine/Ev
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
-CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o: ../Engine/Feather/Types.h
@@ -3937,18 +3993,18 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o: /usr/local/i
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: ../Engine/EventQueue/Event.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: ../Engine/EventQueue/EventQueue.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
-CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: ../Engine/Feather/Types.h
@@ -4332,7 +4388,6 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: /usr/local/
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o: ../Engine/Components/MeshInfo.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o: ../Engine/Components/SpriteInfo.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o: ../Engine/Core/Game.h
@@ -4346,11 +4401,12 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o: ../Engine/E
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o: ../Engine/Events/MaterialAddedEvent.h
-CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o: ../Engine/Feather/Types.h
@@ -4740,7 +4796,6 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o: /usr/local/
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: ../Engine/Components/Light.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: ../Engine/Components/MeshInfo.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: ../Engine/Components/Transform.h
@@ -4755,11 +4810,12 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: ../Engine/
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: ../Engine/Events/MaterialAddedEvent.h
-CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: ../Engine/Feather/Types.h
@@ -5148,7 +5204,6 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: /usr/local
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Engine/Rendering/Materials/TranslucentColorMat.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TranslucentColorMat.cpp.o: ../Engine/Components/Light.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TranslucentColorMat.cpp.o: ../Engine/Components/Transform.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TranslucentColorMat.cpp.o: ../Engine/Debug/Debug.h
@@ -5157,11 +5212,12 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/TranslucentColorMat.cpp.o: ../Eng
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TranslucentColorMat.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TranslucentColorMat.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TranslucentColorMat.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
-CMakeFiles/Crow.dir/Engine/Rendering/Materials/TranslucentColorMat.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TranslucentColorMat.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TranslucentColorMat.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Engine/Rendering/Materials/TranslucentColorMat.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TranslucentColorMat.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TranslucentColorMat.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Engine/Rendering/Materials/TranslucentColorMat.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TranslucentColorMat.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TranslucentColorMat.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TranslucentColorMat.cpp.o: ../Engine/Feather/Types.h
@@ -5545,18 +5601,18 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/TranslucentColorMat.cpp.o: /usr/l
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TranslucentColorMat.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TranslucentColorMat.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.o: ../Engine/EventQueue/Event.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.o: ../Engine/EventQueue/EventQueue.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
-CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.o: ../Engine/Feather/Types.h
@@ -5939,18 +5995,18 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.o: /usr/local/i
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: ../Engine/EventQueue/Event.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: ../Engine/EventQueue/EventQueue.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
-CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: ../Engine/Feather/Types.h
@@ -8220,7 +8276,6 @@ CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/spd
 CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o: ../Engine/Components/SphereCollider.h
 CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o: ../Engine/Components/Transform.h
 CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o: ../Engine/Debug/Debug.h
@@ -8232,12 +8287,13 @@ CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o: ../Engine/Eve
 CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o: ../Engine/Events/CollisionExitEvent.h
 CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
-CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o: ../Engine/Feather/EntityHandle.h
 CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o: ../Engine/Feather/Types.h
@@ -8475,7 +8531,6 @@ CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o: /usr/local/in
 CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o: ../Engine/Components/Camera.h
 CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o: ../Engine/Components/MeshInfo.h
 CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o: ../Engine/Components/Transform.h
@@ -8490,11 +8545,12 @@ CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o: ../Engine/Events/Co
 CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
 CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o: ../Engine/Events/EntityEvents.h
 CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o: ../Engine/Events/MaterialAddedEvent.h
-CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o: ../Engine/Feather/Types.h
@@ -8882,7 +8938,6 @@ CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o: /usr/local/include/
 CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: ../Engine/Components/Camera.h
 CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: ../Engine/Components/SpriteInfo.h
 CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: ../Engine/Components/Transform.h
@@ -8892,11 +8947,12 @@ CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: ../Engine/EventQu
 CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
 CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
-CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: ../Engine/Feather/Types.h
@@ -9281,7 +9337,6 @@ CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: /usr/local/includ
 CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o: ../Engine/Components/MeshInfo.h
 CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o: ../Engine/Components/Text.h
 CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o: ../Engine/Components/Transform.h
@@ -9296,11 +9351,12 @@ CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o: ../Engine/EventQue
 CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
 CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o: ../Engine/Events/MaterialAddedEvent.h
-CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o: ../Engine/Feather/Types.h
@@ -9690,7 +9746,6 @@ CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o: /usr/local/include
 CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.o: ../Engine/Components/Transform.h
 CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.o: ../Engine/EventQueue/Event.h
@@ -9699,11 +9754,12 @@ CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.o: ../Engine/Eve
 CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
 CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.o: ../Engine/Events/EntityEvents.h
-CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Engine/Systems/TransformHierarchySystem.cpp.o: ../Engine/Feather/Types.h
@@ -9985,18 +10041,18 @@ CMakeFiles/Crow.dir/Engine/Utils/Random.cpp.o: /usr/local/include/spdlog/spdlog.
 CMakeFiles/Crow.dir/Engine/Utils/Random.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Engine/Utils/Random.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Game/Systems/AutoDestructSystem.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Game/Systems/AutoDestructSystem.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/Game/Systems/AutoDestructSystem.cpp.o: ../Engine/EventQueue/Event.h
 CMakeFiles/Crow.dir/Game/Systems/AutoDestructSystem.cpp.o: ../Engine/EventQueue/EventQueue.h
 CMakeFiles/Crow.dir/Game/Systems/AutoDestructSystem.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
 CMakeFiles/Crow.dir/Game/Systems/AutoDestructSystem.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Game/Systems/AutoDestructSystem.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
-CMakeFiles/Crow.dir/Game/Systems/AutoDestructSystem.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Game/Systems/AutoDestructSystem.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Game/Systems/AutoDestructSystem.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Game/Systems/AutoDestructSystem.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Game/Systems/AutoDestructSystem.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Game/Systems/AutoDestructSystem.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Game/Systems/AutoDestructSystem.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Game/Systems/AutoDestructSystem.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Game/Systems/AutoDestructSystem.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Game/Systems/AutoDestructSystem.cpp.o: ../Engine/Feather/Types.h
@@ -10045,7 +10101,6 @@ CMakeFiles/Crow.dir/Game/Systems/AutoDestructSystem.cpp.o: /usr/local/include/sp
 CMakeFiles/Crow.dir/Game/Systems/AutoDestructSystem.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Game/Systems/AutoDestructSystem.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: ../Engine/Core/Input.h
 CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: ../Engine/EventQueue/Event.h
@@ -10053,11 +10108,12 @@ CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: ../Engine/EventQueue/EventQ
 CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
 CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
-CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: ../Engine/Feather/Types.h
@@ -10132,7 +10188,6 @@ CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: /usr/local/include/spdlog/s
 CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Game/Systems/BridgeSystem.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o: ../Engine/Components/MeshInfo.h
 CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o: ../Engine/Components/Rigidbody.h
 CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o: ../Engine/Components/Transform.h
@@ -10147,12 +10202,13 @@ CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o: ../Engine/EventQueue/Member
 CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
 CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o: ../Engine/Events/MaterialAddedEvent.h
-CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o: ../Engine/Feather/EntityHandle.h
 CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o: ../Engine/Feather/Types.h
@@ -10549,7 +10605,6 @@ CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o: /usr/local/include/spdlog/s
 CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Game/Systems/DebugTextSystem.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Game/Systems/DebugTextSystem.cpp.o: ../Engine/Components/Text.h
 CMakeFiles/Crow.dir/Game/Systems/DebugTextSystem.cpp.o: ../Engine/Core/Game.h
 CMakeFiles/Crow.dir/Game/Systems/DebugTextSystem.cpp.o: ../Engine/Core/Input.h
@@ -10559,11 +10614,12 @@ CMakeFiles/Crow.dir/Game/Systems/DebugTextSystem.cpp.o: ../Engine/EventQueue/Eve
 CMakeFiles/Crow.dir/Game/Systems/DebugTextSystem.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
 CMakeFiles/Crow.dir/Game/Systems/DebugTextSystem.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Game/Systems/DebugTextSystem.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
-CMakeFiles/Crow.dir/Game/Systems/DebugTextSystem.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Game/Systems/DebugTextSystem.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Game/Systems/DebugTextSystem.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Game/Systems/DebugTextSystem.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Game/Systems/DebugTextSystem.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Game/Systems/DebugTextSystem.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Game/Systems/DebugTextSystem.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Game/Systems/DebugTextSystem.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Game/Systems/DebugTextSystem.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Game/Systems/DebugTextSystem.cpp.o: ../Engine/Feather/Types.h
@@ -10768,19 +10824,19 @@ CMakeFiles/Crow.dir/Game/Systems/DebugTextSystem.cpp.o: /usr/local/include/spdlo
 CMakeFiles/Crow.dir/Game/Systems/DebugTextSystem.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Game/Systems/DebugTextSystem.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.o: ../Engine/EventQueue/Event.h
 CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.o: ../Engine/EventQueue/EventQueue.h
 CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
 CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
-CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.o: ../Engine/Feather/EntityHandle.h
 CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.o: ../Engine/Feather/Types.h
@@ -10853,7 +10909,6 @@ CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.o: /usr/local/include/spdl
 CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Game/Systems/EnemySpawnSystem.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Game/Systems/FloatingSystem.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Game/Systems/FloatingSystem.cpp.o: ../Engine/Components/Transform.h
 CMakeFiles/Crow.dir/Game/Systems/FloatingSystem.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/Game/Systems/FloatingSystem.cpp.o: ../Engine/EventQueue/Event.h
@@ -10861,11 +10916,12 @@ CMakeFiles/Crow.dir/Game/Systems/FloatingSystem.cpp.o: ../Engine/EventQueue/Even
 CMakeFiles/Crow.dir/Game/Systems/FloatingSystem.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
 CMakeFiles/Crow.dir/Game/Systems/FloatingSystem.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Game/Systems/FloatingSystem.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
-CMakeFiles/Crow.dir/Game/Systems/FloatingSystem.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Game/Systems/FloatingSystem.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Game/Systems/FloatingSystem.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Game/Systems/FloatingSystem.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Game/Systems/FloatingSystem.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Game/Systems/FloatingSystem.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Game/Systems/FloatingSystem.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Game/Systems/FloatingSystem.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Game/Systems/FloatingSystem.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Game/Systems/FloatingSystem.cpp.o: ../Engine/Feather/Types.h
@@ -11105,7 +11161,6 @@ CMakeFiles/Crow.dir/Game/Systems/FloatingSystem.cpp.o: /usr/local/include/spdlog
 CMakeFiles/Crow.dir/Game/Systems/FloatingSystem.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Game/Systems/FloatingSystem.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.o: ../Engine/Components/Transform.h
 CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.o: ../Engine/Core/Input.h
 CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.o: ../Engine/Debug/Debug.h
@@ -11114,11 +11169,12 @@ CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.o: ../Engine/EventQue
 CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
 CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
-CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.o: ../Engine/Feather/Types.h
@@ -11363,18 +11419,18 @@ CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.o: /usr/local/include
 CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Game/Systems/GameStateSystem.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Game/Systems/GameStateSystem.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/Game/Systems/GameStateSystem.cpp.o: ../Engine/EventQueue/Event.h
 CMakeFiles/Crow.dir/Game/Systems/GameStateSystem.cpp.o: ../Engine/EventQueue/EventQueue.h
 CMakeFiles/Crow.dir/Game/Systems/GameStateSystem.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
 CMakeFiles/Crow.dir/Game/Systems/GameStateSystem.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Game/Systems/GameStateSystem.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
-CMakeFiles/Crow.dir/Game/Systems/GameStateSystem.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Game/Systems/GameStateSystem.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Game/Systems/GameStateSystem.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Game/Systems/GameStateSystem.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Game/Systems/GameStateSystem.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Game/Systems/GameStateSystem.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Game/Systems/GameStateSystem.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Game/Systems/GameStateSystem.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Game/Systems/GameStateSystem.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Game/Systems/GameStateSystem.cpp.o: ../Engine/Feather/Types.h
@@ -11447,7 +11503,6 @@ CMakeFiles/Crow.dir/Game/Systems/GameStateSystem.cpp.o: /usr/local/include/spdlo
 CMakeFiles/Crow.dir/Game/Systems/GameStateSystem.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Game/Systems/GameStateSystem.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Game/Systems/GameUISystem.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Game/Systems/GameUISystem.cpp.o: ../Engine/Components/SpriteInfo.h
 CMakeFiles/Crow.dir/Game/Systems/GameUISystem.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/Game/Systems/GameUISystem.cpp.o: ../Engine/EventQueue/Event.h
@@ -11455,11 +11510,12 @@ CMakeFiles/Crow.dir/Game/Systems/GameUISystem.cpp.o: ../Engine/EventQueue/EventQ
 CMakeFiles/Crow.dir/Game/Systems/GameUISystem.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
 CMakeFiles/Crow.dir/Game/Systems/GameUISystem.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Game/Systems/GameUISystem.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
-CMakeFiles/Crow.dir/Game/Systems/GameUISystem.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Game/Systems/GameUISystem.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Game/Systems/GameUISystem.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Game/Systems/GameUISystem.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Game/Systems/GameUISystem.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Game/Systems/GameUISystem.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Game/Systems/GameUISystem.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Game/Systems/GameUISystem.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Game/Systems/GameUISystem.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Game/Systems/GameUISystem.cpp.o: ../Engine/Feather/Types.h
@@ -11846,19 +11902,19 @@ CMakeFiles/Crow.dir/Game/Systems/GameUISystem.cpp.o: /usr/local/include/spdlog/s
 CMakeFiles/Crow.dir/Game/Systems/GameUISystem.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Game/Systems/GameUISystem.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.o: ../Engine/EventQueue/Event.h
 CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.o: ../Engine/EventQueue/EventQueue.h
 CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
 CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
-CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.o: ../Engine/Feather/EntityHandle.h
 CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.o: ../Engine/Feather/Types.h
@@ -11929,7 +11985,6 @@ CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.o: /usr/local/include/spdlog/spd
 CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Engine/Components/Text.h
 CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Engine/EventQueue/Event.h
@@ -11938,11 +11993,12 @@ CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Engine/EventQueue/M
 CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
 CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Engine/Events/OnUnitDefeatedEvent.h
-CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: ../Engine/Feather/Types.h
@@ -12145,7 +12201,6 @@ CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: /usr/local/include/spd
 CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.o: ../Engine/Components/Rigidbody.h
 CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.o: ../Engine/Components/Transform.h
 CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.o: ../Engine/Debug/Debug.h
@@ -12154,11 +12209,12 @@ CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.o: ../Engine/EventQueue/Ev
 CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
 CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
-CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.o: ../Engine/Feather/Types.h
@@ -12397,7 +12453,6 @@ CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.o: /usr/local/include/spdl
 CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Game/Systems/RigidbodySystem.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Game/Systems/RigidbodySystem.cpp.o: ../Engine/Components/MeshInfo.h
 CMakeFiles/Crow.dir/Game/Systems/RigidbodySystem.cpp.o: ../Engine/Components/Rigidbody.h
 CMakeFiles/Crow.dir/Game/Systems/RigidbodySystem.cpp.o: ../Engine/Components/Transform.h
@@ -12410,12 +12465,13 @@ CMakeFiles/Crow.dir/Game/Systems/RigidbodySystem.cpp.o: ../Engine/Events/Collisi
 CMakeFiles/Crow.dir/Game/Systems/RigidbodySystem.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Game/Systems/RigidbodySystem.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
 CMakeFiles/Crow.dir/Game/Systems/RigidbodySystem.cpp.o: ../Engine/Events/MaterialAddedEvent.h
-CMakeFiles/Crow.dir/Game/Systems/RigidbodySystem.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Game/Systems/RigidbodySystem.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Game/Systems/RigidbodySystem.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Game/Systems/RigidbodySystem.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Game/Systems/RigidbodySystem.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Game/Systems/RigidbodySystem.cpp.o: ../Engine/Feather/EntityHandle.h
 CMakeFiles/Crow.dir/Game/Systems/RigidbodySystem.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Game/Systems/RigidbodySystem.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Game/Systems/RigidbodySystem.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Game/Systems/RigidbodySystem.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Game/Systems/RigidbodySystem.cpp.o: ../Engine/Feather/Types.h
@@ -12801,7 +12857,6 @@ CMakeFiles/Crow.dir/Game/Systems/RigidbodySystem.cpp.o: /usr/local/include/spdlo
 CMakeFiles/Crow.dir/Game/Systems/RigidbodySystem.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Game/Systems/RigidbodySystem.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.o: ../Engine/Components/Transform.h
 CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.o: ../Engine/EventQueue/Event.h
@@ -12809,11 +12864,12 @@ CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.o: ../Engine/EventQueue/EventQ
 CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
 CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
-CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.o: ../Engine/Feather/Types.h
@@ -13053,7 +13109,6 @@ CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.o: /usr/local/include/spdlog/s
 CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Game/Systems/RotateSystem.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Game/Systems/SeekingSystem.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Game/Systems/SeekingSystem.cpp.o: ../Engine/Components/Rigidbody.h
 CMakeFiles/Crow.dir/Game/Systems/SeekingSystem.cpp.o: ../Engine/Components/Transform.h
 CMakeFiles/Crow.dir/Game/Systems/SeekingSystem.cpp.o: ../Engine/Debug/Debug.h
@@ -13062,12 +13117,13 @@ CMakeFiles/Crow.dir/Game/Systems/SeekingSystem.cpp.o: ../Engine/EventQueue/Event
 CMakeFiles/Crow.dir/Game/Systems/SeekingSystem.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
 CMakeFiles/Crow.dir/Game/Systems/SeekingSystem.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Game/Systems/SeekingSystem.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
-CMakeFiles/Crow.dir/Game/Systems/SeekingSystem.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Game/Systems/SeekingSystem.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Game/Systems/SeekingSystem.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Game/Systems/SeekingSystem.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Game/Systems/SeekingSystem.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Game/Systems/SeekingSystem.cpp.o: ../Engine/Feather/EntityHandle.h
 CMakeFiles/Crow.dir/Game/Systems/SeekingSystem.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Game/Systems/SeekingSystem.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Game/Systems/SeekingSystem.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Game/Systems/SeekingSystem.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Game/Systems/SeekingSystem.cpp.o: ../Engine/Feather/Types.h
@@ -13308,7 +13364,6 @@ CMakeFiles/Crow.dir/Game/Systems/SeekingSystem.cpp.o: /usr/local/include/spdlog/
 CMakeFiles/Crow.dir/Game/Systems/SeekingSystem.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Game/Systems/SeekingSystem.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Game/Systems/SelectedBridgeIndicatorSystem.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Game/Systems/SelectedBridgeIndicatorSystem.cpp.o: ../Engine/Components/Transform.h
 CMakeFiles/Crow.dir/Game/Systems/SelectedBridgeIndicatorSystem.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/Game/Systems/SelectedBridgeIndicatorSystem.cpp.o: ../Engine/EventQueue/Event.h
@@ -13316,11 +13371,12 @@ CMakeFiles/Crow.dir/Game/Systems/SelectedBridgeIndicatorSystem.cpp.o: ../Engine/
 CMakeFiles/Crow.dir/Game/Systems/SelectedBridgeIndicatorSystem.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
 CMakeFiles/Crow.dir/Game/Systems/SelectedBridgeIndicatorSystem.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Game/Systems/SelectedBridgeIndicatorSystem.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
-CMakeFiles/Crow.dir/Game/Systems/SelectedBridgeIndicatorSystem.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Game/Systems/SelectedBridgeIndicatorSystem.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Game/Systems/SelectedBridgeIndicatorSystem.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Game/Systems/SelectedBridgeIndicatorSystem.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Game/Systems/SelectedBridgeIndicatorSystem.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Game/Systems/SelectedBridgeIndicatorSystem.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Game/Systems/SelectedBridgeIndicatorSystem.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Game/Systems/SelectedBridgeIndicatorSystem.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Game/Systems/SelectedBridgeIndicatorSystem.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Game/Systems/SelectedBridgeIndicatorSystem.cpp.o: ../Engine/Feather/Types.h
@@ -13561,7 +13617,6 @@ CMakeFiles/Crow.dir/Game/Systems/SelectedBridgeIndicatorSystem.cpp.o: /usr/local
 CMakeFiles/Crow.dir/Game/Systems/SelectedBridgeIndicatorSystem.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Game/Systems/SelectedBridgeIndicatorSystem.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o: ../Engine/Components/MeshInfo.h
 CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o: ../Engine/Components/Rigidbody.h
 CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o: ../Engine/Components/SphereCollider.h
@@ -13577,12 +13632,13 @@ CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o: ../Engine/EventQueue/MemberF
 CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
 CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o: ../Engine/Events/MaterialAddedEvent.h
-CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o: ../Engine/Feather/EntityHandle.h
 CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o: ../Engine/Feather/Types.h
@@ -13981,7 +14037,6 @@ CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o: /usr/local/include/spdlog/sp
 CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Game/Systems/SteeringSystem.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Game/Systems/SteeringSystem.cpp.o: ../Engine/Components/Rigidbody.h
 CMakeFiles/Crow.dir/Game/Systems/SteeringSystem.cpp.o: ../Engine/Components/Transform.h
 CMakeFiles/Crow.dir/Game/Systems/SteeringSystem.cpp.o: ../Engine/Debug/Debug.h
@@ -13990,11 +14045,12 @@ CMakeFiles/Crow.dir/Game/Systems/SteeringSystem.cpp.o: ../Engine/EventQueue/Even
 CMakeFiles/Crow.dir/Game/Systems/SteeringSystem.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
 CMakeFiles/Crow.dir/Game/Systems/SteeringSystem.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Game/Systems/SteeringSystem.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
-CMakeFiles/Crow.dir/Game/Systems/SteeringSystem.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Game/Systems/SteeringSystem.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Game/Systems/SteeringSystem.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Game/Systems/SteeringSystem.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Game/Systems/SteeringSystem.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Game/Systems/SteeringSystem.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Game/Systems/SteeringSystem.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Game/Systems/SteeringSystem.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Game/Systems/SteeringSystem.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Game/Systems/SteeringSystem.cpp.o: ../Engine/Feather/Types.h
@@ -14233,7 +14289,6 @@ CMakeFiles/Crow.dir/Game/Systems/SteeringSystem.cpp.o: /usr/local/include/spdlog
 CMakeFiles/Crow.dir/Game/Systems/SteeringSystem.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Game/Systems/SteeringSystem.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Game/Systems/UnitAnimationSystem.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Game/Systems/UnitAnimationSystem.cpp.o: ../Engine/Components/Transform.h
 CMakeFiles/Crow.dir/Game/Systems/UnitAnimationSystem.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/Game/Systems/UnitAnimationSystem.cpp.o: ../Engine/EventQueue/Event.h
@@ -14241,11 +14296,12 @@ CMakeFiles/Crow.dir/Game/Systems/UnitAnimationSystem.cpp.o: ../Engine/EventQueue
 CMakeFiles/Crow.dir/Game/Systems/UnitAnimationSystem.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
 CMakeFiles/Crow.dir/Game/Systems/UnitAnimationSystem.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Game/Systems/UnitAnimationSystem.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
-CMakeFiles/Crow.dir/Game/Systems/UnitAnimationSystem.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Game/Systems/UnitAnimationSystem.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Game/Systems/UnitAnimationSystem.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Game/Systems/UnitAnimationSystem.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Game/Systems/UnitAnimationSystem.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Game/Systems/UnitAnimationSystem.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Game/Systems/UnitAnimationSystem.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Game/Systems/UnitAnimationSystem.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Game/Systems/UnitAnimationSystem.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Game/Systems/UnitAnimationSystem.cpp.o: ../Engine/Feather/Types.h
@@ -14485,7 +14541,6 @@ CMakeFiles/Crow.dir/Game/Systems/UnitAnimationSystem.cpp.o: /usr/local/include/s
 CMakeFiles/Crow.dir/Game/Systems/UnitAnimationSystem.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Game/Systems/UnitAnimationSystem.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Game/Systems/UnitCollisionSystem.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Game/Systems/UnitCollisionSystem.cpp.o: ../Engine/Components/Transform.h
 CMakeFiles/Crow.dir/Game/Systems/UnitCollisionSystem.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/Game/Systems/UnitCollisionSystem.cpp.o: ../Engine/EventQueue/Event.h
@@ -14493,12 +14548,13 @@ CMakeFiles/Crow.dir/Game/Systems/UnitCollisionSystem.cpp.o: ../Engine/EventQueue
 CMakeFiles/Crow.dir/Game/Systems/UnitCollisionSystem.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
 CMakeFiles/Crow.dir/Game/Systems/UnitCollisionSystem.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Game/Systems/UnitCollisionSystem.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
-CMakeFiles/Crow.dir/Game/Systems/UnitCollisionSystem.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Game/Systems/UnitCollisionSystem.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Game/Systems/UnitCollisionSystem.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Game/Systems/UnitCollisionSystem.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Game/Systems/UnitCollisionSystem.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Game/Systems/UnitCollisionSystem.cpp.o: ../Engine/Feather/EntityHandle.h
 CMakeFiles/Crow.dir/Game/Systems/UnitCollisionSystem.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Game/Systems/UnitCollisionSystem.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Game/Systems/UnitCollisionSystem.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Game/Systems/UnitCollisionSystem.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Game/Systems/UnitCollisionSystem.cpp.o: ../Engine/Feather/Types.h
@@ -14739,7 +14795,6 @@ CMakeFiles/Crow.dir/Game/Systems/UnitCollisionSystem.cpp.o: /usr/local/include/s
 CMakeFiles/Crow.dir/Game/Systems/UnitCollisionSystem.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Game/Systems/UnitCollisionSystem.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o: ../Engine/Components/Rigidbody.h
 CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o: ../Engine/EventQueue/Event.h
@@ -14748,12 +14803,13 @@ CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o: ../Engine/EventQueue/
 CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
 CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o: ../Engine/Events/OnUnitDefeatedEvent.h
-CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o: ../Engine/Feather/EntityHandle.h
 CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o: ../Engine/Feather/Types.h
@@ -14952,7 +15008,6 @@ CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o: /usr/local/include/sp
 CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Game/Systems/UnitFightingSystem.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Engine/Components/MeshInfo.h
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Engine/Components/Rigidbody.h
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Engine/Components/Transform.h
@@ -14963,12 +15018,13 @@ CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Engine
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Engine/Events/MaterialAddedEvent.h
-CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Engine/Feather/EntityHandle.h
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: ../Engine/Feather/Types.h
@@ -15367,7 +15423,6 @@ CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: /usr/loca
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Components/Light.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Components/MeshInfo.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Components/Rigidbody.h
@@ -15388,12 +15443,13 @@ CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Events/ComponentAdded
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Events/MaterialAddedEvent.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Events/OnUnitDefeatedEvent.h
-CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Feather/EntityHandle.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Feather/Types.h
@@ -15993,7 +16049,6 @@ CMakeFiles/Crow.dir/SandBox/Components/MoveComponent.cpp.o: /usr/local/include/g
 CMakeFiles/Crow.dir/SandBox/Components/MoveComponent.cpp.o: /usr/local/include/glm/vec4.hpp
 CMakeFiles/Crow.dir/SandBox/Components/MoveComponent.cpp.o: /usr/local/include/glm/vector_relational.hpp
 
-CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Components/Camera.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Components/MeshInfo.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Core/Game.h
@@ -16008,12 +16063,13 @@ CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/EventQueue/MemberFunctionHan
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Events/MaterialAddedEvent.h
-CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Feather/EntityHandle.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Feather/Types.h
@@ -16436,7 +16492,6 @@ CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: /usr/local/include/spdlog/spdlog.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o: ../Engine/Components/Camera.h
 CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o: ../Engine/Components/Light.h
 CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o: ../Engine/Components/MeshInfo.h
@@ -16454,12 +16509,13 @@ CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o: ../Engine/Events/Col
 CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
 CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o: ../Engine/Events/MaterialAddedEvent.h
-CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o: ../Engine/Feather/EntityHandle.h
 CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o: ../Engine/Feather/Types.h
@@ -16856,7 +16912,6 @@ CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o: /usr/local/include/s
 CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Components/Camera.h
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Components/Light.h
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Components/MeshInfo.h
@@ -16876,12 +16931,13 @@ CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Events/Com
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Events/EntityEvents.h
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Events/MaterialAddedEvent.h
-CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Feather/EntityHandle.h
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Feather/Types.h
@@ -17277,7 +17333,6 @@ CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: /usr/local/include/s
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o: ../Engine/Components/Camera.h
 CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o: ../Engine/Components/MeshInfo.h
 CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o: ../Engine/Components/SpriteInfo.h
@@ -17293,12 +17348,13 @@ CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o: ../Engine/EventQu
 CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
 CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o: ../Engine/Events/MaterialAddedEvent.h
-CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o: ../Engine/Feather/EntityHandle.h
 CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o: ../Engine/Feather/Types.h
@@ -17689,7 +17745,6 @@ CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o: /usr/local/includ
 CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../Engine/Components/Camera.h
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../Engine/Components/Light.h
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../Engine/Components/MeshInfo.h
@@ -17705,12 +17760,13 @@ CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../Engine
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../Engine/Events/MaterialAddedEvent.h
-CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../Engine/Feather/EntityHandle.h
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../Engine/Feather/Types.h
@@ -18106,7 +18162,6 @@ CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: /usr/loca
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o: ../Engine/Components/Light.h
 CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o: ../Engine/Components/Transform.h
 CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o: ../Engine/Debug/Debug.h
@@ -18116,12 +18171,13 @@ CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o: ../Engine/EventQueue/Even
 CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
 CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
-CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o: ../Engine/Feather/EntityHandle.h
 CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o: ../Engine/Feather/Types.h
@@ -18360,7 +18416,6 @@ CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o: /usr/local/include/spdlog
 CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/main.cpp.o: ../Crow.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Engine/Core/Game.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Engine/Core/Input.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Engine/Debug/Debug.h
@@ -18369,11 +18424,12 @@ CMakeFiles/Crow.dir/main.cpp.o: ../Engine/EventQueue/EventQueue.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
-CMakeFiles/Crow.dir/main.cpp.o: ../Engine/Feather/ComponentArray.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Engine/Feather/ComponentHandle.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Engine/Feather/ComponentManager.h
+CMakeFiles/Crow.dir/main.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Engine/Feather/CustomTypeID.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Engine/Feather/EntityManager.h
+CMakeFiles/Crow.dir/main.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Engine/Feather/System.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Engine/Feather/SystemManager.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Engine/Feather/Types.h

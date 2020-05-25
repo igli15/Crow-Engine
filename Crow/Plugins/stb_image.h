@@ -5543,8 +5543,8 @@ static int stbi__tga_info(stbi__context *s, int *x, int *y, int *comp)
     stbi__get8(s); // ignore alpha bits
     if (tga_colormap_bpp != 0) {
         if((tga_bits_per_pixel != 8) && (tga_bits_per_pixel != 16)) {
-            // when using a colormap, tga_bits_per_pixel is the size of the indexes
-            // I don't think anything but 8 or 16bit indexes makes sense
+            // when using a colormap, tga_bits_per_pixel is the size of the m_indexesSparseArray
+            // I don't think anything but 8 or 16bit m_indexesSparseArray makes sense
             stbi__rewind(s);
             return 0;
         }

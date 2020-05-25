@@ -10,31 +10,14 @@
 #include <array>
 #include <unordered_map>
 #include "../Events/ComponentRemovedEvent.h"
-
-///This is the base class of all ComponentArrays.
-///It is here so that the ComponentManager stores a reference to all ComponentArrays and some abstract method implementations.
-class IComponentArray {
-
-public:
-    virtual ~IComponentArray() = default;
-
-    ///Called when an entity is destroyed from the world.
-    ///@param entity The entity which is about to be destroyed.
-    virtual void OnEntityDestroyed(Entity entity) = 0;
-
-    ///Returns a std::vector of all entities that the components in the array are attached to.
-    virtual std::vector<Entity> GetEntities() = 0;
-
-    ///The active component count.
-    size_t validSize = 0;
-};
+#include "IComponentSet.h"
 
 ///Custom container which stores contagiously a collection of specified types.
 ///Every element is allocated once and pooled meaning the array size is equal to the maximum number of entities.
-///When a element is removed it is swapped with the last element and the indexes are updated.
+///When a element is removed it is swapped with the last element and the m_indexesSparseArray are updated.
 ///template <typename T> Is the component type which will be stored.
 template <typename T>
-class ComponentArray : public IComponentArray {
+class ComponentArray : public IComponentSet {
 
 public:
 

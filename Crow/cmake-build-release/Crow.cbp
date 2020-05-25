@@ -216,6 +216,12 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h">
 			<Option target="Crow"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentSparseSet.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentSparseSet.h">
+			<Option target="Crow"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/CustomTypeID.h">
 			<Option target="Crow"/>
 		</Unit>
@@ -229,6 +235,9 @@
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityManager.h">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/IComponentSet.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.cpp">

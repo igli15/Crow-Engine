@@ -7,7 +7,8 @@
 
 #include <unordered_map>
 #include "Types.h"
-#include "ComponentArray.h"
+//#include "ComponentArray.h"
+#include "ComponentSparseSet.h"
 #include "ComponentHandle.h"
 
 
@@ -19,7 +20,7 @@ class ComponentManager
 public:
 
     template<typename T>
-    void AllocateComponentArray();
+    void AllocateComponentSet();
 
     ///Finds an component array of Type "T" and updates it correctly with the new entity and component
     ///@param entity the entity which the component will be added to.
@@ -46,34 +47,34 @@ public:
     ///and if so update them accordingly
     void OnEntityDestroyed(Entity entity)
     {
-        for (auto &pair: m_componentArraysMap) {
+        for (auto &pair: m_componentSetsMap) {
             pair.second->OnEntityDestroyed(entity);
         }
     }
 
-    ///Get an component array of a specified type "T"
+    ///Get an component set of a specified type "T"
     template<typename T>
-    ComponentArray<T> *GetComponentArray();
+    ComponentSparseSet<T> *GetComponentSet();
 
 private:
 
-    ///All the component array pointers
-    std::map<int, IComponentArray *> m_componentArraysMap;
+    ///All the component set pointers
+    std::map<int, IComponentSet *> m_componentSetsMap;
 
-    //std::array<IComponentArray*,MAX_COMPONENTS> m_allComponentArrays;
+    //std::array<IComponentSet*,MAX_COMPONENTS> m_allComponentArrays;
 
     ///The active count for the "m_allComponentArrays" array.
     int arrayCount = 0;
 };
 
 template<typename T>
-void ComponentManager::AllocateComponentArray()
+void ComponentManager::AllocateComponentSet()
 {
-    auto iterator = m_componentArraysMap.find(ComponentIDGenerator::index < T > );
+    auto iterator = m_componentSetsMap.find(ComponentIDGenerator::index < T > );
 
-    if (iterator == m_componentArraysMap.end()) {
-        ComponentArray<T> *array = new ComponentArray<T>;
-        m_componentArraysMap.insert(iterator, std::make_pair(ComponentIDGenerator::index < T > , array));
+    if (iterator == m_componentSetsMap.end()) {
+        ComponentSparseSet<T> *array = new ComponentSparseSet<T>;
+        m_componentSetsMap.insert(iterator, std::make_pair(ComponentIDGenerator::index < T > , array));
     } else {
         ENGINE_LOG_WARNING("Component is already registered.... Skipping");
     }
@@ -81,34 +82,34 @@ void ComponentManager::AllocateComponentArray()
 
 //TODO: Just register the componets yourself
 template<typename T>
-ComponentArray<T> *ComponentManager::GetComponentArray()
+ComponentSparseSet<T> *ComponentManager::GetComponentSet()
 {
     //TODO add assertion here.
-    return static_cast<ComponentArray<T> *>(m_componentArraysMap[ComponentIDGenerator::index <T>]);
+    return static_cast<ComponentSparseSet<T> *>(m_componentSetsMap[ComponentIDGenerator::index < T >]);
 }
 
 template<typename T>
 T *ComponentManager::AddComponent(Entity entity, T component)
 {
-    return GetComponentArray<T>()->AddComponentData(entity, component);
+    return GetComponentSet<T>()->AddComponentData(entity, component);
 }
 
 template<typename T>
 void ComponentManager::RemoveComponent(Entity entity)
 {
-    GetComponentArray<T>()->RemoveComponentData(entity);
+    GetComponentSet<T>()->RemoveComponentData(entity);
 }
 
 template<typename T>
 T &ComponentManager::GetComponent(Entity entity)
 {
-    return GetComponentArray<T>()->GetComponentData(entity);
+    return GetComponentSet<T>()->GetComponentData(entity);
 }
 
 template<typename T>
 T *ComponentManager::GetComponentPtr(Entity entity)
 {
-    ComponentArray<T> *arrayPtr = GetComponentArray<T>();
+    ComponentSparseSet<T> *arrayPtr = GetComponentSet<T>();
 
     if (arrayPtr == nullptr) return nullptr;
 

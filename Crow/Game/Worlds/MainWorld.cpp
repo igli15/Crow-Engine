@@ -404,6 +404,12 @@ void MainWorld::CreateUIEntities(ResourceManager* resourceManager)
     UnitGroupArchetype* tankArchetype = GetUnitGroupArchetype<UnitGroupArchetype>("playerTank");
     UnitGroupArchetype* cannonArchetype = GetUnitGroupArchetype<UnitGroupArchetype>("playerCannon");
 
+    EntityHandle uiBackgroundEntity = CreateEntity();
+    Transform* uiBackgroundTransform = uiBackgroundEntity.AddComponent<Transform>(Transform{});
+    uiBackgroundTransform->SetLocalPosition(glm::vec3(screenWidth/2 - borderSize.x/2 ,screenHeight - borderBottomPadding,0));
+    uiBackgroundTransform->Scale(glm::vec3(borderSize.x,borderSize.y,1));
+    uiBackgroundEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("uiBackgroundSprite"),resourceManager->GetMaterial<SpriteMaterial>("uiBackgroundMat")});
+
     EntityHandle borderQEntity = CreateEntity();
     Transform* borderQTransform = borderQEntity.AddComponent<Transform>(Transform{});
     borderQTransform->SetLocalPosition(glm::vec3(screenWidth/2 - iconSize/2 - iconHorizontalPadding,screenHeight - iconBottomPadding,1));
@@ -425,11 +431,6 @@ void MainWorld::CreateUIEntities(ResourceManager* resourceManager)
     borderEEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("uiBorderESprite"),resourceManager->GetMaterial<SpriteMaterial>("uiBorderEMat")});
     borderEEntity.AddComponent<UnitIconComponent>(UnitIconComponent{cannonArchetype->unitPrice,resourceManager->GetSprite("uiBorderESpriteAvaiable"),resourceManager->GetSprite("uiBorderESprite")});
 
-    EntityHandle uiBackgroundEntity = CreateEntity();
-    Transform* uiBackgroundTransform = uiBackgroundEntity.AddComponent<Transform>(Transform{});
-    uiBackgroundTransform->SetLocalPosition(glm::vec3(screenWidth/2 - borderSize.x/2 ,screenHeight - borderBottomPadding,0));
-    uiBackgroundTransform->Scale(glm::vec3(borderSize.x,borderSize.y,1));
-    uiBackgroundEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("uiBackgroundSprite"),resourceManager->GetMaterial<SpriteMaterial>("uiBackgroundMat")});
 
     EntityHandle moneyIconEntity = CreateEntity();
     Transform* moneyIconTransform = moneyIconEntity.AddComponent<Transform>(Transform{});

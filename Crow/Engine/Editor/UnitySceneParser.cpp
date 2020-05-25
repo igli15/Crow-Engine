@@ -3,6 +3,7 @@
 //
 
 #include <fstream>
+#include "../../Crow.h"
 #include "UnitySceneParser.h"
 #include "../Feather/World.h"
 #include "../Components/Transform.h"

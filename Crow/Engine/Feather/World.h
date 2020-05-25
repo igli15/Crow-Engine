@@ -29,7 +29,7 @@ public:
     template<typename T>
     void AllocateComponentArray()
     {
-        m_componentManager->AllocateComponentArray<T>();
+        m_componentManager->AllocateComponentSet<T>();
     }
 
     ///Creates an entity and returns a entity handle.
@@ -111,11 +111,11 @@ public:
     }
 
     ///Get a component array of type "T".
-    ///@return returns a pointer to the component array. nullptr will be returned if it wasn't found.
+    ///@return returns a pointer to the component set. nullptr will be returned if it wasn't found.
     template <typename T>
-    ComponentArray<T>* GetComponentArray()
+    ComponentSparseSet<T>* GetComponentSet()
     {
-        return m_componentManager->GetComponentArray<T>();
+        return m_componentManager->GetComponentSet<T>();
     }
 
 
@@ -160,8 +160,8 @@ public:
     template <typename T,typename... Args>
     void PopulateHandles(Entity e,ComponentHandle<T>& handle,ComponentHandle<Args> &... args)
     {
-        ComponentArray<T>* array = m_componentManager->GetComponentArray<T>();
-        handle = ComponentHandle<T>{e,array};
+        ComponentSparseSet<T>* set = m_componentManager->GetComponentSet<T>();
+        handle = ComponentHandle<T>{e,set};
         PopulateHandles<Args...>(e,args...);
     }
 
@@ -169,9 +169,9 @@ public:
     template <typename T>
     void PopulateHandles(Entity e,ComponentHandle<T>& handle)
     {
-        ComponentArray<T>* array = m_componentManager->GetComponentArray<T>();
+        ComponentSparseSet<T>* set = m_componentManager->GetComponentSet<T>();
 
-        handle = ComponentHandle<T>{e, array};
+        handle = ComponentHandle<T>{e, set};
 
     }
 
@@ -198,8 +198,8 @@ public:
 
 
     ///Queries for all entities which contain the specified component types in one line.
-    ///EntitiesWith will get the smallest array from the specified component types and then search the rest of the arrays
-    ///based on the entities of that array only.
+    ///EntitiesWith will get the smallest set from the specified component types and then search the rest of the sets
+    ///based on the entities of that set only.
     ///e.g EntitesWith<Transform,Rigidbody...>();
     ///@return Returns a std::vector of Entities.
     template <typename ...Args>
@@ -207,12 +207,12 @@ public:
     {
         auto result = std::vector<Entity>{};
 
-        IComponentArray* smallestArray = GetSmallestArray<Args...>(GetComponentArray<Args>()...);
+        IComponentSet* smallestSet = GetSmallestSet<Args...>(GetComponentSet<Args>()...);
 
-        result = smallestArray->GetEntities();
+        result = smallestSet->GetEntities();
 
         if constexpr (sizeof...(Args) > 1) {
-            QueryNeededEntities<IComponentArray,IComponentArray,Args...>(GetComponentArray<Args>()..., result);
+            QueryNeededEntities<IComponentSet,IComponentSet,Args...>(GetComponentSet<Args>()..., result);
         }
 
         return result;
@@ -220,27 +220,27 @@ public:
 
 
     ///Returns the smallest array from the specified ComponentArrays.
-    ///@param componentArrays The arrays which will be compared.
+    ///@param componentSets The set which will be compared.
     ///@return A pointer to the base class of the smallest array.
     template <typename ...Args>
-    IComponentArray* GetSmallestArray(ComponentArray<Args>*... componentArrays)
+    IComponentSet* GetSmallestSet(ComponentSparseSet<Args>*... componentSets)
     {
         return std::min(
-                {static_cast<IComponentArray*>(componentArrays)...},
+                {static_cast<IComponentSet*>(componentSets)...},
                 [](const auto* poolA, const auto* poolB) {return poolA->validSize < poolB->validSize;}
         );
     }
 
-    ///Looks into a component array based on an entity list and updates it based on if it contains the entity or not.
+    ///Looks into a component set based on an entity list and updates it based on if it contains the entity or not.
     ///If it does it moves on and if not it removes it from the current list.
-    ///@param componentArray The component array which will be searched for entities.
+    ///@param componentSet The component set which will be searched for entities.
     ///@param currentList A reference to a list of entities which will be updated.
     template <typename T>
-    void QueryNeededEntities(ComponentArray<T>* componentArray,std::vector<Entity>& currentList)
+    void QueryNeededEntities(ComponentSparseSet<T>* componentSet, std::vector<Entity>& currentList)
     {
         for (auto it = currentList.begin() ; it != currentList.end() ; it++)
         {
-            if(!componentArray->ContainsEntity(*it))
+            if(!componentSet->ContainsEntity(*it))
             {
                 //decrement the iterator so we can safely remove it while looping
                 currentList.erase(it--);
@@ -249,9 +249,9 @@ public:
     }
 
     template <typename T,typename T2,typename ...Args>
-    void QueryNeededEntities(ComponentArray<Args>*... componentArrays,std::vector<Entity>& currentList)
+    void QueryNeededEntities(ComponentSparseSet<Args>*... componentSets, std::vector<Entity>& currentList)
     {
-        auto x = {(QueryNeededEntities(componentArrays,currentList),0)...};
+        auto x = {(QueryNeededEntities(componentSets, currentList),0)...};
     }
     
 

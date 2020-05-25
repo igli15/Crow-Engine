@@ -38,7 +38,8 @@ void FlockSeparationSystem::Update(float dt)
     }
 
 
-    for (int i = 0; i < entities.size(); ++i) {
+    for (int i = 0; i < entities.size(); ++i)
+    {
         SteeringComponent &steeringComponent = world->GetComponent<SteeringComponent>(entities[i]);
         UnitComponent &unitComponent = world->GetComponent<UnitComponent>(entities[i]);
         FlockComponent &flockSeparationComponent = world->GetComponent<FlockComponent>(entities[i]);
