@@ -120,7 +120,7 @@ void Game::Run()
             timeData.msPerFrame =  1000.0/double(nbFrames);
             // printf and reset timer
             //printf("%f ms/frame\n", 1000.0/double(nbFrames));
-           // printf("%f FPS\n", double(nbFrames));
+            //printf("%f FPS\n", double(nbFrames));
             nbFrames = 0;
             lastTime += 1.0;
         }

@@ -20,6 +20,7 @@
 #include "../../Engine/Components/Light.h"
 #include "../../Engine/Rendering/Materials/ColorMaterial.h"
 #include "../../Engine/Components/SpriteInfo.h"
+#include "../../Engine/Rendering/Materials/UnlitMaterial.h"
 
 void RotatingGunsWorld::Build()
 {
@@ -37,7 +38,7 @@ void RotatingGunsWorld::Build()
     SetSystemSignature<RotateSystem,Transform,RotateComponent>();
 
     //ColorMaterial* mat = new ColorMaterial();
-    ColorMaterial* mat = Game::Instance()->resourceManager->CreateMaterial<ColorMaterial>("instancedColorMat");
+    UnlitMaterial* mat = Game::Instance()->resourceManager->GetMaterial<UnlitMaterial>("whiteUnlitMat");
 
     EntityHandle cameraEntity = CreateEntity();
     cameraEntity.AddComponent(Camera{});
