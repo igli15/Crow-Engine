@@ -8,6 +8,7 @@
 
 #include "../../Engine/Feather/System.h"
 #include "../Components/SteeringComponent.h"
+#include "../../Engine/Components/Transform.h"
 #include <vector>
 class BridgeComponent;
 
@@ -17,7 +18,7 @@ public:
     void Init() override;
     void Update(float dt) override;
 
-    glm::vec3 DoFlockingSeparation(Entity currentEntity, const std::vector<Entity>& others,float separationDistance,float separationFactor =1);
+    glm::vec3 DoFlockingSeparation(Transform& ownTransform, const std::vector<Entity>& others,float separationDistance,float separationFactor =1);
 private:
     std::vector<BridgeComponent*> m_bridges;
 

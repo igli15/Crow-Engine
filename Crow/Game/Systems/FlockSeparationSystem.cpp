@@ -29,44 +29,32 @@ void FlockSeparationSystem::Update(float dt)
     //m_timeCounter+= dt;
     //if(m_timeCounter >= 0.5f) {
 
-    auto entities = world->EntitiesWith<FlockComponent, UnitComponent, SteeringComponent>();
-
-
-    if(Input::GetKeyDown(GLFW_KEY_SPACE))
+    world->ForEach<SteeringComponent,UnitComponent,FlockComponent,Transform>(
+            [&](Entity e,SteeringComponent& steeringComponent,UnitComponent& unitComponent,FlockComponent& flockComponent,Transform& transform)
     {
-        APP_LOG(entities.size());
-    }
-
-
-    for (int i = 0; i < entities.size(); ++i)
-    {
-        SteeringComponent &steeringComponent = world->GetComponent<SteeringComponent>(entities[i]);
-        UnitComponent &unitComponent = world->GetComponent<UnitComponent>(entities[i]);
-        FlockComponent &flockSeparationComponent = world->GetComponent<FlockComponent>(entities[i]);
-
-        if (unitComponent.isPlayerUnit) {
-            steeringComponent.steering += DoFlockingSeparation(entities[i],
-                                                               unitComponent.bridge->playerEntitiesOnBridge, flockSeparationComponent.separationDistance, flockSeparationComponent.separationFactor);
-        } else {
-            steeringComponent.steering += DoFlockingSeparation(entities[i],
-                                                               unitComponent.bridge->enemyEntitiesOnBridge,  flockSeparationComponent.separationDistance, flockSeparationComponent.separationFactor);
+        if (unitComponent.isPlayerUnit)
+        {
+            steeringComponent.steering += DoFlockingSeparation(transform,
+                    unitComponent.bridge->playerEntitiesOnBridge, flockComponent.separationDistance, flockComponent.separationFactor);
+        } else
+            {
+            steeringComponent.steering += DoFlockingSeparation(transform,
+                    unitComponent.bridge->enemyEntitiesOnBridge,  flockComponent.separationDistance, flockComponent.separationFactor);
         }
+    });
 
-    }
 }
 
-glm::vec3 FlockSeparationSystem::DoFlockingSeparation(Entity currentEntity, const std::vector<Entity> &others,
+glm::vec3 FlockSeparationSystem::DoFlockingSeparation(Transform& ownTransform, const std::vector<Entity> &others,
                                                       float separationDistance, float separationFactor)
 {
     glm::vec3 totalForce{0, 0, 0};
     float sqrSeparationDistance = separationDistance * separationDistance;
 
-    Transform &ownTransform = world->GetComponent<Transform>(currentEntity);
-
     for (int i = 0; i < others.size(); ++i) {
         Entity other = others[i];
 
-        if (currentEntity == other) continue;
+        if (ownTransform.owner == other) continue;
 
         Transform &otherTransform = world->GetComponent<Transform>(other);
 

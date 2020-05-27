@@ -62,6 +62,8 @@ public:
     ///Marks all the children entities attached to the transform for destruction.
     void DestroyAllChildrenEntities();
 
+    Entity owner = InvalidEntity;
+
 private:
 
     std::vector<Entity> m_childrens;
@@ -75,7 +77,6 @@ private:
 
     //Transform* m_parentTransform = nullptr;
     World* m_contextWorld;
-    Entity owner = InvalidEntity;
     Entity parentEntity = InvalidEntity;
 
     void MarkLocalTransformDirty();

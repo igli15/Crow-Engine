@@ -253,7 +253,36 @@ public:
     {
         auto x = {(QueryNeededEntities(componentSets, currentList),0)...};
     }
-    
+
+    template <typename ...Args>
+    void ForEach(typename std::common_type<std::function<void(Entity,Args&...)>>::type func)
+    {
+        IComponentSet* smallestSet = GetSmallestSet<Args...>(GetComponentSet<Args>()...);
+
+        std::vector<Entity> entities = smallestSet->GetEntities();
+
+        for (int i = 0; i < entities.size(); ++i)
+        {
+            if(has<Args...>(entities[i]))
+            {
+                func(entities[i], GetComponent<Args>(entities[i])...);
+            }
+        }
+    }
+
+    template<typename T>
+    bool has(Entity e) const
+    {
+        ComponentSparseSet<T>* set = m_componentManager->GetComponentSet<T>();
+
+        return set->ContainsEntity(e);
+    }
+
+    template<typename T, typename V, typename... Types>
+    bool has(Entity e) const
+    {
+        return has<T>(e) && has<V, Types...>(e);
+    }
 
 private:
 
