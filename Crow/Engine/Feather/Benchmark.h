@@ -18,7 +18,7 @@ public:
         m_startTimerPoint = std::chrono::high_resolution_clock::now();
     };
 
-    long long End()
+    double End()
     {
         auto endTimerPoint = std::chrono::high_resolution_clock::now();
         long long startTime = std::chrono::time_point_cast<std::chrono::microseconds>(m_startTimerPoint).time_since_epoch().count();
