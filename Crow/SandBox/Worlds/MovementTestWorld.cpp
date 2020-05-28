@@ -45,7 +45,7 @@ void MovementTestWorld::Build()
 
     EntityHandle cubeEntity = CreateEntity();
     cubeEntity.AddComponent(Transform{});
-    Transform *cubeTransform = cubeEntity.GetComponent<Transform>().component;
+    Transform& cubeTransform = cubeEntity.GetComponent<Transform>();
     MeshInfo cubeMeshInfo{};
     cubeMeshInfo.model = cubeModel;
     cubeMeshInfo.material = material;

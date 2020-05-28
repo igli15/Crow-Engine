@@ -447,33 +447,6 @@ Engine/Feather/ComponentArray.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.s
 .PHONY : Engine/Feather/ComponentArray.cpp.s
 
-Engine/Feather/ComponentHandle.o: Engine/Feather/ComponentHandle.cpp.o
-
-.PHONY : Engine/Feather/ComponentHandle.o
-
-# target to build an object file
-Engine/Feather/ComponentHandle.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/ComponentHandle.cpp.o
-.PHONY : Engine/Feather/ComponentHandle.cpp.o
-
-Engine/Feather/ComponentHandle.i: Engine/Feather/ComponentHandle.cpp.i
-
-.PHONY : Engine/Feather/ComponentHandle.i
-
-# target to preprocess a source file
-Engine/Feather/ComponentHandle.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/ComponentHandle.cpp.i
-.PHONY : Engine/Feather/ComponentHandle.cpp.i
-
-Engine/Feather/ComponentHandle.s: Engine/Feather/ComponentHandle.cpp.s
-
-.PHONY : Engine/Feather/ComponentHandle.s
-
-# target to generate assembly for a file
-Engine/Feather/ComponentHandle.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/ComponentHandle.cpp.s
-.PHONY : Engine/Feather/ComponentHandle.cpp.s
-
 Engine/Feather/ComponentManager.o: Engine/Feather/ComponentManager.cpp.o
 
 .PHONY : Engine/Feather/ComponentManager.o
@@ -2220,9 +2193,6 @@ help:
 	@echo "... Engine/Feather/ComponentArray.o"
 	@echo "... Engine/Feather/ComponentArray.i"
 	@echo "... Engine/Feather/ComponentArray.s"
-	@echo "... Engine/Feather/ComponentHandle.o"
-	@echo "... Engine/Feather/ComponentHandle.i"
-	@echo "... Engine/Feather/ComponentHandle.s"
 	@echo "... Engine/Feather/ComponentManager.o"
 	@echo "... Engine/Feather/ComponentManager.i"
 	@echo "... Engine/Feather/ComponentManager.s"

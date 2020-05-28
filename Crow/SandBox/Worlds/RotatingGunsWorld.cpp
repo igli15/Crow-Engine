@@ -51,10 +51,10 @@ void RotatingGunsWorld::Build()
             EntityHandle gunEntity = CreateEntity();
 
             gunEntity.AddComponent(Transform{});
-            Transform *t2 = gunEntity.GetComponent<Transform>().component;
-            t2->Translate(glm::vec3(i , j, -10));
-            t2->Scale(glm::vec3(0.05f, 0.05f, 0.05f));
-            t2->Rotate(-25, glm::vec3(0, 1, 0));
+            Transform& t2 = gunEntity.GetComponent<Transform>();
+            t2.Translate(glm::vec3(i , j, -10));
+            t2.Scale(glm::vec3(0.05f, 0.05f, 0.05f));
+            t2.Rotate(-25, glm::vec3(0, 1, 0));
 
             //MeshInfo gunMeshInfo{};
             MeshInfo gunMeshInfo{};

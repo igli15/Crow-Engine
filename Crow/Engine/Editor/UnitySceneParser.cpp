@@ -79,10 +79,10 @@ void UnitySceneParser::ParseChildrenEntities(rapidxml::xml_node<> *node, EntityH
             if (strcmp(com->name(), "GameObject") == 0)
             {
                 EntityHandle child = ParseEntity(com,world,function);
-                Transform *childTransform = child.GetComponent<Transform>().component;
-                Transform *parentTransform = entity.GetComponent<Transform>().component;
+                Transform& childTransform = child.GetComponent<Transform>();
+                Transform& parentTransform = entity.GetComponent<Transform>();
 
-                childTransform->SetParent(entity.entity);
+                childTransform.SetParent(entity.entity);
 
                 //Parse the children of children recursively!
                 ParseChildrenEntities(com,child,world,function);
@@ -278,7 +278,7 @@ void UnitySceneParser::ParseTranslucentMaterial(rapidxml::xml_node<> *node, Enti
         }
     }
 
-    entityHandle.GetComponent<MeshInfo>().component->material = translucentColorMat;
+    entityHandle.GetComponent<MeshInfo>().material = translucentColorMat;
 }
 
 void UnitySceneParser::ParseColorMaterial(rapidxml::xml_node<> *node, EntityHandle entityHandle)
@@ -322,7 +322,7 @@ void UnitySceneParser::ParseColorMaterial(rapidxml::xml_node<> *node, EntityHand
             colorMaterial->ambientIntensity = strtof(a->value(), 0);
         }
     }
-    entityHandle.GetComponent<MeshInfo>().component->material = colorMaterial;
+    entityHandle.GetComponent<MeshInfo>().material = colorMaterial;
 }
 
 void UnitySceneParser::ParseTextureMaterial(rapidxml::xml_node<> *node, EntityHandle entityHandle)
@@ -386,7 +386,7 @@ void UnitySceneParser::ParseTextureMaterial(rapidxml::xml_node<> *node, EntityHa
         }
     }
 
-    entityHandle.GetComponent<MeshInfo>().component->material = textureMaterial;
+    entityHandle.GetComponent<MeshInfo>().material = textureMaterial;
 }
 
 

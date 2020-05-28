@@ -152,28 +152,6 @@ public:
         m_systemManager->SetSignature<SystemType>(signature);
     }
 
-    ///Populates all the ComponentHandles based on a given entity.
-    ///e.g PopulateHandle(entity,ComponentHandle<Component1>,ComponentHandle<Component2>....);
-    ///If the component wasn't found the handle will be filled with a nullptr component
-    ///@param e Entity which the component will be searched from.
-    ///@param args all the component handles which will be filled.
-    template <typename T,typename... Args>
-    void PopulateHandles(Entity e,ComponentHandle<T>& handle,ComponentHandle<Args> &... args)
-    {
-        ComponentSparseSet<T>* set = m_componentManager->GetComponentSet<T>();
-        handle = ComponentHandle<T>{e,set};
-        PopulateHandles<Args...>(e,args...);
-    }
-
-    ///Populates a signle ComponentHandle based on a given entity.
-    template <typename T>
-    void PopulateHandles(Entity e,ComponentHandle<T>& handle)
-    {
-        ComponentSparseSet<T>* set = m_componentManager->GetComponentSet<T>();
-
-        handle = ComponentHandle<T>{e, set};
-
-    }
 
     ///Creates a signature for a system of type "T" based on the specified component types in one line.
     ///e.g CreateSignature<SystemType,Component1,Component2,Component3....>();

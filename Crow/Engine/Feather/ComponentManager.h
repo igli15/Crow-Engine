@@ -9,7 +9,6 @@
 #include "Types.h"
 //#include "ComponentArray.h"
 #include "ComponentSparseSet.h"
-#include "ComponentHandle.h"
 
 
 ///"ComponentManager" Keeps track of all "ComponentArrays" and notifies them if an entity got removed from the world
@@ -80,7 +79,6 @@ void ComponentManager::AllocateComponentSet()
     }
 }
 
-//TODO: Just register the componets yourself
 template<typename T>
 ComponentSparseSet<T> *ComponentManager::GetComponentSet()
 {

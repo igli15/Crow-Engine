@@ -11,7 +11,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Crow.dir/Engine/EventQueue/EventQueue.cpp.o"
   "CMakeFiles/Crow.dir/Engine/EventQueue/MemberFunctionHandler.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o"
-  "CMakeFiles/Crow.dir/Engine/Feather/ComponentHandle.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Feather/EntityHandle.cpp.o"
