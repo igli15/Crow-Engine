@@ -2342,58 +2342,6 @@ CMakeFiles/Crow.dir/Engine/EventQueue/MemberFunctionHandler.cpp.o: ../Engine/Eve
 CMakeFiles/Crow.dir/Engine/EventQueue/MemberFunctionHandler.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.cpp
 CMakeFiles/Crow.dir/Engine/EventQueue/MemberFunctionHandler.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
 
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: ../Crow.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: ../Engine/Debug/Debug.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: ../Engine/EventQueue/Event.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: ../Engine/EventQueue/EventQueue.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: ../Engine/EventQueue/MemberFunctionHandler.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: ../Engine/Feather/ComponentArray.cpp
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: ../Engine/Feather/ComponentArray.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: ../Engine/Feather/CustomTypeID.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: ../Engine/Feather/IComponentSet.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: ../Engine/Feather/Types.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/common-inl.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/common.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/details/backtracer-inl.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/details/backtracer.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/details/circular_q.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/details/console_globals.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/details/fmt_helper.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/details/log_msg-inl.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/details/log_msg.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/details/log_msg_buffer-inl.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/details/log_msg_buffer.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/details/null_mutex.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/details/os-inl.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/details/os.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/details/pattern_formatter-inl.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/details/pattern_formatter.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/details/periodic_worker-inl.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/details/periodic_worker.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/details/registry-inl.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/details/registry.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/details/synchronous_factory.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/fmt/bundled/core.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/fmt/bundled/format-inl.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/fmt/bundled/format.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/fmt/fmt.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/formatter.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/logger-inl.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/logger.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/sinks/ansicolor_sink-inl.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/sinks/ansicolor_sink.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/sinks/sink-inl.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/sinks/sink.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/sinks/stdout_color_sinks-inl.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/sinks/stdout_color_sinks.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/sinks/wincolor_sink-inl.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/sinks/wincolor_sink.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/spdlog-inl.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/spdlog.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/tweakme.h
-CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o: /usr/local/include/spdlog/version.h
-
 CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.o: ../Engine/EventQueue/Event.h
 CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.o: ../Engine/EventQueue/EventQueue.h
@@ -16107,17 +16055,9 @@ CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: /usr/local/include/spdlog/spdlo
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: /usr/local/include/spdlog/version.h
 
-CMakeFiles/Crow.dir/OOP_Engine/Component.cpp.o: ../OOP\ Engine/Component.cpp
-CMakeFiles/Crow.dir/OOP_Engine/Component.cpp.o: ../OOP\ Engine/Component.h
-
 CMakeFiles/Crow.dir/OOP_Engine/Gameobject.cpp.o: ../OOP\ Engine/Component.h
 CMakeFiles/Crow.dir/OOP_Engine/Gameobject.cpp.o: ../OOP\ Engine/Gameobject.cpp
 CMakeFiles/Crow.dir/OOP_Engine/Gameobject.cpp.o: ../OOP\ Engine/Gameobject.h
-
-CMakeFiles/Crow.dir/OOP_Engine/OOPEngine.cpp.o: ../OOP\ Engine/Component.h
-CMakeFiles/Crow.dir/OOP_Engine/OOPEngine.cpp.o: ../OOP\ Engine/Gameobject.h
-CMakeFiles/Crow.dir/OOP_Engine/OOPEngine.cpp.o: ../OOP\ Engine/OOPEngine.cpp
-CMakeFiles/Crow.dir/OOP_Engine/OOPEngine.cpp.o: ../OOP\ Engine/OOPEngine.h
 
 CMakeFiles/Crow.dir/Plugins/stb_image.cpp.o: ../Plugins/stb_image.cpp
 CMakeFiles/Crow.dir/Plugins/stb_image.cpp.o: ../Plugins/stb_image.h

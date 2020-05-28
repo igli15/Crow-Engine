@@ -420,33 +420,6 @@ Engine/EventQueue/MemberFunctionHandler.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/EventQueue/MemberFunctionHandler.cpp.s
 .PHONY : Engine/EventQueue/MemberFunctionHandler.cpp.s
 
-Engine/Feather/ComponentArray.o: Engine/Feather/ComponentArray.cpp.o
-
-.PHONY : Engine/Feather/ComponentArray.o
-
-# target to build an object file
-Engine/Feather/ComponentArray.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o
-.PHONY : Engine/Feather/ComponentArray.cpp.o
-
-Engine/Feather/ComponentArray.i: Engine/Feather/ComponentArray.cpp.i
-
-.PHONY : Engine/Feather/ComponentArray.i
-
-# target to preprocess a source file
-Engine/Feather/ComponentArray.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.i
-.PHONY : Engine/Feather/ComponentArray.cpp.i
-
-Engine/Feather/ComponentArray.s: Engine/Feather/ComponentArray.cpp.s
-
-.PHONY : Engine/Feather/ComponentArray.s
-
-# target to generate assembly for a file
-Engine/Feather/ComponentArray.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.s
-.PHONY : Engine/Feather/ComponentArray.cpp.s
-
 Engine/Feather/ComponentManager.o: Engine/Feather/ComponentManager.cpp.o
 
 .PHONY : Engine/Feather/ComponentManager.o
@@ -1824,33 +1797,6 @@ Game/Worlds/MainWorld.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.s
 .PHONY : Game/Worlds/MainWorld.cpp.s
 
-OOP_Engine/Component.o: OOP_Engine/Component.cpp.o
-
-.PHONY : OOP_Engine/Component.o
-
-# target to build an object file
-OOP_Engine/Component.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/OOP_Engine/Component.cpp.o
-.PHONY : OOP_Engine/Component.cpp.o
-
-OOP_Engine/Component.i: OOP_Engine/Component.cpp.i
-
-.PHONY : OOP_Engine/Component.i
-
-# target to preprocess a source file
-OOP_Engine/Component.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/OOP_Engine/Component.cpp.i
-.PHONY : OOP_Engine/Component.cpp.i
-
-OOP_Engine/Component.s: OOP_Engine/Component.cpp.s
-
-.PHONY : OOP_Engine/Component.s
-
-# target to generate assembly for a file
-OOP_Engine/Component.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/OOP_Engine/Component.cpp.s
-.PHONY : OOP_Engine/Component.cpp.s
-
 OOP_Engine/Gameobject.o: OOP_Engine/Gameobject.cpp.o
 
 .PHONY : OOP_Engine/Gameobject.o
@@ -1877,33 +1823,6 @@ OOP_Engine/Gameobject.s: OOP_Engine/Gameobject.cpp.s
 OOP_Engine/Gameobject.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/OOP_Engine/Gameobject.cpp.s
 .PHONY : OOP_Engine/Gameobject.cpp.s
-
-OOP_Engine/OOPEngine.o: OOP_Engine/OOPEngine.cpp.o
-
-.PHONY : OOP_Engine/OOPEngine.o
-
-# target to build an object file
-OOP_Engine/OOPEngine.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/OOP_Engine/OOPEngine.cpp.o
-.PHONY : OOP_Engine/OOPEngine.cpp.o
-
-OOP_Engine/OOPEngine.i: OOP_Engine/OOPEngine.cpp.i
-
-.PHONY : OOP_Engine/OOPEngine.i
-
-# target to preprocess a source file
-OOP_Engine/OOPEngine.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/OOP_Engine/OOPEngine.cpp.i
-.PHONY : OOP_Engine/OOPEngine.cpp.i
-
-OOP_Engine/OOPEngine.s: OOP_Engine/OOPEngine.cpp.s
-
-.PHONY : OOP_Engine/OOPEngine.s
-
-# target to generate assembly for a file
-OOP_Engine/OOPEngine.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/OOP_Engine/OOPEngine.cpp.s
-.PHONY : OOP_Engine/OOPEngine.cpp.s
 
 Plugins/stb_image.o: Plugins/stb_image.cpp.o
 
@@ -2190,9 +2109,6 @@ help:
 	@echo "... Engine/EventQueue/MemberFunctionHandler.o"
 	@echo "... Engine/EventQueue/MemberFunctionHandler.i"
 	@echo "... Engine/EventQueue/MemberFunctionHandler.s"
-	@echo "... Engine/Feather/ComponentArray.o"
-	@echo "... Engine/Feather/ComponentArray.i"
-	@echo "... Engine/Feather/ComponentArray.s"
 	@echo "... Engine/Feather/ComponentManager.o"
 	@echo "... Engine/Feather/ComponentManager.i"
 	@echo "... Engine/Feather/ComponentManager.s"
@@ -2346,15 +2262,9 @@ help:
 	@echo "... Game/Worlds/MainWorld.o"
 	@echo "... Game/Worlds/MainWorld.i"
 	@echo "... Game/Worlds/MainWorld.s"
-	@echo "... OOP_Engine/Component.o"
-	@echo "... OOP_Engine/Component.i"
-	@echo "... OOP_Engine/Component.s"
 	@echo "... OOP_Engine/Gameobject.o"
 	@echo "... OOP_Engine/Gameobject.i"
 	@echo "... OOP_Engine/Gameobject.s"
-	@echo "... OOP_Engine/OOPEngine.o"
-	@echo "... OOP_Engine/OOPEngine.i"
-	@echo "... OOP_Engine/OOPEngine.s"
 	@echo "... Plugins/stb_image.o"
 	@echo "... Plugins/stb_image.i"
 	@echo "... Plugins/stb_image.s"
