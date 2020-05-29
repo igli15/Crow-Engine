@@ -7,6 +7,7 @@
 
 #include <cstdlib>
 #include "Types.h"
+#include "../Debug/Debug.h"
 
 
 //TODO this works but, make sure you create a struct/union to make custom linked list for validIndexes so that we dont allocate another big array.
