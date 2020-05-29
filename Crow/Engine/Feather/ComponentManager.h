@@ -11,6 +11,7 @@
 #include "ComponentSparseSet.h"
 
 
+
 ///"ComponentManager" Keeps track of all "ComponentArrays" and notifies them if an entity got removed from the world
 ///All the ComponentArrays pointers are stored in an array and the location of the arrays is their type ID.
 class ComponentManager
