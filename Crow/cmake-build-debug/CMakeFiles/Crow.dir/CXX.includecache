@@ -217,6 +217,8 @@ cstdlib
 -
 Types.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
+../Debug/Debug.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
 set

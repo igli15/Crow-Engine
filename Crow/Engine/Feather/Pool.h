@@ -20,7 +20,7 @@ public:
     {
         m_dataArray = (T*)(calloc(maxSize, sizeof(T)));
         m_activeFlags = (bool*)(calloc(maxSize,sizeof(bool)));
-        m_validIndexes = (int*)(calloc(maxSize,sizeof(int)));
+        m_nextValidIndexes = (int*)(calloc(maxSize, sizeof(int)));
 
     }
 
@@ -36,7 +36,7 @@ public:
          {
              if(m_emptyHoles>0) m_emptyHoles--;
 
-             int index = m_validIndexes[m_validIndexesCount -1 ];
+             int index = m_nextValidIndexes[m_validIndexesCount - 1 ];
              m_validIndexesCount--;
              m_activeFlags[index] = true;
              return m_dataArray[index];
@@ -65,7 +65,7 @@ public:
 
             int vi = m_validIndexesCount;
             m_validIndexesCount++;
-            m_validIndexes[vi] = index;
+            m_nextValidIndexes[vi] = index;
         }
 
         m_activeFlags[index] = false;
@@ -95,7 +95,7 @@ private:
 
     unsigned int m_emptyHoles = 0;
     T* m_dataArray = nullptr;
-    int* m_validIndexes = nullptr;
+    int* m_nextValidIndexes = nullptr;
     size_t m_validIndexesCount = 0;
     bool* m_activeFlags = nullptr;
 };
