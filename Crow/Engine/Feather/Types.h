@@ -20,10 +20,19 @@ struct ComponentTypeDummy
 
 };
 
+///Type dummy used as a seed to generate all component ids
+struct SystemTypeDummy
+{
+
+};
+
 using ComponentType = std::uint32_t;
 
 ///custom type id generator for all component types
 using ComponentIDGenerator = CustomTypeID<ComponentTypeDummy>;
+
+///custom type id generator for all component types
+using SystemIDGenerator = CustomTypeID<SystemTypeDummy>;
 
 ///max number of entities allowed in a world
 const int MAX_ENTITIES = 50000;

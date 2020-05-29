@@ -9,6 +9,15 @@
 #include "Types.h"
 #include "../Debug/Debug.h"
 
+//Work in progress pool class
+//It stores a max nr of elements and pools them. It holds a reference to the holes of the packed array and fills them when it can.
+//It will iterate at complexity O(activeCount + holes) and the get complexity is O(1).
+
+//just an interface
+class IPool
+{
+
+};
 
 //TODO this works but, make sure you create a struct/union to make custom linked list for validIndexes so that we dont allocate another big array.
 template<typename T>
@@ -21,7 +30,6 @@ public:
         m_dataArray = (T*)(calloc(maxSize, sizeof(T)));
         m_activeFlags = (bool*)(calloc(maxSize,sizeof(bool)));
         m_nextValidIndexes = (int*)(calloc(maxSize, sizeof(int)));
-
     }
 
     size_t count = 0;

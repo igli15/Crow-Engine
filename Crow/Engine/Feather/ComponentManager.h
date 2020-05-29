@@ -59,14 +59,9 @@ public:
 private:
 
     ///All the component set pointers
-    std::map<int, IComponentSet *> m_componentSetsMap;
+    std::unordered_map<int, IComponentSet *> m_componentSetsMap;
 
-    //std::array<IComponentSet*,MAX_COMPONENTS> m_allComponentArrays;
-
-    ///The active count for the "m_allComponentArrays" array.
-    int arrayCount = 0;
 };
-
 template<typename T>
 void ComponentManager::AllocateComponentSet()
 {

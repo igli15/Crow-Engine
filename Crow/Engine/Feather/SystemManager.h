@@ -25,16 +25,16 @@ public:
     template <typename T>
     T* RegisterSystem()
     {
-        const char* typeName = typeid(T).name();
+        std::size_t id = SystemIDGenerator::index<T>;
 
-        if(m_systems.find(typeName) != m_systems.end())
+        if(m_systems.find(id) != m_systems.end())
         {
             ENGINE_LOG_CRITICAL("System is already Registered");
             throw;
         }
 
         T* system = new T();
-        m_systems.insert({typeName,system});
+        m_systems.insert({id,system});
         return system;
     }
 
@@ -43,15 +43,15 @@ public:
     template <typename T>
     void SetSignature(EntitySignature signature)
     {
-        const char* typeName = typeid(T).name();
+        std::size_t id = SystemIDGenerator::index<T>;
 
-        if(m_systems.find(typeName) == m_systems.end())
+        if(m_systems.find(id) == m_systems.end())
         {
             ENGINE_LOG_CRITICAL("System is NOT Registered");
             throw;
         }
 
-        m_signatures[typeName] = signature;
+        m_signatures[id] = signature;
     }
 
     ///Called when an entity is destroyed from the world.
@@ -75,9 +75,9 @@ public:
     {
         for (auto const& pair : m_systems)
         {
-            const char* typeName = pair.first;
+            std::size_t id = pair.first;
             System* system = pair.second;
-            EntitySignature systemSignature = m_signatures[typeName];
+            EntitySignature systemSignature = m_signatures[id];
 
             if((signature & systemSignature) == systemSignature)
             {
@@ -92,8 +92,8 @@ public:
 
 private:
 
-    std::unordered_map<const char*,EntitySignature> m_signatures {};
-    std::unordered_map<const char*,System*> m_systems {};
+    std::unordered_map<std::size_t ,EntitySignature> m_signatures {};
+    std::unordered_map<std::size_t,System*> m_systems {};
 };
 
 
