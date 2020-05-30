@@ -38,7 +38,6 @@ protected:
     SystemRegistry* m_systemRegistry;
     EntityRegistry* m_entityRegistry;
     ComponentRegistry* m_componentRegistry;
-    PoolRegistry* m_poolRegistry;
 
 
 private:
@@ -56,7 +55,7 @@ public:
     ///Here is where all the assets should be loaded
     virtual void LoadAssets();
 
-    virtual void AllocateMemory(ComponentRegistry* componentRegistry,PoolRegistry* poolRegistry);
+    virtual void AllocateMemory(ComponentRegistry* componentRegistry);
 
     ///Initializes the current world
     void InitWorld();

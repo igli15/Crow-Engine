@@ -10,7 +10,6 @@
 #include "EntityRegistry.h"
 #include "../EventQueue/EventQueue.h"
 #include "../Events/ComponentAddedEvent.h"
-#include "PoolRegistry.h"
 
 struct EntityHandle;
 

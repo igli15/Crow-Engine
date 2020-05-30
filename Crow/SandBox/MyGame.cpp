@@ -40,7 +40,6 @@
 #include "../Game/Components/AutoDestructComponent.h"
 #include "../Game/Components/DebugTextComponent.h"
 #include "../Engine/Feather/ComponentRegistry.h"
-#include "../Engine/Feather/PoolRegistry.h"
 
 void MyGame::LoadAssets()
 {
@@ -120,9 +119,9 @@ void MyGame::Init()
 
 }
 
-void MyGame::AllocateMemory(ComponentRegistry* componentRegistry,PoolRegistry* poolRegistry)
+void MyGame::AllocateMemory(ComponentRegistry* componentRegistry)
 {
-    Game::AllocateMemory(componentRegistry,poolRegistry);
+    Game::AllocateMemory(componentRegistry);
 
     componentRegistry->AllocateComponentSet<BridgeComponent>();
     componentRegistry->AllocateComponentSet<CannonComponent>();

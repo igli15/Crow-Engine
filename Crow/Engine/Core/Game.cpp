@@ -51,9 +51,8 @@ void Game::Init()
     m_systemRegistry = new SystemRegistry();
     m_entityRegistry = new EntityRegistry();
     m_componentRegistry = new ComponentRegistry();
-    m_poolRegistry = new PoolRegistry();
 
-    AllocateMemory(m_componentRegistry,m_poolRegistry);
+    AllocateMemory(m_componentRegistry);
 }
 
 void Game::InitWorld()
@@ -176,7 +175,7 @@ void Game::InitFreeTypeLibrary()
     }
 }
 
-void Game::AllocateMemory(ComponentRegistry* componentRegistry,PoolRegistry* poolRegistry)
+void Game::AllocateMemory(ComponentRegistry* componentRegistry)
 {
     componentRegistry->AllocateComponentSet<Camera>();
     componentRegistry->AllocateComponentSet<Light>();

@@ -234,9 +234,6 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Pool.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/PoolRegistry.h">
-			<Option target="Crow"/>
-		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.cpp">
 			<Option target="Crow"/>
 		</Unit>
