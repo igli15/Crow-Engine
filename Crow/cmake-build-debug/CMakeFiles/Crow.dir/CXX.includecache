@@ -308,11 +308,19 @@ Event.h
 ../Feather/Types.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
 
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentRegistry.cpp
+ComponentRegistry.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentRegistry.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentRegistry.h
 unordered_map
 -
 Types.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
+ComponentSparseSet.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentSparseSet.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentSparseSet.cpp
 ComponentSparseSet.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentSparseSet.h
 
@@ -346,7 +354,13 @@ Types.h
 World.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
 
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityManager.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityRegistry.cpp
+EntityRegistry.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityRegistry.h
+../Debug/Debug.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityRegistry.h
 queue
 -
 array
@@ -356,17 +370,33 @@ Types.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/IComponentSet.h
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Pool.h
+cstdlib
+-
+Types.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
+../Debug/Debug.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/PoolRegistry.h
+unordered_map
+-
+Pool.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Pool.h
+CustomTypeID.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/CustomTypeID.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
 set
 -
 Types.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
 
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemManager.cpp
-SystemManager.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemManager.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemRegistry.cpp
+SystemRegistry.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemRegistry.h
 
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemManager.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemRegistry.h
 typeinfo
 -
 ../Debug/Debug.h
@@ -409,16 +439,18 @@ EntityHandle.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/SpriteRendererSystem.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
-SystemManager.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemManager.h
-ComponentManager.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h
-EntityManager.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityManager.h
+SystemRegistry.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemRegistry.h
+ComponentRegistry.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentRegistry.h
+EntityRegistry.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityRegistry.h
 ../EventQueue/EventQueue.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
 ../Events/ComponentAddedEvent.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+PoolRegistry.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/PoolRegistry.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.cpp
 AbstractMaterial.h
@@ -1533,6 +1565,10 @@ Worlds/MovementTestWorld.h
 /Users/igli/Desktop/Crow Engine/Crow/Game/Components/AutoDestructComponent.h
 ../Game/Components/DebugTextComponent.h
 /Users/igli/Desktop/Crow Engine/Crow/Game/Components/DebugTextComponent.h
+../Engine/Feather/ComponentRegistry.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentRegistry.h
+../Engine/Feather/PoolRegistry.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/PoolRegistry.h
 
 /Users/igli/Desktop/Crow Engine/Crow/SandBox/MyGame.h
 ../Engine/Core/Game.h

@@ -10,6 +10,7 @@
 #include "EntityRegistry.h"
 #include "../EventQueue/EventQueue.h"
 #include "../Events/ComponentAddedEvent.h"
+#include "PoolRegistry.h"
 
 struct EntityHandle;
 
@@ -19,12 +20,12 @@ struct EntityHandle;
 class World {
 
 public:
-    
-    ///Build is where all the systems and entities should be constructed.
-    virtual void Build();
 
     ///Initializes the world.
-    void Init();
+    void Init(SystemRegistry* systemRegistry,EntityRegistry* entityRegistry,ComponentRegistry* componentRegistry,PoolRegistry* poolRegistry);
+
+    ///Build is where all the systems and entities should be constructed.
+    virtual void Build();
 
     template<typename T>
     void AllocateComponentArray()

@@ -15,11 +15,11 @@
 #include "../Systems/MeshRendererSystem.h"
 #include "../Systems/SpriteRendererSystem.h"
 
-void World::Init()
+void World::Init(SystemRegistry* systemRegistry,EntityRegistry* entityRegistry,ComponentRegistry* componentRegistry,PoolRegistry* poolRegistry)
 {
-    m_componentManager = new ComponentRegistry();
-    m_entityManager = new EntityRegistry();
-    m_systemManager = new SystemRegistry();
+    m_componentManager = componentRegistry;
+    m_entityManager = entityRegistry;
+    m_systemManager = systemRegistry;
 
     RegisterEngineSystems();
 }

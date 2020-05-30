@@ -42,12 +42,18 @@ void Game::Init()
     InitFreeTypeLibrary();
 
     Random::GenerateSeed();
+
+    m_systemRegistry = new SystemRegistry();
+    m_entityRegistry = new EntityRegistry();
+    m_componentRegistry = new ComponentRegistry();
+    m_poolRegistry = new PoolRegistry();
+
+    AllocateMemory(m_componentRegistry,m_poolRegistry);
 }
 
 void Game::InitWorld()
 {
-    currentWorld->Init();
-    AllocateMemory();
+    currentWorld->Init(m_systemRegistry,m_entityRegistry,m_componentRegistry,m_poolRegistry);
     currentWorld->Build();
     currentWorld->InitAllSystems();
 
@@ -158,15 +164,15 @@ void Game::InitFreeTypeLibrary()
     }
 }
 
-void Game::AllocateMemory()
+void Game::AllocateMemory(ComponentRegistry* componentRegistry,PoolRegistry* poolRegistry)
 {
-    currentWorld->AllocateComponentArray<Camera>();
-    currentWorld->AllocateComponentArray<Light>();
-    currentWorld->AllocateComponentArray<MeshInfo>();
-    currentWorld->AllocateComponentArray<Rigidbody>();
-    currentWorld->AllocateComponentArray<SphereCollider>();
-    currentWorld->AllocateComponentArray<SpriteInfo>();
-    currentWorld->AllocateComponentArray<Text>();
-    currentWorld->AllocateComponentArray<Transform>();
+    componentRegistry->AllocateComponentSet<Camera>();
+    componentRegistry->AllocateComponentSet<Light>();
+    componentRegistry->AllocateComponentSet<MeshInfo>();
+    componentRegistry->AllocateComponentSet<Rigidbody>();
+    componentRegistry->AllocateComponentSet<SphereCollider>();
+    componentRegistry->AllocateComponentSet<SpriteInfo>();
+    componentRegistry->AllocateComponentSet<Text>();
+    componentRegistry->AllocateComponentSet<Transform>();
 }
 
