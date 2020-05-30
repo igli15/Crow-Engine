@@ -2,11 +2,11 @@
 // Created by Igli milaqi on 14/02/2020.
 //
 
-#include "EntityManager.h"
+#include "EntityRegistry.h"
 #include "../Debug/Debug.h"
 
 
-EntityManager::EntityManager()
+EntityRegistry::EntityRegistry()
 {
     for (Entity e = 1; e < MAX_ENTITIES; ++e)
     {
@@ -15,7 +15,7 @@ EntityManager::EntityManager()
 
 }
 
-Entity EntityManager::CreateEntity()
+Entity EntityRegistry::CreateEntity()
 {
     Debug::Assert(m_activeEntities < MAX_ENTITIES,"Too many Entities");
 
@@ -26,20 +26,20 @@ Entity EntityManager::CreateEntity()
     return id;
 }
 
-void EntityManager::DestroyEntity(Entity e)
+void EntityRegistry::DestroyEntity(Entity e)
 {
     m_signatures[e].reset(); //reset the bitset
     m_entityQueue.push(e); //put it back at the queue
     m_activeEntities--;
 }
 
-void EntityManager::SetSignature(Entity e, EntitySignature s)
+void EntityRegistry::SetSignature(Entity e, EntitySignature s)
 {
     Debug::Assert(e < MAX_ENTITIES, "Entity count can not be negative");
     m_signatures[e]  = s;
 }
 
-EntitySignature EntityManager::GetSignature(Entity e)
+EntitySignature EntityRegistry::GetSignature(Entity e)
 {
     Debug::Assert(e < MAX_ENTITIES, "Entity count can not be negative");
 

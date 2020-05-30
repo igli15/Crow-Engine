@@ -2,8 +2,8 @@
 // Created by Igli milaqi on 15/02/2020.
 //
 
-#ifndef CROW_COMPONENTMANAGER_H
-#define CROW_COMPONENTMANAGER_H
+#ifndef CROW_COMPONENTREGISTRY_H
+#define CROW_COMPONENTREGISTRY_H
 
 #include <unordered_map>
 #include "Types.h"
@@ -12,9 +12,9 @@
 
 
 
-///"ComponentManager" Keeps track of all "ComponentArrays" and notifies them if an entity got removed from the world
+///"ComponentRegistry" Keeps track of all "ComponentArrays" and notifies them if an entity got removed from the world
 ///All the ComponentArrays pointers are stored in an array and the location of the arrays is their type ID.
-class ComponentManager
+class ComponentRegistry
 {
 
 public:
@@ -63,7 +63,7 @@ private:
 
 };
 template<typename T>
-void ComponentManager::AllocateComponentSet()
+void ComponentRegistry::AllocateComponentSet()
 {
     auto iterator = m_componentSetsMap.find(ComponentIDGenerator::index < T > );
 
@@ -76,32 +76,32 @@ void ComponentManager::AllocateComponentSet()
 }
 
 template<typename T>
-ComponentSparseSet<T> *ComponentManager::GetComponentSet()
+ComponentSparseSet<T> *ComponentRegistry::GetComponentSet()
 {
     //TODO add assertion here.
     return static_cast<ComponentSparseSet<T> *>(m_componentSetsMap[ComponentIDGenerator::index < T >]);
 }
 
 template<typename T>
-T *ComponentManager::AddComponent(Entity entity, T component)
+T *ComponentRegistry::AddComponent(Entity entity, T component)
 {
     return GetComponentSet<T>()->AddComponentData(entity, component);
 }
 
 template<typename T>
-void ComponentManager::RemoveComponent(Entity entity)
+void ComponentRegistry::RemoveComponent(Entity entity)
 {
     GetComponentSet<T>()->RemoveComponentData(entity);
 }
 
 template<typename T>
-T &ComponentManager::GetComponent(Entity entity)
+T &ComponentRegistry::GetComponent(Entity entity)
 {
     return GetComponentSet<T>()->GetComponentData(entity);
 }
 
 template<typename T>
-T *ComponentManager::GetComponentPtr(Entity entity)
+T *ComponentRegistry::GetComponentPtr(Entity entity)
 {
     ComponentSparseSet<T> *arrayPtr = GetComponentSet<T>();
 
@@ -111,4 +111,4 @@ T *ComponentManager::GetComponentPtr(Entity entity)
 }
 
 
-#endif //CROW_COMPONENTMANAGER_H
+#endif //CROW_COMPONENTREGISTRY_H

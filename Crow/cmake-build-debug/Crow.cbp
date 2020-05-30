@@ -201,10 +201,10 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Benchmark.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.cpp">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentRegistry.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentRegistry.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentSparseSet.cpp">
@@ -222,10 +222,10 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityManager.cpp">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityRegistry.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityManager.h">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityRegistry.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/IComponentSet.h">
@@ -243,10 +243,10 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemManager.cpp">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemRegistry.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemManager.h">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemRegistry.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h">

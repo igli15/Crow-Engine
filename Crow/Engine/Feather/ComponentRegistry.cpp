@@ -2,4 +2,4 @@
 // Created by Igli milaqi on 15/02/2020.
 //
 
-#include "ComponentManager.h"
+#include "ComponentRegistry.h"

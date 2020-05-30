@@ -2,8 +2,8 @@
 // Created by Igli milaqi on 16/02/2020.
 //
 
-#ifndef CROW_SYSTEMMANAGER_H
-#define CROW_SYSTEMMANAGER_H
+#ifndef CROW_SYSTEMREGISTRY_H
+#define CROW_SYSTEMREGISTRY_H
 
 
 #include <typeinfo>
@@ -15,7 +15,7 @@
 ///Holds a refence to all the systems.
 ///Updates system signatures and the entity list for each system when needed.
 ///Creates and Registers systems.
-class SystemManager {
+class SystemRegistry {
 
 public:
 
@@ -97,4 +97,4 @@ private:
 };
 
 
-#endif //CROW_SYSTEMMANAGER_H
+#endif //CROW_SYSTEMREGISTRY_H

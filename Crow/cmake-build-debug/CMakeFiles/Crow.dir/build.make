@@ -83,31 +83,31 @@ CMakeFiles/Crow.dir/Engine/Debug/Debug.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Debug/Debug.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.cpp" -o CMakeFiles/Crow.dir/Engine/Debug/Debug.cpp.s
 
-CMakeFiles/Crow.dir/Engine/Feather/EntityManager.cpp.o: CMakeFiles/Crow.dir/flags.make
-CMakeFiles/Crow.dir/Engine/Feather/EntityManager.cpp.o: ../Engine/Feather/EntityManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Crow.dir/Engine/Feather/EntityManager.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Feather/EntityManager.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityManager.cpp"
+CMakeFiles/Crow.dir/Engine/Feather/EntityRegistry.cpp.o: CMakeFiles/Crow.dir/flags.make
+CMakeFiles/Crow.dir/Engine/Feather/EntityRegistry.cpp.o: ../Engine/Feather/EntityRegistry.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Crow.dir/Engine/Feather/EntityRegistry.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Feather/EntityRegistry.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityRegistry.cpp"
 
-CMakeFiles/Crow.dir/Engine/Feather/EntityManager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Engine/Feather/EntityManager.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityManager.cpp" > CMakeFiles/Crow.dir/Engine/Feather/EntityManager.cpp.i
+CMakeFiles/Crow.dir/Engine/Feather/EntityRegistry.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Engine/Feather/EntityRegistry.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityRegistry.cpp" > CMakeFiles/Crow.dir/Engine/Feather/EntityRegistry.cpp.i
 
-CMakeFiles/Crow.dir/Engine/Feather/EntityManager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Feather/EntityManager.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityManager.cpp" -o CMakeFiles/Crow.dir/Engine/Feather/EntityManager.cpp.s
+CMakeFiles/Crow.dir/Engine/Feather/EntityRegistry.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Feather/EntityRegistry.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityRegistry.cpp" -o CMakeFiles/Crow.dir/Engine/Feather/EntityRegistry.cpp.s
 
-CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.o: CMakeFiles/Crow.dir/flags.make
-CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.o: ../Engine/Feather/ComponentManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.cpp"
+CMakeFiles/Crow.dir/Engine/Feather/ComponentRegistry.cpp.o: CMakeFiles/Crow.dir/flags.make
+CMakeFiles/Crow.dir/Engine/Feather/ComponentRegistry.cpp.o: ../Engine/Feather/ComponentRegistry.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Crow.dir/Engine/Feather/ComponentRegistry.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Feather/ComponentRegistry.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentRegistry.cpp"
 
-CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.cpp" > CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.i
+CMakeFiles/Crow.dir/Engine/Feather/ComponentRegistry.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Engine/Feather/ComponentRegistry.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentRegistry.cpp" > CMakeFiles/Crow.dir/Engine/Feather/ComponentRegistry.cpp.i
 
-CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.cpp" -o CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.s
+CMakeFiles/Crow.dir/Engine/Feather/ComponentRegistry.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Feather/ComponentRegistry.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentRegistry.cpp" -o CMakeFiles/Crow.dir/Engine/Feather/ComponentRegistry.cpp.s
 
 CMakeFiles/Crow.dir/Engine/Feather/System.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Engine/Feather/System.cpp.o: ../Engine/Feather/System.cpp
@@ -122,18 +122,18 @@ CMakeFiles/Crow.dir/Engine/Feather/System.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Feather/System.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.cpp" -o CMakeFiles/Crow.dir/Engine/Feather/System.cpp.s
 
-CMakeFiles/Crow.dir/Engine/Feather/SystemManager.cpp.o: CMakeFiles/Crow.dir/flags.make
-CMakeFiles/Crow.dir/Engine/Feather/SystemManager.cpp.o: ../Engine/Feather/SystemManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Crow.dir/Engine/Feather/SystemManager.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Feather/SystemManager.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemManager.cpp"
+CMakeFiles/Crow.dir/Engine/Feather/SystemRegistry.cpp.o: CMakeFiles/Crow.dir/flags.make
+CMakeFiles/Crow.dir/Engine/Feather/SystemRegistry.cpp.o: ../Engine/Feather/SystemRegistry.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Crow.dir/Engine/Feather/SystemRegistry.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Feather/SystemRegistry.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemRegistry.cpp"
 
-CMakeFiles/Crow.dir/Engine/Feather/SystemManager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Engine/Feather/SystemManager.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemManager.cpp" > CMakeFiles/Crow.dir/Engine/Feather/SystemManager.cpp.i
+CMakeFiles/Crow.dir/Engine/Feather/SystemRegistry.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Engine/Feather/SystemRegistry.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemRegistry.cpp" > CMakeFiles/Crow.dir/Engine/Feather/SystemRegistry.cpp.i
 
-CMakeFiles/Crow.dir/Engine/Feather/SystemManager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Feather/SystemManager.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemManager.cpp" -o CMakeFiles/Crow.dir/Engine/Feather/SystemManager.cpp.s
+CMakeFiles/Crow.dir/Engine/Feather/SystemRegistry.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Feather/SystemRegistry.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemRegistry.cpp" -o CMakeFiles/Crow.dir/Engine/Feather/SystemRegistry.cpp.s
 
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: CMakeFiles/Crow.dir/flags.make
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Feather/World.cpp
@@ -997,10 +997,10 @@ CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.s: cmake_force
 Crow_OBJECTS = \
 "CMakeFiles/Crow.dir/main.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Debug/Debug.cpp.o" \
-"CMakeFiles/Crow.dir/Engine/Feather/EntityManager.cpp.o" \
-"CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.o" \
+"CMakeFiles/Crow.dir/Engine/Feather/EntityRegistry.cpp.o" \
+"CMakeFiles/Crow.dir/Engine/Feather/ComponentRegistry.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Feather/System.cpp.o" \
-"CMakeFiles/Crow.dir/Engine/Feather/SystemManager.cpp.o" \
+"CMakeFiles/Crow.dir/Engine/Feather/SystemRegistry.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o" \
 "CMakeFiles/Crow.dir/OOP_Engine/Gameobject.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Feather/EntityHandle.cpp.o" \
@@ -1073,10 +1073,10 @@ Crow_EXTERNAL_OBJECTS =
 
 Crow: CMakeFiles/Crow.dir/main.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Debug/Debug.cpp.o
-Crow: CMakeFiles/Crow.dir/Engine/Feather/EntityManager.cpp.o
-Crow: CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.o
+Crow: CMakeFiles/Crow.dir/Engine/Feather/EntityRegistry.cpp.o
+Crow: CMakeFiles/Crow.dir/Engine/Feather/ComponentRegistry.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Feather/System.cpp.o
-Crow: CMakeFiles/Crow.dir/Engine/Feather/SystemManager.cpp.o
+Crow: CMakeFiles/Crow.dir/Engine/Feather/SystemRegistry.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o
 Crow: CMakeFiles/Crow.dir/OOP_Engine/Gameobject.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Feather/EntityHandle.cpp.o

@@ -2,22 +2,22 @@
 // Created by Igli milaqi on 14/02/2020.
 //
 
-#ifndef CROW_ENTITYMANAGER_H
-#define CROW_ENTITYMANAGER_H
+#ifndef CROW_ENTITYREGISTRY_H
+#define CROW_ENTITYREGISTRY_H
 
 #include <queue>
 #include <array>
 #include "Types.h"
 
-///"EntityManager" manages all the entities.
+///"EntityRegistry" manages all the entities.
 ///It is responsible for creating/destroying and storing the signature of the entities.
 ///EntitySignature is a bitset which represents all the attached components to the entity.
 ///For example if a entity contains an component with ID 2 the 2nd bit with be marked active.
 ///Entity is just an std::uint32 and all the entities are stored in a queue.
-class EntityManager {
+class EntityRegistry {
 
 public:
-    EntityManager();
+    EntityRegistry();
 
     ///Creates an entity
     ///@return Returns the entity that was just created

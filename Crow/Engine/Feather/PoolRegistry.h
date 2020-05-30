@@ -28,8 +28,7 @@ class PoolRegistry
             Pool<T> pool = new Pool<T>();
             pool.Allocate(maxSize);
             m_poolMap.insert(iterator, std::make_pair(PoolIDGenerator::index < T > , pool));
-        } else
-            {
+        } else{
             ENGINE_LOG_WARNING("Pool is already registered.... Skipping");
         }
     }

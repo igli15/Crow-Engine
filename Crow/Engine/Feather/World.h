@@ -5,9 +5,9 @@
 #ifndef CROW_FEATHER_H
 #define CROW_FEATHER_H
 
-#include "SystemManager.h"
-#include "ComponentManager.h"
-#include "EntityManager.h"
+#include "SystemRegistry.h"
+#include "ComponentRegistry.h"
+#include "EntityRegistry.h"
 #include "../EventQueue/EventQueue.h"
 #include "../Events/ComponentAddedEvent.h"
 
@@ -19,7 +19,7 @@ struct EntityHandle;
 class World {
 
 public:
-
+    
     ///Build is where all the systems and entities should be constructed.
     virtual void Build();
 
@@ -264,9 +264,9 @@ public:
 
 private:
 
-    ComponentManager* m_componentManager;
-    EntityManager* m_entityManager;
-    SystemManager* m_systemManager;
+    ComponentRegistry* m_componentManager;
+    EntityRegistry* m_entityManager;
+    SystemRegistry* m_systemManager;
 
     std::vector<Entity> m_entityGarbage;
 

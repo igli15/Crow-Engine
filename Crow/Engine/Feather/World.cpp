@@ -17,9 +17,9 @@
 
 void World::Init()
 {
-    m_componentManager = new ComponentManager();
-    m_entityManager = new EntityManager();
-    m_systemManager = new SystemManager();
+    m_componentManager = new ComponentRegistry();
+    m_entityManager = new EntityRegistry();
+    m_systemManager = new SystemRegistry();
 
     RegisterEngineSystems();
 }
