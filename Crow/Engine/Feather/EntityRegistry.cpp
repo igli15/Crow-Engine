@@ -17,8 +17,6 @@ EntityRegistry::EntityRegistry()
 
 Entity EntityRegistry::CreateEntity()
 {
-    Debug::Assert(m_activeEntities < MAX_ENTITIES,"Too many Entities");
-
     Entity id = m_entityQueue.front();
     m_entityQueue.pop();
     m_activeEntities++;
@@ -35,14 +33,11 @@ void EntityRegistry::DestroyEntity(Entity e)
 
 void EntityRegistry::SetSignature(Entity e, EntitySignature s)
 {
-    Debug::Assert(e < MAX_ENTITIES, "Entity count can not be negative");
     m_signatures[e]  = s;
 }
 
 EntitySignature EntityRegistry::GetSignature(Entity e)
 {
-    Debug::Assert(e < MAX_ENTITIES, "Entity count can not be negative");
-
     return m_signatures[e];
 }
 
