@@ -20,6 +20,11 @@
 #include "../Components/SpriteInfo.h"
 #include "../Components/Text.h"
 #include "../Components/Transform.h"
+#include "../Systems/MeshRendererSystem.h"
+#include "../Systems/CollisionDetectionSystem.h"
+#include "../Systems/TransformHierarchySystem.h"
+#include "../Systems/TextRenderingSystem.h"
+#include "../Systems/SpriteRendererSystem.h"
 
 Game* Game::m_instance;
 
@@ -53,10 +58,17 @@ void Game::Init()
 
 void Game::InitWorld()
 {
-    currentWorld->Init(m_systemRegistry,m_entityRegistry,m_componentRegistry,m_poolRegistry);
+    currentWorld->Init(m_systemRegistry,m_entityRegistry,m_componentRegistry);
+
+    currentWorld->RegisterSystem<MeshRendererSystem>();
+    currentWorld->RegisterSystem<CollisionDetectionSystem>();
+    currentWorld->RegisterSystem<TransformHierarchySystem>();
+    currentWorld->RegisterSystem<TextRenderingSystem>();
+    currentWorld->RegisterSystem<SpriteRendererSystem>();
+    currentWorld->SetSystemSignature<MeshRendererSystem,Transform,MeshInfo>();
+
     currentWorld->Build();
     currentWorld->InitAllSystems();
-
 }
 
 

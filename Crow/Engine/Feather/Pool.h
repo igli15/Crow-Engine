@@ -19,7 +19,7 @@ class IPool
 
 };
 
-//TODO this works but, make sure you create a struct/union to make custom linked list for validIndexes so that we dont allocate another big array.
+//TODO this works but, maybe find a better wey then allocating 3 arrays
 template<typename T>
 class Pool
 {

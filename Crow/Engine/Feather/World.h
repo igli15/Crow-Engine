@@ -22,7 +22,7 @@ class World {
 public:
 
     ///Initializes the world.
-    void Init(SystemRegistry* systemRegistry,EntityRegistry* entityRegistry,ComponentRegistry* componentRegistry,PoolRegistry* poolRegistry);
+    void Init(SystemRegistry* systemRegistry,EntityRegistry* entityRegistry,ComponentRegistry* componentRegistry);
 
     ///Build is where all the systems and entities should be constructed.
     virtual void Build();
@@ -273,7 +273,6 @@ private:
 
     std::vector<System*> m_allRegisteredSystems;
 
-    void RegisterEngineSystems();
 };
 
 
