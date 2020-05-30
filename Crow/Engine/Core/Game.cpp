@@ -20,6 +20,11 @@
 #include "../Components/SpriteInfo.h"
 #include "../Components/Text.h"
 #include "../Components/Transform.h"
+#include "../Systems/MeshRendererSystem.h"
+#include "../Systems/CollisionDetectionSystem.h"
+#include "../Systems/TransformHierarchySystem.h"
+#include "../Systems/TextRenderingSystem.h"
+#include "../Systems/SpriteRendererSystem.h"
 
 Game* Game::m_instance;
 
@@ -42,15 +47,27 @@ void Game::Init()
     InitFreeTypeLibrary();
 
     Random::GenerateSeed();
+
+    m_systemRegistry = new SystemRegistry();
+    m_entityRegistry = new EntityRegistry();
+    m_componentRegistry = new ComponentRegistry();
+
+    AllocateMemory(m_componentRegistry);
 }
 
 void Game::InitWorld()
 {
-    currentWorld->Init();
-    AllocateMemory();
+    currentWorld->Init(m_systemRegistry,m_entityRegistry,m_componentRegistry);
+
+    currentWorld->RegisterSystem<MeshRendererSystem>();
+    currentWorld->RegisterSystem<CollisionDetectionSystem>();
+    currentWorld->RegisterSystem<TransformHierarchySystem>();
+    currentWorld->RegisterSystem<TextRenderingSystem>();
+    currentWorld->RegisterSystem<SpriteRendererSystem>();
+    currentWorld->SetSystemSignature<MeshRendererSystem,Transform,MeshInfo>();
+
     currentWorld->Build();
     currentWorld->InitAllSystems();
-
 }
 
 
@@ -158,15 +175,15 @@ void Game::InitFreeTypeLibrary()
     }
 }
 
-void Game::AllocateMemory()
+void Game::AllocateMemory(ComponentRegistry* componentRegistry)
 {
-    currentWorld->AllocateComponentArray<Camera>();
-    currentWorld->AllocateComponentArray<Light>();
-    currentWorld->AllocateComponentArray<MeshInfo>();
-    currentWorld->AllocateComponentArray<Rigidbody>();
-    currentWorld->AllocateComponentArray<SphereCollider>();
-    currentWorld->AllocateComponentArray<SpriteInfo>();
-    currentWorld->AllocateComponentArray<Text>();
-    currentWorld->AllocateComponentArray<Transform>();
+    componentRegistry->AllocateComponentSet<Camera>();
+    componentRegistry->AllocateComponentSet<Light>();
+    componentRegistry->AllocateComponentSet<MeshInfo>();
+    componentRegistry->AllocateComponentSet<Rigidbody>();
+    componentRegistry->AllocateComponentSet<SphereCollider>();
+    componentRegistry->AllocateComponentSet<SpriteInfo>();
+    componentRegistry->AllocateComponentSet<Text>();
+    componentRegistry->AllocateComponentSet<Transform>();
 }
 

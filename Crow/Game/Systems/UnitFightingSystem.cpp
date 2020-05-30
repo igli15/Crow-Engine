@@ -27,14 +27,14 @@ void UnitFightingSystem::OnUnitCollisionStay(UnitCollisionStayEvent *event)
     EntityHandle playerUnitEntity = event->playerEntity;
     EntityHandle enemyUnitHandle = event->enemyEntity;
 
-    ComponentHandle<Rigidbody> playerRb =  playerUnitEntity.GetComponent<Rigidbody>();
-    ComponentHandle<Rigidbody> enemyRb =  enemyUnitHandle.GetComponent<Rigidbody>();
+    Rigidbody& playerRb =  playerUnitEntity.GetComponent<Rigidbody>();
+    Rigidbody& enemyRb =  enemyUnitHandle.GetComponent<Rigidbody>();
 
-    playerRb.component->velocity = glm::vec3(0);
-    enemyRb.component->velocity = glm::vec3(0);
+    playerRb.velocity = glm::vec3(0);
+    enemyRb.velocity = glm::vec3(0);
 
-    playerRb.component->acceleration = glm::vec3(0);
-    enemyRb.component->acceleration = glm::vec3(0);
+    playerRb.acceleration = glm::vec3(0);
+    enemyRb.acceleration = glm::vec3(0);
 
     Fight(playerUnitEntity,enemyUnitHandle);
 }
@@ -87,61 +87,61 @@ void UnitFightingSystem::OnUnitCollisionExit(UnitCollisionExitEvent* event)
 
 void UnitFightingSystem::Fight(EntityHandle firstEntity, EntityHandle secondEntity)
 {
-    ComponentHandle<DamageDealer> firstDamageDealer = firstEntity.GetComponent<DamageDealer>();
-    ComponentHandle<DamageDealer> secondDamageDealer = secondEntity.GetComponent<DamageDealer>();
+    DamageDealer* firstDamageDealer = firstEntity.GetComponentPtr<DamageDealer>();
+    DamageDealer* secondDamageDealer = secondEntity.GetComponentPtr<DamageDealer>();
 
-    if(firstDamageDealer.component == nullptr || secondDamageDealer.component == nullptr) return;
+    if(firstDamageDealer == nullptr || secondDamageDealer == nullptr) return;
 
-    if(firstDamageDealer.component->damageDealerType == DamageDealer::NONE)
+    if(firstDamageDealer->damageDealerType == DamageDealer::NONE)
     {
         APP_LOG_WARNING("Damage dealer is of none type returning.....");
         return;
     }
 
-    if(secondDamageDealer.component->damageDealerType == DamageDealer::NONE)
+    if(secondDamageDealer->damageDealerType == DamageDealer::NONE)
     {
         APP_LOG_WARNING("Damage dealer is of none type returning.....");
         return;
     }
 
-    float firstDmg = firstDamageDealer.component->damageRate;
-    float secondDmg = secondDamageDealer.component->damageRate;
+    float firstDmg = firstDamageDealer->damageRate;
+    float secondDmg = secondDamageDealer->damageRate;
 
-    if(firstDamageDealer.component->strongAgainst == secondDamageDealer.component->damageDealerType)
+    if(firstDamageDealer->strongAgainst == secondDamageDealer->damageDealerType)
     {
         firstDmg *= 2;
     }
 
-    if(secondDamageDealer.component->strongAgainst == firstDamageDealer.component->damageDealerType)
+    if(secondDamageDealer->strongAgainst == firstDamageDealer->damageDealerType)
     {
         secondDmg *= 2;
     }
 
-    ComponentHandle<HealthComponent> firstEntityHealth = firstEntity.GetComponent<HealthComponent>();
-    ComponentHandle<HealthComponent> secondEntityHealth = secondEntity.GetComponent<HealthComponent>();
+    HealthComponent& firstEntityHealth = firstEntity.GetComponent<HealthComponent>();
+    HealthComponent& secondEntityHealth = secondEntity.GetComponent<HealthComponent>();
 
-    firstEntityHealth.component->currentHealth -= secondDmg;
-    secondEntityHealth.component->currentHealth -= firstDmg;
+    firstEntityHealth.currentHealth -= secondDmg;
+    secondEntityHealth.currentHealth -= firstDmg;
 
-    if(firstDamageDealer.component->damageDealerType == DamageDealer::Jumping)
+    if(firstDamageDealer->damageDealerType == DamageDealer::Jumping)
     {
-        firstEntityHealth.component->currentHealth = 0;
+        firstEntityHealth.currentHealth = 0;
     }
 
-    if(secondDamageDealer.component->damageDealerType == DamageDealer::Jumping)
+    if(secondDamageDealer->damageDealerType == DamageDealer::Jumping)
     {
-        secondEntityHealth.component->currentHealth = 0;
+        secondEntityHealth.currentHealth = 0;
     }
 
 
-    if(firstEntityHealth.component->currentHealth <= 0)
+    if(firstEntityHealth.currentHealth <= 0)
     {
         EventQueue::Instance().Publish(new OnUnitDefeatedEvent(firstEntity.entity));
         world->DestroyEntity(firstEntity.entity);
 
     }
 
-    if(secondEntityHealth.component->currentHealth <= 0)
+    if(secondEntityHealth.currentHealth <= 0)
     {
         EventQueue::Instance().Publish(new OnUnitDefeatedEvent(secondEntity.entity));
         world->DestroyEntity(secondEntity.entity);

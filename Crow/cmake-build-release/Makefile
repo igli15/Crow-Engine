@@ -420,86 +420,32 @@ Engine/EventQueue/MemberFunctionHandler.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/EventQueue/MemberFunctionHandler.cpp.s
 .PHONY : Engine/EventQueue/MemberFunctionHandler.cpp.s
 
-Engine/Feather/ComponentArray.o: Engine/Feather/ComponentArray.cpp.o
+Engine/Feather/ComponentRegistry.o: Engine/Feather/ComponentRegistry.cpp.o
 
-.PHONY : Engine/Feather/ComponentArray.o
-
-# target to build an object file
-Engine/Feather/ComponentArray.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.o
-.PHONY : Engine/Feather/ComponentArray.cpp.o
-
-Engine/Feather/ComponentArray.i: Engine/Feather/ComponentArray.cpp.i
-
-.PHONY : Engine/Feather/ComponentArray.i
-
-# target to preprocess a source file
-Engine/Feather/ComponentArray.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.i
-.PHONY : Engine/Feather/ComponentArray.cpp.i
-
-Engine/Feather/ComponentArray.s: Engine/Feather/ComponentArray.cpp.s
-
-.PHONY : Engine/Feather/ComponentArray.s
-
-# target to generate assembly for a file
-Engine/Feather/ComponentArray.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/ComponentArray.cpp.s
-.PHONY : Engine/Feather/ComponentArray.cpp.s
-
-Engine/Feather/ComponentHandle.o: Engine/Feather/ComponentHandle.cpp.o
-
-.PHONY : Engine/Feather/ComponentHandle.o
+.PHONY : Engine/Feather/ComponentRegistry.o
 
 # target to build an object file
-Engine/Feather/ComponentHandle.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/ComponentHandle.cpp.o
-.PHONY : Engine/Feather/ComponentHandle.cpp.o
+Engine/Feather/ComponentRegistry.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/ComponentRegistry.cpp.o
+.PHONY : Engine/Feather/ComponentRegistry.cpp.o
 
-Engine/Feather/ComponentHandle.i: Engine/Feather/ComponentHandle.cpp.i
+Engine/Feather/ComponentRegistry.i: Engine/Feather/ComponentRegistry.cpp.i
 
-.PHONY : Engine/Feather/ComponentHandle.i
-
-# target to preprocess a source file
-Engine/Feather/ComponentHandle.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/ComponentHandle.cpp.i
-.PHONY : Engine/Feather/ComponentHandle.cpp.i
-
-Engine/Feather/ComponentHandle.s: Engine/Feather/ComponentHandle.cpp.s
-
-.PHONY : Engine/Feather/ComponentHandle.s
-
-# target to generate assembly for a file
-Engine/Feather/ComponentHandle.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/ComponentHandle.cpp.s
-.PHONY : Engine/Feather/ComponentHandle.cpp.s
-
-Engine/Feather/ComponentManager.o: Engine/Feather/ComponentManager.cpp.o
-
-.PHONY : Engine/Feather/ComponentManager.o
-
-# target to build an object file
-Engine/Feather/ComponentManager.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.o
-.PHONY : Engine/Feather/ComponentManager.cpp.o
-
-Engine/Feather/ComponentManager.i: Engine/Feather/ComponentManager.cpp.i
-
-.PHONY : Engine/Feather/ComponentManager.i
+.PHONY : Engine/Feather/ComponentRegistry.i
 
 # target to preprocess a source file
-Engine/Feather/ComponentManager.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.i
-.PHONY : Engine/Feather/ComponentManager.cpp.i
+Engine/Feather/ComponentRegistry.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/ComponentRegistry.cpp.i
+.PHONY : Engine/Feather/ComponentRegistry.cpp.i
 
-Engine/Feather/ComponentManager.s: Engine/Feather/ComponentManager.cpp.s
+Engine/Feather/ComponentRegistry.s: Engine/Feather/ComponentRegistry.cpp.s
 
-.PHONY : Engine/Feather/ComponentManager.s
+.PHONY : Engine/Feather/ComponentRegistry.s
 
 # target to generate assembly for a file
-Engine/Feather/ComponentManager.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/ComponentManager.cpp.s
-.PHONY : Engine/Feather/ComponentManager.cpp.s
+Engine/Feather/ComponentRegistry.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/ComponentRegistry.cpp.s
+.PHONY : Engine/Feather/ComponentRegistry.cpp.s
 
 Engine/Feather/ComponentSparseSet.o: Engine/Feather/ComponentSparseSet.cpp.o
 
@@ -555,32 +501,32 @@ Engine/Feather/EntityHandle.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/EntityHandle.cpp.s
 .PHONY : Engine/Feather/EntityHandle.cpp.s
 
-Engine/Feather/EntityManager.o: Engine/Feather/EntityManager.cpp.o
+Engine/Feather/EntityRegistry.o: Engine/Feather/EntityRegistry.cpp.o
 
-.PHONY : Engine/Feather/EntityManager.o
+.PHONY : Engine/Feather/EntityRegistry.o
 
 # target to build an object file
-Engine/Feather/EntityManager.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/EntityManager.cpp.o
-.PHONY : Engine/Feather/EntityManager.cpp.o
+Engine/Feather/EntityRegistry.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/EntityRegistry.cpp.o
+.PHONY : Engine/Feather/EntityRegistry.cpp.o
 
-Engine/Feather/EntityManager.i: Engine/Feather/EntityManager.cpp.i
+Engine/Feather/EntityRegistry.i: Engine/Feather/EntityRegistry.cpp.i
 
-.PHONY : Engine/Feather/EntityManager.i
+.PHONY : Engine/Feather/EntityRegistry.i
 
 # target to preprocess a source file
-Engine/Feather/EntityManager.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/EntityManager.cpp.i
-.PHONY : Engine/Feather/EntityManager.cpp.i
+Engine/Feather/EntityRegistry.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/EntityRegistry.cpp.i
+.PHONY : Engine/Feather/EntityRegistry.cpp.i
 
-Engine/Feather/EntityManager.s: Engine/Feather/EntityManager.cpp.s
+Engine/Feather/EntityRegistry.s: Engine/Feather/EntityRegistry.cpp.s
 
-.PHONY : Engine/Feather/EntityManager.s
+.PHONY : Engine/Feather/EntityRegistry.s
 
 # target to generate assembly for a file
-Engine/Feather/EntityManager.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/EntityManager.cpp.s
-.PHONY : Engine/Feather/EntityManager.cpp.s
+Engine/Feather/EntityRegistry.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/EntityRegistry.cpp.s
+.PHONY : Engine/Feather/EntityRegistry.cpp.s
 
 Engine/Feather/System.o: Engine/Feather/System.cpp.o
 
@@ -609,32 +555,32 @@ Engine/Feather/System.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/System.cpp.s
 .PHONY : Engine/Feather/System.cpp.s
 
-Engine/Feather/SystemManager.o: Engine/Feather/SystemManager.cpp.o
+Engine/Feather/SystemRegistry.o: Engine/Feather/SystemRegistry.cpp.o
 
-.PHONY : Engine/Feather/SystemManager.o
+.PHONY : Engine/Feather/SystemRegistry.o
 
 # target to build an object file
-Engine/Feather/SystemManager.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/SystemManager.cpp.o
-.PHONY : Engine/Feather/SystemManager.cpp.o
+Engine/Feather/SystemRegistry.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/SystemRegistry.cpp.o
+.PHONY : Engine/Feather/SystemRegistry.cpp.o
 
-Engine/Feather/SystemManager.i: Engine/Feather/SystemManager.cpp.i
+Engine/Feather/SystemRegistry.i: Engine/Feather/SystemRegistry.cpp.i
 
-.PHONY : Engine/Feather/SystemManager.i
+.PHONY : Engine/Feather/SystemRegistry.i
 
 # target to preprocess a source file
-Engine/Feather/SystemManager.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/SystemManager.cpp.i
-.PHONY : Engine/Feather/SystemManager.cpp.i
+Engine/Feather/SystemRegistry.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/SystemRegistry.cpp.i
+.PHONY : Engine/Feather/SystemRegistry.cpp.i
 
-Engine/Feather/SystemManager.s: Engine/Feather/SystemManager.cpp.s
+Engine/Feather/SystemRegistry.s: Engine/Feather/SystemRegistry.cpp.s
 
-.PHONY : Engine/Feather/SystemManager.s
+.PHONY : Engine/Feather/SystemRegistry.s
 
 # target to generate assembly for a file
-Engine/Feather/SystemManager.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/SystemManager.cpp.s
-.PHONY : Engine/Feather/SystemManager.cpp.s
+Engine/Feather/SystemRegistry.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Feather/SystemRegistry.cpp.s
+.PHONY : Engine/Feather/SystemRegistry.cpp.s
 
 Engine/Feather/World.o: Engine/Feather/World.cpp.o
 
@@ -1851,33 +1797,6 @@ Game/Worlds/MainWorld.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.s
 .PHONY : Game/Worlds/MainWorld.cpp.s
 
-OOP_Engine/Component.o: OOP_Engine/Component.cpp.o
-
-.PHONY : OOP_Engine/Component.o
-
-# target to build an object file
-OOP_Engine/Component.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/OOP_Engine/Component.cpp.o
-.PHONY : OOP_Engine/Component.cpp.o
-
-OOP_Engine/Component.i: OOP_Engine/Component.cpp.i
-
-.PHONY : OOP_Engine/Component.i
-
-# target to preprocess a source file
-OOP_Engine/Component.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/OOP_Engine/Component.cpp.i
-.PHONY : OOP_Engine/Component.cpp.i
-
-OOP_Engine/Component.s: OOP_Engine/Component.cpp.s
-
-.PHONY : OOP_Engine/Component.s
-
-# target to generate assembly for a file
-OOP_Engine/Component.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/OOP_Engine/Component.cpp.s
-.PHONY : OOP_Engine/Component.cpp.s
-
 OOP_Engine/Gameobject.o: OOP_Engine/Gameobject.cpp.o
 
 .PHONY : OOP_Engine/Gameobject.o
@@ -1904,33 +1823,6 @@ OOP_Engine/Gameobject.s: OOP_Engine/Gameobject.cpp.s
 OOP_Engine/Gameobject.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/OOP_Engine/Gameobject.cpp.s
 .PHONY : OOP_Engine/Gameobject.cpp.s
-
-OOP_Engine/OOPEngine.o: OOP_Engine/OOPEngine.cpp.o
-
-.PHONY : OOP_Engine/OOPEngine.o
-
-# target to build an object file
-OOP_Engine/OOPEngine.cpp.o:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/OOP_Engine/OOPEngine.cpp.o
-.PHONY : OOP_Engine/OOPEngine.cpp.o
-
-OOP_Engine/OOPEngine.i: OOP_Engine/OOPEngine.cpp.i
-
-.PHONY : OOP_Engine/OOPEngine.i
-
-# target to preprocess a source file
-OOP_Engine/OOPEngine.cpp.i:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/OOP_Engine/OOPEngine.cpp.i
-.PHONY : OOP_Engine/OOPEngine.cpp.i
-
-OOP_Engine/OOPEngine.s: OOP_Engine/OOPEngine.cpp.s
-
-.PHONY : OOP_Engine/OOPEngine.s
-
-# target to generate assembly for a file
-OOP_Engine/OOPEngine.cpp.s:
-	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/OOP_Engine/OOPEngine.cpp.s
-.PHONY : OOP_Engine/OOPEngine.cpp.s
 
 Plugins/stb_image.o: Plugins/stb_image.cpp.o
 
@@ -2217,30 +2109,24 @@ help:
 	@echo "... Engine/EventQueue/MemberFunctionHandler.o"
 	@echo "... Engine/EventQueue/MemberFunctionHandler.i"
 	@echo "... Engine/EventQueue/MemberFunctionHandler.s"
-	@echo "... Engine/Feather/ComponentArray.o"
-	@echo "... Engine/Feather/ComponentArray.i"
-	@echo "... Engine/Feather/ComponentArray.s"
-	@echo "... Engine/Feather/ComponentHandle.o"
-	@echo "... Engine/Feather/ComponentHandle.i"
-	@echo "... Engine/Feather/ComponentHandle.s"
-	@echo "... Engine/Feather/ComponentManager.o"
-	@echo "... Engine/Feather/ComponentManager.i"
-	@echo "... Engine/Feather/ComponentManager.s"
+	@echo "... Engine/Feather/ComponentRegistry.o"
+	@echo "... Engine/Feather/ComponentRegistry.i"
+	@echo "... Engine/Feather/ComponentRegistry.s"
 	@echo "... Engine/Feather/ComponentSparseSet.o"
 	@echo "... Engine/Feather/ComponentSparseSet.i"
 	@echo "... Engine/Feather/ComponentSparseSet.s"
 	@echo "... Engine/Feather/EntityHandle.o"
 	@echo "... Engine/Feather/EntityHandle.i"
 	@echo "... Engine/Feather/EntityHandle.s"
-	@echo "... Engine/Feather/EntityManager.o"
-	@echo "... Engine/Feather/EntityManager.i"
-	@echo "... Engine/Feather/EntityManager.s"
+	@echo "... Engine/Feather/EntityRegistry.o"
+	@echo "... Engine/Feather/EntityRegistry.i"
+	@echo "... Engine/Feather/EntityRegistry.s"
 	@echo "... Engine/Feather/System.o"
 	@echo "... Engine/Feather/System.i"
 	@echo "... Engine/Feather/System.s"
-	@echo "... Engine/Feather/SystemManager.o"
-	@echo "... Engine/Feather/SystemManager.i"
-	@echo "... Engine/Feather/SystemManager.s"
+	@echo "... Engine/Feather/SystemRegistry.o"
+	@echo "... Engine/Feather/SystemRegistry.i"
+	@echo "... Engine/Feather/SystemRegistry.s"
 	@echo "... Engine/Feather/World.o"
 	@echo "... Engine/Feather/World.i"
 	@echo "... Engine/Feather/World.s"
@@ -2376,15 +2262,9 @@ help:
 	@echo "... Game/Worlds/MainWorld.o"
 	@echo "... Game/Worlds/MainWorld.i"
 	@echo "... Game/Worlds/MainWorld.s"
-	@echo "... OOP_Engine/Component.o"
-	@echo "... OOP_Engine/Component.i"
-	@echo "... OOP_Engine/Component.s"
 	@echo "... OOP_Engine/Gameobject.o"
 	@echo "... OOP_Engine/Gameobject.i"
 	@echo "... OOP_Engine/Gameobject.s"
-	@echo "... OOP_Engine/OOPEngine.o"
-	@echo "... OOP_Engine/OOPEngine.i"
-	@echo "... OOP_Engine/OOPEngine.s"
 	@echo "... Plugins/stb_image.o"
 	@echo "... Plugins/stb_image.i"
 	@echo "... Plugins/stb_image.s"

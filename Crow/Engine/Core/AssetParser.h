@@ -140,7 +140,8 @@ static char* ParseAssetType(Tokenizer* tokenizer)
     //minus one here because we advanced one past ur alpha token in the end again.
     size_t textLength = (tokenizer->at-1) - first;
 
-    char* assetType = (char*)(malloc(textLength + 1));
+    char* assetType = (char*)(calloc(textLength + 1,sizeof(char)));
+
     for (int i = 0; i < textLength; ++i)
     {
         if(first[i+1] != ' ')

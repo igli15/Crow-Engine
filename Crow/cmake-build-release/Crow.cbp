@@ -201,22 +201,10 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Benchmark.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.cpp">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentRegistry.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentArray.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentHandle.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentManager.h">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentRegistry.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentSparseSet.cpp">
@@ -234,13 +222,16 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityManager.cpp">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityRegistry.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityManager.h">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityRegistry.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/IComponentSet.h">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Pool.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.cpp">
@@ -249,10 +240,10 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemManager.cpp">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemRegistry.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemManager.h">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemRegistry.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h">
@@ -600,22 +591,10 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Worlds/MainWorld.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Component.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Component.h">
-			<Option target="Crow"/>
-		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Gameobject.cpp">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Gameobject.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/OOPEngine.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/OOPEngine.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Plugins/stb_image.cpp">
@@ -664,12 +643,6 @@
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/XmlTestWorld.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Tests/FeatherTest.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Tests/OOPEngineTest.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/main.cpp">

@@ -6,7 +6,7 @@
 #define CROW_ICOMPONENTSET_H
 
 ///This is the base class of all ComponentSets.
-///It is here so that the ComponentManager stores a reference to all ComponentArrays and some abstract method implementations.
+///It is here so that the ComponentRegistry stores a reference to all ComponentArrays and some abstract method implementations.
 class IComponentSet {
 
 public:

@@ -5,9 +5,9 @@
 #ifndef CROW_FEATHER_H
 #define CROW_FEATHER_H
 
-#include "SystemManager.h"
-#include "ComponentManager.h"
-#include "EntityManager.h"
+#include "SystemRegistry.h"
+#include "ComponentRegistry.h"
+#include "EntityRegistry.h"
 #include "../EventQueue/EventQueue.h"
 #include "../Events/ComponentAddedEvent.h"
 
@@ -20,11 +20,11 @@ class World {
 
 public:
 
+    ///Initializes the world.
+    void Init(SystemRegistry* systemRegistry,EntityRegistry* entityRegistry,ComponentRegistry* componentRegistry);
+
     ///Build is where all the systems and entities should be constructed.
     virtual void Build();
-
-    ///Initializes the world.
-    void Init();
 
     template<typename T>
     void AllocateComponentArray()
@@ -152,28 +152,6 @@ public:
         m_systemManager->SetSignature<SystemType>(signature);
     }
 
-    ///Populates all the ComponentHandles based on a given entity.
-    ///e.g PopulateHandle(entity,ComponentHandle<Component1>,ComponentHandle<Component2>....);
-    ///If the component wasn't found the handle will be filled with a nullptr component
-    ///@param e Entity which the component will be searched from.
-    ///@param args all the component handles which will be filled.
-    template <typename T,typename... Args>
-    void PopulateHandles(Entity e,ComponentHandle<T>& handle,ComponentHandle<Args> &... args)
-    {
-        ComponentSparseSet<T>* set = m_componentManager->GetComponentSet<T>();
-        handle = ComponentHandle<T>{e,set};
-        PopulateHandles<Args...>(e,args...);
-    }
-
-    ///Populates a signle ComponentHandle based on a given entity.
-    template <typename T>
-    void PopulateHandles(Entity e,ComponentHandle<T>& handle)
-    {
-        ComponentSparseSet<T>* set = m_componentManager->GetComponentSet<T>();
-
-        handle = ComponentHandle<T>{e, set};
-
-    }
 
     ///Creates a signature for a system of type "T" based on the specified component types in one line.
     ///e.g CreateSignature<SystemType,Component1,Component2,Component3....>();
@@ -286,15 +264,14 @@ public:
 
 private:
 
-    ComponentManager* m_componentManager;
-    EntityManager* m_entityManager;
-    SystemManager* m_systemManager;
+    ComponentRegistry* m_componentManager;
+    EntityRegistry* m_entityManager;
+    SystemRegistry* m_systemManager;
 
     std::vector<Entity> m_entityGarbage;
 
     std::vector<System*> m_allRegisteredSystems;
 
-    void RegisterEngineSystems();
 };
 
 

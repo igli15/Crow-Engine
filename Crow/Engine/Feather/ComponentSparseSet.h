@@ -18,6 +18,13 @@ class ComponentSparseSet : public IComponentSet
 {
 public:
 
+    ComponentSparseSet()
+    {
+        m_componentDenseArray =(ComponentType*)(calloc(MAX_ENTITIES,sizeof(ComponentType) ));
+        m_entitiesDenseArray = (Entity*)(calloc(MAX_ENTITIES,sizeof(Entity)));
+        m_indexesSparseArray = (int*)(calloc(MAX_ENTITIES,sizeof(int)));
+    }
+
     ///Adds a component to the specified entity.
     ///@param entity The entity which the component will be added to.
     ///@param Component The component which will be stored on the array.
@@ -154,10 +161,13 @@ public:
     }
 
 private:
-    std::array<ComponentType,MAX_ENTITIES> m_componentDenseArray{};
-    std::array<Entity ,MAX_ENTITIES> m_entitiesDenseArray{} ;
-    std::array<int,MAX_ENTITIES> m_indexesSparseArray{};
+    //std::array<ComponentType,MAX_ENTITIES> m_componentDenseArray{};
+    //std::array<Entity ,MAX_ENTITIES> m_entitiesDenseArray{} ;
+    //std::array<int,MAX_ENTITIES> m_indexesSparseArray{};
 
+    ComponentType* m_componentDenseArray;
+    Entity* m_entitiesDenseArray;
+    int* m_indexesSparseArray;
 };
 
 

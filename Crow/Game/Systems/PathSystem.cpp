@@ -17,20 +17,20 @@ void PathSystem::Init()
 
 void PathSystem::OnPathSeeked(TargetSeekedEvent* event)
 {
-    ComponentHandle<UnitPathComponent> pathComponentHandle = event->entity.GetComponent<UnitPathComponent>();
-    ComponentHandle<SeekComponent> seekComponentHandle = event->entity.GetComponent<SeekComponent>();
+    UnitPathComponent& pathComponentHandle = event->entity.GetComponent<UnitPathComponent>();
+    SeekComponent& seekComponentHandle = event->entity.GetComponent<SeekComponent>();
 
-    pathComponentHandle.component->currentPathIndex++;
-    int pathIndex = pathComponentHandle.component->currentPathIndex ;
+    pathComponentHandle.currentPathIndex++;
+    int pathIndex = pathComponentHandle.currentPathIndex ;
 
-    if(pathIndex >= pathComponentHandle.component->pathPoints.size())
+    if(pathIndex >= pathComponentHandle.pathPoints.size())
     {
         EventQueue::Instance().Publish(new UnitPathCompleteEvent(event->entity.entity));
         world->DestroyEntity(event->entity.entity);
     }
     else
     {
-        seekComponentHandle.component->targetPos = pathComponentHandle.component->pathPoints[pathIndex];
+        seekComponentHandle.targetPos = pathComponentHandle.pathPoints[pathIndex];
     }
 
     //world->DestroyEntity(event->entity.entity);

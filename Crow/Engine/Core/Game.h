@@ -35,6 +35,11 @@ class Game {
 protected:
     World* currentWorld;
 
+    SystemRegistry* m_systemRegistry;
+    EntityRegistry* m_entityRegistry;
+    ComponentRegistry* m_componentRegistry;
+
+
 private:
     Window* window;
 
@@ -50,7 +55,7 @@ public:
     ///Here is where all the assets should be loaded
     virtual void LoadAssets();
 
-    virtual void AllocateMemory();
+    virtual void AllocateMemory(ComponentRegistry* componentRegistry);
 
     ///Initializes the current world
     void InitWorld();
@@ -72,6 +77,7 @@ public:
     FT_Library* ftLibrary;
     ResourceManager* resourceManager;
     Renderer* renderer;
+
 
 };
 
