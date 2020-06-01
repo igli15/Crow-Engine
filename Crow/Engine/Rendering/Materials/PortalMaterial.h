@@ -37,6 +37,9 @@ public:
 private:
     GLint  m_uMainColor,m_uSecondColor,m_uViewMatrix,m_uProjectionMatrix,m_uTime,m_uNoiseTex,m_uRotationMask,m_uGlowMask;
     GLint  m_uSwirlAmount, m_uRotationSpeed, m_uScalingSpeed;
+    GLint m_uFogDensity;
+    GLint m_uFogGradient;
+    GLint m_uViewPos;
 };
 
 

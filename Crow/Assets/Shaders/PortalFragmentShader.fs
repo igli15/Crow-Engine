@@ -5,6 +5,8 @@ in vec2 TexCoords;
 in vec3 FragPos;
 in vec3 Normal;
 
+uniform vec3 viewPos;
+
 uniform float time;
 uniform vec3 mainColor;
 uniform vec3 secondColor;
@@ -19,6 +21,9 @@ uniform float swirlAmount;
 
 vec4 pivot = vec4(0.5,0.5,1,1);
 
+uniform float fogDensity;
+uniform float fogGradient;
+
 vec2 rotate( float magnitude , vec2 p )
  {
    float sinTheta = sin(magnitude);
@@ -30,6 +35,10 @@ vec2 rotate( float magnitude , vec2 p )
 void main()
 {
     vec3 norm = normalize(Normal);
+
+    float distance = length(viewPos - FragPos);
+    float visibility = exp(-pow(distance * fogDensity,fogGradient));
+    clamp(visibility,0.0,1.0);
 
     vec3 glow = texture(portalGlowMask,TexCoords).rgb;
     float rotationMaskValue = texture(rotationMask, TexCoords).r;
@@ -58,5 +67,6 @@ void main()
 
 
     FragColor = vec4(finalColor + glow * 1.4,1.0) ;
+    FragColor = mix(vec4(0.4,0.4,0.4,1),FragColor,visibility);
 
 }

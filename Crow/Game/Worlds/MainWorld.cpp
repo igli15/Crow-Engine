@@ -191,6 +191,7 @@ void MainWorld::Build()
 
     playerComponent->textComponent = textEntity.AddComponent(Text{"money:",glm::vec3(1),0.6f,resourceManager->GetFont("gameFont")});
 
+    
 }
 
 void MainWorld::ParseGameComponents(rapidxml::xml_node<> *node, EntityHandle entityHandle)

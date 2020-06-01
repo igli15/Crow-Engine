@@ -3689,6 +3689,8 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.o
  /usr/local/include/spdlog/tweakme.h
  /usr/local/include/spdlog/version.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
@@ -3709,8 +3711,11 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/PortalMaterial.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
  /usr/local/include/GL/glew.h
  /usr/local/include/GLFW/glfw3.h
+ /usr/local/include/freetype2/freetype/config/ftheader.h
+ /usr/local/include/freetype2/ft2build.h
  /usr/local/include/glm/common.hpp
  /usr/local/include/glm/detail/_fixes.hpp
  /usr/local/include/glm/detail/_noise.hpp

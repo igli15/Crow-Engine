@@ -3,6 +3,7 @@
 //
 
 #include "PortalMaterial.h"
+#include "../../Core/Game.h"
 #include <GLFW/glfw3.h>
 
 
@@ -25,6 +26,11 @@ void PortalMaterial::Initialize()
     m_uRotationSpeed =  m_shader->GetUniformLocation("rotationSpeed");
     m_uScalingSpeed =  m_shader->GetUniformLocation("scalingSpeed");
     m_uSwirlAmount =  m_shader->GetUniformLocation("swirlAmount");
+
+    m_uViewPos = m_shader->GetUniformLocation("viewPos");
+
+    m_uFogDensity = m_shader->GetUniformLocation("fogDensity");
+    m_uFogGradient = m_shader->GetUniformLocation("fogGradient");
 }
 
 void PortalMaterial::BufferMaterialUniforms()
@@ -60,5 +66,10 @@ void PortalMaterial::BufferShaderUniforms(const glm::mat4 &pViewMatrix, const gl
 
     glUniformMatrix4fv(m_uProjectionMatrix, 1, GL_FALSE, glm::value_ptr(pPerspectiveMatrix));
     glUniformMatrix4fv(m_uViewMatrix, 1, GL_FALSE, glm::value_ptr(pViewMatrix));
+
+    glUniform3fv(m_uViewPos,1,glm::value_ptr(viewPos));
+
+    glUniform1f(m_uFogDensity,Game::Instance()->fogData.fogDensity * 0.5f);
+    glUniform1f(m_uFogGradient,Game::Instance()->fogData.fogGradient);
 }
 
