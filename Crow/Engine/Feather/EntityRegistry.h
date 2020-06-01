@@ -37,6 +37,8 @@ public:
     ///@return The entity's Signature
     EntitySignature GetSignature(Entity e);
 
+    void ReturnAllEntities();
+
 private:
     std::queue<Entity> m_entityQueue{};
 

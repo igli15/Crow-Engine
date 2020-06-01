@@ -155,9 +155,9 @@ public:
         return (GetComponentIndex(entity) != -1);
     }
 
-    void Clear()
+    void Clear() override
     {
-        //TODO handle this
+        validSize = 0;
     }
 
 private:

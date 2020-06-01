@@ -263,6 +263,8 @@ public:
         return Has<T>(e) && Has<V, Types...>(e);
     }
 
+    void ResetWorld();
+
 private:
 
     ComponentRegistry* m_componentManager;

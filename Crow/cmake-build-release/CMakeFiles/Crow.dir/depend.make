@@ -2608,6 +2608,8 @@ CMakeFiles/Crow.dir/Engine/Feather/SystemRegistry.cpp.o: /usr/local/include/spdl
 CMakeFiles/Crow.dir/Engine/Feather/SystemRegistry.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Engine/Feather/SystemRegistry.cpp.o: /usr/local/include/spdlog/version.h
 
+CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Core/Game.h
+CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Core/Input.h
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/EventQueue/Event.h
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/EventQueue/EventQueue.h
@@ -2626,6 +2628,11 @@ CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Feather/SystemRegistry
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Feather/Types.h
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Feather/World.cpp
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Feather/World.h
+CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Rendering/Window.h
+CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: /usr/local/include/GL/glew.h
+CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: /usr/local/include/GLFW/glfw3.h
+CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: /usr/local/include/freetype2/freetype/config/ftheader.h
+CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: /usr/local/include/freetype2/ft2build.h
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: /usr/local/include/spdlog/common-inl.h
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: /usr/local/include/spdlog/common.h
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: /usr/local/include/spdlog/details/backtracer-inl.h
@@ -15096,6 +15103,7 @@ CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/EventQueue/MemberFunc
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Events/CollisionEnterEvent.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Events/ComponentAddedEvent.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
+CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Events/EntityEvents.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Events/MaterialAddedEvent.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Events/OnUnitDefeatedEvent.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Feather/ComponentRegistry.h
@@ -15120,6 +15128,11 @@ CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Rendering/Shader.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Rendering/Sprite.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Rendering/Texture.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Rendering/Window.h
+CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Systems/CollisionDetectionSystem.h
+CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Systems/MeshRendererSystem.h
+CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Systems/SpriteRendererSystem.h
+CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Systems/TextRenderingSystem.h
+CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Systems/TransformHierarchySystem.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Utils/Random.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Game/Components/BridgeComponent.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Game/Components/DamageDealer.h

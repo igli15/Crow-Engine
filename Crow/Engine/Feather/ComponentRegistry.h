@@ -11,7 +11,6 @@
 #include "ComponentSparseSet.h"
 
 
-
 ///"ComponentRegistry" Keeps track of all "ComponentArrays" and notifies them if an entity got removed from the world
 ///All the ComponentArrays pointers are stored in an array and the location of the arrays is their type ID.
 class ComponentRegistry
@@ -47,7 +46,8 @@ public:
     ///and if so update them accordingly
     void OnEntityDestroyed(Entity entity)
     {
-        for (auto &pair: m_componentSetsMap) {
+        for (auto &pair: m_componentSetsMap)
+        {
             pair.second->OnEntityDestroyed(entity);
         }
     }
@@ -56,21 +56,31 @@ public:
     template<typename T>
     ComponentSparseSet<T> *GetComponentSet();
 
+    void RemoveAllComponents()
+    {
+        for (auto &pair : m_componentSetsMap)
+        {
+            pair.second->Clear();
+        }
+    }
+
 private:
 
     ///All the component set pointers
     std::unordered_map<int, IComponentSet *> m_componentSetsMap;
 
 };
+
 template<typename T>
 void ComponentRegistry::AllocateComponentSet()
 {
     auto iterator = m_componentSetsMap.find(ComponentIDGenerator::index < T > );
 
-    if (iterator == m_componentSetsMap.end()) {
+    if (iterator == m_componentSetsMap.end())
+    {
         ComponentSparseSet<T> *array = new ComponentSparseSet<T>;
         m_componentSetsMap.insert(iterator, std::make_pair(ComponentIDGenerator::index < T > , array));
-    } else {
+    } else{
         ENGINE_LOG_WARNING("Component is already registered.... Skipping");
     }
 }
@@ -79,7 +89,7 @@ template<typename T>
 ComponentSparseSet<T> *ComponentRegistry::GetComponentSet()
 {
     //TODO add assertion here.
-    return static_cast<ComponentSparseSet<T> *>(m_componentSetsMap[ComponentIDGenerator::index < T >]);
+    return static_cast<ComponentSparseSet<T> *>(m_componentSetsMap[ComponentIDGenerator::index < T > ]);
 }
 
 template<typename T>

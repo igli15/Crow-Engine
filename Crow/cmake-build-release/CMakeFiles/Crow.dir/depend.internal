@@ -2609,6 +2609,8 @@ CMakeFiles/Crow.dir/Engine/Feather/SystemRegistry.cpp.o
  /usr/local/include/spdlog/tweakme.h
  /usr/local/include/spdlog/version.h
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
@@ -2627,6 +2629,11 @@ CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
+ /usr/local/include/GL/glew.h
+ /usr/local/include/GLFW/glfw3.h
+ /usr/local/include/freetype2/freetype/config/ftheader.h
+ /usr/local/include/freetype2/ft2build.h
  /usr/local/include/spdlog/common-inl.h
  /usr/local/include/spdlog/common.h
  /usr/local/include/spdlog/details/backtracer-inl.h
@@ -15097,6 +15104,7 @@ CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEnterEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/EntityEvents.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/MaterialAddedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/OnUnitDefeatedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentRegistry.h
@@ -15121,6 +15129,11 @@ CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Sprite.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/CollisionDetectionSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/MeshRendererSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/SpriteRendererSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/TextRenderingSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/TransformHierarchySystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Utils/Random.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/BridgeComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/DamageDealer.h

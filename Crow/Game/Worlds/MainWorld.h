@@ -26,7 +26,8 @@ public:
         if (iterator != m_unitArchetypeMap.end())
         {
             ENGINE_LOG_ERROR("There is already a model with name: " + name);
-            throw;
+            return iterator->second;
+            //throw;
         }
 
         T* unitGroupArchetype = new T();

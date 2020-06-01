@@ -5,6 +5,7 @@
 #include "World.h"
 #include "EntityHandle.h"
 #include "../Events/EntityEvents.h"
+#include "../../Engine/Core/Game.h"
 
 void World::Init(SystemRegistry* systemRegistry,EntityRegistry* entityRegistry,ComponentRegistry* componentRegistry)
 {
@@ -38,7 +39,9 @@ void World::UpdateAllSystems(float dt)
 {
     for (int i = 0; i < m_allRegisteredSystems.size(); ++i)
     {
-        m_allRegisteredSystems[i]->Update(dt);
+        System* system = m_allRegisteredSystems[i];
+
+        if(system->enabled) system->Update(dt);
     }
 }
 
@@ -46,7 +49,9 @@ void World::RenderAllSystems()
 {
     for (int i = 0; i < m_allRegisteredSystems.size(); ++i)
     {
-        m_allRegisteredSystems[i]->Render();
+        System* system = m_allRegisteredSystems[i];
+
+        if(system->enabled) system->Render();
     }
 }
 
@@ -76,8 +81,21 @@ void World::PreRenderAllSystems()
 {
     for (int i = 0; i < m_allRegisteredSystems.size(); ++i)
     {
-        m_allRegisteredSystems[i]->PreRender();
+        System* system = m_allRegisteredSystems[i];
+
+        if(system->enabled) system->PreRender();
     }
+}
+
+void World::ResetWorld()
+{
+    m_entityManager->ReturnAllEntities();
+    m_allRegisteredSystems.clear();
+    m_systemManager->ResetAllSystems();
+    m_componentManager->RemoveAllComponents();
+
+    Build();
+    InitAllSystems();
 }
 
 

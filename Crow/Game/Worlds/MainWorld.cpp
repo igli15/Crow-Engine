@@ -45,6 +45,11 @@
 #include "../Components/UnitAnimationComponent.h"
 #include "../Components/DebugTextComponent.h"
 #include "../Systems/DebugTextSystem.h"
+#include "../../Engine/Systems/SpriteRendererSystem.h"
+#include "../../Engine/Systems/MeshRendererSystem.h"
+#include "../../Engine/Systems/TextRenderingSystem.h"
+#include "../../Engine/Systems/TransformHierarchySystem.h"
+#include "../../Engine/Systems/CollisionDetectionSystem.h"
 
 void MainWorld::Build()
 {
@@ -53,7 +58,13 @@ void MainWorld::Build()
     ResourceManager* resourceManager = Game::Instance()->resourceManager;
 
     //UnitySceneParser::ParseUnityScene("MainLevel.xml",this,&(MainWorld::ParseGameComponents));
-    UnitySceneParser::ParseUnityScene("MainLevel2.xml",this,&(MainWorld::ParseGameComponents));
+
+    RegisterSystem<MeshRendererSystem>();
+    RegisterSystem<CollisionDetectionSystem>();
+    RegisterSystem<TransformHierarchySystem>();
+    RegisterSystem<TextRenderingSystem>();
+    RegisterSystem<SpriteRendererSystem>();
+    SetSystemSignature<MeshRendererSystem,Transform,MeshInfo>();
 
     RegisterSystem<RigidbodySystem>();
     RegisterSystem<SteeringSystem>();
@@ -76,6 +87,8 @@ void MainWorld::Build()
     RegisterSystem<GameStateSystem>();
     RegisterSystem<AutoDestructSystem>();
     RegisterSystem<DebugTextSystem>();
+
+    UnitySceneParser::ParseUnityScene("MainLevel2.xml",this,&(MainWorld::ParseGameComponents));
 
     EntityHandle playerEntity = CreateEntity();
     Player* playerComponent = playerEntity.AddComponent<Player>(Player{});
@@ -389,16 +402,16 @@ void MainWorld::CreateUIEntities(ResourceManager* resourceManager)
     //TODO clean this mess
     Game* game = Game::Instance();
 
-    const int screenWidth = game->screenData.screenWidth;
-    const int screenHeight = game->screenData.screenHeight;
+    int screenWidth = game->screenData.screenWidth;
+    int screenHeight = game->screenData.screenHeight;
 
-    const glm::vec2 borderSize{700,150};
-    const int borderBottomPadding = 210;
+    glm::vec2 borderSize{700,150};
+    int borderBottomPadding = 210;
 
-    const int iconSize = 115;
+    int iconSize = 115;
 
-    const int iconBottomPadding = 180;
-    const int iconHorizontalPadding = 200;
+    int iconBottomPadding = 180;
+    int iconHorizontalPadding = 200;
 
     UnitGroupArchetype* meleeArchetype = GetUnitGroupArchetype<UnitGroupArchetype>("playerMelee");
     UnitGroupArchetype* tankArchetype = GetUnitGroupArchetype<UnitGroupArchetype>("playerTank");
@@ -448,12 +461,12 @@ void MainWorld::CreateDebugText()
 
     EntityHandle textEntity = CreateEntity();
     Transform* textTransform = textEntity.AddComponent(Transform{});
-    textTransform->SetLocalPosition(glm::vec3(game->screenData.screenWidth -= 200,game->screenData.screenHeight - 50,0));
+    textTransform->SetLocalPosition(glm::vec3(game->screenData.screenWidth - 200,game->screenData.screenHeight - 50,0));
     Text* fpsText =  textEntity.AddComponent(Text{"FPS:",glm::vec3(1),0.5f,resourceManager->GetFont("roboto")});
 
     EntityHandle textEntity2 = CreateEntity();
     Transform* textTransform2 = textEntity2.AddComponent(Transform{});
-    textTransform2->SetLocalPosition(glm::vec3(game->screenData.screenWidth -= 50,game->screenData.screenHeight - 80,0));
+    textTransform2->SetLocalPosition(glm::vec3(game->screenData.screenWidth - 200,game->screenData.screenHeight - 80,0));
     Text* unitCountText = textEntity2.AddComponent(Text{"Unit Count:",glm::vec3(1),0.5f,resourceManager->GetFont("roboto")});
     textEntity2.AddComponent(DebugTextComponent{fpsText,unitCountText});
 }

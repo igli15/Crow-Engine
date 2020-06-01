@@ -106,6 +106,14 @@ public:
         }
     }
 
+    void ResetAllSystems()
+    {
+        for (auto& systemPair : m_systems)
+        {
+            systemPair.second->m_entities.clear();
+        }
+    }
+
 private:
 
     std::unordered_map<std::size_t ,EntitySignature> m_signatures {};

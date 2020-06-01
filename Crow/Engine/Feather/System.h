@@ -17,8 +17,9 @@ class World;
 class System {
 
 public:
-    World* world;
     std::set<Entity> m_entities;
+    World* world;
+    bool enabled = true;
 
     //Called on system creation. be aware
     virtual void OnCreate()

@@ -58,13 +58,14 @@ void Game::InitWorld()
 {
     currentWorld->Init(m_systemRegistry,m_entityRegistry,m_componentRegistry);
 
+    /*
     currentWorld->RegisterSystem<MeshRendererSystem>();
     currentWorld->RegisterSystem<CollisionDetectionSystem>();
     currentWorld->RegisterSystem<TransformHierarchySystem>();
     currentWorld->RegisterSystem<TextRenderingSystem>();
     currentWorld->RegisterSystem<SpriteRendererSystem>();
     currentWorld->SetSystemSignature<MeshRendererSystem,Transform,MeshInfo>();
-
+*/
     currentWorld->Build();
     currentWorld->InitAllSystems();
 }
