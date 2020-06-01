@@ -5685,6 +5685,8 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.o: /usr/local/i
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.o: /usr/local/include/spdlog/version.h
 
+CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: ../Engine/Core/Game.h
+CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: ../Engine/Core/Input.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: ../Engine/EventQueue/Event.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: ../Engine/EventQueue/EventQueue.h
@@ -5705,8 +5707,11 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: ../Engine/Re
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: ../Engine/Rendering/Materials/WaterMaterial.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: ../Engine/Rendering/Shader.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: ../Engine/Rendering/Texture.h
+CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: ../Engine/Rendering/Window.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: /usr/local/include/GL/glew.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: /usr/local/include/GLFW/glfw3.h
+CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: /usr/local/include/freetype2/freetype/config/ftheader.h
+CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: /usr/local/include/freetype2/ft2build.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: /usr/local/include/glm/common.hpp
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: /usr/local/include/glm/detail/_fixes.hpp
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: /usr/local/include/glm/detail/_noise.hpp

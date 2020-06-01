@@ -7,6 +7,8 @@ in vec3 Normal;
 
 uniform float time;
 
+uniform vec3 viewPos;
+
 uniform float noiseScale;
 uniform float distanceScale;
 uniform float causticSpeed;
@@ -20,9 +22,16 @@ uniform sampler2D depthTex;
 uniform sampler2D foamGradientTex;
 uniform sampler2D causticsTex;
 
+uniform float fogDensity;
+uniform float fogGradient;
+
 void main()
 {
     vec3 norm = normalize(Normal);
+
+    float distance = length(viewPos - FragPos);
+    float visibility = exp(-pow(distance * fogDensity,fogGradient));
+    clamp(visibility,0.0,1.0);
 
     vec2 noiseUvs = TexCoords;
     noiseUvs.x *= 2;
@@ -51,5 +60,5 @@ void main()
     vec3 surfaceNoise = (waveNoise > surfaceNoiseCutoff ? 1 : 0) * foamColor;
 
     FragColor = vec4(mainColor * depthValue,1.0) + vec4(surfaceNoise,1.0) + (vec4(caustics,1) * 0.1 * depthValue);
-
+    FragColor = mix(vec4(0.4,0.4,0.4,1),FragColor,visibility);
 }

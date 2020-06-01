@@ -5,6 +5,7 @@
 #include "WaterMaterial.h"
 #include "../Texture.h"
 #include "GLFW/glfw3.h"
+#include "../../Core/Game.h"
 
 WaterMaterial::WaterMaterial() : AbstractMaterial("waterShader")
 {
@@ -29,6 +30,11 @@ void WaterMaterial::Initialize()
     m_uNoiseSpeed = m_shader->GetUniformLocation("noiseSpeed");
 
     m_uFoamColor = m_shader->GetUniformLocation("foamColor");
+
+    m_uViewPos = m_shader->GetUniformLocation("viewPos");
+
+    m_uFogDensity = m_shader->GetUniformLocation("fogDensity");
+    m_uFogGradient = m_shader->GetUniformLocation("fogGradient");
 }
 
 void WaterMaterial::BufferMaterialUniforms()
@@ -71,5 +77,12 @@ void WaterMaterial::BufferShaderUniforms(const glm::mat4 &pViewMatrix, const glm
 
     glUniformMatrix4fv(m_uProjectionMatrix, 1, GL_FALSE, glm::value_ptr(pPerspectiveMatrix));
     glUniformMatrix4fv(m_uViewMatrix, 1, GL_FALSE, glm::value_ptr(pViewMatrix));
+
+    glUniform3fv(m_uViewPos,1,glm::value_ptr(viewPos));
+
+    glUniform1f(m_uFogDensity,Game::Instance()->fogData.fogDensity * 0.5f);
+    glUniform1f(m_uFogGradient,Game::Instance()->fogData.fogGradient);
+
+
 }
 

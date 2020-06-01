@@ -40,6 +40,9 @@ public:
 private:
     GLint  m_uMainColor,m_uViewMatrix,m_uProjectionMatrix,m_uWaveNoiseTexture,m_uDepthGradientTexture,m_uFoamTexture,m_uCausticsTexture;
     GLint  m_uTime,m_uNoiseScale,m_uDistanceScale,m_uNoiseSpeed,m_uCausticSpeed,m_uFoamColor;
+    GLint m_uFogDensity;
+    GLint m_uFogGradient;
+    GLint m_uViewPos;
 };
 
 
