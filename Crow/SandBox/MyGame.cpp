@@ -40,6 +40,28 @@
 #include "../Game/Components/AutoDestructComponent.h"
 #include "../Game/Components/DebugTextComponent.h"
 #include "../Engine/Feather/ComponentRegistry.h"
+#include "../Game/Systems/AutoDestructSystem.h"
+#include "../Engine/Systems/CollisionDetectionSystem.h"
+#include "../Game/Systems/BridgeSystem.h"
+#include "../Game/Systems/CannonSystem.h"
+#include "../Game/Systems/DebugTextSystem.h"
+#include "../Game/Systems/EnemySpawnSystem.h"
+#include "../Game/Systems/FloatingSystem.h"
+#include "../Game/Systems/FlockSeparationSystem.h"
+#include "../Game/Systems/GameStateSystem.h"
+#include "../Game/Systems/GameUISystem.h"
+#include "../Game/Systems/PathSystem.h"
+#include "../Game/Systems/PlayerMoneySystem.h"
+#include "../Game/Systems/ProjectileSystem.h"
+#include "../Game/Systems/RigidbodySystem.h"
+#include "../Game/Systems/RotateSystem.h"
+#include "../Game/Systems/SeekingSystem.h"
+#include "../Game/Systems/SelectedBridgeIndicatorSystem.h"
+#include "../Game/Systems/SpawnSystem.h"
+#include "../Game/Systems/SteeringSystem.h"
+#include "../Game/Systems/UnitAnimationSystem.h"
+#include "../Game/Systems/UnitCollisionSystem.h"
+#include "../Game/Systems/UnitFightingSystem.h"
 
 void MyGame::LoadAssets()
 {
@@ -119,30 +141,55 @@ void MyGame::Init()
 
 }
 
-void MyGame::AllocateMemory(ComponentRegistry* componentRegistry)
+void MyGame::AllocateMemory()
 {
-    Game::AllocateMemory(componentRegistry);
+    Game::AllocateMemory();
 
-    componentRegistry->AllocateComponentSet<BridgeComponent>();
-    componentRegistry->AllocateComponentSet<CannonComponent>();
-    componentRegistry->AllocateComponentSet<DamageDealer>();
-    componentRegistry->AllocateComponentSet<Enemy>();
-    componentRegistry->AllocateComponentSet<EnemyUnitCollider>();
-    componentRegistry->AllocateComponentSet<FloatingComponent>();
-    componentRegistry->AllocateComponentSet<FlockComponent>();
-    componentRegistry->AllocateComponentSet<HealthComponent>();
-    componentRegistry->AllocateComponentSet<Player>();
-    componentRegistry->AllocateComponentSet<PlayerUnitCollider>();
-    componentRegistry->AllocateComponentSet<ProjectileComponent>();
-    componentRegistry->AllocateComponentSet<RotateComponent>();
-    componentRegistry->AllocateComponentSet<SeekComponent>();
-    componentRegistry->AllocateComponentSet<SelectedBridgeIndicator>();
-    componentRegistry->AllocateComponentSet<SteeringComponent>();
-    componentRegistry->AllocateComponentSet<UnitAnimationComponent>();
-    componentRegistry->AllocateComponentSet<UnitComponent>();
-    componentRegistry->AllocateComponentSet<UnitIconComponent>();
-    componentRegistry->AllocateComponentSet<UnitPathComponent>();
-    componentRegistry->AllocateComponentSet<AutoDestructComponent>();
-    componentRegistry->AllocateComponentSet<DebugTextComponent>();
+    m_componentRegistry->AllocateComponentSet<BridgeComponent>();
+    m_componentRegistry->AllocateComponentSet<CannonComponent>();
+    m_componentRegistry->AllocateComponentSet<DamageDealer>();
+    m_componentRegistry->AllocateComponentSet<Enemy>();
+    m_componentRegistry->AllocateComponentSet<EnemyUnitCollider>();
+    m_componentRegistry->AllocateComponentSet<FloatingComponent>();
+    m_componentRegistry->AllocateComponentSet<FlockComponent>();
+    m_componentRegistry->AllocateComponentSet<HealthComponent>();
+    m_componentRegistry->AllocateComponentSet<Player>();
+    m_componentRegistry->AllocateComponentSet<PlayerUnitCollider>();
+    m_componentRegistry->AllocateComponentSet<ProjectileComponent>();
+    m_componentRegistry->AllocateComponentSet<RotateComponent>();
+    m_componentRegistry->AllocateComponentSet<SeekComponent>();
+    m_componentRegistry->AllocateComponentSet<SelectedBridgeIndicator>();
+    m_componentRegistry->AllocateComponentSet<SteeringComponent>();
+    m_componentRegistry->AllocateComponentSet<UnitAnimationComponent>();
+    m_componentRegistry->AllocateComponentSet<UnitComponent>();
+    m_componentRegistry->AllocateComponentSet<UnitIconComponent>();
+    m_componentRegistry->AllocateComponentSet<UnitPathComponent>();
+    m_componentRegistry->AllocateComponentSet<AutoDestructComponent>();
+    m_componentRegistry->AllocateComponentSet<DebugTextComponent>();
+
+
+    m_systemRegistry->AllocateSystem<AutoDestructSystem>();
+    m_systemRegistry->AllocateSystem<BridgeSystem>();
+    m_systemRegistry->AllocateSystem<CannonSystem>();
+    m_systemRegistry->AllocateSystem<DebugTextSystem>();
+    m_systemRegistry->AllocateSystem<EnemySpawnSystem>();
+    m_systemRegistry->AllocateSystem<FloatingSystem>();
+    m_systemRegistry->AllocateSystem<FlockSeparationSystem>();
+    m_systemRegistry->AllocateSystem<GameStateSystem>();
+    m_systemRegistry->AllocateSystem<GameUISystem>();
+    m_systemRegistry->AllocateSystem<PathSystem>();
+    m_systemRegistry->AllocateSystem<PlayerMoneySystem>();
+    m_systemRegistry->AllocateSystem<ProjectileSystem>();
+    m_systemRegistry->AllocateSystem<RigidbodySystem>();
+    m_systemRegistry->AllocateSystem<RotateSystem>();
+    m_systemRegistry->AllocateSystem<SeekingSystem>();
+    m_systemRegistry->AllocateSystem<SelectedBridgeIndicatorSystem>();
+    m_systemRegistry->AllocateSystem<SpawnSystem>();
+    m_systemRegistry->AllocateSystem<SteeringSystem>();
+    m_systemRegistry->AllocateSystem<UnitAnimationSystem>();
+    m_systemRegistry->AllocateSystem<UnitCollisionSystem>();
+    m_systemRegistry->AllocateSystem<UnitFightingSystem>();
+
+
 
 }

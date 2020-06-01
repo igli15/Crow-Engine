@@ -144,12 +144,12 @@ RECENT REVISION HISTORY:
 // image scanlines or between pixels, regardless of format. The number of
 // components N is 'desired_channels' if desired_channels is non-zero, or
 // *channels_in_file otherwise. If desired_channels is non-zero,
-// *channels_in_file has the number of components that _would_ have been
+// *channels_in_file Has the number of components that _would_ have been
 // output otherwise. E.g. if you set desired_channels to 4, you will always
 // get RGBA output, but you can check *channels_in_file to see if it's trivially
 // opaque because e.g. there were only 3 channels in the source image.
 //
-// An output image with N components has the following components interleaved
+// An output image with N components Has the following components interleaved
 // in this order in each pixel:
 //
 //     N=#comp     components
@@ -949,21 +949,21 @@ static int stbi__mul2sizes_valid(int a, int b)
 }
 
 #if !defined(STBI_NO_JPEG) || !defined(STBI_NO_PNG) || !defined(STBI_NO_TGA) || !defined(STBI_NO_HDR)
-// returns 1 if "a*b + add" has no negative terms/factors and doesn't overflow
+// returns 1 if "a*b + add" Has no negative terms/factors and doesn't overflow
 static int stbi__mad2sizes_valid(int a, int b, int add)
 {
    return stbi__mul2sizes_valid(a, b) && stbi__addsizes_valid(a*b, add);
 }
 #endif
 
-// returns 1 if "a*b*c + add" has no negative terms/factors and doesn't overflow
+// returns 1 if "a*b*c + add" Has no negative terms/factors and doesn't overflow
 static int stbi__mad3sizes_valid(int a, int b, int c, int add)
 {
    return stbi__mul2sizes_valid(a, b) && stbi__mul2sizes_valid(a*b, c) &&
       stbi__addsizes_valid(a*b*c, add);
 }
 
-// returns 1 if "a*b*c*d + add" has no negative terms/factors and doesn't overflow
+// returns 1 if "a*b*c*d + add" Has no negative terms/factors and doesn't overflow
 #if !defined(STBI_NO_LINEAR) || !defined(STBI_NO_HDR)
 static int stbi__mad4sizes_valid(int a, int b, int c, int d, int add)
 {
@@ -1636,7 +1636,7 @@ static stbi__uint32 stbi__get32le(stbi__context *s)
 //  generic converter from built-in img_n to req_comp
 //    individual types do this automatically as much as possible (e.g. jpeg
 //    does all cases internally since it needs to colorspace convert anyway,
-//    and it never has alpha, so very few cases ). png can automatically
+//    and it never Has alpha, so very few cases ). png can automatically
 //    interleave an alpha=255 channel, but falls back to this for other cases
 //
 //  assume data buffer is malloced, so malloc a new one and free that one
@@ -2012,7 +2012,7 @@ stbi_inline static int stbi__jpeg_huff_decode(stbi__jpeg *j, stbi__huffman *h)
 
    // naive test is to shift the code_buffer down so k bits are
    // valid, then test against maxcode. To speed this up, we've
-   // preshifted maxcode left so that it has (16-k) 0s at the
+   // preshifted maxcode left so that it Has (16-k) 0s at the
    // end; in other words, regardless of the number of bits, it
    // wants to be compared against something shifted to have 16;
    // that way we don't need to shift inside the loop.
@@ -2842,7 +2842,7 @@ static int stbi__parse_entropy_coded_data(stbi__jpeg *z)
          // non-interleaved data, we just need to process one block at a time,
          // in trivial scanline order
          // number of blocks to do just depends on how many actual "pixels" this
-         // component has, independent of interleaved MCU blocking and such
+         // component Has, independent of interleaved MCU blocking and such
          int w = (z->img_comp[n].x+7) >> 3;
          int h = (z->img_comp[n].y+7) >> 3;
          for (j=0; j < h; ++j) {
@@ -2899,7 +2899,7 @@ static int stbi__parse_entropy_coded_data(stbi__jpeg *z)
          // non-interleaved data, we just need to process one block at a time,
          // in trivial scanline order
          // number of blocks to do just depends on how many actual "pixels" this
-         // component has, independent of interleaved MCU blocking and such
+         // component Has, independent of interleaved MCU blocking and such
          int w = (z->img_comp[n].x+7) >> 3;
          int h = (z->img_comp[n].y+7) >> 3;
          for (j=0; j < h; ++j) {
@@ -5019,7 +5019,7 @@ static int stbi__parse_png_file(stbi__png *z, int scan, int req_comp)
                if (!stbi__expand_png_palette(z, palette, pal_len, s->img_out_n))
                   return 0;
             } else if (has_trans) {
-               // non-paletted image with tRNS -> source image has (constant) alpha
+               // non-paletted image with tRNS -> source image Has (constant) alpha
                ++s->img_n;
             }
             STBI_FREE(z->expanded); z->expanded = NULL;
@@ -5923,7 +5923,7 @@ static void *stbi__psd_load(stbi__context *s, int *x, int *y, int *comp, int req
    //   1: RLE compressed
    compression = stbi__get16be(s);
    if (compression > 1)
-      return stbi__errpuc("bad compression", "PSD has an unknown compression format");
+      return stbi__errpuc("bad compression", "PSD Has an unknown compression format");
 
    // Check size
    if (!stbi__mad3sizes_valid(4, w, h, 0))
@@ -6147,7 +6147,7 @@ static stbi_uc *stbi__pic_load_core(stbi__context *s,int width,int height,int *c
       if (packet->size != 8)  return stbi__errpuc("bad format","packet isn't 8bpp");
    } while (chained);
 
-   *comp = (act_comp & 0x10 ? 4 : 3); // has alpha channel?
+   *comp = (act_comp & 0x10 ? 4 : 3); // Has alpha channel?
 
    for(y=0; y<height; ++y) {
       int packet_idx;
@@ -6158,7 +6158,7 @@ static stbi_uc *stbi__pic_load_core(stbi__context *s,int width,int height,int *c
 
          switch (packet->type) {
             default:
-               return stbi__errpuc("bad format","packet has bad compression type");
+               return stbi__errpuc("bad format","packet Has bad compression type");
 
             case 0: {//uncompressed
                int x;

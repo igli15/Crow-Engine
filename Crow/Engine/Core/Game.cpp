@@ -52,7 +52,6 @@ void Game::Init()
     m_entityRegistry = new EntityRegistry();
     m_componentRegistry = new ComponentRegistry();
 
-    AllocateMemory(m_componentRegistry);
 }
 
 void Game::InitWorld()
@@ -175,15 +174,22 @@ void Game::InitFreeTypeLibrary()
     }
 }
 
-void Game::AllocateMemory(ComponentRegistry* componentRegistry)
+void Game::AllocateMemory()
 {
-    componentRegistry->AllocateComponentSet<Camera>();
-    componentRegistry->AllocateComponentSet<Light>();
-    componentRegistry->AllocateComponentSet<MeshInfo>();
-    componentRegistry->AllocateComponentSet<Rigidbody>();
-    componentRegistry->AllocateComponentSet<SphereCollider>();
-    componentRegistry->AllocateComponentSet<SpriteInfo>();
-    componentRegistry->AllocateComponentSet<Text>();
-    componentRegistry->AllocateComponentSet<Transform>();
+    m_componentRegistry->AllocateComponentSet<Camera>();
+    m_componentRegistry->AllocateComponentSet<Light>();
+    m_componentRegistry->AllocateComponentSet<MeshInfo>();
+    m_componentRegistry->AllocateComponentSet<Rigidbody>();
+    m_componentRegistry->AllocateComponentSet<SphereCollider>();
+    m_componentRegistry->AllocateComponentSet<SpriteInfo>();
+    m_componentRegistry->AllocateComponentSet<Text>();
+    m_componentRegistry->AllocateComponentSet<Transform>();
+
+    m_systemRegistry->AllocateSystem<CollisionDetectionSystem>();
+    m_systemRegistry->AllocateSystem<MeshRendererSystem>();
+    m_systemRegistry->AllocateSystem<SpriteRendererSystem>();
+    m_systemRegistry->AllocateSystem<TextRenderingSystem>();
+    m_systemRegistry->AllocateSystem<TransformHierarchySystem>();
+
 }
 

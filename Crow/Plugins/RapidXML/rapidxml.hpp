@@ -165,7 +165,7 @@ namespace rapidxml
     //! Parse flag instructing the parser to not use text of first data node as a value of parent element.
     //! Can be combined with other flags by use of | operator.
     //! Note that child data nodes of element node take precendence over its value when printing. 
-    //! That is, if element has one or more child data nodes <em>and</em> a value, the value will be ignored.
+    //! That is, if element Has one or more child data nodes <em>and</em> a value, the value will be ignored.
     //! Use rapidxml::parse_no_data_nodes flag to prevent creation of data nodes if you want to manipulate data using values of elements.
     //! <br><br>
     //! See xml_document::parse() function.
@@ -287,7 +287,7 @@ namespace rapidxml
     {
 
         // Struct that contains lookup tables for the parser
-        // It must be a template to allow correct linking (because it has static data members, which are defined in a header file).
+        // It must be a template to allow correct linking (because it Has static data members, which are defined in a header file).
         template<int Dummy>
         struct lookup_tables
         {
@@ -669,7 +669,7 @@ namespace rapidxml
         //! Note that name will not be zero-terminated if rapidxml::parse_no_string_terminators option was selected during parse.
         //! <br><br>
         //! Use name_size() function to determine length of the name.
-        //! \return Name of node, or empty string if node has no name.
+        //! \return Name of node, or empty string if node Has no name.
         Ch *name() const
         {
             return m_name ? m_name : nullstr();
@@ -688,7 +688,7 @@ namespace rapidxml
         //! Note that value will not be zero-terminated if rapidxml::parse_no_string_terminators option was selected during parse.
         //! <br><br>
         //! Use value_size() function to determine length of the value.
-        //! \return Value of node, or empty string if node has no value.
+        //! \return Value of node, or empty string if node Has no value.
         Ch *value() const
         {
             return m_value ? m_value : nullstr();
@@ -744,7 +744,7 @@ namespace rapidxml
         //! Size of value must be specified separately, because it does not have to be zero terminated.
         //! Use value(const Ch *) function to have the length automatically calculated (string must be zero terminated).
         //! <br><br>
-        //! If an element has a child node of type node_data, it will take precedence over element value when printing.
+        //! If an element Has a child node of type node_data, it will take precedence over element value when printing.
         //! If you want to manipulate data of elements using values, use parser flag rapidxml::parse_no_data_nodes to prevent creation of data nodes by the parser.
         //! \param value value of node to set. Does not have to be zero terminated.
         //! \param size Size of value, in characters. This does not include zero terminator, if one is present.
@@ -790,7 +790,7 @@ namespace rapidxml
     };
 
     //! Class representing attribute node of XML document. 
-    //! Each attribute has name and value strings, which are available through name() and value() functions (inherited from xml_base).
+    //! Each attribute Has name and value strings, which are available through name() and value() functions (inherited from xml_base).
     //! Note that after parse, both name and value of attribute will point to interior of source text used for parsing. 
     //! Thus, this text must persist in memory for the lifetime of attribute.
     //! \param Ch Character type to use.
@@ -949,15 +949,15 @@ namespace rapidxml
         }
 
         //! Gets last child node, optionally matching node name. 
-        //! Behaviour is undefined if node has no children.
-        //! Use first_node() to test if node has children.
+        //! Behaviour is undefined if node Has no children.
+        //! Use first_node() to test if node Has children.
         //! \param name Name of child to find, or 0 to return last child regardless of its name; this string doesn't have to be zero-terminated if name_size is non-zero
         //! \param name_size Size of name, in characters, or 0 to have size calculated automatically from string
         //! \param case_sensitive Should name comparison be case-sensitive; non case-sensitive comparison works properly only for ASCII characters
         //! \return Pointer to found child, or 0 if not found.
         xml_node<Ch> *last_node(const Ch *name = 0, std::size_t name_size = 0, bool case_sensitive = true) const
         {
-            assert(m_first_node);  // Cannot query for last child if node has no children
+            assert(m_first_node);  // Cannot query for last child if node Has no children
             if (name)
             {
                 if (name_size == 0)
@@ -972,15 +972,15 @@ namespace rapidxml
         }
 
         //! Gets previous sibling node, optionally matching node name. 
-        //! Behaviour is undefined if node has no parent.
-        //! Use parent() to test if node has a parent.
+        //! Behaviour is undefined if node Has no parent.
+        //! Use parent() to test if node Has a parent.
         //! \param name Name of sibling to find, or 0 to return previous sibling regardless of its name; this string doesn't have to be zero-terminated if name_size is non-zero
         //! \param name_size Size of name, in characters, or 0 to have size calculated automatically from string
         //! \param case_sensitive Should name comparison be case-sensitive; non case-sensitive comparison works properly only for ASCII characters
         //! \return Pointer to found sibling, or 0 if not found.
         xml_node<Ch> *previous_sibling(const Ch *name = 0, std::size_t name_size = 0, bool case_sensitive = true) const
         {
-            assert(this->m_parent);     // Cannot query for siblings if node has no parent
+            assert(this->m_parent);     // Cannot query for siblings if node Has no parent
             if (name)
             {
                 if (name_size == 0)
@@ -995,15 +995,15 @@ namespace rapidxml
         }
 
         //! Gets next sibling node, optionally matching node name. 
-        //! Behaviour is undefined if node has no parent.
-        //! Use parent() to test if node has a parent.
+        //! Behaviour is undefined if node Has no parent.
+        //! Use parent() to test if node Has a parent.
         //! \param name Name of sibling to find, or 0 to return next sibling regardless of its name; this string doesn't have to be zero-terminated if name_size is non-zero
         //! \param name_size Size of name, in characters, or 0 to have size calculated automatically from string
         //! \param case_sensitive Should name comparison be case-sensitive; non case-sensitive comparison works properly only for ASCII characters
         //! \return Pointer to found sibling, or 0 if not found.
         xml_node<Ch> *next_sibling(const Ch *name = 0, std::size_t name_size = 0, bool case_sensitive = true) const
         {
-            assert(this->m_parent);     // Cannot query for siblings if node has no parent
+            assert(this->m_parent);     // Cannot query for siblings if node Has no parent
             if (name)
             {
                 if (name_size == 0)
@@ -1135,8 +1135,8 @@ namespace rapidxml
         }
 
         //! Removes first child node. 
-        //! If node has no children, behaviour is undefined.
-        //! Use first_node() to test if node has children.
+        //! If node Has no children, behaviour is undefined.
+        //! Use first_node() to test if node Has children.
         void remove_first_node()
         {
             assert(first_node());
@@ -1150,8 +1150,8 @@ namespace rapidxml
         }
 
         //! Removes last child of the node. 
-        //! If node has no children, behaviour is undefined.
-        //! Use first_node() to test if node has children.
+        //! If node Has no children, behaviour is undefined.
+        //! Use first_node() to test if node Has children.
         void remove_last_node()
         {
             assert(first_node());
@@ -1255,8 +1255,8 @@ namespace rapidxml
         }
 
         //! Removes first attribute of the node. 
-        //! If node has no attributes, behaviour is undefined.
-        //! Use first_attribute() to test if node has attributes.
+        //! If node Has no attributes, behaviour is undefined.
+        //! Use first_attribute() to test if node Has attributes.
         void remove_first_attribute()
         {
             assert(first_attribute());
@@ -1272,8 +1272,8 @@ namespace rapidxml
         }
 
         //! Removes last attribute of the node. 
-        //! If node has no attributes, behaviour is undefined.
-        //! Use first_attribute() to test if node has attributes.
+        //! If node Has no attributes, behaviour is undefined.
+        //! Use first_attribute() to test if node Has attributes.
         void remove_last_attribute()
         {
             assert(first_attribute());
@@ -1330,9 +1330,9 @@ namespace rapidxml
         // unneded/redundant values.
         //
         // The rules are as follows:
-        // 1. first_node and first_attribute contain valid pointers, or 0 if node has no children/attributes respectively
-        // 2. last_node and last_attribute are valid only if node has at least one child/attribute respectively, otherwise they contain garbage
-        // 3. prev_sibling and next_sibling are valid only if node has a parent, otherwise they contain garbage
+        // 1. first_node and first_attribute contain valid pointers, or 0 if node Has no children/attributes respectively
+        // 2. last_node and last_attribute are valid only if node Has at least one child/attribute respectively, otherwise they contain garbage
+        // 3. prev_sibling and next_sibling are valid only if node Has a parent, otherwise they contain garbage
 
         node_type m_type;                       // Type of node; always valid
         xml_node<Ch> *m_first_node;             // Pointer to first child node, or 0 if none; always valid

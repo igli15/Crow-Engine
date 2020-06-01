@@ -15,7 +15,7 @@ class Model;
 
 ///AbstractMaterial is the base class for all the materials.
 ///It provides virtual methods which the materials should implement.
-///Each Material has it's own shader and buffers the shader's uniforms once.
+///Each Material Has it's own shader and buffers the shader's uniforms once.
 class AbstractMaterial {
 
 public:

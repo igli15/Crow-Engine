@@ -22,6 +22,7 @@ int main()
     MyGame game;
     game.Init();
     game.LoadAssets();
+    game.AllocateMemory();
     game.InitWorld();
     game.Run();
 

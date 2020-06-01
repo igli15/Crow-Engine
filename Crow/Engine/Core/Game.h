@@ -55,7 +55,7 @@ public:
     ///Here is where all the assets should be loaded
     virtual void LoadAssets();
 
-    virtual void AllocateMemory(ComponentRegistry* componentRegistry);
+    virtual void AllocateMemory();
 
     ///Initializes the current world
     void InitWorld();

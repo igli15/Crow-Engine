@@ -57,7 +57,7 @@
 
 # Created by Eric Wing.
 # Modifications by Alexander Neundorf.
-# This file has been renamed to "FindFreetype.cmake" instead of the correct
+# This file Has been renamed to "FindFreetype.cmake" instead of the correct
 # "FindFreeType.cmake" in order to be compatible with the one from KDE4, Alex.
 
 # Ugh, FreeType seems to use some #include trickery which

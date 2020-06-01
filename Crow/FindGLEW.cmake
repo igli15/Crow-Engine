@@ -8,7 +8,7 @@
 # ^^^^^^^^^^^^^^^^
 #
 # This module defines the :prop_tgt:`IMPORTED` target ``GLEW::GLEW``,
-# if GLEW has been found.
+# if GLEW Has been found.
 #
 # Result Variables
 # ^^^^^^^^^^^^^^^^
@@ -19,7 +19,7 @@
 #
 #   GLEW_INCLUDE_DIRS - include directories for GLEW
 #   GLEW_LIBRARIES - libraries to link against GLEW
-#   GLEW_FOUND - true if GLEW has been found and can be used
+#   GLEW_FOUND - true if GLEW Has been found and can be used
 
 #=============================================================================
 # Copyright 2012 Benjamin Eikel

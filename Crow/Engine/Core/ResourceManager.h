@@ -22,7 +22,7 @@ class Sprite;
 
 ///ResourceManager class is used to Load and Get all the assets.
 ///This class is a singleton and can be accessed only through the game class instance.
-///The asset path should be relative meaning, each assets has it's own folder directory. When loading an assets user should provide only the relative path from the folder.
+///The asset path should be relative meaning, each assets Has it's own folder directory. When loading an assets user should provide only the relative path from the folder.
 ///e.g if a Texture is to be loaded, instead of writing path like "Crow/Textures/Texture.png" you should just write "Texture.png" and place the asset in the texture folder.
 class ResourceManager {
 

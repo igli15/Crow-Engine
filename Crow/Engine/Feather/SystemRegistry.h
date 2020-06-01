@@ -19,6 +19,41 @@ class SystemRegistry {
 
 public:
 
+
+    template<typename T>
+    T* AllocateSystem()
+    {
+        std::size_t id = SystemIDGenerator::index<T>;
+
+        if(m_systems.find(id) != m_systems.end())
+        {
+            ENGINE_LOG_CRITICAL("System is already allocated");
+            throw;
+        }
+
+        T* system = new T();
+        system->OnCreate();
+        m_systems.insert({id,system});
+        return system;
+    }
+
+
+    template<typename T>
+    T* GetSystem()
+    {
+        std::size_t id = SystemIDGenerator::index<T>;
+
+        auto iterator = m_systems.find(id);
+
+        if(iterator == m_systems.end())
+        {
+            ENGINE_LOG_CRITICAL("System is not allocated");
+            throw;
+        }
+
+        return static_cast<T*>(iterator->second);
+    }
+
     ///Registers and creates a system of a certain type.
     ///If the system is already registered a error will be thrown!
     ///@return Returns a pointer to the created system.
@@ -67,7 +102,7 @@ public:
         }
     }
 
-    ///Called when the signature of an entity has changed.
+    ///Called when the signature of an entity Has changed.
     ///It checks if the new signature matches the signature of the system and if so it adds it to the set.
     ///@param entity Entity which signature changed
     ///@param signature The new EntitySignature

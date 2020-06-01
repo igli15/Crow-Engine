@@ -125,10 +125,10 @@ public:
     template <typename T>
     T* RegisterSystem()
     {
-        T* system  =m_systemManager->RegisterSystem<T>();
+        T* system  =m_systemManager->GetSystem<T>();
+
         system->world = this;
         m_allRegisteredSystems.push_back(system);
-        system->OnCreate();
 
         return system;
     }
@@ -241,15 +241,16 @@ public:
 
         for (int i = 0; i < entities.size(); ++i)
         {
-            if(has<Args...>(entities[i]))
+            if(Has<Args...>(entities[i]))
             {
                 func(entities[i], GetComponent<Args>(entities[i])...);
             }
         }
     }
 
+    ///Checks if an entity has a given set of component types attached to it.
     template<typename T>
-    bool has(Entity e) const
+    bool Has(Entity e) const
     {
         ComponentSparseSet<T>* set = m_componentManager->GetComponentSet<T>();
 
@@ -257,9 +258,9 @@ public:
     }
 
     template<typename T, typename V, typename... Types>
-    bool has(Entity e) const
+    bool Has(Entity e) const
     {
-        return has<T>(e) && has<V, Types...>(e);
+        return Has<T>(e) && Has<V, Types...>(e);
     }
 
 private:
