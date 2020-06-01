@@ -96,6 +96,9 @@ private:
     GLint m_uActivePointLights;
     GLint m_uActiveSpotLights;
 
+    GLint m_uFogDensity;
+    GLint m_uFogGradient;
+
     Texture* m_whiteTexture = nullptr;
     Texture* m_blackTexture = nullptr;
 

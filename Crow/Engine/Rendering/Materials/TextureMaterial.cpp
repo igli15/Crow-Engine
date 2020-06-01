@@ -85,6 +85,9 @@ void TextureMaterial::Initialize()
 
         m_spotLightsUniforms[i].m_uLightIntensity = m_shader->GetUniformLocation(spotUniformString + ".intensity");
     }
+
+    m_uFogDensity = m_shader->GetUniformLocation("fogDensity");
+    m_uFogGradient = m_shader->GetUniformLocation("fogGradient");
 }
 
 void TextureMaterial::BufferShaderUniforms(const glm::mat4 &pViewMatrix, const glm::mat4 &pPerspectiveMatrix,
@@ -157,6 +160,9 @@ void TextureMaterial::BufferShaderUniforms(const glm::mat4 &pViewMatrix, const g
     glUniformMatrix4fv(m_uViewMatrix, 1, GL_FALSE, glm::value_ptr(pViewMatrix));
 
     glUniform3fv(m_uViewPos,1,glm::value_ptr(viewPos));
+
+    glUniform1f(m_uFogDensity,Game::Instance()->fogData.fogDensity);
+    glUniform1f(m_uFogGradient,Game::Instance()->fogData.fogGradient);
 }
 
 void TextureMaterial::BufferMaterialUniforms()
