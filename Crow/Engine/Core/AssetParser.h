@@ -243,11 +243,11 @@ static AssetCollection ParseAssetFile(char* fileName, size_t maxNrOfAssets = 100
                assetToken->assetType = ParseAssetType(&tokenizer);
                assetToken->assetName = ParseAssetName(&tokenizer);
                assetToken->assetPath = ParseAssetPath(&tokenizer);
+               ++validSize;
 
            }break;
            case SEMICOLUMN:
            {
-               ++validSize;
            }break;
            case ENDOFSTREAM:
            {

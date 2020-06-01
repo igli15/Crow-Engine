@@ -15698,6 +15698,8 @@ CMakeFiles/Crow.dir/SandBox/Components/MoveComponent.cpp.o
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Rigidbody.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Renderer.h
@@ -15707,9 +15709,11 @@ CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEnterEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/MaterialAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/OnUnitDefeatedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentRegistry.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentSparseSet.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/CustomTypeID.h
@@ -15732,6 +15736,7 @@ CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Sprite.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/CollisionDetectionSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/AutoDestructComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/BridgeComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/CannonComponent.h
@@ -15753,6 +15758,29 @@ CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitIconComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitPathComponent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Events/UnitCollisionEvents.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Events/UnitPathCompleteEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/AutoDestructSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/BridgeSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/CannonSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/DebugTextSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/EnemySpawnSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/FloatingSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/FlockSeparationSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameStateSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameUISystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/PathSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/PlayerMoneySystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/ProjectileSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/RigidbodySystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/RotateSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SeekingSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SelectedBridgeIndicatorSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SpawnSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SteeringSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitAnimationSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitCollisionSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitFightingSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Worlds/MainWorld.h
  /Users/igli/Desktop/Crow Engine/Crow/Plugins/RapidXML/rapidxml.hpp
  /Users/igli/Desktop/Crow Engine/Crow/SandBox/MyGame.cpp

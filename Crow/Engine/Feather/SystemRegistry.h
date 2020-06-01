@@ -54,25 +54,6 @@ public:
         return static_cast<T*>(iterator->second);
     }
 
-    ///Registers and creates a system of a certain type.
-    ///If the system is already registered a error will be thrown!
-    ///@return Returns a pointer to the created system.
-    template <typename T>
-    T* RegisterSystem()
-    {
-        std::size_t id = SystemIDGenerator::index<T>;
-
-        if(m_systems.find(id) != m_systems.end())
-        {
-            ENGINE_LOG_CRITICAL("System is already Registered");
-            throw;
-        }
-
-        T* system = new T();
-        m_systems.insert({id,system});
-        return system;
-    }
-
     ///Set the signature of a system
     ///@param signature the new signature.
     template <typename T>
