@@ -6,6 +6,7 @@
 #define CROW_GAME_H
 
 
+#include <glm/vec3.hpp>
 #include "../Rendering/Window.h"
 #include "../Feather/World.h"
 
@@ -30,8 +31,9 @@ struct TimeData
 
 struct FogData
 {
-    float fogDensity = 0.03;
-    float fogGradient = 2.5;
+    glm::vec3 fogColor = {0.4f,0.04,0.4f};
+    float fogDensity = 0.03f;
+    float fogGradient = 2.5f;
 };
 
 ///The game class handles all the internal setup for a "game" program to run.

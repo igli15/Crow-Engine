@@ -24,6 +24,7 @@ uniform sampler2D causticsTex;
 
 uniform float fogDensity;
 uniform float fogGradient;
+uniform vec3 fogColor;
 
 void main()
 {
@@ -60,5 +61,5 @@ void main()
     vec3 surfaceNoise = (waveNoise > surfaceNoiseCutoff ? 1 : 0) * foamColor;
 
     FragColor = vec4(mainColor * depthValue,1.0) + vec4(surfaceNoise,1.0) + (vec4(caustics,1) * 0.1 * depthValue);
-    FragColor = mix(vec4(0.4,0.4,0.4,1),FragColor,visibility);
+    FragColor = mix(vec4(fogColor.rgb,1),FragColor,visibility);
 }

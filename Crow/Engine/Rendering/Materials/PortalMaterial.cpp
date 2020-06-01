@@ -31,6 +31,7 @@ void PortalMaterial::Initialize()
 
     m_uFogDensity = m_shader->GetUniformLocation("fogDensity");
     m_uFogGradient = m_shader->GetUniformLocation("fogGradient");
+    m_uFogColor = m_shader->GetUniformLocation("fogColor");
 }
 
 void PortalMaterial::BufferMaterialUniforms()
@@ -71,5 +72,7 @@ void PortalMaterial::BufferShaderUniforms(const glm::mat4 &pViewMatrix, const gl
 
     glUniform1f(m_uFogDensity,Game::Instance()->fogData.fogDensity * 0.5f);
     glUniform1f(m_uFogGradient,Game::Instance()->fogData.fogGradient);
+
+    glUniform3fv(m_uFogColor,1,glm::value_ptr(Game::Instance()->fogData.fogColor));
 }
 

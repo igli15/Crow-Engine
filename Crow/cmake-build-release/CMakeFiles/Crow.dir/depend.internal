@@ -2634,6 +2634,25 @@ CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o
  /usr/local/include/GLFW/glfw3.h
  /usr/local/include/freetype2/freetype/config/ftheader.h
  /usr/local/include/freetype2/ft2build.h
+ /usr/local/include/glm/detail/_swizzle.hpp
+ /usr/local/include/glm/detail/_swizzle_func.hpp
+ /usr/local/include/glm/detail/compute_vector_relational.hpp
+ /usr/local/include/glm/detail/qualifier.hpp
+ /usr/local/include/glm/detail/setup.hpp
+ /usr/local/include/glm/detail/type_vec3.hpp
+ /usr/local/include/glm/detail/type_vec3.inl
+ /usr/local/include/glm/ext/vector_bool3.hpp
+ /usr/local/include/glm/ext/vector_bool3_precision.hpp
+ /usr/local/include/glm/ext/vector_double3.hpp
+ /usr/local/include/glm/ext/vector_double3_precision.hpp
+ /usr/local/include/glm/ext/vector_float3.hpp
+ /usr/local/include/glm/ext/vector_float3_precision.hpp
+ /usr/local/include/glm/ext/vector_int3.hpp
+ /usr/local/include/glm/ext/vector_int3_precision.hpp
+ /usr/local/include/glm/ext/vector_uint3.hpp
+ /usr/local/include/glm/ext/vector_uint3_precision.hpp
+ /usr/local/include/glm/simd/platform.h
+ /usr/local/include/glm/vec3.hpp
  /usr/local/include/spdlog/common-inl.h
  /usr/local/include/spdlog/common.h
  /usr/local/include/spdlog/details/backtracer-inl.h
@@ -18134,6 +18153,25 @@ CMakeFiles/Crow.dir/main.cpp.o
  /usr/local/include/GLFW/glfw3.h
  /usr/local/include/freetype2/freetype/config/ftheader.h
  /usr/local/include/freetype2/ft2build.h
+ /usr/local/include/glm/detail/_swizzle.hpp
+ /usr/local/include/glm/detail/_swizzle_func.hpp
+ /usr/local/include/glm/detail/compute_vector_relational.hpp
+ /usr/local/include/glm/detail/qualifier.hpp
+ /usr/local/include/glm/detail/setup.hpp
+ /usr/local/include/glm/detail/type_vec3.hpp
+ /usr/local/include/glm/detail/type_vec3.inl
+ /usr/local/include/glm/ext/vector_bool3.hpp
+ /usr/local/include/glm/ext/vector_bool3_precision.hpp
+ /usr/local/include/glm/ext/vector_double3.hpp
+ /usr/local/include/glm/ext/vector_double3_precision.hpp
+ /usr/local/include/glm/ext/vector_float3.hpp
+ /usr/local/include/glm/ext/vector_float3_precision.hpp
+ /usr/local/include/glm/ext/vector_int3.hpp
+ /usr/local/include/glm/ext/vector_int3_precision.hpp
+ /usr/local/include/glm/ext/vector_uint3.hpp
+ /usr/local/include/glm/ext/vector_uint3_precision.hpp
+ /usr/local/include/glm/simd/platform.h
+ /usr/local/include/glm/vec3.hpp
  /usr/local/include/spdlog/common-inl.h
  /usr/local/include/spdlog/common.h
  /usr/local/include/spdlog/details/backtracer-inl.h

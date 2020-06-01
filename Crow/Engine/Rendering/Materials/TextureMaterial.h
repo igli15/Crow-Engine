@@ -98,6 +98,7 @@ private:
 
     GLint m_uFogDensity;
     GLint m_uFogGradient;
+    GLint m_uFogColor;
 
     Texture* m_whiteTexture = nullptr;
     Texture* m_blackTexture = nullptr;

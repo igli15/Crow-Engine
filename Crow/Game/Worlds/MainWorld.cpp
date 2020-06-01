@@ -72,7 +72,7 @@ void MainWorld::Build()
     RegisterSystem<SpawnSystem>();
     RegisterSystem<SelectedBridgeIndicatorSystem>();
     RegisterSystem<BridgeSystem>();
-    RegisterSystem<EnemySpawnSystem>()->enabled = false;
+    RegisterSystem<EnemySpawnSystem>();
     RegisterSystem<UnitCollisionSystem>();
     RegisterSystem<UnitFightingSystem>();
     RegisterSystem<ProjectileSystem>();
@@ -191,7 +191,7 @@ void MainWorld::Build()
 
     playerComponent->textComponent = textEntity.AddComponent(Text{"money:",glm::vec3(1),0.6f,resourceManager->GetFont("gameFont")});
 
-    
+
 }
 
 void MainWorld::ParseGameComponents(rapidxml::xml_node<> *node, EntityHandle entityHandle)

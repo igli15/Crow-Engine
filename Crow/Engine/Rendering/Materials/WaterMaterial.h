@@ -43,6 +43,7 @@ private:
     GLint m_uFogDensity;
     GLint m_uFogGradient;
     GLint m_uViewPos;
+    GLint m_uFogColor;
 };
 
 

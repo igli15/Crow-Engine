@@ -74,6 +74,7 @@ vec3 CalcSpotLight(SpotLight light, vec3 normal, vec3 fragPos, vec3 viewDir);
 
 uniform float fogDensity;
 uniform float fogGradient;
+uniform vec3 fogColor;
 
 void main()
 {
@@ -104,7 +105,7 @@ void main()
 
     vec3 emission = material.emissionScale * texture(material.emissionTexture,TexCoords).rgb;
     FragColor = vec4(result + emission, 1.0);
-    FragColor = mix(vec4(0.4,0.4,0.4,1),FragColor,visibility);
+    FragColor = mix(vec4(fogColor.rgb,1),FragColor,visibility);
 }
 
 vec3 CalcDirLight(DirLight light, vec3 normal, vec3 viewDir)

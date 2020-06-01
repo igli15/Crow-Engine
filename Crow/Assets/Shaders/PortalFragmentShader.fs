@@ -23,6 +23,7 @@ vec4 pivot = vec4(0.5,0.5,1,1);
 
 uniform float fogDensity;
 uniform float fogGradient;
+uniform vec3 fogColor;
 
 vec2 rotate( float magnitude , vec2 p )
  {
@@ -67,6 +68,6 @@ void main()
 
 
     FragColor = vec4(finalColor + glow * 1.4,1.0) ;
-    FragColor = mix(vec4(0.4,0.4,0.4,1),FragColor,visibility);
+    FragColor = mix(vec4(fogColor.rgb,1),FragColor,visibility);
 
 }
