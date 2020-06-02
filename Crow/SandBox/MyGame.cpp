@@ -127,6 +127,8 @@ void MyGame::LoadAssets()
     resourceManager->CreateSprite("titleSprite",resourceManager->GetTexture("title"));
     resourceManager->CreateSprite("playIconSprite",resourceManager->GetTexture("playIcon"));
     resourceManager->CreateSprite("quitIconSprite",resourceManager->GetTexture("quitIcon"));
+    resourceManager->CreateSprite("menuSelectionIconSprite",resourceManager->GetTexture("menuSelectionIcon"));
+
     resourceManager->CreateMaterial<SpriteMaterial>("mainMenuIconMat");
 
 }
@@ -161,7 +163,7 @@ void MyGame::AllocateMemory()
     m_componentRegistry->AllocateComponentSet<FloatingComponent>();
     m_componentRegistry->AllocateComponentSet<FlockComponent>();
     m_componentRegistry->AllocateComponentSet<HealthComponent>();
-    m_componentRegistry->AllocateComponentSet<Player>(1);
+    m_componentRegistry->AllocateComponentSet<Player>();
     m_componentRegistry->AllocateComponentSet<PlayerUnitCollider>();
     m_componentRegistry->AllocateComponentSet<ProjectileComponent>();
     m_componentRegistry->AllocateComponentSet<RotateComponent>();
@@ -174,7 +176,7 @@ void MyGame::AllocateMemory()
     m_componentRegistry->AllocateComponentSet<UnitPathComponent>();
     m_componentRegistry->AllocateComponentSet<AutoDestructComponent>();
     m_componentRegistry->AllocateComponentSet<DebugTextComponent>();
-    m_componentRegistry->AllocateComponentSet<MainMenuComponent>(2);
+    m_componentRegistry->AllocateComponentSet<MainMenuComponent>();
 
     m_systemRegistry->AllocateSystem<MainMenuSystem>();
     m_systemRegistry->AllocateSystem<AutoDestructSystem>();

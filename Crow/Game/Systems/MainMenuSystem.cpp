@@ -9,6 +9,8 @@
 #include "../../Engine/Core/Game.h"
 #include "../Worlds/MainWorld.h"
 #include "glm/glm.hpp"
+#include "../../Engine/Components/Transform.h"
+
 void MainMenuSystem::Init()
 {
     System::Init();
@@ -56,12 +58,26 @@ void MainMenuSystem::Update(float dt)
             {
                 menuComponent.systemsToEnable[i]->enabled = true;
             }
-
             menuComponent.playButtonHandle.Destroy();
             menuComponent.quitButtonHandle.Destroy();
+            menuComponent.selectionIconHandle.Destroy();
             world->DestroyEntity(e);
             mainWorld->CreateUIEntities();
-            //ENGINE_LOG("here");
+        }
+        else
+        {
+           Transform& selectionIconTransform = menuComponent.selectionIconHandle.GetComponent<Transform>();
+           glm::vec3  currentPos = selectionIconTransform.LocalPosition();
+
+           if(buttonCounter == 0)
+           {
+               selectionIconTransform.SetLocalPosition(glm::vec3(currentPos.x,menuComponent.playButtonYPos,currentPos.z));
+           }
+           else if (buttonCounter == 1)
+           {
+               selectionIconTransform.SetLocalPosition(glm::vec3(currentPos.x,menuComponent.quitButtonYPos,currentPos.z));
+           }
+
         }
     });
 

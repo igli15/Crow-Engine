@@ -425,20 +425,12 @@ void MainWorld::CreateUIEntities()
     UnitGroupArchetype* tankArchetype = GetUnitGroupArchetype<UnitGroupArchetype>("playerTank");
     UnitGroupArchetype* cannonArchetype = GetUnitGroupArchetype<UnitGroupArchetype>("playerCannon");
 
-    EntityHandle borderWEntity = CreateEntity();
-    Transform* borderWTransform = borderWEntity.AddComponent<Transform>(Transform{});
-    borderWTransform->SetLocalPosition(glm::vec3(screenWidth/2 - iconSize/2,screenHeight - iconBottomPadding,1));
-    borderWTransform->Scale(glm::vec3(iconSize,iconSize,1));
-    borderWEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("uiBorderWSprite"),resourceManager->GetMaterial<SpriteMaterial>("uiBorderWMat")});
-    borderWEntity.AddComponent<UnitIconComponent>(UnitIconComponent{tankArchetype->unitPrice,resourceManager->GetSprite("uiBorderWSpriteAvaiable"),resourceManager->GetSprite("uiBorderWSprite")});
-
     EntityHandle borderEEntity = CreateEntity();
     Transform* borderETransform = borderEEntity.AddComponent<Transform>(Transform{});
     borderETransform->SetLocalPosition(glm::vec3(screenWidth/2 - iconSize/2 + iconHorizontalPadding,screenHeight - iconBottomPadding,1));
     borderETransform->Scale(glm::vec3(iconSize,iconSize,1));
     borderEEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("uiBorderESprite"),resourceManager->GetMaterial<SpriteMaterial>("uiBorderEMat")});
     borderEEntity.AddComponent<UnitIconComponent>(UnitIconComponent{cannonArchetype->unitPrice,resourceManager->GetSprite("uiBorderESpriteAvaiable"),resourceManager->GetSprite("uiBorderESprite")});
-
 
     EntityHandle uiBackgroundEntity = CreateEntity();
     Transform* uiBackgroundTransform = uiBackgroundEntity.AddComponent<Transform>(Transform{});
@@ -453,11 +445,21 @@ void MainWorld::CreateUIEntities()
     borderQEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("uiBorderQSprite"),resourceManager->GetMaterial<SpriteMaterial>("uiBorderQMat")});
     borderQEntity.AddComponent<UnitIconComponent>(UnitIconComponent{meleeArchetype->unitPrice,resourceManager->GetSprite("uiBorderQSpriteAvaiable"),resourceManager->GetSprite("uiBorderQSprite")});
 
+
+    EntityHandle borderWEntity = CreateEntity();
+    Transform* borderWTransform = borderWEntity.AddComponent<Transform>(Transform{});
+    borderWTransform->SetLocalPosition(glm::vec3(screenWidth/2 - iconSize/2,screenHeight - iconBottomPadding,1));
+    borderWTransform->Scale(glm::vec3(iconSize,iconSize,1));
+    borderWEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("uiBorderWSprite"),resourceManager->GetMaterial<SpriteMaterial>("uiBorderWMat")});
+    borderWEntity.AddComponent<UnitIconComponent>(UnitIconComponent{tankArchetype->unitPrice,resourceManager->GetSprite("uiBorderWSpriteAvaiable"),resourceManager->GetSprite("uiBorderWSprite")});
+
+
     EntityHandle moneyIconEntity = CreateEntity();
     Transform* moneyIconTransform = moneyIconEntity.AddComponent<Transform>(Transform{});
     moneyIconTransform->SetLocalPosition(glm::vec3(screenWidth/2 - 20,screenHeight - 50,0));
     moneyIconTransform->Scale(glm::vec3(56,38,1));
     moneyIconEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("moneyIconSprite"),resourceManager->GetMaterial<SpriteMaterial>("moneyIconMat")});
+
 
 
 }
@@ -491,6 +493,7 @@ void MainWorld::CreateMainMenu()
     glm::vec2 titleSize{709,88};
     glm::vec2 playIconSize{107,48};
     glm::vec2 quitIconSize{94,53};
+    glm::vec2 selectionIconSize{58,51};
 
     int titleBottomPadding = 200;
 
@@ -507,14 +510,25 @@ void MainWorld::CreateMainMenu()
     playIconTransform->Scale(glm::vec3(playIconSize.x,playIconSize.y,1));
     playIconEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("playIconSprite"),resourceManager->GetMaterial<SpriteMaterial>("mainMenuIconMat")});
 
+    EntityHandle menuSelectionEntity = CreateEntity();
+    Transform* menuSelectionTransform = menuSelectionEntity.AddComponent<Transform>(Transform{});
+    menuSelectionTransform->SetLocalPosition(glm::vec3(screenWidth/2 - selectionIconSize.x/2 - 100,titleBottomPadding + 200,0));
+    menuSelectionTransform->Scale(glm::vec3(selectionIconSize.x,selectionIconSize.y,1));
+    menuSelectionEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("menuSelectionIconSprite"),resourceManager->GetMaterial<SpriteMaterial>("mainMenuIconMat")});
+
     EntityHandle quitIconEntity = CreateEntity();
     Transform* quitIconTransform = quitIconEntity.AddComponent<Transform>(Transform{});
     quitIconTransform->SetLocalPosition(glm::vec3(screenWidth/2 - quitIconSize.x/2 ,titleBottomPadding + 400,0));
     quitIconTransform->Scale(glm::vec3(quitIconSize.x,quitIconSize.y,1));
     quitIconEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("quitIconSprite"),resourceManager->GetMaterial<SpriteMaterial>("mainMenuIconMat")});
 
+
+
     menuComponent->playButtonHandle = playIconEntity;
     menuComponent->quitButtonHandle = quitIconEntity;
+    menuComponent->selectionIconHandle = menuSelectionEntity;
+    menuComponent->playButtonYPos = titleBottomPadding + 200;
+    menuComponent->quitButtonYPos = titleBottomPadding + 400;
 
     menuComponent->systemsToEnable.push_back(m_systemRegistry->GetSystem<SpawnSystem>());
     menuComponent->systemsToEnable.push_back(m_systemRegistry->GetSystem<EnemySpawnSystem>());

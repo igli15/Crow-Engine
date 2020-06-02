@@ -14,6 +14,9 @@ struct MainMenuComponent
     std::vector<System*> systemsToEnable{};
     EntityHandle playButtonHandle;
     EntityHandle quitButtonHandle;
+    EntityHandle selectionIconHandle;
+    int playButtonYPos = 0;
+    int quitButtonYPos = 0;
 };
 
 
