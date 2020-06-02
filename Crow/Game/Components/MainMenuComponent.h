@@ -8,10 +8,10 @@
 
 #include "../../Engine/Feather/EntityHandle.h"
 
-class MainMenuComponent
+struct MainMenuComponent
 {
     EntityHandle playButtonHandle;
-    EntityHandle exitButtonHandle;
+    EntityHandle quitButtonHandle;
 };
 
 

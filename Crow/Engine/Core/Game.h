@@ -76,6 +76,8 @@ public:
     ///@param w The new world which will be updated
     void SetWorld(World* w);
 
+    void Close();
+
     ///Returns the singelton instance of "Game" class.
     ///@return A pointer to the Game class instance
     static Game* Instance();

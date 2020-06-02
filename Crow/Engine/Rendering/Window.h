@@ -26,6 +26,7 @@ public:
     void SwapBuffers();
     void PollEvents();
     void Terminate();
+    void CloseWindow();
     void SetUpPostProcessingFrameBuffer(Shader* screenShader);
     inline static void InputKeyCallback(GLFWwindow* window, int key, int scancode, int action, int mods);
 

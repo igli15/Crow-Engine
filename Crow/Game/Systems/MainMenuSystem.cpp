@@ -5,6 +5,8 @@
 #include "MainMenuSystem.h"
 #include "../../Engine/Feather/World.h"
 #include "../../Engine/Core/Input.h"
+#include "../Components/MainMenuComponent.h"
+#include "../../Engine/Core/Game.h"
 
 void MainMenuSystem::Init()
 {
@@ -35,6 +37,12 @@ void MainMenuSystem::Update(float dt)
         else if(buttonCounter == 1)
         {
             APP_LOG("Quit");
+            Game::Instance()->Close();
         }
     }
+
+    world->ForEach<MainMenuComponent>([&](Entity e,MainMenuComponent& menuComponent)
+    {
+
+    });
 }

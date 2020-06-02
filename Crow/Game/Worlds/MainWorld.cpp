@@ -51,6 +51,7 @@
 #include "../../Engine/Systems/TransformHierarchySystem.h"
 #include "../../Engine/Systems/CollisionDetectionSystem.h"
 #include "../Systems/MainMenuSystem.h"
+#include "../Components/MainMenuComponent.h"
 
 void MainWorld::Build()
 {
@@ -496,6 +497,7 @@ void MainWorld::CreateMainMenu()
     titleTransform->SetLocalPosition(glm::vec3(screenWidth/2 - titleSize.x/2 ,titleBottomPadding,0));
     titleTransform->Scale(glm::vec3(titleSize.x,titleSize.y,1));
     titleEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("titleSprite"),resourceManager->GetMaterial<SpriteMaterial>("mainMenuIconMat")});
+    MainMenuComponent* menuComponent = titleEntity.AddComponent(MainMenuComponent{});
 
     EntityHandle playIconEntity = CreateEntity();
     Transform* playIconTransform = playIconEntity.AddComponent<Transform>(Transform{});
@@ -508,4 +510,7 @@ void MainWorld::CreateMainMenu()
     quitIconTransform->SetLocalPosition(glm::vec3(screenWidth/2 - quitIconSize.x/2 ,titleBottomPadding + 400,0));
     quitIconTransform->Scale(glm::vec3(quitIconSize.x,quitIconSize.y,1));
     quitIconEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("quitIconSprite"),resourceManager->GetMaterial<SpriteMaterial>("mainMenuIconMat")});
+
+    menuComponent->playButtonHandle = playIconEntity;
+    menuComponent->quitButtonHandle = quitIconEntity;
 }

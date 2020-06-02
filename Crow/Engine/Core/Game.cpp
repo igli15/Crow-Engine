@@ -194,3 +194,8 @@ void Game::AllocateMemory()
 
 }
 
+void Game::Close()
+{
+    window->CloseWindow();
+}
+

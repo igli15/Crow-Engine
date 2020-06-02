@@ -216,3 +216,8 @@ void Window::GenerateFrameBufferRBO()
     glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_STENCIL_ATTACHMENT, GL_RENDERBUFFER, internalRBO);
 }
 
+void Window::CloseWindow()
+{
+    glfwSetWindowShouldClose(m_internalWindow,1);
+}
+

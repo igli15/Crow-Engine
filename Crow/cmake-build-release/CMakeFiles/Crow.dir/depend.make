@@ -11606,6 +11606,7 @@ CMakeFiles/Crow.dir/Game/Systems/GameUISystem.cpp.o: /usr/local/include/spdlog/s
 CMakeFiles/Crow.dir/Game/Systems/GameUISystem.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Game/Systems/GameUISystem.cpp.o: /usr/local/include/spdlog/version.h
 
+CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: ../Engine/Core/Game.h
 CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: ../Engine/Core/Input.h
 CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: ../Engine/EventQueue/Event.h
@@ -11616,6 +11617,7 @@ CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: ../Engine/Events/Componen
 CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: ../Engine/Feather/ComponentRegistry.h
 CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: ../Engine/Feather/CustomTypeID.h
+CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: ../Engine/Feather/EntityHandle.h
 CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: ../Engine/Feather/EntityRegistry.h
 CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: ../Engine/Feather/System.h
@@ -11623,10 +11625,32 @@ CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: ../Engine/Feather/SystemR
 CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: ../Engine/Feather/Types.h
 CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: ../Engine/Feather/World.h
 CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: ../Engine/Rendering/Window.h
+CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: ../Game/Components/MainMenuComponent.h
 CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: ../Game/Systems/MainMenuSystem.cpp
 CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: ../Game/Systems/MainMenuSystem.h
 CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: /usr/local/include/GL/glew.h
 CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: /usr/local/include/GLFW/glfw3.h
+CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: /usr/local/include/freetype2/freetype/config/ftheader.h
+CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: /usr/local/include/freetype2/ft2build.h
+CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: /usr/local/include/glm/detail/_swizzle.hpp
+CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: /usr/local/include/glm/detail/_swizzle_func.hpp
+CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: /usr/local/include/glm/detail/compute_vector_relational.hpp
+CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: /usr/local/include/glm/detail/qualifier.hpp
+CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: /usr/local/include/glm/detail/setup.hpp
+CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: /usr/local/include/glm/detail/type_vec3.hpp
+CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: /usr/local/include/glm/detail/type_vec3.inl
+CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: /usr/local/include/glm/ext/vector_bool3.hpp
+CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: /usr/local/include/glm/ext/vector_bool3_precision.hpp
+CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: /usr/local/include/glm/ext/vector_double3.hpp
+CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: /usr/local/include/glm/ext/vector_double3_precision.hpp
+CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: /usr/local/include/glm/ext/vector_float3.hpp
+CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: /usr/local/include/glm/ext/vector_float3_precision.hpp
+CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: /usr/local/include/glm/ext/vector_int3.hpp
+CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: /usr/local/include/glm/ext/vector_int3_precision.hpp
+CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: /usr/local/include/glm/ext/vector_uint3.hpp
+CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: /usr/local/include/glm/ext/vector_uint3_precision.hpp
+CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: /usr/local/include/glm/simd/platform.h
+CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: /usr/local/include/glm/vec3.hpp
 CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: /usr/local/include/spdlog/common-inl.h
 CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: /usr/local/include/spdlog/common.h
 CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o: /usr/local/include/spdlog/details/backtracer-inl.h
@@ -15230,6 +15254,7 @@ CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Game/Components/DamageDealer
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Game/Components/DebugTextComponent.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Game/Components/Enemy.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Game/Components/EnemyUnitCollider.h
+CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Game/Components/MainMenuComponent.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Game/Components/Player.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Game/Components/PlayerUnitCollider.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Game/Components/ProjectileComponent.h

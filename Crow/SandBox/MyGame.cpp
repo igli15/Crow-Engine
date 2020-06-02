@@ -174,10 +174,9 @@ void MyGame::AllocateMemory()
     m_componentRegistry->AllocateComponentSet<UnitPathComponent>();
     m_componentRegistry->AllocateComponentSet<AutoDestructComponent>();
     m_componentRegistry->AllocateComponentSet<DebugTextComponent>();
-    m_componentRegistry->AllocateComponentSet<MainMenuComponent>();
+    m_componentRegistry->AllocateComponentSet<MainMenuComponent>(1);
 
     m_systemRegistry->AllocateSystem<MainMenuSystem>();
-
     m_systemRegistry->AllocateSystem<AutoDestructSystem>();
     m_systemRegistry->AllocateSystem<BridgeSystem>();
     m_systemRegistry->AllocateSystem<CannonSystem>();
