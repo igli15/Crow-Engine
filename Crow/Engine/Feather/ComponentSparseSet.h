@@ -18,11 +18,12 @@ class ComponentSparseSet : public IComponentSet
 {
 public:
 
-    ComponentSparseSet()
+    ComponentSparseSet(int maxSize = MAX_ENTITIES)
     {
-        m_componentDenseArray =(ComponentType*)(calloc(MAX_ENTITIES,sizeof(ComponentType) ));
-        m_entitiesDenseArray = (Entity*)(calloc(MAX_ENTITIES,sizeof(Entity)));
-        m_indexesSparseArray = (int*)(calloc(MAX_ENTITIES,sizeof(int)));
+        m_maxSize = maxSize;
+        m_componentDenseArray =(ComponentType*)(calloc(maxSize,sizeof(ComponentType) ));
+        m_entitiesDenseArray = (Entity*)(calloc(maxSize,sizeof(Entity)));
+        m_indexesSparseArray = (int*)(calloc(maxSize,sizeof(int)));
     }
 
     ///Adds a component to the specified entity.
@@ -77,7 +78,7 @@ public:
 
     int GetComponentIndex(Entity entity)
     {
-        if(entity > MAX_ENTITIES)
+        if(m_indexesSparseArray[entity] > m_maxSize)
         {
             return -1;
         }
@@ -168,6 +169,7 @@ private:
     ComponentType* m_componentDenseArray;
     Entity* m_entitiesDenseArray;
     int* m_indexesSparseArray;
+    int m_maxSize;
 };
 
 

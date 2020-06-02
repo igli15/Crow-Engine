@@ -97,7 +97,6 @@ void UnitGroupArchetype::Build(World *world, BridgeComponent *bridge)
                 cannonComponent.reloadTime = Random::RandomRange(0.5f,4.0f);
                 unitEntity.AddComponent<CannonComponent>(cannonComponent);
             }
-
         }
     }
 

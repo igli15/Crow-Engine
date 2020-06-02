@@ -19,7 +19,7 @@ class ComponentRegistry
 public:
 
     template<typename T>
-    void AllocateComponentSet();
+    void AllocateComponentSet(int maxSize = MAX_ENTITIES);
 
     ///Finds an component array of Type "T" and updates it correctly with the new entity and component
     ///@param entity the entity which the component will be added to.
@@ -72,13 +72,13 @@ private:
 };
 
 template<typename T>
-void ComponentRegistry::AllocateComponentSet()
+void ComponentRegistry::AllocateComponentSet(int maxSize)
 {
     auto iterator = m_componentSetsMap.find(ComponentIDGenerator::index < T > );
 
     if (iterator == m_componentSetsMap.end())
     {
-        ComponentSparseSet<T> *array = new ComponentSparseSet<T>;
+        ComponentSparseSet<T> *array = new ComponentSparseSet<T>(maxSize);
         m_componentSetsMap.insert(iterator, std::make_pair(ComponentIDGenerator::index < T > , array));
     } else{
         ENGINE_LOG_WARNING("Component is already registered.... Skipping");
