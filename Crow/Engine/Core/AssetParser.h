@@ -169,7 +169,7 @@ static char* ParseAssetPath(Tokenizer* tokenizer)
     size_t length = tokenizer->at - first;
     size_t realLength = length - whiteSpaceCount;
 
-    char* path = (char*)(malloc(realLength +1 ));
+    char* path = (char*)(calloc(realLength + 1,sizeof(char)));
 
     int index = 0;
     for (int i = 0; i < length; ++i)
@@ -202,7 +202,7 @@ static char* ParseAssetName(Tokenizer* tokenizer)
     size_t length = tokenizer->at - first;
     size_t realLength = length - whiteSpaceCount;
 
-    char* path = (char*)(malloc(realLength +1));
+    char* path = (char*)(calloc(realLength + 1,sizeof(char)));
 
     int index = 0;
     for (int i = 0; i < length; ++i)
@@ -227,7 +227,7 @@ static AssetCollection ParseAssetFile(char* fileName, size_t maxNrOfAssets = 100
    Tokenizer tokenizer {};
    tokenizer.at = fileContent;
 
-   AssetToken* assetTokens = (AssetToken*)(malloc(maxNrOfAssets * sizeof(AssetToken)));
+   AssetToken* assetTokens = (AssetToken*)(calloc(maxNrOfAssets,sizeof(AssetToken)));
    int validSize = 0;
 
    while (parsing)

@@ -61,7 +61,7 @@ void MainMenuSystem::Update(float dt)
             menuComponent.quitButtonHandle.Destroy();
             world->DestroyEntity(e);
             mainWorld->CreateUIEntities();
-            ENGINE_LOG("here");
+            //ENGINE_LOG("here");
         }
     });
 
