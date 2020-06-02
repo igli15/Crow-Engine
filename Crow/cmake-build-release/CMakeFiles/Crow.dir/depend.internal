@@ -11606,6 +11606,68 @@ CMakeFiles/Crow.dir/Game/Systems/GameUISystem.cpp.o
  /usr/local/include/spdlog/spdlog.h
  /usr/local/include/spdlog/tweakme.h
  /usr/local/include/spdlog/version.h
+CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentRegistry.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentSparseSet.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/CustomTypeID.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityRegistry.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/IComponentSet.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemRegistry.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/MainMenuSystem.cpp
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/MainMenuSystem.h
+ /usr/local/include/GL/glew.h
+ /usr/local/include/GLFW/glfw3.h
+ /usr/local/include/spdlog/common-inl.h
+ /usr/local/include/spdlog/common.h
+ /usr/local/include/spdlog/details/backtracer-inl.h
+ /usr/local/include/spdlog/details/backtracer.h
+ /usr/local/include/spdlog/details/circular_q.h
+ /usr/local/include/spdlog/details/console_globals.h
+ /usr/local/include/spdlog/details/fmt_helper.h
+ /usr/local/include/spdlog/details/log_msg-inl.h
+ /usr/local/include/spdlog/details/log_msg.h
+ /usr/local/include/spdlog/details/log_msg_buffer-inl.h
+ /usr/local/include/spdlog/details/log_msg_buffer.h
+ /usr/local/include/spdlog/details/null_mutex.h
+ /usr/local/include/spdlog/details/os-inl.h
+ /usr/local/include/spdlog/details/os.h
+ /usr/local/include/spdlog/details/pattern_formatter-inl.h
+ /usr/local/include/spdlog/details/pattern_formatter.h
+ /usr/local/include/spdlog/details/periodic_worker-inl.h
+ /usr/local/include/spdlog/details/periodic_worker.h
+ /usr/local/include/spdlog/details/registry-inl.h
+ /usr/local/include/spdlog/details/registry.h
+ /usr/local/include/spdlog/details/synchronous_factory.h
+ /usr/local/include/spdlog/fmt/bundled/core.h
+ /usr/local/include/spdlog/fmt/bundled/format-inl.h
+ /usr/local/include/spdlog/fmt/bundled/format.h
+ /usr/local/include/spdlog/fmt/fmt.h
+ /usr/local/include/spdlog/formatter.h
+ /usr/local/include/spdlog/logger-inl.h
+ /usr/local/include/spdlog/logger.h
+ /usr/local/include/spdlog/sinks/ansicolor_sink-inl.h
+ /usr/local/include/spdlog/sinks/ansicolor_sink.h
+ /usr/local/include/spdlog/sinks/sink-inl.h
+ /usr/local/include/spdlog/sinks/sink.h
+ /usr/local/include/spdlog/sinks/stdout_color_sinks-inl.h
+ /usr/local/include/spdlog/sinks/stdout_color_sinks.h
+ /usr/local/include/spdlog/sinks/wincolor_sink-inl.h
+ /usr/local/include/spdlog/sinks/wincolor_sink.h
+ /usr/local/include/spdlog/spdlog-inl.h
+ /usr/local/include/spdlog/spdlog.h
+ /usr/local/include/spdlog/tweakme.h
+ /usr/local/include/spdlog/version.h
 CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
@@ -14735,6 +14797,7 @@ CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/FlockComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/HealthComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/PlayerUnitCollider.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Components/RotateComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/SeekComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/SteeringComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitAnimationComponent.h
@@ -15188,6 +15251,7 @@ CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/FlockSeparationSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameStateSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameUISystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/MainMenuSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/PathSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/PlayerMoneySystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/ProjectileSystem.h
@@ -15811,6 +15875,7 @@ CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/FlockSeparationSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameStateSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameUISystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/MainMenuSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/PathSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/PlayerMoneySystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/ProjectileSystem.h
@@ -17462,6 +17527,7 @@ CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/SpriteInfo.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
@@ -17473,6 +17539,7 @@ CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/EntityEvents.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/MaterialAddedEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentRegistry.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentSparseSet.h
@@ -17485,16 +17552,24 @@ CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Font.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/PortalMaterial.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/SpriteMaterial.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/TextureMaterial.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/TranslucentColorMat.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/WaterMaterial.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Mesh.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Sprite.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/CollisionDetectionSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/MeshRendererSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/SpriteRendererSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/TextRenderingSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/TransformHierarchySystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/RotateComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/RotateSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/TranslucentMaterialTestWorld.cpp

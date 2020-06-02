@@ -48,7 +48,7 @@ void FlockSeparationSystem::Update(float dt)
 glm::vec3 FlockSeparationSystem::DoFlockingSeparation(Transform& ownTransform, const std::vector<Entity> &others,
                                                       float separationDistance, float separationFactor)
 {
-    glm::vec3 totalForce{0, 0, 0};
+    glm::vec3 totalForce{0.0f, 0.0f, 0.0f};
     float sqrSeparationDistance = separationDistance * separationDistance;
 
     for (int i = 0; i < others.size(); ++i) {

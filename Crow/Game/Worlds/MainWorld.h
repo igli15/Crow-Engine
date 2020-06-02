@@ -55,6 +55,8 @@ public:
 private:
     void CreateUIEntities(ResourceManager* resourceManager);
     void CreateDebugText();
+    void CreateMainMenu();
+
     std::unordered_map<std::string,UnitGroupArchetype*> m_unitArchetypeMap;
 };
 

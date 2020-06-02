@@ -22,6 +22,10 @@
 
 #texture moneyIcon : SoulsIcon.png;
 
+#texture title : Title.png;
+#texture playIcon : PlayIcon.png;
+#texture quitIcon : QuitIcon.png;
+
 #model dragon : dragon.obj;
 #model ghost : ghost1.obj;
 #model golem : Golem.fbx;

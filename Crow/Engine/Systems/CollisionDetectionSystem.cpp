@@ -18,6 +18,7 @@ void CollisionDetectionSystem::Update(float dt)
 
     auto entities = world->EntitiesWith<Transform,SphereCollider>();
 
+    //TODO rename t1 t2
     for (int firstEntityIndex = 0; firstEntityIndex < entities.size(); firstEntityIndex++)
     {
         Transform& t1 = world->GetComponent<Transform>(entities[firstEntityIndex]);

@@ -52,6 +52,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/FlockSeparationSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameStateSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Game/Systems/GameStateSystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameUISystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Game/Systems/GameUISystem.cpp.o"
+  "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/MainMenuSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/PathSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Game/Systems/PathSystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/PlayerMoneySystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Game/Systems/PlayerMoneySystem.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/ProjectileSystem.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Game/Systems/ProjectileSystem.cpp.o"

@@ -18,6 +18,11 @@
 #include "../../Engine/Rendering/Materials/TextureMaterial.h"
 #include "../../Engine/Rendering/Materials/WaterMaterial.h"
 #include "../../Engine/Rendering/Materials/PortalMaterial.h"
+#include "../../Engine/Systems/MeshRendererSystem.h"
+#include "../../Engine/Systems/TransformHierarchySystem.h"
+#include "../../Engine/Systems/CollisionDetectionSystem.h"
+#include "../../Engine/Systems/TextRenderingSystem.h"
+#include "../../Engine/Systems/SpriteRendererSystem.h"
 
 void TranslucentMaterialTestWorld::Build()
 {
@@ -25,6 +30,13 @@ void TranslucentMaterialTestWorld::Build()
 
 
     ResourceManager* resourceManager = Game::Instance()->resourceManager;
+
+    RegisterSystem<MeshRendererSystem>();
+    RegisterSystem<CollisionDetectionSystem>();
+    RegisterSystem<TransformHierarchySystem>();
+    RegisterSystem<TextRenderingSystem>();
+    RegisterSystem<SpriteRendererSystem>();
+    SetSystemSignature<MeshRendererSystem,Transform,MeshInfo>();
 
     //Load the models
     Model* dragon = resourceManager->GetModel("dragon");
@@ -89,38 +101,6 @@ void TranslucentMaterialTestWorld::Build()
     portalPlane.AddComponent(MeshInfo{resourceManager->GetModel("PortalPlane"),portalMaterial});
     portalPlaneTransform->Translate(glm::vec3(0,2,3));
     //portalPlaneTransform->Rotate(90,glm::vec3(0,0,1));
-
-    /*
-    {
-        EntityHandle cubeEntity = CreateEntity();
-        cubeEntity.AddComponent(Transform{});
-        Transform *cubeTransform = cubeEntity.GetComponent<Transform>().component;
-        cubeTransform->Scale(glm::vec3(3, 3, 3));
-        cubeEntity.AddComponent(RotateComponent{1});
-
-        MeshInfo cubeMeshInfo{};
-        cubeMeshInfo.model = dragon;
-        // cubeMeshInfo.SetMaterial(mat);
-        cubeMeshInfo.material = translucentMat;
-        cubeEntity.AddComponent(cubeMeshInfo);
-    }
-
-    {
-        EntityHandle cubeEntity = CreateEntity();
-        cubeEntity.AddComponent(Transform{});
-        Transform *cubeTransform = cubeEntity.GetComponent<Transform>().component;
-        cubeTransform->Scale(glm::vec3(1, 1, 1));
-        cubeTransform->Translate(glm::vec3(3,0,0));
-        cubeEntity.AddComponent(RotateComponent{1});
-
-        MeshInfo cubeMeshInfo{};
-        cubeMeshInfo.model = cubeModel;
-        // cubeMeshInfo.SetMaterial(mat);
-        cubeMeshInfo.material = textureMaterial;
-        //cubeMeshInfo.material = mat;
-        cubeEntity.AddComponent(cubeMeshInfo);
-    }
-*/
 
 
     EntityHandle lightEntity = CreateEntity();

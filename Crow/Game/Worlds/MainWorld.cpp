@@ -50,6 +50,7 @@
 #include "../../Engine/Systems/TextRenderingSystem.h"
 #include "../../Engine/Systems/TransformHierarchySystem.h"
 #include "../../Engine/Systems/CollisionDetectionSystem.h"
+#include "../Systems/MainMenuSystem.h"
 
 void MainWorld::Build()
 {
@@ -65,6 +66,8 @@ void MainWorld::Build()
     RegisterSystem<TextRenderingSystem>();
     RegisterSystem<SpriteRendererSystem>();
     SetSystemSignature<MeshRendererSystem,Transform,MeshInfo>();
+
+    RegisterSystem<MainMenuSystem>();
 
     RegisterSystem<RigidbodySystem>();
     RegisterSystem<SteeringSystem>();
@@ -181,6 +184,7 @@ void MainWorld::Build()
     bridgeIndicatorEntity.AddComponent(MeshInfo{resourceManager->GetModel("cone"),resourceManager->GetMaterial<TranslucentColorMat>("whiteUnlitMat")});
     bridgeIndicatorEntity.AddComponent(SelectedBridgeIndicator{});
 
+    CreateMainMenu();
     CreateUIEntities(resourceManager);
     CreateDebugText();
 
@@ -471,4 +475,37 @@ void MainWorld::CreateDebugText()
     textTransform2->SetLocalPosition(glm::vec3(game->screenData.screenWidth - 200,game->screenData.screenHeight - 80,0));
     Text* unitCountText = textEntity2.AddComponent(Text{"Unit Count:",glm::vec3(1),0.5f,resourceManager->GetFont("roboto")});
     textEntity2.AddComponent(DebugTextComponent{fpsText,unitCountText});
+}
+
+
+void MainWorld::CreateMainMenu()
+{
+    ResourceManager* resourceManager = Game::Instance()->resourceManager;
+
+    int screenWidth = Game::Instance()->screenData.screenWidth;
+    int screenHeight = Game::Instance()->screenData.screenHeight;
+
+    glm::vec2 titleSize{709,88};
+    glm::vec2 playIconSize{107,48};
+    glm::vec2 quitIconSize{94,53};
+
+    int titleBottomPadding = 200;
+
+    EntityHandle titleEntity = CreateEntity();
+    Transform* titleTransform = titleEntity.AddComponent<Transform>(Transform{});
+    titleTransform->SetLocalPosition(glm::vec3(screenWidth/2 - titleSize.x/2 ,titleBottomPadding,0));
+    titleTransform->Scale(glm::vec3(titleSize.x,titleSize.y,1));
+    titleEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("titleSprite"),resourceManager->GetMaterial<SpriteMaterial>("mainMenuIconMat")});
+
+    EntityHandle playIconEntity = CreateEntity();
+    Transform* playIconTransform = playIconEntity.AddComponent<Transform>(Transform{});
+    playIconTransform->SetLocalPosition(glm::vec3(screenWidth/2 - playIconSize.x/2 ,titleBottomPadding + 200,0));
+    playIconTransform->Scale(glm::vec3(playIconSize.x,playIconSize.y,1));
+    playIconEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("playIconSprite"),resourceManager->GetMaterial<SpriteMaterial>("mainMenuIconMat")});
+
+    EntityHandle quitIconEntity = CreateEntity();
+    Transform* quitIconTransform = quitIconEntity.AddComponent<Transform>(Transform{});
+    quitIconTransform->SetLocalPosition(glm::vec3(screenWidth/2 - quitIconSize.x/2 ,titleBottomPadding + 400,0));
+    quitIconTransform->Scale(glm::vec3(quitIconSize.x,quitIconSize.y,1));
+    quitIconEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("quitIconSprite"),resourceManager->GetMaterial<SpriteMaterial>("mainMenuIconMat")});
 }

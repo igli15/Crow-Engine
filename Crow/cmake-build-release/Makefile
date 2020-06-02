@@ -1419,6 +1419,33 @@ Game/Systems/GameUISystem.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/GameUISystem.cpp.s
 .PHONY : Game/Systems/GameUISystem.cpp.s
 
+Game/Systems/MainMenuSystem.o: Game/Systems/MainMenuSystem.cpp.o
+
+.PHONY : Game/Systems/MainMenuSystem.o
+
+# target to build an object file
+Game/Systems/MainMenuSystem.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o
+.PHONY : Game/Systems/MainMenuSystem.cpp.o
+
+Game/Systems/MainMenuSystem.i: Game/Systems/MainMenuSystem.cpp.i
+
+.PHONY : Game/Systems/MainMenuSystem.i
+
+# target to preprocess a source file
+Game/Systems/MainMenuSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.i
+.PHONY : Game/Systems/MainMenuSystem.cpp.i
+
+Game/Systems/MainMenuSystem.s: Game/Systems/MainMenuSystem.cpp.s
+
+.PHONY : Game/Systems/MainMenuSystem.s
+
+# target to generate assembly for a file
+Game/Systems/MainMenuSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.s
+.PHONY : Game/Systems/MainMenuSystem.cpp.s
+
 Game/Systems/PathSystem.o: Game/Systems/PathSystem.cpp.o
 
 .PHONY : Game/Systems/PathSystem.o
@@ -2220,6 +2247,9 @@ help:
 	@echo "... Game/Systems/GameUISystem.o"
 	@echo "... Game/Systems/GameUISystem.i"
 	@echo "... Game/Systems/GameUISystem.s"
+	@echo "... Game/Systems/MainMenuSystem.o"
+	@echo "... Game/Systems/MainMenuSystem.i"
+	@echo "... Game/Systems/MainMenuSystem.s"
 	@echo "... Game/Systems/PathSystem.o"
 	@echo "... Game/Systems/PathSystem.i"
 	@echo "... Game/Systems/PathSystem.s"

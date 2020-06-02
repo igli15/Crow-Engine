@@ -62,6 +62,7 @@
 #include "../Game/Systems/UnitAnimationSystem.h"
 #include "../Game/Systems/UnitCollisionSystem.h"
 #include "../Game/Systems/UnitFightingSystem.h"
+#include "../Game/Systems/MainMenuSystem.h"
 
 void MyGame::LoadAssets()
 {
@@ -121,6 +122,12 @@ void MyGame::LoadAssets()
     resourceManager->CreateSprite("moneyIconSprite",resourceManager->GetTexture("moneyIcon"));
     resourceManager->CreateMaterial<SpriteMaterial>("moneyIconMat");
 
+
+    resourceManager->CreateSprite("titleSprite",resourceManager->GetTexture("title"));
+    resourceManager->CreateSprite("playIconSprite",resourceManager->GetTexture("playIcon"));
+    resourceManager->CreateSprite("quitIconSprite",resourceManager->GetTexture("quitIcon"));
+    resourceManager->CreateMaterial<SpriteMaterial>("mainMenuIconMat");
+
 }
 
 void MyGame::Init()
@@ -167,6 +174,8 @@ void MyGame::AllocateMemory()
     m_componentRegistry->AllocateComponentSet<AutoDestructComponent>();
     m_componentRegistry->AllocateComponentSet<DebugTextComponent>();
 
+
+    m_systemRegistry->AllocateSystem<MainMenuSystem>();
 
     m_systemRegistry->AllocateSystem<AutoDestructSystem>();
     m_systemRegistry->AllocateSystem<BridgeSystem>();
