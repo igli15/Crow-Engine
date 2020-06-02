@@ -51,9 +51,9 @@ public:
     }
 
     static void ParseGameComponents(rapidxml::xml_node<>* node,EntityHandle entity);
+    void CreateUIEntities();
 
 private:
-    void CreateUIEntities(ResourceManager* resourceManager);
     void CreateDebugText();
     void CreateMainMenu();
 

@@ -70,7 +70,7 @@ void PortalMaterial::BufferShaderUniforms(const glm::mat4 &pViewMatrix, const gl
 
     glUniform3fv(m_uViewPos,1,glm::value_ptr(viewPos));
 
-    glUniform1f(m_uFogDensity,Game::Instance()->fogData.fogDensity * 0.5f);
+    glUniform1f(m_uFogDensity,Game::Instance()->fogData.fogDensity);
     glUniform1f(m_uFogGradient,Game::Instance()->fogData.fogGradient);
 
     glUniform3fv(m_uFogColor,1,glm::value_ptr(Game::Instance()->fogData.fogColor));

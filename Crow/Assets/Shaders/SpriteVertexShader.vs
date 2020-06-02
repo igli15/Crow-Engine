@@ -8,5 +8,5 @@ uniform mat4 model;
 void main()
 {
     TexCoords = vertex.zw;
-    gl_Position = projection * model * vec4(vertex.xy, 0.0, 1.0);
+    gl_Position = projection * model * vec4(vertex.xy,0.0, 1.0);
 }

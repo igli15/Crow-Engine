@@ -11629,6 +11629,8 @@ CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/MainMenuComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/MainMenuSystem.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/MainMenuSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Worlds/MainWorld.h
+ /Users/igli/Desktop/Crow Engine/Crow/Plugins/RapidXML/rapidxml.hpp
  /usr/local/include/GL/glew.h
  /usr/local/include/GLFW/glfw3.h
  /usr/local/include/freetype2/freetype/config/ftheader.h

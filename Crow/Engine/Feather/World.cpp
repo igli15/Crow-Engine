@@ -9,22 +9,22 @@
 
 void World::Init(SystemRegistry* systemRegistry,EntityRegistry* entityRegistry,ComponentRegistry* componentRegistry)
 {
-    m_componentManager = componentRegistry;
-    m_entityManager = entityRegistry;
-    m_systemManager = systemRegistry;
+    m_componentRegistry = componentRegistry;
+    m_entityRegistry = entityRegistry;
+    m_systemRegistry = systemRegistry;
 
 }
 
 EntityHandle World::CreateEntity()
 {
-    return {m_entityManager->CreateEntity(),this};
+    return {m_entityRegistry->CreateEntity(), this};
 }
 
 void World::InternalDestroyEntity(Entity entity)
 {
-    m_entityManager->DestroyEntity(entity);
-    m_componentManager->OnEntityDestroyed(entity);
-    m_systemManager->OnEntityDestroyed(entity);
+    m_entityRegistry->DestroyEntity(entity);
+    m_componentRegistry->OnEntityDestroyed(entity);
+    m_systemRegistry->OnEntityDestroyed(entity);
 }
 
 void World::InitAllSystems()
@@ -41,7 +41,7 @@ void World::UpdateAllSystems(float dt)
     {
         System* system = m_allRegisteredSystems[i];
 
-        if(system->enabled) system->Update(dt);
+            if(system->enabled) system->Update(dt);
     }
 }
 
@@ -89,10 +89,10 @@ void World::PreRenderAllSystems()
 
 void World::ResetWorld()
 {
-    m_entityManager->ReturnAllEntities();
+    m_entityRegistry->ReturnAllEntities();
     m_allRegisteredSystems.clear();
-    m_systemManager->ResetAllSystems();
-    m_componentManager->RemoveAllComponents();
+    m_systemRegistry->ResetAllSystems();
+    m_componentRegistry->RemoveAllComponents();
 
     Build();
     InitAllSystems();

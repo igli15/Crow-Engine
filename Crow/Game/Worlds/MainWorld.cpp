@@ -73,10 +73,10 @@ void MainWorld::Build()
     RegisterSystem<RigidbodySystem>();
     RegisterSystem<SteeringSystem>();
     RegisterSystem<SeekingSystem>();
-    RegisterSystem<SpawnSystem>();
+    RegisterSystem<SpawnSystem>()->enabled = false;
     RegisterSystem<SelectedBridgeIndicatorSystem>();
     RegisterSystem<BridgeSystem>();
-    RegisterSystem<EnemySpawnSystem>();
+    RegisterSystem<EnemySpawnSystem>()->enabled = false;
     RegisterSystem<UnitCollisionSystem>();
     RegisterSystem<UnitFightingSystem>();
     RegisterSystem<ProjectileSystem>();
@@ -86,7 +86,7 @@ void MainWorld::Build()
     RegisterSystem<UnitAnimationSystem>();
     RegisterSystem<FloatingSystem>();
     RegisterSystem<FlockSeparationSystem>();
-    RegisterSystem<PlayerMoneySystem>();
+    RegisterSystem<PlayerMoneySystem>()->enabled = false;
     RegisterSystem<GameUISystem>();
     RegisterSystem<GameStateSystem>();
     RegisterSystem<AutoDestructSystem>();
@@ -186,7 +186,6 @@ void MainWorld::Build()
     bridgeIndicatorEntity.AddComponent(SelectedBridgeIndicator{});
 
     CreateMainMenu();
-    CreateUIEntities(resourceManager);
     CreateDebugText();
 
     const glm::vec2 textPos = {1000,20};
@@ -196,7 +195,8 @@ void MainWorld::Build()
 
     playerComponent->textComponent = textEntity.AddComponent(Text{"money:",glm::vec3(1),0.6f,resourceManager->GetFont("gameFont")});
 
-
+    Game::Instance()->fogData.fogColor = {0.2f,0.0f,0.2f};
+    Game::Instance()->fogData.fogGradient = 2.0f;
 }
 
 void MainWorld::ParseGameComponents(rapidxml::xml_node<> *node, EntityHandle entityHandle)
@@ -404,10 +404,11 @@ void MainWorld::ParseGameComponents(rapidxml::xml_node<> *node, EntityHandle ent
     }
 }
 
-void MainWorld::CreateUIEntities(ResourceManager* resourceManager)
+void MainWorld::CreateUIEntities()
 {
     //TODO clean this mess
     Game* game = Game::Instance();
+    ResourceManager* resourceManager = game->resourceManager;
 
     int screenWidth = game->screenData.screenWidth;
     int screenHeight = game->screenData.screenHeight;
@@ -418,24 +419,11 @@ void MainWorld::CreateUIEntities(ResourceManager* resourceManager)
     int iconSize = 115;
 
     int iconBottomPadding = 180;
-    int iconHorizontalPadding = 200;
+    int iconHorizontalPadding = 180;
 
     UnitGroupArchetype* meleeArchetype = GetUnitGroupArchetype<UnitGroupArchetype>("playerMelee");
     UnitGroupArchetype* tankArchetype = GetUnitGroupArchetype<UnitGroupArchetype>("playerTank");
     UnitGroupArchetype* cannonArchetype = GetUnitGroupArchetype<UnitGroupArchetype>("playerCannon");
-
-    EntityHandle uiBackgroundEntity = CreateEntity();
-    Transform* uiBackgroundTransform = uiBackgroundEntity.AddComponent<Transform>(Transform{});
-    uiBackgroundTransform->SetLocalPosition(glm::vec3(screenWidth/2 - borderSize.x/2 ,screenHeight - borderBottomPadding,0));
-    uiBackgroundTransform->Scale(glm::vec3(borderSize.x,borderSize.y,1));
-    uiBackgroundEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("uiBackgroundSprite"),resourceManager->GetMaterial<SpriteMaterial>("uiBackgroundMat")});
-
-    EntityHandle borderQEntity = CreateEntity();
-    Transform* borderQTransform = borderQEntity.AddComponent<Transform>(Transform{});
-    borderQTransform->SetLocalPosition(glm::vec3(screenWidth/2 - iconSize/2 - iconHorizontalPadding,screenHeight - iconBottomPadding,1));
-    borderQTransform->Scale(glm::vec3(iconSize,iconSize,1));
-    borderQEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("uiBorderQSprite"),resourceManager->GetMaterial<SpriteMaterial>("uiBorderQMat")});
-    borderQEntity.AddComponent<UnitIconComponent>(UnitIconComponent{meleeArchetype->unitPrice,resourceManager->GetSprite("uiBorderQSpriteAvaiable"),resourceManager->GetSprite("uiBorderQSprite")});
 
     EntityHandle borderWEntity = CreateEntity();
     Transform* borderWTransform = borderWEntity.AddComponent<Transform>(Transform{});
@@ -452,11 +440,25 @@ void MainWorld::CreateUIEntities(ResourceManager* resourceManager)
     borderEEntity.AddComponent<UnitIconComponent>(UnitIconComponent{cannonArchetype->unitPrice,resourceManager->GetSprite("uiBorderESpriteAvaiable"),resourceManager->GetSprite("uiBorderESprite")});
 
 
+    EntityHandle uiBackgroundEntity = CreateEntity();
+    Transform* uiBackgroundTransform = uiBackgroundEntity.AddComponent<Transform>(Transform{});
+    uiBackgroundTransform->SetLocalPosition(glm::vec3(screenWidth/2 - borderSize.x/2 ,screenHeight - borderBottomPadding,0));
+    uiBackgroundTransform->Scale(glm::vec3(borderSize.x,borderSize.y,1));
+    uiBackgroundEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("uiBackgroundSprite"),resourceManager->GetMaterial<SpriteMaterial>("uiBackgroundMat")});
+
+    EntityHandle borderQEntity = CreateEntity();
+    Transform* borderQTransform = borderQEntity.AddComponent<Transform>(Transform{});
+    borderQTransform->SetLocalPosition(glm::vec3(screenWidth/2 - iconSize/2 - iconHorizontalPadding,screenHeight - iconBottomPadding,1));
+    borderQTransform->Scale(glm::vec3(iconSize,iconSize,1));
+    borderQEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("uiBorderQSprite"),resourceManager->GetMaterial<SpriteMaterial>("uiBorderQMat")});
+    borderQEntity.AddComponent<UnitIconComponent>(UnitIconComponent{meleeArchetype->unitPrice,resourceManager->GetSprite("uiBorderQSpriteAvaiable"),resourceManager->GetSprite("uiBorderQSprite")});
+
     EntityHandle moneyIconEntity = CreateEntity();
     Transform* moneyIconTransform = moneyIconEntity.AddComponent<Transform>(Transform{});
     moneyIconTransform->SetLocalPosition(glm::vec3(screenWidth/2 - 20,screenHeight - 50,0));
     moneyIconTransform->Scale(glm::vec3(56,38,1));
     moneyIconEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("moneyIconSprite"),resourceManager->GetMaterial<SpriteMaterial>("moneyIconMat")});
+
 
 }
 
@@ -513,4 +515,8 @@ void MainWorld::CreateMainMenu()
 
     menuComponent->playButtonHandle = playIconEntity;
     menuComponent->quitButtonHandle = quitIconEntity;
+
+    menuComponent->systemsToEnable.push_back(m_systemRegistry->GetSystem<SpawnSystem>());
+    menuComponent->systemsToEnable.push_back(m_systemRegistry->GetSystem<EnemySpawnSystem>());
+    menuComponent->systemsToEnable.push_back(m_systemRegistry->GetSystem<PlayerMoneySystem>());
 }

@@ -8,8 +8,10 @@
 
 #include "../../Engine/Feather/EntityHandle.h"
 
+class System;
 struct MainMenuComponent
 {
+    std::vector<System*> systemsToEnable{};
     EntityHandle playButtonHandle;
     EntityHandle quitButtonHandle;
 };

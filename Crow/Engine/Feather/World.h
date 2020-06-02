@@ -29,7 +29,7 @@ public:
     template<typename T>
     void AllocateComponentArray()
     {
-        m_componentManager->AllocateComponentSet<T>();
+        m_componentRegistry->AllocateComponentSet<T>();
     }
 
     ///Creates an entity and returns a entity handle.
@@ -66,12 +66,12 @@ public:
     template <typename T>
     T* AddComponent(Entity entity,T component)
     {
-        T* c = m_componentManager->AddComponent(entity,component);
-        EntitySignature signature = m_entityManager->GetSignature(entity);
+        T* c = m_componentRegistry->AddComponent(entity, component);
+        EntitySignature signature = m_entityRegistry->GetSignature(entity);
         signature.set(ComponentIDGenerator::index<T>,true);
-        m_entityManager->SetSignature(entity,signature);
+        m_entityRegistry->SetSignature(entity, signature);
 
-        m_systemManager->OnEntitySignatureChanged(entity,signature);
+        m_systemRegistry->OnEntitySignatureChanged(entity, signature);
 
         EventQueue::Instance().Publish(new ComponentAddedEvent<T>(entity,c));
 
@@ -83,13 +83,13 @@ public:
     template <typename T>
     void RemoveComponent(Entity entity)
     {
-        m_componentManager->RemoveComponent<T>(entity);
+        m_componentRegistry->RemoveComponent<T>(entity);
 
-        EntitySignature signature = m_entityManager->GetSignature(entity);
+        EntitySignature signature = m_entityRegistry->GetSignature(entity);
         signature.set(ComponentIDGenerator::index<T>,false);
-        m_entityManager->SetSignature(entity,signature);
+        m_entityRegistry->SetSignature(entity, signature);
 
-        m_systemManager->OnEntitySignatureChanged(entity,signature);
+        m_systemRegistry->OnEntitySignatureChanged(entity, signature);
     }
 
     ///Get a component of type "T" from an entity.
@@ -98,7 +98,7 @@ public:
     template <typename T>
     T& GetComponent(Entity entity)
     {
-        return m_componentManager->GetComponent<T>(entity);
+        return m_componentRegistry->GetComponent<T>(entity);
     }
 
     ///Get a component pointer of type "T" from an entity.
@@ -107,7 +107,7 @@ public:
     template <typename T>
     T* GetComponentPtr(Entity entity)
     {
-        return m_componentManager->GetComponentPtr<T>(entity);
+        return m_componentRegistry->GetComponentPtr<T>(entity);
     }
 
     ///Get a component array of type "T".
@@ -115,7 +115,7 @@ public:
     template <typename T>
     ComponentSparseSet<T>* GetComponentSet()
     {
-        return m_componentManager->GetComponentSet<T>();
+        return m_componentRegistry->GetComponentSet<T>();
     }
 
 
@@ -125,7 +125,7 @@ public:
     template <typename T>
     T* RegisterSystem()
     {
-        T* system  =m_systemManager->GetSystem<T>();
+        T* system  =m_systemRegistry->GetSystem<T>();
 
         system->world = this;
         m_allRegisteredSystems.push_back(system);
@@ -138,7 +138,7 @@ public:
     template <typename SystemType>
     void SetSystemSignature(EntitySignature signature)
     {
-        m_systemManager->SetSignature<SystemType>(signature);
+        m_systemRegistry->SetSignature<SystemType>(signature);
     }
 
     ///Set the signature of a system of type "T" in one line.
@@ -149,7 +149,7 @@ public:
     {
         EntitySignature signature;
         CreateSignature<ComponentTypes...>(signature);
-        m_systemManager->SetSignature<SystemType>(signature);
+        m_systemRegistry->SetSignature<SystemType>(signature);
     }
 
 
@@ -252,7 +252,7 @@ public:
     template<typename T>
     bool Has(Entity e) const
     {
-        ComponentSparseSet<T>* set = m_componentManager->GetComponentSet<T>();
+        ComponentSparseSet<T>* set = m_componentRegistry->GetComponentSet<T>();
 
         return set->ContainsEntity(e);
     }
@@ -265,11 +265,12 @@ public:
 
     void ResetWorld();
 
-private:
+protected:
+    ComponentRegistry* m_componentRegistry;
+    EntityRegistry* m_entityRegistry;
+    SystemRegistry* m_systemRegistry;
 
-    ComponentRegistry* m_componentManager;
-    EntityRegistry* m_entityManager;
-    SystemRegistry* m_systemManager;
+private:
 
     std::vector<Entity> m_entityGarbage;
 
