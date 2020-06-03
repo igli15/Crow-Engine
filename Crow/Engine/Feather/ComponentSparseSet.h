@@ -23,7 +23,7 @@ public:
         m_maxSize = maxSize;
         m_componentDenseArray =(ComponentType*)(calloc(maxSize,sizeof(ComponentType) ));
         m_entitiesDenseArray = (Entity*)(calloc(maxSize,sizeof(Entity)));
-        m_indexesSparseArray = (int*)(calloc(maxSize,sizeof(int)));
+        m_indexesSparseArray = (int*)(calloc(MAX_ENTITIES,sizeof(int)));
     }
 
     ///Adds a component to the specified entity.

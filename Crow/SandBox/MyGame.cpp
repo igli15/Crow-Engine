@@ -155,20 +155,20 @@ void MyGame::AllocateMemory()
 {
     Game::AllocateMemory();
 
-    m_componentRegistry->AllocateComponentSet<BridgeComponent>();
+    m_componentRegistry->AllocateComponentSet<BridgeComponent>(3);
     m_componentRegistry->AllocateComponentSet<CannonComponent>();
     m_componentRegistry->AllocateComponentSet<DamageDealer>();
-    m_componentRegistry->AllocateComponentSet<Enemy>();
+    m_componentRegistry->AllocateComponentSet<Enemy>(1);
     m_componentRegistry->AllocateComponentSet<EnemyUnitCollider>();
     m_componentRegistry->AllocateComponentSet<FloatingComponent>();
     m_componentRegistry->AllocateComponentSet<FlockComponent>();
     m_componentRegistry->AllocateComponentSet<HealthComponent>();
-    m_componentRegistry->AllocateComponentSet<Player>();
+    m_componentRegistry->AllocateComponentSet<Player>(1);
     m_componentRegistry->AllocateComponentSet<PlayerUnitCollider>();
     m_componentRegistry->AllocateComponentSet<ProjectileComponent>();
     m_componentRegistry->AllocateComponentSet<RotateComponent>();
     m_componentRegistry->AllocateComponentSet<SeekComponent>();
-    m_componentRegistry->AllocateComponentSet<SelectedBridgeIndicator>();
+    m_componentRegistry->AllocateComponentSet<SelectedBridgeIndicator>(1);
     m_componentRegistry->AllocateComponentSet<SteeringComponent>();
     m_componentRegistry->AllocateComponentSet<UnitAnimationComponent>();
     m_componentRegistry->AllocateComponentSet<UnitComponent>();
@@ -176,7 +176,7 @@ void MyGame::AllocateMemory()
     m_componentRegistry->AllocateComponentSet<UnitPathComponent>();
     m_componentRegistry->AllocateComponentSet<AutoDestructComponent>();
     m_componentRegistry->AllocateComponentSet<DebugTextComponent>();
-    m_componentRegistry->AllocateComponentSet<MainMenuComponent>();
+    m_componentRegistry->AllocateComponentSet<MainMenuComponent>(1);
 
     m_systemRegistry->AllocateSystem<MainMenuSystem>();
     m_systemRegistry->AllocateSystem<AutoDestructSystem>();
