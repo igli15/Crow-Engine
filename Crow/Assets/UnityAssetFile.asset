@@ -38,6 +38,7 @@
 #model crate: crate.obj;
 #model crookedTree: crookedTree.obj;
 #model curvedBridge: curvedBridge.fbx;
+#model riverModel: riverModel.obj;
 #model statue: statue.obj;
 #model tree1: tree1.fbx;
 #model tree2: tree2.fbx;

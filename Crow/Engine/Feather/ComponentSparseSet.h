@@ -81,7 +81,7 @@ public:
         if(m_indexesSparseArray[entity] > m_maxSize)
         {
             ENGINE_LOG_CRITICAL("component set has exceeded the max size!");
-            return -1;
+            throw;
         }
 
         //make sure we are in the sparse set
@@ -91,7 +91,6 @@ public:
         }
         else
         {
-            ENGINE_LOG_CRITICAL("component is not in the set!");
             return -1;
         }
     }
