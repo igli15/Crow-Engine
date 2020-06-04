@@ -34,7 +34,7 @@ public:
 
     void InstanceBufferMeshes();
     void InstanceRenderMeshes(int amount);
-    void BindModelBuffer(std::vector<glm::mat4>& models);
+    void BindModelBuffer(const std::vector<glm::mat4>& models);
     int ID = -1;
 
     int maxNumberOfModelInstances = 10000;

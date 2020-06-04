@@ -11,11 +11,6 @@
 #include "../Rendering/AbstractMaterial.h"
 #include "../Components/MeshInfo.h"
 
-struct MeshInstancedData
-{
-    MeshInfo meshInfo;
-    std::vector<glm::mat4>* modelMatrices;
-};
 
 
 ///The Renderer class for now just hold references to renderable objects in the scene.
@@ -26,8 +21,8 @@ class Renderer {
 public:
         std::vector<AbstractMaterial*> allMaterials;
         std::vector<Shader*> allShaders;
-        std::unordered_map<int,MeshInstancedData> meshInfoMap;
         std::unordered_map<int,AbstractMaterial*> materialMap;
+
 };
 
 

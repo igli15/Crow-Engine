@@ -44,17 +44,26 @@ public:
     void Init() override;
     void Render() override;
 private:
+
     std::unordered_map<int,std::set<Model*>> m_matIdToModelsMap;
-    std::unordered_map<int,std::vector<glm::mat4>*> m_modelIDtoMatricesMap;
+    //std::unordered_map<int,std::vector<glm::mat4>*> m_matricesMap;
+
+    std::unordered_map<int,std::vector<glm::mat4>*> m_hashedMatricesMap;
 
     int Hash(int x,int y);
 
-   std::set<AbstractMaterial*> m_activeMaterials;
     Renderer* renderer;
     Transform* cameraTransform;
     Camera* cameraComponent;
 
+    void OnMeshInfoAdded(ComponentAddedEvent<MeshInfo>* event);
+    void OnMeshInfoRemoved(ComponentRemovedEvent<MeshInfo>* event);
+    void OnMeshInfoDirty(MeshInfoDirtyEvent* event);
+    void Register(MeshInfo* meshInfo);
+    void DeRegister(MeshInfo meshInfo);
+
 };
+
 
 
 #endif //CROW_MESHRENDERERSYSTEM_H

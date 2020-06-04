@@ -339,7 +339,7 @@ void MainWorld::ParseGameComponents(rapidxml::xml_node<> *node, EntityHandle ent
                 waterMaterial->distanceScale = strtof(a->value(), 0);
             }
         }
-        entityHandle.GetComponent<MeshInfo>().material = waterMaterial;
+        entityHandle.GetComponent<MeshInfo>().SetMaterial(waterMaterial);
     }
     else if(strcmp(node->name(), "PortalMaterial") == 0)
     {
@@ -401,7 +401,7 @@ void MainWorld::ParseGameComponents(rapidxml::xml_node<> *node, EntityHandle ent
             }
 
         }
-        entityHandle.GetComponent<MeshInfo>().material = portalMaterial;
+        entityHandle.GetComponent<MeshInfo>().SetMaterial(portalMaterial);
     }
 }
 

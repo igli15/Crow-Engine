@@ -23,17 +23,19 @@ void GameStateSystem::Update(float dt)
 
 void GameStateSystem::OnUnitPathComplete(UnitPathCompleteEvent *event)
 {
-    UnitComponent& unitComponent = world->GetComponent<UnitComponent>(event->entity);
-    DamageDealer& damageDealer = world->GetComponent<DamageDealer>(event->entity);
+    UnitComponent* unitComponent = world->GetComponentPtr<UnitComponent>(event->entity);
+    DamageDealer* damageDealer = world->GetComponentPtr<DamageDealer>(event->entity);
 
-    if(unitComponent.isPlayerUnit)
+    if(unitComponent == nullptr || damageDealer == nullptr) return;
+
+    if(unitComponent->isPlayerUnit)
     {
-        m_enemyComponent->health -= damageDealer.damageThroughPortal;
-        m_playerComponent->money += unitComponent.moneyDropThroughPortal;
+        m_enemyComponent->health -= damageDealer->damageThroughPortal;
+        m_playerComponent->money += unitComponent->moneyDropThroughPortal;
     }
     else
     {
-        m_playerComponent->health -= damageDealer.damageThroughPortal;
+        m_playerComponent->health -= damageDealer->damageThroughPortal;
     }
 
     //TODO handle the win and lose condition

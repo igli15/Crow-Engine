@@ -152,9 +152,7 @@ void UnitySceneParser::ParseEntityCore(rapidxml::xml_node<> *node, EntityHandle 
         {
             Model *mesh = Game::Instance()->resourceManager->GetModel(a->value());
 
-            MeshInfo meshInfo{mesh,Game::Instance()->resourceManager->GetMaterial<ColorMaterial>("defaultMat")};
-            meshInfo.model = mesh;
-            entityHandle.AddComponent(meshInfo);
+            entityHandle.AddComponent(MeshInfo{mesh,Game::Instance()->resourceManager->GetMaterial<ColorMaterial>("defaultMat")});
         }
 
     }
@@ -278,7 +276,7 @@ void UnitySceneParser::ParseTranslucentMaterial(rapidxml::xml_node<> *node, Enti
         }
     }
 
-    entityHandle.GetComponent<MeshInfo>().material = translucentColorMat;
+    entityHandle.GetComponent<MeshInfo>().SetMaterial(translucentColorMat);
 }
 
 void UnitySceneParser::ParseColorMaterial(rapidxml::xml_node<> *node, EntityHandle entityHandle)
@@ -322,7 +320,7 @@ void UnitySceneParser::ParseColorMaterial(rapidxml::xml_node<> *node, EntityHand
             colorMaterial->ambientIntensity = strtof(a->value(), 0);
         }
     }
-    entityHandle.GetComponent<MeshInfo>().material = colorMaterial;
+    entityHandle.GetComponent<MeshInfo>().SetMaterial(colorMaterial);
 }
 
 void UnitySceneParser::ParseTextureMaterial(rapidxml::xml_node<> *node, EntityHandle entityHandle)
@@ -386,7 +384,7 @@ void UnitySceneParser::ParseTextureMaterial(rapidxml::xml_node<> *node, EntityHa
         }
     }
 
-    entityHandle.GetComponent<MeshInfo>().material = textureMaterial;
+    entityHandle.GetComponent<MeshInfo>().SetMaterial(textureMaterial);
 }
 
 

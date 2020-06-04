@@ -145,7 +145,7 @@ void Model::InstanceRenderMeshes(int amount)
     }
 }
 
-void Model::BindModelBuffer(std::vector<glm::mat4>& models)
+void Model::BindModelBuffer(const std::vector<glm::mat4>& models)
 {
     for (int i = 0; i < m_meshes.size(); ++i)
     {

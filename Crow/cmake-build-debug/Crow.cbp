@@ -192,7 +192,7 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/EntityEvents.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/MaterialAddedEvent.h">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/MeshInfoDirtyEvent.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/OnUnitDefeatedEvent.h">
