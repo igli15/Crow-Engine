@@ -18,7 +18,7 @@ void MainMenuSystem::Init()
     mainWorld = static_cast<MainWorld*>(world);
     m_shouldPlay = false;
 
-    Game::Instance()->fogData.fogDensity = 0.05;
+    Game::Instance()->fogData.fogDensity = 0.06;
 }
 
 void MainMenuSystem::Update(float dt)

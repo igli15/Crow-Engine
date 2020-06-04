@@ -196,7 +196,8 @@ void MainWorld::Build()
     playerComponent->textComponent = textEntity.AddComponent(Text{"money:",glm::vec3(1),0.6f,resourceManager->GetFont("gameFont")});
 
     Game::Instance()->fogData.fogColor = {0.2f,0.0f,0.3f};
-    Game::Instance()->fogData.fogGradient = 2.3f;
+    Game::Instance()->fogData.fogDensity = 0.09f;
+    Game::Instance()->fogData.fogGradient = 2.5f;
 }
 
 void MainWorld::ParseGameComponents(rapidxml::xml_node<> *node, EntityHandle entityHandle)
