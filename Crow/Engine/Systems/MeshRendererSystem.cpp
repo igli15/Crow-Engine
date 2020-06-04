@@ -72,7 +72,6 @@ void MeshRendererSystem::Render() {
     {
         pair.second->clear();
     }
-
     for (const auto& entity : m_entities)
     {
         MeshInfo& meshInfo = world->GetComponent<MeshInfo>(entity);
@@ -138,7 +137,7 @@ void MeshRendererSystem::Register(MeshInfo *meshInfo)
 
     if(hashedMatricesIterator == m_hashedMatricesMap.end())
     {
-        m_hashedMatricesMap.insert(hashedMatricesIterator, std::make_pair(hash, new std::vector<glm::mat4>{MAX_ENTITIES}));
+        m_hashedMatricesMap.insert(hashedMatricesIterator, std::make_pair(hash, new std::vector<glm::mat4>()));
     }
 }
 
