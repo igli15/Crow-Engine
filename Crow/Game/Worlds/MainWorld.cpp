@@ -412,8 +412,8 @@ void MainWorld::CreateUIEntities()
     Game* game = Game::Instance();
     ResourceManager* resourceManager = game->resourceManager;
 
-    int screenWidth = game->screenData.screenWidth;
-    int screenHeight = game->screenData.screenHeight;
+    int screenWidth = 1920;
+    int screenHeight = 1080;
 
     glm::vec2 borderSize{700,150};
     int borderBottomPadding = 210;
@@ -429,15 +429,27 @@ void MainWorld::CreateUIEntities()
 
     EntityHandle playerHealthBar = CreateEntity();
     Transform* playerHealthBarTransform = playerHealthBar.AddComponent<Transform>(Transform{});
-    playerHealthBarTransform->SetLocalPosition(glm::vec3(screenWidth/2 - 600,screenHeight - 100,0));
+    playerHealthBarTransform->SetLocalPosition(glm::vec3(200,screenHeight - 120,0));
     playerHealthBarTransform->Scale(glm::vec3(200,30,1));
-    auto playerHealthMat = resourceManager->GetMaterial<HealthBarMaterial>("healthBarMat");
+    auto playerHealthMat = resourceManager->GetMaterial<HealthBarMaterial>("playerHealthBarMat");
     playerHealthMat->noiseMap = resourceManager->GetTexture("flowNoise");
     playerHealthMat->fillColor = glm::vec3(0.0f,13.0f/255.0f,131.0f/255.0f);
     playerHealthMat->emptyColor = glm::vec3(0.3f);
-    playerHealthMat->fillAmount = 0.5;
+    playerHealthMat->fillAmount = 1.2f;
     playerHealthBar.AddComponent(SpriteInfo{resourceManager->GetSprite("healthBarSprite"),playerHealthMat});
+    GetComponent<Player>(EntitiesWith<Player>()[0]).healthMat = playerHealthMat;
 
+    EntityHandle enemyHealthBar = CreateEntity();
+    Transform* enemyHealthBarTransform = enemyHealthBar.AddComponent<Transform>(Transform{});
+    enemyHealthBarTransform->SetLocalPosition(glm::vec3(screenWidth - 400,screenHeight - 120,0));
+    enemyHealthBarTransform->Scale(glm::vec3(200,30,1));
+    auto enemyHealthMat = resourceManager->GetMaterial<HealthBarMaterial>("enemyHealthBarMat");
+    enemyHealthMat->noiseMap = resourceManager->GetTexture("flowNoise");
+    enemyHealthMat->fillColor = glm::vec3(163.0/255.0f,100.0f/255.0f,38.0f/255.0f);
+    enemyHealthMat->emptyColor = glm::vec3(0.3f);
+    enemyHealthMat->fillAmount = 1.2f;
+    enemyHealthBar.AddComponent(SpriteInfo{resourceManager->GetSprite("healthBarSprite"),enemyHealthMat});
+    GetComponent<Enemy>(EntitiesWith<Enemy>()[0]).healthMat = enemyHealthMat;
 
     EntityHandle borderEEntity = CreateEntity();
     Transform* borderETransform = borderEEntity.AddComponent<Transform>(Transform{});

@@ -6,7 +6,7 @@
 #include "../Components/UnitComponent.h"
 #include "../../Engine/Feather/World.h"
 #include "../Components/DamageDealer.h"
-
+#include "../../Engine/Rendering/Materials/HealthBarMaterial.h"
 void GameStateSystem::Init()
 {
     System::Init();
@@ -31,11 +31,14 @@ void GameStateSystem::OnUnitPathComplete(UnitPathCompleteEvent *event)
     if(unitComponent->isPlayerUnit)
     {
         m_enemyComponent->health -= damageDealer->damageThroughPortal;
+        m_enemyComponent->healthMat->fillAmount = m_enemyComponent->health/m_enemyComponent->maxHealth;
         m_playerComponent->money += unitComponent->moneyDropThroughPortal;
     }
     else
     {
         m_playerComponent->health -= damageDealer->damageThroughPortal;
+
+        m_playerComponent->healthMat->fillAmount = m_playerComponent->health/m_playerComponent->maxHealth;
     }
 
     //TODO handle the win and lose condition

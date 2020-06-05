@@ -135,7 +135,8 @@ void MyGame::LoadAssets()
 
 
     resourceManager->CreateSprite("healthBarSprite",resourceManager->GetTexture("healthBar"));
-    resourceManager->CreateMaterial<HealthBarMaterial>("healthBarMat");
+    resourceManager->CreateMaterial<HealthBarMaterial>("playerHealthBarMat");
+    resourceManager->CreateMaterial<HealthBarMaterial>("enemyHealthBarMat");
 
 }
 

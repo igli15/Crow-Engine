@@ -10,13 +10,15 @@
 
 class UnitGroupArchetype;
 class Text;
-
+class HealthBarMaterial;
 struct Player
 {
     float money = 0.0f;
     float moneyOverTime = 2.0f;
     float health = 100.0f;
+    float maxHealth = 100.0f;
     Text* textComponent = nullptr;
+    HealthBarMaterial* healthMat = nullptr;
     UnitGroupArchetype* selectedUnitArchetype = nullptr;
 
 };
