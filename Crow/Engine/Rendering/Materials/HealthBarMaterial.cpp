@@ -15,6 +15,7 @@ void HealthBarMaterial::Initialize()
     m_uProjection = m_shader->GetUniformLocation("projection");
     m_uSpriteColor = m_shader->GetUniformLocation("spriteColor");
     m_uModel = m_shader->GetUniformLocation("model");
+    m_uFillAmount = m_shader->GetUniformLocation("fillAmount");
 }
 
 void HealthBarMaterial::BufferShaderUniforms(const glm::mat4 &pViewMatrix, const glm::mat4 &pPerspectiveMatrix,
@@ -32,6 +33,7 @@ void HealthBarMaterial::BufferMaterialUniforms()
     AbstractMaterial::BufferMaterialUniforms();
 
     glUniform3fv(m_uSpriteColor, 1, glm::value_ptr(color));
+    glUniform1f(m_uFillAmount,fillAmount);
 }
 
 void HealthBarMaterial::BufferModelUniform(const glm::mat4 &pModelMatrix)

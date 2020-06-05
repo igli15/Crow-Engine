@@ -431,7 +431,10 @@ void MainWorld::CreateUIEntities()
     Transform* playerHealthBarTransform = playerHealthBar.AddComponent<Transform>(Transform{});
     playerHealthBarTransform->SetLocalPosition(glm::vec3(screenWidth/2 - 600,screenHeight - 100,0));
     playerHealthBarTransform->Scale(glm::vec3(200,30,1));
-    playerHealthBar.AddComponent(SpriteInfo{resourceManager->GetSprite("healthBarSprite"),resourceManager->GetMaterial<HealthBarMaterial>("healthBarMat")});
+    auto playerHealthMat = resourceManager->GetMaterial<HealthBarMaterial>("healthBarMat");
+    playerHealthMat->fillAmount = 1;
+    playerHealthBar.AddComponent(SpriteInfo{resourceManager->GetSprite("healthBarSprite"),playerHealthMat});
+
 
     EntityHandle borderEEntity = CreateEntity();
     Transform* borderETransform = borderEEntity.AddComponent<Transform>(Transform{});
@@ -466,6 +469,7 @@ void MainWorld::CreateUIEntities()
     Transform* moneyIconTransform = moneyIconEntity.AddComponent<Transform>(Transform{});
     moneyIconTransform->SetLocalPosition(glm::vec3(screenWidth/2 - 20,screenHeight - 50,0));
     moneyIconTransform->Scale(glm::vec3(56,38,1));
+
     moneyIconEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("moneyIconSprite"),resourceManager->GetMaterial<SpriteMaterial>("moneyIconMat")});
 
 

@@ -22,11 +22,13 @@ public:
 
     void BufferModelUniform(const glm::mat4 &pModelMatrix) override;
 
-    glm::vec3 color = glm::vec3(1);
+    glm::vec3 color = glm::vec3(1.0f);
+
+    float fillAmount = 1.0f;
 
 private:
 
-    GLint m_uSpriteColor,m_uProjection,m_uModel;
+    GLint m_uSpriteColor,m_uProjection,m_uModel,m_uFillAmount;
 
 };
 
