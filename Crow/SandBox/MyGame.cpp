@@ -64,6 +64,7 @@
 #include "../Game/Systems/UnitFightingSystem.h"
 #include "../Game/Systems/MainMenuSystem.h"
 #include "../Game/Components/MainMenuComponent.h"
+#include "../Engine/Rendering/Materials/HealthBarMaterial.h"
 
 void MyGame::LoadAssets()
 {
@@ -78,6 +79,7 @@ void MyGame::LoadAssets()
     resourceManager->CreateShader("WaterVertexShader.vs","WaterFragmentShader.fs","waterShader");
     resourceManager->CreateShader("PortalVertexShader.vs","PortalFragmentShader.fs","portalShader");
     resourceManager->CreateShader("UnlitVertexShader.vs","UnlitFragmentShader.fs","unlitShader");
+    resourceManager->CreateShader("HealthBarVertexShader.vs","HealthBarFragmentShader.fs","healthBarShader");
 
     resourceManager->CreateMaterial<ColorMaterial>("defaultMat");
     resourceManager->CreateMaterial<WaterMaterial>("waterMaterial");
@@ -130,6 +132,10 @@ void MyGame::LoadAssets()
     resourceManager->CreateSprite("menuSelectionIconSprite",resourceManager->GetTexture("menuSelectionIcon"));
 
     resourceManager->CreateMaterial<SpriteMaterial>("mainMenuIconMat");
+
+
+    resourceManager->CreateSprite("healthBarSprite",resourceManager->GetTexture("healthBar"));
+    resourceManager->CreateMaterial<HealthBarMaterial>("healthBarMat");
 
 }
 

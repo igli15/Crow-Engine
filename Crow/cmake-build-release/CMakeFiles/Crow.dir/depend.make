@@ -16427,6 +16427,7 @@ CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Feather/Types.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Feather/World.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Rendering/AbstractMaterial.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Rendering/Materials/ColorMaterial.h
+CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Rendering/Materials/HealthBarMaterial.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Rendering/Materials/PortalMaterial.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Rendering/Materials/SpriteMaterial.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../Engine/Rendering/Materials/UnlitMaterial.h

@@ -4,9 +4,9 @@
 
 #include "HealthBarMaterial.h"
 
-HealthBarMaterial::HealthBarMaterial() : AbstractMaterial("HealthBarShader")
+HealthBarMaterial::HealthBarMaterial() : AbstractMaterial("healthBarShader")
 {
-
+    Initialize();
 }
 
 void HealthBarMaterial::Initialize()

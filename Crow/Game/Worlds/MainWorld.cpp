@@ -52,6 +52,7 @@
 #include "../../Engine/Systems/CollisionDetectionSystem.h"
 #include "../Systems/MainMenuSystem.h"
 #include "../Components/MainMenuComponent.h"
+#include "../../Engine/Rendering/Materials/HealthBarMaterial.h"
 
 void MainWorld::Build()
 {
@@ -426,6 +427,12 @@ void MainWorld::CreateUIEntities()
     UnitGroupArchetype* tankArchetype = GetUnitGroupArchetype<UnitGroupArchetype>("playerTank");
     UnitGroupArchetype* cannonArchetype = GetUnitGroupArchetype<UnitGroupArchetype>("playerCannon");
 
+    EntityHandle playerHealthBar = CreateEntity();
+    Transform* playerHealthBarTransform = playerHealthBar.AddComponent<Transform>(Transform{});
+    playerHealthBarTransform->SetLocalPosition(glm::vec3(screenWidth/2 - 600,screenHeight - 100,0));
+    playerHealthBarTransform->Scale(glm::vec3(200,30,1));
+    playerHealthBar.AddComponent(SpriteInfo{resourceManager->GetSprite("healthBarSprite"),resourceManager->GetMaterial<HealthBarMaterial>("healthBarMat")});
+
     EntityHandle borderEEntity = CreateEntity();
     Transform* borderETransform = borderEEntity.AddComponent<Transform>(Transform{});
     borderETransform->SetLocalPosition(glm::vec3(screenWidth/2 - iconSize/2 + iconHorizontalPadding,screenHeight - iconBottomPadding,1));
@@ -460,7 +467,6 @@ void MainWorld::CreateUIEntities()
     moneyIconTransform->SetLocalPosition(glm::vec3(screenWidth/2 - 20,screenHeight - 50,0));
     moneyIconTransform->Scale(glm::vec3(56,38,1));
     moneyIconEntity.AddComponent(SpriteInfo{resourceManager->GetSprite("moneyIconSprite"),resourceManager->GetMaterial<SpriteMaterial>("moneyIconMat")});
-
 
 
 }

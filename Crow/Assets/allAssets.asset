@@ -26,6 +26,7 @@
 #texture playIcon : PlayIcon.png;
 #texture quitIcon : QuitIcon.png;
 #texture menuSelectionIcon : menuSelectionIcon.png;
+#texture healthBar : healthBar.png;
 
 #model dragon : dragon.obj;
 #model ghost : ghost1.obj;

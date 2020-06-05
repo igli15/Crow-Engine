@@ -10,6 +10,7 @@
 
 class HealthBarMaterial : public AbstractMaterial
 {
+public:
     HealthBarMaterial();
 
     void Initialize();
