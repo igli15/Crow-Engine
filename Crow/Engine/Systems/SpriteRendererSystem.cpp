@@ -7,14 +7,15 @@
 #include "../Components/Transform.h"
 #include "../Components/SpriteInfo.h"
 #include "../Components/Camera.h"
+#include "../Core/Game.h"
 
 
 void SpriteRendererSystem::Init()
 {
     System::Init();
 
-    m_projectionMatrix = glm::ortho(0.0f, static_cast<GLfloat>(1920),
-                                      static_cast<GLfloat>(1080), 0.0f, -1.0f, 1.0f);
+    m_projectionMatrix = glm::ortho(0.0f, static_cast<GLfloat>(Game::Instance()->screenData.screenWidth),
+                                 static_cast<GLfloat>(Game::Instance()->screenData.screenHeight), 0.0f, -1.0f, 1.0f);
 
     Entity cameraEntity = world->EntitiesWith<Camera>()[0];
     m_cameraTransform = &world->GetComponent<Transform>(cameraEntity);

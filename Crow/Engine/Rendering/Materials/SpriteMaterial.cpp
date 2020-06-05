@@ -16,10 +16,6 @@ SpriteMaterial::SpriteMaterial() : AbstractMaterial("spriteShader")
 
 void SpriteMaterial::Initialize()
 {
-    //TODO make screen size a global value and not hardcode it!
-    m_orthoProjection = glm::ortho(0.0f, static_cast<GLfloat>(1920),
-                                   static_cast<GLfloat>(1080), 0.0f, -1.0f, 1.0f);
-
     m_shader->SetInt("image",0);
     m_uProjection = m_shader->GetUniformLocation("projection");
     m_uSpriteColor = m_shader->GetUniformLocation("spriteColor");

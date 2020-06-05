@@ -690,6 +690,33 @@ Engine/Rendering/Materials/ColorMaterial.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/ColorMaterial.cpp.s
 .PHONY : Engine/Rendering/Materials/ColorMaterial.cpp.s
 
+Engine/Rendering/Materials/HealthBarMaterial.o: Engine/Rendering/Materials/HealthBarMaterial.cpp.o
+
+.PHONY : Engine/Rendering/Materials/HealthBarMaterial.o
+
+# target to build an object file
+Engine/Rendering/Materials/HealthBarMaterial.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/HealthBarMaterial.cpp.o
+.PHONY : Engine/Rendering/Materials/HealthBarMaterial.cpp.o
+
+Engine/Rendering/Materials/HealthBarMaterial.i: Engine/Rendering/Materials/HealthBarMaterial.cpp.i
+
+.PHONY : Engine/Rendering/Materials/HealthBarMaterial.i
+
+# target to preprocess a source file
+Engine/Rendering/Materials/HealthBarMaterial.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/HealthBarMaterial.cpp.i
+.PHONY : Engine/Rendering/Materials/HealthBarMaterial.cpp.i
+
+Engine/Rendering/Materials/HealthBarMaterial.s: Engine/Rendering/Materials/HealthBarMaterial.cpp.s
+
+.PHONY : Engine/Rendering/Materials/HealthBarMaterial.s
+
+# target to generate assembly for a file
+Engine/Rendering/Materials/HealthBarMaterial.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Rendering/Materials/HealthBarMaterial.cpp.s
+.PHONY : Engine/Rendering/Materials/HealthBarMaterial.cpp.s
+
 Engine/Rendering/Materials/PortalMaterial.o: Engine/Rendering/Materials/PortalMaterial.cpp.o
 
 .PHONY : Engine/Rendering/Materials/PortalMaterial.o
@@ -2166,6 +2193,9 @@ help:
 	@echo "... Engine/Rendering/Materials/ColorMaterial.o"
 	@echo "... Engine/Rendering/Materials/ColorMaterial.i"
 	@echo "... Engine/Rendering/Materials/ColorMaterial.s"
+	@echo "... Engine/Rendering/Materials/HealthBarMaterial.o"
+	@echo "... Engine/Rendering/Materials/HealthBarMaterial.i"
+	@echo "... Engine/Rendering/Materials/HealthBarMaterial.s"
 	@echo "... Engine/Rendering/Materials/PortalMaterial.o"
 	@echo "... Engine/Rendering/Materials/PortalMaterial.i"
 	@echo "... Engine/Rendering/Materials/PortalMaterial.s"

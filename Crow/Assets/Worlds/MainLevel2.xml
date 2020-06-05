@@ -9,7 +9,7 @@
   </GameObject>
   <GameObject name="CrowDirLight" position="(-4.9100, 27.0900, 5.6600)" rotation="(-0.0427, -0.8685, 0.4880, -0.0760)" scale="(1.0000, 1.0000, 1.0000)">
     <Components>
-      <Light type="DIRECTIONAL" color="(0.4390, 0.5250, 0.6120)" intensity="1.6000" attenuationConstants="(1.0000, 0.0900, 0.0320)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
+      <Light type="DIRECTIONAL" color="(0.4390, 0.5250, 0.6120)" intensity="0.8000" attenuationConstants="(1.0000, 0.0900, 0.0320)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
     </Components>
   </GameObject>
   <GameObject name="path" position="(3.3166, 0.1200, 4.5930)" rotation="(0.0000, 0.4145, 0.0000, 0.9101)" scale="(67.8969, 0.0100, 1.4617)" mesh="cube">
