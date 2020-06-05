@@ -432,7 +432,10 @@ void MainWorld::CreateUIEntities()
     playerHealthBarTransform->SetLocalPosition(glm::vec3(screenWidth/2 - 600,screenHeight - 100,0));
     playerHealthBarTransform->Scale(glm::vec3(200,30,1));
     auto playerHealthMat = resourceManager->GetMaterial<HealthBarMaterial>("healthBarMat");
-    playerHealthMat->fillAmount = 1;
+    playerHealthMat->noiseMap = resourceManager->GetTexture("flowNoise");
+    playerHealthMat->fillColor = glm::vec3(0.0f,13.0f/255.0f,131.0f/255.0f);
+    playerHealthMat->emptyColor = glm::vec3(0.3f);
+    playerHealthMat->fillAmount = 0.5;
     playerHealthBar.AddComponent(SpriteInfo{resourceManager->GetSprite("healthBarSprite"),playerHealthMat});
 
 

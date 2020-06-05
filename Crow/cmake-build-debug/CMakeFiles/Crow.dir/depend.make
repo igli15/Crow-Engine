@@ -3726,7 +3726,9 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/HealthBarMaterial.cpp.o: ../Engin
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/HealthBarMaterial.cpp.o: ../Engine/Rendering/Materials/HealthBarMaterial.cpp
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/HealthBarMaterial.cpp.o: ../Engine/Rendering/Materials/HealthBarMaterial.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/HealthBarMaterial.cpp.o: ../Engine/Rendering/Shader.h
+CMakeFiles/Crow.dir/Engine/Rendering/Materials/HealthBarMaterial.cpp.o: ../Engine/Rendering/Texture.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/HealthBarMaterial.cpp.o: /usr/local/include/GL/glew.h
+CMakeFiles/Crow.dir/Engine/Rendering/Materials/HealthBarMaterial.cpp.o: /usr/local/include/GLFW/glfw3.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/HealthBarMaterial.cpp.o: /usr/local/include/glm/common.hpp
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/HealthBarMaterial.cpp.o: /usr/local/include/glm/detail/_fixes.hpp
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/HealthBarMaterial.cpp.o: /usr/local/include/glm/detail/_noise.hpp

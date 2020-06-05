@@ -3727,7 +3727,9 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/HealthBarMaterial.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/HealthBarMaterial.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/HealthBarMaterial.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
  /usr/local/include/GL/glew.h
+ /usr/local/include/GLFW/glfw3.h
  /usr/local/include/glm/common.hpp
  /usr/local/include/glm/detail/_fixes.hpp
  /usr/local/include/glm/detail/_noise.hpp

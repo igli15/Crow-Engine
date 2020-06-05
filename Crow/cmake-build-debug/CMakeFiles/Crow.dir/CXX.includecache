@@ -277,6 +277,8 @@ glm/glm.hpp
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/HealthBarMaterial.h
 ../AbstractMaterial.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+../Texture.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/PortalMaterial.h
 ../AbstractMaterial.h

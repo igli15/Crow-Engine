@@ -7,6 +7,7 @@
 
 
 #include "../AbstractMaterial.h"
+#include "../Texture.h"
 
 class HealthBarMaterial : public AbstractMaterial
 {
@@ -22,13 +23,16 @@ public:
 
     void BufferModelUniform(const glm::mat4 &pModelMatrix) override;
 
-    glm::vec3 color = glm::vec3(1.0f);
+    glm::vec3 fillColor = glm::vec3(1.0f);
+    glm::vec3 emptyColor = glm::vec3(0.1f);
+
+    Texture* noiseMap = nullptr;
 
     float fillAmount = 1.0f;
 
 private:
 
-    GLint m_uSpriteColor,m_uProjection,m_uModel,m_uFillAmount;
+    GLint m_uFilledColor,m_uProjection,m_uModel,m_uFillAmount,m_uNoiseMap,m_uEmptyColor,m_uTime;
 
 };
 
