@@ -17,7 +17,7 @@ void CollisionDetectionSystem::Update(float dt)
     m_frameCounter += 1;
 
     auto entities = world->EntitiesWith<Transform,SphereCollider>();
-    
+
     for (int firstEntityIndex = 0; firstEntityIndex < entities.size(); firstEntityIndex++)
     {
         Transform& firstEntityTransform = world->GetComponent<Transform>(entities[firstEntityIndex]);

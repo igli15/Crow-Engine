@@ -9,7 +9,7 @@
 #include "../Rendering/Font.h"
 #include "../Rendering/Sprite.h"
 #include "AssetParser.h"
-
+#include "SFML/Audio.hpp"
 
 Texture *ResourceManager::LoadTexture(const std::string &path, const std::string &name)
 {

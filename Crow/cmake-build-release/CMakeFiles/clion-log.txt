@@ -1,6 +1,8 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Release -G "CodeBlocks - Unix Makefiles" "/Users/igli/Desktop/Crow Engine/Crow"
 -- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
 -- Found asset importer library: /usr/local/lib/libassimp.dylib
+-- Found SFML .. in /usr/local/include
+-- Found SFML .. in /usr/local/include
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/igli/Desktop/Crow Engine/Crow/cmake-build-release
