@@ -32,6 +32,8 @@ void Game::Init()
 {
     m_instance = this;
 
+    InitFreeTypeLibrary();
+
     renderer = new Renderer();
     resourceManager = new ResourceManager();
 
@@ -44,7 +46,6 @@ void Game::Init()
     m_postProcessingShader->SetInt("screenTexture", 0);
     window->SetUpPostProcessingFrameBuffer(m_postProcessingShader);
 
-    InitFreeTypeLibrary();
 
     Random::GenerateSeed();
 

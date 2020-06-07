@@ -10,15 +10,12 @@
 #include "../Rendering/Shader.h"
 #include "../Rendering/Model.h"
 #include "../Rendering/AbstractMaterial.h"
+#include "../Feather/Pool.h"
 
 #include "Game.h"
 #include "Renderer.h"
-
-class Font;
-class Sprite;
-
-
-//TODO return references to the assets rather then pointers. Have a custom reference using shared_pointers
+#include "../Rendering/Font.h"
+#include "../Rendering/Sprite.h"
 
 ///ResourceManager class is used to Load and Get all the assets.
 ///This class is a singleton and can be accessed only through the game class instance.
@@ -34,11 +31,20 @@ private:
     std::map<std::string,Font*> m_fonts;
     std::map<std::string,Sprite*> m_sprites;
 
+    Pool<Texture> m_texturePool;
+    Pool<Shader> m_shaderPool;
+    Pool<Model> m_modelPool;
+    Pool<Font> m_fontPool;
+    Pool<Sprite> m_spritePool;
+
     int m_modelIdCounter = 0;
     int m_spriteIdCounter = 0;
     int m_materialIdCounter = 0;
 
 public:
+
+    ResourceManager();
+    void AllocateResourceMemory();
 
     ///Loads a texture.
     ///@param path  texture's relative path.

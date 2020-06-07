@@ -596,6 +596,7 @@ CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityRegistry.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/IComponentSet.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Pool.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemRegistry.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
@@ -1454,6 +1455,7 @@ CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/CustomTypeID.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityRegistry.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/IComponentSet.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Pool.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemRegistry.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
@@ -1469,6 +1471,49 @@ CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Plugins/stb_image.h
  /usr/local/include/GL/glew.h
  /usr/local/include/GLFW/glfw3.h
+ /usr/local/include/SFML/Audio.hpp
+ /usr/local/include/SFML/Audio/AlResource.hpp
+ /usr/local/include/SFML/Audio/Export.hpp
+ /usr/local/include/SFML/Audio/InputSoundFile.hpp
+ /usr/local/include/SFML/Audio/Listener.hpp
+ /usr/local/include/SFML/Audio/Music.hpp
+ /usr/local/include/SFML/Audio/OutputSoundFile.hpp
+ /usr/local/include/SFML/Audio/Sound.hpp
+ /usr/local/include/SFML/Audio/SoundBuffer.hpp
+ /usr/local/include/SFML/Audio/SoundBufferRecorder.hpp
+ /usr/local/include/SFML/Audio/SoundFileFactory.hpp
+ /usr/local/include/SFML/Audio/SoundFileFactory.inl
+ /usr/local/include/SFML/Audio/SoundFileReader.hpp
+ /usr/local/include/SFML/Audio/SoundFileWriter.hpp
+ /usr/local/include/SFML/Audio/SoundRecorder.hpp
+ /usr/local/include/SFML/Audio/SoundSource.hpp
+ /usr/local/include/SFML/Audio/SoundStream.hpp
+ /usr/local/include/SFML/Config.hpp
+ /usr/local/include/SFML/System.hpp
+ /usr/local/include/SFML/System/Clock.hpp
+ /usr/local/include/SFML/System/Err.hpp
+ /usr/local/include/SFML/System/Export.hpp
+ /usr/local/include/SFML/System/FileInputStream.hpp
+ /usr/local/include/SFML/System/InputStream.hpp
+ /usr/local/include/SFML/System/Lock.hpp
+ /usr/local/include/SFML/System/MemoryInputStream.hpp
+ /usr/local/include/SFML/System/Mutex.hpp
+ /usr/local/include/SFML/System/NonCopyable.hpp
+ /usr/local/include/SFML/System/Sleep.hpp
+ /usr/local/include/SFML/System/String.hpp
+ /usr/local/include/SFML/System/String.inl
+ /usr/local/include/SFML/System/Thread.hpp
+ /usr/local/include/SFML/System/Thread.inl
+ /usr/local/include/SFML/System/ThreadLocal.hpp
+ /usr/local/include/SFML/System/ThreadLocalPtr.hpp
+ /usr/local/include/SFML/System/ThreadLocalPtr.inl
+ /usr/local/include/SFML/System/Time.hpp
+ /usr/local/include/SFML/System/Utf.hpp
+ /usr/local/include/SFML/System/Utf.inl
+ /usr/local/include/SFML/System/Vector2.hpp
+ /usr/local/include/SFML/System/Vector2.inl
+ /usr/local/include/SFML/System/Vector3.hpp
+ /usr/local/include/SFML/System/Vector3.inl
  /usr/local/include/freetype2/freetype/config/ftheader.h
  /usr/local/include/freetype2/ft2build.h
  /usr/local/include/glm/common.hpp
@@ -1910,17 +1955,20 @@ CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityRegistry.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/IComponentSet.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Pool.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemRegistry.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Font.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/TextureMaterial.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/TranslucentColorMat.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Mesh.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Sprite.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
  /Users/igli/Desktop/Crow Engine/Crow/Plugins/RapidXML/rapidxml.hpp
@@ -2711,15 +2759,18 @@ CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/CustomTypeID.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityRegistry.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/IComponentSet.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Pool.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemRegistry.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Font.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Mesh.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Sprite.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
  /usr/local/include/GL/glew.h
@@ -4519,11 +4570,13 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/CustomTypeID.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityRegistry.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/IComponentSet.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Pool.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemRegistry.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Font.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/SpriteMaterial.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/SpriteMaterial.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Mesh.h
@@ -4927,16 +4980,19 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/CustomTypeID.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityRegistry.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/IComponentSet.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Pool.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemRegistry.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Font.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/TextureMaterial.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/TextureMaterial.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Mesh.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Sprite.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
  /usr/local/include/GL/glew.h
@@ -9472,6 +9528,7 @@ CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/CustomTypeID.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityRegistry.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/IComponentSet.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Pool.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemRegistry.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
@@ -9481,6 +9538,7 @@ CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Mesh.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Sprite.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/TextRenderingSystem.cpp
@@ -10320,15 +10378,18 @@ CMakeFiles/Crow.dir/Game/Systems/CannonSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityRegistry.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/IComponentSet.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Pool.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemRegistry.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Font.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Mesh.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Sprite.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/AutoDestructComponent.h
@@ -14313,15 +14374,18 @@ CMakeFiles/Crow.dir/Game/Systems/SpawnSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityRegistry.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/IComponentSet.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Pool.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemRegistry.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Font.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Mesh.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Sprite.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/BridgeComponent.h
@@ -16119,6 +16183,7 @@ CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityRegistry.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/IComponentSet.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Pool.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemRegistry.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
@@ -16742,11 +16807,13 @@ CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityRegistry.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/IComponentSet.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Pool.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemRegistry.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Font.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/HealthBarMaterial.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/PortalMaterial.h
@@ -17214,15 +17281,18 @@ CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityRegistry.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/IComponentSet.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Pool.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemRegistry.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Font.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Mesh.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Sprite.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/SeekComponent.h
@@ -17635,6 +17705,7 @@ CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityRegistry.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/IComponentSet.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Pool.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemRegistry.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
@@ -18052,11 +18123,13 @@ CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityRegistry.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/IComponentSet.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Pool.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemRegistry.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Font.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/SpriteMaterial.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Mesh.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
@@ -18465,6 +18538,7 @@ CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityRegistry.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/IComponentSet.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Pool.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemRegistry.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h

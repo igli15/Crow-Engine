@@ -45,9 +45,3 @@ void Sprite::Buffer()
 
     glBindVertexArray(0);
 }
-
-Sprite::Sprite()
-{
-    Buffer();
-}
-

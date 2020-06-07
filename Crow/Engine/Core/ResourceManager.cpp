@@ -5,11 +5,23 @@
 #include "ResourceManager.h"
 #include "../../Plugins/stb_image.h"
 #include "../../Crow.h"
+#include "AssetParser.h"
 
 #include "../Rendering/Font.h"
-#include "../Rendering/Sprite.h"
-#include "AssetParser.h"
-#include "SFML/Audio.hpp"
+
+void ResourceManager::AllocateResourceMemory()
+{
+    m_texturePool.Allocate(100);
+    m_modelPool.Allocate(100);
+    m_shaderPool.Allocate(20);
+    m_fontPool.Allocate(20);
+    m_spritePool.Allocate(100);
+}
+
+ResourceManager::ResourceManager()
+{
+    AllocateResourceMemory();
+}
 
 Texture *ResourceManager::LoadTexture(const std::string &path, const std::string &name)
 {
@@ -22,7 +34,7 @@ Texture *ResourceManager::LoadTexture(const std::string &path, const std::string
         throw;
     }
 
-    Texture *texture = new Texture();
+    Texture *texture = &m_texturePool.GetNewData();
     int width, height, nrChannels;
 
     stbi_set_flip_vertically_on_load(false);
@@ -65,7 +77,8 @@ Shader* ResourceManager::CreateShader(const std::string &vertexPath, const std::
         throw;
     }
 
-    Shader * shader = new Shader(SHADER_PATH + vertexPath, SHADER_PATH + fragmentPath);
+    Shader * shader = &m_shaderPool.GetNewData();//new Shader(SHADER_PATH + vertexPath, SHADER_PATH + fragmentPath);
+    shader->LoadShaderFromFile(SHADER_PATH + vertexPath, SHADER_PATH + fragmentPath);
     m_shaders[name] = shader;
 
     Game::Instance()->renderer->allShaders.push_back(shader);
@@ -101,7 +114,13 @@ Shader *ResourceManager::GetShader(const std::string &name)
 
 Model *ResourceManager::LoadModel(const std::string &path, const std::string &name)
 {
-    Model *model = new Model((MODEL_PATH + path).data());
+    Model *model = &(m_modelPool.GetNewData());
+
+    //TODO change this dont put max entities here its an overkill
+    model->maxNumberOfModelInstances = MAX_ENTITIES;
+
+    model->LoadModel((MODEL_PATH + path).data());
+    model->InstanceBufferMeshes();
 
     auto iterator = m_models.find(name);
 
@@ -144,7 +163,8 @@ Font *ResourceManager::LoadFont(const std::string &path, const std::string &name
         throw;
     }
 
-    Font *font = new Font(FONT_PATH + path, 48);
+    Font *font = &m_fontPool.GetNewData();
+    font->Load(FONT_PATH + path,48);
 
     m_fonts[name] = font;
 
@@ -178,7 +198,8 @@ Sprite *ResourceManager::CreateSprite(const std::string &name, Texture *texture)
         throw;
     }
 
-    Sprite* sprite = new Sprite();
+    Sprite* sprite = &m_spritePool.GetNewData();
+    sprite->Buffer();
 
     sprite->texture = texture;
     m_spriteIdCounter++;
@@ -224,3 +245,5 @@ void ResourceManager::LoadAssetFromAssetsFile(const std::string& filename,size_t
          */
     }
 }
+
+

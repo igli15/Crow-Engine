@@ -26,12 +26,12 @@ class Font {
     friend class TextRenderingSystem;
 
 public:
-    explicit Font(const std::string& path,unsigned int fontSize = 48);
+    void Load(const std::string& path,unsigned int fontSize = 48);
     void SetFontSize(unsigned int newSize);
 private:
     unsigned int m_fontSize = 48;
     std::map<GLchar,Character> m_charactersMap;
-    FT_Face* m_fontFace;
+    FT_Face* m_fontFace = nullptr;
 };
 
 

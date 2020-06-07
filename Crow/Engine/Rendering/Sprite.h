@@ -15,7 +15,6 @@ class Sprite {
 public:
     Texture* texture;
 
-    Sprite();
     void Buffer();
     void Render();
 

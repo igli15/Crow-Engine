@@ -6,6 +6,8 @@
 
 void Texture::Generate(GLuint pwidth, GLuint pheight, unsigned char *data)
 {
+    glGenTextures(1,&ID);
+
     this->width = pwidth;
     this->height = pheight;
 
@@ -30,5 +32,5 @@ Texture::Texture(GLuint pInternalFormat, GLuint pImageFormat, GLuint pWrapS, GLu
                  GLuint pFilterMax) : internalFormat(pInternalFormat),imageFormat(pImageFormat),wrapS(pWrapS),wrapT(pWrapT),filterMin(pFilterMin)
                  ,filterMax(pFilterMax)
 {
-    glGenTextures(1,&ID);
+
 }

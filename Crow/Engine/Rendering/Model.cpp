@@ -9,12 +9,6 @@
 #include "assimp/scene.h"
 #include "assimp/postprocess.h"
 
-Model::Model(const char *path) {
-    LoadModel(path);
-
-    InstanceBufferMeshes();
-}
-
 void Model::Draw() {
     //std::cout<<"Meshes: "<< m_meshes.size()<<std::endl;
 

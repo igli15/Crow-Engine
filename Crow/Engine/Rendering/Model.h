@@ -16,7 +16,6 @@ class aiMesh;
 class Model {
 
 public:
-    Model(const char* path);
     bool operator==(Model& other) const
     {
         return ID == other.ID;
