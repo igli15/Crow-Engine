@@ -16,6 +16,7 @@
 #include "Renderer.h"
 #include "../Rendering/Font.h"
 #include "../Rendering/Sprite.h"
+#include "../Audio/AudioClip.h"
 
 ///ResourceManager class is used to Load and Get all the assets.
 ///This class is a singleton and can be accessed only through the game class instance.
@@ -30,12 +31,14 @@ private:
     std::map<std::string,AbstractMaterial*> m_materials;
     std::map<std::string,Font*> m_fonts;
     std::map<std::string,Sprite*> m_sprites;
+    std::map<std::string,AudioClip*> m_audioClips;
 
     Pool<Texture> m_texturePool;
     Pool<Shader> m_shaderPool;
     Pool<Model> m_modelPool;
     Pool<Font> m_fontPool;
     Pool<Sprite> m_spritePool;
+    Pool<AudioClip> m_audioClipPool;
 
     int m_modelIdCounter = 0;
     int m_spriteIdCounter = 0;
@@ -71,6 +74,8 @@ public:
     ///@return a ptr to the just loaded font.
     Font* LoadFont(const std::string& path,const std::string& name);
 
+    AudioClip* LoadAudioClip(const std::string path,const std::string name);
+
     ///Creates a sprite asset.
     ///@param name the unique name which will be assigned to the sprite.
     ///@param texture a ptr to the texture that will be used for the sprite.
@@ -101,6 +106,7 @@ public:
     ///@param name the name of the Sprite.
     ///@return a ptr to the the Sprite assets. It will return nullptr if no Sprite with that name was found.
     Sprite* GetSprite(const std::string& name);
+
 
     ///Creates a material asset of a specific material type "T".
     ///@param matName the unique name which will be assigned to the material.

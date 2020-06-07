@@ -138,6 +138,8 @@ void MyGame::LoadAssets()
     resourceManager->CreateMaterial<HealthBarMaterial>("playerHealthBarMat");
     resourceManager->CreateMaterial<HealthBarMaterial>("enemyHealthBarMat");
 
+    resourceManager->LoadAudioClip("boop.wav","boop")->Play();
+
 }
 
 void MyGame::Init()

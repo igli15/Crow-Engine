@@ -123,6 +123,33 @@ Crow/fast:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/build
 .PHONY : Crow/fast
 
+Engine/Audio/AudioClip.o: Engine/Audio/AudioClip.cpp.o
+
+.PHONY : Engine/Audio/AudioClip.o
+
+# target to build an object file
+Engine/Audio/AudioClip.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Audio/AudioClip.cpp.o
+.PHONY : Engine/Audio/AudioClip.cpp.o
+
+Engine/Audio/AudioClip.i: Engine/Audio/AudioClip.cpp.i
+
+.PHONY : Engine/Audio/AudioClip.i
+
+# target to preprocess a source file
+Engine/Audio/AudioClip.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Audio/AudioClip.cpp.i
+.PHONY : Engine/Audio/AudioClip.cpp.i
+
+Engine/Audio/AudioClip.s: Engine/Audio/AudioClip.cpp.s
+
+.PHONY : Engine/Audio/AudioClip.s
+
+# target to generate assembly for a file
+Engine/Audio/AudioClip.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Audio/AudioClip.cpp.s
+.PHONY : Engine/Audio/AudioClip.cpp.s
+
 Engine/Components/Camera.o: Engine/Components/Camera.cpp.o
 
 .PHONY : Engine/Components/Camera.o
@@ -2130,6 +2157,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Crow"
+	@echo "... Engine/Audio/AudioClip.o"
+	@echo "... Engine/Audio/AudioClip.i"
+	@echo "... Engine/Audio/AudioClip.s"
 	@echo "... Engine/Components/Camera.o"
 	@echo "... Engine/Components/Camera.i"
 	@echo "... Engine/Components/Camera.s"

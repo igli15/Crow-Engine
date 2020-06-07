@@ -16,6 +16,7 @@ void ResourceManager::AllocateResourceMemory()
     m_shaderPool.Allocate(20);
     m_fontPool.Allocate(20);
     m_spritePool.Allocate(100);
+    m_audioClipPool.Allocate(20);
 }
 
 ResourceManager::ResourceManager()
@@ -171,6 +172,24 @@ Font *ResourceManager::LoadFont(const std::string &path, const std::string &name
     return font;
 }
 
+AudioClip *ResourceManager::LoadAudioClip(std::string path, std::string name)
+{
+    auto iterator = m_audioClips.find(name);
+
+    if (iterator != m_audioClips.end())
+    {
+        ENGINE_LOG_ERROR("There is already a audio clip with name: " + name);
+        throw;
+    }
+
+    AudioClip *audioClip = &m_audioClipPool.GetNewData();
+    audioClip->Load(AUDIO_PATH + path);
+
+    m_audioClips[name] = audioClip;
+    return audioClip;
+}
+
+
 Font *ResourceManager::GetFont(const std::string &name) {
 
     auto iterator = m_fonts.find(name);
@@ -245,5 +264,6 @@ void ResourceManager::LoadAssetFromAssetsFile(const std::string& filename,size_t
          */
     }
 }
+
 
 
