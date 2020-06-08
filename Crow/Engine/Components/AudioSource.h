@@ -14,38 +14,34 @@ struct AudioSource
 public:
     float volume = 100;
     float pitch = 1;
+    sf::Music* music;
     bool loop = false;
     bool playOnInit = true;
 
-    void PlayMusic();
-
-    void PlaySound(sf::Sound* sound);
-
-private:
-    sf::Music* music;
-};
-
-void AudioSource::PlayMusic()
-{
-    if(music == nullptr)
+    void PlayMusic()
     {
-        ENGINE_LOG_CRITICAL("Music is not set to audiosource!");
-        throw;
+        if(music == nullptr)
+        {
+            ENGINE_LOG_CRITICAL("Music is not set to audiosource!");
+            throw;
+        }
+
+        music->setVolume(volume);
+        music->setLoop(loop);
+        music->setPitch(pitch);
+        music->play();
     }
 
-    music->setVolume(volume);
-    music->setLoop(loop);
-    music->setPitch(pitch);
-    music->play();
-}
+    void PlaySound(sf::Sound* sound)
+    {
+        sound->setVolume(volume);
+        sound->setLoop(loop);
+        sound->setPitch(pitch);
+        sound->play();
+    }
 
-void AudioSource::PlaySound(sf::Sound *sound)
-{
-    sound->setVolume(volume);
-    sound->setLoop(loop);
-    sound->setPitch(pitch);
-    sound->play();
-}
+
+};
 
 
 #endif //CROW_AUDIOSOURCE_H

@@ -233,6 +233,7 @@ sf::Music *ResourceManager::OpenAndCreateMusic(const std::string &path, const st
         throw;
     }
 
+    m_musics[name] = music;
     return music;
 }
 
@@ -309,6 +310,45 @@ void ResourceManager::LoadAssetFromAssetsFile(const std::string& filename,size_t
         std::cout<<assetToken.assetPath<<std::endl;
          */
     }
+}
+
+sf::SoundBuffer *ResourceManager::GetSoundBuffer(const std::string &name)
+{
+    auto iterator = m_soundBuffers.find(name);
+
+    if (iterator == m_soundBuffers.end())
+    {
+        ENGINE_LOG_ERROR("There is no sound buffer with name: " + name);
+        return nullptr;
+    }
+
+    return iterator->second;
+}
+
+sf::Sound *ResourceManager::GetSound(const std::string &name)
+{
+    auto iterator = m_sounds.find(name);
+
+    if (iterator == m_sounds.end())
+    {
+        ENGINE_LOG_ERROR("There is no sound with name: " + name);
+        return nullptr;
+    }
+
+    return iterator->second;
+}
+
+sf::Music *ResourceManager::GetMusic(const std::string &name)
+{
+    auto iterator = m_musics.find(name);
+
+    if (iterator == m_musics.end())
+    {
+        ENGINE_LOG_ERROR("There is no music with name: " + name);
+        return nullptr;
+    }
+
+    return iterator->second;
 }
 
 

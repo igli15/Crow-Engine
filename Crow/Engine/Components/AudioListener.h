@@ -5,7 +5,6 @@
 #ifndef CROW_AUDIOLISTENER_H
 #define CROW_AUDIOLISTENER_H
 
-#include "SFML/Audio.hpp"
 
 struct AudioListener
 {

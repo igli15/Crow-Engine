@@ -82,6 +82,10 @@ public:
     sf::Sound* CreateSound(const std::string& name,sf::SoundBuffer* buffer);
     sf::Music* OpenAndCreateMusic(const std::string& path,const std::string& name);
 
+    sf::SoundBuffer* GetSoundBuffer(const std::string& name);
+    sf::Sound* GetSound(const std::string& name);
+    sf::Music* GetMusic(const std::string& name);
+
     ///Creates a sprite asset.
     ///@param name the unique name which will be assigned to the sprite.
     ///@param texture a ptr to the texture that will be used for the sprite.

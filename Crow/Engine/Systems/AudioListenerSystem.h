@@ -15,6 +15,7 @@ class AudioListenerSystem : public System
 {
 public:
     void OnListenerAdded(ComponentAddedEvent<AudioListener>* event);
+    void Update(float dt) override;
 };
 
 

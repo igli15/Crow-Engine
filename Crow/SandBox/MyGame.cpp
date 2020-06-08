@@ -143,7 +143,7 @@ void MyGame::LoadAssets()
     //auto buffer = resourceManager->LoadSoundBuffer("boop.wav","boop");
     //resourceManager->CreateSound("boopSound",buffer)->play();
 
-    //resourceManager->OpenAndCreateMusic("boop.wav","boop")->play();
+    resourceManager->OpenAndCreateMusic("backgroundMusic.wav","backgroundMusic");
 }
 
 void MyGame::Init()

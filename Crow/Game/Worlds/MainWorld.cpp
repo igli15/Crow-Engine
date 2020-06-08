@@ -53,6 +53,8 @@
 #include "../Systems/MainMenuSystem.h"
 #include "../Components/MainMenuComponent.h"
 #include "../../Engine/Rendering/Materials/HealthBarMaterial.h"
+#include "../../Engine/Components/AudioListener.h"
+#include "../../Engine/Components/AudioSource.h"
 
 void MainWorld::Build()
 {
@@ -94,6 +96,13 @@ void MainWorld::Build()
     RegisterSystem<DebugTextSystem>();
 
     UnitySceneParser::ParseUnityScene("MainLevel2.xml",this,&(MainWorld::ParseGameComponents));
+
+    AddComponent(EntitiesWith<Camera>()[0],AudioListener{});
+    AudioSource* audioSource = AddComponent(EntitiesWith<Camera>()[0],AudioSource{});
+    audioSource->volume = 0.5f;
+    audioSource->loop = true;
+    audioSource->music = resourceManager->GetMusic("backgroundMusic");
+    audioSource->PlayMusic();
 
     EntityHandle playerEntity = CreateEntity();
     Player* playerComponent = playerEntity.AddComponent<Player>(Player{});
@@ -422,6 +431,7 @@ void MainWorld::CreateUIEntities()
 
     int iconBottomPadding = 180;
     int iconHorizontalPadding = 180;
+
 
     UnitGroupArchetype* meleeArchetype = GetUnitGroupArchetype<UnitGroupArchetype>("playerMelee");
     UnitGroupArchetype* tankArchetype = GetUnitGroupArchetype<UnitGroupArchetype>("playerTank");

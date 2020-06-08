@@ -16794,6 +16794,8 @@ CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: /usr/loca
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: /usr/local/include/spdlog/tweakme.h
 CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp.o: /usr/local/include/spdlog/version.h
 
+CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Components/AudioListener.h
+CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Components/AudioSource.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Components/Light.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Components/MeshInfo.h
 CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o: ../Engine/Components/Rigidbody.h
