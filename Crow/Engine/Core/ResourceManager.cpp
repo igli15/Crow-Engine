@@ -18,6 +18,7 @@ void ResourceManager::AllocateResourceMemory()
     m_spritePool.Allocate(100);
     m_soundPool.Allocate(20);
     m_soundBufferPool.Allocate(20);
+    m_musicPool.Allocate(20);
 }
 
 ResourceManager::ResourceManager()
@@ -173,9 +174,8 @@ Font *ResourceManager::LoadFont(const std::string &path, const std::string &name
     return font;
 }
 
-sf::SoundBuffer *ResourceManager::LoadSoundBuffer(std::string path, std::string name)
+sf::SoundBuffer *ResourceManager::LoadSoundBuffer(const std::string& path, const std::string& name)
 {
-
     auto iterator = m_soundBuffers.find(name);
 
     if (iterator != m_soundBuffers.end())
@@ -196,9 +196,8 @@ sf::SoundBuffer *ResourceManager::LoadSoundBuffer(std::string path, std::string 
     return soundBuffer;
 }
 
-sf::Sound *ResourceManager::CreateSound(std::string name, sf::SoundBuffer *buffer)
+sf::Sound *ResourceManager::CreateSound(const std::string& name, sf::SoundBuffer *buffer)
 {
-
     auto iterator = m_sounds.find(name);
 
     if (iterator != m_sounds.end())
@@ -216,7 +215,26 @@ sf::Sound *ResourceManager::CreateSound(std::string name, sf::SoundBuffer *buffe
     return sound;
 }
 
+sf::Music *ResourceManager::OpenAndCreateMusic(const std::string &path, const std::string &name)
+{
+    auto iterator = m_musics.find(name);
 
+    if (iterator != m_musics.end())
+    {
+        ENGINE_LOG_ERROR("There is already a music with name: " + name);
+        throw;
+    }
+
+    sf::Music* music = &m_musicPool.GetNewData();
+    new (music) sf::Music();
+    if(!music->openFromFile(AUDIO_PATH + path))
+    {
+        ENGINE_LOG_CRITICAL("Music could not be loaded");
+        throw;
+    }
+
+    return music;
+}
 
 Font *ResourceManager::GetFont(const std::string &name) {
 
