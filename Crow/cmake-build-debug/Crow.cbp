@@ -363,6 +363,12 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/AudioListenerSystem.h">
 			<Option target="Crow"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/AudioSourceSystem.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/AudioSourceSystem.h">
+			<Option target="Crow"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/CollisionDetectionSystem.cpp">
 			<Option target="Crow"/>
 		</Unit>

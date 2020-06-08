@@ -6,6 +6,14 @@
 #include "../Components/Transform.h"
 #include "../Feather/World.h"
 
+void AudioListenerSystem::OnCreate()
+{
+    System::OnCreate();
+
+    EventQueue::Instance().Subscribe(this,&AudioListenerSystem::OnListenerAdded);
+}
+
+
 void AudioListenerSystem::OnListenerAdded(ComponentAddedEvent<AudioListener> *event)
 {
     Transform* listenerTransform = world->GetComponentPtr<Transform>(event->entity);

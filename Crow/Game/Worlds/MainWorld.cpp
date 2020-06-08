@@ -55,6 +55,8 @@
 #include "../../Engine/Rendering/Materials/HealthBarMaterial.h"
 #include "../../Engine/Components/AudioListener.h"
 #include "../../Engine/Components/AudioSource.h"
+#include "../../Engine/Systems/AudioSourceSystem.h"
+#include "../../Engine/Systems/AudioListenerSystem.h"
 
 void MainWorld::Build()
 {
@@ -71,8 +73,11 @@ void MainWorld::Build()
     RegisterSystem<SpriteRendererSystem>();
     SetSystemSignature<MeshRendererSystem,Transform,MeshInfo>();
 
-    RegisterSystem<MainMenuSystem>();
+    RegisterSystem<AudioListenerSystem>();
+    RegisterSystem<AudioSourceSystem>();
 
+
+    RegisterSystem<MainMenuSystem>();
     RegisterSystem<RigidbodySystem>();
     RegisterSystem<SteeringSystem>();
     RegisterSystem<SeekingSystem>();
@@ -97,12 +102,13 @@ void MainWorld::Build()
 
     UnitySceneParser::ParseUnityScene("MainLevel2.xml",this,&(MainWorld::ParseGameComponents));
 
-    AddComponent(EntitiesWith<Camera>()[0],AudioListener{});
+    AddComponent(EntitiesWith<Camera>()[0],AudioListener{100,true});
     AudioSource* audioSource = AddComponent(EntitiesWith<Camera>()[0],AudioSource{});
     audioSource->volume = 0.5f;
     audioSource->loop = true;
+    audioSource->is3DSource = false;
+    audioSource->playOnInit = true;
     audioSource->music = resourceManager->GetMusic("backgroundMusic");
-    audioSource->PlayMusic();
 
     EntityHandle playerEntity = CreateEntity();
     Player* playerComponent = playerEntity.AddComponent<Player>(Player{});

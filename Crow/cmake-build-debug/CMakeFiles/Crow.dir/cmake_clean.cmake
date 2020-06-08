@@ -34,6 +34,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Crow.dir/Engine/Rendering/Texture.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Systems/AudioListenerSystem.cpp.o"
+  "CMakeFiles/Crow.dir/Engine/Systems/AudioSourceSystem.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o"
   "CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o"

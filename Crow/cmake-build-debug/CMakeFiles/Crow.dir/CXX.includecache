@@ -13,6 +13,10 @@ SFML/Audio.hpp
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/SFML/Audio.hpp
 ../Debug/Debug.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
+Transform.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
+../Feather/World.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h
 glm/glm.hpp
@@ -367,6 +371,26 @@ GLFW/glfw3.h
 -
 ../Core/Input.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/AudioListenerSystem.h
+../Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+SFML/Audio.hpp
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/SFML/Audio.hpp
+../Events/ComponentAddedEvent.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+../Components/AudioListener.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/AudioListener.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/AudioSourceSystem.h
+../Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+../Events/ComponentAddedEvent.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+../Events/ComponentRemovedEvent.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
+../Components/AudioSource.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/AudioSource.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/CollisionDetectionSystem.h
 ../Feather/System.h
@@ -741,6 +765,10 @@ MainWorld.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/AudioListener.h
 ../../Engine/Components/AudioSource.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/AudioSource.h
+../../Engine/Systems/AudioSourceSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/AudioSourceSystem.h
+../../Engine/Systems/AudioListenerSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/AudioListenerSystem.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Game/Worlds/MainWorld.h
 ../../Engine/Feather/World.h
