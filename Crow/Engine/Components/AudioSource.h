@@ -18,6 +18,9 @@ public:
     bool playOnInit = true;
 
     void PlayMusic();
+
+    void PlaySound(sf::Sound* sound);
+
 private:
     sf::Music* music;
 };
@@ -33,6 +36,15 @@ void AudioSource::PlayMusic()
     music->setVolume(volume);
     music->setLoop(loop);
     music->setPitch(pitch);
+    music->play();
+}
+
+void AudioSource::PlaySound(sf::Sound *sound)
+{
+    sound->setVolume(volume);
+    sound->setLoop(loop);
+    sound->setPitch(pitch);
+    sound->play();
 }
 
 
