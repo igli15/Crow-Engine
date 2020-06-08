@@ -16,7 +16,8 @@ void ResourceManager::AllocateResourceMemory()
     m_shaderPool.Allocate(20);
     m_fontPool.Allocate(20);
     m_spritePool.Allocate(100);
-    m_audioClipPool.Allocate(20);
+    m_soundPool.Allocate(20);
+    m_soundBufferPool.Allocate(20);
 }
 
 ResourceManager::ResourceManager()
@@ -172,22 +173,49 @@ Font *ResourceManager::LoadFont(const std::string &path, const std::string &name
     return font;
 }
 
-AudioClip *ResourceManager::LoadAudioClip(std::string path, std::string name)
+sf::SoundBuffer *ResourceManager::LoadSoundBuffer(std::string path, std::string name)
 {
-    auto iterator = m_audioClips.find(name);
 
-    if (iterator != m_audioClips.end())
+    auto iterator = m_soundBuffers.find(name);
+
+    if (iterator != m_soundBuffers.end())
     {
-        ENGINE_LOG_ERROR("There is already a audio clip with name: " + name);
+        ENGINE_LOG_ERROR("There is already a soundbuffer with name: " + name);
         throw;
     }
 
-    AudioClip *audioClip = &m_audioClipPool.GetNewData();
-    audioClip->Load(AUDIO_PATH + path);
+    sf::SoundBuffer *soundBuffer = &m_soundBufferPool.GetNewData();
+    new (soundBuffer) sf::SoundBuffer();
+    if(!soundBuffer->loadFromFile(AUDIO_PATH + path))
+    {
+        ENGINE_LOG_CRITICAL("Sound buffer could not be loaded");
+        throw;
+    }
 
-    m_audioClips[name] = audioClip;
-    return audioClip;
+    m_soundBuffers[name] = soundBuffer;
+    return soundBuffer;
 }
+
+sf::Sound *ResourceManager::CreateSound(std::string name, sf::SoundBuffer *buffer)
+{
+
+    auto iterator = m_sounds.find(name);
+
+    if (iterator != m_sounds.end())
+    {
+        ENGINE_LOG_ERROR("There is already a sound with name: " + name);
+        throw;
+    }
+
+    sf::Sound* sound = &m_soundPool.GetNewData();
+    new (sound) sf::Sound();
+    sound->setBuffer(*buffer);
+
+    m_sounds[name] = sound;
+
+    return sound;
+}
+
 
 
 Font *ResourceManager::GetFont(const std::string &name) {
@@ -264,6 +292,7 @@ void ResourceManager::LoadAssetFromAssetsFile(const std::string& filename,size_t
          */
     }
 }
+
 
 
 

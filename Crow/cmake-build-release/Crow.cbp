@@ -87,12 +87,6 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Crow.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Audio/AudioClip.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Audio/AudioClip.h">
-			<Option target="Crow"/>
-		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.cpp">
 			<Option target="Crow"/>
 		</Unit>
