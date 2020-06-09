@@ -2,6 +2,7 @@
   <GameObject name="CrowCamera" position="(6.8800, 12.1100, 8.0000)" rotation="(-0.3991, 0.3525, 0.2008, 0.8223)" scale="(1.0000, 1.0000, 1.0000)">
     <Components>
       <Camera FOV="60" aspectRatio="1.777778" nearClipPlane="0.1" farClipPlane="1000" />
+      <AudioListener globalVolume="100.0000" isStatic="True" />
     </Components>
     <GameObject name="UnityCamera" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 1.0000, 0.0000, 0.0000)" scale="(1.0000, 1.0000, 1.0000)">
       <Components />

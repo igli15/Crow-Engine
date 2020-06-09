@@ -28,7 +28,7 @@ public:
     float maxSpeed = 0.05f;
     float maxHealth = 100.0f;
     float damageRate = 0.5f;
-    float colliderRadius = 1.0f;
+    float colliderRadius = 0.5f;
 
     float animationMinSpeed = 8.0f;
     float animationMaxSpeed = 12.0f;

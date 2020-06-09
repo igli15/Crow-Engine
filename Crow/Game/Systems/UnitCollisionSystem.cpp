@@ -37,7 +37,7 @@ void UnitCollisionSystem::Update(float dt)
             glm::vec3 distanceVector = playerUnitTransform.WorldPosition() - enemyUnitTransform.WorldPosition();
             float distance = glm::length(distanceVector);
 
-            if(distance<= playerUnitCollider.radius * enemyUnitCollider.radius)
+            if(distance<= playerUnitCollider.radius + enemyUnitCollider.radius)
             {
                 EntityPair entityPair(EntityHandle{playerUnitEntities[playerUnitIndex],world},EntityHandle{enemyUnitEntities[enemyUnitIndex],world});
 
