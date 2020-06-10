@@ -3,7 +3,7 @@
     <Components>
       <Camera FOV="60" aspectRatio="1.777778" nearClipPlane="0.1" farClipPlane="1000" />
       <AudioListener globalVolume="100.0000" isStatic="True" />
-      <AudioSource musicName="backgroundMusic" loop="True" playOnInit="True" is3DSource="False" isStatic="True" volume="1.0000" pitch="1.0000" minDistance="1.0000" attenuation="1.0000" />
+      <AudioSource musicName="backgroundMusic" loop="True" playOnInit="True" is3DSource="False" isStatic="True" volume="5.0000" pitch="1.0000" minDistance="1.0000" attenuation="1.0000" />
     </Components>
     <GameObject name="UnityCamera" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 1.0000, 0.0000, 0.0000)" scale="(1.0000, 1.0000, 1.0000)">
       <Components />
@@ -706,7 +706,9 @@
   <GameObject name="PlayerPortals" position="(-6.1049, 1.4560, -3.7620)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)">
     <Components />
     <GameObject name="PortalFrame" position="(3.6500, -1.3260, 14.6200)" rotation="(0.0000, 0.9478, 0.0000, 0.3189)" scale="(1.0000, 1.0000, 1.0000)">
-      <Components />
+      <Components>
+        <AudioSource musicName="portalSFX" loop="True" playOnInit="True" is3DSource="True" isStatic="True" volume="10.0000" pitch="1.0000" minDistance="0.2000" attenuation="1.0000" />
+      </Components>
       <GameObject name="CrowPointLight" position="(0.0000, 0.8000, 0.8000)" rotation="(0.0000, -0.9478, 0.0000, 0.3189)" scale="(1.0000, 1.0000, 1.0000)">
         <Components>
           <Light type="POINT" color="(0.0392, 0.3020, 0.4039)" intensity="5.0000" attenuationConstants="(1.0000, 0.1000, 0.2000)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
@@ -727,7 +729,9 @@
       </GameObject>
     </GameObject>
     <GameObject name="PortalFrame (1)" position="(0.2800, -1.2100, 12.0600)" rotation="(0.0000, 0.9478, 0.0000, 0.3189)" scale="(1.0000, 1.0000, 1.0000)">
-      <Components />
+      <Components>
+        <AudioSource musicName="portalSFX" loop="True" playOnInit="True" is3DSource="True" isStatic="True" volume="10.0000" pitch="1.0000" minDistance="0.2000" attenuation="1.0000" />
+      </Components>
       <GameObject name="CrowPointLight" position="(0.0000, 0.8000, 0.8000)" rotation="(0.0000, -0.9478, 0.0000, 0.3189)" scale="(1.0000, 1.0000, 1.0000)">
         <Components>
           <Light type="POINT" color="(0.0392, 0.3020, 0.4039)" intensity="5.0000" attenuationConstants="(1.0000, 0.1000, 0.2000)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
@@ -748,7 +752,9 @@
       </GameObject>
     </GameObject>
     <GameObject name="PortalFrame (2)" position="(-3.8183, -1.3000, 8.9390)" rotation="(0.0000, 0.9375, 0.0000, 0.3479)" scale="(1.0000, 1.0000, 1.0000)">
-      <Components />
+      <Components>
+        <AudioSource musicName="portalSFX" loop="True" playOnInit="True" is3DSource="True" isStatic="True" volume="10.0000" pitch="1.0000" minDistance="0.2000" attenuation="1.0000" />
+      </Components>
       <GameObject name="CrowPointLight" position="(0.0000, 0.8000, 0.8000)" rotation="(0.0000, -0.9478, 0.0000, 0.3189)" scale="(1.0000, 1.0000, 1.0000)">
         <Components>
           <Light type="POINT" color="(0.0392, 0.3020, 0.4039)" intensity="5.0000" attenuationConstants="(1.0000, 0.1000, 0.2000)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
@@ -772,7 +778,9 @@
   <GameObject name="EnemyPortals" position="(6.7400, 1.4560, 4.1300)" rotation="(0.0000, -0.9995, 0.0000, -0.0320)" scale="(1.0000, 1.0000, 1.0000)">
     <Components />
     <GameObject name="PortalFrame" position="(4.9900, -1.0600, 13.9500)" rotation="(0.0000, 0.9478, 0.0000, 0.3189)" scale="(1.0000, 1.0000, 1.0000)">
-      <Components />
+      <Components>
+        <AudioSource musicName="portalSFX" loop="True" playOnInit="True" is3DSource="True" isStatic="True" volume="10.0000" pitch="1.0000" minDistance="0.2000" attenuation="1.0000" />
+      </Components>
       <GameObject name="CrowPointLight" position="(0.0000, 0.8000, 0.8000)" rotation="(0.0000, -0.9478, 0.0000, 0.3189)" scale="(1.0000, 1.0000, 1.0000)">
         <Components>
           <Light type="POINT" color="(0.6392, 0.3922, 0.1490)" intensity="5.0000" attenuationConstants="(1.0000, 0.1000, 0.2000)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
@@ -793,7 +801,9 @@
       </GameObject>
     </GameObject>
     <GameObject name="PortalFrame (1)" position="(0.8400, -1.2100, 10.8000)" rotation="(0.0000, 0.9478, 0.0000, 0.3189)" scale="(1.0000, 1.0000, 1.0000)">
-      <Components />
+      <Components>
+        <AudioSource musicName="portalSFX" loop="True" playOnInit="True" is3DSource="True" isStatic="True" volume="10.0000" pitch="1.0000" minDistance="0.2000" attenuation="1.0000" />
+      </Components>
       <GameObject name="CrowPointLight" position="(0.0000, 0.8000, 0.8000)" rotation="(0.0000, -0.9478, 0.0000, 0.3189)" scale="(1.0000, 1.0000, 1.0000)">
         <Components>
           <Light type="POINT" color="(0.6392, 0.3922, 0.1490)" intensity="5.0000" attenuationConstants="(1.0000, 0.1000, 0.2000)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
@@ -814,7 +824,9 @@
       </GameObject>
     </GameObject>
     <GameObject name="PortalFrame (2)" position="(-3.0100, -1.3110, 7.8800)" rotation="(0.0000, 0.9478, 0.0000, 0.3189)" scale="(1.0000, 1.0000, 1.0000)">
-      <Components />
+      <Components>
+        <AudioSource musicName="portalSFX" loop="True" playOnInit="True" is3DSource="True" isStatic="True" volume="10.0000" pitch="1.0000" minDistance="0.2000" attenuation="1.0000" />
+      </Components>
       <GameObject name="CrowPointLight" position="(0.0000, 0.8000, 0.8000)" rotation="(0.0000, -0.9478, 0.0000, 0.3189)" scale="(1.0000, 1.0000, 1.0000)">
         <Components>
           <Light type="POINT" color="(0.6392, 0.3922, 0.1490)" intensity="5.0000" attenuationConstants="(1.0000, 0.1000, 0.2000)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />

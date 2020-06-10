@@ -26,7 +26,7 @@ void AudioListenerSystem::OnListenerAdded(ComponentAddedEvent<AudioListener> *ev
 
     glm::mat4 listenerTransformationMatrix = listenerTransform->GetWorldTransform();
     glm::vec3 listenerUpDir = listenerTransformationMatrix[1];
-    glm::vec3 listenerForwardDir = listenerTransformationMatrix[2];
+    glm::vec3 listenerForwardDir = -listenerTransformationMatrix[2];
     glm::vec3 listenerPos =listenerTransformationMatrix[3];
 
     sf::Listener::setGlobalVolume(event->component->globalVolume);
@@ -59,7 +59,7 @@ void AudioListenerSystem::Update(float dt)
         {
             glm::mat4 listenerTransformationMatrix = listenerTransform.GetWorldTransform();
             glm::vec3 listenerUpDir = listenerTransformationMatrix[1];
-            glm::vec3 listenerForwardDir = listenerTransformationMatrix[2];
+            glm::vec3 listenerForwardDir = -listenerTransformationMatrix[2];
             glm::vec3 listenerPos = listenerTransformationMatrix[3];
 
             sf::Listener::setUpVector(listenerUpDir.x, listenerUpDir.y, listenerUpDir.z);

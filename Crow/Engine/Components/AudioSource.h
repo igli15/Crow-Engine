@@ -19,7 +19,8 @@ public:
     float minDistance = 1.0f;
     float attenuation = 1.0f;
 
-    sf::Music* music;
+    sf::Sound* sound = nullptr;
+    sf::SoundBuffer* buffer = nullptr;
 
     Entity owner = InvalidEntity;
     World* world = nullptr;
@@ -29,26 +30,26 @@ public:
     bool is3DSource = false;
     bool isStatic = false;
 
-    void PlayMusic()
+    void Play()
     {
-        if(music == nullptr)
+        if(sound == nullptr)
         {
             ENGINE_LOG_CRITICAL("Music is not set to audiosource!");
             throw;
         }
 
-        music->setVolume(volume);
-        music->setLoop(loop);
-        music->setPitch(pitch);
+        sound->setVolume(volume);
+        sound->setLoop(loop);
+        sound->setPitch(pitch);
 
         if(is3DSource)
         {
-            music->setRelativeToListener(true);
-            music->setAttenuation(attenuation);
-            music->setMinDistance(minDistance);
+            sound->setRelativeToListener(true);
+            sound->setAttenuation(attenuation);
+            sound->setMinDistance(minDistance);
         }
 
-        music->play();
+        sound->play();
     }
 
     void PlayOneShotSound(sf::Sound* sound)

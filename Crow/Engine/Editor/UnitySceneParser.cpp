@@ -269,11 +269,11 @@ void UnitySceneParser::ParseAudioSource(rapidxml::xml_node<> *node, EntityHandle
 
             if(musicName == "NONE" || musicName == " ")
             {
-                audioSource.music = nullptr;
+                audioSource.sound = nullptr;
                 continue;
             }
             else{
-                audioSource.music = Game::Instance()->resourceManager->GetMusic(a->value());
+                audioSource.buffer = Game::Instance()->resourceManager->GetSoundBuffer(a->value());
             }
 
         }

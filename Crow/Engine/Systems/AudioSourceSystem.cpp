@@ -10,6 +10,8 @@ void AudioSourceSystem::OnCreate()
 {
     System::OnCreate();
 
+    m_soundPool.Allocate(100);
+
     EventQueue::Instance().Subscribe(this,&AudioSourceSystem::OnAudioSourceAdded);
     EventQueue::Instance().Subscribe(this,&AudioSourceSystem::OnAudioSourceRemoved);
 }
@@ -25,14 +27,14 @@ void AudioSourceSystem::Init()
            if(audioSource.is3DSource)
            {
                glm::vec3 ownerPos = transform.WorldPosition();
-               audioSource.music->setPosition(ownerPos.x, ownerPos.y, ownerPos.z);
+               audioSource.sound->setPosition(ownerPos.x, ownerPos.y, ownerPos.z);
            }
            else
            {
-               audioSource.music->setRelativeToListener(false);
+               audioSource.sound->setRelativeToListener(false);
            }
 
-           audioSource.PlayMusic();
+           audioSource.Play();
        }
    });
 }
@@ -46,9 +48,18 @@ void AudioSourceSystem::OnAudioSourceAdded(ComponentAddedEvent<AudioSource> *eve
 {
     event->component->owner = event->entity;
     event->component->world = world;
+
+    event->component->sound = &m_soundPool.GetNewData();
+    new (event->component->sound) sf::Sound();
+    event->component->sound->setBuffer(*event->component->buffer);
+
 }
 
 void AudioSourceSystem::OnAudioSourceRemoved(ComponentRemovedEvent<AudioSource> *event)
 {
-    event->component.music->stop();
+    event->component.sound->stop();
+
+    if(event->component.sound != nullptr) {
+        m_soundPool.ReturnData(*event->component.sound);
+    }
 }

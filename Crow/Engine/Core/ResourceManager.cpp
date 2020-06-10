@@ -16,9 +16,7 @@ void ResourceManager::AllocateResourceMemory()
     m_shaderPool.Allocate(20);
     m_fontPool.Allocate(20);
     m_spritePool.Allocate(100);
-    m_soundPool.Allocate(20);
     m_soundBufferPool.Allocate(20);
-    m_musicPool.Allocate(20);
 }
 
 ResourceManager::ResourceManager()
@@ -196,46 +194,7 @@ sf::SoundBuffer *ResourceManager::LoadSoundBuffer(const std::string& path, const
     return soundBuffer;
 }
 
-sf::Sound *ResourceManager::CreateSound(const std::string& name, sf::SoundBuffer *buffer)
-{
-    auto iterator = m_sounds.find(name);
 
-    if (iterator != m_sounds.end())
-    {
-        ENGINE_LOG_ERROR("There is already a sound with name: " + name);
-        throw;
-    }
-
-    sf::Sound* sound = &m_soundPool.GetNewData();
-    new (sound) sf::Sound();
-    sound->setBuffer(*buffer);
-
-    m_sounds[name] = sound;
-
-    return sound;
-}
-
-sf::Music *ResourceManager::OpenAndCreateMusic(const std::string &path, const std::string &name)
-{
-    auto iterator = m_musics.find(name);
-
-    if (iterator != m_musics.end())
-    {
-        ENGINE_LOG_ERROR("There is already a music with name: " + name);
-        throw;
-    }
-
-    sf::Music* music = &m_musicPool.GetNewData();
-    new (music) sf::Music();
-    if(!music->openFromFile(AUDIO_PATH + path))
-    {
-        ENGINE_LOG_CRITICAL("Music could not be loaded");
-        throw;
-    }
-
-    m_musics[name] = music;
-    return music;
-}
 
 Font *ResourceManager::GetFont(const std::string &name) {
 
@@ -319,32 +278,6 @@ sf::SoundBuffer *ResourceManager::GetSoundBuffer(const std::string &name)
     if (iterator == m_soundBuffers.end())
     {
         ENGINE_LOG_ERROR("There is no sound buffer with name: " + name);
-        return nullptr;
-    }
-
-    return iterator->second;
-}
-
-sf::Sound *ResourceManager::GetSound(const std::string &name)
-{
-    auto iterator = m_sounds.find(name);
-
-    if (iterator == m_sounds.end())
-    {
-        ENGINE_LOG_ERROR("There is no sound with name: " + name);
-        return nullptr;
-    }
-
-    return iterator->second;
-}
-
-sf::Music *ResourceManager::GetMusic(const std::string &name)
-{
-    auto iterator = m_musics.find(name);
-
-    if (iterator == m_musics.end())
-    {
-        ENGINE_LOG_ERROR("There is no music with name: " + name);
         return nullptr;
     }
 

@@ -10,6 +10,7 @@
 #include "../Events/ComponentAddedEvent.h"
 #include "../Events/ComponentRemovedEvent.h"
 #include "../Components/AudioSource.h"
+#include "../Feather/Pool.h"
 
 class AudioSourceSystem : public System
 {
@@ -20,6 +21,9 @@ public:
 
     void OnAudioSourceAdded(ComponentAddedEvent<AudioSource>* event);
     void OnAudioSourceRemoved(ComponentRemovedEvent<AudioSource>* event);
+
+private:
+    Pool<sf::Sound> m_soundPool;
 };
 
 
