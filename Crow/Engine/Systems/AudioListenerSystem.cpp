@@ -34,6 +34,8 @@ void AudioListenerSystem::OnListenerAdded(ComponentAddedEvent<AudioListener> *ev
     sf::Listener::setUpVector(listenerUpDir.x, listenerUpDir.y, listenerUpDir.z);
     sf::Listener::setDirection(listenerForwardDir.x, listenerForwardDir.y, listenerForwardDir.z);
     sf::Listener::setPosition(listenerPos.x, listenerPos.y, listenerPos.z);
+
+    ENGINE_LOG(event->component->globalVolume);
 }
 
 void AudioListenerSystem::Update(float dt)

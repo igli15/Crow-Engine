@@ -3,6 +3,7 @@
     <Components>
       <Camera FOV="60" aspectRatio="1.777778" nearClipPlane="0.1" farClipPlane="1000" />
       <AudioListener globalVolume="100.0000" isStatic="True" />
+      <AudioSource musicName="backgroundMusic" loop="True" playOnInit="True" is3DSource="False" isStatic="True" volume="1.0000" pitch="1.0000" minDistance="1.0000" attenuation="1.0000" />
     </Components>
     <GameObject name="UnityCamera" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 1.0000, 0.0000, 0.0000)" scale="(1.0000, 1.0000, 1.0000)">
       <Components />

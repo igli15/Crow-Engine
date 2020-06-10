@@ -14,8 +14,11 @@ struct AudioSource
 {
 
 public:
-    float volume = 100;
-    float pitch = 1;
+    float volume = 100.0f;
+    float pitch = 1.0f;
+    float minDistance = 1.0f;
+    float attenuation = 1.0f;
+
     sf::Music* music;
 
     Entity owner = InvalidEntity;
@@ -41,6 +44,8 @@ public:
         if(is3DSource)
         {
             music->setRelativeToListener(true);
+            music->setAttenuation(attenuation);
+            music->setMinDistance(minDistance);
         }
 
         music->play();
@@ -55,6 +60,9 @@ public:
         if(is3DSource)
         {
             sound->setRelativeToListener(true);
+            sound->setAttenuation(attenuation);
+            sound->setMinDistance(minDistance);
+
             Transform *ownerTransform = world->GetComponentPtr<Transform>(owner);
             if (ownerTransform == nullptr) {
                 ENGINE_LOG_CRITICAL("Transform has to be attached to this audio source!");

@@ -102,12 +102,6 @@ void MainWorld::Build()
 
     UnitySceneParser::ParseUnityScene("MainLevel2.xml",this,&(MainWorld::ParseGameComponents));
 
-    AudioSource* audioSource = AddComponent(EntitiesWith<Camera>()[0],AudioSource{});
-    audioSource->volume = 0.5f;
-    audioSource->loop = true;
-    audioSource->is3DSource = false;
-    audioSource->playOnInit = true;
-    audioSource->music = resourceManager->GetMusic("backgroundMusic");
 
     EntityHandle playerEntity = CreateEntity();
     Player* playerComponent = playerEntity.AddComponent<Player>(Player{});

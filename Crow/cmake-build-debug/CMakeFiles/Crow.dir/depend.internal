@@ -1979,6 +1979,8 @@ CMakeFiles/Crow.dir/Engine/Debug/Debug.cpp.o
  /usr/local/include/spdlog/version.h
 CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Crow.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/AudioListener.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/AudioSource.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h

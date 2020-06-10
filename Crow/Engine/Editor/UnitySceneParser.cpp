@@ -16,6 +16,8 @@
 #include "../Components/Light.h"
 #include "../Rendering/Materials/TranslucentColorMat.h"
 #include "../Rendering/Materials/TextureMaterial.h"
+#include "../Components/AudioListener.h"
+#include "../Components/AudioSource.h"
 
 void UnitySceneParser::ParseUnityScene(const std::string &fileName, World *currentWorld,customComponentFunction function )
 {
@@ -115,6 +117,14 @@ void UnitySceneParser::ParseComponents(rapidxml::xml_node<> *com, EntityHandle n
     else if (strcmp(com->name(), "TextureMaterial") == 0)
     {
         ParseTextureMaterial(com,newNode);
+    }
+    else if (strcmp(com->name(), "AudioListener") == 0)
+    {
+        ParseAudioListener(com,newNode);
+    }
+    else if (strcmp(com->name(), "AudioSource") == 0)
+    {
+        ParseAudioSource(com,newNode);
     }
 
     if(function != nullptr)
@@ -218,6 +228,116 @@ void UnitySceneParser::ParseCameraComponent(rapidxml::xml_node<> *node, EntityHa
         }
     }
 }
+
+void UnitySceneParser::ParseAudioListener(rapidxml::xml_node<> *node, EntityHandle entityHandle)
+{
+    AudioListener audioListener{};
+
+    for (rapidxml::xml_attribute<> *a = node->first_attribute();
+         a != nullptr;
+         a = a->next_attribute()) {
+        std::string attributeName = a->name();
+        if (attributeName == "globalVolume")
+        {
+            audioListener.globalVolume = strtof(a->value(), 0);
+        } else if (attributeName == "isStatic")
+        {
+            std::string value = a->value();
+            if(value == "True") {
+                audioListener.isStatic = true;
+            } else
+            {
+                audioListener.isStatic = false;
+            }
+        }
+    }
+    
+    entityHandle.AddComponent(audioListener);
+}
+
+void UnitySceneParser::ParseAudioSource(rapidxml::xml_node<> *node, EntityHandle entityHandle)
+{
+    AudioSource audioSource{};
+
+    for (rapidxml::xml_attribute<> *a = node->first_attribute();
+         a != nullptr;
+         a = a->next_attribute()) {
+        std::string attributeName = a->name();
+        if (attributeName == "musicName")
+        {
+            std::string musicName = a->value();
+
+            if(musicName == "NONE" || musicName == " ")
+            {
+                audioSource.music = nullptr;
+                continue;
+            }
+            else{
+                audioSource.music = Game::Instance()->resourceManager->GetMusic(a->value());
+            }
+
+        }
+        else if (attributeName == "loop")
+        {
+            std::string value = a->value();
+            if(value == "True") {
+                audioSource.loop = true;
+            } else
+            {
+                audioSource.loop = false;
+            }
+        }
+        else if (attributeName == "playOnInit")
+        {
+            std::string value = a->value();
+            if(value == "True") {
+                audioSource.playOnInit = true;
+            } else
+            {
+                audioSource.playOnInit = false;
+            }
+        }
+        else if (attributeName == "is3DSource")
+        {
+            std::string value = a->value();
+            if(value == "True") {
+                audioSource.is3DSource = true;
+            } else
+            {
+                audioSource.is3DSource = false;
+            }
+        }
+        else if (attributeName == "isStatic")
+        {
+            std::string value = a->value();
+            if(value == "True") {
+                audioSource.isStatic = true;
+            } else
+            {
+                audioSource.isStatic = false;
+            }
+        }
+        else if (attributeName == "volume")
+        {
+            audioSource.volume = strtof(a->value(), 0);
+        }
+        else if (attributeName == "pitch")
+        {
+            audioSource.pitch = strtof(a->value(), 0);
+        }
+        else if (attributeName == "minDistance")
+        {
+            audioSource.minDistance = strtof(a->value(), 0);
+        }
+        else if (attributeName == "attenuation")
+        {
+            audioSource.attenuation = strtof(a->value(), 0);
+        }
+    }
+
+    entityHandle.AddComponent(audioSource);
+}
+
 
 void UnitySceneParser::ParseTranslucentMaterial(rapidxml::xml_node<> *node, EntityHandle entityHandle)
 {
@@ -413,6 +533,9 @@ glm::quat UnitySceneParser::ScanQuaternion(const char *charLine)
 
     return quaternion;
 }
+
+
+
 
 
 

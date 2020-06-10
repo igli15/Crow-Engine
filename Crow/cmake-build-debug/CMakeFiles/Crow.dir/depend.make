@@ -1978,6 +1978,8 @@ CMakeFiles/Crow.dir/Engine/Debug/Debug.cpp.o: /usr/local/include/spdlog/tweakme.
 CMakeFiles/Crow.dir/Engine/Debug/Debug.cpp.o: /usr/local/include/spdlog/version.h
 
 CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: ../Crow.h
+CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: ../Engine/Components/AudioListener.h
+CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: ../Engine/Components/AudioSource.h
 CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: ../Engine/Components/Camera.h
 CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: ../Engine/Components/Light.h
 CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: ../Engine/Components/MeshInfo.h
