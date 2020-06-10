@@ -137,8 +137,9 @@ void MyGame::LoadAssets()
     resourceManager->CreateSprite("healthBarSprite",resourceManager->GetTexture("healthBar"));
     resourceManager->CreateMaterial<HealthBarMaterial>("playerHealthBarMat");
     resourceManager->CreateMaterial<HealthBarMaterial>("enemyHealthBarMat");
-    
+
     resourceManager->LoadSoundBuffer("portalSFX.wav","portalSFX");
+    resourceManager->LoadSoundBuffer("drop.wav","drop");
     resourceManager->LoadSoundBuffer("backgroundMusic.wav","backgroundMusic");
 }
 

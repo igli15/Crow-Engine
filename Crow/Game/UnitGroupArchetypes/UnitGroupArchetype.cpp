@@ -19,6 +19,9 @@
 #include "../Components/FloatingComponent.h"
 #include "../Components/FlockComponent.h"
 #include "../Components/AutoDestructComponent.h"
+#include "../../Engine/Components/AudioSource.h"
+#include "../../Engine/Core/Game.h"
+#include "../../Engine/Core/ResourceManager.h"
 
 void UnitGroupArchetype::Build(World *world, BridgeComponent *bridge)
 {
@@ -96,6 +99,19 @@ void UnitGroupArchetype::Build(World *world, BridgeComponent *bridge)
                 CannonComponent cannonComponent{};
                 cannonComponent.reloadTime = Random::RandomRange(0.5f,4.0f);
                 unitEntity.AddComponent<CannonComponent>(cannonComponent);
+
+                /*
+                AudioSource audioSource;
+                audioSource.is3DSource = true;
+                audioSource.isStatic = false;
+                audioSource.buffer = Game::Instance()->resourceManager->GetSoundBuffer("drop");
+                audioSource.volume = 10;
+                audioSource.loop = true;
+                audioSource.playOnInit = true;
+                audioSource.attenuation = 0.2f;
+                audioSource.playOnAdd = true;
+                unitEntity.AddComponent<AudioSource>(audioSource);
+*/
             }
         }
     }

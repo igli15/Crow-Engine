@@ -27,6 +27,7 @@ public:
 
     bool loop = false;
     bool playOnInit = true;
+    bool playOnAdd = false;
     bool is3DSource = false;
     bool isStatic = false;
 
@@ -34,7 +35,7 @@ public:
     {
         if(sound == nullptr)
         {
-            ENGINE_LOG_CRITICAL("Music is not set to audiosource!");
+            ENGINE_LOG_CRITICAL("sound is not set to audiosource!");
             throw;
         }
 
