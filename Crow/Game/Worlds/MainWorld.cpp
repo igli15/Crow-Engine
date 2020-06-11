@@ -154,7 +154,7 @@ void MainWorld::Build()
     playerCanon->unitPrice = 65.0f;
     playerCanon->moneyDropThroughPortal = 20.0f;
 
-    UnitGroupArchetype* enemyGolemArchetype = CreateUnitGroupArchetype<UnitGroupArchetype>("golem");
+    UnitGroupArchetype* enemyGolemArchetype = CreateUnitGroupArchetype<UnitGroupArchetype>("enemyTank");
     enemyGolemArchetype->maxSpeed = 0.7f;
     enemyGolemArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("blackUnlitMat");
     enemyGolemArchetype->unitModel = resourceManager->GetModel("basicUnit");
@@ -180,10 +180,25 @@ void MainWorld::Build()
     enemyMeleeArchetype->columns = 4;
     enemyMeleeArchetype->unitType = DamageDealer::MeleeGroup;
     enemyMeleeArchetype->strongAgainstType = DamageDealer::NONE;
-    enemyMeleeArchetype->unitPrice = 35.0f;
     enemyMeleeArchetype->moneyDrop = 25.0f;
     enemyMeleeArchetype->isPlayerUnit = false;
     enemyMeleeArchetype->damageThroughPortal = 2.0f;
+
+    UnitGroupArchetype* enemyCannonArchetype = CreateUnitGroupArchetype<UnitGroupArchetype>("enemyCannon");
+    enemyCannonArchetype->maxSpeed = 0.7f;
+    enemyCannonArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("blackUnlitMat");
+    enemyCannonArchetype->unitModel = resourceManager->GetModel("basicUnit");
+    enemyCannonArchetype->scaleFactor = 0.2f;
+    enemyCannonArchetype->maxHorizontalDistance = 1.5f;
+    enemyCannonArchetype->maxVerticalDistance = 1.5f;
+    enemyCannonArchetype->colliderRadius = 1.0f;
+    enemyCannonArchetype->rows = 1;
+    enemyCannonArchetype->columns = 2;
+    enemyCannonArchetype->unitType = DamageDealer::Jumping;
+    enemyCannonArchetype->strongAgainstType = DamageDealer::NONE;
+    enemyCannonArchetype->moneyDrop = 25.0f;
+    enemyCannonArchetype->isPlayerUnit = false;
+    enemyCannonArchetype->damageThroughPortal = 2.0f;
 
     playerComponent->selectedUnitArchetype = playerMeleeArchetype;
 

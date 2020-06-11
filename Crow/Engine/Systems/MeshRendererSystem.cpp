@@ -72,6 +72,7 @@ void MeshRendererSystem::Render() {
     {
         pair.second->clear();
     }
+
     for (const auto& entity : m_entities)
     {
         MeshInfo& meshInfo = world->GetComponent<MeshInfo>(entity);

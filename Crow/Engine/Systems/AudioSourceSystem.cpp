@@ -38,7 +38,7 @@ void AudioSourceSystem::Update(float dt)
 {
     System::Update(dt);
 
-    world->ForEach<AudioSource, Transform>([&](Entity entity, AudioSource &audioSource, Transform &transform)
+    world->ForEach<AudioSource,Transform>([&](Entity entity, AudioSource &audioSource, Transform &transform)
     {
         if (audioSource.playOnInit)
         {

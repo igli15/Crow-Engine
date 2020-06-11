@@ -40,14 +40,28 @@ void CannonSystem::Update(float dt)
 
         if(cannonComponent.reloadCounter >= cannonComponent.reloadTime)
         {
-            if(unitComponent.bridge->enemyEntitiesOnBridge.empty()) continue;
+            if(unitComponent.isPlayerUnit) {
+                if (unitComponent.bridge->enemyEntitiesOnBridge.empty()) continue;
 
-            //derefrence a ptr to the first enemy on the list
-            Entity closestEnemyEntity = *(unitComponent.bridge->enemyEntitiesOnBridge.begin());
+                //derefrence a ptr to the first enemy on the list
+                Entity closestEnemyEntity = *(unitComponent.bridge->enemyEntitiesOnBridge.begin());
 
-            Transform& closestTransform = world->GetComponent<Transform>(closestEnemyEntity);
-            //SpawnProjectile(transform.WorldPosition(),closestTransform.WorldPosition());
-            Jump(cannonEntities[i],closestTransform.LocalPosition());
+                Transform &closestTransform = world->GetComponent<Transform>(closestEnemyEntity);
+                //SpawnProjectile(transform.WorldPosition(),closestTransform.WorldPosition());
+                Jump(cannonEntities[i], closestTransform.LocalPosition());
+            }
+            else
+            {
+                if (unitComponent.bridge->playerEntitiesOnBridge.empty()) continue;
+
+                //derefrence a ptr to the first player on the list
+                Entity closestPlayerEntity = *(unitComponent.bridge->playerEntitiesOnBridge.begin());
+
+                Transform &closestTransform = world->GetComponent<Transform>(closestPlayerEntity);
+                
+                Jump(cannonEntities[i], closestTransform.LocalPosition());
+            }
+
             cannonComponent.reloadCounter = 0;
         }
     }

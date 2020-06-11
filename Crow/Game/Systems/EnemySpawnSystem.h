@@ -8,8 +8,16 @@
 
 #include "../../Engine/Feather/System.h"
 #include <vector>
+#include <array>
 
 class BridgeComponent;
+class UnitGroupArchetype;
+
+struct WeightedUnit
+{
+    float weight = 0;
+    UnitGroupArchetype* archetype;
+};
 
 class EnemySpawnSystem : public System
 {
@@ -19,7 +27,12 @@ public:
 
 private:
     std::vector<BridgeComponent*> m_bridges;
-    float counter = 0.0f;
+    float m_spawnCounter = 0.0f;
+    float m_spawnTime = 3.0f;
+
+    std::array<WeightedUnit,3> m_enemyArchetypes;
+
+    WeightedUnit GetRandomUnit();
 
 };
 

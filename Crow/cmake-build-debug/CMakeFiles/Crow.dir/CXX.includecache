@@ -6,16 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/AudioSource.h
-SFML/Audio.hpp
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/SFML/Audio.hpp
-../Debug/Debug.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
-Transform.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
-../Feather/World.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
-
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
 ../Rendering/Model.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h
@@ -250,6 +240,10 @@ string
 glm/glm.hpp
 -
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h
+../AbstractMaterial.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Mesh.h
 glm/glm.hpp
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/glm/glm.hpp
@@ -294,14 +288,6 @@ GLFW/glfw3.h
 ../Core/Input.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
 
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Utils/Random.h
-cstdlib
--
-ctime
--
-../Debug/Debug.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
-
 /Users/igli/Desktop/Crow Engine/Crow/Game/Components/AutoDestructComponent.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Game/Components/BridgeComponent.h
@@ -314,27 +300,13 @@ vector
 
 /Users/igli/Desktop/Crow Engine/Crow/Game/Components/CannonComponent.h
 
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/DamageDealer.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/EnemyUnitCollider.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/FloatingComponent.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/FlockComponent.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/HealthComponent.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/PlayerUnitCollider.h
-
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/SeekComponent.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/ProjectileComponent.h
 glm/vec3.hpp
 -
 
 /Users/igli/Desktop/Crow Engine/Crow/Game/Components/SteeringComponent.h
 glm/vec3.hpp
 -
-
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitAnimationComponent.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitComponent.h
 BridgeComponent.h
@@ -346,53 +318,45 @@ vector
 glm/vec3.hpp
 -
 
-/Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp
-UnitGroupArchetype.h
-/Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/UnitGroupArchetype.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/CannonSystem.cpp
+CannonSystem.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/CannonSystem.h
+../../Engine/Feather/World.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
+../../Engine/Feather/EntityHandle.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
+../../Game/Components/CannonComponent.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/CannonComponent.h
 ../../Engine/Components/Transform.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h
-../../Engine/Components/MeshInfo.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
-../Components/UnitAnimationComponent.h
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitAnimationComponent.h
-../../Engine/Utils/Random.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Utils/Random.h
-../Components/SteeringComponent.h
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/SteeringComponent.h
-../Components/UnitPathComponent.h
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitPathComponent.h
-../Components/SeekComponent.h
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/SeekComponent.h
 ../../Engine/Components/Rigidbody.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Rigidbody.h
-../Components/PlayerUnitCollider.h
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/PlayerUnitCollider.h
-../Components/HealthComponent.h
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/HealthComponent.h
-../Components/UnitComponent.h
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitComponent.h
-../Components/EnemyUnitCollider.h
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/EnemyUnitCollider.h
-../Components/CannonComponent.h
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/CannonComponent.h
-../Components/FloatingComponent.h
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/FloatingComponent.h
-../Components/FlockComponent.h
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/FlockComponent.h
-../Components/AutoDestructComponent.h
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/AutoDestructComponent.h
-../../Engine/Components/AudioSource.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/AudioSource.h
+../Components/ProjectileComponent.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/ProjectileComponent.h
+../../Engine/Components/MeshInfo.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h
+../../Engine/Rendering/Materials/ColorMaterial.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h
 ../../Engine/Core/Game.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h
 ../../Engine/Core/ResourceManager.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h
+../../Game/Components/BridgeComponent.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/BridgeComponent.h
+../Components/UnitComponent.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitComponent.h
+../Components/SteeringComponent.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/SteeringComponent.h
+../Components/UnitPathComponent.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitPathComponent.h
+../Components/AutoDestructComponent.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Components/AutoDestructComponent.h
 
-/Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/UnitGroupArchetype.h
-../../Engine/Feather/EntityHandle.h
-/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h
-../Components/DamageDealer.h
-/Users/igli/Desktop/Crow Engine/Crow/Game/Components/DamageDealer.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/CannonSystem.h
+glm/vec3.hpp
+-
+../../Engine/Feather/System.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
 
 /usr/local/include/GL/glew.h
 stddef.h
