@@ -38,7 +38,7 @@ void AudioSourceSystem::Update(float dt)
 {
     System::Update(dt);
 
-    world->ForEach<AudioSource,Transform>([&](Entity entity, AudioSource &audioSource, Transform &transform)
+    world->ForEach<AudioSource,Transform>([](Entity entity, AudioSource &audioSource, Transform &transform)
     {
         if (audioSource.playOnInit)
         {
@@ -48,6 +48,12 @@ void AudioSourceSystem::Update(float dt)
             audioSource.sound->setPosition(ownerPos.x, ownerPos.y, ownerPos.z);
         }
     });
+
+    //TODO:
+    //find(return the first component that which the predicate is true).
+    //filter/findall(return the all the entities which the predicate is true).
+    //reduce(apply the predicate for a list and reduce it to a number (returns a single value)) => for example adds the sum of all health values and returns it.
+
 }
 
 void AudioSourceSystem::OnAudioSourceAdded(ComponentAddedEvent<AudioSource> *event)

@@ -58,6 +58,10 @@ private:
     void CreateMainMenu();
 
     std::unordered_map<std::string,UnitGroupArchetype*> m_unitArchetypeMap;
+
+    void CreateMeleeArchetypes(unsigned int rows,unsigned int columns,float maxHorizontalDistance,float maxVerticalDistance,float scaleFactor,float maxSpeed,float maxHealth,float DamageRate,float colliderRadius,float moneyDrop,float moneyThroughPortal,float dmgThroughPortal,float unitPrice);
+    void CreateTankArchetypes(unsigned int rows,unsigned int columns,float maxHorizontalDistance,float maxVerticalDistance,float scaleFactor,float maxSpeed,float maxHealth,float DamageRate,float colliderRadius,float moneyDrop,float moneyThroughPortal,float dmgThroughPortal,float unitPrice);
+    void CreateCannonArchetypes(unsigned int rows,unsigned int columns,float maxHorizontalDistance,float maxVerticalDistance,float scaleFactor,float maxSpeed,float maxHealth,float DamageRate,float colliderRadius,float moneyDrop,float moneyThroughPortal,float dmgThroughPortal,float unitPrice);
 };
 
 

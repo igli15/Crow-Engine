@@ -110,97 +110,12 @@ void MainWorld::Build()
     EntityHandle enemyEntity = CreateEntity();
     Enemy* enemyComponent = enemyEntity.AddComponent<Enemy>(Enemy{});
 
-    UnitGroupArchetype* playerMeleeArchetype = CreateUnitGroupArchetype<UnitGroupArchetype>("playerMelee");
-    playerMeleeArchetype->maxSpeed = 0.7f;
-    playerMeleeArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("whiteUnlitMat");
-    playerMeleeArchetype->unitModel = resourceManager->GetModel("basicUnit");
-    playerMeleeArchetype->scaleFactor = 0.1;
-    playerMeleeArchetype->maxHorizontalDistance = 0.2f;
-    playerMeleeArchetype->maxVerticalDistance = 0.2f;
-    playerMeleeArchetype->rows = 4;
-    playerMeleeArchetype->columns = 4;
-    playerMeleeArchetype->unitType = DamageDealer::MeleeGroup;
-    playerMeleeArchetype->strongAgainstType = DamageDealer::NONE;
-    playerMeleeArchetype->unitPrice = 35.0f;
-    playerMeleeArchetype->moneyDropThroughPortal = 20.0f;
 
-    UnitGroupArchetype* playerTankArchetype = CreateUnitGroupArchetype<UnitGroupArchetype>("playerTank");
-    playerTankArchetype->maxSpeed = 0.7f;
-    playerTankArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("whiteUnlitMat");
-    playerTankArchetype->unitModel = resourceManager->GetModel("basicUnit");
-    playerTankArchetype->scaleFactor = 0.5f;
-    playerTankArchetype->maxHorizontalDistance = 0.3f;
-    playerTankArchetype->maxVerticalDistance = 0.3;
-    playerTankArchetype->rows = 1;
-    playerTankArchetype->columns = 1;
-    playerTankArchetype->unitType = DamageDealer::Tank;
-    playerTankArchetype->strongAgainstType = DamageDealer::NONE;
-    playerTankArchetype->unitPrice = 35.0f;
-    playerTankArchetype->moneyDropThroughPortal = 20.0f;
+    CreateMeleeArchetypes(4,4,0.2f,0.2f,0.1f,0.7f,100.0f,0.3f,0.25f,0.5f,1.0f,0.1f,35.0f);
+    CreateTankArchetypes(1,1,0.0f,0.0f,0.5f,0.6f,250.0f,0.3f,0.6f,5.0f,15.0f,5.0f,35.0f);
+    CreateCannonArchetypes(1,2,1.5f,1.5f,0.2f,0.7f,100.0f,100.0f,0.5f,25.0f,20.0f,20.0f,65.0f);
 
-    UnitGroupArchetype* playerCanon = CreateUnitGroupArchetype<UnitGroupArchetype>("playerCannon");
-    playerCanon->maxSpeed = 0.7f;
-    playerCanon->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("whiteUnlitMat");
-    playerCanon->unitModel = resourceManager->GetModel("basicUnit");
-    playerCanon->scaleFactor =0.2f;
-    playerCanon->maxHorizontalDistance = 1.5f;
-    playerCanon->maxVerticalDistance = 1.5f;
-    playerCanon->rows = 1;
-    playerCanon->columns = 2;
-    playerCanon->unitType = DamageDealer::Jumping;
-    playerCanon->strongAgainstType = DamageDealer::NONE;
-    playerCanon->damageRate = 50;
-    playerCanon->colliderRadius = 1.0f;
-    playerCanon->unitPrice = 65.0f;
-    playerCanon->moneyDropThroughPortal = 20.0f;
-
-    UnitGroupArchetype* enemyGolemArchetype = CreateUnitGroupArchetype<UnitGroupArchetype>("enemyTank");
-    enemyGolemArchetype->maxSpeed = 0.7f;
-    enemyGolemArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("blackUnlitMat");
-    enemyGolemArchetype->unitModel = resourceManager->GetModel("basicUnit");
-    enemyGolemArchetype->scaleFactor = 0.5f;
-    enemyGolemArchetype->maxHorizontalDistance = 0.3f;
-    enemyGolemArchetype->maxVerticalDistance = 0.3;
-    enemyGolemArchetype->rows = 1;
-    enemyGolemArchetype->columns = 1;
-    enemyGolemArchetype->unitType = DamageDealer::Tank;
-    enemyGolemArchetype->strongAgainstType = DamageDealer::NONE;
-    enemyGolemArchetype->isPlayerUnit = false;
-    enemyGolemArchetype->moneyDrop = 25.0f;
-    enemyGolemArchetype->damageThroughPortal = 20.0f;
-
-    UnitGroupArchetype* enemyMeleeArchetype = CreateUnitGroupArchetype<UnitGroupArchetype>("enemyMelee");
-    enemyMeleeArchetype->maxSpeed = 0.7f;
-    enemyMeleeArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("blackUnlitMat");
-    enemyMeleeArchetype->unitModel = resourceManager->GetModel("basicUnit");
-    enemyMeleeArchetype->scaleFactor = 0.1;
-    enemyMeleeArchetype->maxHorizontalDistance = 0.2f;
-    enemyMeleeArchetype->maxVerticalDistance = 0.2f;
-    enemyMeleeArchetype->rows = 4;
-    enemyMeleeArchetype->columns = 4;
-    enemyMeleeArchetype->unitType = DamageDealer::MeleeGroup;
-    enemyMeleeArchetype->strongAgainstType = DamageDealer::NONE;
-    enemyMeleeArchetype->moneyDrop = 25.0f;
-    enemyMeleeArchetype->isPlayerUnit = false;
-    enemyMeleeArchetype->damageThroughPortal = 2.0f;
-
-    UnitGroupArchetype* enemyCannonArchetype = CreateUnitGroupArchetype<UnitGroupArchetype>("enemyCannon");
-    enemyCannonArchetype->maxSpeed = 0.7f;
-    enemyCannonArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("blackUnlitMat");
-    enemyCannonArchetype->unitModel = resourceManager->GetModel("basicUnit");
-    enemyCannonArchetype->scaleFactor = 0.2f;
-    enemyCannonArchetype->maxHorizontalDistance = 1.5f;
-    enemyCannonArchetype->maxVerticalDistance = 1.5f;
-    enemyCannonArchetype->colliderRadius = 1.0f;
-    enemyCannonArchetype->rows = 1;
-    enemyCannonArchetype->columns = 2;
-    enemyCannonArchetype->unitType = DamageDealer::Jumping;
-    enemyCannonArchetype->strongAgainstType = DamageDealer::NONE;
-    enemyCannonArchetype->moneyDrop = 25.0f;
-    enemyCannonArchetype->isPlayerUnit = false;
-    enemyCannonArchetype->damageThroughPortal = 2.0f;
-
-    playerComponent->selectedUnitArchetype = playerMeleeArchetype;
+    playerComponent->selectedUnitArchetype = GetUnitGroupArchetype<UnitGroupArchetype>("playerMelee");
 
     EntityHandle bridgeIndicatorEntity = CreateEntity();
     Transform* transform = bridgeIndicatorEntity.AddComponent(Transform{});
@@ -217,11 +132,14 @@ void MainWorld::Build()
     Transform* textTransform = textEntity.AddComponent(Transform{});
     textTransform->SetLocalPosition(glm::vec3(textPos.x,textPos.y,0));
 
-    playerComponent->textComponent = textEntity.AddComponent(Text{"money:",glm::vec3(1),0.6f,resourceManager->GetFont("gameFont")});
+    playerComponent->textComponent = textEntity.AddComponent(Text{"",glm::vec3(1),0.6f,resourceManager->GetFont("gameFont")});
 
     Game::Instance()->fogData.fogColor = {0.2f,0.0f,0.3f};
     Game::Instance()->fogData.fogDensity = 0.09f;
     Game::Instance()->fogData.fogGradient = 2.5f;
+
+    //auto entities = Find<Player>([](Entity e,Player& p){ return p.maxHealth == 0.0f;});
+    //APP_LOG(entities.size());
 }
 
 void MainWorld::ParseGameComponents(rapidxml::xml_node<> *node, EntityHandle entityHandle)
@@ -583,4 +501,136 @@ void MainWorld::CreateMainMenu()
     menuComponent->systemsToEnable.push_back(m_systemRegistry->GetSystem<SpawnSystem>());
     menuComponent->systemsToEnable.push_back(m_systemRegistry->GetSystem<EnemySpawnSystem>());
     menuComponent->systemsToEnable.push_back(m_systemRegistry->GetSystem<PlayerMoneySystem>());
+}
+
+void MainWorld::CreateMeleeArchetypes(unsigned int rows, unsigned int columns, float maxHorizontalDistance,
+                                      float maxVerticalDistance, float scaleFactor, float maxSpeed, float maxHealth,
+                                      float DamageRate, float colliderRadius, float moneyDrop, float moneyThroughPortal,
+                                      float dmgThroughPortal, float unitPrice)
+{
+    ResourceManager* resourceManager = Game::Instance()->resourceManager;
+
+    UnitGroupArchetype* playerMeleeArchetype = CreateUnitGroupArchetype<UnitGroupArchetype>("playerMelee");
+    playerMeleeArchetype->maxSpeed = maxSpeed;
+    playerMeleeArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("whiteUnlitMat");
+    playerMeleeArchetype->unitModel = resourceManager->GetModel("basicUnit");
+    playerMeleeArchetype->scaleFactor = scaleFactor;
+    playerMeleeArchetype->maxHorizontalDistance = maxHorizontalDistance;
+    playerMeleeArchetype->maxVerticalDistance = maxVerticalDistance;
+    playerMeleeArchetype->rows = rows;
+    playerMeleeArchetype->columns = columns;
+    playerMeleeArchetype->unitType = DamageDealer::MeleeGroup;
+    playerMeleeArchetype->strongAgainstType = DamageDealer::NONE;
+    playerMeleeArchetype->unitPrice = unitPrice;
+    playerMeleeArchetype->moneyDropThroughPortal = moneyThroughPortal;
+    playerMeleeArchetype->colliderRadius = colliderRadius;
+    playerMeleeArchetype->damageThroughPortal = dmgThroughPortal;
+    playerMeleeArchetype->damageRate = DamageRate;
+
+    UnitGroupArchetype* enemyMeleeArchetype = CreateUnitGroupArchetype<UnitGroupArchetype>("enemyMelee");
+    enemyMeleeArchetype->maxSpeed = maxSpeed;
+    enemyMeleeArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("blackUnlitMat");
+    enemyMeleeArchetype->unitModel = resourceManager->GetModel("basicUnit");
+    enemyMeleeArchetype->scaleFactor = scaleFactor;
+    enemyMeleeArchetype->maxHorizontalDistance =maxHorizontalDistance;
+    enemyMeleeArchetype->maxVerticalDistance = maxVerticalDistance;
+    enemyMeleeArchetype->rows = rows;
+    enemyMeleeArchetype->columns = columns;
+    enemyMeleeArchetype->unitType = DamageDealer::MeleeGroup;
+    enemyMeleeArchetype->strongAgainstType = DamageDealer::NONE;
+    enemyMeleeArchetype->moneyDrop = moneyDrop;
+    enemyMeleeArchetype->isPlayerUnit = false;
+    enemyMeleeArchetype->damageThroughPortal = dmgThroughPortal;
+    enemyMeleeArchetype->colliderRadius = colliderRadius;
+    enemyMeleeArchetype->damageRate = DamageRate;
+}
+
+void MainWorld::CreateTankArchetypes(unsigned int rows, unsigned int columns, float maxHorizontalDistance,
+                                     float maxVerticalDistance, float scaleFactor, float maxSpeed, float maxHealth,
+                                     float DamageRate, float colliderRadius, float moneyDrop, float moneyThroughPortal,
+                                     float dmgThroughPortal, float unitPrice)
+{
+
+    ResourceManager* resourceManager = Game::Instance()->resourceManager;
+
+    UnitGroupArchetype* playerTankArchetype = CreateUnitGroupArchetype<UnitGroupArchetype>("playerTank");
+    playerTankArchetype->maxSpeed = maxSpeed;
+    playerTankArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("whiteUnlitMat");
+    playerTankArchetype->unitModel = resourceManager->GetModel("basicUnit");
+    playerTankArchetype->scaleFactor = scaleFactor;
+    playerTankArchetype->maxHorizontalDistance = maxHorizontalDistance;
+    playerTankArchetype->maxVerticalDistance = maxVerticalDistance;
+    playerTankArchetype->rows = rows;
+    playerTankArchetype->columns = columns;
+    playerTankArchetype->unitType = DamageDealer::Tank;
+    playerTankArchetype->strongAgainstType = DamageDealer::NONE;
+    playerTankArchetype->unitPrice = unitPrice;
+    playerTankArchetype->moneyDropThroughPortal =moneyThroughPortal;
+    playerTankArchetype->damageRate = DamageRate;
+    playerTankArchetype->maxHealth = maxHealth;
+    playerTankArchetype->colliderRadius = colliderRadius;
+    playerTankArchetype->damageThroughPortal = dmgThroughPortal;
+
+    UnitGroupArchetype* enemyTankArchetype = CreateUnitGroupArchetype<UnitGroupArchetype>("enemyTank");
+    enemyTankArchetype->maxSpeed = maxSpeed;
+    enemyTankArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("blackUnlitMat");
+    enemyTankArchetype->unitModel = resourceManager->GetModel("basicUnit");
+    enemyTankArchetype->scaleFactor = scaleFactor;
+    enemyTankArchetype->maxHorizontalDistance = maxHorizontalDistance;
+    enemyTankArchetype->maxVerticalDistance = maxVerticalDistance;
+    enemyTankArchetype->rows = rows;
+    enemyTankArchetype->columns = columns;
+    enemyTankArchetype->unitType = DamageDealer::Tank;
+    enemyTankArchetype->strongAgainstType = DamageDealer::NONE;
+    enemyTankArchetype->isPlayerUnit = false;
+    enemyTankArchetype->moneyDrop = moneyDrop;
+    enemyTankArchetype->damageThroughPortal = dmgThroughPortal;
+    enemyTankArchetype->damageRate = DamageRate;
+    enemyTankArchetype->maxHealth = maxHealth;
+    enemyTankArchetype->colliderRadius = colliderRadius;
+
+}
+
+void MainWorld::CreateCannonArchetypes(unsigned int rows, unsigned int columns, float maxHorizontalDistance,
+                                       float maxVerticalDistance, float scaleFactor, float maxSpeed, float maxHealth,
+                                       float DamageRate, float colliderRadius, float moneyDrop,
+                                       float moneyThroughPortal, float dmgThroughPortal, float unitPrice)
+{
+
+    ResourceManager* resourceManager = Game::Instance()->resourceManager;
+
+    UnitGroupArchetype* playerCanon = CreateUnitGroupArchetype<UnitGroupArchetype>("playerCannon");
+    playerCanon->maxSpeed = maxSpeed;
+    playerCanon->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("whiteUnlitMat");
+    playerCanon->unitModel = resourceManager->GetModel("basicUnit");
+    playerCanon->scaleFactor = scaleFactor;
+    playerCanon->maxHorizontalDistance = maxHorizontalDistance;
+    playerCanon->maxVerticalDistance = maxVerticalDistance;
+    playerCanon->rows = rows;
+    playerCanon->columns = columns;
+    playerCanon->unitType = DamageDealer::Jumping;
+    playerCanon->strongAgainstType = DamageDealer::NONE;
+    playerCanon->damageRate = DamageRate;
+    playerCanon->colliderRadius = colliderRadius;
+    playerCanon->unitPrice = unitPrice;
+    playerCanon->moneyDropThroughPortal = moneyThroughPortal;
+    playerCanon->damageThroughPortal = dmgThroughPortal;
+
+    UnitGroupArchetype* enemyCannonArchetype = CreateUnitGroupArchetype<UnitGroupArchetype>("enemyCannon");
+    enemyCannonArchetype->maxSpeed = maxSpeed;
+    enemyCannonArchetype->unitMaterial = resourceManager->GetMaterial<TranslucentColorMat>("blackUnlitMat");
+    enemyCannonArchetype->unitModel = resourceManager->GetModel("basicUnit");
+    enemyCannonArchetype->scaleFactor = scaleFactor;
+    enemyCannonArchetype->maxHorizontalDistance = maxHorizontalDistance;
+    enemyCannonArchetype->maxVerticalDistance = maxVerticalDistance;
+    enemyCannonArchetype->colliderRadius = colliderRadius;
+    enemyCannonArchetype->rows = rows;
+    enemyCannonArchetype->columns = columns;
+    enemyCannonArchetype->unitType = DamageDealer::Jumping;
+    enemyCannonArchetype->strongAgainstType = DamageDealer::NONE;
+    enemyCannonArchetype->moneyDrop = moneyDrop;
+    enemyCannonArchetype->isPlayerUnit = false;
+    enemyCannonArchetype->damageThroughPortal = dmgThroughPortal;
+    enemyCannonArchetype->damageRate = DamageRate;
+
 }
