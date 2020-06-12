@@ -248,6 +248,29 @@ public:
         }
     }
 
+    template <typename ...Args>
+    std::vector<Entity> Find(typename std::common_type<std::function<bool(Entity,Args&...)>>::type func)
+    {
+        IComponentSet* smallestSet = GetSmallestSet<Args...>(GetComponentSet<Args>()...);
+
+        std::vector<Entity> entities = smallestSet->GetEntities();
+
+        std::vector<Entity> results{};
+
+        for (int i = 0; i < entities.size(); ++i)
+        {
+            if(Has<Args...>(entities[i]))
+            {
+                if(func(entities[i], GetComponent<Args>(entities[i])...))
+                {
+                    results.push_back(entities[i]);
+                }
+            }
+        }
+
+        return results;
+    }
+
     ///Checks if an entity has a given set of component types attached to it.
     template<typename T>
     bool Has(Entity e) const
