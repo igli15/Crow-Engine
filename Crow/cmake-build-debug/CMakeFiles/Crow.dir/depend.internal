@@ -620,6 +620,7 @@ CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/TextRenderingSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/TransformHierarchySystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Utils/Random.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Events/WorldResetEvent.h
  /usr/local/include/GL/glew.h
  /usr/local/include/GLFW/glfw3.h
  /usr/local/include/SFML/Audio.hpp
@@ -2770,6 +2771,7 @@ CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Events/WorldResetEvent.h
  /usr/local/include/GL/glew.h
  /usr/local/include/GLFW/glfw3.h
  /usr/local/include/freetype2/freetype/config/ftheader.h
@@ -8979,6 +8981,7 @@ CMakeFiles/Crow.dir/Engine/Systems/AudioSourceSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/AudioSourceSystem.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/AudioSourceSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Events/WorldResetEvent.h
  /usr/local/include/SFML/Audio.hpp
  /usr/local/include/SFML/Audio/AlResource.hpp
  /usr/local/include/SFML/Audio/Export.hpp
@@ -11063,6 +11066,10 @@ CMakeFiles/Crow.dir/Engine/Utils/Random.cpp.o
  /usr/local/include/spdlog/spdlog.h
  /usr/local/include/spdlog/tweakme.h
  /usr/local/include/spdlog/version.h
+CMakeFiles/Crow.dir/Game/Events/WorldResetEvent.cpp.o
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Events/WorldResetEvent.cpp
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Events/WorldResetEvent.h
 CMakeFiles/Crow.dir/Game/Systems/AutoDestructSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
@@ -12480,6 +12487,93 @@ CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.o
  /usr/local/include/spdlog/spdlog.h
  /usr/local/include/spdlog/tweakme.h
  /usr/local/include/spdlog/version.h
+CMakeFiles/Crow.dir/Game/Systems/GameOverSystem.cpp.o
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/OnUnitDefeatedEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentRegistry.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentSparseSet.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/CustomTypeID.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityRegistry.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/IComponentSet.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemRegistry.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
+ /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Components/BridgeComponent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Components/EnemyUnitCollider.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/EnemySpawnSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameOverSystem.cpp
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameOverSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/PlayerMoneySystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SpawnSystem.h
+ /usr/local/include/GL/glew.h
+ /usr/local/include/GLFW/glfw3.h
+ /usr/local/include/glm/detail/_swizzle.hpp
+ /usr/local/include/glm/detail/_swizzle_func.hpp
+ /usr/local/include/glm/detail/compute_vector_relational.hpp
+ /usr/local/include/glm/detail/qualifier.hpp
+ /usr/local/include/glm/detail/setup.hpp
+ /usr/local/include/glm/detail/type_vec3.hpp
+ /usr/local/include/glm/detail/type_vec3.inl
+ /usr/local/include/glm/ext/vector_bool3.hpp
+ /usr/local/include/glm/ext/vector_bool3_precision.hpp
+ /usr/local/include/glm/ext/vector_double3.hpp
+ /usr/local/include/glm/ext/vector_double3_precision.hpp
+ /usr/local/include/glm/ext/vector_float3.hpp
+ /usr/local/include/glm/ext/vector_float3_precision.hpp
+ /usr/local/include/glm/ext/vector_int3.hpp
+ /usr/local/include/glm/ext/vector_int3_precision.hpp
+ /usr/local/include/glm/ext/vector_uint3.hpp
+ /usr/local/include/glm/ext/vector_uint3_precision.hpp
+ /usr/local/include/glm/simd/platform.h
+ /usr/local/include/glm/vec3.hpp
+ /usr/local/include/spdlog/common-inl.h
+ /usr/local/include/spdlog/common.h
+ /usr/local/include/spdlog/details/backtracer-inl.h
+ /usr/local/include/spdlog/details/backtracer.h
+ /usr/local/include/spdlog/details/circular_q.h
+ /usr/local/include/spdlog/details/console_globals.h
+ /usr/local/include/spdlog/details/fmt_helper.h
+ /usr/local/include/spdlog/details/log_msg-inl.h
+ /usr/local/include/spdlog/details/log_msg.h
+ /usr/local/include/spdlog/details/log_msg_buffer-inl.h
+ /usr/local/include/spdlog/details/log_msg_buffer.h
+ /usr/local/include/spdlog/details/null_mutex.h
+ /usr/local/include/spdlog/details/os-inl.h
+ /usr/local/include/spdlog/details/os.h
+ /usr/local/include/spdlog/details/pattern_formatter-inl.h
+ /usr/local/include/spdlog/details/pattern_formatter.h
+ /usr/local/include/spdlog/details/periodic_worker-inl.h
+ /usr/local/include/spdlog/details/periodic_worker.h
+ /usr/local/include/spdlog/details/registry-inl.h
+ /usr/local/include/spdlog/details/registry.h
+ /usr/local/include/spdlog/details/synchronous_factory.h
+ /usr/local/include/spdlog/fmt/bundled/core.h
+ /usr/local/include/spdlog/fmt/bundled/format-inl.h
+ /usr/local/include/spdlog/fmt/bundled/format.h
+ /usr/local/include/spdlog/fmt/fmt.h
+ /usr/local/include/spdlog/formatter.h
+ /usr/local/include/spdlog/logger-inl.h
+ /usr/local/include/spdlog/logger.h
+ /usr/local/include/spdlog/sinks/ansicolor_sink-inl.h
+ /usr/local/include/spdlog/sinks/ansicolor_sink.h
+ /usr/local/include/spdlog/sinks/sink-inl.h
+ /usr/local/include/spdlog/sinks/sink.h
+ /usr/local/include/spdlog/sinks/stdout_color_sinks-inl.h
+ /usr/local/include/spdlog/sinks/stdout_color_sinks.h
+ /usr/local/include/spdlog/sinks/wincolor_sink-inl.h
+ /usr/local/include/spdlog/sinks/wincolor_sink.h
+ /usr/local/include/spdlog/spdlog-inl.h
+ /usr/local/include/spdlog/spdlog.h
+ /usr/local/include/spdlog/tweakme.h
+ /usr/local/include/spdlog/version.h
 CMakeFiles/Crow.dir/Game/Systems/GameStateSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
  /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
@@ -12506,6 +12600,7 @@ CMakeFiles/Crow.dir/Game/Systems/GameStateSystem.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/Player.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Events/UnitPathCompleteEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameOverSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameStateSystem.cpp
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameStateSystem.h
  /usr/local/include/GL/glew.h
@@ -17220,6 +17315,7 @@ CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitIconComponent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Events/UnitCollisionEvents.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Events/UnitPathCompleteEvent.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Events/WorldResetEvent.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/AutoDestructSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/BridgeSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/CannonSystem.h
@@ -17227,6 +17323,7 @@ CMakeFiles/Crow.dir/Game/Worlds/MainWorld.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/EnemySpawnSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/FloatingSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/FlockSeparationSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameOverSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameStateSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameUISystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/MainMenuSystem.h
@@ -17898,6 +17995,7 @@ CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/EnemySpawnSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/FloatingSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/FlockSeparationSystem.h
+ /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameOverSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameStateSystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameUISystem.h
  /Users/igli/Desktop/Crow Engine/Crow/Game/Systems/MainMenuSystem.h

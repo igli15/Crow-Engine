@@ -46,6 +46,16 @@ public:
 
     }
 
+    virtual void OnEnable()
+    {
+
+    }
+
+    virtual void OnDisable()
+    {
+
+    }
+
 };
 
 

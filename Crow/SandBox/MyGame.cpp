@@ -65,6 +65,7 @@
 #include "../Game/Systems/MainMenuSystem.h"
 #include "../Game/Components/MainMenuComponent.h"
 #include "../Engine/Rendering/Materials/HealthBarMaterial.h"
+#include "../Game/Systems/GameOverSystem.h"
 
 void MyGame::LoadAssets()
 {
@@ -210,7 +211,7 @@ void MyGame::AllocateMemory()
     m_systemRegistry->AllocateSystem<UnitAnimationSystem>();
     m_systemRegistry->AllocateSystem<UnitCollisionSystem>();
     m_systemRegistry->AllocateSystem<UnitFightingSystem>();
-
+    m_systemRegistry->AllocateSystem<GameOverSystem>();
 
 
 }

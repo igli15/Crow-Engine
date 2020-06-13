@@ -1045,6 +1045,32 @@ CMakeFiles/Crow.dir/Engine/Systems/AudioSourceSystem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Systems/AudioSourceSystem.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/AudioSourceSystem.cpp" -o CMakeFiles/Crow.dir/Engine/Systems/AudioSourceSystem.cpp.s
 
+CMakeFiles/Crow.dir/Game/Systems/GameOverSystem.cpp.o: CMakeFiles/Crow.dir/flags.make
+CMakeFiles/Crow.dir/Game/Systems/GameOverSystem.cpp.o: ../Game/Systems/GameOverSystem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_77) "Building CXX object CMakeFiles/Crow.dir/Game/Systems/GameOverSystem.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Game/Systems/GameOverSystem.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameOverSystem.cpp"
+
+CMakeFiles/Crow.dir/Game/Systems/GameOverSystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Game/Systems/GameOverSystem.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameOverSystem.cpp" > CMakeFiles/Crow.dir/Game/Systems/GameOverSystem.cpp.i
+
+CMakeFiles/Crow.dir/Game/Systems/GameOverSystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Game/Systems/GameOverSystem.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameOverSystem.cpp" -o CMakeFiles/Crow.dir/Game/Systems/GameOverSystem.cpp.s
+
+CMakeFiles/Crow.dir/Game/Events/WorldResetEvent.cpp.o: CMakeFiles/Crow.dir/flags.make
+CMakeFiles/Crow.dir/Game/Events/WorldResetEvent.cpp.o: ../Game/Events/WorldResetEvent.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_78) "Building CXX object CMakeFiles/Crow.dir/Game/Events/WorldResetEvent.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Game/Events/WorldResetEvent.cpp.o -c "/Users/igli/Desktop/Crow Engine/Crow/Game/Events/WorldResetEvent.cpp"
+
+CMakeFiles/Crow.dir/Game/Events/WorldResetEvent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Game/Events/WorldResetEvent.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Desktop/Crow Engine/Crow/Game/Events/WorldResetEvent.cpp" > CMakeFiles/Crow.dir/Game/Events/WorldResetEvent.cpp.i
+
+CMakeFiles/Crow.dir/Game/Events/WorldResetEvent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Game/Events/WorldResetEvent.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Desktop/Crow Engine/Crow/Game/Events/WorldResetEvent.cpp" -o CMakeFiles/Crow.dir/Game/Events/WorldResetEvent.cpp.s
+
 # Object files for target Crow
 Crow_OBJECTS = \
 "CMakeFiles/Crow.dir/main.cpp.o" \
@@ -1122,7 +1148,9 @@ Crow_OBJECTS = \
 "CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Rendering/Materials/HealthBarMaterial.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Systems/AudioListenerSystem.cpp.o" \
-"CMakeFiles/Crow.dir/Engine/Systems/AudioSourceSystem.cpp.o"
+"CMakeFiles/Crow.dir/Engine/Systems/AudioSourceSystem.cpp.o" \
+"CMakeFiles/Crow.dir/Game/Systems/GameOverSystem.cpp.o" \
+"CMakeFiles/Crow.dir/Game/Events/WorldResetEvent.cpp.o"
 
 # External object files for target Crow
 Crow_EXTERNAL_OBJECTS =
@@ -1203,6 +1231,8 @@ Crow: CMakeFiles/Crow.dir/Game/Systems/MainMenuSystem.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Rendering/Materials/HealthBarMaterial.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Systems/AudioListenerSystem.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Systems/AudioSourceSystem.cpp.o
+Crow: CMakeFiles/Crow.dir/Game/Systems/GameOverSystem.cpp.o
+Crow: CMakeFiles/Crow.dir/Game/Events/WorldResetEvent.cpp.o
 Crow: CMakeFiles/Crow.dir/build.make
 Crow: /usr/local/lib/libglfw.dylib
 Crow: /usr/local/lib/libassimp.dylib
@@ -1210,7 +1240,7 @@ Crow: /usr/local/lib/libGLEW.dylib
 Crow: /usr/local/lib/libfreetype.dylib
 Crow: /usr/local/lib/libsfml-audio.dylib
 Crow: CMakeFiles/Crow.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_77) "Linking CXX executable Crow"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_79) "Linking CXX executable Crow"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Crow.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

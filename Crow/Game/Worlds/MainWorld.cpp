@@ -57,6 +57,7 @@
 #include "../../Engine/Components/AudioSource.h"
 #include "../../Engine/Systems/AudioSourceSystem.h"
 #include "../../Engine/Systems/AudioListenerSystem.h"
+#include "../Systems/GameOverSystem.h"
 
 void MainWorld::Build()
 {
@@ -99,19 +100,20 @@ void MainWorld::Build()
     RegisterSystem<GameStateSystem>();
     RegisterSystem<AutoDestructSystem>();
     RegisterSystem<DebugTextSystem>();
+    RegisterSystem<GameOverSystem>()->enabled = false;
 
     UnitySceneParser::ParseUnityScene("MainLevel2.xml",this,&(MainWorld::ParseGameComponents));
 
 
     EntityHandle playerEntity = CreateEntity();
     Player* playerComponent = playerEntity.AddComponent<Player>(Player{});
-    playerComponent->money = 50;
+    playerComponent->money = 50 ;
 
     EntityHandle enemyEntity = CreateEntity();
     Enemy* enemyComponent = enemyEntity.AddComponent<Enemy>(Enemy{});
 
 
-    CreateMeleeArchetypes(4,4,0.2f,0.2f,0.1f,0.7f,100.0f,0.3f,0.25f,1.0f,1.0f,0.1f,35.0f);
+    CreateMeleeArchetypes(4,4,0.2f,0.2f,0.1f,0.7f,100.0f,0.3f,0.25f,5.0f,1.0f,3.0f,20.0f);
     CreateTankArchetypes(1,1,0.0f,0.0f,0.5f,0.6f,250.0f,0.3f,0.6f,20.0f,15.0f,5.0f,35.0f);
     CreateCannonArchetypes(1,2,1.5f,1.5f,0.2f,0.7f,100.0f,100.0f,0.5f,30.0f,20.0f,20.0f,65.0f);
 

@@ -7,6 +7,8 @@
 #include "../../Engine/Feather/World.h"
 #include "../Components/DamageDealer.h"
 #include "../../Engine/Rendering/Materials/HealthBarMaterial.h"
+#include "GameOverSystem.h"
+
 void GameStateSystem::Init()
 {
     System::Init();
@@ -45,10 +47,14 @@ void GameStateSystem::OnUnitPathComplete(UnitPathCompleteEvent *event)
     if(m_playerComponent->health <= 0)
     {
         //APP_LOG("ENEMY WON");
+
+        world->EnableSystem<GameOverSystem>();
     }
 
     if(m_enemyComponent->health <= 0)
     {
         //APP_LOG("PLAYER WON");
+
+        world->EnableSystem<GameOverSystem>();
     }
 }

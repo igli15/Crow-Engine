@@ -480,6 +480,12 @@
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Events/UnitPathCompleteEvent.h">
 			<Option target="Crow"/>
 		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Events/WorldResetEvent.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Events/WorldResetEvent.h">
+			<Option target="Crow"/>
+		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/AutoDestructSystem.cpp">
 			<Option target="Crow"/>
 		</Unit>
@@ -520,6 +526,12 @@
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/FlockSeparationSystem.h">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameOverSystem.cpp">
+			<Option target="Crow"/>
+		</Unit>
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameOverSystem.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameStateSystem.cpp">

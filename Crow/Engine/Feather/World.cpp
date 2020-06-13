@@ -6,6 +6,7 @@
 #include "EntityHandle.h"
 #include "../Events/EntityEvents.h"
 #include "../../Engine/Core/Game.h"
+#include "../../Game/Events/WorldResetEvent.h"
 
 void World::Init(SystemRegistry* systemRegistry,EntityRegistry* entityRegistry,ComponentRegistry* componentRegistry)
 {
@@ -89,6 +90,8 @@ void World::PreRenderAllSystems()
 
 void World::ResetWorld()
 {
+    EventQueue::Instance().Publish(new WorldResetEvent(this));
+
     m_entityRegistry->ReturnAllEntities();
     m_allRegisteredSystems.clear();
     m_systemRegistry->ResetAllSystems();

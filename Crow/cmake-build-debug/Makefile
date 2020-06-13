@@ -1257,6 +1257,33 @@ Engine/Utils/Random.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Engine/Utils/Random.cpp.s
 .PHONY : Engine/Utils/Random.cpp.s
 
+Game/Events/WorldResetEvent.o: Game/Events/WorldResetEvent.cpp.o
+
+.PHONY : Game/Events/WorldResetEvent.o
+
+# target to build an object file
+Game/Events/WorldResetEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Events/WorldResetEvent.cpp.o
+.PHONY : Game/Events/WorldResetEvent.cpp.o
+
+Game/Events/WorldResetEvent.i: Game/Events/WorldResetEvent.cpp.i
+
+.PHONY : Game/Events/WorldResetEvent.i
+
+# target to preprocess a source file
+Game/Events/WorldResetEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Events/WorldResetEvent.cpp.i
+.PHONY : Game/Events/WorldResetEvent.cpp.i
+
+Game/Events/WorldResetEvent.s: Game/Events/WorldResetEvent.cpp.s
+
+.PHONY : Game/Events/WorldResetEvent.s
+
+# target to generate assembly for a file
+Game/Events/WorldResetEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Events/WorldResetEvent.cpp.s
+.PHONY : Game/Events/WorldResetEvent.cpp.s
+
 Game/Systems/AutoDestructSystem.o: Game/Systems/AutoDestructSystem.cpp.o
 
 .PHONY : Game/Systems/AutoDestructSystem.o
@@ -1445,6 +1472,33 @@ Game/Systems/FlockSeparationSystem.s: Game/Systems/FlockSeparationSystem.cpp.s
 Game/Systems/FlockSeparationSystem.cpp.s:
 	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/FlockSeparationSystem.cpp.s
 .PHONY : Game/Systems/FlockSeparationSystem.cpp.s
+
+Game/Systems/GameOverSystem.o: Game/Systems/GameOverSystem.cpp.o
+
+.PHONY : Game/Systems/GameOverSystem.o
+
+# target to build an object file
+Game/Systems/GameOverSystem.cpp.o:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/GameOverSystem.cpp.o
+.PHONY : Game/Systems/GameOverSystem.cpp.o
+
+Game/Systems/GameOverSystem.i: Game/Systems/GameOverSystem.cpp.i
+
+.PHONY : Game/Systems/GameOverSystem.i
+
+# target to preprocess a source file
+Game/Systems/GameOverSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/GameOverSystem.cpp.i
+.PHONY : Game/Systems/GameOverSystem.cpp.i
+
+Game/Systems/GameOverSystem.s: Game/Systems/GameOverSystem.cpp.s
+
+.PHONY : Game/Systems/GameOverSystem.s
+
+# target to generate assembly for a file
+Game/Systems/GameOverSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/Crow.dir/build.make CMakeFiles/Crow.dir/Game/Systems/GameOverSystem.cpp.s
+.PHONY : Game/Systems/GameOverSystem.cpp.s
 
 Game/Systems/GameStateSystem.o: Game/Systems/GameStateSystem.cpp.o
 
@@ -2310,6 +2364,9 @@ help:
 	@echo "... Engine/Utils/Random.o"
 	@echo "... Engine/Utils/Random.i"
 	@echo "... Engine/Utils/Random.s"
+	@echo "... Game/Events/WorldResetEvent.o"
+	@echo "... Game/Events/WorldResetEvent.i"
+	@echo "... Game/Events/WorldResetEvent.s"
 	@echo "... Game/Systems/AutoDestructSystem.o"
 	@echo "... Game/Systems/AutoDestructSystem.i"
 	@echo "... Game/Systems/AutoDestructSystem.s"
@@ -2331,6 +2388,9 @@ help:
 	@echo "... Game/Systems/FlockSeparationSystem.o"
 	@echo "... Game/Systems/FlockSeparationSystem.i"
 	@echo "... Game/Systems/FlockSeparationSystem.s"
+	@echo "... Game/Systems/GameOverSystem.o"
+	@echo "... Game/Systems/GameOverSystem.i"
+	@echo "... Game/Systems/GameOverSystem.s"
 	@echo "... Game/Systems/GameStateSystem.o"
 	@echo "... Game/Systems/GameStateSystem.i"
 	@echo "... Game/Systems/GameStateSystem.s"

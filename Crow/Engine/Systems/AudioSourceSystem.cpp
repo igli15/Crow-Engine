@@ -14,6 +14,7 @@ void AudioSourceSystem::OnCreate()
 
     EventQueue::Instance().Subscribe(this, &AudioSourceSystem::OnAudioSourceAdded);
     EventQueue::Instance().Subscribe(this, &AudioSourceSystem::OnAudioSourceRemoved);
+    EventQueue::Instance().Subscribe(this, &AudioSourceSystem::OnWorldReset);
 }
 
 void AudioSourceSystem::Init()
@@ -79,4 +80,16 @@ void AudioSourceSystem::OnAudioSourceRemoved(ComponentRemovedEvent<AudioSource> 
     if (event->component.sound != nullptr) {
         m_soundPool.ReturnData(*event->component.sound);
     }
+}
+
+void AudioSourceSystem::OnWorldReset(WorldResetEvent *event)
+{
+    world->ForEach<AudioSource>([this](Entity e,AudioSource& audioSource)
+    {
+        audioSource.sound->stop();
+
+        if (audioSource.sound != nullptr) {
+            m_soundPool.ReturnData(*audioSource.sound);
+        }
+    });
 }

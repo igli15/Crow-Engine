@@ -11,6 +11,7 @@
 #include "../Events/ComponentRemovedEvent.h"
 #include "../Components/AudioSource.h"
 #include "../Feather/Pool.h"
+#include "../../Game/Events/WorldResetEvent.h"
 
 class AudioSourceSystem : public System
 {
@@ -21,7 +22,7 @@ public:
 
     void OnAudioSourceAdded(ComponentAddedEvent<AudioSource>* event);
     void OnAudioSourceRemoved(ComponentRemovedEvent<AudioSource>* event);
-
+    void OnWorldReset(WorldResetEvent* event);
 private:
     Pool<sf::Sound> m_soundPool;
 };

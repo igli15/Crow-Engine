@@ -174,6 +174,19 @@ public:
         signature.set(ComponentIDGenerator::index<T>);
     }
 
+    template<typename T>
+    void EnableSystem()
+    {
+        m_systemRegistry->GetSystem<T>()->enabled = true;
+        m_systemRegistry->GetSystem<T>()->OnEnable();
+    }
+
+    template<typename T>
+    void DisableSystem()
+    {
+        m_systemRegistry->GetSystem<T>()->enabled = false;
+        m_systemRegistry->GetSystem<T>()->OnDisable();
+    }
 
     ///Queries for all entities which contain the specified component types in one line.
     ///EntitiesWith will get the smallest set from the specified component types and then search the rest of the sets
@@ -249,7 +262,7 @@ public:
     }
 
     template <typename ...Args>
-    std::vector<Entity> Find(typename std::common_type<std::function<bool(Entity,Args&...)>>::type func)
+    std::vector<Entity> FindEntities(typename std::common_type<std::function<bool(Entity, Args&...)>>::type func)
     {
         IComponentSet* smallestSet = GetSmallestSet<Args...>(GetComponentSet<Args>()...);
 
