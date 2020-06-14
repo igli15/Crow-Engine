@@ -25,7 +25,7 @@ float dither(float color) {
     return (distance < d) ? closestColor : secondClosestColor;
 }
 
-const float exposure = 0.8;
+const float exposure = 1.0;
 
 void main()
 {
