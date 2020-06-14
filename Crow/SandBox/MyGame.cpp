@@ -134,10 +134,14 @@ void MyGame::LoadAssets()
 
     resourceManager->CreateMaterial<SpriteMaterial>("mainMenuIconMat");
 
-
     resourceManager->CreateSprite("healthBarSprite",resourceManager->GetTexture("healthBar"));
     resourceManager->CreateMaterial<HealthBarMaterial>("playerHealthBarMat");
     resourceManager->CreateMaterial<HealthBarMaterial>("enemyHealthBarMat");
+
+
+    resourceManager->CreateSprite("youWinSprite",resourceManager->GetTexture("youWin"));
+    resourceManager->CreateSprite("youLoseSprite",resourceManager->GetTexture("youLose"));
+    resourceManager->CreateMaterial<SpriteMaterial>("stateSprite");
 
     resourceManager->LoadSoundBuffer("portalSFX.wav","portalSFX");
     resourceManager->LoadSoundBuffer("drop.wav","drop");

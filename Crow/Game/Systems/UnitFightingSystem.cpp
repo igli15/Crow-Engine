@@ -11,7 +11,11 @@
 void UnitFightingSystem::Init()
 {
     System::Init();
+}
 
+void UnitFightingSystem::OnCreate()
+{
+    System::OnCreate();
     EventQueue::Instance().Subscribe(this,&UnitFightingSystem::OnUnitCollisionEnter);
     EventQueue::Instance().Subscribe(this,&UnitFightingSystem::OnUnitCollisionStay);
     EventQueue::Instance().Subscribe(this,&UnitFightingSystem::OnUnitCollisionExit);
@@ -148,5 +152,6 @@ void UnitFightingSystem::Fight(EntityHandle firstEntity, EntityHandle secondEnti
     }
 
 }
+
 
 

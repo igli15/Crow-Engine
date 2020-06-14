@@ -13,7 +13,7 @@ class TargetSeekedEvent;
 class PathSystem : public System
 {
 public:
-    void Init() override;
+    void OnCreate() override;
 
     void OnPathSeeked(TargetSeekedEvent* event);
 };

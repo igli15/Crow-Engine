@@ -17,7 +17,6 @@ void PlayerMoneySystem::Init()
     Entity playerEntity = world->EntitiesWith<Player>()[0];
     m_playerComponent = world->GetComponentPtr<Player>(playerEntity);
 
-    EventQueue::Instance().Subscribe(this,&PlayerMoneySystem::OnEnemyDeath);
 }
 
 void PlayerMoneySystem::Update(float dt)
@@ -37,4 +36,10 @@ void PlayerMoneySystem::OnEnemyDeath(OnUnitDefeatedEvent* event)
         m_playerComponent->money += unitComponent->moneyDrop;
         world->RemoveComponent<UnitComponent>(event->entity);
     }
+}
+
+void PlayerMoneySystem::OnCreate()
+{
+    System::OnCreate();
+    EventQueue::Instance().Subscribe(this,&PlayerMoneySystem::OnEnemyDeath);
 }

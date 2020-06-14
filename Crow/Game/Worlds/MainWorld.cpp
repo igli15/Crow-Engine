@@ -108,9 +108,11 @@ void MainWorld::Build()
     EntityHandle playerEntity = CreateEntity();
     Player* playerComponent = playerEntity.AddComponent<Player>(Player{});
     playerComponent->money = 50 ;
+    playerComponent->health = 100.0f;
 
     EntityHandle enemyEntity = CreateEntity();
     Enemy* enemyComponent = enemyEntity.AddComponent<Enemy>(Enemy{});
+    enemyComponent->health = 100.0f;
 
 
     CreateMeleeArchetypes(4,4,0.2f,0.2f,0.1f,0.7f,100.0f,0.3f,0.25f,5.0f,1.0f,3.0f,20.0f);

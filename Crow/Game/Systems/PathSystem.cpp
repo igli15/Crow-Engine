@@ -9,7 +9,7 @@
 #include "../Components/UnitPathComponent.h"
 #include "../Events/UnitPathCompleteEvent.h"
 
-void PathSystem::Init()
+void PathSystem::OnCreate()
 {
     System::Init();
     EventQueue::Instance().Subscribe(this,&PathSystem::OnPathSeeked);

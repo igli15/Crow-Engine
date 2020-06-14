@@ -30,6 +30,9 @@
 #texture menuSelectionIcon : menuSelectionIcon.png;
 #texture healthBar : healthBarOutlined.jpg;
 
+#texture youLose : YouLose.png;
+#texture youWin : YouWin.png;
+
 #model dragon : dragon.obj;
 #model ghost : ghost1.obj;
 #model golem : Golem.fbx;

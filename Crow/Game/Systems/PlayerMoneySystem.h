@@ -14,6 +14,7 @@ class Player;
 class PlayerMoneySystem : public System
 {
 public:
+    void OnCreate() override;
     void Init() override;
     void Update(float dt) override;
 

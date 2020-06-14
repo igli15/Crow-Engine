@@ -14,10 +14,14 @@
 class GameStateSystem : public System
 {
 public:
+    void OnCreate() override;
     void Init() override;
     void Update(float dt) override;
 
     void OnUnitPathComplete(UnitPathCompleteEvent* event);
+
+    void CreateYouWinSpriteEntity();
+    void CreateYouLoseSpriteEntity();
 
 private:
     Player* m_playerComponent = nullptr;
