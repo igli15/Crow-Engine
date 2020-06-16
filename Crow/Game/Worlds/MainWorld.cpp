@@ -115,7 +115,7 @@ void MainWorld::Build()
     enemyComponent->health = 100.0f;
 
 
-    CreateMeleeArchetypes(4,4,0.2f,0.2f,0.1f,0.7f,100.0f,0.3f,0.25f,5.0f,1.0f,3.0f,20.0f);
+    CreateMeleeArchetypes(4,4,0.2f,0.2f,0.1f,0.7f,100.0f,0.3f,0.25f,2.0f,1.0f,1.0f,20.0f);
     CreateTankArchetypes(1,1,0.0f,0.0f,0.5f,0.6f,250.0f,0.3f,0.6f,20.0f,15.0f,5.0f,35.0f);
     CreateCannonArchetypes(1,2,1.5f,1.5f,0.2f,0.7f,100.0f,100.0f,0.5f,30.0f,20.0f,20.0f,65.0f);
 
@@ -353,7 +353,6 @@ void MainWorld::ParseGameComponents(rapidxml::xml_node<> *node, EntityHandle ent
 
 void MainWorld::CreateUIEntities()
 {
-    //TODO clean this mess
     Game* game = Game::Instance();
     ResourceManager* resourceManager = game->resourceManager;
 

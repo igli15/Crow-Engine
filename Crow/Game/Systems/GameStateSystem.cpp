@@ -47,7 +47,6 @@ void GameStateSystem::OnUnitPathComplete(UnitPathCompleteEvent *event)
         m_playerComponent->healthMat->fillAmount = m_playerComponent->health/m_playerComponent->maxHealth;
     }
 
-    //TODO handle the win and lose condition
     if(m_playerComponent->health <= 0)
     {
         APP_LOG(m_playerComponent->health);

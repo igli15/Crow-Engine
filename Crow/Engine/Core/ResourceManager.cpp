@@ -117,7 +117,6 @@ Model *ResourceManager::LoadModel(const std::string &path, const std::string &na
 {
     Model *model = &(m_modelPool.GetNewData());
 
-    //TODO change this dont put max entities here its an overkill
     model->maxNumberOfModelInstances = MAX_ENTITIES;
 
     model->LoadModel((MODEL_PATH + path).data());

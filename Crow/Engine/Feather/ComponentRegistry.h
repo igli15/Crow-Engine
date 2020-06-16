@@ -88,7 +88,6 @@ void ComponentRegistry::AllocateComponentSet(int maxSize)
 template<typename T>
 ComponentSparseSet<T> *ComponentRegistry::GetComponentSet()
 {
-    //TODO add assertion here.
     return static_cast<ComponentSparseSet<T> *>(m_componentSetsMap[ComponentIDGenerator::index < T > ]);
 }
 

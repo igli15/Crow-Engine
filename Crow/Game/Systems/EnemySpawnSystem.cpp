@@ -46,33 +46,58 @@ void EnemySpawnSystem::Update(float dt)
 
     if(m_spawnCounter > m_spawnTime)
     {
-        //mainWorld->GetUnitGroupArchetype<UnitGroupArchetype>("golem")->Build(world, randomBridge);
+        BridgeComponent* bridgeComponent = m_bridges[0];
+
+        for (int bridgeIndex = 0; bridgeIndex < m_bridges.size(); ++bridgeIndex)
+        {
+            if(bridgeComponent->playerEntitiesOnBridge.size() < m_bridges[bridgeIndex]->playerEntitiesOnBridge.size())
+            {
+                bridgeComponent = m_bridges[bridgeIndex];
+            }
+        }
 
         WeightedUnit unit = GetRandomUnit();
-        unit.archetype->Build(world,randomBridge);
+
+        if(bridgeComponent->playerEntitiesOnBridge.empty())
+        {
+            unit.archetype->Build(world,randomBridge);
+        } else
+        {
+            unit.archetype->Build(world,bridgeComponent);
+        }
+
+
+        for (int bridgeIndex = 0; bridgeIndex < m_bridges.size(); ++bridgeIndex)
+        {
+            if(!m_bridges[bridgeIndex]->playerEntitiesOnBridge.empty() && m_bridges[bridgeIndex]->enemyEntitiesOnBridge.empty())
+            {
+                unit.archetype->Build(world,m_bridges[bridgeIndex]);
+            }
+        }
+
         m_spawnCounter = 0;
     }
 }
 
 WeightedUnit EnemySpawnSystem::GetRandomUnit()
 {
-    float totalWeight= 0;
+    float totalWeight= 0.0f;
 
-    for (int i = 0; i < m_enemyArchetypes.size(); ++i)
+    for (int archetypeCounter = 0; archetypeCounter < m_enemyArchetypes.size(); ++archetypeCounter)
     {
-            totalWeight += m_enemyArchetypes[i].weight;
+            totalWeight += m_enemyArchetypes[archetypeCounter].weight;
     }
 
     float randomWeight = Random::RandomRange(0.0f,totalWeight);
 
-    for (int i = 0; i < m_enemyArchetypes.size(); ++i)
+    for (int archetypeCounter = 0; archetypeCounter < m_enemyArchetypes.size(); ++archetypeCounter)
     {
-       if(randomWeight <= m_enemyArchetypes[i].weight)
+       if(randomWeight <= m_enemyArchetypes[archetypeCounter].weight)
        {
-           return m_enemyArchetypes[i];
+           return m_enemyArchetypes[archetypeCounter];
        }
 
-       randomWeight -= m_enemyArchetypes[i].weight;
+       randomWeight -= m_enemyArchetypes[archetypeCounter].weight;
     }
 
     APP_LOG_CRITICAL("Weight Algorithm not working properly..");
