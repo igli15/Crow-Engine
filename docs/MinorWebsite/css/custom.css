@@ -1,0 +1,27 @@
+
+:root {font: 20px/1.2 "Roboto",sans-serif;}
+
+.navbar{
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+}
+
+hr
+{
+    width: 100%;
+    background-color: black;
+}
+
+section
+{
+    margin: auto;
+    width: 70%;
+    padding-top: 40px;
+}
+
+iframe
+{
+    width: 100%;
+    height: 450px;
+}
