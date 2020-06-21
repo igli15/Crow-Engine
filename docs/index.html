@@ -60,16 +60,24 @@
 
             <div class="col-md-5">
                 <h2 id="introductionHeader">Introduction</h2>
-                <p>As a part of my studies on Game Engineering in Saxion University, I did a 6-months research project (January 2020 – June 2020) called “Minor Skilled”.<br>
-                    The final product is a game created in a 3D Game Engine implemented from scratch in C++ using ECS as the main architecture design.
+                <p>As a part of my studies on Game Engineering in Saxion University, I did a 6-months research project
+                    (January 2020 – June 2020) called “Minor Skilled”.<br>
+                    The final product is a game created in a 3D Game Engine implemented from scratch in C++ using ECS as
+                    the main architecture design.
                 </p>
                 <p>
-                    The purpose of this report is to share my research on the question,<b>What benefits does ECS architecture bring to Game and Engine development?</b>
+                    The purpose of this report is to share my research on the question,<b>What benefits does ECS
+                    architecture bring to Game and Engine development?</b>
                 </p>
 
                 <p>
-                    The work showcased in this report will be split into 2 parts. In the first part I will provide a brief introduction to the Enity-Component-System architecture and show my implementation of this module, which I called “Feather”. From now on I will use the word “ECS” to describe general Entity-Component-System architecture and I will use the word “Feather” to refer to my own implementation of it.<br>
-                    In the second part I show and explain the 3D engine and game that I created       using this Engine and how feather was used to implement these complex systems.
+                    The work showcased in this report will be split into 2 parts. In the first part I will provide a
+                    brief introduction to the Enity-Component-System architecture and show my implementation of this
+                    module, which I called “Feather”. From now on I will use the word “ECS” to describe general
+                    Entity-Component-System architecture and I will use the word “Feather” to refer to my own
+                    implementation of it.<br>
+                    In the second part I show and explain the 3D engine and game that I created using this Engine and
+                    how feather was used to implement these complex systems.
                 </p>
             </div>
             <div class="col-md-7  align-items-center">
@@ -93,7 +101,8 @@
 
             <div class="col-md-auto">
                 <h2 id="Goal">Goal</h2>
-                <p>The main goal of this project was to research on Entity-Component-System architecture and answer the question: <b>What benefits does ECS architecture bring to Game and Engine development?</b><br>
+                <p>The main goal of this project was to research on Entity-Component-System architecture and answer the
+                    question: <b>What benefits does ECS architecture bring to Game and Engine development?</b><br>
                     To answer the main question I had to research and answer the following questions:
                     <ui>
                         <li>Is ECS architecture more efficient?</li>
@@ -118,44 +127,102 @@
 
         <div class="row">
 
-            <div class="col-md-auto">
+            <div class="col-md-6">
                 <h2 id="What is ECS?">What is ECS?</h2>
-                <p> Tradidtionally games were used to be programmed in a object oriented desing (OOP) or inheritance design. For example you would have a class
-                    "Creature" that would inherit "Gameobject" then you would have "Vamprie" and "Orc" inherting "Creature" class and so on. Then every frame you would go through all the Entities and call some methods
-                    like "Render" or "Update".<br> The first problem with this approach is that our architechture is  rigid, if we wanted lets say a "Necromancer" to be both an "Orc" and 
-                    a "Vampire" we have to rethink the whole design of the program.
-                    <br>Second problem with the OOP is performance. When we are iterating through all these Entities calling 
-                    "Update" we are jumping in memory and pulling data in cache,but since our entities are scattered around in memory that cache is not used the next frame thus the 
-                    CPU has to go and fetch that data from RAM every single time, so esentially we are wasting our CPU speed making it wait for data to come from RAM.
+                <p> Tradidtionally games were used to be programmed in a object oriented desing (OOP) or inheritance
+                    design. For example you would have a class
+                    "Creature" that would inherit "Gameobject" then you would have "Human" and "Orc" inherting
+                    "Creature" class and so on. Then every frame you would go through all the Entities and call some
+                    methods
+                    like "Render" or "Update".<br>
+                    The first problem with this approach is that our architecture is
+                    rigid, if we wanted lets say a "Necromancer" to be both an "Orc" and
+                    a "Vampire" (Look the picture in the right) we have to rethink the whole design of the program.
+                    <br>Second problem with the OOP is performance. When we are iterating through all these Entities
+                    calling
+                    "Update" we are jumping in memory and pulling data in cache,but since our entities are scattered
+                    around in memory that cache is not used the next frame thus the
+                    CPU has to go and fetch that data from RAM every single time, so esentially we are wasting our CPU
+                    speed making it wait for data to come from RAM.
                 </p>
+            </div>
+            <div class="col-md-6 align-self-center">
+                <img class="sidePicture" src="Assets/oopStructure.png" width="445" height="242">
+            </div>
+        </div>
 
-                <p> 
-                    Nowdays the industry has shifted to "Component Systems" to solve the first problem that I mentioned above. Take for example Unity's Component System. You have a 
-                    Gameobject to which you can add components as building blocks and then call "Update" on those components every frame. Now we solved the first issue since, we can
-                    just attach a "Vampire" and an "Orc" component and the GameObject will act accordingly. However we still haven't solved the second problem, we still are jumping in memory
-                    and calling "Update" on all these components.
+        <div class="row">
+            <div class="col-md-6 align-self-center">
+                <p>
+                    Nowdays the industry has shifted to "Component Systems" to solve the first problem that I mentioned
+                    above. Take for example Unity's Component System. You have a
+                    Gameobject to which you can add components as building blocks and then call "Update" on those
+                    components every frame. Now we solved the first issue since, we can
+                    just attach a "Vampire" and an "Orc" component and the GameObject will act accordingly. However we
+                    still haven't solved the second problem, we still are jumping in memory
+                    and calling "Update" on all these components.<br>
+                    If we look at the picture in the right which represents how a component system memory layout might look like
+                    we can see the problem more clearly. We are moving all around memory in one frame and wasting CPU cycles.
                 </p>
+            </div>
 
-                <p> 
-                    In order to solve the second problem we need to re-organise our memory layout so that the components that will be iterated regurarly are tightly packed toegether.
-                    For exmaple if we want to move all gameobjects we would iterate all the transforms and move them, however these transforms have to be grouped in memory toegether.
-                    And now when the CPU request one transform it will fetch a bunch of them (as much as it can fit in one cache line) and store them in cache for the next frame.Then next iteration when we need the other transform,they might already be stored in cache hence saving the CPU alot of time. 
-                    <br>Introducing <b>Enity-Component-System</b> approach, in this design,an entity is just an index to a group or collection of components. All the components are stored in tightly 
-                    packed arrays. Components themself are contain only data, they are also known as POD(Plain Old Data) structures and instead of components updating themself we have systems
-                    which iterate through all entites which have a specfied set of components and update their data.
-                    
-                </p>
-
+            <div class="col-md-6 align-self-center">
+                <img class="sidePicture" src="Assets/componentMemoryLayout.png" width="659" height="240"><br><br>
             </div>
 
         </div>
 
-        <pre style="background:#404040;color:#dedede;width: 100%"><span style="color:#6080ff">struct</span> <span
-                style="color:#f09040">Data</span>
-{
-  float a;
-};
-        </pre>
+        <div class="row">
+            <div class="col-md-6">
+                <p>
+                    In order to solve the second problem we need to re-organise our memory layout so that the components
+                    that will be iterated regurarly are tightly packed toegether.
+                    For exmaple if we want to move all gameobjects we would iterate all the transforms and move them,
+                    however these transforms have to be grouped in memory toegether.
+                    And now when the CPU request one transform it will fetch a bunch of them (as much as it can fit in
+                    one cache line) and store them in cache for the next frame.Then next iteration when we need the
+                    other transform,they might already be stored in cache hence saving the CPU alot of time.
+                    <br>Introducing <b>Enity-Component-System</b> approach, in this design,an entity is just an index to
+                    a group or collection of components. All the components are stored in tightly
+                    packed arrays. Components themself are contain only data, they are also known as POD(Plain Old Data)
+                    structures and instead of components updating themself we have systems
+                    which iterate through all entites which have a specfied set of components and update their data.
+                    For example the Rigidbody system will operate only on entities which have the Rigidbody and Transform component.
+                    If an entity has neither or just one of these components the system wont update their data.<br>
+                    Unity Engine is now also moving towards this architecture with their new DOTS api.<br>
+                </p>
+            </div>
+
+            <div class="col-md-6 align-self-center">
+                <img class="sidePicture" src="Assets/Dots1.png" width="500" height="250"><br><br>
+            <img class="sidePicture" src="Assets/Dots2.png" width="500" height="250">
+            </div>
+        </div>
+    </div>
+
+    <hr align="center">
+
+</section>
+
+<section>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-auto">
+                <h2 id="FeatherHeader">Feather</h2>
+                <p>
+                    In this section my own implementation of ECS architecture called Feather will be explained.
+                    First the overall Architecture will be shown and then speed tests as well as actual code snippets will be displayed,
+                    showcasing how it is like developing using Feather.<br>
+                    The full open sourced codebase for Feather as well as it's documentation can be found <a href="https://github.com/igli15/Feather">here</a>.
+                </p>
+                <h5>Architecture</h5>
+                <p>
+            </div>
+
+        </div>
 
     </div>
 
@@ -163,6 +230,13 @@
 
 </section>
 
+
+<pre style="background:#404040;color:#dedede;width: 100%"><span style="color:#6080ff">struct</span> <span
+        style="color:#f09040">Data</span>
+{
+  float a;
+};
+        </pre>
 
 <script src="../js/bootstrap.min.js"></script>
 

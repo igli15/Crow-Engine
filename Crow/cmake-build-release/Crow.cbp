@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/igli/Desktop/Crow/cmake-build-release"/>
+				<Option working_dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/igli/Desktop/Crow/cmake-build-release"/>
+				<Option working_dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/igli/Desktop/Crow/cmake-build-release"/>
+				<Option working_dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Crow">
-				<Option output="/Users/igli/Desktop/Crow/cmake-build-release/Crow" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/igli/Desktop/Crow/cmake-build-release"/>
+				<Option output="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/Crow" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -52,15 +52,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 Crow"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 Crow"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Crow/fast">
-				<Option output="/Users/igli/Desktop/Crow/cmake-build-release/Crow" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/igli/Desktop/Crow/cmake-build-release"/>
+				<Option output="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/Crow" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -73,89 +73,89 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 Crow/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 Crow/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/igli/Desktop/Crow/Debug/Debug.cpp">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Debug/Debug.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow/Debug/Debug.h">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Debug/Debug.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow/Feather/ComponentArray.cpp">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentArray.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow/Feather/ComponentArray.h">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentArray.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow/Feather/ComponentManager.cpp">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentManager.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow/Feather/ComponentManager.h">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentManager.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow/Feather/EntityManager.cpp">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Feather/EntityManager.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow/Feather/EntityManager.h">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Feather/EntityManager.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow/Feather/Feather.cpp">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Feather/Feather.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow/Feather/Feather.h">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Feather/Feather.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow/Feather/System.cpp">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Feather/System.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow/Feather/System.h">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Feather/System.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow/Feather/SystemManager.cpp">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Feather/SystemManager.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow/Feather/SystemManager.h">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Feather/SystemManager.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow/Feather/Types.h">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Feather/Types.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow/OOP Engine/Component.cpp">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Component.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow/OOP Engine/Component.h">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Component.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow/OOP Engine/Gameobject.cpp">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Gameobject.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow/OOP Engine/Gameobject.h">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Gameobject.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow/OOP Engine/OOPEngine.cpp">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/OOPEngine.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow/OOP Engine/OOPEngine.h">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/OOPEngine.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow/Tests/FeatherTest.h">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Tests/FeatherTest.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow/Tests/OOPEngineTest.h">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Tests/OOPEngineTest.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow/main.cpp">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/main.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow/CMakeLists.txt">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow/FindSFML.cmake">
+		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/FindSFML.cmake">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
