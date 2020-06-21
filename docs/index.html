@@ -35,17 +35,24 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">Introduction <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Goal <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">What is ECS? <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown active">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                    aria-haspopup="true" aria-expanded="false">
-                    Dropdown
+                    Feather
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#introductionHeader">Introduction</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#introductionHeader">Architecture</a>
+                    <a class="dropdown-item" href="#">Memory Layout</a>
+                    <a class="dropdown-item" href="#">Speed Test</a>
+                    <a class="dropdown-item" href="#">Workflow</a>
                 </div>
             </li>
         </ul>
@@ -161,8 +168,10 @@
                     just attach a "Vampire" and an "Orc" component and the GameObject will act accordingly. However we
                     still haven't solved the second problem, we still are jumping in memory
                     and calling "Update" on all these components.<br>
-                    If we look at the picture in the right which represents how a component system memory layout might look like
-                    we can see the problem more clearly. We are moving all around memory in one frame and wasting CPU cycles.
+                    If we look at the picture in the right which represents how a component system memory layout might
+                    look like
+                    we can see the problem more clearly. We are moving all around memory in one frame and wasting CPU
+                    cycles.
                 </p>
             </div>
 
@@ -187,7 +196,8 @@
                     packed arrays. Components themself are contain only data, they are also known as POD(Plain Old Data)
                     structures and instead of components updating themself we have systems
                     which iterate through all entites which have a specfied set of components and update their data.
-                    For example the Rigidbody system will operate only on entities which have the Rigidbody and Transform component.
+                    For example the Rigidbody system will operate only on entities which have the Rigidbody and
+                    Transform component.
                     If an entity has neither or just one of these components the system wont update their data.<br>
                     Unity Engine is now also moving towards this architecture with their new DOTS api.<br>
                 </p>
@@ -195,7 +205,7 @@
 
             <div class="col-md-6 align-self-center">
                 <img class="sidePicture" src="Assets/Dots1.png" width="500" height="250"><br><br>
-            <img class="sidePicture" src="Assets/Dots2.png" width="500" height="250">
+                <img class="sidePicture" src="Assets/Dots2.png" width="500" height="250">
             </div>
         </div>
     </div>
@@ -214,12 +224,63 @@
                 <h2 id="FeatherHeader">Feather</h2>
                 <p>
                     In this section my own implementation of ECS architecture called Feather will be explained.
-                    First the overall Architecture will be shown and then speed tests as well as actual code snippets will be displayed,
+                    First the overall Architecture will be shown and then speed tests as well as actual code snippets
+                    will be displayed,
                     showcasing how it is like developing using Feather.<br>
-                    The full open sourced codebase for Feather as well as it's documentation can be found <a href="https://github.com/igli15/Feather">here</a>.
+                    The full open sourced codebase for Feather as well as it's documentation can be found <a
+                        href="https://github.com/igli15/Feather">here</a>.
                 </p>
                 <h5>Architecture</h5>
                 <p>
+                    In Feather <b>Entities</b> are just an unsigned integers which are used as a indexes to a set of
+                    components.
+                    <b>Components</b> in Feather are just structs of data.
+                    <b>Systems</b> is where the functionality is implemented, the user can create their own systems and
+                    can iterate
+                    through the entities in the world. There are multiple ways of iteration which are shown later in
+                    this report.
+                </p>
+                <p>
+                    Except the main concepts like Entities,Components and Systems there are a few more "Classes" that
+                    the user needs to understand
+                    in order to use Feather:
+                <ul>
+                    <li><b>EntityRegistry</b>: Keeps track of all the entities in the world. It creates and destroys
+                        entities.
+                    </li>
+                    <li><b>ComponentRegistry</b>: Keeps track of all Component Sparse Sets. If the user needs access to
+                        a Component set of a certain type this registry is responsible for providing it.
+                    </li>
+                    <li><b>SystemRegistry</b>: Keeps track of all systems, allocates system memory and provides access
+                        to the users for all the registered systems.
+                    </li>
+                    <li><b>ComponentSparseSet</b>: Is a custom collection type created for the purpose of storing
+                        component data contiguous in memory. It allowes the users to create,get and destroy components.A
+                        more in depth explanation of this class will be shown in the <b>Memory Layout</b> Section.
+                    </li>
+                    <li><b>World</b>: Is the core class of Feather. It serves as a factory to all registries, that means
+                        that the user only needs to work with the world class and the world class with update the
+                        registries accordingly. For example, if the user destroys an entity via the world class, the
+                        world class will inform all the registries that the entity is destroyed and they will internally
+                        be updated correctly.<br>
+                        Examples on how to use the world class and Feather will be shown in the the <b>Workflow</b> section.
+                    </li>
+                    <li><b>EntityHandle</b>: This small class provides a workflow similar to unity for entities. It
+                        wraps the active world and an entity and instead of updating an entity with the world you update
+                        the EntityHandle and it will internally update the world.<br>
+                        Similar to the world class, more examples of how EntityHandle works will be shown in the <b>Workflow</b> section.
+                    </li>
+                </ul>
+                </p>
+                <img class=" FeatherUML justify-content-center" src="Assets/FeatherUML.png" width="1503" height="1194">
+
+
+                <h5>Memory Layout</h5>
+                <p> In this section my own implementation of ECS architecture called Feather will be explained.
+                    First the overall Architecture will be shown and then speed tests as well as actual code snippets
+                    will be displayed,
+                    showcasing how it is like developing using Feather.<br>
+                    The full open sourced codebase for Feather as well as it's documentation can be found</p>
             </div>
 
         </div>

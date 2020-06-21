@@ -32,8 +32,22 @@ iframe
     padding: 10px;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
 
 p,li
 {
     font-size: 14px;
+}
+
+li
+{
+    margin: 10px 0px;
+}
+
+.FeatherUML
+{
+    margin: 30px 0px;
 }
