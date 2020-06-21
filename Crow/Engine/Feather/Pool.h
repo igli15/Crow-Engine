@@ -13,12 +13,6 @@
 //It stores a max nr of elements and pools them. It holds a reference to the holes of the packed array and fills them when it can.
 //It will iterate at complexity O(activeCount + holes) and the get complexity is O(1).
 
-//just an interface
-class IPool
-{
-
-};
-
 //TODO this works but, maybe find a better wey then allocating 3 arrays
 template<typename T>
 class Pool

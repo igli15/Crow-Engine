@@ -26,12 +26,6 @@ public:
     ///Build is where all the systems and entities should be constructed.
     virtual void Build();
 
-    template<typename T>
-    void AllocateComponentArray()
-    {
-        m_componentRegistry->AllocateComponentSet<T>();
-    }
-
     ///Creates an entity and returns a entity handle.
     ///@return EntityHandle of the newly created entity.
     EntityHandle CreateEntity();
