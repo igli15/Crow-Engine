@@ -20620,6 +20620,7 @@ CMakeFiles/Crow.dir/main.cpp.o: ../Engine/Events/ComponentRemovedEvent.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Engine/Feather/ComponentRegistry.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Engine/Feather/ComponentSparseSet.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Engine/Feather/CustomTypeID.h
+CMakeFiles/Crow.dir/main.cpp.o: ../Engine/Feather/EntityHandle.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Engine/Feather/EntityRegistry.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Engine/Feather/IComponentSet.h
 CMakeFiles/Crow.dir/main.cpp.o: ../Engine/Feather/System.h
