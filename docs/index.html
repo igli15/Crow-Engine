@@ -34,22 +34,24 @@
     </a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Introduction <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Goal <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#">What is ECS? <span class="sr-only">(current)</span></a>
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="introDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Introduction
+                </a>
+                <div class="dropdown-menu" aria-labelledby="introDropdown">
+                    <a class="dropdown-item" href="#">Introduction</a>
+                    <a class="dropdown-item" href="#">Goal</a>
+                    <a class="dropdown-item" href="#">What is ECS?</a>
+                </div>
             </li>
             <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                <a class="nav-link dropdown-toggle" href="#" id="featherDropdown" role="button" data-toggle="dropdown"
                    aria-haspopup="true" aria-expanded="false">
                     Feather
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#introductionHeader">Architecture</a>
+                <div class="dropdown-menu" aria-labelledby="featherDropdown">
+                    <a class="dropdown-item" href="#">Architecture</a>
                     <a class="dropdown-item" href="#">Memory Layout</a>
                     <a class="dropdown-item" href="#">Speed Test</a>
                     <a class="dropdown-item" href="#">Workflow</a>
@@ -107,7 +109,7 @@
         <div class="row">
 
             <div class="col-md-auto">
-                <h2 id="Goal">Goal</h2>
+                <h5 id="Goal">Goal</h5>
                 <p>The main goal of this project was to research on Entity-Component-System architecture and answer the
                     question: <b>What benefits does ECS architecture bring to Game and Engine development?</b><br>
                     To answer the main question I had to research and answer the following questions:
@@ -135,7 +137,7 @@
         <div class="row">
 
             <div class="col-md-6">
-                <h2 id="What is ECS?">What is ECS?</h2>
+                <h5 id="What is ECS?">What is ECS?</h5>
                 <p> Tradidtionally games were used to be programmed in a object oriented desing (OOP) or inheritance
                     design. For example you would have a class
                     "Creature" that would inherit "Gameobject" then you would have "Human" and "Orc" inherting
@@ -211,6 +213,7 @@
     </div>
 
     <hr align="center">
+    <hr align="center">
 
 </section>
 
@@ -230,6 +233,8 @@
                     The full open sourced codebase for Feather as well as it's documentation can be found <a
                         href="https://github.com/igli15/Feather">here</a>.
                 </p>
+                <hr align="center">
+
                 <h5>Architecture</h5>
                 <p>
                     In Feather <b>Entities</b> are just an unsigned integers which are used to get the index in a set of
@@ -276,6 +281,7 @@
                 </p>
                 <img class=" FeatherUML justify-content-center" src="Assets/FeatherUML.png" width="1503" height="1194">
 
+                <hr align="center">
 
                 <h5>Memory Layout</h5>
                 <p>As mentioned before a key advantage of ecs is providing good memory layout.<br>
@@ -301,58 +307,151 @@
                 </p>
                 <p>
                     The reason why 3 arrays are needed is to answer the problem <b>What happens if a component is marked
-                    to be removed?</b> In order to see why this is a problem in the first place, lets look at the picture
+                    to be removed?</b> In order to see why this is a problem in the first place, lets look at the
+                    picture
                     below.<br>
                     The picture below represents a simplified visualisation of how the components are stored in memory.
-                    As said before the ComponentSparseSet contains 3 arrays and those arrays are displayed in a table format.
+                    As said before the ComponentSparseSet contains 3 arrays and those arrays are displayed in a table
+                    format.
                     Now the max size is set to 5 elements and it is empty.
 
-                    <img class=" ComponentLayout justify-content-center" src="Assets/componentLayout0.png" width="650" height="174">
+                    <img class=" ComponentLayout justify-content-center" src="Assets/componentLayout0.png" width="650"
+                         height="174">
 
                 </p>
 
                 <p>
-                    Now lets see what happens when we add the component "C1" to Entity "0"(as stated before entities are just unsigned numbers) to our set.<br>
+                    Now lets see what happens when we add the component "C1" to Entity "0"(as stated before entities are
+                    just unsigned numbers) to our set.<br>
                     It is added in the first available slot in the array in this case it is the first slot.<br>
                     In the entity array we add the Entity "0" to the first available slot too.
-                    Last in the index array we add the index at which the entity's component is stored in this case 0, and we store it at the 0 index since our Entity = 0.<br>
-                    Now we have mapped Entity->Index and Index->Entity.This is important when we destroy a component for now lets add some more components to the set.
-                    <img class=" ComponentLayout justify-content-center" src="Assets/componentLayout1.png" width="650" height="174">
+                    Last in the index array we add the index at which the entity's component is stored in this case 0,
+                    and we store it at the 0 index since our Entity = 0.<br>
+                    Now we have mapped Entity->Index and Index->Entity.This is important when we destroy a component for
+                    now lets add some more components to the set.
+                    <img class=" ComponentLayout justify-content-center" src="Assets/componentLayout1.png" width="650"
+                         height="174">
                 </p>
 
                 <p>
-                    Components "C2,C3,C4" are added to the Entity "1,2,3" respectively. And the arrays are updated as we did in the first case.<br>
+                    Components "C2,C3,C4" are added to the Entity "1,2,3" respectively. And the arrays are updated as we
+                    did in the first case.<br>
                     Lets see what happens when we remove a component from the set.
-                    <img class=" ComponentLayout justify-content-center" src="Assets/componentLayout2.png" width="650" height="174">
+                    <img class=" ComponentLayout justify-content-center" src="Assets/componentLayout2.png" width="650"
+                         height="174">
                 </p>
 
                 <p>
-                    So lets say we need to remove "C3" from the set. What happens is we swap "C3" with "C4" in the dense component array but now
-                    we also need to swap the Entity->Index and Index->Entity since next time we need to get "C4" the Entity needs to point to the updated index.
-                    In the Entity dense array we do the same we swap the entity to remove with the last entity and in the index sparse array we just update the entity index.<br>
-                    As we can see the index sparse array with have holes in it but that is ok since we never iterate through it, we only need it when we remove components and
+                    So lets say we need to remove "C3" from the set. What happens is we swap "C3" with "C4" in the dense
+                    component array but now
+                    we also need to swap the Entity->Index and Index->Entity since next time we need to get "C4" the
+                    Entity needs to point to the updated index.
+                    In the Entity dense array we do the same we swap the entity to remove with the last entity and in
+                    the index sparse array we just update the entity index.<br>
+                    As we can see the index sparse array with have holes in it but that is ok since we never iterate
+                    through it, we only need it when we remove components and
                     need to keep them packed in memory.<br>
-                    So lets say we need to get "C4", To find the location of "C4" we check what the value of it's entity is, in this case it's 3.
-                    We now check what the 3rd index in the Index Sparse Array is, and it is 2, meaning that the "C4" is located in the 2nd index of the dense array.
-                    <img class=" ComponentLayout justify-content-center" src="Assets/componentLayout3.png" width="650" height="174">
+                    So lets say we need to get "C4", To find the location of "C4" we check what the value of it's entity
+                    is, in this case it's 3.
+                    We now check what the 3rd index in the Index Sparse Array is, and it is 2, meaning that the "C4" is
+                    located in the 2nd index of the dense array.
+                    <img class=" ComponentLayout justify-content-center" src="Assets/componentLayout3.png" width="650"
+                         height="174">
                 </p>
 
                 <p>
                     Lets see what happens if we remove "C1" from the set.
-                    Again we swap the "C1" with "C4" and update "C4" index to point in the location where "C1" used to be.<br>
-                    And now we have a packed array which we can iterate through even when we add or remove components. The swapping cost
-                    is not that high since is just 2 C-style array look-ups and we only do it when we remove components which is not that frequent.
-                    However the benefits are big since the data that is active and needed is always contiguous in memory.
+                    Again we swap the "C1" with "C4" and update "C4" index to point in the location where "C1" used to
+                    be.<br>
+                    And now we have a packed array which we can iterate through even when we add or remove components.
+                    The swapping cost
+                    is not that high since is just 2 C-style array look-ups and we only do it when we remove components
+                    which is not that frequent.
+                    However the benefits are big since the data that is active and needed is always contiguous in
+                    memory.
 
-                    <img class=" ComponentLayout justify-content-center" src="Assets/componentLayout4.png" width="650" height="174">
+                    <img class=" ComponentLayout justify-content-center" src="Assets/componentLayout4.png" width="650"
+                         height="174">
                 </p>
 
+                <hr align="center">
+
+                <h5>Speed Test</h5>
+
+                <div class="row">
+                    <div class="col-md-5">
+
+                        <h6>Feather Vs OOP</h6>
+
+                        <p>
+                            First I tested Feather Vs Object-Oriented approach. I created 2 programs which involved 2
+                            types of entities, "Orcs" and "Nobles".
+                            In the OOP "Orcs" and "Nobles" are branched as shown in <b>Figure 1</b> and in ECS/Feather
+                            they are just 2 simple components. The behaviour is very trivial,
+                            in this case the iteration speed is the focus of the test.<br>
+                            I tested 3 different cases one with 1000 "Orcs" and "Nobles", one with 10,000 and one with
+                            100,000. The program is ran for 1000 frames and in order to get a consistent result the app
+                            is ran 100 times.<br>
+                            The results are displayed graphically in the right. The X-axis show the number of time the program ran and
+                            the Y-axis show the time in milliseconds it took for 1000 frames.<br>
+                            As we can see in all three cases Feather Performs much better then OOP when we iterate through components/behaviours.
+                            There are two main reasons why OOP performs worst than Feather.<br>
+                            First one is the data in Feather is contiguous in memory,
+                            thus the CPU cache saves cycles by storing the data we might need the next frame.<br>
+                            The second reason is concept known in OOP as <b>Double Dispatching</b> which in this case is a call to the virtual "Update" function. Double-Dispatching
+                            requires a V-table lookup and that is also located somewhere scattered in memory thus waisting CPU cycles.
+                        </p>
+                    </div>
+
+                    <div class="col-md-7">
+                        <p>
+                            <img class=" ComponentLayout" src="Assets/OOPVSECS.png" width="672" height="668">
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-5">
+
+                        <h6>Feather Vs Component System (Unity)</h6>
+                        <br>
+
+                        <p>
+                            The second test I performed was against Unity and it's current component system. For this test build the
+                            exact same steering system and flocking behaviour as I did for the final game in C++. The unity program only
+                            spawns a bunch of spheres and gives them a target to seek while they try to keep distance from each other using basic
+                            O(n2) flocking.<br>
+                            As we can see from the video on the right, after 300-400 spheres the frames drop under 30 FPS and at 500 spheres the framerate is very low. The current spheres have
+                            no collider attached to them and the most expensive calculation is done by the Flocking Behaviour component.<br>
+                        </p>
+
+                        <p>
+                            Now lets see how the same system performs in Feather and in my own custom C++ Game Engine (<b>Crow</b>). As we can see in the second video
+                            the performance difference is noticeable, we can have way more units 3-4x then Unity while keeping a steady high framerate.
+                            After 1200 the FPS drops exponentially since the flocking is done O(n2). The Feather performs better while also having other
+                            gameplay systems running in addition to flocking system.
+                        </p>
+
+                        <p>
+                            There are many things that could be done to even get more units on the screen. For example the flocking and collision instead of being performed
+                            in O(n2) they could be performed in logarithmic complexity by introducing spacial partitioning algorithms. There are also rendering optimisation that
+                            could be implemented such as batching for all the meshes. However the goal was to test the same systems running in an equal environment.
+                        </p>
+                    </div>
+
+                    <div class="col-md-7">
+
+                        <video width="800" height="400" autoplay loop id="video-1" muted > <source src="Assets/unityTest.mp4" type="video/mp4"> </video>
+                        <video width="800" height="400" autoplay loop id="video-2" muted > <source src="Assets/featherTest.mp4" type="video/mp4"> </video>
+                    </div>
+                </div>
             </div>
 
         </div>
 
     </div>
 
+    <hr align="center">
     <hr align="center">
 
 </section>
