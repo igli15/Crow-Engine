@@ -232,7 +232,7 @@
                 </p>
                 <h5>Architecture</h5>
                 <p>
-                    In Feather <b>Entities</b> are just an unsigned integers which are used as a indexes to a set of
+                    In Feather <b>Entities</b> are just an unsigned integers which are used to get the index in a set of
                     components.
                     <b>Components</b> in Feather are just structs of data.
                     <b>Systems</b> is where the functionality is implemented, the user can create their own systems and
@@ -255,7 +255,7 @@
                         to the users for all the registered systems.
                     </li>
                     <li><b>ComponentSparseSet</b>: Is a custom collection type created for the purpose of storing
-                        component data contiguous in memory. It allowes the users to create,get and destroy components.A
+                        component data contiguous in memory. It allows the users to create,get and destroy components.A
                         more in depth explanation of this class will be shown in the <b>Memory Layout</b> Section.
                     </li>
                     <li><b>World</b>: Is the core class of Feather. It serves as a factory to all registries, that means
@@ -263,12 +263,14 @@
                         registries accordingly. For example, if the user destroys an entity via the world class, the
                         world class will inform all the registries that the entity is destroyed and they will internally
                         be updated correctly.<br>
-                        Examples on how to use the world class and Feather will be shown in the the <b>Workflow</b> section.
+                        Examples on how to use the world class and Feather will be shown in the the <b>Workflow</b>
+                        section.
                     </li>
                     <li><b>EntityHandle</b>: This small class provides a workflow similar to unity for entities. It
                         wraps the active world and an entity and instead of updating an entity with the world you update
                         the EntityHandle and it will internally update the world.<br>
-                        Similar to the world class, more examples of how EntityHandle works will be shown in the <b>Workflow</b> section.
+                        Similar to the world class, more examples of how EntityHandle works will be shown in the <b>Workflow</b>
+                        section.
                     </li>
                 </ul>
                 </p>
@@ -276,11 +278,75 @@
 
 
                 <h5>Memory Layout</h5>
-                <p> In this section my own implementation of ECS architecture called Feather will be explained.
-                    First the overall Architecture will be shown and then speed tests as well as actual code snippets
-                    will be displayed,
-                    showcasing how it is like developing using Feather.<br>
-                    The full open sourced codebase for Feather as well as it's documentation can be found</p>
+                <p>As mentioned before a key advantage of ecs is providing good memory layout.<br>
+                    All memory that feather uses is allocated in the beginning of the application.There is no runtime
+                    heap allocations done by Feather. The memory is partitioned correctly and marked as valid or
+                    invalid based on users input. When you "destroy" a component for example, the component is moved and
+                    it wont be updated, however it wont be deleted from memory until the user explicitly needs the data
+                    to be deleted.
+                    (Usually done in the end of the application's lifetime)<br>
+                    Components in feather are stored in a custom collection called <b>ComponentSparseSet</b>.
+                    In Feather a ComponentSparseSet is just 3 C style arrays:
+                <ul>
+                    <li>Component Dense array: In this array all the components are stored contiguously(one after
+                        another).
+                    </li>
+                    <li>Entity Dense array: In this array all the entities which contain the component are stored
+                        contiguously(one after another)
+                    </li>
+                    <li>Index Sparse array: The index array is sparse meaning its data is not contiguous. Instead the
+                        indexes of which the entity
+                    </li>
+                </ul>
+                </p>
+                <p>
+                    The reason why 3 arrays are needed is to answer the problem <b>What happens if a component is marked
+                    to be removed?</b> In order to see why this is a problem in the first place, lets look at the picture
+                    below.<br>
+                    The picture below represents a simplified visualisation of how the components are stored in memory.
+                    As said before the ComponentSparseSet contains 3 arrays and those arrays are displayed in a table format.
+                    Now the max size is set to 5 elements and it is empty.
+
+                    <img class=" ComponentLayout justify-content-center" src="Assets/componentLayout0.png" width="650" height="174">
+
+                </p>
+
+                <p>
+                    Now lets see what happens when we add the component "C1" to Entity "0"(as stated before entities are just unsigned numbers) to our set.<br>
+                    It is added in the first available slot in the array in this case it is the first slot.<br>
+                    In the entity array we add the Entity "0" to the first available slot too.
+                    Last in the index array we add the index at which the entity's component is stored in this case 0, and we store it at the 0 index since our Entity = 0.<br>
+                    Now we have mapped Entity->Index and Index->Entity.This is important when we destroy a component for now lets add some more components to the set.
+                    <img class=" ComponentLayout justify-content-center" src="Assets/componentLayout1.png" width="650" height="174">
+                </p>
+
+                <p>
+                    Components "C2,C3,C4" are added to the Entity "1,2,3" respectively. And the arrays are updated as we did in the first case.<br>
+                    Lets see what happens when we remove a component from the set.
+                    <img class=" ComponentLayout justify-content-center" src="Assets/componentLayout2.png" width="650" height="174">
+                </p>
+
+                <p>
+                    So lets say we need to remove "C3" from the set. What happens is we swap "C3" with "C4" in the dense component array but now
+                    we also need to swap the Entity->Index and Index->Entity since next time we need to get "C4" the Entity needs to point to the updated index.
+                    In the Entity dense array we do the same we swap the entity to remove with the last entity and in the index sparse array we just update the entity index.<br>
+                    As we can see the index sparse array with have holes in it but that is ok since we never iterate through it, we only need it when we remove components and
+                    need to keep them packed in memory.<br>
+                    So lets say we need to get "C4", To find the location of "C4" we check what the value of it's entity is, in this case it's 3.
+                    We now check what the 3rd index in the Index Sparse Array is, and it is 2, meaning that the "C4" is located in the 2nd index of the dense array.
+                    <img class=" ComponentLayout justify-content-center" src="Assets/componentLayout3.png" width="650" height="174">
+                </p>
+
+                <p>
+                    Lets see what happens if we remove "C1" from the set.
+                    Again we swap the "C1" with "C4" and update "C4" index to point in the location where "C1" used to be.<br>
+                    And now we have a packed array which we can iterate through even when we add or remove components. The swapping cost
+                    is not that high since is just 2 C-style array look-ups and we only do it when we remove components which is not that frequent.
+                    However the benefits are big since the data that is active and needed is always contiguous in memory.
+
+                    <img class=" ComponentLayout justify-content-center" src="Assets/componentLayout4.png" width="650" height="174">
+                </p>
+
             </div>
 
         </div>
