@@ -279,7 +279,7 @@
                     </li>
                 </ul>
                 </p>
-                <img class=" FeatherUML justify-content-center" src="Assets/FeatherUML.png" width="1503" height="1194">
+                <img class=" FeatherUML FullPicture justify-content-center" src="Assets/FeatherUML.png" width="1503" height="1194">
 
                 <hr align="center">
 
@@ -315,7 +315,7 @@
                     format.
                     Now the max size is set to 5 elements and it is empty.
 
-                    <img class=" ComponentLayout justify-content-center" src="Assets/componentLayout0.png" width="650"
+                    <img class=" FullPicture justify-content-center" src="Assets/componentLayout0.png" width="650"
                          height="174">
 
                 </p>
@@ -329,7 +329,7 @@
                     and we store it at the 0 index since our Entity = 0.<br>
                     Now we have mapped Entity->Index and Index->Entity.This is important when we destroy a component for
                     now lets add some more components to the set.
-                    <img class=" ComponentLayout justify-content-center" src="Assets/componentLayout1.png" width="650"
+                    <img class=" FullPicture justify-content-center" src="Assets/componentLayout1.png" width="650"
                          height="174">
                 </p>
 
@@ -337,7 +337,7 @@
                     Components "C2,C3,C4" are added to the Entity "1,2,3" respectively. And the arrays are updated as we
                     did in the first case.<br>
                     Lets see what happens when we remove a component from the set.
-                    <img class=" ComponentLayout justify-content-center" src="Assets/componentLayout2.png" width="650"
+                    <img class=" FullPicture justify-content-center" src="Assets/componentLayout2.png" width="650"
                          height="174">
                 </p>
 
@@ -355,7 +355,7 @@
                     is, in this case it's 3.
                     We now check what the 3rd index in the Index Sparse Array is, and it is 2, meaning that the "C4" is
                     located in the 2nd index of the dense array.
-                    <img class=" ComponentLayout justify-content-center" src="Assets/componentLayout3.png" width="650"
+                    <img class=" FullPicture justify-content-center" src="Assets/componentLayout3.png" width="650"
                          height="174">
                 </p>
 
@@ -370,7 +370,7 @@
                     However the benefits are big since the data that is active and needed is always contiguous in
                     memory.
 
-                    <img class=" ComponentLayout justify-content-center" src="Assets/componentLayout4.png" width="650"
+                    <img class=" FullPicture justify-content-center" src="Assets/componentLayout4.png" width="650"
                          height="174">
                 </p>
 
@@ -405,7 +405,7 @@
 
                     <div class="col-md-7">
                         <p>
-                            <img class=" ComponentLayout" src="Assets/OOPVSECS.png" width="672" height="668">
+                            <img class=" FullPicture" src="Assets/OOPVSECS.png" width="672" height="668">
                         </p>
                     </div>
                 </div>
@@ -454,6 +454,32 @@
 
             <h5>Workflow</h5>
 
+            <p>
+                In this section, some examples of how to set up and use Feather will be shown. I will showcase how to create Entities,Components,Systems
+                and how to iterate through the components and create functionality.<br>
+                First lets have a look on how to set up Feather. In order for Feather to function we need to create the 3 main registries, the Entity,Component and system registry.
+                After we have created them we need to create a world which will act as an context and it will communicate with all the registries. After the world has
+                been created we need to initialize it by calling the "Init" function and passing the registries, this way the world is ready to be used and knows which memory it has to operate on.
+                <br><br>
+                <img class="center" src="Assets/codeSnippets/codeSnippet1.png" width="669" height="173">
+
+            </p>
+
+
+            <p>
+                Now lets say we want to create a gravity system where we add gravity to a bunch of entities. We can create a simple position and gravity
+                Components as shown in the bottom right picture.
+            </p>
+
+            <div class="row">
+                <div class="col-md-auto">
+                <img class="center" src="Assets/codeSnippets/Component snippet.png" width="304" height="245">
+                </div>
+                <div class="col-md-auto">
+                <img class="center" src="Assets/codeSnippets/systemSnippet.png" width="756" height="346">
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -462,13 +488,6 @@
 
 </section>
 
-
-<pre style="background:#404040;color:#dedede;width: 100%"><span style="color:#6080ff">struct</span> <span
-        style="color:#f09040">Data</span>
-{
-  float a;
-};
-        </pre>
 
 <script src="../js/bootstrap.min.js"></script>
 
