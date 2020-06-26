@@ -24,10 +24,12 @@ void DebugTextSystem::Update(float dt)
     auto entities = world->EntitiesWith<DebugTextComponent>();
     auto unitEntities = world->EntitiesWith<UnitComponent>();
 
-    for (int i = 0; i < entities.size(); ++i)
-    {
-        DebugTextComponent& debugTextComponent = world->GetComponent<DebugTextComponent>(entities[i]);
-        debugTextComponent.unitCountText->textString =  "UnitCount :" + std::to_string(unitEntities.size());
+    for (int i = 0; i < entities.size(); ++i) {
+        DebugTextComponent &debugTextComponent = world->GetComponent<DebugTextComponent>(entities[i]);
+        if (debugTextComponent.unitCountText != nullptr)
+        {
+         debugTextComponent.unitCountText->textString = "UnitCount :" + std::to_string(unitEntities.size());
+        }
         debugTextComponent.fpsText->textString =  "FPS :" + std::to_string(m_game->timeData.FPS);
     }
 }

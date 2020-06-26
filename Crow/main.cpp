@@ -52,8 +52,9 @@ class GravitySystem : public System
 
 int main()
 {
-    Debug::Init();
+    //Debug::Init();
 
+    /*
     ComponentRegistry* componentRegistry = new ComponentRegistry();
     SystemRegistry* systemRegistry = new SystemRegistry();
     EntityRegistry* entityRegistry = new EntityRegistry();
@@ -78,11 +79,10 @@ int main()
 
 
     world->UpdateAllSystems(0.01f);
-
+*/
 
     //Debug::Log("Init Crow");
 
-    /*
     Debug::Init();
 
     MyGame game;
@@ -91,7 +91,6 @@ int main()
     game.AllocateMemory();
     game.InitWorld();
     game.Run();
-*/
     return 0;
 }
 

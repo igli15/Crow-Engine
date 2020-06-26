@@ -19007,7 +19007,12 @@ CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Rendering/
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Rendering/Texture.h
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Rendering/Window.h
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Systems/MeshRendererSystem.h
+CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Systems/TextRenderingSystem.h
+CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Systems/TransformHierarchySystem.h
+CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Engine/Utils/Random.h
+CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Game/Components/DebugTextComponent.h
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Game/Components/RotateComponent.h
+CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Game/Systems/DebugTextSystem.h
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../Game/Systems/RotateSystem.h
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../SandBox/Worlds/RotatingGunsWorld.cpp
 CMakeFiles/Crow.dir/SandBox/Worlds/RotatingGunsWorld.cpp.o: ../SandBox/Worlds/RotatingGunsWorld.h

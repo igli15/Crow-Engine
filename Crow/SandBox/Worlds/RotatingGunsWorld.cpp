@@ -21,6 +21,11 @@
 #include "../../Engine/Rendering/Materials/ColorMaterial.h"
 #include "../../Engine/Components/SpriteInfo.h"
 #include "../../Engine/Rendering/Materials/UnlitMaterial.h"
+#include "../../Engine/Systems/TextRenderingSystem.h"
+#include "../../Engine/Systems/TransformHierarchySystem.h"
+#include "../../Engine/Utils/Random.h"
+#include "../../Game/Systems/DebugTextSystem.h"
+#include "../../Game/Components/DebugTextComponent.h"
 
 void RotatingGunsWorld::Build()
 {
@@ -36,6 +41,11 @@ void RotatingGunsWorld::Build()
 
     RegisterSystem<RotateSystem>();
     SetSystemSignature<RotateSystem,Transform,RotateComponent>();
+    RegisterSystem<MeshRendererSystem>();
+    RegisterSystem<TransformHierarchySystem>();
+    RegisterSystem<TextRenderingSystem>();
+    SetSystemSignature<MeshRendererSystem,Transform,MeshInfo>();
+    RegisterSystem<DebugTextSystem>();
 
     //ColorMaterial* mat = new ColorMaterial();
     UnlitMaterial* mat = Game::Instance()->resourceManager->GetMaterial<UnlitMaterial>("whiteUnlitMat");
@@ -60,15 +70,18 @@ void RotatingGunsWorld::Build()
             MeshInfo gunMeshInfo{gunModel,mat};
             mat->mainColor = glm::vec3(0.8f,0.8f,0.8f);
             gunEntity.AddComponent(gunMeshInfo);
-            gunEntity.AddComponent(RotateComponent{glm::vec3(0,1,0),5});
+            gunEntity.AddComponent(RotateComponent{glm::vec3(0,1,0),Random::RandomRange(400.0f,500.0f)});
             //gunEntity.AddComponent(SphereCollider{1});
         }
     }
 
+
     EntityHandle textEntity = CreateEntity();
     Transform* textTransform = textEntity.AddComponent(Transform{});
-    textTransform->SetLocalPosition(glm::vec3(0,0,0));
-    textEntity.AddComponent(Text{"Hello Text",glm::vec3(1,0,0),1,Game::Instance()->resourceManager->GetFont("roboto")});
+    textTransform->SetLocalPosition(glm::vec3(Game::Instance()->screenData.screenWidth - 200,Game::Instance()->screenData.screenHeight - 50,0));
+    Text* fpsText =  textEntity.AddComponent(Text{"FPS:",glm::vec3(1),0.5f,Game::Instance()->resourceManager->GetFont("roboto")});
+
+    textEntity.AddComponent(DebugTextComponent{fpsText,nullptr});
 
     EntityHandle lightEntity = CreateEntity();
     auto dirLightTransform = lightEntity.AddComponent(Transform{});

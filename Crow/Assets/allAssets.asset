@@ -33,7 +33,6 @@
 #texture youLose : YouLose.png;
 #texture youWin : YouWin.png;
 
-#model dragon : dragon.obj;
 #model ghost : ghost1.obj;
 #model golem : Golem.fbx;
 #model canon : canon.fbx;
