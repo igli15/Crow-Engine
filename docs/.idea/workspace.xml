@@ -4,8 +4,6 @@
     <list default="true" id="3d6afba7-85da-4eec-907e-9f92eae1a565" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../Crow/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Crow/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Unity 10k rotating meshes.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/crow ecs 10k rotating meshes.mp4" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -22,21 +20,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="649">
-              <caret line="747" column="35" selection-start-line="747" selection-start-column="35" selection-end-line="747" selection-end-column="35" />
+            <state relative-caret-position="694">
+              <caret line="757" column="33" selection-start-line="757" selection-start-column="33" selection-end-line="757" selection-end-column="33" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#4;n#div#0;n#section#4;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/custom.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1109">
-              <caret line="56" column="14" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -80,6 +69,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -96,7 +86,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -146,13 +135,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49171000" />
+    <option name="totallyTimeSpent" value="49856000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.18430753" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18430753" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -194,8 +183,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="649">
-          <caret line="747" column="35" selection-start-line="747" selection-start-column="35" selection-end-line="747" selection-end-column="35" />
+        <state relative-caret-position="694">
+          <caret line="757" column="33" selection-start-line="757" selection-start-column="33" selection-end-line="757" selection-end-column="33" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#4;n#div#0;n#section#4;n#body#0;n#html#0;n#!!top" expanded="true" />
