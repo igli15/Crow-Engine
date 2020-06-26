@@ -13,8 +13,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf22dce6-4d69-43d0-a044-a31c5cbccc70" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../docs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/Assets/Unity 10k rotating meshes.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/Assets/crow ecs 10k rotating meshes.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +26,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Release" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>

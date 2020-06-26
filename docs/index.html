@@ -631,14 +631,19 @@
         <div class="row">
             <h2>Crow Engine</h2>
             <p>
-                As mentioned above in this report,The goal is to research the question <b>What benefits does ECS architecture bring to Game and Engine development?</b>
-                In this section the focus will be <b>What features does the Crow Engine offer and how were they build using Feather(ECS)?</b><br>
-                Crow engine provides the basics feature a game engine needs to get the user up and running. It has a Renderer and Material workflow, window and input API,
-                Game Loop, ResourceManager for loading and maintaining assets, and support for using Unity as an editor tool, however only in this section only the
-                <b>Renderer</b> and <b>Unity as editor</b> will be explored since this is where the ECS architecture was needed to be used the most.
+                As mentioned above in this report,The goal is to research the question <b>What benefits does ECS
+                architecture bring to Game and Engine development?</b>
+                In this section the focus will be <b>What features does the Crow Engine offer and how were they build
+                using Feather(ECS)?</b><br>
+                Crow engine provides the basics feature a game engine needs to get the user up and running. It has a
+                Renderer and Material workflow, window and input API,
+                Game Loop, ResourceManager for loading and maintaining assets, and support for using Unity as an editor
+                tool, however only in this section only the
+                <b>Renderer</b> and <b>Unity as editor</b> will be explored since this is where the ECS architecture was
+                needed to be used the most.
             </p>
 
-    </div>
+        </div>
 
         <hr align="center">
 
@@ -647,22 +652,30 @@
             <h5>The Renderer</h5>
 
 
-
             <p>
-                Since one of the core systems of every game engine is it's renderer, naturally the question of how your architecture will support your renderer rises.
+                Since one of the core systems of every game engine is it's renderer, naturally the question of how your
+                architecture will support your renderer rises.
                 In this case <b>How to build an ECS renderer and what are it's benefits?</b><br>
-                One of the main problems with an ECS renderer is fitting your drawable objects into cache. Meshes and materials can be big in terms of byte size and might not fit inside
-                a cache line so in order to benefit from data-oriented architecture we need to find a way fit as much as we can and what we need in a cache line.<br>
-                How the Crow Engine approaches the problem is by splitting the data. So in the picture below there is a <b>Meshinfo</b> component set and instead of holding
-                a reference to both a material and the mesh, it holds a pointer to a material array and a mesh array. This way our <b>MeshInfo</b> component is small
-                in size (it only has 2 pointers) but also it points to packed arrays of meshes and materials. The same thing is done for materials and shaders, since
+                One of the main problems with an ECS renderer is fitting your drawable objects into cache. Meshes and
+                materials can be big in terms of byte size and might not fit inside
+                a cache line so in order to benefit from data-oriented architecture we need to find a way fit as much as
+                we can and what we need in a cache line.<br>
+                How the Crow Engine approaches the problem is by splitting the data. So in the picture below there is a
+                <b>Meshinfo</b> component set and instead of holding
+                a reference to both a material and the mesh, it holds a pointer to a material array and a mesh array.
+                This way our <b>MeshInfo</b> component is small
+                in size (it only has 2 pointers) but also it points to packed arrays of meshes and materials. The same
+                thing is done for materials and shaders, since
                 multiple materials can use the same shader, a pointer to the shader is stored in the material.<br>
 
-                By doing rendering in ECS style we can sort the scene easily. The Crow Engine supports instanced rendering and how that works is When a shader is buffered to the GPU,
-                all the materials with that shader are buffered and in the end the model using that material with all the transformation matrices are buffered. This way we save a lot of the draw calls the
+                By doing rendering in ECS style we can sort the scene easily. The Crow Engine supports instanced
+                rendering and how that works is When a shader is buffered to the GPU,
+                all the materials with that shader are buffered and in the end the model using that material with all
+                the transformation matrices are buffered. This way we save a lot of the draw calls the
                 GPU would have to do otherwise.<br>
 
-                Another benefit of this approach is that if we were doing something to all the materials we would not need to touch the mesh part of the memory, instead we just
+                Another benefit of this approach is that if we were doing something to all the materials we would not
+                need to touch the mesh part of the memory, instead we just
                 put all the materials we need in cache.<br><br>
 
 
@@ -674,25 +687,70 @@
         <div class="row">
 
             <div class="col-md-5">
-            <h6>Renderer Performance Test</h6>
+                <h6>Renderer Performance Test</h6>
 
-            <p>
-                Above the memory layout and design of the Crow Engine is shown, now the results and the performance benefits that ECS brings will be shown.
-                The test performed is 10,000 meshes which have a "Rotate" component which rotates them every frame in order to simulate dynamic mesh drawing.<br>
-                In the first video is the Unity engine test. I applied an unlit shader instead of the PBR default shader to the mesh in order to have the same
-                test environment as the Crow Engine. As shown in the video 10,000 meshes rotating in unity lead to about 7-8 FPS.<br>
-                The second video showcases the Crow Engine render, performing the exact same test as Unity.
-
-            </p>
+                <p>
+                    In order to test the speed of the ECS renderer, the same rendering application was created both in
+                    Unity and Crow Engine. The application is
+                    10,000 meshes rotating at a random speed. For the test to be fair i attached an unlit material to
+                    the meshes in both engines so the lighting would
+                    not affect any of the performance.<br><br>
+                    The top video on the right is the Unity engine result. In unity the app performs around 6-8 FPS
+                    while as it is shown in the bottom right video
+                    the exact same application in the Crow Engine performs in a constant 16-17 FPS.<br><br>
+                    The main reason why the ECS renderer performs better in this situation is because of how fast the
+                    cpu is able to iterate and work on contiguous memory. As shown above
+                    All the Meshes,Materials and Shaders are stored packed together in memory.<br><br>
+                    The Crow Engine renderer is not a better renderer then Unity's Renderer, this test is only
+                    showcasing how the data-oriented architecture is more efficient.
+                    There are many improvement that could be done here like <b>Batching</b> and <b>Multi-threaded
+                    Rendering</b> but these were not the scope of the project and did not
+                    fit into the the main goal.<br><br>
+                    Another reason we are able to perform better is not only because of the way material,shaders and
+                    meshes(in this case) are stored in memory but also because they are sorted
+                    at runtime in order to have as little shader swaps as possible. This way the instance rendering is
+                    implemented and saves the GPU draw calls but also the GPU does not have
+                    to swap shaders as often, which is a fairly expensive opertation.
+                </p>
             </div>
             <div class="col-md-7">
 
-                <video width="800" height="400" autoplay loop id="video-3" muted>
-                    <source src="Assets/Unity%2010k%20rotating%20meshes.mp4" type="video/mp4">
+                <video width="900" height="500" autoplay loop id="video-3" muted>
+                    <source src="Assets/Unity10kMeshes.mp4" type="video/mp4">
                 </video>
-                <video width="800" height="400" autoplay loop id="video-4" muted>
-                    <source src="Assets/crow%20ecs%2010k%20rotating%20meshes.mp4" type="video/mp4">
+                <video width="900" height="500" autoplay loop id="video-4" muted>
+                    <source src="Assets/Crow10kMeshes.mp4" type="video/mp4">
                 </video>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <h6>Rendering Showcase</h6>
+
+            <p>
+                In this part, some of the shaders and materials build with the Crow Renderer will be shown. These materials and shaders were used in the final <b>Game</b>.
+            </p>
+
+        </div>
+
+        <div class="row" style="margin-top: -100px">
+
+            <div class="col-md-auto">
+
+                <video width="500" height="400" autoplay loop id="video-5" muted>
+                    <source src="Assets/BlingLightShowcase.mp4" type="video/mp4">
+                </video>
+
+            </div>
+
+            <div class="col-md-auto">
+
+                <video width="500" height="400" autoplay loop id="video-6" muted>
+                    <source src="Assets/TranslucentShowcase.mp4" type="video/mp4">
+                </video >
+
             </div>
 
         </div>
