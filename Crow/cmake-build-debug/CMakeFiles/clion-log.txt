@@ -1,10 +1,7 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/Users/igli/Desktop/Crow Engine/Crow"
-<<<<<<< HEAD
-=======
 -- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
 -- Found asset importer library: /usr/local/lib/libassimp.dylib
 -- Found SFML .. in /usr/local/include
->>>>>>> v1.0
 -- Found SFML .. in /usr/local/include
 -- Configuring done
 -- Generating done

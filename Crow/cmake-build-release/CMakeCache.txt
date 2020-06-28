@@ -221,13 +221,6 @@ CMAKE_STRIP:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/Xcode
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
-<<<<<<< HEAD
-//Value Computed by CMake
-Crow_BINARY_DIR:STATIC=/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release
-
-//Value Computed by CMake
-Crow_SOURCE_DIR:STATIC=/Users/igli/Desktop/Crow Engine/Crow
-=======
 //Path to a library.
 COCOA_LIBRARY:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework
 
@@ -236,7 +229,6 @@ COREVID_LIBRARY:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/Ma
 
 //Value Computed by CMake
 Crow_BINARY_DIR:STATIC=/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release
->>>>>>> v1.0
 
 //Value Computed by CMake
 Crow_SOURCE_DIR:STATIC=/Users/igli/Desktop/Crow Engine/Crow

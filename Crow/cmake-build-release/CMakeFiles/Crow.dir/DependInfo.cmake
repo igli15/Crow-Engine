@@ -4,18 +4,6 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-<<<<<<< HEAD
-  "/Users/igli/Desktop/Crow Engine/Crow/Debug/Debug.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Debug/Debug.cpp.o"
-  "/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentArray.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Feather/ComponentArray.cpp.o"
-  "/Users/igli/Desktop/Crow Engine/Crow/Feather/ComponentManager.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Feather/ComponentManager.cpp.o"
-  "/Users/igli/Desktop/Crow Engine/Crow/Feather/EntityManager.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Feather/EntityManager.cpp.o"
-  "/Users/igli/Desktop/Crow Engine/Crow/Feather/Feather.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Feather/Feather.cpp.o"
-  "/Users/igli/Desktop/Crow Engine/Crow/Feather/System.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Feather/System.cpp.o"
-  "/Users/igli/Desktop/Crow Engine/Crow/Feather/SystemManager.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Feather/SystemManager.cpp.o"
-  "/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Component.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/OOP_Engine/Component.cpp.o"
-  "/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Gameobject.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/OOP_Engine/Gameobject.cpp.o"
-  "/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/OOPEngine.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/OOP_Engine/OOPEngine.cpp.o"
-=======
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Components/Camera.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Rigidbody.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Components/Rigidbody.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/Engine/Components/Transform.cpp.o"
@@ -93,7 +81,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/SpriteRenderingWorld.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/TranslucentMaterialTestWorld.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o"
   "/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/XmlTestWorld.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp.o"
->>>>>>> v1.0
   "/Users/igli/Desktop/Crow Engine/Crow/main.cpp" "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-release/CMakeFiles/Crow.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
