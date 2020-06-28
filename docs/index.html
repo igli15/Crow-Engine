@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,805 +15,1014 @@
     <link rel="stylesheet" href="js/bootstrap.js">
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
     <title>Feather</title>
 
 </head>
+
 <body>
 
-<nav class="navbar navbar-dark bg-dark navbar-expand-sm sticky-top">
-    <a class="navbar-brand" href="#">
-        <img src="Assets/crow.png" width="60" height="48" alt="" class="d-inline-flex align-items-center">
-    </a>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" href="#" id="introDropdown" role="button" data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">
-                    Introduction
-                </a>
-                <div class="dropdown-menu" aria-labelledby="introDropdown">
-                    <a class="dropdown-item" href="#">Introduction</a>
-                    <a class="dropdown-item" href="#">Goal</a>
-                    <a class="dropdown-item" href="#">What is ECS?</a>
-                </div>
-            </li>
-            <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" href="#" id="featherDropdown" role="button" data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">
-                    Feather
-                </a>
-                <div class="dropdown-menu" aria-labelledby="featherDropdown">
-                    <a class="dropdown-item" href="#">Architecture</a>
-                    <a class="dropdown-item" href="#">Memory Layout</a>
-                    <a class="dropdown-item" href="#">Speed Test</a>
-                    <a class="dropdown-item" href="#">Workflow</a>
-                </div>
-            </li>
-            <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" href="#" id="crowDropdown" role="button" data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">
-                    Crow Engine
-                </a>
-                <div class="dropdown-menu" aria-labelledby="crowDropdown">
-                    <a class="dropdown-item" href="#">Overview</a>
-                    <a class="dropdown-item" href="#">Renderer</a>
-                    <a class="dropdown-item" href="#">Editor</a>
-                </div>
-            </li>
-        </ul>
-    </div>
-</nav>
-
-<section>
-
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col-md-5">
-                <h2 id="introductionHeader">Introduction</h2>
-                <p>As a part of my studies on Game Engineering in Saxion University, I did a 6-months research project
-                    (January 2020 – June 2020) called “Minor Skilled”.<br>
-                    The final product is a game created in a 3D Game Engine implemented from scratch in C++ using ECS as
-                    the main architecture design.
-                </p>
-                <p>
-                    The purpose of this report is to share my research on the question,<b>What benefits does ECS
-                    architecture bring to Game and Engine development?</b>
-                </p>
-
-                <p>
-                    The work showcased in this report will be split into 2 parts. In the first part I will provide a
-                    brief introduction to the Enity-Component-System architecture and show my implementation of this
-                    module, which I called “Feather”. From now on I will use the word “ECS” to describe general
-                    Entity-Component-System architecture and I will use the word “Feather” to refer to my own
-                    implementation of it.<br>
-                    In the second part I show and explain the 3D engine and game that I created using this Engine and
-                    how feather was used to implement these complex systems.
-                </p>
-            </div>
-            <div class="col-md-7  align-items-center">
-                <iframe class="embed-responsive-item" src="Assets/finalVideo.mp4" allowfullscreen></iframe>
-            </div>
-
-        </div>
-
-    </div>
-
-    <hr align="center">
-
-</section>
-
-
-<section>
-
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col-md-auto">
-                <h5 id="Goal">Goal</h5>
-                <p>The main goal of this project was to research on Entity-Component-System architecture and answer the
-                    question: <b>What benefits does ECS architecture bring to Game and Engine development?</b><br>
-                    To answer the main question I had to research and answer the following questions:
-                    <ui>
-                        <li>Is ECS architecture more efficient?</li>
-                        <li>How flexible and modular is ECS to work with?</li>
-                        <li>How does ECS fit into Game/Engine programming?</li>
-                        <li>How to implement Low level "C" and "C++" memory management systems?</li>
-                    </ui>
-                </p>
-            </div>
-        </div>
-
-    </div>
-
-    <hr align="center">
-
-</section>
-
-
-<section>
-
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col-md-6">
-                <h5 id="What is ECS?">What is ECS?</h5>
-                <p> Tradidtionally games were used to be programmed in a object oriented desing (OOP) or inheritance
-                    design. For example you would have a class
-                    "Creature" that would inherit "Gameobject" then you would have "Human" and "Orc" inherting
-                    "Creature" class and so on. Then every frame you would go through all the Entities and call some
-                    methods
-                    like "Render" or "Update".<br>
-                    The first problem with this approach is that our architecture is
-                    rigid, if we wanted lets say a "Necromancer" to be both an "Orc" and
-                    a "Vampire" (Look the picture in the right) we have to rethink the whole design of the program.
-                    <br>Second problem with the OOP is performance. When we are iterating through all these Entities
-                    calling
-                    "Update" we are jumping in memory and pulling data in cache,but since our entities are scattered
-                    around in memory that cache is not used the next frame thus the
-                    CPU has to go and fetch that data from RAM every single time, so esentially we are wasting our CPU
-                    speed making it wait for data to come from RAM.
-                </p>
-            </div>
-            <div class="col-md-6 align-self-center">
-                <img class="sidePicture" src="Assets/oopStructure.png" width="445" height="242">
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-6 align-self-center">
-                <p>
-                    Nowdays the industry has shifted to "Component Systems" to solve the first problem that I mentioned
-                    above. Take for example Unity's Component System. You have a
-                    Gameobject to which you can add components as building blocks and then call "Update" on those
-                    components every frame. Now we solved the first issue since, we can
-                    just attach a "Vampire" and an "Orc" component and the GameObject will act accordingly. However we
-                    still haven't solved the second problem, we still are jumping in memory
-                    and calling "Update" on all these components.<br>
-                    If we look at the picture in the right which represents how a component system memory layout might
-                    look like
-                    we can see the problem more clearly. We are moving all around memory in one frame and wasting CPU
-                    cycles.
-                </p>
-            </div>
-
-            <div class="col-md-6 align-self-center">
-                <img class="sidePicture" src="Assets/componentMemoryLayout.png" width="659" height="240"><br><br>
-            </div>
-
-        </div>
-
-        <div class="row">
-            <div class="col-md-6">
-                <p>
-                    In order to solve the second problem we need to re-organise our memory layout so that the components
-                    that will be iterated regurarly are tightly packed toegether.
-                    For exmaple if we want to move all gameobjects we would iterate all the transforms and move them,
-                    however these transforms have to be grouped in memory toegether.
-                    And now when the CPU request one transform it will fetch a bunch of them (as much as it can fit in
-                    one cache line) and store them in cache for the next frame.Then next iteration when we need the
-                    other transform,they might already be stored in cache hence saving the CPU alot of time.
-                    <br>Introducing <b>Enity-Component-System</b> approach, in this design,an entity is just an index to
-                    a group or collection of components. All the components are stored in tightly
-                    packed arrays. Components themself are contain only data, they are also known as POD(Plain Old Data)
-                    structures and instead of components updating themself we have systems
-                    which iterate through all entites which have a specfied set of components and update their data.
-                    For example the Rigidbody system will operate only on entities which have the Rigidbody and
-                    Transform component.
-                    If an entity has neither or just one of these components the system wont update their data.<br>
-                    Unity Engine is now also moving towards this architecture with their new DOTS api.<br>
-                </p>
-            </div>
-
-            <div class="col-md-6 align-self-center">
-                <img class="sidePicture" src="Assets/Dots1.png" width="500" height="250"><br><br>
-                <img class="sidePicture" src="Assets/Dots2.png" width="500" height="250">
-            </div>
-        </div>
-    </div>
-
-    <hr align="center">
-    <hr align="center">
-
-</section>
-
-<section>
-
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col-md-auto">
-                <h2 id="FeatherHeader">Feather</h2>
-                <p>
-                    In this section my own implementation of ECS architecture called Feather will be explained.
-                    First the overall Architecture will be shown and then speed tests as well as actual code snippets
-                    will be displayed,
-                    showcasing how it is like developing using Feather.<br>
-                    The full open sourced codebase for Feather as well as it's documentation can be found <a
-                        href="https://github.com/igli15/Feather">here</a>.
-                </p>
-                <hr align="center">
-
-                <h5>Architecture</h5>
-                <p>
-                    In Feather <b>Entities</b> are just an unsigned integers which are used to get the index in a set of
-                    components.
-                    <b>Components</b> in Feather are just structs of data.
-                    <b>Systems</b> is where the functionality is implemented, the user can create their own systems and
-                    can iterate
-                    through the entities in the world. There are multiple ways of iteration which are shown later in
-                    this report.
-                </p>
-                <p>
-                    Except the main concepts like Entities,Components and Systems there are a few more "Classes" that
-                    the user needs to understand
-                    in order to use Feather:
-                <ul>
-                    <li><b>EntityRegistry</b>: Keeps track of all the entities in the world. It creates and destroys
-                        entities.
-                    </li>
-                    <li><b>ComponentRegistry</b>: Keeps track of all Component Sparse Sets. If the user needs access to
-                        a Component set of a certain type this registry is responsible for providing it.
-                    </li>
-                    <li><b>SystemRegistry</b>: Keeps track of all systems, allocates system memory and provides access
-                        to the users for all the registered systems.
-                    </li>
-                    <li><b>ComponentSparseSet</b>: Is a custom collection type created for the purpose of storing
-                        component data contiguous in memory. It allows the users to create,get and destroy components.A
-                        more in depth explanation of this class will be shown in the <b>Memory Layout</b> Section.
-                    </li>
-                    <li><b>World</b>: Is the core class of Feather. It serves as a factory to all registries, that means
-                        that the user only needs to work with the world class and the world class with update the
-                        registries accordingly. For example, if the user destroys an entity via the world class, the
-                        world class will inform all the registries that the entity is destroyed and they will internally
-                        be updated correctly.<br>
-                        Examples on how to use the world class and Feather will be shown in the the <b>Workflow</b>
-                        section.
-                    </li>
-                    <li><b>EntityHandle</b>: This small class provides a workflow similar to unity for entities. It
-                        wraps the active world and an entity and instead of updating an entity with the world you update
-                        the EntityHandle and it will internally update the world.<br>
-                        Similar to the world class, more examples of how EntityHandle works will be shown in the <b>Workflow</b>
-                        section.
-                    </li>
-                </ul>
-                </p>
-                <img class=" FeatherUML FullPicture justify-content-center" src="Assets/FeatherUML.png" width="1503"
-                     height="1194">
-
-                <hr align="center">
-
-                <h5>Memory Layout</h5>
-                <p>As mentioned before a key advantage of ecs is providing good memory layout.<br>
-                    All memory that feather uses is allocated in the beginning of the application.There is no runtime
-                    heap allocations done by Feather. The memory is partitioned correctly and marked as valid or
-                    invalid based on users input. When you "destroy" a component for example, the component is moved and
-                    it wont be updated, however it wont be deleted from memory until the user explicitly needs the data
-                    to be deleted.
-                    (Usually done in the end of the application's lifetime)<br>
-                    Components in feather are stored in a custom collection called <b>ComponentSparseSet</b>.
-                    In Feather a ComponentSparseSet is just 3 C style arrays:
-                <ul>
-                    <li>Component Dense array: In this array all the components are stored contiguously(one after
-                        another).
-                    </li>
-                    <li>Entity Dense array: In this array all the entities which contain the component are stored
-                        contiguously(one after another)
-                    </li>
-                    <li>Index Sparse array: The index array is sparse meaning its data is not contiguous. Instead the
-                        indexes of which the entity
-                    </li>
-                </ul>
-                </p>
-                <p>
-                    The reason why 3 arrays are needed is to answer the problem <b>What happens if a component is marked
-                    to be removed?</b> In order to see why this is a problem in the first place, lets look at the
-                    picture
-                    below.<br>
-                    The picture below represents a simplified visualisation of how the components are stored in memory.
-                    As said before the ComponentSparseSet contains 3 arrays and those arrays are displayed in a table
-                    format.
-                    Now the max size is set to 5 elements and it is empty.
-
-                    <img class=" FullPicture justify-content-center" src="Assets/componentLayout0.png" width="650"
-                         height="174">
-
-                </p>
-
-                <p>
-                    Now lets see what happens when we add the component "C1" to Entity "0"(as stated before entities are
-                    just unsigned numbers) to our set.<br>
-                    It is added in the first available slot in the array in this case it is the first slot.<br>
-                    In the entity array we add the Entity "0" to the first available slot too.
-                    Last in the index array we add the index at which the entity's component is stored in this case 0,
-                    and we store it at the 0 index since our Entity = 0.<br>
-                    Now we have mapped Entity->Index and Index->Entity.This is important when we destroy a component for
-                    now lets add some more components to the set.
-                    <img class=" FullPicture justify-content-center" src="Assets/componentLayout1.png" width="650"
-                         height="174">
-                </p>
-
-                <p>
-                    Components "C2,C3,C4" are added to the Entity "1,2,3" respectively. And the arrays are updated as we
-                    did in the first case.<br>
-                    Lets see what happens when we remove a component from the set.
-                    <img class=" FullPicture justify-content-center" src="Assets/componentLayout2.png" width="650"
-                         height="174">
-                </p>
-
-                <p>
-                    So lets say we need to remove "C3" from the set. What happens is we swap "C3" with "C4" in the dense
-                    component array but now
-                    we also need to swap the Entity->Index and Index->Entity since next time we need to get "C4" the
-                    Entity needs to point to the updated index.
-                    In the Entity dense array we do the same we swap the entity to remove with the last entity and in
-                    the index sparse array we just update the entity index.<br>
-                    As we can see the index sparse array with have holes in it but that is ok since we never iterate
-                    through it, we only need it when we remove components and
-                    need to keep them packed in memory.<br>
-                    So lets say we need to get "C4", To find the location of "C4" we check what the value of it's entity
-                    is, in this case it's 3.
-                    We now check what the 3rd index in the Index Sparse Array is, and it is 2, meaning that the "C4" is
-                    located in the 2nd index of the dense array.
-                    <img class=" FullPicture justify-content-center" src="Assets/componentLayout3.png" width="650"
-                         height="174">
-                </p>
-
-                <p>
-                    Lets see what happens if we remove "C1" from the set.
-                    Again we swap the "C1" with "C4" and update "C4" index to point in the location where "C1" used to
-                    be.<br>
-                    And now we have a packed array which we can iterate through even when we add or remove components.
-                    The swapping cost
-                    is not that high since is just 2 C-style array look-ups and we only do it when we remove components
-                    which is not that frequent.
-                    However the benefits are big since the data that is active and needed is always contiguous in
-                    memory.
-
-                    <img class=" FullPicture justify-content-center" src="Assets/componentLayout4.png" width="650"
-                         height="174">
-                </p>
-
-                <hr align="center">
-
-                <h5>Speed Test</h5>
-
-                <div class="row">
-                    <div class="col-md-5">
-
-                        <h6>Feather Vs OOP</h6>
-
-                        <p>
-                            First I tested Feather Vs Object-Oriented approach. I created 2 programs which involved 2
-                            types of entities, "Orcs" and "Nobles".
-                            In the OOP "Orcs" and "Nobles" are branched as shown in <b>Figure 1</b> and in ECS/Feather
-                            they are just 2 simple components. The behaviour is very trivial,
-                            in this case the iteration speed is the focus of the test.<br>
-                            I tested 3 different cases one with 1000 "Orcs" and "Nobles", one with 10,000 and one with
-                            100,000. The program is ran for 1000 frames and in order to get a consistent result the app
-                            is ran 100 times.<br>
-                            The results are displayed graphically in the right. The X-axis show the number of time the
-                            program ran and
-                            the Y-axis show the time in milliseconds it took for 1000 frames.<br>
-                            As we can see in all three cases Feather Performs much better then OOP when we iterate
-                            through components/behaviours.
-                            There are two main reasons why OOP performs worst than Feather.<br>
-                            First one is the data in Feather is contiguous in memory,
-                            thus the CPU cache saves cycles by storing the data we might need the next frame.<br>
-                            The second reason is concept known in OOP as <b>Double Dispatching</b> which in this case is
-                            a call to the virtual "Update" function. Double-Dispatching
-                            requires a V-table lookup and that is also located somewhere scattered in memory thus
-                            waisting CPU cycles.
-                        </p>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm sticky-top">
+        <a class="navbar-brand" href="#">
+            <img src="Assets/crow.png" width="60" height="48" alt="" class="d-inline-flex align-items-center">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="introDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Introduction
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="introDropdown">
+                        <a class="dropdown-item" href="#">Introduction</a>
+                        <a class="dropdown-item" href="#">Goal</a>
+                        <a class="dropdown-item" href="#">What is ECS?</a>
                     </div>
-
-                    <div class="col-md-7">
-                        <p>
-                            <img class=" FullPicture" src="Assets/OOPVSECS.png" width="672" height="668">
-                        </p>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="featherDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Feather
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="featherDropdown">
+                        <a class="dropdown-item" href="#">Architecture</a>
+                        <a class="dropdown-item" href="#">Memory Layout</a>
+                        <a class="dropdown-item" href="#">Speed Test</a>
+                        <a class="dropdown-item" href="#">Workflow</a>
                     </div>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="crowDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Crow Engine
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="crowDropdown">
+                        <a class="dropdown-item" href="#">Overview</a>
+                        <a class="dropdown-item" href="#">Renderer</a>
+                        <a class="dropdown-item" href="#">Editor</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-5">
+                    <h2 id="introductionHeader">Introduction</h2>
+                    <p>As a part of my studies on Game Engineering in Saxion University, I did a 6-months research
+                        project
+                        (January 2020 – June 2020) called “Minor Skilled”.<br>
+                        The final product is a game created in a 3D Game Engine implemented from scratch in C++ using
+                        ECS as
+                        the main architecture design.
+                    </p>
+                    <p>
+                        The purpose of this report is to share my research on the question,<b>What benefits does ECS
+                            architecture bring to Game and Engine development?</b>
+                    </p>
+
+                    <p>
+                        The work showcased in this report will be split into 2 parts. In the first part I will provide a
+                        brief introduction to the Enity-Component-System architecture and show my implementation of this
+                        module, which I called “Feather”. From now on I will use the word “ECS” to describe general
+                        Entity-Component-System architecture and I will use the word “Feather” to refer to my own
+                        implementation of it.<br>
+                        In the second part I show and explain the 3D engine and game that I created using this Engine
+                        and
+                        how feather was used to implement these complex systems.
+                    </p>
+                </div>
+                <div class="col-md-7  align-items-center">
+                    <iframe class="embed-responsive-item" src="Assets/finalVideo.mp4" allowfullscreen></iframe>
                 </div>
 
-                <div class="row" style="margin-top: 20px">
-                    <div class="col-md-5">
-
-                        <h6>Feather Vs Component System (Unity)</h6>
-                        <br>
-
-                        <p>
-                            The second test I performed was against Unity and it's current component system. For this
-                            test build the
-                            exact same steering system and flocking behaviour as I did for the final game in C++. The
-                            unity program only
-                            spawns a bunch of spheres and gives them a target to seek while they try to keep distance
-                            from each other using basic
-                            O(n2) flocking.<br>
-                            As we can see from the video on the right, after 300-400 spheres the frames drop under 30
-                            FPS and at 500 spheres the framerate is very low. The current spheres have
-                            no collider attached to them and the most expensive calculation is done by the Flocking
-                            Behaviour component.<br>
-                        </p>
-
-                        <p>
-                            Now lets see how the same system performs in Feather and in my own custom C++ Game Engine
-                            (<b>Crow</b>). As we can see in the second video
-                            the performance difference is noticeable, we can have way more units 3-4x then Unity while
-                            keeping a steady high framerate.
-                            After 1200 the FPS drops exponentially since the flocking is done O(n2). The Feather
-                            performs better while also having other
-                            gameplay systems running in addition to flocking system.
-                        </p>
-
-                        <p>
-                            There are many things that could be done to even get more units on the screen. For example
-                            the flocking and collision instead of being performed
-                            in O(n2) they could be performed in logarithmic complexity by introducing spacial
-                            partitioning algorithms. There are also rendering optimisation that
-                            could be implemented such as batching for all the meshes. However the goal was to test the
-                            same systems running in an equal environment.
-                        </p>
-                    </div>
-
-                    <div class="col-md-7">
-
-                        <video width="800" height="400" autoplay loop id="video-1" muted>
-                            <source src="Assets/unityTest.mp4" type="video/mp4">
-                        </video>
-                        <video width="800" height="400" autoplay loop id="video-2" muted>
-                            <source src="Assets/featherTest.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
             </div>
-        </div>
-
-        <hr align="center">
-
-        <div class="row">
-
-            <h5>Workflow</h5>
-
-            <p>
-                In this section, some examples of how to set up and use Feather will be shown. I will showcase how to
-                create Entities,Components,Systems
-                and how to iterate through the components and create functionality.<br>
-                First lets have a look on how to set up Feather. In order for Feather to function we need to create the
-                3 main registries, the Entity,Component and system registry.
-                After we have created them we need to create a world which will act as an context and it will
-                communicate with all the registries. After the world has
-                been created we need to initialize it by calling the "Init" function and passing the registries, this
-                way the world is ready to be used and knows which memory it has to operate on.
-                <br><br>
-                <img class="center" src="Assets/codeSnippets/codeSnippet1.png" width="669" height="173">
-
-            </p>
-
-
-            <p>
-                Since components are just data, they are very simple to create. The only thing needed to create a
-                component is a struct with data, that's it.
-                As we can see below, a position component which holds an "X","Y" values and a gravity component which
-                defines a "gravityValue" are created.
-                <br><br>
-
-                <img class="center" src="Assets/codeSnippets/Component snippet.png" width="304" height="245">
-            </p>
-
-            <p>
-                Systems are not that complicated to create either. As stated before systems define the behaviour of our
-                program. The first picture below
-                display how to set a the signature of a system. This is only required if you want the systems to know
-                about which entities to iterate on
-                beforehand and let the <b>World</b> automatically update the entities set for you.The line below is
-                telling Feather that the <b>GravitySystem</b>
-                needs to iterate on entities which have <b>both</b> a <b>Position</b> and a <b>Gravity</b>
-                component.<br>
-                This is one of the ways to iterate components in ECS
-                architecture. In the later sections, more ways to iterate components and what are the benefits of each
-                way will be shown. <br>
-
-                The second picture below is an example of
-                how a gravity system would look like. First we need our custom system to inherit base <b>System</b>,
-                this way we let feather know that this class
-                is a system and it gives a bunch of functions to override such as Init,Update,Render etc. In the
-                "Update" function we are iterating through all
-                the entities which fit this system's signature and we are getting their <b>Position</b> and
-                <b>Gravity</b>
-                components and updating the <b>Position</b> component based on "gravityValue" of the <b>Gravity</b>
-                component.
-                <br><br>
-
-                <img class="center" src="Assets/codeSnippets/signature.png" width="631" height="48"><br>
-                <img class="center" src="Assets/codeSnippets/systemSnippet.png" width="756" height="346">
-            </p>
-
-            <p>
-                Another way of iterating components is to use the <b>EntitiesWith</b> function of the <b>World</b>
-                class. <b>EntitiesWith</b>
-                is a Query function which returns a list of Entities which contain a given case of components in this
-                case a <b>Position</b> and <b>Gravity</b>
-                component. Internally this function takes the smallest set of the given component and checks which of
-                it's entities is located in any of the other
-                component sets and return those to the user.<br>
-                After we have a list of entities we iterate them just as we did in the example above.
-                <br><br>
-
-                <img class="center" src="Assets/codeSnippets/entitiesWithSnippet.png" width="814" height="385"><br>
-
-            </p>
-
-            <p>
-                An even easier way to iterate component is using the <b>ForEach</b> function. It takes a function as a
-                parameter and provide the references
-                to the entity and components automatically. This is similar to how Unity iterates components in their
-                <b>DOTS</b> api.<br>
-                Now we dont have to get the components from the entity since they are automatically filled in by the
-                world and instead we just write our behaviours
-                inside the lambda function.
-                <br><br>
-
-                <img class="center" src="Assets/codeSnippets/ForEachSnippet.png" width="945" height="248"><br>
-
-            </p>
-
-            <p>
-                The last way to query entities and components in Feather is using the <b>FindEntities</b> function. It
-                will return all the entities that fit
-                a conditional function given as parameter. In the example below we are querying for all the entities
-                which have a <b>Position</b> component and
-                their "X","Y" values are equal to 0.<br>
-                Then we can iterate these entities and update them accordingly, in the example below we just destroy
-                them.
-                <br><br>
-
-                <img class="center" src="Assets/codeSnippets/FindEntitiesSnippet.png" width="1025" height="203"><br>
-
-            </p>
-
-            <p>
-                In order for our systems and components to work we have to allocate memory for them. For each type of
-                system and component
-                we have to use the registries to allocate memory for them. This way all the memory is allocated upfront
-                so there is no heap allocation at runtime.
-                If for example we need to load a new world, we just can reuse memory instead of deleting memory and
-                allocating it again.<br>
-                Another good thing about this approach is that it minimises null errors in runtime since all of our
-                memory is valid and partitioned correctly.
-                <br><br>
-
-                <img class="center" src="Assets/codeSnippets/AllocatingMemorySnippet.png" width="660" height="134"><br>
-
-            </p>
-
-            <p>
-                In order for our systems and components to work we have to allocate memory for them. For each type of
-                system and component
-                we have to use the registries to allocate memory for them. This way all the memory is allocated upfront
-                so there is no heap allocation at runtime.
-                If for example we need to load a new world, we just can reuse memory instead of deleting memory and
-                allocating it again.<br>
-                Another good thing about this approach is that it minimises null errors in runtime since all of our
-                memory is valid and partitioned correctly.
-                <br><br>
-
-                <img class="center" src="Assets/codeSnippets/AllocatingMemorySnippet.png" width="660" height="134"><br>
-
-            </p>
-
-            <p>
-                Lastly the only thing left to do in order for the application to work is create our entities and attach
-                components to them.An <b>EntityHandle</b>
-                can be created by the world and then we can attach any type of component to it. This components have to
-                be allocated before being added otherwise an
-                error will be thrown.
-                The last line just updates all the systems registered to our world. And that is everything needed to set
-                up and work with <b>Feather</b>.
-                <br><br>
-
-                <img class="center" src="Assets/codeSnippets/CreateEntity.png" width="734" height="205"><br>
-
-            </p>
-
-        </div>
-    </div>
-
-    <hr align="center">
-    <hr align="center">
-
-</section>
-
-<section>
-
-
-    <div class="container">
-
-        <div class="row">
-            <h2>Crow Engine</h2>
-            <p>
-                As mentioned above in this report,The goal is to research the question <b>What benefits does ECS
-                architecture bring to Game and Engine development?</b>
-                In this section the focus will be <b>What features does the Crow Engine offer and how were they build
-                using Feather(ECS)?</b><br>
-                Crow engine provides the basics feature a game engine needs to get the user up and running. It has a
-                Renderer and Material workflow, window and input API,
-                Game Loop, ResourceManager for loading and maintaining assets, and support for using Unity as an editor
-                tool, however only in this section only the
-                <b>Renderer</b> and <b>Unity as editor</b> will be explored since this is where the ECS architecture was
-                needed to be used the most.
-            </p>
 
         </div>
 
         <hr align="center">
 
-        <div class="row">
-
-            <h5>The Renderer</h5>
+    </section>
 
 
-            <p>
-                Since one of the core systems of every game engine is it's renderer, naturally the question of how your
-                architecture will support your renderer rises.
-                In this case <b>How to build an ECS renderer and what are it's benefits?</b><br>
-                One of the main problems with an ECS renderer is fitting your drawable objects into cache. Meshes and
-                materials can be big in terms of byte size and might not fit inside
-                a cache line so in order to benefit from data-oriented architecture we need to find a way fit as much as
-                we can and what we need in a cache line.<br>
-                How the Crow Engine approaches the problem is by splitting the data. So in the picture below there is a
-                <b>Meshinfo</b> component set and instead of holding
-                a reference to both a material and the mesh, it holds a pointer to a material array and a mesh array.
-                This way our <b>MeshInfo</b> component is small
-                in size (it only has 2 pointers) but also it points to packed arrays of meshes and materials. The same
-                thing is done for materials and shaders, since
-                multiple materials can use the same shader, a pointer to the shader is stored in the material.<br>
+    <section>
 
-                By doing rendering in ECS style we can sort the scene easily. The Crow Engine supports instanced
-                rendering and how that works is When a shader is buffered to the GPU,
-                all the materials with that shader are buffered and in the end the model using that material with all
-                the transformation matrices are buffered. This way we save a lot of the draw calls the
-                GPU would have to do otherwise.<br>
+        <div class="container">
 
-                Another benefit of this approach is that if we were doing something to all the materials we would not
-                need to touch the mesh part of the memory, instead we just
-                put all the materials we need in cache.<br><br>
+            <div class="row">
 
-
-                <img class="center" src="Assets/MeshInfoDiagram.png" width="571" height="251"><br>
-            </p>
+                <div class="col-md-auto">
+                    <h5 id="Goal">Goal</h5>
+                    <p>The main goal of this project was to research on Entity-Component-System architecture and answer
+                        the
+                        question: <b>What benefits does ECS architecture bring to Game and Engine development?</b><br>
+                        To answer the main question I had to research and answer the following questions:
+                        <ui>
+                            <li>Is ECS architecture more efficient?</li>
+                            <li>How flexible and modular is ECS to work with?</li>
+                            <li>How does ECS fit into Game/Engine programming?</li>
+                            <li>How to implement Low level "C" and "C++" memory management systems?</li>
+                        </ui>
+                    </p>
+                </div>
+            </div>
 
         </div>
 
-        <div class="row">
+        <hr align="center">
 
-            <div class="col-md-5">
-                <h6>Renderer Performance Test</h6>
+    </section>
+
+
+    <section>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-6">
+                    <h5 id="What is ECS?">What is ECS?</h5>
+                    <p> Tradidtionally games were used to be programmed in a object oriented desing (OOP) or inheritance
+                        design. For example you would have a class
+                        "Creature" that would inherit "Gameobject" then you would have "Human" and "Orc" inherting
+                        "Creature" class and so on. Then every frame you would go through all the Entities and call some
+                        methods
+                        like "Render" or "Update".<br>
+                        The first problem with this approach is that our architecture is
+                        rigid, if we wanted lets say a "Necromancer" to be both an "Orc" and
+                        a "Vampire" (Look the picture in the right) we have to rethink the whole design of the program.
+                        <br>Second problem with the OOP is performance. When we are iterating through all these Entities
+                        calling
+                        "Update" we are jumping in memory and pulling data in cache,but since our entities are scattered
+                        around in memory that cache is not used the next frame thus the
+                        CPU has to go and fetch that data from RAM every single time, so esentially we are wasting our
+                        CPU
+                        speed making it wait for data to come from RAM.
+                    </p>
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <img class="sidePicture" src="Assets/oopStructure.png" width="445" height="242">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 align-self-center">
+                    <p>
+                        Nowdays the industry has shifted to "Component Systems" to solve the first problem that I
+                        mentioned
+                        above. Take for example Unity's Component System. You have a
+                        Gameobject to which you can add components as building blocks and then call "Update" on those
+                        components every frame. Now we solved the first issue since, we can
+                        just attach a "Vampire" and an "Orc" component and the GameObject will act accordingly. However
+                        we
+                        still haven't solved the second problem, we still are jumping in memory
+                        and calling "Update" on all these components.<br>
+                        If we look at the picture in the right which represents how a component system memory layout
+                        might
+                        look like
+                        we can see the problem more clearly. We are moving all around memory in one frame and wasting
+                        CPU
+                        cycles.
+                    </p>
+                </div>
+
+                <div class="col-md-6 align-self-center">
+                    <img class="sidePicture" src="Assets/componentMemoryLayout.png" width="659" height="240"><br><br>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <p>
+                        In order to solve the second problem we need to re-organise our memory layout so that the
+                        components
+                        that will be iterated regurarly are tightly packed toegether.
+                        For exmaple if we want to move all gameobjects we would iterate all the transforms and move
+                        them,
+                        however these transforms have to be grouped in memory toegether.
+                        And now when the CPU request one transform it will fetch a bunch of them (as much as it can fit
+                        in
+                        one cache line) and store them in cache for the next frame.Then next iteration when we need the
+                        other transform,they might already be stored in cache hence saving the CPU alot of time.
+                        <br>Introducing <b>Enity-Component-System</b> approach, in this design,an entity is just an
+                        index to
+                        a group or collection of components. All the components are stored in tightly
+                        packed arrays. Components themself are contain only data, they are also known as POD(Plain Old
+                        Data)
+                        structures and instead of components updating themself we have systems
+                        which iterate through all entites which have a specfied set of components and update their data.
+                        For example the Rigidbody system will operate only on entities which have the Rigidbody and
+                        Transform component.
+                        If an entity has neither or just one of these components the system wont update their data.<br>
+                        Unity Engine is now also moving towards this architecture with their new DOTS api.<br>
+                    </p>
+                </div>
+
+                <div class="col-md-6 align-self-center">
+                    <img class="sidePicture" src="Assets/Dots1.png" width="500" height="250"><br><br>
+                    <img class="sidePicture" src="Assets/Dots2.png" width="500" height="250">
+                </div>
+            </div>
+        </div>
+
+        <hr align="center">
+        <hr align="center">
+
+    </section>
+
+    <section>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-auto">
+                    <h2 id="FeatherHeader">Feather</h2>
+                    <p>
+                        In this section my own implementation of ECS architecture called Feather will be explained.
+                        First the overall Architecture will be shown and then speed tests as well as actual code
+                        snippets
+                        will be displayed,
+                        showcasing how it is like developing using Feather.<br>
+                        The full open sourced codebase for Feather as well as it's documentation can be found <a
+                            href="https://github.com/igli15/Feather">here</a>.
+                    </p>
+                    <hr align="center">
+
+                    <h5>Architecture</h5>
+                    <p>
+                        In Feather <b>Entities</b> are just an unsigned integers which are used to get the index in a
+                        set of
+                        components.
+                        <b>Components</b> in Feather are just structs of data.
+                        <b>Systems</b> is where the functionality is implemented, the user can create their own systems
+                        and
+                        can iterate
+                        through the entities in the world. There are multiple ways of iteration which are shown later in
+                        this report.
+                    </p>
+                    <p>
+                        Except the main concepts like Entities,Components and Systems there are a few more "Classes"
+                        that
+                        the user needs to understand
+                        in order to use Feather:
+                    <ul>
+                        <li><b>EntityRegistry</b>: Keeps track of all the entities in the world. It creates and destroys
+                            entities.
+                        </li>
+                        <li><b>ComponentRegistry</b>: Keeps track of all Component Sparse Sets. If the user needs access
+                            to
+                            a Component set of a certain type this registry is responsible for providing it.
+                        </li>
+                        <li><b>SystemRegistry</b>: Keeps track of all systems, allocates system memory and provides
+                            access
+                            to the users for all the registered systems.
+                        </li>
+                        <li><b>ComponentSparseSet</b>: Is a custom collection type created for the purpose of storing
+                            component data contiguous in memory. It allows the users to create,get and destroy
+                            components.A
+                            more in depth explanation of this class will be shown in the <b>Memory Layout</b> Section.
+                        </li>
+                        <li><b>World</b>: Is the core class of Feather. It serves as a factory to all registries, that
+                            means
+                            that the user only needs to work with the world class and the world class with update the
+                            registries accordingly. For example, if the user destroys an entity via the world class, the
+                            world class will inform all the registries that the entity is destroyed and they will
+                            internally
+                            be updated correctly.<br>
+                            Examples on how to use the world class and Feather will be shown in the the <b>Workflow</b>
+                            section.
+                        </li>
+                        <li><b>EntityHandle</b>: This small class provides a workflow similar to unity for entities. It
+                            wraps the active world and an entity and instead of updating an entity with the world you
+                            update
+                            the EntityHandle and it will internally update the world.<br>
+                            Similar to the world class, more examples of how EntityHandle works will be shown in the
+                            <b>Workflow</b>
+                            section.
+                        </li>
+                    </ul>
+                    </p>
+                    <img class=" FeatherUML FullPicture justify-content-center" src="Assets/FeatherUML.png" width="1503"
+                        height="1194">
+
+                    <hr align="center">
+
+                    <h5>Memory Layout</h5>
+                    <p>As mentioned before a key advantage of ecs is providing good memory layout.<br>
+                        All memory that feather uses is allocated in the beginning of the application.There is no
+                        runtime
+                        heap allocations done by Feather. The memory is partitioned correctly and marked as valid or
+                        invalid based on users input. When you "destroy" a component for example, the component is moved
+                        and
+                        it wont be updated, however it wont be deleted from memory until the user explicitly needs the
+                        data
+                        to be deleted.
+                        (Usually done in the end of the application's lifetime)<br>
+                        Components in feather are stored in a custom collection called <b>ComponentSparseSet</b>.
+                        In Feather a ComponentSparseSet is just 3 C style arrays:
+                    <ul>
+                        <li>Component Dense array: In this array all the components are stored contiguously(one after
+                            another).
+                        </li>
+                        <li>Entity Dense array: In this array all the entities which contain the component are stored
+                            contiguously(one after another)
+                        </li>
+                        <li>Index Sparse array: The index array is sparse meaning its data is not contiguous. Instead
+                            the
+                            indexes of which the entity
+                        </li>
+                    </ul>
+                    </p>
+                    <p>
+                        The reason why 3 arrays are needed is to answer the problem <b>What happens if a component is
+                            marked
+                            to be removed?</b> In order to see why this is a problem in the first place, lets look at
+                        the
+                        picture
+                        below.<br>
+                        The picture below represents a simplified visualisation of how the components are stored in
+                        memory.
+                        As said before the ComponentSparseSet contains 3 arrays and those arrays are displayed in a
+                        table
+                        format.
+                        Now the max size is set to 5 elements and it is empty.
+
+                        <img class=" FullPicture justify-content-center" src="Assets/componentLayout0.png" width="650"
+                            height="174">
+
+                    </p>
+
+                    <p>
+                        Now lets see what happens when we add the component "C1" to Entity "0"(as stated before entities
+                        are
+                        just unsigned numbers) to our set.<br>
+                        It is added in the first available slot in the array in this case it is the first slot.<br>
+                        In the entity array we add the Entity "0" to the first available slot too.
+                        Last in the index array we add the index at which the entity's component is stored in this case
+                        0,
+                        and we store it at the 0 index since our Entity = 0.<br>
+                        Now we have mapped Entity->Index and Index->Entity.This is important when we destroy a component
+                        for
+                        now lets add some more components to the set.
+                        <img class=" FullPicture justify-content-center" src="Assets/componentLayout1.png" width="650"
+                            height="174">
+                    </p>
+
+                    <p>
+                        Components "C2,C3,C4" are added to the Entity "1,2,3" respectively. And the arrays are updated
+                        as we
+                        did in the first case.<br>
+                        Lets see what happens when we remove a component from the set.
+                        <img class=" FullPicture justify-content-center" src="Assets/componentLayout2.png" width="650"
+                            height="174">
+                    </p>
+
+                    <p>
+                        So lets say we need to remove "C3" from the set. What happens is we swap "C3" with "C4" in the
+                        dense
+                        component array but now
+                        we also need to swap the Entity->Index and Index->Entity since next time we need to get "C4" the
+                        Entity needs to point to the updated index.
+                        In the Entity dense array we do the same we swap the entity to remove with the last entity and
+                        in
+                        the index sparse array we just update the entity index.<br>
+                        As we can see the index sparse array with have holes in it but that is ok since we never iterate
+                        through it, we only need it when we remove components and
+                        need to keep them packed in memory.<br>
+                        So lets say we need to get "C4", To find the location of "C4" we check what the value of it's
+                        entity
+                        is, in this case it's 3.
+                        We now check what the 3rd index in the Index Sparse Array is, and it is 2, meaning that the "C4"
+                        is
+                        located in the 2nd index of the dense array.
+                        <img class=" FullPicture justify-content-center" src="Assets/componentLayout3.png" width="650"
+                            height="174">
+                    </p>
+
+                    <p>
+                        Lets see what happens if we remove "C1" from the set.
+                        Again we swap the "C1" with "C4" and update "C4" index to point in the location where "C1" used
+                        to
+                        be.<br>
+                        And now we have a packed array which we can iterate through even when we add or remove
+                        components.
+                        The swapping cost
+                        is not that high since is just 2 C-style array look-ups and we only do it when we remove
+                        components
+                        which is not that frequent.
+                        However the benefits are big since the data that is active and needed is always contiguous in
+                        memory.
+
+                        <img class=" FullPicture justify-content-center" src="Assets/componentLayout4.png" width="650"
+                            height="174">
+                    </p>
+
+                    <hr align="center">
+
+                    <h5>Speed Test</h5>
+
+                    <div class="row">
+                        <div class="col-md-5">
+
+                            <h6>Feather Vs OOP</h6>
+
+                            <p>
+                                First I tested Feather Vs Object-Oriented approach. I created 2 programs which involved
+                                2
+                                types of entities, "Orcs" and "Nobles".
+                                In the OOP "Orcs" and "Nobles" are branched as shown in <b>Figure 1</b> and in
+                                ECS/Feather
+                                they are just 2 simple components. The behaviour is very trivial,
+                                in this case the iteration speed is the focus of the test.<br>
+                                I tested 3 different cases one with 1000 "Orcs" and "Nobles", one with 10,000 and one
+                                with
+                                100,000. The program is ran for 1000 frames and in order to get a consistent result the
+                                app
+                                is ran 100 times.<br>
+                                The results are displayed graphically in the right. The X-axis show the number of time
+                                the
+                                program ran and
+                                the Y-axis show the time in milliseconds it took for 1000 frames.<br>
+                                As we can see in all three cases Feather Performs much better then OOP when we iterate
+                                through components/behaviours.
+                                There are two main reasons why OOP performs worst than Feather.<br>
+                                First one is the data in Feather is contiguous in memory,
+                                thus the CPU cache saves cycles by storing the data we might need the next frame.<br>
+                                The second reason is concept known in OOP as <b>Double Dispatching</b> which in this
+                                case is
+                                a call to the virtual "Update" function. Double-Dispatching
+                                requires a V-table lookup and that is also located somewhere scattered in memory thus
+                                waisting CPU cycles.
+                            </p>
+                        </div>
+
+                        <div class="col-md-7">
+                            <p>
+                                <img class=" FullPicture" src="Assets/OOPVSECS.png" width="672" height="668">
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 20px">
+                        <div class="col-md-5">
+
+                            <h6>Feather Vs Component System (Unity)</h6>
+                            <br>
+
+                            <p>
+                                The second test I performed was against Unity and it's current component system. For
+                                this
+                                test build the
+                                exact same steering system and flocking behaviour as I did for the final game in C++.
+                                The
+                                unity program only
+                                spawns a bunch of spheres and gives them a target to seek while they try to keep
+                                distance
+                                from each other using basic
+                                O(n2) flocking.<br>
+                                As we can see from the video on the right, after 300-400 spheres the frames drop under
+                                30
+                                FPS and at 500 spheres the framerate is very low. The current spheres have
+                                no collider attached to them and the most expensive calculation is done by the Flocking
+                                Behaviour component.<br>
+                            </p>
+
+                            <p>
+                                Now lets see how the same system performs in Feather and in my own custom C++ Game
+                                Engine
+                                (<b>Crow</b>). As we can see in the second video
+                                the performance difference is noticeable, we can have way more units 3-4x then Unity
+                                while
+                                keeping a steady high framerate.
+                                After 1200 the FPS drops exponentially since the flocking is done O(n2). The Feather
+                                performs better while also having other
+                                gameplay systems running in addition to flocking system.
+                            </p>
+
+                            <p>
+                                There are many things that could be done to even get more units on the screen. For
+                                example
+                                the flocking and collision instead of being performed
+                                in O(n2) they could be performed in logarithmic complexity by introducing spacial
+                                partitioning algorithms. There are also rendering optimisation that
+                                could be implemented such as batching for all the meshes. However the goal was to test
+                                the
+                                same systems running in an equal environment.
+                            </p>
+                        </div>
+
+                        <div class="col-md-7">
+
+                            <video width="800" height="400" autoplay loop id="video-1" muted>
+                                <source src="Assets/unityTest.mp4" type="video/mp4">
+                            </video>
+                            <video width="800" height="400" autoplay loop id="video-2" muted>
+                                <source src="Assets/featherTest.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr align="center">
+
+            <div class="row">
+
+                <h5>Workflow</h5>
 
                 <p>
-                    In order to test the speed of the ECS renderer, the same rendering application was created both in
-                    Unity and Crow Engine. The application is
-                    10,000 meshes rotating at a random speed. For the test to be fair i attached an unlit material to
-                    the meshes in both engines so the lighting would
-                    not affect any of the performance.<br><br>
-                    The top video on the right is the Unity engine result. In unity the app performs around 6-8 FPS
-                    while as it is shown in the bottom right video
-                    the exact same application in the Crow Engine performs in a constant 16-17 FPS.<br><br>
-                    The main reason why the ECS renderer performs better in this situation is because of how fast the
-                    cpu is able to iterate and work on contiguous memory. As shown above
-                    All the Meshes,Materials and Shaders are stored packed together in memory.<br><br>
-                    The Crow Engine renderer is not a better renderer then Unity's Renderer, this test is only
-                    showcasing how the data-oriented architecture is more efficient.
-                    There are many improvement that could be done here like <b>Batching</b> and <b>Multi-threaded
-                    Rendering</b> but these were not the scope of the project and did not
-                    fit into the the main goal.<br><br>
-                    Another reason we are able to perform better is not only because of the way material,shaders and
-                    meshes(in this case) are stored in memory but also because they are sorted
-                    at runtime in order to have as little shader swaps as possible. This way the instance rendering is
-                    implemented and saves the GPU draw calls but also the GPU does not have
-                    to swap shaders as often, which is a fairly expensive opertation.
+                    In this section, some examples of how to set up and use Feather will be shown. I will showcase how
+                    to
+                    create Entities,Components,Systems
+                    and how to iterate through the components and create functionality.<br>
+                    First lets have a look on how to set up Feather. In order for Feather to function we need to create
+                    the
+                    3 main registries, the Entity,Component and system registry.
+                    After we have created them we need to create a world which will act as an context and it will
+                    communicate with all the registries. After the world has
+                    been created we need to initialize it by calling the "Init" function and passing the registries,
+                    this
+                    way the world is ready to be used and knows which memory it has to operate on.
+                    <br><br>
+                    <img class="center" src="Assets/codeSnippets/codeSnippet1.png" width="669" height="173">
+
                 </p>
-            </div>
-            <div class="col-md-7">
 
-                <video width="900" height="500" autoplay loop id="video-3" muted>
-                    <source src="Assets/Unity10kMeshes.mp4" type="video/mp4">
-                </video>
-                <video width="900" height="500" autoplay loop id="video-4" muted>
-                    <source src="Assets/Crow10kMeshes.mp4" type="video/mp4">
-                </video>
-            </div>
 
+                <p>
+                    Since components are just data, they are very simple to create. The only thing needed to create a
+                    component is a struct with data, that's it.
+                    As we can see below, a position component which holds an "X","Y" values and a gravity component
+                    which
+                    defines a "gravityValue" are created.
+                    <br><br>
+
+                    <img class="center" src="Assets/codeSnippets/Component snippet.png" width="304" height="245">
+                </p>
+
+                <p>
+                    Systems are not that complicated to create either. As stated before systems define the behaviour of
+                    our
+                    program. The first picture below
+                    display how to set a the signature of a system. This is only required if you want the systems to
+                    know
+                    about which entities to iterate on
+                    beforehand and let the <b>World</b> automatically update the entities set for you.The line below is
+                    telling Feather that the <b>GravitySystem</b>
+                    needs to iterate on entities which have <b>both</b> a <b>Position</b> and a <b>Gravity</b>
+                    component.<br>
+                    This is one of the ways to iterate components in ECS
+                    architecture. In the later sections, more ways to iterate components and what are the benefits of
+                    each
+                    way will be shown. <br>
+
+                    The second picture below is an example of
+                    how a gravity system would look like. First we need our custom system to inherit base <b>System</b>,
+                    this way we let feather know that this class
+                    is a system and it gives a bunch of functions to override such as Init,Update,Render etc. In the
+                    "Update" function we are iterating through all
+                    the entities which fit this system's signature and we are getting their <b>Position</b> and
+                    <b>Gravity</b>
+                    components and updating the <b>Position</b> component based on "gravityValue" of the <b>Gravity</b>
+                    component.
+                    <br><br>
+
+                    <img class="center" src="Assets/codeSnippets/signature.png" width="631" height="48"><br>
+                    <img class="center" src="Assets/codeSnippets/systemSnippet.png" width="756" height="346">
+                </p>
+
+                <p>
+                    Another way of iterating components is to use the <b>EntitiesWith</b> function of the <b>World</b>
+                    class. <b>EntitiesWith</b>
+                    is a Query function which returns a list of Entities which contain a given case of components in
+                    this
+                    case a <b>Position</b> and <b>Gravity</b>
+                    component. Internally this function takes the smallest set of the given component and checks which
+                    of
+                    it's entities is located in any of the other
+                    component sets and return those to the user.<br>
+                    After we have a list of entities we iterate them just as we did in the example above.
+                    <br><br>
+
+                    <img class="center" src="Assets/codeSnippets/entitiesWithSnippet.png" width="814" height="385"><br>
+
+                </p>
+
+                <p>
+                    An even easier way to iterate component is using the <b>ForEach</b> function. It takes a function as
+                    a
+                    parameter and provide the references
+                    to the entity and components automatically. This is similar to how Unity iterates components in
+                    their
+                    <b>DOTS</b> api.<br>
+                    Now we dont have to get the components from the entity since they are automatically filled in by the
+                    world and instead we just write our behaviours
+                    inside the lambda function.
+                    <br><br>
+
+                    <img class="center" src="Assets/codeSnippets/ForEachSnippet.png" width="945" height="248"><br>
+
+                </p>
+
+                <p>
+                    The last way to query entities and components in Feather is using the <b>FindEntities</b> function.
+                    It
+                    will return all the entities that fit
+                    a conditional function given as parameter. In the example below we are querying for all the entities
+                    which have a <b>Position</b> component and
+                    their "X","Y" values are equal to 0.<br>
+                    Then we can iterate these entities and update them accordingly, in the example below we just destroy
+                    them.
+                    <br><br>
+
+                    <img class="center" src="Assets/codeSnippets/FindEntitiesSnippet.png" width="1025" height="203"><br>
+
+                </p>
+
+                <p>
+                    In order for our systems and components to work we have to allocate memory for them. For each type
+                    of
+                    system and component
+                    we have to use the registries to allocate memory for them. This way all the memory is allocated
+                    upfront
+                    so there is no heap allocation at runtime.
+                    If for example we need to load a new world, we just can reuse memory instead of deleting memory and
+                    allocating it again.<br>
+                    Another good thing about this approach is that it minimises null errors in runtime since all of our
+                    memory is valid and partitioned correctly.
+                    <br><br>
+
+                    <img class="center" src="Assets/codeSnippets/AllocatingMemorySnippet.png" width="660"
+                        height="134"><br>
+
+                </p>
+
+                <p>
+                    In order for our systems and components to work we have to allocate memory for them. For each type
+                    of
+                    system and component
+                    we have to use the registries to allocate memory for them. This way all the memory is allocated
+                    upfront
+                    so there is no heap allocation at runtime.
+                    If for example we need to load a new world, we just can reuse memory instead of deleting memory and
+                    allocating it again.<br>
+                    Another good thing about this approach is that it minimises null errors in runtime since all of our
+                    memory is valid and partitioned correctly.
+                    <br><br>
+
+                    <img class="center" src="Assets/codeSnippets/AllocatingMemorySnippet.png" width="660"
+                        height="134"><br>
+
+                </p>
+
+                <p>
+                    Lastly the only thing left to do in order for the application to work is create our entities and
+                    attach
+                    components to them.An <b>EntityHandle</b>
+                    can be created by the world and then we can attach any type of component to it. This components have
+                    to
+                    be allocated before being added otherwise an
+                    error will be thrown.
+                    The last line just updates all the systems registered to our world. And that is everything needed to
+                    set
+                    up and work with <b>Feather</b>.
+                    <br><br>
+
+                    <img class="center" src="Assets/codeSnippets/CreateEntity.png" width="734" height="205"><br>
+
+                </p>
+
+            </div>
         </div>
 
-        <div class="row">
+        <hr align="center">
+        <hr align="center">
 
-            <h6>Rendering Showcase</h6>
+    </section>
 
-            <p>
-                Below some of the shaders and materials build with the Crow Renderer are showcased. These materials and shaders are also used in the final <b>Game</b>.
-            </p>
+    <section>
 
-        </div>
 
-        <div class="row align-items-center" style="margin-top: -50px;">
+        <div class="container">
 
-            <div class="col col-sm-auto no-gutters">
-
-                <video width="350" height="200" autoplay loop id="video-5" muted>
-                    <source src="Assets/BlingLightShowcase.mp4" type="video/mp4">
-                </video>
-
-            </div>
-
-            <div class="col col-sm-auto no-gutters">
-
-                <video width="350" height="200" autoplay loop id="video-6" muted>
-                    <source src="Assets/TranslucentShowcase.mp4" type="video/mp4">
-                </video >
-
-            </div>
-
-            <div class="col col-sm-auto no-gutters">
-
-                <video width="350" height="200" autoplay loop id="video-7" muted>
-                    <source src="Assets/TextureMaterial.mp4" type="video/mp4">
-                </video >
+            <div class="row">
+                <h2>Crow Engine</h2>
+                <p>
+                    As mentioned above in this report,The goal is to research the question <b>What benefits does ECS
+                        architecture bring to Game and Engine development?</b>
+                    In this section the focus will be <b>What features does the Crow Engine offer and how were they
+                        build
+                        using Feather(ECS)?</b><br>
+                    Crow engine provides the basics feature a game engine needs to get the user up and running. It has a
+                    Renderer and Material workflow, window and input API,
+                    Game Loop, ResourceManager for loading and maintaining assets, and support for using Unity as an
+                    editor
+                    tool, however only in this section only the
+                    <b>Renderer</b> and <b>Unity as editor</b> will be explored since this is where the ECS architecture
+                    was
+                    needed to be used the most.
+                </p>
 
             </div>
 
             <hr align="center">
+
+            <div class="row">
+
+                <h5>The Renderer</h5>
+
+
+                <p>
+                    Since one of the core systems of every game engine is it's renderer, naturally the question of how
+                    your
+                    architecture will support your renderer rises.
+                    In this case <b>How to build an ECS renderer and what are it's benefits?</b><br>
+                    One of the main problems with an ECS renderer is fitting your drawable objects into cache. Meshes
+                    and
+                    materials can be big in terms of byte size and might not fit inside
+                    a cache line so in order to benefit from data-oriented architecture we need to find a way fit as
+                    much as
+                    we can and what we need in a cache line.<br>
+                    How the Crow Engine approaches the problem is by splitting the data. So in the picture below there
+                    is a
+                    <b>Meshinfo</b> component set and instead of holding
+                    a reference to both a material and the mesh, it holds a pointer to a material array and a mesh
+                    array.
+                    This way our <b>MeshInfo</b> component is small
+                    in size (it only has 2 pointers) but also it points to packed arrays of meshes and materials. The
+                    same
+                    thing is done for materials and shaders, since
+                    multiple materials can use the same shader, a pointer to the shader is stored in the material.<br>
+
+                    By doing rendering in ECS style we can sort the scene easily. The Crow Engine supports instanced
+                    rendering and how that works is When a shader is buffered to the GPU,
+                    all the materials with that shader are buffered and in the end the model using that material with
+                    all
+                    the transformation matrices are buffered. This way we save a lot of the draw calls the
+                    GPU would have to do otherwise.<br>
+
+                    Another benefit of this approach is that if we were doing something to all the materials we would
+                    not
+                    need to touch the mesh part of the memory, instead we just
+                    put all the materials we need in cache.<br><br>
+
+
+                    <img class="center" src="Assets/MeshInfoDiagram.png" width="571" height="251"><br>
+                </p>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-5">
+                    <h6>Renderer Performance Test</h6>
+
+                    <p>
+                        In order to test the speed of the ECS renderer, the same rendering application was created both
+                        in
+                        Unity and Crow Engine. The application is
+                        10,000 meshes rotating at a random speed. For the test to be fair i attached an unlit material
+                        to
+                        the meshes in both engines so the lighting would
+                        not affect any of the performance.<br><br>
+                        The top video on the right is the Unity engine result. In unity the app performs around 6-8 FPS
+                        while as it is shown in the bottom right video
+                        the exact same application in the Crow Engine performs in a constant 16-17 FPS.<br><br>
+                        The main reason why the ECS renderer performs better in this situation is because of how fast
+                        the
+                        cpu is able to iterate and work on contiguous memory. As shown above
+                        All the Meshes,Materials and Shaders are stored packed together in memory.<br><br>
+                        The Crow Engine renderer is not a better renderer then Unity's Renderer, this test is only
+                        showcasing how the data-oriented architecture is more efficient.
+                        There are many improvement that could be done here like <b>Batching</b> and <b>Multi-threaded
+                            Rendering</b> but these were not the scope of the project and did not
+                        fit into the the main goal.<br><br>
+                        Another reason we are able to perform better is not only because of the way material,shaders and
+                        meshes(in this case) are stored in memory but also because they are sorted
+                        at runtime in order to have as little shader swaps as possible. This way the instance rendering
+                        is
+                        implemented and saves the GPU draw calls but also the GPU does not have
+                        to swap shaders as often, which is a fairly expensive opertation.
+                    </p>
+                </div>
+                <div class="col-md-7">
+
+                    <video width="900" height="500" autoplay loop id="video-3" muted>
+                        <source src="Assets/Unity10kMeshes.mp4" type="video/mp4">
+                    </video>
+                    <video width="900" height="500" autoplay loop id="video-4" muted>
+                        <source src="Assets/Crow10kMeshes.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+            </div>
+
+
+
+            <div class="row">
+                <h6>Rendering Showcase</h6>
+            </div>
+            <div class="row">
+                <p>
+                    Below some of the shaders and materials build with the Crow Renderer are showcased. These materials
+                    and shaders are also used in the final <b>Game</b>.
+                </p>
+            </div>
+
+            <div class="row align-items-center" style="margin-top: -50px;">
+
+                <div class="col-md-auto no-gutters">
+
+                    <video width="350" height="200" autoplay loop id="video-5" muted>
+                        <source src="Assets/BlingLightShowcase.mp4" type="video/mp4">
+                    </video>
+
+                </div>
+
+                <div class="col-md-auto no-gutters">
+
+                    <video width="350" height="200" autoplay loop id="video-6" muted>
+                        <source src="Assets/TranslucentShowcase.mp4" type="video/mp4">
+                    </video>
+
+                </div>
+
+                <div class="col-md-auto no-gutters">
+
+                    <video width="350" height="200" autoplay loop id="video-7" muted>
+                        <source src="Assets/TextureMaterial.mp4" type="video/mp4">
+                    </video>
+
+                </div>
+
+                <hr align="center">
+            </div>
+
+
+            <div class="row">
+
+                <h5>Editor Tool</h5>
+
+                <p>
+                    Crow Engine uses Unity as an editor. All the Crow Engine main components are supported and
+                    serialised from Unity. The Unity scene is serialised into
+                    an <b>XML</b> file format which can then loaded and parsed in the crow engine. The flipping of
+                    coordinate system from <b>Left-Handed</b> to <b>Right-Handed</b>
+                    is done automatically by the parser.<br> Also the scene hiearchy is mantained meaning child-parent
+                    relations are
+                    parsed into the Crow engine as they are in the Unity engine.
+                </p>
+
+                <p>
+                    On the bottom left picture, the scene in Unity is shown and in the right the same scene parsed by
+                    Crow engine is shown. The parser
+                    will create all the entities and attach all the supported components based on the XML File generated
+                    from Unity.
+                </p>
+
+                <div class="col-md-auto no-gutters">
+
+                    <img src="Assets/UnityEditor.png" width="500" height="300">
+                </div>
+
+                <div class="col-md-auto no-gutters">
+
+                    <img src="Assets/CrowEditor.png" width="500" height="300">
+
+                </div>
+
+                <hr align="center">
+
+                <div class="row">
+
+                    <div class="col-md-6">
+
+                        <h6>Component Serialisation</h6>
+                        <p>
+                            As mentioned before in <b>ECS</b> architecture the components are just strucutres of data.
+                            This makes serialisation of the
+                            components trivial. All the supported engine components work dynamically with Unity's
+                            components.For example in the video on the right
+                            the light component when changed is also chaning unity's light component automatically. This
+                            way changes are visible immediatly
+                            in the Unity engine and then can be exported for the Crow engine.<br>
+
+                            The engine supported components are :
+                        <ul>
+                            <li>Camera Component</li>
+                            <li>Light Component</li>
+                            <li>AudioSource Component</li>
+                            <li>Texture Material</li>
+                            <li>Color Material</li>
+                        </ul>
+                        </p>
+                    </div>
+
+                    <div class="col-md-auto">
+
+                        <video width="268" height="590" autoplay loop id="video-8" muted>
+                            <source src="Assets/dynamicComponents.mp4" type="video/mp4">
+                        </video>
+
+                    </div>
+
+                </div>
+                <hr align="center">
+                <div class="row">
+
+                    <div class="col-md-6">
+
+                        <h6>Asset Serialisation</h6>
+                        <p>
+                            Another feature of the parser is that it can serialise assets from unity. All the user has
+                            to do is place
+                            the texture or model into the right folder in unity and parse the file. The file parset is a
+                            <b>.asset</b> file, which
+                            is a custom serialisation format created for the loading of assets in the Crow Engine. As
+                            shown in the picture on the right,
+                            the format is very easy to read. The <b>"#"</b> is a type identifier meaning anything after
+                            it represents the type of the asset.
+                            Anything after the <b>":"</b> is the path of that asset.<br>
+                            Once the file is generated from unity, next time the Crow Engine loads it will automatically
+                            load all the assets.<br>
+                            The custom format is very fast to be interpreted as it is written fully in C and since it
+                            has a very simple way of identifying tokens.
+                        </p>
+                    </div>
+
+                    <div class="col-md-auto">
+
+                        <img src="Assets/CustomFormat.png">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
         </div>
 
 
-        <div class="row">
+        <hr align="center">
+        <hr align="center">
 
-            <h5>Editor Tool</h5>
+    </section>
 
-            <p>
-                Crow Engine uses Unity as an editor. All the Crow Engine main components are supported and serialized from Unity. The Unity scene is serialised into
-                an <b>XML</b> file format which can then loaded and parsed in the crow engine. The flipping of coordinate system from <b>Left-Handed</b> to <b>Right-Handed</b>
-                is done automatically by the parser.
-            </p>
+    <section>
+
+        <div class="container">
+
+            <div class="row">
+
+                <h2>Graveyard Warz</h2>
+
+                <p>
+                    <b>Graveyard Warz</b> is a <i>Tug of war</i> game which is build using <b>Feather</b> and the
+                    <b>Crow Engine</b>. The main reason
+                    it was created is to showcase the <b>The benefits of the ECS in Game development</b>. In the
+                    <b>Speed Test</b> section of Feather
+                    a stress test of the game was showcased, where alot of units were spawned and simulated. In this
+                    section, the focus will be how ECS?
+                    helped in the workflow of developing the game and show how it evolved dutring development, from the prototype phase
+                    to the polishing phase.
+                </p>
+            </div>
+            
+            <hr align="center">
+
+            <div class="row">
+
+                <h5>About the game</h5>
+
+                <p>
+                    
+                </p>
+            </div>
 
         </div>
+    </section>
 
-
-    </div>
-
-
-    <hr align="center">
-    <hr align="center">
-
-</section>
-
-<div class="container">
-
-    <div class="row">
-
-        <h2>The Game</h2>
-
-    </div>
-
-</div>
-<section>
-
-
-</section>
-
-<script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 
 
 </body>
+
 </html>
