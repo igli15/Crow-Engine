@@ -26,6 +26,10 @@ Transform.h
 ../Feather/World.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.cpp
+Camera.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.h
 glm/glm.hpp
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/glm/glm.hpp
@@ -47,6 +51,10 @@ glm/glm.hpp
 /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
 ../Events/MeshInfoDirtyEvent.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/MeshInfoDirtyEvent.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Rigidbody.cpp
+Rigidbody.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Rigidbody.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Rigidbody.h
 glm/glm.hpp
@@ -168,6 +176,14 @@ glm/vec3.hpp
 freetype2/ft2build.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/freetype2/ft2build.h
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.cpp
+Input.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
+../Rendering/Window.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
+GLFW/glfw3.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/GLFW/glfw3.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
 unordered_map
 -
@@ -225,6 +241,10 @@ Renderer.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Sprite.h
 SFML/Audio.hpp
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Core/SFML/Audio.hpp
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.cpp
+Debug.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
 string.h
@@ -288,6 +308,10 @@ glm/ext/quaternion_float.hpp
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.cpp
+EventQueue.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h
 MemberFunctionHandler.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
@@ -299,6 +323,10 @@ map
 -
 typeindex
 -
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.cpp
+MemberFunctionHandler.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h
 Event.h
@@ -630,6 +658,12 @@ GLFW/glfw3.h
 ../AbstractMaterial.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Mesh.cpp
+Mesh.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Mesh.h
+../Debug/Debug.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Mesh.h
 glm/glm.hpp
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/glm/glm.hpp
@@ -674,14 +708,42 @@ iostream
 glm/ext.hpp
 -
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Sprite.cpp
+GL/glew.h
+-
+glm/glm.hpp
+-
+Sprite.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Sprite.h
+Shader.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Sprite.h
 vector
 -
 Texture.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.cpp
+Texture.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h
 GL/glew.h
+-
+
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.cpp
+iostream
+-
+Window.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
+../Core/Input.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h
+../Debug/Debug.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h
+../Rendering/Shader.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h
+unordered_map
 -
 
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h
@@ -856,6 +918,10 @@ TransformHierarchySystem.h
 ../Events/ComponentRemovedEvent.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h
 
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Utils/Random.cpp
+Random.h
+/Users/igli/Desktop/Crow Engine/Crow/Engine/Utils/Random.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Utils/Random.h
 cstdlib
 -
@@ -955,6 +1021,10 @@ glm/vec3.hpp
 /Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h
 ../../Engine/Feather/Types.h
 /Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h
+
+/Users/igli/Desktop/Crow Engine/Crow/Game/Events/WorldResetEvent.cpp
+WorldResetEvent.h
+/Users/igli/Desktop/Crow Engine/Crow/Game/Events/WorldResetEvent.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Game/Events/WorldResetEvent.h
 ../../Engine/EventQueue/Event.h
@@ -1646,6 +1716,20 @@ MainWorld.h
 unordered_map
 -
 
+/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Component.h
+
+/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Gameobject.cpp
+Gameobject.h
+/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Gameobject.h
+
+/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Gameobject.h
+vector
+-
+iostream
+-
+Component.h
+/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Component.h
+
 /Users/igli/Desktop/Crow Engine/Crow/Plugins/RapidXML/rapidxml.hpp
 cstdlib
 -
@@ -1655,6 +1739,10 @@ new
 -
 exception
 -
+
+/Users/igli/Desktop/Crow Engine/Crow/Plugins/stb_image.cpp
+stb_image.h
+/Users/igli/Desktop/Crow Engine/Crow/Plugins/stb_image.h
 
 /Users/igli/Desktop/Crow Engine/Crow/Plugins/stb_image.h
 stb_image.h
@@ -1687,6 +1775,10 @@ intrin.h
 -
 arm_neon.h
 -
+
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/MoveComponent.cpp
+MoveComponent.h
+/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/MoveComponent.h
 
 /Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/MoveComponent.h
 glm/glm.hpp
