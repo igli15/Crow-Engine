@@ -1,42 +1,98 @@
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "modernize-use-auto"
 
-#include "Debug/Debug.h"
+#include "Engine/Debug/Debug.h"
 
-#include "Tests/FeatherTest.h"
-#include "Tests/OOPEngineTest.h"
+
+
+
+#include "Engine/Rendering/Window.h"
+
+#include <iostream>
+#include <time.h>
+#include "Engine/Core/Game.h"
+#include "Engine/Debug/Debug.h"
+#include "SandBox/MyGame.h"
+
+
+
+#include "Engine/Feather/World.h"
+#include "Engine/Feather/EntityHandle.h"
+
+struct Position
+{
+    float x = 0.0f;
+    float y = 0.0f;
+};
+
+struct Gravity
+{
+    float gravityValue = 9.8f;
+};
+
+class GravitySystem : public System
+{
+    void Update(float dt) override
+    {
+        world->ForEach<Position, Gravity>([&](Entity e, Position &position, Gravity &gravity) {
+            position.y += gravity.gravityValue * dt;
+        });
+
+        std::vector<Entity> entities = world->FindEntities<Position>([&](Entity e, Position &position) {
+            return (position.x == 0 && position.y == 0);
+        });
+
+        for (Entity e : entities)
+        {
+            world->DestroyEntity(e);
+        }
+    }
+
+};
 
 int main()
 {
-    Debug::Log("Init Crow");
+    //Debug::Init();
 
-    FeatherTest test;
-    OOPEngineTest OOPEngine;
+    /*
+    ComponentRegistry* componentRegistry = new ComponentRegistry();
+    SystemRegistry* systemRegistry = new SystemRegistry();
+    EntityRegistry* entityRegistry = new EntityRegistry();
 
-
-    test.Init();
-    OOPEngine.Init();
-
-    auto t1 = std::chrono::high_resolution_clock::now();
-    for (int i = 0; i <1000; ++i)
-    {
-        test.Update();
-    }
-    auto t2 = std::chrono::high_resolution_clock::now();
-
-    auto duration = std::chrono::duration_cast<std::chrono::milliseconds>( t2 - t1 ).count();
-    std::cout<<duration<<std::endl;
-
-    auto t3 = std::chrono::high_resolution_clock::now();
-    for (int i = 0; i <1000 ; ++i)
-    {
-        OOPEngine.Update();
-    }
-    auto t4 = std::chrono::high_resolution_clock::now();
-
-    auto duration2 = std::chrono::duration_cast<std::chrono::milliseconds>( t4 - t3 ).count();
-    std::cout<<duration2<<std::endl;
-
-    Debug::Log("Closing Crow");
+    World* world = new World();
+    world->Init(systemRegistry,entityRegistry,componentRegistry);
 
 
+    componentRegistry->AllocateComponentSet<Position>();
+    componentRegistry->AllocateComponentSet<Gravity>();
+
+    systemRegistry->AllocateSystem<GravitySystem>();
+
+    world->RegisterSystem<GravitySystem>();
+
+    world->SetSystemSignature<GravitySystem,Position,Gravity>();
+
+    EntityHandle entity = world->CreateEntity();
+
+    entity.AddComponent<Position>(Position{0.0f,0.0f});
+    entity.AddComponent<Gravity>(Gravity{9.18f});
+
+
+    world->UpdateAllSystems(0.01f);
+*/
+
+    //Debug::Log("Init Crow");
+
+    Debug::Init();
+
+    MyGame game;
+    game.Init();
+    game.LoadAssets();
+    game.AllocateMemory();
+    game.InitWorld();
+    game.Run();
     return 0;
 }
+
+
+#pragma clang diagnostic pop

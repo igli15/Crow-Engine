@@ -23,6 +23,13 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.16/Modules/Compiler/Clang.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.16/Modules/Compiler/GNU.cmake"
+<<<<<<< HEAD
+=======
+  "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.16/Modules/FindOpenGL.cmake"
+  "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake"
+  "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.16/Modules/FindPackageMessage.cmake"
+  "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.16/Modules/FindPkgConfig.cmake"
+>>>>>>> v1.0
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.16/Modules/Platform/Apple-AppleClang-C.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.16/Modules/Platform/Apple-AppleClang-CXX.cmake"
@@ -33,8 +40,21 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.16/Modules/Platform/Darwin.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.16/Modules/Platform/UnixPaths.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.16/Modules/ProcessorCount.cmake"
+<<<<<<< HEAD
+=======
+  "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.16/Modules/SelectLibraryConfigurations.cmake"
+>>>>>>> v1.0
   "../CMakeLists.txt"
+  "../FindFreetype.cmake"
+  "../FindGLEW.cmake"
+  "../FindGLFW.cmake"
+  "../FindGLM.cmake"
   "../FindSFML.cmake"
+<<<<<<< HEAD
+=======
+  "../Findassimp.cmake"
+  "../Findspdlog.cmake"
+>>>>>>> v1.0
   "CMakeFiles/3.16.5/CMakeCCompiler.cmake"
   "CMakeFiles/3.16.5/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.16.5/CMakeSystem.cmake"

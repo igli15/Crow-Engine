@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d6afba7-85da-4eec-907e-9f92eae1a565" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/custom.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/../Crow/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Crow/.idea/workspace.xml" afterDir="false" />
+>>>>>>> v1.0
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,6 +19,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
@@ -39,6 +44,9 @@
         </entry>
       </file>
     </leaf>
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+>>>>>>> v1.0
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -50,11 +58,14 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Goal</find>
     </findStrings>
   </component>
+=======
+>>>>>>> v1.0
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -69,8 +80,13 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+<<<<<<< HEAD
     <option name="width" value="1680" />
     <option name="height" value="1050" />
+=======
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
+>>>>>>> v1.0
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -78,6 +94,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+<<<<<<< HEAD
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -94,6 +111,9 @@
           <select />
         </subPane>
       </pane>
+=======
+      <pane id="ProjectPane" />
+>>>>>>> v1.0
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -131,6 +151,7 @@
       <workItem from="1592435198755" duration="3405000" />
       <workItem from="1592506070741" duration="1383000" />
       <workItem from="1592564484850" duration="2903000" />
+<<<<<<< HEAD
       <workItem from="1592690324791" duration="969000" />
       <workItem from="1592784171057" duration="2869000" />
       <workItem from="1592830959137" duration="3327000" />
@@ -140,15 +161,25 @@
       <workItem from="1593128887321" duration="139000" />
       <workItem from="1593184226530" duration="2812000" />
       <workItem from="1593262121119" duration="1305000" />
+=======
+      <workItem from="1592690324791" duration="1224000" />
+>>>>>>> v1.0
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="57336000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
+=======
+    <option name="totallyTimeSpent" value="23113000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+>>>>>>> v1.0
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18430753" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -173,6 +204,7 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/css/bootstrap-reboot.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-931" />
@@ -201,5 +233,13 @@
         </state>
       </provider>
     </entry>
+=======
+    <entry file="file://$PROJECT_DIR$/css/bootstrap-reboot.css" />
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.css" />
+    <entry file="file://$PROJECT_DIR$/Html/index.html" />
+    <entry file="file://$PROJECT_DIR$/js/test.js" />
+    <entry file="file://$PROJECT_DIR$/index.html" />
+    <entry file="file://$PROJECT_DIR$/css/custom.css" />
+>>>>>>> v1.0
   </component>
 </project>

@@ -1,0 +1,40 @@
+#texture bridgeTexture : bridgeDiffuse.png;
+#texture containerDiffuse : container.png;
+#texture containerSpecular : containerSpecular.png;
+#texture matrixTexture : matrix.jpg;
+#texture perlinNoise : PerlinNoise.png;
+#texture gradientMap : gradientMap.png;
+#texture causticsTexture : causticsTex.jpeg;
+#texture foamGradient : foamGradient.png;
+#texture gridPatternTexture : gridPattern.jpg;
+#texture portalRotationMask : portalRotationMask.png;
+#texture portalGlowMap : portalGlowMap.png;
+#texture PlayerUnitGroupUI : PlayerUnitGroupUI.png;
+#texture uiBackground : uiBackground.png;
+
+#texture uiBorderQ : uiBorderQ.png;
+#texture uiBorderW : uiBorderW.png;
+#texture uiBorderE : uiBorderE.png;
+
+#texture uiBorderQAvaiable : uiBorderQAvaiable.png;
+#texture uiBorderWAvaiable : uiBorderWAvaiable.png;
+#texture uiBorderEAvaiable : uiBorderEAvaiable.png;
+
+#texture moneyIcon : SoulsIcon.png;
+
+#texture flowNoise : noiseFlow.png;
+
+#texture title : Title.png;
+#texture playIcon : PlayIcon.png;
+#texture quitIcon : QuitIcon.png;
+#texture menuSelectionIcon : menuSelectionIcon.png;
+#texture healthBar : healthBarOutlined.jpg;
+
+#texture youLose : YouLose.png;
+#texture youWin : YouWin.png;
+
+#model ghost : ghost1.obj;
+#model golem : Golem.fbx;
+#model canon : canon.fbx;
+#model bridge : bridgeTile.fbx;
+#model bridgeBegin : bridgeTileBegin.fbx;

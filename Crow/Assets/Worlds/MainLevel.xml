@@ -1,0 +1,198 @@
+<root>
+  <GameObject name="CrowCamera" position="(4.2700, 9.4100, 5.4800)" rotation="(-0.4359, 0.3430, 0.2166, 0.8034)" scale="(1.0000, 1.0000, 1.0000)">
+    <Components>
+      <Camera FOV="60" aspectRatio="1.777778" nearClipPlane="0.1" farClipPlane="1000" />
+    </Components>
+    <GameObject name="UnityCamera" position="(0.0000, 0.0000, 0.0000)" rotation="(0.0000, 1.0000, 0.0000, 0.0000)" scale="(1.0000, 1.0000, 1.0000)">
+      <Components />
+    </GameObject>
+  </GameObject>
+  <GameObject name="CrowDirLight" position="(-3.3300, 4.7100, -3.3300)" rotation="(-0.6464, 0.0000, 0.0000, 0.7630)" scale="(1.0000, 1.0000, 1.0000)">
+    <Components>
+      <Light type="DIRECTIONAL" color="(1.0000, 1.0000, 0.9804)" intensity="1.0000" attenuationConstants="(1.0000, 0.0900, 0.0320)" cutoffAngle="25.0000" outercutoffAngle="35.0000" />
+    </Components>
+  </GameObject>
+  <GameObject name="Cube" position="(5.1500, 0.0000, -8.2000)" rotation="(0.0000, -0.3342, 0.0000, 0.9425)" scale="(23.2690, 0.1000, 15.3260)" mesh="cube">
+    <Components>
+      <ColorMaterial materialName="enemyBaseMat" mainColor="(0.4000, 0.4039, 0.4039)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" />
+    </Components>
+  </GameObject>
+  <GameObject name="Cube (1)" position="(11.8261, -19.7185, 16.9186)" rotation="(0.0000, 0.0000, 0.0000, 1.0000)" scale="(1.0000, 1.0000, 1.0000)" mesh="cube">
+    <Components>
+      <TranslucentMaterial materialName="translucentMaterial" mainColor="(0.6039, 0.6039, 0.6039)" specularColor="(1.0000, 1.0000, 1.0000)" translucencyColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" translucentPower="0.8000" translucentScale="1.0000" translucentDistortion="1.2000" />
+    </Components>
+  </GameObject>
+  <GameObject name="LeftBirdge" position="(-1.7000, 0.0000, -1.7400)" rotation="(0.0000, -0.2953, 0.0000, 0.9554)" scale="(1.0000, 1.0000, 1.0000)">
+    <Components>
+      <BridgeComponent startPos="(-9.2733, 0.0000, 2.9814)" endPos="(-3.8845, 0.0000, -5.4735)" />
+    </Components>
+    <GameObject name="startTransform" position="(-3.5890, 0.0000, 8.1710)" rotation="(0.0000, 0.0007, 0.0000, 1.0000)" scale="(1.4990, 0.1000, 11.9203)">
+      <Components />
+    </GameObject>
+    <GameObject name="endTransform" position="(-3.9100, 0.0000, -1.8500)" rotation="(0.0000, 0.0007, 0.0000, 1.0000)" scale="(1.4990, 0.1000, 11.9203)">
+      <Components />
+    </GameObject>
+    <GameObject name="bridge_04_tile_03 (1)" position="(-3.5575, 0.0400, 7.8808)" rotation="(0.0086, 0.7071, 0.7071, -0.0086)" scale="(0.8000, 0.5000, 0.5000)" mesh="bridgeBegin">
+      <Components>
+        <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1500" emissionScale="1.0000" />
+      </Components>
+    </GameObject>
+    <GameObject name="bridge_04_tile_02 (7)" position="(-3.5728, 0.0400, 6.7340)" rotation="(-0.7071, 0.0084, 0.0084, 0.7071)" scale="(0.8000, 0.5000, 0.5000)" mesh="bridge">
+      <Components>
+        <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1500" emissionScale="1.0000" />
+      </Components>
+    </GameObject>
+    <GameObject name="bridge_04_tile_02 (6)" position="(-3.6109, 0.0400, 5.5677)" rotation="(-0.7071, 0.0084, 0.0084, 0.7071)" scale="(0.8000, 0.5000, 0.5000)" mesh="bridge">
+      <Components>
+        <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1500" emissionScale="1.0000" />
+      </Components>
+    </GameObject>
+    <GameObject name="bridge_04_tile_02 (5)" position="(-3.6398, 0.0400, 4.4219)" rotation="(-0.7071, 0.0084, 0.0084, 0.7071)" scale="(0.8000, 0.5000, 0.5000)" mesh="bridge">
+      <Components>
+        <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1500" emissionScale="1.0000" />
+      </Components>
+    </GameObject>
+    <GameObject name="bridge_04_tile_02 (4)" position="(-3.6626, 0.0400, 3.4419)" rotation="(-0.7071, 0.0084, 0.0084, 0.7071)" scale="(0.8000, 0.5000, 0.5000)" mesh="bridge">
+      <Components>
+        <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1500" emissionScale="1.0000" />
+      </Components>
+    </GameObject>
+    <GameObject name="bridge_04_tile_02 (3)" position="(-3.6937, 0.0400, 2.2627)" rotation="(-0.7071, 0.0084, 0.0084, 0.7071)" scale="(0.8000, 0.5000, 0.5000)" mesh="bridge">
+      <Components>
+        <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1500" emissionScale="1.0000" />
+      </Components>
+    </GameObject>
+    <GameObject name="bridge_04_tile_02 (2)" position="(-3.7210, 0.0400, 1.0929)" rotation="(-0.7071, 0.0084, 0.0084, 0.7071)" scale="(0.8000, 0.5000, 0.5000)" mesh="bridge">
+      <Components>
+        <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1500" emissionScale="1.0000" />
+      </Components>
+    </GameObject>
+    <GameObject name="bridge_04_tile_02 (1)" position="(-3.7552, 0.0400, -0.0639)" rotation="(-0.7071, 0.0084, 0.0084, 0.7071)" scale="(0.8000, 0.5000, 0.5000)" mesh="bridge">
+      <Components>
+        <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1500" emissionScale="1.0000" />
+      </Components>
+    </GameObject>
+    <GameObject name="bridge_04_tile_03" position="(-3.7863, 0.0400, -1.2431)" rotation="(-0.7071, 0.0084, 0.0084, 0.7071)" scale="(0.8000, 0.5000, 0.5000)" mesh="bridgeBegin">
+      <Components>
+        <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1500" emissionScale="1.0000" />
+      </Components>
+    </GameObject>
+  </GameObject>
+  <GameObject name="MiddleBridge" position="(2.1800, 0.0000, 1.6300)" rotation="(0.0000, -0.3402, 0.0000, 0.9404)" scale="(1.0000, 1.0000, 1.0000)">
+    <Components>
+      <BridgeComponent startPos="(-5.8058, 0.0000, 5.6141)" endPos="(0.3583, 0.0000, -2.2933)" />
+    </Components>
+    <GameObject name="startTransform" position="(-3.5890, 0.0000, 8.1710)" rotation="(0.0000, 0.0007, 0.0000, 1.0000)" scale="(1.4990, 0.1000, 11.9203)">
+      <Components />
+    </GameObject>
+    <GameObject name="endTransform" position="(-3.9100, 0.0000, -1.8500)" rotation="(0.0000, 0.0007, 0.0000, 1.0000)" scale="(1.4990, 0.1000, 11.9203)">
+      <Components />
+    </GameObject>
+    <GameObject name="bridge_04_tile_03 (1)" position="(-3.5575, 0.0400, 7.8808)" rotation="(0.0086, 0.7071, 0.7071, -0.0086)" scale="(0.8000, 0.5000, 0.5000)" mesh="bridgeBegin">
+      <Components>
+        <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1500" emissionScale="1.0000" />
+      </Components>
+    </GameObject>
+    <GameObject name="bridge_04_tile_02 (7)" position="(-3.5728, 0.0400, 6.7340)" rotation="(-0.7071, 0.0084, 0.0084, 0.7071)" scale="(0.8000, 0.5000, 0.5000)" mesh="bridge">
+      <Components>
+        <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1500" emissionScale="1.0000" />
+      </Components>
+    </GameObject>
+    <GameObject name="bridge_04_tile_02 (6)" position="(-3.6109, 0.0400, 5.5677)" rotation="(-0.7071, 0.0084, 0.0084, 0.7071)" scale="(0.8000, 0.5000, 0.5000)" mesh="bridge">
+      <Components>
+        <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1500" emissionScale="1.0000" />
+      </Components>
+    </GameObject>
+    <GameObject name="bridge_04_tile_02 (5)" position="(-3.6398, 0.0400, 4.4219)" rotation="(-0.7071, 0.0084, 0.0084, 0.7071)" scale="(0.8000, 0.5000, 0.5000)" mesh="bridge">
+      <Components>
+        <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1500" emissionScale="1.0000" />
+      </Components>
+    </GameObject>
+    <GameObject name="bridge_04_tile_02 (4)" position="(-3.6626, 0.0400, 3.4419)" rotation="(-0.7071, 0.0084, 0.0084, 0.7071)" scale="(0.8000, 0.5000, 0.5000)" mesh="bridge">
+      <Components>
+        <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1500" emissionScale="1.0000" />
+      </Components>
+    </GameObject>
+    <GameObject name="bridge_04_tile_02 (3)" position="(-3.6937, 0.0400, 2.2627)" rotation="(-0.7071, 0.0084, 0.0084, 0.7071)" scale="(0.8000, 0.5000, 0.5000)" mesh="bridge">
+      <Components>
+        <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1500" emissionScale="1.0000" />
+      </Components>
+    </GameObject>
+    <GameObject name="bridge_04_tile_02 (2)" position="(-3.7210, 0.0400, 1.0929)" rotation="(-0.7071, 0.0084, 0.0084, 0.7071)" scale="(0.8000, 0.5000, 0.5000)" mesh="bridge">
+      <Components>
+        <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1500" emissionScale="1.0000" />
+      </Components>
+    </GameObject>
+    <GameObject name="bridge_04_tile_02 (1)" position="(-3.7552, 0.0400, -0.0639)" rotation="(-0.7071, 0.0084, 0.0084, 0.7071)" scale="(0.8000, 0.5000, 0.5000)" mesh="bridge">
+      <Components>
+        <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1500" emissionScale="1.0000" />
+      </Components>
+    </GameObject>
+    <GameObject name="bridge_04_tile_03" position="(-3.7863, 0.0400, -1.2431)" rotation="(-0.7071, 0.0084, 0.0084, 0.7071)" scale="(0.8000, 0.5000, 0.5000)" mesh="bridgeBegin">
+      <Components>
+        <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1500" emissionScale="1.0000" />
+      </Components>
+    </GameObject>
+  </GameObject>
+  <GameObject name="RightBridge" position="(5.4500, 0.0000, 4.4900)" rotation="(0.0000, -0.3528, 0.0000, 0.9357)" scale="(1.0000, 1.0000, 1.0000)">
+    <Components>
+      <BridgeComponent startPos="(-2.6405, 0.0000, 8.2570)" endPos="(3.7350, 0.0000, 0.5190)" />
+    </Components>
+    <GameObject name="startTransform" position="(-3.5890, 0.0000, 8.1710)" rotation="(0.0000, 0.0007, 0.0000, 1.0000)" scale="(1.4990, 0.1000, 11.9203)">
+      <Components />
+    </GameObject>
+    <GameObject name="endTransform" position="(-3.9100, 0.0000, -1.8500)" rotation="(0.0000, 0.0007, 0.0000, 1.0000)" scale="(1.4990, 0.1000, 11.9203)">
+      <Components />
+    </GameObject>
+    <GameObject name="bridge_04_tile_03 (1)" position="(-3.5575, 0.0400, 7.8808)" rotation="(0.0086, 0.7071, 0.7071, -0.0086)" scale="(0.8000, 0.5000, 0.5000)" mesh="bridgeBegin">
+      <Components>
+        <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1500" emissionScale="1.0000" />
+      </Components>
+    </GameObject>
+    <GameObject name="bridge_04_tile_02 (7)" position="(-3.5728, 0.0400, 6.7340)" rotation="(-0.7071, 0.0084, 0.0084, 0.7071)" scale="(0.8000, 0.5000, 0.5000)" mesh="bridge">
+      <Components>
+        <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1500" emissionScale="1.0000" />
+      </Components>
+    </GameObject>
+    <GameObject name="bridge_04_tile_02 (6)" position="(-3.6109, 0.0400, 5.5677)" rotation="(-0.7071, 0.0084, 0.0084, 0.7071)" scale="(0.8000, 0.5000, 0.5000)" mesh="bridge">
+      <Components>
+        <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1500" emissionScale="1.0000" />
+      </Components>
+    </GameObject>
+    <GameObject name="bridge_04_tile_02 (5)" position="(-3.6398, 0.0400, 4.4219)" rotation="(-0.7071, 0.0084, 0.0084, 0.7071)" scale="(0.8000, 0.5000, 0.5000)" mesh="bridge">
+      <Components>
+        <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1500" emissionScale="1.0000" />
+      </Components>
+    </GameObject>
+    <GameObject name="bridge_04_tile_02 (4)" position="(-3.6626, 0.0400, 3.4419)" rotation="(-0.7071, 0.0084, 0.0084, 0.7071)" scale="(0.8000, 0.5000, 0.5000)" mesh="bridge">
+      <Components>
+        <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1500" emissionScale="1.0000" />
+      </Components>
+    </GameObject>
+    <GameObject name="bridge_04_tile_02 (3)" position="(-3.6937, 0.0400, 2.2627)" rotation="(-0.7071, 0.0084, 0.0084, 0.7071)" scale="(0.8000, 0.5000, 0.5000)" mesh="bridge">
+      <Components>
+        <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1500" emissionScale="1.0000" />
+      </Components>
+    </GameObject>
+    <GameObject name="bridge_04_tile_02 (2)" position="(-3.7210, 0.0400, 1.0929)" rotation="(-0.7071, 0.0084, 0.0084, 0.7071)" scale="(0.8000, 0.5000, 0.5000)" mesh="bridge">
+      <Components>
+        <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1500" emissionScale="1.0000" />
+      </Components>
+    </GameObject>
+    <GameObject name="bridge_04_tile_02 (1)" position="(-3.7552, 0.0400, -0.0639)" rotation="(-0.7071, 0.0084, 0.0084, 0.7071)" scale="(0.8000, 0.5000, 0.5000)" mesh="bridge">
+      <Components>
+        <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1500" emissionScale="1.0000" />
+      </Components>
+    </GameObject>
+    <GameObject name="bridge_04_tile_03" position="(-3.7863, 0.0400, -1.2431)" rotation="(-0.7071, 0.0084, 0.0084, 0.7071)" scale="(0.8000, 0.5000, 0.5000)" mesh="bridgeBegin">
+      <Components>
+        <TextureMaterial materialName="bridgeMat" diffuseTextureName="bridgeTexture" specularTextureName="blackTexture" emissionTextureName="blackTexture" mainColor="(1.0000, 1.0000, 1.0000)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1500" emissionScale="1.0000" />
+      </Components>
+    </GameObject>
+  </GameObject>
+  <GameObject name="Cube (3)" position="(-9.5400, 0.0000, 12.8300)" rotation="(0.0000, -0.3342, 0.0000, 0.9425)" scale="(23.2690, 0.1000, 15.3260)" mesh="cube">
+    <Components>
+      <ColorMaterial materialName="enemyBaseMat" mainColor="(0.4000, 0.4039, 0.4039)" specularColor="(1.0000, 1.0000, 1.0000)" shininess="16.0000" ambientIntensity="0.1000" />
+    </Components>
+  </GameObject>
+</root>

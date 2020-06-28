@@ -9,17 +9,23 @@
 #include <iostream>
 #include "Component.h"
 
+class OOPEngine;
+
 class Gameobject {
 
 private:
     std::vector<Component*> m_allComponents;
 
+
 public:
+    OOPEngine* engine;
 
     Gameobject()
     {
 
     }
+
+    virtual void AddComponents(){};
 
     template <typename T>
     T* AddComponent()
@@ -27,6 +33,7 @@ public:
         T* component = new T();
         m_allComponents.push_back(component);
         component->parent = this;
+        component->engine = engine;
         return component;
     }
 
