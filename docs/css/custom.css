@@ -38,9 +38,9 @@ iframe
     height: auto;
 }
 
-p,li
+p,li,ul
 {
-    font-size: 14px;
+    font-size: 15px;
 }
 
 li
