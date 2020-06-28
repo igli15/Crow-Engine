@@ -38,7 +38,7 @@ using SystemIDGenerator = CustomTypeID<SystemTypeDummy>;
 const int MAX_ENTITIES = 50000;
 
 ///max number of component allowed to be attached to a single entity
-const int MAX_COMPONENTS = 32;
+const int MAX_COMPONENTS = 40;
 
 ///Entity signature is just a std::bitset<MAX_COMPONENTS>
 ///when a component of ID 2 is added 2nd bitset is marked active and when removed is marked inactive
