@@ -70,6 +70,30 @@
                     <a class="dropdown-item" href="#">Editor</a>
                 </div>
             </li>
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="gameDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Game
+                </a>
+                <div class="dropdown-menu" aria-labelledby="Game">
+                    <a class="dropdown-item" href="#">About</a>
+                    <a class="dropdown-item" href="#">ECS Development</a>
+                    <a class="dropdown-item" href="#">Game Evolution</a>
+                    <a class="dropdown-item" href="#">Final Game Showcase</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="planningDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Planning
+                </a>
+                <div class="dropdown-menu" aria-labelledby="Planning">
+                    <a class="dropdown-item" href="#">Analysis Phase</a>
+                    <a class="dropdown-item" href="#">Design Phase</a>
+                    <a class="dropdown-item" href="#">Production Phase</a>
+                    <a class="dropdown-item" href="#">Quality Phase</a>
+                </div>
+            </li>
         </ul>
     </div>
 </nav>
@@ -105,8 +129,9 @@
                     how feather was used to implement these complex systems.
                 </p>
             </div>
-            <div class="col-md-7  align-items-center">
-                <iframe class="embed-responsive-item" src="Assets/finalVideo.mp4" allowfullscreen></iframe>
+            <div class="col-md-7 ">
+                <iframe class="embed-responsive-item IntroVideo" src="Assets/finalVideoNoMenu.mp4"
+                        allowfullscreen></iframe>
             </div>
 
         </div>
@@ -1104,21 +1129,25 @@
                     <li>Very Modular. By making your component small and independent all, then you can attach the
                         components to other entities and they will behave properly.
                     </li>
-                <li>No <b>null</b> exeptions. Since the data is pre-allocated and partitioned by <b>Feather</b> it makes gameplay
-                    systems easy to develop and bugs easy to find.
-                </li>
-                <li>
-                    Very fast. As shown in the previous section the memory layout gives the ability to create complex and heavy systems
-                    without the need to multi-thread your application.
-                </li>
-                <li>
-                    Focuses in the <b>data-oriented</b> development. Since the systems just modify small structures of data it provides a more
-                    maintainable code base. Changes are easy to implement.
-                </li>
-                <li>
-                    Clear program call stack. Since neither inheritance or virtual function are used, the call stack of the program is clear and easy
-                    to step through making the program more debuggable.
-                </li>
+                    <li>No <b>null</b> exeptions. Since the data is pre-allocated and partitioned by <b>Feather</b> it
+                        makes gameplay
+                        systems easy to develop and bugs easy to find.
+                    </li>
+                    <li>
+                        Very fast. As shown in the previous section the memory layout gives the ability to create
+                        complex and heavy systems
+                        without the need to multi-thread your application.
+                    </li>
+                    <li>
+                        Focuses in the <b>data-oriented</b> development. Since the systems just modify small structures
+                        of data it provides a more
+                        maintainable code base. Changes are easy to implement.
+                    </li>
+                    <li>
+                        Clear program call stack. Since neither inheritance or virtual function are used, the call stack
+                        of the program is clear and easy
+                        to step through making the program more debuggable.
+                    </li>
 
                 </ul>
 
@@ -1129,7 +1158,8 @@
                         splitting data from functionality.
                     </li>
                     <li>
-                        Dealing with behaviours that need to two or more systems communicate with each other might be challenging.
+                        Dealing with behaviours that need to two or more systems communicate with each other might be
+                        challenging.
                         The way this issue is solved in <b>Graveyard Warz</b> is by using an event system.
                     </li>
                 </ul>
@@ -1145,7 +1175,8 @@
 
             <h5>Game Evolution</h5>
             <p>
-                As stated before, the game evolved a lot in terms of art and gameplay. The pictures below showcase what that timeline of the game
+                As stated before, the game evolved a lot in terms of art and gameplay. The pictures below showcase what
+                that timeline of the game
                 looks like from left to right.
             </p>
         </div>
@@ -1177,20 +1208,170 @@
 
             <h5>The Final Game</h5>
             <p>
-                The video below showcases what the game looks like in the end, with all the visual changes,postprocessing and
+                The video below showcases what the game looks like in the end, with all the visual
+                changes,postprocessing and
                 all the gameplay systems mentioned above.<br>
             </p>
 
-
+            <iframe class="embed-responsive-item align-items-center FinalVideo loop=1 autoplay=1"
+                    src="Assets/Finalvideo.mp4" allowfullscreen></iframe>
 
         </div>
 
     </div>
+
+    <hr align="center">
+    <hr align="center">
+
+</section>
+
+<section>
+<div class="container">
+
+    <div class="row">
+
+        <h2>Planning</h2>
+
+        <p>
+            In this part of the report the work and research done in the four planning phases (<b>Analysis,Design,Production,Quality</b>)
+            will be shown,what were some of
+            the challenges faced in each phase and how were they overcome. <br>
+            For planning two <i>Trello</i> boards are maintained, the first one is a <b>Scrum</b> board and the second
+            one is a <b>Log</b> board
+            where all the features implemented are logged.
+        </p>
+
+    </div>
+
+    <hr align="center">
+
+    <div class="row">
+
+        <div class="col-md-4">
+
+            <h5>Analysis Phase</h5>
+
+            <p>
+                During the Analysis phase the focus was researching about ECS architecture and Data-Oriented design.
+                Many different
+                ways of implementing this architecture were tested and prototyped.One of the biggest challenges during
+                this phase was
+                finding a way to store data contiguously in memory but also find a way to maintain this sets of
+                data.<br>
+                There are many sources online explaining briefly what ECS is and why you should use it, however there
+                are little to none concrete
+                examples on the topic. On of the best source found for the ECS was a <b>blog(Link here)</b> which
+                discussed briefly a few implementation ideas and designs.
+                <br> In order to implement an basic ECS architecture, research on C and C++(meta programming) had to be
+                done.<br>
+                In this phase the first prototype of <b>Feather</b> was implemented. In order for the prototype to be
+                approved it had to be faster then the <b>Objected-Oriented</b> design,
+                thus tests were performed to prove the speed of the prototype.
+            </p>
+
+        </div>
+
+        <div class="col-md-auto">
+
+            <img src="Assets/analysisphase.png" width="720" height="600">
+        </div>
+
+        <hr align="center">
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-4">
+
+            <h5>Design Phase</h5>
+
+            <p>
+                In the Design phase more work was put into the overall architecture of <b>Feather</b>. Research was done on what features
+                other ECS frameworks offer and tried to implement some of them. One of the main features implemented
+                was the ability to query entities with a given set of components at runtime.<br>
+
+                The Crow Engine renderer was designed and build keeping this new architecture in mind.<br>
+                The last thing implemented was a prototype level which was parsed from Unity Engine where initial gameplay systems could be tested.<br>
+                The biggest challenge of this phase was making the transition to the ECS workflow and building core engine
+                using ECS architecture.<br>
+                In order to overcome this challenge, many versions of this systems were implemented and tested, for example the ECS renderer was included in the engine
+                after it performed faster then Unity as shown in this <b>section(Link here)</b>.
+            </p>
+
+        </div>
+
+        <div class="col-md-auto">
+
+            <img src="Assets/desingphase.png" width="720" height="600">
+        </div>
+
+        <hr align="center">
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-4">
+
+            <h5>Production Phase</h5>
+
+            <p>
+                The Production phase was where the game and all it's core gameplay systems were developed.Implementing the the game as visioned proved to be rather challenging
+                at first but after peer feedback with artists, the work proceeded much smoother.<br>
+                <b>Feather</b> started to look more like a finished and stable ECS framework and a lot of improvements were done based on the professional
+                feedback of <a href="http://www.joshcaratelli.com/">Josh Caratelli</a> who is a Software Engineer at
+                <a href="https://www.sledgehammergames.com/">Sledgehammer Games</a>, an
+                <a href="https://www.activision.com/">Activision</a> Studio. One of the main added feature was the ability to iterate components using
+                a <b>ForEach</b> query which is similar to the way Unity's ECS framework called <a href="https://unity.com/dots">DOTS</a>, iterates its components.
+                Another big feature was the implementation of <b>Sparse Sets</b> which increased the performance of <b>Feather</b> significantly.
+            </p>
+
+        </div>
+
+        <div class="col-md-auto">
+
+            <img src="Assets/productionphase.png" width="720" height="400">
+        </div>
+
+        <hr align="center">
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-4">
+
+            <h5>Quality Phase</h5>
+
+            <p>
+                The last planning phase is the Quality phase. The main focus of this phase was to polish the game and make it more
+                visually appealing by adding fog and more post processing effects as well as designing the level,adding more props and
+                tweaking gameplay values to make it more interesting.<br>
+                During this phase most of the codebase was cleaned up and documented.<br>
+                More code sugar features were added to <b>Feather</b> framework, like the ability to get all the entities that fit a predefined condition
+                by using the <b>Find</b> method.<br>
+                This whole website was created from scatch using <b>HTMl</b>,<b>CSS</b> and <b>Bootstrap</b>. It proved to be a challenge since
+                it was a new experience to develop a website.
+            </p>
+
+        </div>
+
+        <div class="col-md-auto">
+
+            <img src="Assets/qualityphase.png" width="720" height="600">
+        </div>
+
+    </div>
+</div>
+
+    <hr align="center">
+    <hr align="center">
+
+</section>
+
+<section>
+
 </section>
 
 <script src="../js/bootstrap.min.js"></script>
 
-
 </body>
-
 </html>
