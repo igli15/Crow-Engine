@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="UTF-8">
@@ -37,62 +37,76 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" href="#" id="introDropdown" role="button" data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" id="introDropdown" role="button" data-toggle="dropdown"
+                     aria-expanded="false">
                     Introduction
                 </a>
                 <div class="dropdown-menu" aria-labelledby="introDropdown">
-                    <a class="dropdown-item" href="#">Introduction</a>
-                    <a class="dropdown-item" href="#">Goal</a>
-                    <a class="dropdown-item" href="#">What is ECS?</a>
+                    <a class="dropdown-item" href="#intro">Introduction</a>
+                    <a class="dropdown-item" href="#Goal">Goal</a>
+                    <a class="dropdown-item" href="#whatecs">What is ECS?</a>
                 </div>
             </li>
             <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" href="#" id="featherDropdown" role="button"
+                <a class="nav-link dropdown-toggle" id="featherDropdown" role="button"
                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Feather
                 </a>
                 <div class="dropdown-menu" aria-labelledby="featherDropdown">
-                    <a class="dropdown-item" href="#">Architecture</a>
-                    <a class="dropdown-item" href="#">Memory Layout</a>
-                    <a class="dropdown-item" href="#">Speed Test</a>
-                    <a class="dropdown-item" href="#">Workflow</a>
+                    <a class="dropdown-item" href="#architecture">Architecture</a>
+                    <a class="dropdown-item" href="#memorylayout">Memory Layout</a>
+                    <a class="dropdown-item" href="#speedtest">Speed Test</a>
+                    <a class="dropdown-item" href="#workflow">Workflow</a>
                 </div>
             </li>
             <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" href="#" id="crowDropdown" role="button" data-toggle="dropdown"
+                <a class="nav-link dropdown-toggle" onclick="goTo('#Crow Engine')" id="crowDropdown" role="button" data-toggle="dropdown"
                    aria-haspopup="true" aria-expanded="false">
                     Crow Engine
                 </a>
                 <div class="dropdown-menu" aria-labelledby="crowDropdown">
-                    <a class="dropdown-item" href="#">Overview</a>
-                    <a class="dropdown-item" href="#">Renderer</a>
-                    <a class="dropdown-item" href="#">Editor</a>
+                    <a class="dropdown-item" href="#overview">Overview</a>
+                    <a class="dropdown-item" href="#renderer">Renderer</a>
+                    <a class="dropdown-item" href="#editor">Editor</a>
                 </div>
             </li>
             <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" href="#" id="gameDropdown" role="button" data-toggle="dropdown"
+                <a class="nav-link dropdown-toggle" onclick="goTo('#Game')" id="gameDropdown" role="button" data-toggle="dropdown"
                    aria-haspopup="true" aria-expanded="false">
                     Game
                 </a>
                 <div class="dropdown-menu" aria-labelledby="Game">
-                    <a class="dropdown-item" href="#">About</a>
-                    <a class="dropdown-item" href="#">ECS Development</a>
-                    <a class="dropdown-item" href="#">Game Evolution</a>
-                    <a class="dropdown-item" href="#">Final Game Showcase</a>
+                    <a class="dropdown-item" href="#about">About</a>
+                    <a class="dropdown-item" href="#ecsdevelopment">ECS Development</a>
+                    <a class="dropdown-item" href="#gameevolution">Game Evolution</a>
+                    <a class="dropdown-item" href="#finalgame">Final Game Showcase</a>
                 </div>
             </li>
             <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" href="#" id="planningDropdown" role="button" data-toggle="dropdown"
+                <a class="nav-link dropdown-toggle" onclick="goTo('#Planning')" id="planningDropdown" role="button" data-toggle="dropdown"
                    aria-haspopup="true" aria-expanded="false">
                     Planning
                 </a>
                 <div class="dropdown-menu" aria-labelledby="Planning">
-                    <a class="dropdown-item" href="#">Analysis Phase</a>
-                    <a class="dropdown-item" href="#">Design Phase</a>
-                    <a class="dropdown-item" href="#">Production Phase</a>
-                    <a class="dropdown-item" href="#">Quality Phase</a>
+                    <a class="dropdown-item" href="#analysisphase">Analysis Phase</a>
+                    <a class="dropdown-item" href="#designphase">Design Phase</a>
+                    <a class="dropdown-item" href="#productionphase">Production Phase</a>
+                    <a class="dropdown-item" href="#qualityphase">Quality Phase</a>
                 </div>
+            </li>
+            <li>
+            <a class="nav-link active"  href="#improvments">Improvements <span class="sr-only">(current)</span></a>
+            <li>
+            <a class="nav-link active"  href="#conclusion">Conclusion <span class="sr-only">(current)</span></a>
+            </li>
+            <li>
+            <a class="nav-link active"  href="#reflection">Personal Reflection <span class="sr-only">(current)</span></a>
+            </li>
+            <li>
+            <a class="nav-link active" href="#acknowledgments">Acknowledgments <span class="sr-only">(current)</span></a>
+            </li>
+            <li>
+                <a class="nav-link active" href="#references">References <span class="sr-only">(current)</span></a>
             </li>
         </ul>
     </div>
@@ -102,10 +116,10 @@
 
     <div class="container">
 
-        <div class="row">
+        <div class="row" id="intro">
 
             <div class="col-md-5">
-                <h2 id="introductionHeader">Introduction</h2>
+                <h2>Introduction</h2>
                 <p>As a part of my studies on Game Engineering in Saxion University, I did a 6-months research
                     project
                     (January 2020 – June 2020) called “Minor Skilled”.<br>
@@ -149,12 +163,12 @@
 
 <section>
 
-    <div class="container">
+    <div class="container" id="Goal">
 
-        <div class="row">
+        <div class="row" >
 
             <div class="col-md-auto">
-                <h5 id="Goal">Goal</h5>
+                <h5 >Goal</h5>
                 <p>The main goal of this project was to research on Entity-Component-System architecture and answer
                     the
                     question: <b>What benefits does ECS architecture bring to Game and Engine development?</b><br>
@@ -178,12 +192,12 @@
 
 <section>
 
-    <div class="container">
+    <div class="container" id="whatecs">
 
         <div class="row">
 
             <div class="col-md-6">
-                <h5 id="What is ECS?">What is ECS?</h5>
+                <h5>What is ECS?</h5>
                 <p> Traditionally games were used to be programmed in a object oriented desing (OOP) or inheritance
                     design. For example a class <b>Creature</b> inherits the base <b>Gameobject</b> class and then there
                     might be a class
@@ -275,7 +289,7 @@
 
         <div class="row">
 
-            <div class="col-md-auto">
+            <div class="col-md-auto " >
                 <h2 id="FeatherHeader">Feather</h2>
                 <p>
                     In this section my own implementation of ECS architecture called Feather will be explained.
@@ -288,6 +302,7 @@
                 </p>
                 <hr align="center">
 
+                <div id="architecture"></div>
                 <h5>Architecture</h5>
                 <p>
                     In Feather <b>Entities</b> are just an unsigned integers which are used to get the index in a
@@ -349,7 +364,7 @@
                          height="572">
                 </div>
 
-                <h5>Memory Layout</h5>
+                <h5 id="memorylayout">Memory Layout</h5>
                 <p>As mentioned before a key advantage of ECS is providing good memory layout.<br>
                     All memory that feather uses is allocated in the beginning of the application.There is no
                     runtime
@@ -448,7 +463,7 @@
 
                 <hr align="center">
 
-                <h5>Speed Test</h5>
+                <h5 id="speedtest">Speed Test</h5>
 
                 <div class="row">
                     <div class="col-md-5">
@@ -556,7 +571,7 @@
 
         <div class="row">
 
-            <h5>Workflow</h5>
+            <h5 id="workflow">Workflow</h5>
 
             <p>
                 In this section, some examples of how to set up and use Feather will be shown.How
@@ -712,7 +727,7 @@
     <div class="container">
 
         <div class="row">
-            <h2>Crow Engine</h2>
+            <h2 id="overview">Crow Engine</h2>
             <p>
                 As mentioned above in this report,the goal is to research the question <b>What benefits does ECS
                 architecture bring to Game and Engine development?</b>
@@ -735,7 +750,7 @@
 
         <div class="row">
 
-            <h5>The Renderer</h5>
+            <h5 id="renderer">The Renderer</h5>
 
 
             <p>
@@ -876,7 +891,7 @@
 
         <div class="row">
 
-            <h5>Editor Tool</h5>
+            <h5 id="editor">Editor Tool</h5>
 
             <p>
                 Crow Engine uses Unity as an editor. All the Crow Engine main components are supported and
@@ -992,7 +1007,7 @@
 
         <div class="row">
 
-            <h2>Graveyard Warz</h2>
+            <h2 id="about">Graveyard Warz</h2>
 
             <p>
                 <b>Graveyard Warz</b> is a game build using <b>Feather</b> and the
@@ -1067,7 +1082,7 @@
 
             <div class="col-md-auto">
 
-                <h5>ECS Development</h5>
+                <h5 id="ecsdevelopment">ECS Development</h5>
 
                 <p>
                     In order to see how ECS architecture benefits gameplay development, complex gameplay systems have to
@@ -1098,7 +1113,7 @@
 
             <div class="row">
 
-                <h5>Game Evolution</h5>
+                <h5 id="gameevolution">Game Evolution</h5>
                 <p>
                     As stated before, the game evolved a lot in terms of art and gameplay. The pictures below showcase
                     what
@@ -1132,7 +1147,7 @@
 
             <div class="row">
 
-                <h5>The Final Game</h5>
+                <h5 id="finalgame">The Final Game</h5>
                 <p>
                     The video below showcases what the game looks like in the end, with all the visual
                     changes,postprocessing and
@@ -1177,7 +1192,7 @@
 
             <div class="col-md-4">
 
-                <h5>Analysis Phase</h5>
+                <h5 id="analysisphase">Analysis Phase</h5>
 
                 <p>
                     During the Analysis phase the focus was researching about ECS architecture and Data-Oriented design.
@@ -1215,7 +1230,7 @@
 
             <div class="col-md-4">
 
-                <h5>Design Phase</h5>
+                <h5 id="designphase">Design Phase</h5>
 
                 <p>
                     In the Design phase more work was put into the overall architecture of <b>Feather</b>. Research was
@@ -1248,7 +1263,7 @@
 
             <div class="col-md-4">
 
-                <h5>Production Phase</h5>
+                <h5 id="productionphase">Production Phase</h5>
 
                 <p>
                     The Production phase was where the game and all it's core gameplay systems were
@@ -1280,7 +1295,7 @@
 
             <div class="col-md-4">
 
-                <h5>Quality Phase</h5>
+                <h5 id="qualityphase">Quality Phase</h5>
 
                 <p>
                     The last planning phase is the Quality phase. The main focus of this phase was to polish the game
@@ -1318,7 +1333,7 @@
 
         <div class="row">
 
-            <h2>Improvements</h2>
+            <h2 id="improvments">Improvements</h2>
 
             <p>
                 In this section some of the improvements that could make <b>Feather</b>,<b>Crow</b> and <b>Graveyard
@@ -1404,7 +1419,7 @@
 
         <div class="row">
 
-            <h2>Conclusion</h2>
+            <h2 id="conclusion">Conclusion</h2>
 
             <p>
                 The game,engine,and ECS framework build during this project help drawing a conclusion to the main
@@ -1453,7 +1468,7 @@
 
         <div class="row">
 
-            <h2>Personal Reflection</h2>
+            <h2 id="reflection">Personal Reflection</h2>
 
             <p>
                 During these 6 months I learned a lot about data-oriented design and low level programming. One of the
@@ -1479,7 +1494,7 @@
 
         <div class="row">
 
-            <h2>Acknowledgments</h2>
+            <h2 id="acknowledgments">Acknowledgments</h2>
 
             <p>
                 I would like to express my very great appreciation to my quality assures from the industry, <a
@@ -1498,10 +1513,24 @@
         </div>
 
     </div>
+    <hr align="center">
+    <hr align="center">
+</section>
+
+<section>
+    <div class="container">
+
+        <div class="row">
+
+            <h2 id="references">References</h2>
+        </div>
+
+    </div>
 </section>
 
 
 <script src="../js/bootstrap.min.js"></script>
+
 
 </body>
 </html>
