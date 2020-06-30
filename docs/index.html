@@ -121,9 +121,11 @@
                 <p>
                     The work showcased in this report will be split into three parts. In the first part I will provide a
                     brief introduction to the Enity-Component-System architecture and show my implementation of this
-                    module, which I called <b>Feather</b>. In the second part I show and explain the 3D engine called <b>Crow</b>
+                    module, which I called <b>Feather</b>. In the second part I show and explain the 3D engine called
+                    <b>Crow</b>
                     and how feather was used to implement these complex engine systems.
-                    Last part of the work showcased will be the game called <b>Graveyard Warz</b>, and some of the gameplay system
+                    Last part of the work showcased will be the game called <b>Graveyard Warz</b>, and some of the
+                    gameplay system
                     build using ECS architecture.
                 </p>
             </div>
@@ -183,20 +185,20 @@
             <div class="col-md-6">
                 <h5 id="What is ECS?">What is ECS?</h5>
                 <p> Traditionally games were used to be programmed in a object oriented desing (OOP) or inheritance
-                    design. For example A class <i>Creature</i> inherits the base <i>Gameobject</i> class and then there might be a class
-                        <i>Human</i> and <i>Orc"</i> which inherit <i>Creature</i> class and so on. Then every frame the program would go through all the Entities and call some
+                    design. For example a class <b>Creature</b> inherits the base <b>Gameobject</b> class and then there
+                    might be a class
+                    <b>Human</b> and <b>Orc</b> which inherit <b>Creature</b> class and so on. Then every frame the
+                    program goes through all the Entities and call some
                     methods
-                        like <i>Render</i> or <i>Update</i>.<br>
-
+                    like <b>Render</b> or <b>Update</b>.<br>
                     The first problem with this approach is that our architecture is
-                    rigid, if another class <i>Necromancer</i> wants to be both an <i>Orc</i> and
-                    a <i>Vampire</i>, we will have to rethink the whole design of the program.
-                    <br>Second problem with the OOP is performance. When we are iterating through all these Entities
+                    rigid, if another class <b>Necromancer</b> wants to be both an <b>Orc</b> and
+                    a <b>Vampire</b>, the whole program architecture has to be redesigned.
+                    <br>Second problem with the OOP is performance. When iterating through all these Entities
                     calling
-                    "Update" we are jumping in memory and pulling data in cache,but since our entities are scattered
+                    <b>Update</b>, the CPU is jumping in memory and pulling data in cache,but since our entities are scattered
                     around in memory that cache is not used the next frame thus the
-                    CPU has to go and fetch that data from RAM every single time, so essentially we are wasting our CPU
-                    speed making it wait for data to come from RAM.
+                    CPU has to go and fetch that data from RAM every single time, so essentially our CPU power is wasted waiting for data to process.
                 </p>
             </div>
             <div class="col-md-6 align-self-center">
@@ -207,26 +209,22 @@
         <div class="row">
             <div class="col-md-6 align-self-center">
                 <p>
-                    Nowdays the industry has shifted to "Component Systems" to solve the first problem that I
-                    mentioned
-                    above. Take for example Unity's Component System. You have a
-                    Gameobject to which you can add components as building blocks and then call "Update" on those
-                    components every frame. Now we solved the first issue since, we can
-                    just attach a "Vampire" and an "Orc" component and the GameObject will act accordingly. However
-                    we
-                    still haven't solved the second problem, we still are jumping in memory
-                    and calling "Update" on all these components.<br>
-                    If we look at the picture in the right which represents how a component system memory layout
-                    might
-                    look like
-                    we can see the problem more clearly. We are moving all around memory in one frame and wasting
-                    CPU
-                    cycles.
+                    Nowadays the industry has shifted to <b>Component System</b> design to solve the problem
+                    mentioned above.
+                    For example in Unity's Component System <a href="https://docs.unity3d.com/Manual/Components.html">[1]</a> there is a <b>Gameobject</b> to which components can be
+                    added as building blocks and then <b>Update</b> is called on those
+                    components every frame. Now first issue is solved since, <b>Vampire</b> and <b>Orc</b> components
+                    can be attached to a GameObject which will then act accordingly. However the
+                    second problem still remains, the program is still jumping in memory
+                    and calling <b>Update</b> on all of these components.<br>
+                    Having a look at the picture in the right, which represents how a component system memory layout might look like,
+                    the problem becomes more obvious. The program is moving all around memory in one frame and wasting CPU cycles.
                 </p>
             </div>
 
             <div class="col-md-6 align-self-center">
                 <img class="sidePicture" src="Assets/componentMemoryLayout.png" width="659" height="240"><br><br>
+                <p class="Footnote " style=" margin-top: -20px;" >Unity's Component system Memory Layout <a href="https://software.intel.com/content/www/us/en/develop/articles/get-started-with-the-unity-entity-component-system-ecs-c-sharp-job-system-and-burst-compiler.html">[2]</a></p>
             </div>
 
         </div>
@@ -234,33 +232,34 @@
         <div class="row">
             <div class="col-md-6">
                 <p>
-                    In order to solve the second problem we need to re-organise our memory layout so that the
+                    In order for the second problem to be solved, the memory layout needs to be re-organised so thatthe
                     components
-                    that will be iterated regurarly are tightly packed toegether.
-                    For exmaple if we want to move all gameobjects we would iterate all the transforms and move
-                    them,
-                    however these transforms have to be grouped in memory toegether.
-                    And now when the CPU request one transform it will fetch a bunch of them (as much as it can fit
+                    that are iterated regularly are tightly packed together.
+                    For example if all gameobjects are needed to move, all the transforms would be iterated and the position would be changed.
+                    However these transforms have to be grouped in memory together.
+                    Then when the CPU request one transform it will fetch a bunch of them (as much as it can fit
                     in
-                    one cache line) and store them in cache for the next frame.Then next iteration when we need the
-                    other transform,they might already be stored in cache hence saving the CPU alot of time.
+                    one cache line) and store them in cache for the next frame.Then next iteration
+                    another transform is needed,they might are already stored in cache hence saving the CPU a lot of time.
                     <br>Introducing <b>Enity-Component-System</b> approach, in this design,an entity is just an
                     index to
                     a group or collection of components. All the components are stored in tightly
-                    packed arrays. Components themself are contain only data, they are also known as POD(Plain Old
+                    packed arrays. Components themselves contain only data and they are also known as POD(Plain Old
                     Data)
-                    structures and instead of components updating themself we have systems
-                    which iterate through all entites which have a specfied set of components and update their data.
+                    structures. Instead of components updating themselves we have systems
+                    which iterate through all entities which have a specified set of components and update their data.
                     For example the Rigidbody system will operate only on entities which have the Rigidbody and
                     Transform component.
                     If an entity has neither or just one of these components the system wont update their data.<br>
-                    Unity Engine is now also moving towards this architecture with their new DOTS api.<br>
+                    Unity Engine is now also moving towards this architecture with their new DOTS <a href="https://unity.com/dots">[4]</a> api.<br>
                 </p>
             </div>
 
             <div class="col-md-6 align-self-center">
                 <img class="sidePicture" src="Assets/Dots1.png" width="500" height="250"><br><br>
+                <p class="Footnote" style=" margin-top: -20px;">Diagram showcasing entities and components in Unity's DOTS Api <a href="https://docs.google.com/presentation/d/1vxE61D_N79cvgUI3eIocF2n4rn04wjgRRq00ugyoB1M/edit#slide=id.g440c2dc2d7_0_0">[3]</a></p>
                 <img class="sidePicture" src="Assets/Dots2.png" width="500" height="250">
+                <p class="Footnote"  style=" margin-top: 10px;">Diagram showcasing systems and component arrays in Unity's DOTS Api <a href="https://docs.google.com/presentation/d/1vxE61D_N79cvgUI3eIocF2n4rn04wjgRRq00ugyoB1M/edit#slide=id.g440c2dc2d7_0_0">[3]</a></p>
             </div>
         </div>
     </div>
@@ -349,16 +348,16 @@
                 <hr align="center">
 
                 <h5>Memory Layout</h5>
-                <p>As mentioned before a key advantage of ecs is providing good memory layout.<br>
+                <p>As mentioned before a key advantage of ECS is providing good memory layout.<br>
                     All memory that feather uses is allocated in the beginning of the application.There is no
                     runtime
                     heap allocations done by Feather. The memory is partitioned correctly and marked as valid or
-                    invalid based on users input. When you "destroy" a component for example, the component is moved
+                    invalid based on users input. When a component is marked for destruction, the component is moved
                     and
                     it wont be updated, however it wont be deleted from memory until the user explicitly needs the
                     data
-                    to be deleted.
-                    (Usually done in the end of the application's lifetime)<br>
+                    to be deleted
+                    (Usually done in the end of the application's lifetime).<br>
                     Components in feather are stored in a custom collection called <b>ComponentSparseSet</b>.
                     In Feather a ComponentSparseSet is just 3 C style arrays:
                 <ul>
@@ -377,11 +376,8 @@
                 <p>
                     The reason why 3 arrays are needed is to answer the problem <b>What happens if a component is
                     marked
-                    to be removed?</b> In order to see why this is a problem in the first place, lets look at
-                    the
-                    picture
-                    below.<br>
-                    The picture below represents a simplified visualisation of how the components are stored in
+                    to be removed?</b> The pictures below is needed to show why this is a problem.
+                    The picture represents a simplified visualisation of how the components are stored in
                     memory.
                     As said before the ComponentSparseSet contains 3 arrays and those arrays are displayed in a
                     table
@@ -394,63 +390,53 @@
                 </p>
 
                 <p>
-                    Now lets see what happens when we add the component "C1" to Entity "0"(as stated before entities
+                    So what happens when "C1" is added to Entity "0"(as stated before entities
                     are
-                    just unsigned numbers) to our set.<br>
-                    It is added in the first available slot in the array in this case it is the first slot.<br>
-                    In the entity array we add the Entity "0" to the first available slot too.
-                    Last in the index array we add the index at which the entity's component is stored in this case
-                    0,
+                    just unsigned numbers) to our set?<br>
+                    It is immediately added in the first available slot in the array, in this case it is slot 0.<br>
+                    In the entity array Entity "0" is added to the first available slot too.
+                    Last in the index array, the index at which the entity's component is stored is added
                     and we store it at the 0 index since our Entity = 0.<br>
-                    Now we have mapped Entity->Index and Index->Entity.This is important when we destroy a component
-                    for
-                    now lets add some more components to the set.
+                    Now we have mapped Entity->Index and Index->Entity.This is important when we destroy a component.
                     <img class=" FullPicture justify-content-center" src="Assets/componentLayout1.png" width="650"
                          height="174">
                 </p>
 
                 <p>
                     Components "C2,C3,C4" are added to the Entity "1,2,3" respectively. And the arrays are updated
-                    as we
-                    did in the first case.<br>
-                    Lets see what happens when we remove a component from the set.
+                    as shown before.<br>
+                    Now what happens if we remove a component from this set?
                     <img class=" FullPicture justify-content-center" src="Assets/componentLayout2.png" width="650"
                          height="174">
                 </p>
 
                 <p>
-                    So lets say we need to remove "C3" from the set. What happens is we swap "C3" with "C4" in the
+                    What happens if "C3" is needed to be removed from the set? First "C3" and "C4" are swapped in the
                     dense
-                    component array but now
-                    we also need to swap the Entity->Index and Index->Entity since next time we need to get "C4" the
+                    component array then<br>
+                    the Entity->Index and Index->Entity need to be swapped as well, since next time we need to get "C4" the
                     Entity needs to point to the updated index.
-                    In the Entity dense array we do the same we swap the entity to remove with the last entity and
-                    in
-                    the index sparse array we just update the entity index.<br>
-                    As we can see the index sparse array with have holes in it but that is ok since we never iterate
-                    through it, we only need it when we remove components and
-                    need to keep them packed in memory.<br>
-                    So lets say we need to get "C4", To find the location of "C4" we check what the value of it's
-                    entity
-                    is, in this case it's 3.
-                    We now check what the 3rd index in the Index Sparse Array is, and it is 2, meaning that the "C4"
-                    is
+                    In the Entity dense array the same thing needs to be done, so the entity to remove is swapped with the last entity.
+                    In the index sparse array the entity index needs to be updated.<br>
+                    As it is shown the index sparse array has holes in it but that is not a problem since it is never iterated
+                    , it is only needed when a component is removed and the set needs to remain packed.<br>
+                    If the user needs to get "C4", first it's location will be found by using it's Entity value(in this case 3)
+                    to find the right index.
+                    Then in the index array, the 3rd element is retrieved which is 2 meaning that the "C4" is
                     located in the 2nd index of the dense array.
                     <img class=" FullPicture justify-content-center" src="Assets/componentLayout3.png" width="650"
                          height="174">
                 </p>
 
                 <p>
-                    Lets see what happens if we remove "C1" from the set.
-                    Again we swap the "C1" with "C4" and update "C4" index to point in the location where "C1" used
+                    Finally "C1" is removed from the set.
+                    Again "C1" and "C4" are swapped with each other and "C4"'s index is updated to point in the location where "C1" used
                     to
                     be.<br>
-                    And now we have a packed array which we can iterate through even when we add or remove
-                    components.
+                    And now the array will always remain packed, and it can be iterated safely.
                     The swapping cost
-                    is not that high since is just 2 C-style array look-ups and we only do it when we remove
-                    components
-                    which is not that frequent.
+                    is not that high since its just two C-style array look-ups and the lookup is done only when a component
+                    needs to be removed which is not that frequent.
                     However the benefits are big since the data that is active and needed is always contiguous in
                     memory.
 
@@ -468,23 +454,23 @@
                         <h6>Feather Vs OOP</h6>
 
                         <p>
-                            First I tested Feather Vs Object-Oriented approach. I created 2 programs which involved
-                            2
-                            types of entities, "Orcs" and "Nobles".
-                            In the OOP "Orcs" and "Nobles" are branched as shown in <b>Figure 1</b> and in
+                            First Feather Vs Object-Oriented approach was tested. Two programs were created which involved
+                            two different
+                            types of entities, <b>Orcs</b> and <b>Nobles</b>.
+                            In the OOP they are classes inheriting from other base classes. While in
                             ECS/Feather
-                            they are just 2 simple components. The behaviour is very trivial,
+                            they are just two simple components. The behaviour itself is very trivial,
                             in this case the iteration speed is the focus of the test.<br>
-                            I tested 3 different cases one with 1000 "Orcs" and "Nobles", one with 10,000 and one
+                            Three different cases were tested, one with 1000 "Orcs" and "Nobles", one with 10,000 and one
                             with
-                            100,000. The program is ran for 1000 frames and in order to get a consistent result the
+                            100,000. The program is executed for 1000 frames and in order to get a consistent result the
                             app
-                            is ran 100 times.<br>
-                            The results are displayed graphically in the right. The X-axis show the number of time
+                            is executed 100 times.<br>
+                            The results are displayed graphically in the right. The X-axis shows the number of time
                             the
-                            program ran and
-                            the Y-axis show the time in milliseconds it took for 1000 frames.<br>
-                            As we can see in all three cases Feather Performs much better then OOP when we iterate
+                            program was executed and
+                            the Y-axis shows the time in milliseconds it took for 1000 frames.<br>
+                            In all three cases Feather Performs much better then OOP when we iterate
                             through components/behaviours.
                             There are two main reasons why OOP performs worst than Feather.<br>
                             First one is the data in Feather is contiguous in memory,
@@ -511,17 +497,16 @@
                         <br>
 
                         <p>
-                            The second test I performed was against Unity and it's current component system. For
+                            The second test performed was against Unity and it's current component system. For
                             this
-                            test build the
-                            exact same steering system and flocking behaviour as I did for the final game in C++.
-                            The
-                            unity program only
+                            test  the
+                            steering and flocking behaviour systems build in Unity are the same one as the ones used in final game in C++.
+                            The unity program only
                             spawns a bunch of spheres and gives them a target to seek while they try to keep
                             distance
                             from each other using basic
                             O(n2) flocking.<br>
-                            As we can see from the video on the right, after 300-400 spheres the frames drop under
+                            As shown in the video on the right, after 300-400 spheres the frames drop under
                             30
                             FPS and at 500 spheres the framerate is very low. The current spheres have
                             no collider attached to them and the most expensive calculation is done by the Flocking
@@ -529,10 +514,10 @@
                         </p>
 
                         <p>
-                            Now lets see how the same system performs in Feather and in my own custom C++ Game
+                            In the second video the same systems are tested in Feather and in an custom C++ Game
                             Engine
-                            (<b>Crow</b>). As we can see in the second video
-                            the performance difference is noticeable, we can have way more units 3-4x then Unity
+                            (<b>Crow</b>).
+                            The performance difference is noticeable, now there are way more units, 3-4 times more then Unity
                             while
                             keeping a steady high framerate.
                             After 1200 the FPS drops exponentially since the flocking is done O(n2). The Feather
@@ -572,16 +557,15 @@
             <h5>Workflow</h5>
 
             <p>
-                In this section, some examples of how to set up and use Feather will be shown. I will showcase how
+                In this section, some examples of how to set up and use Feather will be shown.How
                 to
                 create Entities,Components,Systems
-                and how to iterate through the components and create functionality.<br>
-                First lets have a look on how to set up Feather. In order for Feather to function we need to create
+                and how to iterate through the components and create functionality will be displayed.<br>
+                First Feather needs to be set up. In order for Feather to function we need to create
                 the
                 3 main registries, the Entity,Component and system registry.
-                After we have created them we need to create a world which will act as an context and it will
-                communicate with all the registries. After the world has
-                been created we need to initialize it by calling the "Init" function and passing the registries,
+                After they are created, a world needs to be created which will act as an context and it will
+                communicate with all the registries. The world needs to be initialized by calling the "Init" function and passing the registries,
                 this
                 way the world is ready to be used and knows which memory it has to operate on.
                 <br><br>
@@ -592,8 +576,8 @@
 
             <p>
                 Since components are just data, they are very simple to create. The only thing needed to create a
-                component is a struct with data, that's it.
-                As we can see below, a position component which holds an "X","Y" values and a gravity component
+                component is a struct with our values inside, that's it.
+                As displayed below, a position component which holds an "X","Y" values and a gravity component
                 which
                 defines a "gravityValue" are created.
                 <br><br>
@@ -605,10 +589,10 @@
                 Systems are not that complicated to create either. As stated before systems define the behaviour of
                 our
                 program. The first picture below
-                display how to set a the signature of a system. This is only required if you want the systems to
+                display how to set a the signature of a system. This is only required if systems need to
                 know
                 about which entities to iterate on
-                beforehand and let the <b>World</b> automatically update the entities set for you.The line below is
+                beforehand and let the <b>World</b> automatically update the entities set for the user.The line below is
                 telling Feather that the <b>GravitySystem</b>
                 needs to iterate on entities which have <b>both</b> a <b>Position</b> and a <b>Gravity</b>
                 component.<br>
@@ -618,13 +602,13 @@
                 way will be shown. <br>
 
                 The second picture below is an example of
-                how a gravity system would look like. First we need our custom system to inherit base <b>System</b>,
+                how a gravity system would look like. First custom system needs to inherit base <b>System</b> class,
                 this way we let feather know that this class
                 is a system and it gives a bunch of functions to override such as Init,Update,Render etc. In the
-                "Update" function we are iterating through all
-                the entities which fit this system's signature and we are getting their <b>Position</b> and
+                "Update" function
+                all the entities which fit this system's signature are iterated and their <b>Position</b> and
                 <b>Gravity</b>
-                components and updating the <b>Position</b> component based on "gravityValue" of the <b>Gravity</b>
+                components are retrieved. Then the <b>Position</b> component is updated based on "gravityValue" of the <b>Gravity</b>
                 component.
                 <br><br>
 
@@ -642,7 +626,7 @@
                 of
                 it's entities is located in any of the other
                 component sets and return those to the user.<br>
-                After we have a list of entities we iterate them just as we did in the example above.
+                After list of entities is retrieved, the entities can be iterated and updated just as in the example above.
                 <br><br>
 
                 <img class="center" src="Assets/codeSnippets/entitiesWithSnippet.png" width="814" height="385"><br>
@@ -656,8 +640,8 @@
                 to the entity and components automatically. This is similar to how Unity iterates components in
                 their
                 <b>DOTS</b> api.<br>
-                Now we dont have to get the components from the entity since they are automatically filled in by the
-                world and instead we just write our behaviours
+                Now the components don't have to be retrieved from the entity since they are automatically filled in by the
+                world and instead the user can focus on writing their behaviour
                 inside the lambda function.
                 <br><br>
 
@@ -669,10 +653,10 @@
                 The last way to query entities and components in Feather is using the <b>FindEntities</b> function.
                 It
                 will return all the entities that fit
-                a conditional function given as parameter. In the example below we are querying for all the entities
-                which have a <b>Position</b> component and
-                their "X","Y" values are equal to 0.<br>
-                Then we can iterate these entities and update them accordingly, in the example below we just destroy
+                a conditional function given as parameter. In the example below all the entities
+                which have a <b>Position</b> component and have
+                their position's "X","Y" values equal to 0 are retrieved.<br>
+                Then these entities can be iterated and updated accordingly, in the example below we just destroy
                 them.
                 <br><br>
 
@@ -681,15 +665,12 @@
             </p>
 
             <p>
-                In order for our systems and components to work we have to allocate memory for them. For each type
-                of
-                system and component
-                we have to use the registries to allocate memory for them. This way all the memory is allocated
-                upfront
+                In order for systems and components to work, the user has to allocate memory for them.
+                This way all the memory is allocated upfront
                 so there is no heap allocation at runtime.
-                If for example we need to load a new world, we just can reuse memory instead of deleting memory and
+                If for example a new world needs to be loaded,the same memory can be used,instead of deleting memory and
                 allocating it again.<br>
-                Another good thing about this approach is that it minimises null errors in runtime since all of our
+                Another good thing about this approach is that it minimises null errors in runtime since all of the
                 memory is valid and partitioned correctly.
                 <br><br>
 
@@ -698,33 +679,16 @@
 
             </p>
 
-            <p>
-                In order for our systems and components to work we have to allocate memory for them. For each type
-                of
-                system and component
-                we have to use the registries to allocate memory for them. This way all the memory is allocated
-                upfront
-                so there is no heap allocation at runtime.
-                If for example we need to load a new world, we just can reuse memory instead of deleting memory and
-                allocating it again.<br>
-                Another good thing about this approach is that it minimises null errors in runtime since all of our
-                memory is valid and partitioned correctly.
-                <br><br>
-
-                <img class="center" src="Assets/codeSnippets/AllocatingMemorySnippet.png" width="660"
-                     height="134"><br>
-
-            </p>
 
             <p>
-                Lastly the only thing left to do in order for the application to work is create our entities and
+                Lastly the only thing left to do in order for the application to work is create the entities and
                 attach
                 components to them.An <b>EntityHandle</b>
-                can be created by the world and then we can attach any type of component to it. This components have
+                can be created by the world and then any type of component can be attached to it. This components have
                 to
                 be allocated before being added otherwise an
                 error will be thrown.
-                The last line just updates all the systems registered to our world. And that is everything needed to
+                The last line just updates all the systems registered to the world. And that is everything needed to
                 set
                 up and work with <b>Feather</b>.
                 <br><br>
@@ -1120,62 +1084,63 @@
                 </ul>
                 </p>
 
+            </div>
+
+            <hr align="center">
+
+            <div class="row">
+
+                <h5>Game Evolution</h5>
+                <p>
+                    As stated before, the game evolved a lot in terms of art and gameplay. The pictures below showcase
+                    what
+                    that timeline of the game
+                    looks like from left to right.
+                </p>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-auto">
+
+                    <img src="Assets/initArt.png" width="350" height="200">
+
+                </div>
+
+                <div class="col-md-auto">
+
+                    <img src="Assets/secondScreenshot.png" width="350" height="200">
+
+                </div>
+
+                <div class="col-md-auto">
+
+                    <img src="Assets/nearlyLastScreenshot.png" width="350" height="200">
+
+                </div>
+            </div>
+
+            <hr align="center">
+
+            <div class="row">
+
+                <h5>The Final Game</h5>
+                <p>
+                    The video below showcases what the game looks like in the end, with all the visual
+                    changes,postprocessing and
+                    all the gameplay systems mentioned above.<br>
+                </p>
+
+                <video class="FinalVideo" autoplay loop id="video-final" muted>
+                    <source src="Assets/finalVideo.mp4" type="video/mp4">
+                </video>
+
+            </div>
+
         </div>
 
         <hr align="center">
-
-        <div class="row">
-
-            <h5>Game Evolution</h5>
-            <p>
-                As stated before, the game evolved a lot in terms of art and gameplay. The pictures below showcase what
-                that timeline of the game
-                looks like from left to right.
-            </p>
-        </div>
-
-        <div class="row">
-
-            <div class="col-md-auto">
-
-                <img src="Assets/initArt.png" width="350" height="200">
-
-            </div>
-
-            <div class="col-md-auto">
-
-                <img src="Assets/secondScreenshot.png" width="350" height="200">
-
-            </div>
-
-            <div class="col-md-auto">
-
-                <img src="Assets/nearlyLastScreenshot.png" width="350" height="200">
-
-            </div>
-        </div>
-
         <hr align="center">
-
-        <div class="row">
-
-            <h5>The Final Game</h5>
-            <p>
-                The video below showcases what the game looks like in the end, with all the visual
-                changes,postprocessing and
-                all the gameplay systems mentioned above.<br>
-            </p>
-
-            <video class="FinalVideo" autoplay loop id="video-final" muted>
-                <source src="Assets/finalVideo.mp4" type="video/mp4">
-            </video>
-
-        </div>
-
-    </div>
-
-    <hr align="center">
-    <hr align="center">
 
 </section>
 
@@ -1438,7 +1403,8 @@
             <p>
                 The game,engine,and ECS framework build during this project help drawing a conclusion to the main
                 question: <b>What benefits does ECS architecture bring to Game and Engine development?</b><br><br>
-                Here is an overview of some of the main benefits ECS architecture brought to the development of this project:
+                Here is an overview of some of the main benefits ECS architecture brought to the development of this
+                project:
 
             <ul>
 
@@ -1498,20 +1464,23 @@
             <h2>Acknowledgments</h2>
 
             <p>
-            I would like to express my very great appreciation to my quality assures from the industry, <a href="http://www.joshcaratelli.com/">Josh Caratelli</a> from <a href="https://www.sledgehammergames.com/">Sledgehammer games</a>
-            and Merijn Vogelsang from <a href="https://www.pillowswillow.com/">Pillows Willow</a>
-            for their feedback and professional insight.<br><br>
+                I would like to express my very great appreciation to my quality assures from the industry, <a
+                    href="http://www.joshcaratelli.com/">Josh Caratelli</a> from <a
+                    href="https://www.sledgehammergames.com/">Sledgehammer games</a>
+                and Merijn Vogelsang from <a href="https://www.pillowswillow.com/">Pillows Willow</a>
+                for their feedback and professional insight.<br><br>
 
-            I would also like to thank the teachers, Hans Wichman,Yvens Reboucas and Bram den Hond for the great feedback and guidance.<br><br>
+                I would also like to thank the teachers, Hans Wichman,Yvens Reboucas and Bram den Hond for the great
+                feedback and guidance.<br><br>
 
-            Last but not least I would like to thank my peers and friends which found the time to give feedback and ideas in order to improve project.<br><br>
+                Last but not least I would like to thank my peers and friends which found the time to give feedback and
+                ideas in order to improve project.<br><br>
             </p>
 
         </div>
 
     </div>
 </section>
-
 
 
 <script src="../js/bootstrap.min.js"></script>

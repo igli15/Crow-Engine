@@ -44,6 +44,12 @@ section
     height: auto;
 }
 
+.Footnote
+{
+    font-size: 12px;
+    font-style: italic;
+}
+
 p,li,ul
 {
     font-size: 15px;
