@@ -656,8 +656,7 @@
                 a conditional function given as parameter. In the example below all the entities
                 which have a <b>Position</b> component and have
                 their position's "X","Y" values equal to 0 are retrieved.<br>
-                Then these entities can be iterated and updated accordingly, in the example below we just destroy
-                them.
+                Then these entities can be iterated and updated accordingly, in the example below they are just destroyed.
                 <br><br>
 
                 <img class="center" src="Assets/codeSnippets/FindEntitiesSnippet.png" width="1025" height="203"><br>
@@ -713,7 +712,7 @@
         <div class="row">
             <h2>Crow Engine</h2>
             <p>
-                As mentioned above in this report,The goal is to research the question <b>What benefits does ECS
+                As mentioned above in this report,the goal is to research the question <b>What benefits does ECS
                 architecture bring to Game and Engine development?</b>
                 In this section the focus will be <b>What features does the Crow Engine offer and how were they
                 build
@@ -742,28 +741,25 @@
                 your
                 architecture will support your renderer rises.
                 In this case <b>How to build an ECS renderer and what are it's benefits?</b><br>
-                One of the main problems with an ECS renderer is fitting your drawable objects into cache. Meshes
+                One of the main problems with an ECS renderer is fitting the drawable objects into cache. Meshes
                 and
                 materials can be big in terms of byte size and might not fit inside
-                a cache line so in order to benefit from data-oriented architecture we need to find a way fit as
-                much as
-                we can and what we need in a cache line.<br>
+                a cache line so in order to benefit from data-oriented architecture, a way to fit as
+                much as possible in a cache line needs to be found.<br>
                 How the Crow Engine approaches the problem is by splitting the data. So in the picture below there
                 is a
                 <b>Meshinfo</b> component set and instead of holding
                 a reference to both a material and the mesh, it holds a pointer to a material array and a mesh
                 array.
-                This way our <b>MeshInfo</b> component is small
+                This way the <b>MeshInfo</b> component is small
                 in size (it only has 2 pointers) but also it points to packed arrays of meshes and materials. The
                 same
                 thing is done for materials and shaders, since
                 multiple materials can use the same shader, a pointer to the shader is stored in the material.<br>
 
-                By doing rendering in ECS style we can sort the scene easily. The Crow Engine supports instanced
-                rendering and how that works is When a shader is buffered to the GPU,
-                all the materials with that shader are buffered and in the end the model using that material with
-                all
-                the transformation matrices are buffered. This way we save a lot of the draw calls the
+                By doing rendering in ECS style the scene can be sorted easily. The Crow Engine supports instanced
+                rendering and how that works is when a shader is buffered to the GPU,
+                a list of all the transformation matrices is sent to the GPU for each model and material pair. This way we save a lot of the draw calls the
                 GPU would have to do otherwise.<br>
 
                 Another benefit of this approach is that if we were doing something to all the materials we would
@@ -804,7 +800,7 @@
                     There are many improvement that could be done here like <b>Batching</b> and <b>Multi-threaded
                     Rendering</b> but these were not the scope of the project and did not
                     fit into the the main goal.<br><br>
-                    Another reason we are able to perform better is not only because of the way material,shaders and
+                    Another reason the custome renderer is able to perform better is not only because of the way material,shaders and
                     meshes(in this case) are stored in memory but also because they are sorted
                     at runtime in order to have as little shader swaps as possible. This way the instance rendering
                     is
@@ -838,27 +834,37 @@
 
         <div class="row align-items-center" style="margin-top: -50px;">
 
-            <div class="col-md-auto no-gutters">
+            <div class="col-md-4 no-gutters">
 
                 <video width="350" height="200" autoplay loop id="video-5" muted>
                     <source src="Assets/BlingLightShowcase.mp4" type="video/mp4">
                 </video>
 
+                <p>
+                    <i>Bling phon lighting model, supporting Directional,Point and Spot lights.</i>
+                </p>
+
             </div>
 
-            <div class="col-md-auto no-gutters">
+            <div class="col-md-4 no-gutters">
 
                 <video width="350" height="200" autoplay loop id="video-6" muted>
                     <source src="Assets/TranslucentShowcase.mp4" type="video/mp4">
                 </video>
+                <p>
+                    <i>Custom shader and material that fake translucency.</i>
+                </p>
 
             </div>
 
-            <div class="col-md-auto no-gutters">
+            <div class="col-md-4 no-gutters">
 
                 <video width="350" height="200" autoplay loop id="video-7" muted>
                     <source src="Assets/TextureMaterial.mp4" type="video/mp4">
                 </video>
+                <p>
+                    <i>The default texture material of the renderer. Supports Diffuse,Specular and Emission maps.</i>
+                </p>
 
             </div>
 
@@ -992,7 +998,7 @@
                 it was created is to showcase the <b>The benefits of the ECS in Game development</b>. In the
                 <b>Speed Test</b> section of Feather
                 a stress test of the game was showcased, where alot of units were spawned and simulated. In this
-                section, the focus will be how ECS?
+                section, the focus will be how ECS
                 helped in the workflow of developing the game and show how it evolved during development, from the
                 prototype phase
                 to the polishing phase.
@@ -1008,7 +1014,7 @@
                 <h5>About the game</h5>
 
                 <p>
-                    Graveyard Warz is a <i>Tug of War</i> game, where you purchase units and have to lead them to th
+                    Graveyard Warz is a <i>Tug of War</i> game, where you purchase units and lead them to the
                     enemy's portal.
                     The player battles against the AI and whoever manages to empty the other's health bar wins the game.
                     The game is also in 3D
