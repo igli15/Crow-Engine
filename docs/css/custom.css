@@ -38,10 +38,10 @@ section
     padding: 10px;
 }
 
-.FullPicture
+.CenterPicture
 {
-    width: 100%;
-    height: auto;
+    margin-left: 500px;
+    max-width: 100%;
 }
 
 .Footnote
