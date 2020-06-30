@@ -119,20 +119,18 @@
                 </p>
 
                 <p>
-                    The work showcased in this report will be split into 2 parts. In the first part I will provide a
+                    The work showcased in this report will be split into three parts. In the first part I will provide a
                     brief introduction to the Enity-Component-System architecture and show my implementation of this
-                    module, which I called “Feather”. From now on I will use the word “ECS” to describe general
-                    Entity-Component-System architecture and I will use the word “Feather” to refer to my own
-                    implementation of it.<br>
-                    In the second part I show and explain the 3D engine and game that I created using this Engine
-                    and
-                    how feather was used to implement these complex systems.
+                    module, which I called <b>Feather</b>. In the second part I show and explain the 3D engine called <b>Crow</b>
+                    and how feather was used to implement these complex engine systems.
+                    Last part of the work showcased will be the game called <b>Graveyard Warz</b>, and some of the gameplay system
+                    build using ECS architecture.
                 </p>
             </div>
             <div class="col-md-7 ">
 
 
-                <video class="IntroVideo"  autoplay loop id="video-intro" muted>
+                <video class="IntroVideo" autoplay loop id="video-intro" muted>
                     <source src="Assets/finalVideoNoMenu.mp4" type="video/mp4">
                 </video>
 
@@ -184,21 +182,20 @@
 
             <div class="col-md-6">
                 <h5 id="What is ECS?">What is ECS?</h5>
-                <p> Tradidtionally games were used to be programmed in a object oriented desing (OOP) or inheritance
-                    design. For example you would have a class
-                    "Creature" that would inherit "Gameobject" then you would have "Human" and "Orc" inherting
-                    "Creature" class and so on. Then every frame you would go through all the Entities and call some
+                <p> Traditionally games were used to be programmed in a object oriented desing (OOP) or inheritance
+                    design. For example A class <i>Creature</i> inherits the base <i>Gameobject</i> class and then there might be a class
+                        <i>Human</i> and <i>Orc"</i> which inherit <i>Creature</i> class and so on. Then every frame the program would go through all the Entities and call some
                     methods
-                    like "Render" or "Update".<br>
+                        like <i>Render</i> or <i>Update</i>.<br>
+
                     The first problem with this approach is that our architecture is
-                    rigid, if we wanted lets say a "Necromancer" to be both an "Orc" and
-                    a "Vampire" (Look the picture in the right) we have to rethink the whole design of the program.
+                    rigid, if another class <i>Necromancer</i> wants to be both an <i>Orc</i> and
+                    a <i>Vampire</i>, we will have to rethink the whole design of the program.
                     <br>Second problem with the OOP is performance. When we are iterating through all these Entities
                     calling
                     "Update" we are jumping in memory and pulling data in cache,but since our entities are scattered
                     around in memory that cache is not used the next frame thus the
-                    CPU has to go and fetch that data from RAM every single time, so esentially we are wasting our
-                    CPU
+                    CPU has to go and fetch that data from RAM every single time, so essentially we are wasting our CPU
                     speed making it wait for data to come from RAM.
                 </p>
             </div>
@@ -1123,54 +1120,6 @@
                 </ul>
                 </p>
 
-                <p>
-                    After developing the whole game with ECS, some advantages and disadvantages of the architecture
-                    stood out:<br>
-
-
-                <ul>
-                    <b>Advantages:</b>
-                    <li>Very Modular. By making your component small and independent all, then you can attach the
-                        components to other entities and they will behave properly.
-                    </li>
-                    <li>No <b>null</b> exeptions. Since the data is pre-allocated and partitioned by <b>Feather</b> it
-                        makes gameplay
-                        systems easy to develop and bugs easy to find.
-                    </li>
-                    <li>
-                        Very fast. As shown in the previous section the memory layout gives the ability to create
-                        complex and heavy systems
-                        without the need to multi-thread your application.
-                    </li>
-                    <li>
-                        Focuses in the <b>data-oriented</b> development. Since the systems just modify small structures
-                        of data it provides a more
-                        maintainable code base. Changes are easy to implement.
-                    </li>
-                    <li>
-                        Clear program call stack. Since neither inheritance or virtual function are used, the call stack
-                        of the program is clear and easy
-                        to step through making the program more debuggable.
-                    </li>
-
-                </ul>
-
-
-                <ul>
-                    <b>Disadvantages:</b>
-                    <li>Hard to get into at first. It might be difficult to move to a system based approach and
-                        splitting data from functionality.
-                    </li>
-                    <li>
-                        Dealing with behaviours that need to two or more systems communicate with each other might be
-                        challenging.
-                        The way this issue is solved in <b>Graveyard Warz</b> is by using an event system.
-                    </li>
-                </ul>
-                </p>
-            </div>
-
-
         </div>
 
         <hr align="center">
@@ -1217,7 +1166,7 @@
                 all the gameplay systems mentioned above.<br>
             </p>
 
-            <video class="FinalVideo"  autoplay loop id="video-final" muted>
+            <video class="FinalVideo" autoplay loop id="video-final" muted>
                 <source src="Assets/finalVideo.mp4" type="video/mp4">
             </video>
 
@@ -1231,141 +1180,159 @@
 </section>
 
 <section>
-<div class="container">
+    <div class="container">
 
-    <div class="row">
+        <div class="row">
 
-        <h2>Planning</h2>
-
-        <p>
-            In this part of the report the work and research done in the four planning phases (<b>Analysis,Design,Production,Quality</b>)
-            will be shown,what were some of
-            the challenges faced in each phase and how were they overcome. <br>
-            For planning two <i>Trello</i> boards are maintained, the first one is a <b>Scrum</b> board and the second
-            one is a <b>Log</b> board
-            where all the features implemented are logged.
-        </p>
-
-    </div>
-
-    <hr align="center">
-
-    <div class="row">
-
-        <div class="col-md-4">
-
-            <h5>Analysis Phase</h5>
+            <h2>Planning</h2>
 
             <p>
-                During the Analysis phase the focus was researching about ECS architecture and Data-Oriented design.
-                Many different
-                ways of implementing this architecture were tested and prototyped.One of the biggest challenges during
-                this phase was
-                finding a way to store data contiguously in memory but also find a way to maintain this sets of
-                data.<br>
-                There are many sources online explaining briefly what ECS is and why you should use it, however there
-                are little to none concrete
-                examples on the topic. On of the best source found for the ECS was a <b>blog(Link here)</b> which
-                discussed briefly a few implementation ideas and designs.
-                <br> In order to implement an basic ECS architecture, research on C and C++(meta programming) had to be
-                done.<br>
-                In this phase the first prototype of <b>Feather</b> was implemented. In order for the prototype to be
-                approved it had to be faster then the <b>Objected-Oriented</b> design,
-                thus tests were performed to prove the speed of the prototype.
+                In this part of the report the work and research done in the four planning phases (<b>Analysis,Design,Production,Quality</b>)
+                will be shown,what were some of
+                the challenges faced in each phase and how were they overcome. <br>
+                For planning two <i>Trello</i> boards are maintained, the first one is a <b>Scrum</b> board and the
+                second
+                one is a <b>Log</b> board
+                where all the features implemented are logged.
             </p>
 
-        </div>
-
-        <div class="col-md-auto">
-
-            <img src="Assets/analysisphase.png" width="720" height="600">
         </div>
 
         <hr align="center">
+
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <h5>Analysis Phase</h5>
+
+                <p>
+                    During the Analysis phase the focus was researching about ECS architecture and Data-Oriented design.
+                    Many different
+                    ways of implementing this architecture were tested and prototyped.One of the biggest challenges
+                    during
+                    this phase was
+                    finding a way to store data contiguously in memory but also find a way to maintain this sets of
+                    data.<br>
+                    There are many sources online explaining briefly what ECS is and why you should use it, however
+                    there
+                    are little to none concrete
+                    examples on the topic. On of the best source found for the ECS was a <b>blog(Link here)</b> which
+                    discussed briefly a few implementation ideas and designs.
+                    <br> In order to implement an basic ECS architecture, research on C and C++(meta programming) had to
+                    be
+                    done.<br>
+                    In this phase the first prototype of <b>Feather</b> was implemented. In order for the prototype to
+                    be
+                    approved it had to be faster then the <b>Objected-Oriented</b> design,
+                    thus tests were performed to prove the speed of the prototype.
+                </p>
+
+            </div>
+
+            <div class="col-md-auto">
+
+                <img src="Assets/analysisphase.png" width="720" height="600">
+            </div>
+
+            <hr align="center">
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <h5>Design Phase</h5>
+
+                <p>
+                    In the Design phase more work was put into the overall architecture of <b>Feather</b>. Research was
+                    done on what features
+                    other ECS frameworks offer and tried to implement some of them. One of the main features implemented
+                    was the ability to query entities with a given set of components at runtime.<br>
+
+                    The Crow Engine renderer was designed and build keeping this new architecture in mind.<br>
+                    The last thing implemented was a prototype level which was parsed from Unity Engine where initial
+                    gameplay systems could be tested.<br>
+                    The biggest challenge of this phase was making the transition to the ECS workflow and building core
+                    engine
+                    using ECS architecture.<br>
+                    In order to overcome this challenge, many versions of this systems were implemented and tested, for
+                    example the ECS renderer was included in the engine
+                    after it performed faster then Unity as shown in this <b>section(Link here)</b>.
+                </p>
+
+            </div>
+
+            <div class="col-md-auto">
+
+                <img src="Assets/desingphase.png" width="720" height="600">
+            </div>
+
+            <hr align="center">
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <h5>Production Phase</h5>
+
+                <p>
+                    The Production phase was where the game and all it's core gameplay systems were
+                    developed.Implementing the the game as visioned proved to be rather challenging
+                    at first but after peer feedback with artists, the work proceeded much smoother.<br>
+                    <b>Feather</b> started to look more like a finished and stable ECS framework and a lot of
+                    improvements were done based on the professional
+                    feedback of <a href="http://www.joshcaratelli.com/">Josh Caratelli</a> who is a Software Engineer at
+                    <a href="https://www.sledgehammergames.com/">Sledgehammer Games</a>, an
+                    <a href="https://www.activision.com/">Activision</a> Studio. One of the main added feature was the
+                    ability to iterate components using
+                    a <b>ForEach</b> query which is similar to the way Unity's ECS framework called <a
+                        href="https://unity.com/dots">DOTS</a>, iterates its components.
+                    Another big feature was the implementation of <b>Sparse Sets</b> which increased the performance of
+                    <b>Feather</b> significantly.
+                </p>
+
+            </div>
+
+            <div class="col-md-auto">
+
+                <img src="Assets/productionphase.png" width="720" height="400">
+            </div>
+
+            <hr align="center">
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <h5>Quality Phase</h5>
+
+                <p>
+                    The last planning phase is the Quality phase. The main focus of this phase was to polish the game
+                    and make it more
+                    visually appealing by adding fog and more post processing effects as well as designing the
+                    level,adding more props and
+                    tweaking gameplay values to make it more interesting.<br>
+                    During this phase most of the codebase was cleaned up and documented.<br>
+                    More code sugar features were added to <b>Feather</b> framework, like the ability to get all the
+                    entities that fit a predefined condition
+                    by using the <b>Find</b> method.<br>
+                    This whole website was created from scatch using <b>HTMl</b>,<b>CSS</b> and <b>Bootstrap</b>. It
+                    proved to be a challenge since
+                    it was a new experience to develop a website.
+                </p>
+
+            </div>
+
+            <div class="col-md-auto">
+
+                <img src="Assets/qualityphase.png" width="720" height="600">
+            </div>
+
+        </div>
     </div>
-
-    <div class="row">
-
-        <div class="col-md-4">
-
-            <h5>Design Phase</h5>
-
-            <p>
-                In the Design phase more work was put into the overall architecture of <b>Feather</b>. Research was done on what features
-                other ECS frameworks offer and tried to implement some of them. One of the main features implemented
-                was the ability to query entities with a given set of components at runtime.<br>
-
-                The Crow Engine renderer was designed and build keeping this new architecture in mind.<br>
-                The last thing implemented was a prototype level which was parsed from Unity Engine where initial gameplay systems could be tested.<br>
-                The biggest challenge of this phase was making the transition to the ECS workflow and building core engine
-                using ECS architecture.<br>
-                In order to overcome this challenge, many versions of this systems were implemented and tested, for example the ECS renderer was included in the engine
-                after it performed faster then Unity as shown in this <b>section(Link here)</b>.
-            </p>
-
-        </div>
-
-        <div class="col-md-auto">
-
-            <img src="Assets/desingphase.png" width="720" height="600">
-        </div>
-
-        <hr align="center">
-    </div>
-
-    <div class="row">
-
-        <div class="col-md-4">
-
-            <h5>Production Phase</h5>
-
-            <p>
-                The Production phase was where the game and all it's core gameplay systems were developed.Implementing the the game as visioned proved to be rather challenging
-                at first but after peer feedback with artists, the work proceeded much smoother.<br>
-                <b>Feather</b> started to look more like a finished and stable ECS framework and a lot of improvements were done based on the professional
-                feedback of <a href="http://www.joshcaratelli.com/">Josh Caratelli</a> who is a Software Engineer at
-                <a href="https://www.sledgehammergames.com/">Sledgehammer Games</a>, an
-                <a href="https://www.activision.com/">Activision</a> Studio. One of the main added feature was the ability to iterate components using
-                a <b>ForEach</b> query which is similar to the way Unity's ECS framework called <a href="https://unity.com/dots">DOTS</a>, iterates its components.
-                Another big feature was the implementation of <b>Sparse Sets</b> which increased the performance of <b>Feather</b> significantly.
-            </p>
-
-        </div>
-
-        <div class="col-md-auto">
-
-            <img src="Assets/productionphase.png" width="720" height="400">
-        </div>
-
-        <hr align="center">
-    </div>
-
-    <div class="row">
-
-        <div class="col-md-4">
-
-            <h5>Quality Phase</h5>
-
-            <p>
-                The last planning phase is the Quality phase. The main focus of this phase was to polish the game and make it more
-                visually appealing by adding fog and more post processing effects as well as designing the level,adding more props and
-                tweaking gameplay values to make it more interesting.<br>
-                During this phase most of the codebase was cleaned up and documented.<br>
-                More code sugar features were added to <b>Feather</b> framework, like the ability to get all the entities that fit a predefined condition
-                by using the <b>Find</b> method.<br>
-                This whole website was created from scatch using <b>HTMl</b>,<b>CSS</b> and <b>Bootstrap</b>. It proved to be a challenge since
-                it was a new experience to develop a website.
-            </p>
-
-        </div>
-
-        <div class="col-md-auto">
-
-            <img src="Assets/qualityphase.png" width="720" height="600">
-        </div>
-
-    </div>
-</div>
 
     <hr align="center">
     <hr align="center">
@@ -1381,22 +1348,171 @@
             <h2>Improvements</h2>
 
             <p>
-                In this section some of the improvements that could make <b>Feather</b>,<b>Crow</b> and <b>Graveyard Warz</b> better will be shown.
-                These improvements were considered but were not implemented beacuse either they didn't contribute enough to the
-                main <b>Goal</b> of the project or they required a lot more time to implement in a way that would be effective to
+                In this section some of the improvements that could make <b>Feather</b>,<b>Crow</b> and <b>Graveyard
+                Warz</b> better will be shown.
+                These improvements were considered but were not implemented beacuse either they didn't contribute enough
+                to the
+                main <b>Goal</b> of the project or they required a lot more time to implement in a way that would be
+                effective to
                 the project.
             </p>
 
+
+            <ul>
+                <h6>Feather(ECS) Improvements:</h6>
+
+                <li><b>Support for SOA architecture</b>: Currently Feather is designed to support <b>AOS</b>(Array Of
+                    Structs) memory architecture which means
+                    the components(structs) are stored in arrays. However another way to store Data is in <b>SOA</b>(Struct
+                    Of Arrays). This approach is fast
+                    when we need to iterate groups of data that are linked with each other. A good read about how to go
+                    about implementing this design can be found on
+                    <a href="https://skypjack.github.io/2019-04-12-entt-tips-and-tricks-part-1/">skypjack's blog
+                        post</a>.
+                </li>
+                <li><b>More custom collection types:</b> One of the reasons <b>ComponentSparseSet</b> was created is
+                    because <b>UnorderedMap</b> of standard library in C++
+                    proved to be much slower in the case of indexing and iterating components.
+                    Even though custom collections were created in critical part of Feather, there are still
+                    many other STL containers used in the codebase, which if replaced properly could lead to better
+                    results.
+                </li>
+                <li><b>Less dependent on template meta-programming:</b> Feather currently uses C++ meta-programming to
+                    deal with different type of structures. As powerful
+                    as templates are they also have their own drawbacks, like being hard to debug in certain cases or
+                    leading to bigger compile times.
+                </li>
+
+
+            </ul>
+
+            <ul>
+                <h6>Crow(Engine) Improvements:</h6>
+
+                <li><b>Better optimised renderer</b>: The current engine renderer works good enough to showcase the
+                    capabilities of <b>Feather</b>. However
+                    as your game might scale up and better graphics might be requested it will become clearer that no
+                    matter how many CPU optimisations are done
+                    if the GPU is struggling, the game's framerate will drop a lot and it can't increase until the GPU
+                    bottleneck is solved.
+                </li>
+                <li><b>Built in Editor</b> Using Unity's Editor saved a lot of development time and increased the
+                    productivity in creating the game. Despite all this
+                    an in built editor would be far more efficient and lead to quicker development increments.
+                </li>
+            </ul>
+
+            <ul>
+                <h6>GraveyardWarz(Game) Improvements:</h6>
+
+                <li><b>More visual feedback</b>: One of the feedback gotten for the game is that it misses visual
+                    feedback, like particle systems or animations. This
+                    was not the main focus of the project but it is one thing that could add a lot to the game's look.
+                </li>
+                <li><b>Better gameplay design</b>: As mentioned on previous sections, the unit's design is very basic.
+                    There could be more reason why a unit should be
+                    prioritised instead of another one leading to more complex strategies. Also the game has no tutorial
+                    so a well designed one could improve the new player's
+                    experience.
+                </li>
+
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <hr align="center">
+    <hr align="center">
+
+</section>
+
+<section>
+    <div class="container">
+
+        <div class="row">
+
+            <h2>Conclusion</h2>
+
             <p>
-                <h6>Feather Improvements:</h6>
+                The game,engine,and ECS framework build during this project help drawing a conclusion to the main
+                question: <b>What benefits does ECS architecture bring to Game and Engine development?</b><br><br>
+                Here is an overview of some of the main benefits ECS architecture brought to the development of this project:
+
+            <ul>
+
+                <li>Very Modular. By making your component small and independent all, then you can attach the
+                    components to other entities and they will behave properly.
+                </li>
+                <li>No <b>null</b> exceptions. Since the data is pre-allocated and partitioned by <b>Feather</b> it
+                    makes gameplay
+                    systems easy to develop and bugs easy to find.
+                </li>
+                <li>
+                    Very fast. As shown in the previous section the memory layout gives the ability to create
+                    complex and heavy systems
+                    without the need to multi-thread your application.
+                </li>
+                <li>
+                    Focuses in the <b>data-oriented</b> development. Since the systems just modify small structures
+                    of data it provides a more
+                    maintainable code base. Changes are easy to implement.
+                </li>
+                <li>
+                    Clear program call stack. Since neither inheritance or virtual function are used, the call stack
+                    of the program is clear and easy
+                    to step through making the program more debuggable.
+                </li>
+
+            </ul>
 
             </p>
 
         </div>
 
     </div>
-
+    <hr align="center">
+    <hr align="center">
 </section>
+
+<section>
+    <div class="container">
+
+        <div class="row">
+
+            <h2>Personal Reflection</h2>
+
+        </div>
+
+    </div>
+    <hr align="center">
+    <hr align="center">
+</section>
+
+<section>
+    <div class="container">
+
+        <div class="row">
+
+            <h2>Acknowledgments</h2>
+
+            <p>
+            I would like to express my very great appreciation to my quality assures from the industry, <a href="http://www.joshcaratelli.com/">Josh Caratelli</a> from <a href="https://www.sledgehammergames.com/">Sledgehammer games</a>
+            and Merijn Vogelsang from <a href="https://www.pillowswillow.com/">Pillows Willow</a>
+            for their feedback and professional insight.<br><br>
+
+            I would also like to thank the teachers, Hans Wichman,Yvens Reboucas and Bram den Hond for the great feedback and guidance.<br><br>
+
+            Last but not least I would like to thank my peers and friends which found the time to give feedback and ideas in order to improve project.<br><br>
+            </p>
+
+        </div>
+
+    </div>
+</section>
+
+
 
 <script src="../js/bootstrap.min.js"></script>
 
