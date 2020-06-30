@@ -32,13 +32,13 @@
 
 <nav class="navbar navbar-dark bg-dark navbar-expand-sm sticky-top">
     <a class="navbar-brand" href="#">
-        <img src="Assets/crow.png" width="60" height="48" alt="" class="d-inline-flex align-items-center">
+        <img src="Assets/crow.png" width="42" height="32">
     </a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item dropdown active">
                 <a class="nav-link dropdown-toggle" id="introDropdown" role="button" data-toggle="dropdown"
-                     aria-expanded="false">
+                   aria-expanded="false">
                     Introduction
                 </a>
                 <div class="dropdown-menu" aria-labelledby="introDropdown">
@@ -60,7 +60,8 @@
                 </div>
             </li>
             <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" onclick="goTo('#Crow Engine')" id="crowDropdown" role="button" data-toggle="dropdown"
+                <a class="nav-link dropdown-toggle" onclick="goTo('#Crow Engine')" id="crowDropdown" role="button"
+                   data-toggle="dropdown"
                    aria-haspopup="true" aria-expanded="false">
                     Crow Engine
                 </a>
@@ -71,7 +72,8 @@
                 </div>
             </li>
             <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" onclick="goTo('#Game')" id="gameDropdown" role="button" data-toggle="dropdown"
+                <a class="nav-link dropdown-toggle" onclick="goTo('#Game')" id="gameDropdown" role="button"
+                   data-toggle="dropdown"
                    aria-haspopup="true" aria-expanded="false">
                     Game
                 </a>
@@ -83,7 +85,8 @@
                 </div>
             </li>
             <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" onclick="goTo('#Planning')" id="planningDropdown" role="button" data-toggle="dropdown"
+                <a class="nav-link dropdown-toggle" onclick="goTo('#Planning')" id="planningDropdown" role="button"
+                   data-toggle="dropdown"
                    aria-haspopup="true" aria-expanded="false">
                     Planning
                 </a>
@@ -95,15 +98,16 @@
                 </div>
             </li>
             <li>
-            <a class="nav-link active"  href="#improvments">Improvements <span class="sr-only">(current)</span></a>
+                <a class="nav-link active" href="#improvments">Improvements <span class="sr-only">(current)</span></a>
             <li>
-            <a class="nav-link active"  href="#conclusion">Conclusion <span class="sr-only">(current)</span></a>
+                <a class="nav-link active" href="#conclusion">Conclusion <span class="sr-only">(current)</span></a>
             </li>
             <li>
-            <a class="nav-link active"  href="#reflection">Personal Reflection <span class="sr-only">(current)</span></a>
+                <a class="nav-link active" href="#reflection">Personal Reflection <span class="sr-only">(current)</span></a>
             </li>
             <li>
-            <a class="nav-link active" href="#acknowledgments">Acknowledgments <span class="sr-only">(current)</span></a>
+                <a class="nav-link active" href="#acknowledgments">Acknowledgments <span
+                        class="sr-only">(current)</span></a>
             </li>
             <li>
                 <a class="nav-link active" href="#references">References <span class="sr-only">(current)</span></a>
@@ -120,15 +124,15 @@
 
             <div class="col-md-5">
                 <h2>Introduction</h2>
-                <p>As a part of my studies on Game Engineering in Saxion University, I did a 6-months research
+                <p>As part of my studies on Game Engineering in Saxion University, I did a 6-months research
                     project
                     (January 2020 – June 2020) called “Minor Skilled”.<br>
-                    The final product is a game created in a 3D Game Engine implemented from scratch in C++ using
+                    The final product a game created in a 3D Game Engine, implemented from scratch in C++ using
                     ECS as
                     the main architecture design.
                 </p>
                 <p>
-                    The purpose of this report is to share my research on the question,<b>What benefits does ECS
+                    The purpose of this report is to share my research by answering to the following question: <b>What benefits does ECS
                     architecture bring to Game and Engine development?</b>
                 </p>
 
@@ -165,10 +169,10 @@
 
     <div class="container" id="Goal">
 
-        <div class="row" >
+        <div class="row">
 
             <div class="col-md-auto">
-                <h5 >Goal</h5>
+                <h5>Goal</h5>
                 <p>The main goal of this project was to research on Entity-Component-System architecture and answer
                     the
                     question: <b>What benefits does ECS architecture bring to Game and Engine development?</b><br>
@@ -210,9 +214,11 @@
                     a <b>Vampire</b>, the whole program architecture has to be redesigned.
                     <br>Second problem with the OOP is performance. When iterating through all these Entities
                     calling
-                    <b>Update</b>, the CPU is jumping in memory and pulling data in cache,but since our entities are scattered
+                    <b>Update</b>, the CPU is jumping in memory and pulling data in cache,but since our entities are
+                    scattered
                     around in memory that cache is not used the next frame thus the
-                    CPU has to go and fetch that data from RAM every single time, so essentially our CPU power is wasted waiting for data to process.
+                    CPU has to go and fetch that data from RAM every single time, so essentially our CPU power is wasted
+                    waiting for data to process.
                 </p>
             </div>
             <div class="col-md-6 align-self-center">
@@ -225,20 +231,25 @@
                 <p>
                     Nowadays the industry has shifted to <b>Component System</b> design to solve the problem
                     mentioned above.
-                    For example in Unity's Component System <a href="https://docs.unity3d.com/Manual/Components.html">[1]</a> there is a <b>Gameobject</b> to which components can be
+                    For example in Unity's Component System <a href="https://docs.unity3d.com/Manual/Components.html">[1]</a>
+                    there is a <b>Gameobject</b> to which components can be
                     added as building blocks and then <b>Update</b> is called on those
                     components every frame. Now first issue is solved since, <b>Vampire</b> and <b>Orc</b> components
                     can be attached to a GameObject which will then act accordingly. However the
                     second problem still remains, the program is still jumping in memory
                     and calling <b>Update</b> on all of these components.<br>
-                    Having a look at the picture in the right, which represents how a component system memory layout might look like,
-                    the problem becomes more obvious. The program is moving all around memory in one frame and wasting CPU cycles.
+                    Having a look at the picture in the right, which represents how a component system memory layout
+                    might look like,
+                    the problem becomes more obvious. The program is moving all around memory in one frame and wasting
+                    CPU cycles.
                 </p>
             </div>
 
             <div class="col-md-6 align-self-center">
                 <img class="sidePicture" src="Assets/componentMemoryLayout.png" width="659" height="240"><br><br>
-                <p class="Footnote " style=" margin-top: -20px;" >Unity's Component system Memory Layout <a href="https://software.intel.com/content/www/us/en/develop/articles/get-started-with-the-unity-entity-component-system-ecs-c-sharp-job-system-and-burst-compiler.html">[2]</a></p>
+                <p class="Footnote " style=" margin-top: -20px;">Unity's Component system Memory Layout <a
+                        href="https://software.intel.com/content/www/us/en/develop/articles/get-started-with-the-unity-entity-component-system-ecs-c-sharp-job-system-and-burst-compiler.html">[2]</a>
+                </p>
             </div>
 
         </div>
@@ -249,12 +260,14 @@
                     In order for the second problem to be solved, the memory layout needs to be re-organised so thatthe
                     components
                     that are iterated regularly are tightly packed together.
-                    For example if all gameobjects are needed to move, all the transforms would be iterated and the position would be changed.
+                    For example if all gameobjects are needed to move, all the transforms would be iterated and the
+                    position would be changed.
                     However these transforms have to be grouped in memory together.
                     Then when the CPU request one transform it will fetch a bunch of them (as much as it can fit
                     in
                     one cache line) and store them in cache for the next frame.Then next iteration
-                    another transform is needed,they might are already stored in cache hence saving the CPU a lot of time.
+                    another transform is needed,they might are already stored in cache hence saving the CPU a lot of
+                    time.
                     <br>Introducing <b>Enity-Component-System</b> approach, in this design,an entity is just an
                     index to
                     a group or collection of components. All the components are stored in tightly
@@ -265,15 +278,22 @@
                     For example the Rigidbody system will operate only on entities which have the Rigidbody and
                     Transform component.
                     If an entity has neither or just one of these components the system wont update their data.<br>
-                    Unity Engine is now also moving towards this architecture with their new DOTS <a href="https://unity.com/dots">[4]</a> api.<br>
+                    Unity Engine is now also moving towards this architecture with their new DOTS <a
+                        href="https://unity.com/dots">[4]</a> api.<br>
                 </p>
             </div>
 
             <div class="col-md-6 align-self-center">
                 <img class="sidePicture" src="Assets/Dots1.png" width="500" height="250"><br><br>
-                <p class="Footnote" style=" margin-top: -20px;">Diagram showcasing entities and components in Unity's DOTS Api <a href="https://docs.google.com/presentation/d/1vxE61D_N79cvgUI3eIocF2n4rn04wjgRRq00ugyoB1M/edit#slide=id.g440c2dc2d7_0_0">[3]</a></p>
+                <p class="Footnote" style=" margin-top: -20px;">Diagram showcasing entities and components in Unity's
+                    DOTS Api <a
+                            href="https://docs.google.com/presentation/d/1vxE61D_N79cvgUI3eIocF2n4rn04wjgRRq00ugyoB1M/edit#slide=id.g440c2dc2d7_0_0">[3]</a>
+                </p>
                 <img class="sidePicture" src="Assets/Dots2.png" width="500" height="250">
-                <p class="Footnote"  style=" margin-top: 10px;">Diagram showcasing systems and component arrays in Unity's DOTS Api <a href="https://docs.google.com/presentation/d/1vxE61D_N79cvgUI3eIocF2n4rn04wjgRRq00ugyoB1M/edit#slide=id.g440c2dc2d7_0_0">[3]</a></p>
+                <p class="Footnote" style=" margin-top: 10px;">Diagram showcasing systems and component arrays in
+                    Unity's DOTS Api <a
+                            href="https://docs.google.com/presentation/d/1vxE61D_N79cvgUI3eIocF2n4rn04wjgRRq00ugyoB1M/edit#slide=id.g440c2dc2d7_0_0">[3]</a>
+                </p>
             </div>
         </div>
     </div>
@@ -289,7 +309,7 @@
 
         <div class="row">
 
-            <div class="col-md-auto " >
+            <div class="col-md-auto ">
                 <h2 id="FeatherHeader">Feather</h2>
                 <p>
                     In this section my own implementation of ECS architecture called Feather will be explained.
@@ -431,13 +451,17 @@
                     What happens if "C3" is needed to be removed from the set? First "C3" and "C4" are swapped in the
                     dense
                     component array then<br>
-                    the Entity->Index and Index->Entity need to be swapped as well, since next time we need to get "C4" the
+                    the Entity->Index and Index->Entity need to be swapped as well, since next time we need to get "C4"
+                    the
                     Entity needs to point to the updated index.
-                    In the Entity dense array the same thing needs to be done, so the entity to remove is swapped with the last entity.
+                    In the Entity dense array the same thing needs to be done, so the entity to remove is swapped with
+                    the last entity.
                     In the index sparse array the entity index needs to be updated.<br>
-                    As it is shown the index sparse array has holes in it but that is not a problem since it is never iterated
+                    As it is shown the index sparse array has holes in it but that is not a problem since it is never
+                    iterated
                     , it is only needed when a component is removed and the set needs to remain packed.<br>
-                    If the user needs to get "C4", first it's location will be found by using it's Entity value(in this case 3)
+                    If the user needs to get "C4", first it's location will be found by using it's Entity value(in this
+                    case 3)
                     to find the right index.
                     Then in the index array, the 3rd element is retrieved which is 2 meaning that the "C4" is
                     located in the 2nd index of the dense array.
@@ -447,12 +471,14 @@
 
                 <p>
                     Finally "C1" is removed from the set.
-                    Again "C1" and "C4" are swapped with each other and "C4"'s index is updated to point in the location where "C1" used
+                    Again "C1" and "C4" are swapped with each other and "C4"'s index is updated to point in the location
+                    where "C1" used
                     to
                     be.<br>
                     And now the array will always remain packed, and it can be iterated safely.
                     The swapping cost
-                    is not that high since its just two C-style array look-ups and the lookup is done only when a component
+                    is not that high since its just two C-style array look-ups and the lookup is done only when a
+                    component
                     needs to be removed which is not that frequent.
                     However the benefits are big since the data that is active and needed is always contiguous in
                     memory.
@@ -471,14 +497,16 @@
                         <h6>Feather Vs OOP</h6>
 
                         <p>
-                            First Feather Vs Object-Oriented approach was tested. Two programs were created which involved
+                            First Feather Vs Object-Oriented approach was tested. Two programs were created which
+                            involved
                             two different
                             types of entities, <b>Orcs</b> and <b>Nobles</b>.
                             In the OOP they are classes inheriting from other base classes. While in
                             ECS/Feather
                             they are just two simple components. The behaviour itself is very trivial,
                             in this case the iteration speed is the focus of the test.<br>
-                            Three different cases were tested, one with 1000 "Orcs" and "Nobles", one with 10,000 and one
+                            Three different cases were tested, one with 1000 "Orcs" and "Nobles", one with 10,000 and
+                            one
                             with
                             100,000. The program is executed for 1000 frames and in order to get a consistent result the
                             app
@@ -516,8 +544,9 @@
                         <p>
                             The second test performed was against Unity and it's current component system. For
                             this
-                            test  the
-                            steering and flocking behaviour systems build in Unity are the same one as the ones used in final game in C++.
+                            test the
+                            steering and flocking behaviour systems build in Unity are the same one as the ones used in
+                            final game in C++.
                             The unity program only
                             spawns a bunch of spheres and gives them a target to seek while they try to keep
                             distance
@@ -534,7 +563,8 @@
                             In the second video the same systems are tested in Feather and in an custom C++ Game
                             Engine
                             (<b>Crow</b>).
-                            The performance difference is noticeable, now there are way more units, 3-4 times more then Unity
+                            The performance difference is noticeable, now there are way more units, 3-4 times more then
+                            Unity
                             while
                             keeping a steady high framerate.
                             After 1200 the FPS drops exponentially since the flocking is done O(n2). The Feather
@@ -582,7 +612,8 @@
                 the
                 3 main registries, the Entity,Component and system registry.
                 After they are created, a world needs to be created which will act as an context and it will
-                communicate with all the registries. The world needs to be initialized by calling the "Init" function and passing the registries,
+                communicate with all the registries. The world needs to be initialized by calling the "Init" function
+                and passing the registries,
                 this
                 way the world is ready to be used and knows which memory it has to operate on.
                 <br><br>
@@ -625,7 +656,8 @@
                 "Update" function
                 all the entities which fit this system's signature are iterated and their <b>Position</b> and
                 <b>Gravity</b>
-                components are retrieved. Then the <b>Position</b> component is updated based on "gravityValue" of the <b>Gravity</b>
+                components are retrieved. Then the <b>Position</b> component is updated based on "gravityValue" of the
+                <b>Gravity</b>
                 component.
                 <br><br>
 
@@ -643,7 +675,8 @@
                 of
                 it's entities is located in any of the other
                 component sets and return those to the user.<br>
-                After list of entities is retrieved, the entities can be iterated and updated just as in the example above.
+                After list of entities is retrieved, the entities can be iterated and updated just as in the example
+                above.
                 <br><br>
 
                 <img class="center" src="Assets/codeSnippets/entitiesWithSnippet.png" width="814" height="385"><br>
@@ -657,7 +690,8 @@
                 to the entity and components automatically. This is similar to how Unity iterates components in
                 their
                 <b>DOTS</b> api.<br>
-                Now the components don't have to be retrieved from the entity since they are automatically filled in by the
+                Now the components don't have to be retrieved from the entity since they are automatically filled in by
+                the
                 world and instead the user can focus on writing their behaviour
                 inside the lambda function.
                 <br><br>
@@ -673,7 +707,8 @@
                 a conditional function given as parameter. In the example below all the entities
                 which have a <b>Position</b> component and have
                 their position's "X","Y" values equal to 0 are retrieved.<br>
-                Then these entities can be iterated and updated accordingly, in the example below they are just destroyed.
+                Then these entities can be iterated and updated accordingly, in the example below they are just
+                destroyed.
                 <br><br>
 
                 <img class="center" src="Assets/codeSnippets/FindEntitiesSnippet.png" width="1025" height="203"><br>
@@ -776,7 +811,8 @@
 
                 By doing rendering in ECS style the scene can be sorted easily. The Crow Engine supports instanced
                 rendering and how that works is when a shader is buffered to the GPU,
-                a list of all the transformation matrices is sent to the GPU for each model and material pair. This way we save a lot of the draw calls the
+                a list of all the transformation matrices is sent to the GPU for each model and material pair. This way
+                we save a lot of the draw calls the
                 GPU would have to do otherwise.<br>
 
                 Another benefit of this approach is that if we were doing something to all the materials we would
@@ -817,7 +853,8 @@
                     There are many improvement that could be done here like <b>Batching</b> and <b>Multi-threaded
                     Rendering</b> but these were not the scope of the project and did not
                     fit into the the main goal.<br><br>
-                    Another reason the custome renderer is able to perform better is not only because of the way material,shaders and
+                    Another reason the custome renderer is able to perform better is not only because of the way
+                    material,shaders and
                     meshes(in this case) are stored in memory but also because they are sorted
                     at runtime in order to have as little shader swaps as possible. This way the instance rendering
                     is
@@ -1205,11 +1242,14 @@
                     There are many sources online explaining briefly what ECS is and why you should use it, however
                     there
                     are little to none concrete
-                    examples on the topic. On of the best source found for the ECS was a blog by skypjack <a href="https://skypjack.github.io/2019-02-14-ecs-baf-part-1/v">[5]</a> which
+                    examples on the topic. On of the best source found for the ECS was a blog by skypjack <a
+                        href="https://skypjack.github.io/2019-02-14-ecs-baf-part-1/v">[5]</a> which
                     discussed briefly a few implementation ideas and designs.
                     <br> In order to implement an basic ECS architecture, research on C and C++(meta programming) had to
                     be
-                    done. The most reliable source for this topic and helped a lot in this project is the book Effective Modern C++ <a href="https://www.amazon.com/Effective-Modern-Specific-Ways-Improve/dp/1491903996">[6]</a>.<br>
+                    done. The most reliable source for this topic and helped a lot in this project is the book Effective
+                    Modern C++ <a
+                        href="https://www.amazon.com/Effective-Modern-Specific-Ways-Improve/dp/1491903996">[6]</a>.<br>
                     In this phase the first prototype of <b>Feather</b> was implemented. In order for the prototype to
                     be
                     approved it had to be faster then the <b>Objected-Oriented</b> design,
@@ -1354,7 +1394,8 @@
                     the components(structs) are stored in arrays. However another way to store Data is in <b>SOA</b>(Struct
                     Of Arrays). This approach is fast
                     when we need to iterate groups of data that are linked with each other. A good read about how to go
-                    about implementing this design can be found on  skypjack's blog post about ECS groups <a href="https://skypjack.github.io/2019-04-12-entt-tips-and-tricks-part-1/">[7]</a>.
+                    about implementing this design can be found on skypjack's blog post about ECS groups <a
+                            href="https://skypjack.github.io/2019-04-12-entt-tips-and-tricks-part-1/">[7]</a>.
                 </li>
                 <li><b>More custom collection types:</b> One of the reasons <b>ComponentSparseSet</b> was created is
                     because <b>UnorderedMap</b> of standard library in C++
@@ -1472,13 +1513,17 @@
 
             <p>
                 During these 6 months I learned a lot about data-oriented design and low level programming. One of the
-                things I wanted to work on myself was increasing my problem solving skills and how to approach harder problems that
+                things I wanted to work on myself was increasing my problem solving skills and how to approach harder
+                problems that
                 require individual research.<br>
-                For this project I had to research many things in order to reach my goal and I can safely say my overall programming and
+                For this project I had to research many things in order to reach my goal and I can safely say my overall
+                programming and
                 problem solving skills have improved.<br>
-                I also wanted to learn a lot not just about ECS but also about C and C++ increasing my overall knowledge of these languages
+                I also wanted to learn a lot not just about ECS but also about C and C++ increasing my overall knowledge
+                of these languages
                 since I had only done a few small projects using them.
-                In the end of the project I can gladly say I am happy with the result. I have reached my goal and in certain areas done
+                In the end of the project I can gladly say I am happy with the result. I have reached my goal and in
+                certain areas done
                 more then i expected myself to do.
             </p>
 
@@ -1523,6 +1568,19 @@
         <div class="row">
 
             <h2 id="references">References</h2>
+        </div>
+        <div class="row">
+            <ol>
+
+                <li>Unity(2019). Unity's component system manual. Retrieved from: <a href="https://docs.unity3d.com/Manual/Components.html">https://docs.unity3d.com/Manual/Components.html</a></li>
+                <li>Presentation by Cristiano Ferreira and Mike Geig(05/31/2018). Unity's component memory layout. Retrieved from <a href="https://software.intel.com/content/www/us/en/develop/articles/get-started-with-the-unity-entity-component-system-ecs-c-sharp-job-system-and-burst-compiler.html">https://software.intel.com/content/www/us/en/develop/articles/get-started-with-the-unity-entity-component-system-ecs-c-sharp-job-system-and-burst-compiler.html</a></li>
+                <li>ALALALALALLA</li>
+                <li>ALALALALALLA</li>
+                <li>ALALALALALLA</li>
+                <li>ALALALALALLA</li>
+                <li>ALALALALALLA</li>
+            </ol>
+
         </div>
 
     </div>
