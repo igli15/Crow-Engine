@@ -1,3 +1,3 @@
-/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir
+/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir

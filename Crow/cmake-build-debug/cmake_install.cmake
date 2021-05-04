@@ -1,4 +1,4 @@
-# Install script for directory: /Users/igli/Desktop/Crow Engine/Crow
+# Install script for directory: /Users/igli/Documents/Minor Skilled /Crow Engine/Crow
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

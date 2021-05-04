@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug"/>
+				<Option working_dir="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/igli/Documents/Minor\ Skilled\ /Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/igli/Documents/Minor\ Skilled\ /Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/igli/Documents/Minor\ Skilled\ /Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/igli/Documents/Minor\ Skilled\ /Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug"/>
+				<Option working_dir="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/igli/Documents/Minor\ Skilled\ /Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/igli/Documents/Minor\ Skilled\ /Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/igli/Documents/Minor\ Skilled\ /Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/igli/Documents/Minor\ Skilled\ /Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug"/>
+				<Option working_dir="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/igli/Documents/Minor\ Skilled\ /Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/igli/Documents/Minor\ Skilled\ /Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/igli/Documents/Minor\ Skilled\ /Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/igli/Documents/Minor\ Skilled\ /Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Crow">
-				<Option output="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/Crow" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug"/>
+				<Option output="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/cmake-build-debug/Crow" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -48,21 +48,21 @@
 					<Add directory="/Library/Frameworks/Mono.framework/Headers"/>
 					<Add directory="/usr/local/include/freetype2"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 Crow"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/igli/Documents/Minor\ Skilled\ /Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 Crow"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/igli/Documents/Minor\ Skilled\ /Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/igli/Documents/Minor\ Skilled\ /Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/igli/Documents/Minor\ Skilled\ /Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Crow/fast">
-				<Option output="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug/Crow" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/igli/Desktop/Crow Engine/Crow/cmake-build-debug"/>
+				<Option output="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/cmake-build-debug/Crow" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -71,650 +71,407 @@
 					<Add directory="/Library/Frameworks/Mono.framework/Headers"/>
 					<Add directory="/usr/local/include/freetype2"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 Crow/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/igli/Desktop/Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/igli/Documents/Minor\ Skilled\ /Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 Crow/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/igli/Documents/Minor\ Skilled\ /Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/igli/Documents/Minor\ Skilled\ /Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/igli/Documents/Minor\ Skilled\ /Crow\ Engine/Crow/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Crow.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Crow.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/AudioListener.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Components/AudioListener.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/AudioSource.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Components/AudioSource.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Components/Camera.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Camera.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Components/Camera.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Light.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Components/Light.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/MeshInfo.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Components/MeshInfo.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Rigidbody.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Components/Rigidbody.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Rigidbody.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Components/Rigidbody.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/SphereCollider.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Components/SphereCollider.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/SpriteInfo.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Components/SpriteInfo.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Text.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Components/Text.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Components/Transform.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Components/Transform.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Components/Transform.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/AssetParser.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Core/AssetParser.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Core/Game.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Game.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Core/Game.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Core/Input.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Input.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Core/Input.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Renderer.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Core/Renderer.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/Renderer.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Core/Renderer.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Core/ResourceManager.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Core/ResourceManager.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Core/ResourceManager.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Debug/Debug.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Debug/Debug.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Debug/Debug.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Editor/UnitySceneParser.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Editor/UnitySceneParser.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Editor/UnitySceneParser.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Editor/UnitySceneParser.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/Event.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/EventQueue/Event.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/EventQueue/EventQueue.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/EventQueue.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/EventQueue/EventQueue.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/EventQueue/MemberFunctionHandler.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEnterEvent.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Events/CollisionEnterEvent.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionEvent.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Events/CollisionEvent.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/CollisionExitEvent.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Events/CollisionExitEvent.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Events/ComponentAddedEvent.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Events/ComponentRemovedEvent.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/EntityEvents.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Events/EntityEvents.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/MeshInfoDirtyEvent.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Events/MeshInfoDirtyEvent.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Events/OnUnitDefeatedEvent.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Events/OnUnitDefeatedEvent.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Benchmark.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Feather/Benchmark.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentRegistry.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Feather/ComponentRegistry.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentRegistry.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Feather/ComponentRegistry.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentSparseSet.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Feather/ComponentSparseSet.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/ComponentSparseSet.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Feather/ComponentSparseSet.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/CustomTypeID.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Feather/CustomTypeID.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Feather/EntityHandle.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityHandle.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Feather/EntityHandle.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityRegistry.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Feather/EntityRegistry.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/EntityRegistry.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Feather/EntityRegistry.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/IComponentSet.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Feather/IComponentSet.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Pool.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Feather/Pool.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Feather/System.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/System.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Feather/System.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemRegistry.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Feather/SystemRegistry.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/SystemRegistry.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Feather/SystemRegistry.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/Types.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Feather/Types.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Feather/World.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Feather/World.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Feather/World.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/AbstractMaterial.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/AbstractMaterial.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Font.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Font.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Font.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Font.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Materials/ColorMaterial.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/HealthBarMaterial.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Materials/HealthBarMaterial.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/HealthBarMaterial.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Materials/HealthBarMaterial.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/PortalMaterial.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Materials/PortalMaterial.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/PortalMaterial.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Materials/PortalMaterial.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/SpriteMaterial.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Materials/SpriteMaterial.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/SpriteMaterial.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Materials/SpriteMaterial.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/TextureMaterial.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Materials/TextureMaterial.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/TextureMaterial.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Materials/TextureMaterial.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/TranslucentColorMat.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Materials/TranslucentColorMat.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/TranslucentColorMat.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Materials/TranslucentColorMat.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/UnlitMaterial.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Materials/UnlitMaterial.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/UnlitMaterial.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Materials/UnlitMaterial.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/WaterMaterial.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Materials/WaterMaterial.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Materials/WaterMaterial.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Materials/WaterMaterial.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Mesh.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Mesh.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Mesh.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Mesh.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Model.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Model.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Model.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Shader.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Shader.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Shader.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Sprite.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Sprite.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Sprite.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Sprite.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Texture.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Texture.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Texture.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Window.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Rendering/Window.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Window.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/AudioListenerSystem.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Systems/AudioListenerSystem.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/AudioListenerSystem.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Systems/AudioListenerSystem.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/AudioSourceSystem.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Systems/AudioSourceSystem.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/AudioSourceSystem.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Systems/AudioSourceSystem.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/CollisionDetectionSystem.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Systems/CollisionDetectionSystem.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/CollisionDetectionSystem.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Systems/CollisionDetectionSystem.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/MeshRendererSystem.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Systems/MeshRendererSystem.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/MeshRendererSystem.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Systems/MeshRendererSystem.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/SpriteRendererSystem.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Systems/SpriteRendererSystem.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/SpriteRendererSystem.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Systems/SpriteRendererSystem.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/TextRenderingSystem.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Systems/TextRenderingSystem.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/TextRenderingSystem.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Systems/TextRenderingSystem.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/TransformHierarchySystem.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Systems/TransformHierarchySystem.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Systems/TransformHierarchySystem.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Systems/TransformHierarchySystem.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Utils/Random.cpp">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Utils/Random.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Engine/Utils/Random.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Utils/Random.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/AutoDestructComponent.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/OOP Engine/Gameobject.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/BridgeComponent.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/OOP Engine/Gameobject.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/CannonComponent.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Plugins/stb_image.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/DamageDealer.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Plugins/stb_image.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/DebugTextComponent.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/SandBox/Components/MoveComponent.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/Enemy.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/SandBox/Components/MoveComponent.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/EnemyUnitCollider.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/SandBox/MyGame.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/FloatingComponent.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/SandBox/MyGame.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/FlockComponent.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/SandBox/Worlds/SpriteRenderingWorld.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/HealthComponent.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/SandBox/Worlds/SpriteRenderingWorld.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/MainMenuComponent.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/SandBox/Worlds/TranslucentMaterialTestWorld.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/Player.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/SandBox/Worlds/TranslucentMaterialTestWorld.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/PlayerUnitCollider.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/SandBox/Worlds/XmlTestWorld.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/ProjectileComponent.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/SandBox/Worlds/XmlTestWorld.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/RotateComponent.h">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/main.cpp">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/SeekComponent.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/SelectedBridgeIndicator.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/SteeringComponent.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitAnimationComponent.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitIconComponent.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Components/UnitPathComponent.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Events/BridgeSelectedEvent.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Events/TargetSeekedEvent.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Events/UnitCollisionEvents.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Events/UnitPathCompleteEvent.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Events/WorldResetEvent.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Events/WorldResetEvent.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/AutoDestructSystem.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/AutoDestructSystem.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/BridgeSystem.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/BridgeSystem.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/CannonSystem.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/CannonSystem.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/DebugTextSystem.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/DebugTextSystem.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/EnemySpawnSystem.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/EnemySpawnSystem.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/FloatingSystem.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/FloatingSystem.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/FlockSeparationSystem.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/FlockSeparationSystem.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameOverSystem.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameOverSystem.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameStateSystem.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameStateSystem.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameUISystem.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/GameUISystem.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/MainMenuSystem.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/MainMenuSystem.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/PathSystem.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/PathSystem.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/PlayerMoneySystem.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/PlayerMoneySystem.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/ProjectileSystem.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/ProjectileSystem.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/RigidbodySystem.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/RigidbodySystem.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/RotateSystem.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/RotateSystem.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SeekingSystem.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SeekingSystem.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SelectedBridgeIndicatorSystem.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SelectedBridgeIndicatorSystem.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SpawnSystem.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SpawnSystem.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SteeringSystem.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/SteeringSystem.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitAnimationSystem.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitAnimationSystem.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitCollisionSystem.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitCollisionSystem.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitFightingSystem.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Systems/UnitFightingSystem.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/UnitGroupArchetypes/UnitGroupArchetype.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Worlds/MainWorld.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Game/Worlds/MainWorld.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Gameobject.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/OOP Engine/Gameobject.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Plugins/stb_image.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Plugins/stb_image.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/MoveComponent.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Components/MoveComponent.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/MyGame.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/MyGame.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/MovementTestWorld.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/MovementTestWorld.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/RotatingGunsWorld.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/RotatingGunsWorld.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/SpriteRenderingWorld.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/SpriteRenderingWorld.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/TranslucentMaterialTestWorld.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/TranslucentMaterialTestWorld.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/XmlTestWorld.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/SandBox/Worlds/XmlTestWorld.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/main.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/CMakeLists.txt">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/FindFreetype.cmake">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/FindFreetype.cmake">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/FindGLEW.cmake">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/FindGLEW.cmake">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/FindGLFW.cmake">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/FindGLFW.cmake">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/FindGLM.cmake">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/FindGLM.cmake">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/FindSFML.cmake">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/FindSFML.cmake">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Findassimp.cmake">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Findassimp.cmake">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/igli/Desktop/Crow Engine/Crow/Findspdlog.cmake">
+		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Findspdlog.cmake">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

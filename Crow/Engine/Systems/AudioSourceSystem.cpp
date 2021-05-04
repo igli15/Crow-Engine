@@ -14,7 +14,7 @@ void AudioSourceSystem::OnCreate()
 
     EventQueue::Instance().Subscribe(this, &AudioSourceSystem::OnAudioSourceAdded);
     EventQueue::Instance().Subscribe(this, &AudioSourceSystem::OnAudioSourceRemoved);
-    EventQueue::Instance().Subscribe(this, &AudioSourceSystem::OnWorldReset);
+    //EventQueue::Instance().Subscribe(this, &AudioSourceSystem::OnWorldReset);
 }
 
 void AudioSourceSystem::Init()
@@ -77,6 +77,7 @@ void AudioSourceSystem::OnAudioSourceRemoved(ComponentRemovedEvent<AudioSource> 
     }
 }
 
+/*
 void AudioSourceSystem::OnWorldReset(WorldResetEvent *event)
 {
     world->ForEach<AudioSource>([this](Entity e,AudioSource& audioSource)
@@ -88,3 +89,4 @@ void AudioSourceSystem::OnWorldReset(WorldResetEvent *event)
         }
     });
 }
+ */
