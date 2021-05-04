@@ -42,7 +42,7 @@ void Game::Init()
     resourceManager = new ResourceManager();
 
     window = new Window();
-    window->CreateWindow(screenData.screenWidth, screenData.screenHeight, "Crow");
+    window->CreateWindow(screenData.screenWidth*2, screenData.screenHeight*2, "Crow");
 
     m_postProcessingShader = resourceManager->CreateShader("PostProcessingShader.vs","PostProcessingShader.fs","postProcessingShader");
 
