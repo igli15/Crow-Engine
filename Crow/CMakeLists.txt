@@ -5,6 +5,15 @@ set(CMAKE_CXX_STANDARD 17)
 
 set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR})
 
+
+#set(INCLUDE_DIR ${PROJECT_SOURCE_DIR}/include/)
+#find_library(SFML_INCLUDE_LIB sfml PATHS ${PROJECT_SOURCE_DIR}/lib/SFML/)
+#find_library(GLFW_INCLUDE_LIB glfw PATHS ${PROJECT_SOURCE_DIR}/lib/GLFW/)
+#find_library(spdlog_INCLUDE_LIB spdlog PATHS ${PROJECT_SOURCE_DIR}/lib/spdlog/)
+#find_library(GLEW_LIBRARY GLEW PATHS ${PROJECT_SOURCE_DIR}/lib/GLEW/)
+
+include_directories(${INCLUDE_DIR})
+
 find_package (OpenGL REQUIRED)
 find_package(GLFW REQUIRED)
 find_package(GLEW REQUIRED)
@@ -27,7 +36,7 @@ find_library(libassimp Required)
 find_package(SFML COMPONENTS audio)
 
 include_directories(${GLEW_INCLUDE_DIRS})
-include_directories(${GLFW_INCLUDE_DIR})
+include_directories(${GLFW_INCLUDE_DIRS})
 include_directories(${spdlog_INCLUDE_DIR})
 include_directories(${GLM_INCLUDE_DIRS})
 include_directories(${ASSIMP_INCLUDE_DIRS})

@@ -12,159 +12,19 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf22dce6-4d69-43d0-a044-a31c5cbccc70" name="Default Changelist" comment="">
+    <list default="true" id="cf22dce6-4d69-43d0-a044-a31c5cbccc70" name="Default Changelist" comment="link_directories(${CMAKE_SOURCE_DIR}/lib)``">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Feather/World.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Feather/World.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Systems/AudioSourceSystem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Systems/AudioSourceSystem.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Systems/AudioSourceSystem.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Systems/AudioSourceSystem.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Components/AutoDestructComponent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Components/BridgeComponent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Components/CannonComponent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Components/DamageDealer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Components/DebugTextComponent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Components/Enemy.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Components/EnemyUnitCollider.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Components/FloatingComponent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Components/FlockComponent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Components/HealthComponent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Components/MainMenuComponent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Components/Player.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Components/PlayerUnitCollider.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Components/ProjectileComponent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Components/RotateComponent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Components/SeekComponent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Components/SelectedBridgeIndicator.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Components/SteeringComponent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Components/UnitAnimationComponent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Components/UnitComponent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Components/UnitIconComponent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Components/UnitPathComponent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Events/BridgeSelectedEvent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Events/TargetSeekedEvent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Events/UnitCollisionEvents.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Events/UnitPathCompleteEvent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Events/WorldResetEvent.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Events/WorldResetEvent.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/AutoDestructSystem.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/AutoDestructSystem.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/BridgeSystem.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/BridgeSystem.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/CannonSystem.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/CannonSystem.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/DebugTextSystem.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/DebugTextSystem.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/EnemySpawnSystem.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/EnemySpawnSystem.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/FloatingSystem.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/FloatingSystem.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/FlockSeparationSystem.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/FlockSeparationSystem.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/GameOverSystem.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/GameOverSystem.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/GameStateSystem.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/GameStateSystem.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/GameUISystem.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/GameUISystem.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/MainMenuSystem.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/MainMenuSystem.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/PathSystem.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/PathSystem.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/PlayerMoneySystem.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/PlayerMoneySystem.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/ProjectileSystem.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/ProjectileSystem.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/RigidbodySystem.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/RigidbodySystem.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/RotateSystem.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/RotateSystem.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/SeekingSystem.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/SeekingSystem.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/SelectedBridgeIndicatorSystem.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/SelectedBridgeIndicatorSystem.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/SpawnSystem.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/SpawnSystem.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/SteeringSystem.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/SteeringSystem.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/UnitAnimationSystem.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/UnitAnimationSystem.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/UnitCollisionSystem.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/UnitCollisionSystem.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/UnitFightingSystem.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Systems/UnitFightingSystem.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/UnitGroupArchetypes/UnitGroupArchetype.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Worlds/MainWorld.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Worlds/MainWorld.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SandBox/MyGame.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SandBox/MyGame.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SandBox/Worlds/MovementTestWorld.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SandBox/Worlds/MovementTestWorld.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SandBox/Worlds/RotatingGunsWorld.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SandBox/Worlds/RotatingGunsWorld.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SandBox/Worlds/TranslucentMaterialTestWorld.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SandBox/Worlds/TranslucentMaterialTestWorld.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindGLFW.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/FindGLFW.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CMakeCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.16.5/CMakeSystem.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Crow" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Crow" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Crow.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Crow.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.15.3/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.15.3/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.15.3/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.16.5/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.16.5/CMakeCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.16.5/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.16.5/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.16.5/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.16.5/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.16.5/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.16.5/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.16.5/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/3.16.5/CMakeSystem.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/CXX.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/Game/UnitGroupArchetypes/UnitGroupArchetype.cpp-e56d9540.o.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Worlds/MovementTestWorld.cpp-7abb96e5.o.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/SandBox/Worlds/XmlTestWorld.cpp-8104cc27.o.tmp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/Crow.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/Crow.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/cmake_install.cmake" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

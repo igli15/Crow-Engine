@@ -257,6 +257,12 @@ GLEW_LIBRARY:FILEPATH=/usr/local/lib/libGLEW.dylib
 //The directory where GLFW/glfw3.h resides
 GLFW_INCLUDE_DIR:PATH=/usr/local/include
 
+//Path to a library.
+GLFW_INCLUDE_LIB:FILEPATH=/usr/local/lib/libglfw.dylib
+
+//The GLFW library
+GLFW_LIBRARY:FILEPATH=/usr/local/lib/libglfw3.a
+
 //Cocoa framework for OSX
 GLFW_cocoa_LIBRARY:STRING=-framework Cocoa
 
@@ -305,6 +311,9 @@ SFML_AUDIO_LIBRARY_STATIC_RELEASE:FILEPATH=SFML_AUDIO_LIBRARY_STATIC_RELEASE-NOT
 //Path to a file.
 SFML_INCLUDE_DIR:PATH=/usr/local/include
 
+//Path to a library.
+SFML_INCLUDE_LIB:FILEPATH=SFML_INCLUDE_LIB-NOTFOUND
+
 //Path to a file.
 assimp_INCLUDE_DIRS:PATH=/usr/local/include
 
@@ -325,6 +334,9 @@ libassimp.5.0.0:FILEPATH=libassimp.5.0.0-NOTFOUND
 
 //spdlog library header files
 spdlog_INCLUDE_DIR:PATH=/usr/local/include
+
+//Path to a library.
+spdlog_INCLUDE_LIB:FILEPATH=/usr/local/lib/libspdlog.a
 
 
 ########################
@@ -477,7 +489,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_Freetype:INTERNAL=[/usr/local/lib/libfreetype.dylib
 //Details about finding GLEW
 FIND_PACKAGE_MESSAGE_DETAILS_GLEW:INTERNAL=[/usr/local/include][/usr/local/lib/libGLEW.dylib][v()]
 //Details about finding GLFW
-FIND_PACKAGE_MESSAGE_DETAILS_GLFW:INTERNAL=[/usr/local/include][/usr/local/lib/libglfw.dylib;;-framework Cocoa;-framework IOKit;-framework CoreVideo][v3.3.2()]
+FIND_PACKAGE_MESSAGE_DETAILS_GLFW:INTERNAL=[/usr/local/include][/usr/local/lib/libglfw3.a][v()]
 //Details about finding GLM
 FIND_PACKAGE_MESSAGE_DETAILS_GLM:INTERNAL=[/usr/local/include][v()]
 //Details about finding OpenGL
@@ -496,6 +508,8 @@ GLEW_INCLUDE_DIR-ADVANCED:INTERNAL=1
 GLEW_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GLFW_INCLUDE_DIR
 GLFW_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: GLFW_LIBRARY
+GLFW_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GLFW_cocoa_LIBRARY
 GLFW_cocoa_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GLFW_glfw_LIBRARY

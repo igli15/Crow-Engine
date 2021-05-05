@@ -814,7 +814,12 @@ Crow: CMakeFiles/Crow.dir/Engine/Rendering/Materials/HealthBarMaterial.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Systems/AudioListenerSystem.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Systems/AudioSourceSystem.cpp.o
 Crow: CMakeFiles/Crow.dir/build.make
-Crow: /usr/local/lib/libglfw.dylib
+Crow: /usr/local/lib/libglfw3.a
+Crow: /usr/local/lib/libassimp.dylib
+Crow: /usr/local/lib/libGLEW.dylib
+Crow: /usr/local/lib/libfreetype.dylib
+Crow: /usr/local/lib/libsfml-audio.dylib
+Crow: /usr/local/lib/libglfw3.a
 Crow: /usr/local/lib/libassimp.dylib
 Crow: /usr/local/lib/libGLEW.dylib
 Crow: /usr/local/lib/libfreetype.dylib

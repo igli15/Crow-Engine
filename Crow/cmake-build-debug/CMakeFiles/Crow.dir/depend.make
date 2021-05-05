@@ -620,7 +620,6 @@ CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: ../Engine/Systems/TextRenderingSyste
 CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: ../Engine/Systems/TransformHierarchySystem.h
 CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: ../Engine/Utils/Random.h
 CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: /usr/local/include/GL/glew.h
-CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: /usr/local/include/GLFW/glfw3.h
 CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: /usr/local/include/SFML/Audio.hpp
 CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: /usr/local/include/SFML/Audio/AlResource.hpp
 CMakeFiles/Crow.dir/Engine/Core/Game.cpp.o: /usr/local/include/SFML/Audio/Export.hpp
@@ -1043,7 +1042,6 @@ CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: ../Engine/Core/Input.h
 CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: ../Engine/Debug/Debug.h
 CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: ../Engine/Rendering/Window.h
 CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/GL/glew.h
-CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/GLFW/glfw3.h
 CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/common-inl.h
 CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/common.h
 CMakeFiles/Crow.dir/Engine/Core/Input.cpp.o: /usr/local/include/spdlog/details/backtracer-inl.h
@@ -1516,7 +1514,6 @@ CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o: ../Engine/Rendering/Textu
 CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o: ../Engine/Rendering/Window.h
 CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o: ../Plugins/stb_image.h
 CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o: /usr/local/include/GL/glew.h
-CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o: /usr/local/include/GLFW/glfw3.h
 CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o: /usr/local/include/SFML/Audio.hpp
 CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o: /usr/local/include/SFML/Audio/AlResource.hpp
 CMakeFiles/Crow.dir/Engine/Core/ResourceManager.cpp.o: /usr/local/include/SFML/Audio/Export.hpp
@@ -2021,7 +2018,6 @@ CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: ../Engine/Rendering/Te
 CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: ../Engine/Rendering/Window.h
 CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: ../Plugins/RapidXML/rapidxml.hpp
 CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: /usr/local/include/GL/glew.h
-CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: /usr/local/include/GLFW/glfw3.h
 CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: /usr/local/include/SFML/Audio.hpp
 CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: /usr/local/include/SFML/Audio/AlResource.hpp
 CMakeFiles/Crow.dir/Engine/Editor/UnitySceneParser.cpp.o: /usr/local/include/SFML/Audio/Export.hpp
@@ -2770,7 +2766,6 @@ CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Feather/World.cpp
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Feather/World.h
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: ../Engine/Rendering/Window.h
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: /usr/local/include/GL/glew.h
-CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: /usr/local/include/GLFW/glfw3.h
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: /usr/local/include/freetype2/freetype/config/ftheader.h
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: /usr/local/include/freetype2/ft2build.h
 CMakeFiles/Crow.dir/Engine/Feather/World.cpp.o: /usr/local/include/glm/detail/_swizzle.hpp
@@ -2865,7 +2860,6 @@ CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o: ../Engine/Rendering
 CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o: ../Engine/Rendering/Texture.h
 CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o: ../Engine/Rendering/Window.h
 CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o: /usr/local/include/GL/glew.h
-CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o: /usr/local/include/GLFW/glfw3.h
 CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o: /usr/local/include/SFML/Audio.hpp
 CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o: /usr/local/include/SFML/Audio/AlResource.hpp
 CMakeFiles/Crow.dir/Engine/Rendering/AbstractMaterial.cpp.o: /usr/local/include/SFML/Audio/Export.hpp
@@ -3305,7 +3299,6 @@ CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o: ../Engine/Rendering/Font.cpp
 CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o: ../Engine/Rendering/Font.h
 CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o: ../Engine/Rendering/Window.h
 CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o: /usr/local/include/GL/glew.h
-CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o: /usr/local/include/GLFW/glfw3.h
 CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o: /usr/local/include/freetype2/freetype/config/ftheader.h
 CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o: /usr/local/include/freetype2/ft2build.h
 CMakeFiles/Crow.dir/Engine/Rendering/Font.cpp.o: /usr/local/include/glm/common.hpp
@@ -3914,7 +3907,6 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/HealthBarMaterial.cpp.o: ../Engin
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/HealthBarMaterial.cpp.o: ../Engine/Rendering/Shader.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/HealthBarMaterial.cpp.o: ../Engine/Rendering/Texture.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/HealthBarMaterial.cpp.o: /usr/local/include/GL/glew.h
-CMakeFiles/Crow.dir/Engine/Rendering/Materials/HealthBarMaterial.cpp.o: /usr/local/include/GLFW/glfw3.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/HealthBarMaterial.cpp.o: /usr/local/include/glm/common.hpp
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/HealthBarMaterial.cpp.o: /usr/local/include/glm/detail/_fixes.hpp
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/HealthBarMaterial.cpp.o: /usr/local/include/glm/detail/_noise.hpp
@@ -4311,7 +4303,6 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: ../Engine/R
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: ../Engine/Rendering/Texture.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: ../Engine/Rendering/Window.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: /usr/local/include/GL/glew.h
-CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: /usr/local/include/GLFW/glfw3.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: /usr/local/include/freetype2/freetype/config/ftheader.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: /usr/local/include/freetype2/ft2build.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o: /usr/local/include/glm/common.hpp
@@ -4720,7 +4711,6 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o: ../Engine/R
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o: ../Engine/Rendering/Texture.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o: ../Engine/Rendering/Window.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o: /usr/local/include/GL/glew.h
-CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o: /usr/local/include/GLFW/glfw3.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o: /usr/local/include/SFML/Audio.hpp
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o: /usr/local/include/SFML/Audio/AlResource.hpp
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/SpriteMaterial.cpp.o: /usr/local/include/SFML/Audio/Export.hpp
@@ -5173,7 +5163,6 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: ../Engine/
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: ../Engine/Rendering/Texture.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: ../Engine/Rendering/Window.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: /usr/local/include/GL/glew.h
-CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: /usr/local/include/GLFW/glfw3.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: /usr/local/include/SFML/Audio.hpp
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: /usr/local/include/SFML/Audio/AlResource.hpp
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/TextureMaterial.cpp.o: /usr/local/include/SFML/Audio/Export.hpp
@@ -6404,7 +6393,6 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: ../Engine/Re
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: ../Engine/Rendering/Texture.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: ../Engine/Rendering/Window.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: /usr/local/include/GL/glew.h
-CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: /usr/local/include/GLFW/glfw3.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: /usr/local/include/freetype2/freetype/config/ftheader.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: /usr/local/include/freetype2/ft2build.h
 CMakeFiles/Crow.dir/Engine/Rendering/Materials/WaterMaterial.cpp.o: /usr/local/include/glm/common.hpp
@@ -8292,7 +8280,6 @@ CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: ../Engine/Rendering/Shader.h
 CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: ../Engine/Rendering/Window.cpp
 CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: ../Engine/Rendering/Window.h
 CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/GL/glew.h
-CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/GLFW/glfw3.h
 CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/glm/common.hpp
 CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/glm/detail/_fixes.hpp
 CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o: /usr/local/include/glm/detail/_noise.hpp
@@ -9537,7 +9524,6 @@ CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o: ../Engine/Rendering
 CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o: ../Engine/Systems/MeshRendererSystem.cpp
 CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o: ../Engine/Systems/MeshRendererSystem.h
 CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o: /usr/local/include/GL/glew.h
-CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o: /usr/local/include/GLFW/glfw3.h
 CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o: /usr/local/include/freetype2/freetype/config/ftheader.h
 CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o: /usr/local/include/freetype2/ft2build.h
 CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o: /usr/local/include/glm/common.hpp
@@ -9941,7 +9927,6 @@ CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: ../Engine/Renderi
 CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: ../Engine/Systems/SpriteRendererSystem.cpp
 CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: ../Engine/Systems/SpriteRendererSystem.h
 CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: /usr/local/include/GL/glew.h
-CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: /usr/local/include/GLFW/glfw3.h
 CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: /usr/local/include/freetype2/freetype/config/ftheader.h
 CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: /usr/local/include/freetype2/ft2build.h
 CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o: /usr/local/include/glm/common.hpp
@@ -10351,7 +10336,6 @@ CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o: ../Engine/Renderin
 CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o: ../Engine/Systems/TextRenderingSystem.cpp
 CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o: ../Engine/Systems/TextRenderingSystem.h
 CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o: /usr/local/include/GL/glew.h
-CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o: /usr/local/include/GLFW/glfw3.h
 CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o: /usr/local/include/SFML/Audio.hpp
 CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o: /usr/local/include/SFML/Audio/AlResource.hpp
 CMakeFiles/Crow.dir/Engine/Systems/TextRenderingSystem.cpp.o: /usr/local/include/SFML/Audio/Export.hpp
@@ -11268,7 +11252,6 @@ CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../SandBox/Worlds/SpriteRenderingWorld
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../SandBox/Worlds/TranslucentMaterialTestWorld.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: ../SandBox/Worlds/XmlTestWorld.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: /usr/local/include/GL/glew.h
-CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: /usr/local/include/GLFW/glfw3.h
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: /usr/local/include/SFML/Audio.hpp
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: /usr/local/include/SFML/Audio/AlResource.hpp
 CMakeFiles/Crow.dir/SandBox/MyGame.cpp.o: /usr/local/include/SFML/Audio/Export.hpp
@@ -11724,7 +11707,6 @@ CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o: ../Engine/Renderi
 CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o: ../SandBox/Worlds/SpriteRenderingWorld.cpp
 CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o: ../SandBox/Worlds/SpriteRenderingWorld.h
 CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o: /usr/local/include/GL/glew.h
-CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o: /usr/local/include/GLFW/glfw3.h
 CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o: /usr/local/include/SFML/Audio.hpp
 CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o: /usr/local/include/SFML/Audio/AlResource.hpp
 CMakeFiles/Crow.dir/SandBox/Worlds/SpriteRenderingWorld.cpp.o: /usr/local/include/SFML/Audio/Export.hpp
@@ -12192,7 +12174,6 @@ CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../Engine
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../SandBox/Worlds/TranslucentMaterialTestWorld.cpp
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: ../SandBox/Worlds/TranslucentMaterialTestWorld.h
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: /usr/local/include/GL/glew.h
-CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: /usr/local/include/GLFW/glfw3.h
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: /usr/local/include/SFML/Audio.hpp
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: /usr/local/include/SFML/Audio/AlResource.hpp
 CMakeFiles/Crow.dir/SandBox/Worlds/TranslucentMaterialTestWorld.cpp.o: /usr/local/include/SFML/Audio/Export.hpp
@@ -12886,7 +12867,6 @@ CMakeFiles/Crow.dir/main.cpp.o: ../Plugins/RapidXML/rapidxml.hpp
 CMakeFiles/Crow.dir/main.cpp.o: ../SandBox/MyGame.h
 CMakeFiles/Crow.dir/main.cpp.o: ../main.cpp
 CMakeFiles/Crow.dir/main.cpp.o: /usr/local/include/GL/glew.h
-CMakeFiles/Crow.dir/main.cpp.o: /usr/local/include/GLFW/glfw3.h
 CMakeFiles/Crow.dir/main.cpp.o: /usr/local/include/freetype2/freetype/config/ftheader.h
 CMakeFiles/Crow.dir/main.cpp.o: /usr/local/include/freetype2/ft2build.h
 CMakeFiles/Crow.dir/main.cpp.o: /usr/local/include/glm/detail/_swizzle.hpp
