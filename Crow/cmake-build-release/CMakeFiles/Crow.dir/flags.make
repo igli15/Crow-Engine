@@ -6,5 +6,5 @@ CXX_FLAGS = -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Pl
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/include" -I/usr/local/include -I/Library/Frameworks/Mono.framework/Headers -I/usr/local/include/freetype2 
+CXX_INCLUDES = -I"/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/include" -I"/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/include/freetype2" 
 

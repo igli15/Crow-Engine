@@ -784,13 +784,10 @@ Crow: CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Rendering/Materials/HealthBarMaterial.cpp.o
 Crow: CMakeFiles/Crow.dir/build.make
-Crow: /usr/local/lib/libGLEW.dylib
-Crow: /usr/local/lib/libglfw3.a
-Crow: /usr/local/lib/libassimp.dylib
-Crow: /usr/local/lib/libfreetype.dylib
-Crow: /usr/local/lib/libglfw3.a
-Crow: /usr/local/lib/libassimp.dylib
-Crow: /usr/local/lib/libfreetype.dylib
+Crow: ../lib/GLEW/libGLEW.dylib
+Crow: ../lib/GLFW/libglfw.dylib
+Crow: ../lib/assimp/libassimp.dylib
+Crow: ../lib/freetype/libfreetype.dylib
 Crow: CMakeFiles/Crow.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/cmake-build-release/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_49) "Linking CXX executable Crow"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Crow.dir/link.txt --verbose=$(VERBOSE)

@@ -45,10 +45,9 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Frameworks/Mono.framework/Headers"/>
-					<Add directory="/usr/local/include/freetype2"/>
+					<Add directory="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/include/freetype2"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
@@ -69,10 +68,9 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Frameworks/Mono.framework/Headers"/>
-					<Add directory="/usr/local/include/freetype2"/>
+					<Add directory="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/include/freetype2"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
@@ -435,21 +433,6 @@
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\"/>
-		</Unit>
-		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/FindFreetype.cmake">
-			<Option virtualFolder="CMake Files\"/>
-		</Unit>
-		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/FindGLFW.cmake">
-			<Option virtualFolder="CMake Files\"/>
-		</Unit>
-		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/FindGLM.cmake">
-			<Option virtualFolder="CMake Files\"/>
-		</Unit>
-		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Findassimp.cmake">
-			<Option virtualFolder="CMake Files\"/>
-		</Unit>
-		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Findspdlog.cmake">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

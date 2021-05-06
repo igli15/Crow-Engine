@@ -5,7 +5,7 @@
 #ifndef CROW_SHADER_H
 #define CROW_SHADER_H
 
-#include <GL/glew.h>
+#include <GLEW/glew.h>
 
 #include <string>
 #include <fstream>

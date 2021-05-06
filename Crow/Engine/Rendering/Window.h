@@ -6,7 +6,7 @@
 #ifndef CROW_WINDOW_H
 #define CROW_WINDOW_H
 
-#include <GL/glew.h>
+#include <GLEW/glew.h>
 #include <GLFW/glfw3.h>
 #include "../Core/Input.h"
 

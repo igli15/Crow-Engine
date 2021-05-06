@@ -5,7 +5,7 @@
 #ifndef CROW_TEXTURE_H
 #define CROW_TEXTURE_H
 
-#include <GL/glew.h>
+#include <GLEW/glew.h>
 
 struct Texture {
 

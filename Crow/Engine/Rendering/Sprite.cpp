@@ -2,7 +2,7 @@
 // Created by Igli milaqi on 05/04/2020.
 //
 
-#include <GL/glew.h>
+#include <GLEW/glew.h>
 #include <glm/glm.hpp>
 #include "Sprite.h"
 #include "Shader.h"
