@@ -16,7 +16,6 @@
 #include "Renderer.h"
 #include "../Rendering/Font.h"
 #include "../Rendering/Sprite.h"
-#include "SFML/Audio.hpp"
 
 ///ResourceManager class is used to Load and Get all the assets.
 ///This class is a singleton and can be accessed only through the game class instance.
@@ -31,14 +30,12 @@ private:
     std::map<std::string,AbstractMaterial*> m_materials;
     std::map<std::string,Font*> m_fonts;
     std::map<std::string,Sprite*> m_sprites;
-    std::map<std::string,sf::SoundBuffer*> m_soundBuffers;
 
     Pool<Texture> m_texturePool;
     Pool<Shader> m_shaderPool;
     Pool<Model> m_modelPool;
     Pool<Font> m_fontPool;
     Pool<Sprite> m_spritePool;
-    Pool<sf::SoundBuffer> m_soundBufferPool;
 
     int m_modelIdCounter = 0;
     int m_spriteIdCounter = 0;
@@ -73,10 +70,6 @@ public:
     ///@param name the unique name which will be assigned to this font.
     ///@return a ptr to the just loaded font.
     Font* LoadFont(const std::string& path,const std::string& name);
-
-    sf::SoundBuffer* LoadSoundBuffer(const std::string& path,const std::string& name);
-    sf::SoundBuffer* GetSoundBuffer(const std::string& name);
-
     ///Creates a sprite asset.
     ///@param name the unique name which will be assigned to the sprite.
     ///@param texture a ptr to the texture that will be used for the sprite.

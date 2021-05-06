@@ -38,8 +38,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Sprite.cpp" "/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/Rendering/Sprite.cpp.o"
   "/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Texture.cpp" "/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/Rendering/Texture.cpp.o"
   "/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Window.cpp" "/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/Rendering/Window.cpp.o"
-  "/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Systems/AudioListenerSystem.cpp" "/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/Systems/AudioListenerSystem.cpp.o"
-  "/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Systems/AudioSourceSystem.cpp" "/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/Systems/AudioSourceSystem.cpp.o"
   "/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Systems/CollisionDetectionSystem.cpp" "/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/Systems/CollisionDetectionSystem.cpp.o"
   "/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Systems/MeshRendererSystem.cpp" "/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/Systems/MeshRendererSystem.cpp.o"
   "/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Systems/SpriteRendererSystem.cpp" "/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/cmake-build-debug/CMakeFiles/Crow.dir/Engine/Systems/SpriteRendererSystem.cpp.o"
@@ -59,6 +57,7 @@ set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../include"
   "/usr/local/include"
   "/Library/Frameworks/Mono.framework/Headers"
   "/usr/local/include/freetype2"

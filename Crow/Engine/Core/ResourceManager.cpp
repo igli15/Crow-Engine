@@ -16,7 +16,6 @@ void ResourceManager::AllocateResourceMemory()
     m_shaderPool.Allocate(20);
     m_fontPool.Allocate(20);
     m_spritePool.Allocate(100);
-    m_soundBufferPool.Allocate(20);
 }
 
 ResourceManager::ResourceManager()
@@ -171,29 +170,6 @@ Font *ResourceManager::LoadFont(const std::string &path, const std::string &name
     return font;
 }
 
-sf::SoundBuffer *ResourceManager::LoadSoundBuffer(const std::string& path, const std::string& name)
-{
-    auto iterator = m_soundBuffers.find(name);
-
-    if (iterator != m_soundBuffers.end())
-    {
-        ENGINE_LOG_ERROR("There is already a soundbuffer with name: " + name);
-        throw;
-    }
-
-    sf::SoundBuffer *soundBuffer = &m_soundBufferPool.GetNewData();
-    new (soundBuffer) sf::SoundBuffer();
-    if(!soundBuffer->loadFromFile(AUDIO_PATH + path))
-    {
-        ENGINE_LOG_CRITICAL("Sound buffer could not be loaded");
-        throw;
-    }
-
-    m_soundBuffers[name] = soundBuffer;
-    return soundBuffer;
-}
-
-
 
 Font *ResourceManager::GetFont(const std::string &name) {
 
@@ -270,18 +246,6 @@ void ResourceManager::LoadAssetFromAssetsFile(const std::string& filename,size_t
     }
 }
 
-sf::SoundBuffer *ResourceManager::GetSoundBuffer(const std::string &name)
-{
-    auto iterator = m_soundBuffers.find(name);
-
-    if (iterator == m_soundBuffers.end())
-    {
-        ENGINE_LOG_ERROR("There is no sound buffer with name: " + name);
-        return nullptr;
-    }
-
-    return iterator->second;
-}
 
 
 

@@ -681,32 +681,6 @@ CMakeFiles/Crow.dir/Engine/Rendering/Materials/HealthBarMaterial.cpp.s: cmake_fo
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Rendering/Materials/HealthBarMaterial.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Materials/HealthBarMaterial.cpp" -o CMakeFiles/Crow.dir/Engine/Rendering/Materials/HealthBarMaterial.cpp.s
 
-CMakeFiles/Crow.dir/Engine/Systems/AudioListenerSystem.cpp.o: CMakeFiles/Crow.dir/flags.make
-CMakeFiles/Crow.dir/Engine/Systems/AudioListenerSystem.cpp.o: ../Engine/Systems/AudioListenerSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/Crow.dir/Engine/Systems/AudioListenerSystem.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Systems/AudioListenerSystem.cpp.o -c "/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Systems/AudioListenerSystem.cpp"
-
-CMakeFiles/Crow.dir/Engine/Systems/AudioListenerSystem.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Engine/Systems/AudioListenerSystem.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Systems/AudioListenerSystem.cpp" > CMakeFiles/Crow.dir/Engine/Systems/AudioListenerSystem.cpp.i
-
-CMakeFiles/Crow.dir/Engine/Systems/AudioListenerSystem.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Systems/AudioListenerSystem.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Systems/AudioListenerSystem.cpp" -o CMakeFiles/Crow.dir/Engine/Systems/AudioListenerSystem.cpp.s
-
-CMakeFiles/Crow.dir/Engine/Systems/AudioSourceSystem.cpp.o: CMakeFiles/Crow.dir/flags.make
-CMakeFiles/Crow.dir/Engine/Systems/AudioSourceSystem.cpp.o: ../Engine/Systems/AudioSourceSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/Crow.dir/Engine/Systems/AudioSourceSystem.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Crow.dir/Engine/Systems/AudioSourceSystem.cpp.o -c "/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Systems/AudioSourceSystem.cpp"
-
-CMakeFiles/Crow.dir/Engine/Systems/AudioSourceSystem.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Crow.dir/Engine/Systems/AudioSourceSystem.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Systems/AudioSourceSystem.cpp" > CMakeFiles/Crow.dir/Engine/Systems/AudioSourceSystem.cpp.i
-
-CMakeFiles/Crow.dir/Engine/Systems/AudioSourceSystem.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Crow.dir/Engine/Systems/AudioSourceSystem.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Systems/AudioSourceSystem.cpp" -o CMakeFiles/Crow.dir/Engine/Systems/AudioSourceSystem.cpp.s
-
 # Object files for target Crow
 Crow_OBJECTS = \
 "CMakeFiles/Crow.dir/main.cpp.o" \
@@ -756,9 +730,7 @@ Crow_OBJECTS = \
 "CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.o" \
 "CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o" \
-"CMakeFiles/Crow.dir/Engine/Rendering/Materials/HealthBarMaterial.cpp.o" \
-"CMakeFiles/Crow.dir/Engine/Systems/AudioListenerSystem.cpp.o" \
-"CMakeFiles/Crow.dir/Engine/Systems/AudioSourceSystem.cpp.o"
+"CMakeFiles/Crow.dir/Engine/Rendering/Materials/HealthBarMaterial.cpp.o"
 
 # External object files for target Crow
 Crow_EXTERNAL_OBJECTS =
@@ -811,21 +783,16 @@ Crow: CMakeFiles/Crow.dir/Engine/Rendering/Materials/PortalMaterial.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Rendering/Materials/UnlitMaterial.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Feather/ComponentSparseSet.cpp.o
 Crow: CMakeFiles/Crow.dir/Engine/Rendering/Materials/HealthBarMaterial.cpp.o
-Crow: CMakeFiles/Crow.dir/Engine/Systems/AudioListenerSystem.cpp.o
-Crow: CMakeFiles/Crow.dir/Engine/Systems/AudioSourceSystem.cpp.o
 Crow: CMakeFiles/Crow.dir/build.make
+Crow: /usr/local/lib/libGLEW.dylib
 Crow: /usr/local/lib/libglfw3.a
 Crow: /usr/local/lib/libassimp.dylib
-Crow: /usr/local/lib/libGLEW.dylib
 Crow: /usr/local/lib/libfreetype.dylib
-Crow: /usr/local/lib/libsfml-audio.dylib
 Crow: /usr/local/lib/libglfw3.a
 Crow: /usr/local/lib/libassimp.dylib
-Crow: /usr/local/lib/libGLEW.dylib
 Crow: /usr/local/lib/libfreetype.dylib
-Crow: /usr/local/lib/libsfml-audio.dylib
 Crow: CMakeFiles/Crow.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_51) "Linking CXX executable Crow"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_49) "Linking CXX executable Crow"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Crow.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

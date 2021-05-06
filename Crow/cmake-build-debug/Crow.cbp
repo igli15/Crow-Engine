@@ -44,6 +44,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Frameworks/Mono.framework/Headers"/>
 					<Add directory="/usr/local/include/freetype2"/>
@@ -67,6 +68,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Frameworks/Mono.framework/Headers"/>
 					<Add directory="/usr/local/include/freetype2"/>
@@ -85,12 +87,6 @@
 			</Target>
 		</Build>
 		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Crow.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Components/AudioListener.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Components/AudioSource.h">
 			<Option target="Crow"/>
 		</Unit>
 		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Components/Camera.cpp">
@@ -357,18 +353,6 @@
 		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Rendering/Window.h">
 			<Option target="Crow"/>
 		</Unit>
-		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Systems/AudioListenerSystem.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Systems/AudioListenerSystem.h">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Systems/AudioSourceSystem.cpp">
-			<Option target="Crow"/>
-		</Unit>
-		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Systems/AudioSourceSystem.h">
-			<Option target="Crow"/>
-		</Unit>
 		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Engine/Systems/CollisionDetectionSystem.cpp">
 			<Option target="Crow"/>
 		</Unit>
@@ -456,16 +440,10 @@
 		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/FindFreetype.cmake">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/FindGLEW.cmake">
-			<Option virtualFolder="CMake Files\"/>
-		</Unit>
 		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/FindGLFW.cmake">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/FindGLM.cmake">
-			<Option virtualFolder="CMake Files\"/>
-		</Unit>
-		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/FindSFML.cmake">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 		<Unit filename="/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/Findassimp.cmake">

@@ -6,5 +6,5 @@ CXX_FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/Ma
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/local/include -I/Library/Frameworks/Mono.framework/Headers -I/usr/local/include/freetype2 
+CXX_INCLUDES = -I"/Users/igli/Documents/Minor Skilled /Crow Engine/Crow/include" -I/usr/local/include -I/Library/Frameworks/Mono.framework/Headers -I/usr/local/include/freetype2 
 

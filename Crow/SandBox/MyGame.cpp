@@ -96,9 +96,6 @@ void MyGame::LoadAssets()
     resourceManager->CreateSprite("youLoseSprite",resourceManager->GetTexture("youLose"));
     resourceManager->CreateMaterial<SpriteMaterial>("stateSprite");
 
-    resourceManager->LoadSoundBuffer("portalSFX.wav","portalSFX");
-    resourceManager->LoadSoundBuffer("drop.wav","drop");
-    resourceManager->LoadSoundBuffer("backgroundMusic.wav","backgroundMusic");
 }
 
 void MyGame::Init()

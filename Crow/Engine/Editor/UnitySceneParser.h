@@ -39,9 +39,6 @@ private:
     static void ParseTranslucentMaterial(rapidxml::xml_node<>* node,EntityHandle entityHandle);
     static void ParseColorMaterial(rapidxml::xml_node<>* node,EntityHandle entityHandle);
     static void ParseTextureMaterial(rapidxml::xml_node<>* node,EntityHandle entityHandle);
-    static void ParseAudioListener(rapidxml::xml_node<>* node,EntityHandle entityHandle);
-    static void ParseAudioSource(rapidxml::xml_node<>* node,EntityHandle entityHandle);
-
 
 
 };

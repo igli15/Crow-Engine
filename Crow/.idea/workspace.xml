@@ -15,16 +15,45 @@
     <list default="true" id="cf22dce6-4d69-43d0-a044-a31c5cbccc70" name="Default Changelist" comment="link_directories(${CMAKE_SOURCE_DIR}/lib)``">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FindGLFW.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/FindGLFW.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Core/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Core/Game.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Core/ResourceManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Core/ResourceManager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Core/ResourceManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Core/ResourceManager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Systems/AudioListenerSystem.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Systems/AudioListenerSystem.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Systems/AudioSourceSystem.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Systems/AudioSourceSystem.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindGLEW.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SandBox/MyGame.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/SandBox/MyGame.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Crow.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Crow" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Crow.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Crow.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Crow.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/Crow.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/Crow.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/Makefile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -289,6 +318,7 @@
       <workItem from="1593366085431" duration="941000" />
       <workItem from="1594133828709" duration="1777000" />
       <workItem from="1594190331275" duration="315000" />
+      <workItem from="1620332213144" duration="1089000" />
     </task>
     <servers />
   </component>
@@ -303,26 +333,31 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="424" y="199" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.-482.1920.1080/0.0.1920.1080/-1680.598.1680.1050@0.0.1920.1080" timestamp="1620144786399" />
-    <state x="698" y="291" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1620145120726">
+    <state x="698" y="291" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1620333142971">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="698" y="291" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.-482.1920.1080/0.0.1920.1080/-1680.598.1680.1050@0.0.1920.1080" timestamp="1620145120726" />
-    <state width="1878" height="102" key="GridCell.Tab.0.bottom" timestamp="1620145304747">
+    <state x="698" y="291" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080/-1920.-482.1920.1080/-1680.598.1680.1050@0.0.1920.1080" timestamp="1620333142971" />
+    <state width="1878" height="102" key="GridCell.Tab.0.bottom" timestamp="1620333075380">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="102" key="GridCell.Tab.0.bottom/-1920.-482.1920.1080/0.0.1920.1080/-1680.598.1680.1050@0.0.1920.1080" timestamp="1620145304747" />
-    <state width="1878" height="102" key="GridCell.Tab.0.center" timestamp="1620145304745">
+    <state width="1878" height="102" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1920.-482.1920.1080/-1680.598.1680.1050@0.0.1920.1080" timestamp="1620333075380" />
+    <state width="1878" height="102" key="GridCell.Tab.0.center" timestamp="1620333075377">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="102" key="GridCell.Tab.0.center/-1920.-482.1920.1080/0.0.1920.1080/-1680.598.1680.1050@0.0.1920.1080" timestamp="1620145304745" />
-    <state width="1878" height="102" key="GridCell.Tab.0.left" timestamp="1620145304744">
+    <state width="1878" height="102" key="GridCell.Tab.0.center/0.0.1920.1080/-1920.-482.1920.1080/-1680.598.1680.1050@0.0.1920.1080" timestamp="1620333075377" />
+    <state width="1878" height="102" key="GridCell.Tab.0.left" timestamp="1620333075375">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="102" key="GridCell.Tab.0.left/-1920.-482.1920.1080/0.0.1920.1080/-1680.598.1680.1050@0.0.1920.1080" timestamp="1620145304744" />
-    <state width="1878" height="102" key="GridCell.Tab.0.right" timestamp="1620145304746">
+    <state width="1878" height="102" key="GridCell.Tab.0.left/0.0.1920.1080/-1920.-482.1920.1080/-1680.598.1680.1050@0.0.1920.1080" timestamp="1620333075375" />
+    <state width="1878" height="102" key="GridCell.Tab.0.right" timestamp="1620333075378">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="102" key="GridCell.Tab.0.right/-1920.-482.1920.1080/0.0.1920.1080/-1680.598.1680.1050@0.0.1920.1080" timestamp="1620145304746" />
+    <state width="1878" height="102" key="GridCell.Tab.0.right/0.0.1920.1080/-1920.-482.1920.1080/-1680.598.1680.1050@0.0.1920.1080" timestamp="1620333075378" />
   </component>
   <component name="masterDetails">
     <states>

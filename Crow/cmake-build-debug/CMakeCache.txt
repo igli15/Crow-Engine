@@ -252,6 +252,9 @@ FREETYPE_LIBRARY_RELEASE:FILEPATH=/usr/local/lib/libfreetype.dylib
 GLEW_INCLUDE_DIR:PATH=/usr/local/include
 
 //Path to a library.
+GLEW_LIB:FILEPATH=/usr/local/lib/libGLEW.dylib
+
+//Path to a library.
 GLEW_LIBRARY:FILEPATH=/usr/local/lib/libGLEW.dylib
 
 //The directory where GLFW/glfw3.h resides

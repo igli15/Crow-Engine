@@ -25,10 +25,6 @@
 #include "../Systems/TransformHierarchySystem.h"
 #include "../Systems/TextRenderingSystem.h"
 #include "../Systems/SpriteRendererSystem.h"
-#include "../Components/AudioSource.h"
-#include "../Components/AudioListener.h"
-#include "../Systems/AudioSourceSystem.h"
-#include "../Systems/AudioListenerSystem.h"
 
 Game* Game::m_instance;
 
@@ -190,18 +186,12 @@ void Game::AllocateMemory()
     m_componentRegistry->AllocateComponentSet<SpriteInfo>();
     m_componentRegistry->AllocateComponentSet<Text>();
     m_componentRegistry->AllocateComponentSet<Transform>();
-    m_componentRegistry->AllocateComponentSet<AudioSource>();
-
-    //Only one listener per scene
-    m_componentRegistry->AllocateComponentSet<AudioListener>(1);
 
     m_systemRegistry->AllocateSystem<CollisionDetectionSystem>();
     m_systemRegistry->AllocateSystem<MeshRendererSystem>();
     m_systemRegistry->AllocateSystem<SpriteRendererSystem>();
     m_systemRegistry->AllocateSystem<TextRenderingSystem>();
     m_systemRegistry->AllocateSystem<TransformHierarchySystem>();
-    m_systemRegistry->AllocateSystem<AudioListenerSystem>();
-    m_systemRegistry->AllocateSystem<AudioSourceSystem>();
 
 }
 
