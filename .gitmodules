@@ -1,0 +1,3 @@
+[submodule "Crow/vendor/spdlog"]
+	path = Crow/vendor/spdlog
+	url = https://github.com/gabime/spdlog.git
