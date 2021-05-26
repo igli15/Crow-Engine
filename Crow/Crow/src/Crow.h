@@ -5,7 +5,7 @@
 
 
 #include "Crow/Application.h"
-
+#include "Crow/Log.h"
 
 //---- Entry Point ---
 #include "Crow/EntryPoint.h"
